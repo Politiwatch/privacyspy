@@ -35,3 +35,7 @@ class Edit(models.Model):
 class SuggestedAction(models.Model):
     edit = models.ForeignKey(Edit)
     eval_action = models.TextField()
+
+class Profile(models.Model):
+    user = models.ForeignKey(User)
+    permission_level = models.IntegerField(default=0)
