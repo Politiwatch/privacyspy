@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 class Product(models.Model):
     name = models.TextField()
@@ -26,3 +27,11 @@ class RubricOption(models.Model):
 class RubricSelection(models.Model):
     option = models.ForeignKey(RubricOption)
     policy = models.ForeignKey(PrivacyPolicy)
+
+class Edit(models.Model):
+    user = models.ForeignKey(User)
+    description = models.TextField()
+
+class SuggestedAction(models.Model):
+    edit = models.ForeignKey(Edit)
+    eval_action = models.TextField()
