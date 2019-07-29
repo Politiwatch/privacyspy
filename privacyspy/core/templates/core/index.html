@@ -2,9 +2,7 @@
 
 {% block content %}
 <h1 class='title'>Rated Products</h1>
-<ul>
 {% for product in products %}
-<li><a href="{% url 'product' product_slug=product.slug %}">{{product.name}}</a>
+{% include 'core/product_box.html' %}
 {% endfor %}
-</ul>
 {% endblock %}
