@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 class Product(models.Model):
     name = models.TextField()
     slug = models.TextField(unique=True)
-    icon = models.FileField(blank=True, default="")
+    icon = models.TextField(blank=True, default="")
     description = models.TextField()
 
     @property
