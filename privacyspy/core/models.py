@@ -27,7 +27,7 @@ class RubricOption(models.Model):
 class RubricSelection(models.Model):
     option = models.ForeignKey(RubricOption, on_delete=models.CASCADE)
     policy = models.ForeignKey(PrivacyPolicy, on_delete=models.CASCADE)
-    citation = models.TextField()
+    citation = models.TextField(blank=True, default="")
 
 class Edit(models.Model):
     user = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
