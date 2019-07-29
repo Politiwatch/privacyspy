@@ -4,8 +4,11 @@ from django.contrib.auth.models import User
 class Product(models.Model):
     name = models.TextField()
     slug = models.TextField(unique=True)
-    icon = models.FileField(null=True)
+    icon = models.FileField(blank=True, default="")
     description = models.TextField()
+
+    def __str__(self):
+        return self.name
 
 class PrivacyPolicy(models.Model):
     added = models.DateTimeField(auto_now_add=True)
