@@ -1,0 +1,10 @@
+<h3 class="title is-size-3">Privacy Policy Page</h3>
+{% if policy == None %}
+    <div class="notification is-danger">
+        Our database does not contain a privacy policy for this product.
+    </div>
+{% else %}
+    {% with policy.parse_highlights as highlights %}
+        {% include 'core/highlights.html'%}
+    {% endwith %}
+{% endif %}
