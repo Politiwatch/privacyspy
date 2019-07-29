@@ -1,0 +1,237 @@
+{% extends 'core/base.html' %}
+
+{% load humanize %}
+
+{% block content %}
+<div class="columns">
+    <div class="column is-narrow">
+        <figure class="image is-64x64">
+            <img src="{{policy.product.icon}}" alt="Icon for {{product.name}}">
+        </figure>
+    </div>
+    <div class="column">
+        <h1 class='title'>Editing: <span class="has-text-weight-normal">{{policy.product.name}} ({{policy.id}})</span>
+        </h1>
+        <p class='subtitle'>{{policy.product.description}}</p>
+    </div>
+</div>
+<div class="tabs" style="position: sticky;">
+    <ul>
+        <li class="tab-helper">Jump to:</li>
+        <li class="has-text-weight-medium"><a href="#edit-policy-overview">Metadata</a></li>
+        <li><a class="has-text-weight-medium" href="#edit-policy-ratings">Highlights</a></li>
+        <li><a class="has-text-weight-medium" href="#edit-policy-ratings">Ratings</a></li>
+        <li><a class="has-text-weight-medium" href="#edit-policy-revisions">Suggestions</a></li>
+        <li><a class="has-text-weight-medium" href="/admin/core/privacypolicy/{{policy.id}}/change/">Admin Panel</a></li>
+        <li><a class="has-text-weight-medium" href="{% url 'product' policy.product.slug %}?revision={{policy.id}}">Public View</a></li>
+    </ul>
+</div>
+{% for action in actions %}
+<div class="notification">
+    {{action}}
+</div>
+{% endfor %}
+<div class="columns" id="edit-policy-metadata">
+    <div class="column is-2">
+        <h1 class="is-size-3 has-text-weight-light">Metadata</h1>
+        <div class="field is-grouped is-grouped-multiline">
+            <div class="control">
+                <div class="tags has-addons">
+                    <span class="tag is-light">Added</span>
+                    <span class="tag is-primary">{{policy.added|naturalday|capfirst}}</span>
+                </div>
+            </div>
+            <div class="control">
+                <div class="tags has-addons">
+                    <span class="tag is-light">Updated</span>
+                    <span class="tag is-primary">{{policy.updated|naturalday|capfirst}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="column">
+        <hr>
+        <form method="POST">
+            {% csrf_token %}
+            <input type="hidden" name="section" value="metadata">
+            <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                    <label class="label">Out of Date</label>
+                </div>
+                <div class="field-body">
+                    <div class="select">
+                        <select name="out-of-date">
+                            <option value="True" {% if policy.out_of_date %}selected{% endif %}>Yes</option>
+                            <option value="False" {% if not policy.out_of_date %}selected{% endif %}>No</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                    <label class="label">Erroneous</label>
+                </div>
+                <div class="field-body">
+                    <div class="select">
+                        <select name="erroneous">
+                            <option value="True" {% if policy.erroneous %}selected{% endif %}>Yes</option>
+                            <option value="False" {% if not policy.erroneous %}selected{% endif %}>No</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                    <label class="label">Original URL</label>
+                </div>
+                <div class="field-body">
+                    <div class="control">
+                        <input name="original-url" class="input" type="text" placeholder="https://..."
+                            value="{{policy.original_url}}">
+                    </div>
+                </div>
+            </div>
+            <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                    <label class="label">Published</label>
+                </div>
+                <div class="field-body">
+                    <div class="select">
+                        <select name="published">
+                            <option value="True" {% if policy.published %}selected{% endif %}>Yes</option>
+                            <option value="False" {% if not policy.published %}selected{% endif %}>No</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                </div>
+                <div class="field-body">
+                    <button type="submit" class="button is-link">Save Metadata</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="columns" id="edit-policy-metadata">
+    <div class="column is-2">
+        <h1 class="is-size-3 has-text-weight-light">Highlights</h1>
+        <div class="control">
+            <div class="tags has-addons">
+                <span class="tag is-light">Present</span>
+                {% if policy.highlights_json|length == 0 %}
+                <span class="tag is-danger">No</span>
+                {% else %}
+                <span class="tag is-success">Yes</span>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    <div class="column">
+        <hr>
+        <form method="POST">
+            {% csrf_token %}
+            <input type="hidden" name="section" value="highlight-by-url">
+            <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                    <label class="label">URL to query</label>
+                </div>
+                <div class="field-body">
+                    <div class="control">
+                        <input class="input" name="source-url" type="text" placeholder="https://..."
+                            value="{{policy.original_url}}">
+                    </div>
+                </div>
+            </div>
+            <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                </div>
+                <div class="field-body">
+                    <button type="submit" class="button is-link">Highlight by URL</button>
+                </div>
+            </div>
+        </form>
+        <hr>
+        <form method="POST">
+            {% csrf_token %}
+            <input type="hidden" name="section" value="highlight-by-plaintext">
+            <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                    <label class="label">Page text</label>
+                </div>
+                <div class="field-body">
+                    <div class="control is-fullwidth">
+                        <textarea class="textarea" name="source-text"
+                            placeholder="Privacy policy contents..."></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                </div>
+                <div class="field-body">
+                    <button type="submit" class="button is-link">Highlight by raw text</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="columns" id="edit-policy-ratings">
+    <div class="column is-2">
+        <h1 class="is-size-3 has-text-weight-light">Ratings</h1>
+    </div>
+    <div class="column">
+        <hr>
+        <form method="POST">
+            <input type="hidden" name="section" value="ratings">
+            {% csrf_token %}
+            {% for question in rubric_questions %}
+            <div class="rubric-selection-editor">
+                <h3 class="title is-size-4">{{question.text}} {% if question.answer == None %}<span
+                        class="tag is-warning is-medium">Unanswered</span>{% endif %} <span
+                        class="tag is-light is-medium">{{question.max_value}}</span></h3>
+                {% if question.description %}
+                <p class="subtitle">{{question.description}}</p>
+                {% endif %}
+                <div class="columns">
+                    <div class="column is-narrow">
+                        <div class="field">
+                            <label class="label">Selection</label>
+                            <div class="select">
+                                <select name="{{question.id}}-selection">
+                                    <option value="None" {% if question.answer == None %}selected{% endif %}>Unset (will clear entry)
+                                    </option>
+                                    {% for option in question.options %}
+                                    <option value="{{option.id}}" {% if question.answer.option == option %}selected{% endif %}>
+                                        {{option.text}} {% if option.description %}({{option.description}}){% endif %}
+                                        [{{option.value}}]</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="column">
+                        <div class="field">
+                            <label class="label">Citation</label>
+                            <textarea class="textarea" name="{{question.id}}-citation"
+                            placeholder="Cite the relevant part of the privacy policy here...">{% if question.answer %}{{question.answer.citation}}{% endif %}</textarea>
+                        </div>
+                    </div>
+                    <div class="column">
+                            <div class="field">
+                                <label class="label">Note</label>
+                                <textarea class="textarea" name="{{question.id}}-note"
+                                placeholder="Anything special to add? This usually isn't necessary.">{% if question.answer %}{{question.answer.note}}{% endif %}</textarea>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <hr>
+            {% endfor %}
+            <button type="submit" class="button is-link">Save Ratings</button>
+        </form>
+    </div>
+</div>
+{% endblock %}
