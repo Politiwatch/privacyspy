@@ -27,6 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+HIGHLIGHTS_API_TOKEN = os.environ["API_TOKEN"]
 
 # Application definition
 
