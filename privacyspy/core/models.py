@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 class Product(models.Model):
     name = models.TextField()
     slug = models.TextField(unique=True)
-    icon = models.BinaryField(editable=True)
+    icon = models.FileField(null=True)
     description = models.TextField()
 
 class PrivacyPolicy(models.Model):
