@@ -7,6 +7,10 @@ class Product(models.Model):
     icon = models.FileField(blank=True, default="")
     description = models.TextField()
 
+    @property
+    def current_policy(self):
+        PrivacyPolicy.objects.filter(product=self).order_by("-added")[0]
+
     def __str__(self):
         return self.name
 
@@ -17,20 +21,36 @@ class PrivacyPolicy(models.Model):
     out_of_date = models.BooleanField(default=False)
     erroneous = models.BooleanField(default=False)
     original_url = models.TextField()
+    product = models.ForeignKey(Product, on_delete=models.CASCADE)
+
+    def rubric_selections(self):
+        return RubricSelection.objects.filter(policy=self).order_by("-option.value")
+
+    @property
+    def score(self):
+        selections = self.rubric_selections()
+        max_score = sum([selection.option.question.max_value for selection in selections])
+        score = sum([selection.option.value for selection in selections])
+        if max_score == 0:
+            return float('NaN')
+        return (score / max_score) * 10
 
 class RubricQuestion(models.Model):
     name = models.TextField()
-    description = models.TextField(blank=True)
+    description = models.TextField(blank=True, default="")
+    max_value = models.FloatField()
 
 class RubricOption(models.Model):
     name = models.TextField()
     question = models.ForeignKey(RubricQuestion, on_delete=models.CASCADE)
-    score_effect = models.FloatField()
+    value = models.FloatField()
+    description = models.TextField(blank=True, default="")
 
 class RubricSelection(models.Model):
     option = models.ForeignKey(RubricOption, on_delete=models.CASCADE)
     policy = models.ForeignKey(PrivacyPolicy, on_delete=models.CASCADE)
     citation = models.TextField(blank=True, default="")
+    description = models.TextField(blank=True, default="")
 
 class Edit(models.Model):
     user = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
