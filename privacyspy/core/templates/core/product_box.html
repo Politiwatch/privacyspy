@@ -1,0 +1,20 @@
+<a href="{% url 'product' product_slug=product.slug %}">
+    <div class="box">
+        <article class="media">
+            <div class="media-left">
+                <figure class="image is-64x64">
+                    <img src="{{product.icon}}" alt="Icon for {{product.name}}">
+                </figure>
+            </div>
+            <div class="media-content">
+                <div class="content">
+                    <p>
+                        <strong>{{product.name}}</strong>
+                        <br>
+                        {{product.description}}
+                    </p>
+                </div>
+            </div>
+        </article>
+    </div>
+</a>

@@ -1,6 +1,15 @@
 {% extends 'core/base.html' %}
 
 {% block content %}
-<h1 class='title'>{{product.name}}</h1>
-<p class='subtitle'>{{product.description}}</p>
+<div class="columns">
+    <div class="column is-narrow">
+        <figure class="image is-64x64">
+            <img src="{{product.icon}}" alt="Icon for {{product.name}}">
+        </figure>
+    </div>
+    <div class="column">
+        <h1 class='title'>{{product.name}}</h1>
+        <p class='subtitle'>{{product.description}}</p>
+    </div>
+</div>
 {% endblock %}
