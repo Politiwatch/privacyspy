@@ -10,5 +10,6 @@ def index(request):
 def product(request, product_slug):
     product = get_object_or_404(Product, slug=product_slug)
     return render(request, 'core/product.html', context={
-        "product": product
+        "product": product,
+        "title": product.name + " Privacy Policy"
     })
