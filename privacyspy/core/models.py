@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+import json
 
 class Product(models.Model):
     name = models.TextField()
@@ -9,7 +10,10 @@ class Product(models.Model):
 
     @property
     def current_policy(self):
-        PrivacyPolicy.objects.filter(product=self).order_by("-added")[0]
+        policies = PrivacyPolicy.objects.filter(product=self).order_by("-added")
+        if policies.count() == 0:
+            return None
+        return policies[0]
 
     def __str__(self):
         return self.name
@@ -21,6 +25,7 @@ class PrivacyPolicy(models.Model):
     out_of_date = models.BooleanField(default=False)
     erroneous = models.BooleanField(default=False)
     original_url = models.TextField()
+    published = models.BooleanField(default=False)
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
 
     def rubric_selections(self):
@@ -34,6 +39,11 @@ class PrivacyPolicy(models.Model):
         if max_score == 0:
             return float('NaN')
         return (score / max_score) * 10
+
+    def parse_highlights(self):
+        if self.highlights_json.strip() == "":
+            return None
+        return json.loads(self.highlights_json)
 
 class RubricQuestion(models.Model):
     name = models.TextField()
