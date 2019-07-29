@@ -1,6 +1,10 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.conf import settings
 import json
+import requests
+from django.utils.html import escape
+from .util import to_hex_code, lighten_color
 
 class Product(models.Model):
     name = models.TextField()
@@ -10,7 +14,7 @@ class Product(models.Model):
 
     @property
     def current_policy(self):
-        policies = PrivacyPolicy.objects.filter(product=self).order_by("-added")
+        policies = PrivacyPolicy.objects.filter(product=self, published=True).order_by("-added")
         if policies.count() == 0:
             return None
         return policies[0]
@@ -40,10 +44,25 @@ class PrivacyPolicy(models.Model):
             return float('NaN')
         return (score / max_score) * 10
 
+    @property
+    def revisions(self):
+        return PrivacyPolicy.objects.filter(product=self.product)
+
     def parse_highlights(self):
         if self.highlights_json.strip() == "":
             return None
-        return json.loads(self.highlights_json)
+        data = json.loads(self.highlights_json)
+        for sentence in data:
+            sentence["sentence"] = escape(sentence["sentence"]).replace("\n", "<br>")
+            sentence["color"] = "#" + to_hex_code(*lighten_color(213, 0, 249, 1.5 - sentence["score"]))
+        return data
+
+    def load_highlights_via_url(self):
+        data = requests.get("http://highlights-api.privacyspy.org/analyze", params={
+            "token": settings.HIGHLIGHTS_API_TOKEN,
+            "url": self.original_url
+        }).json()
+        self.highlights_json = json.dumps(data["response"])
 
 class RubricQuestion(models.Model):
     name = models.TextField()
@@ -61,6 +80,7 @@ class RubricSelection(models.Model):
     policy = models.ForeignKey(PrivacyPolicy, on_delete=models.CASCADE)
     citation = models.TextField(blank=True, default="")
     description = models.TextField(blank=True, default="")
+    updated = models.DateTimeField(auto_now=True)
 
 class Edit(models.Model):
     user = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
