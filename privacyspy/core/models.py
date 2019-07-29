@@ -25,17 +25,18 @@ class RubricOption(models.Model):
     score_effect = models.FloatField()
 
 class RubricSelection(models.Model):
-    option = models.ForeignKey(RubricOption)
-    policy = models.ForeignKey(PrivacyPolicy)
+    option = models.ForeignKey(RubricOption, on_delete=models.CASCADE)
+    policy = models.ForeignKey(PrivacyPolicy, on_delete=models.CASCADE)
+    citation = models.TextField()
 
 class Edit(models.Model):
-    user = models.ForeignKey(User)
+    user = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
     description = models.TextField()
 
 class SuggestedAction(models.Model):
-    edit = models.ForeignKey(Edit)
+    edit = models.ForeignKey(Edit, on_delete=models.CASCADE)
     eval_action = models.TextField()
 
 class Profile(models.Model):
-    user = models.ForeignKey(User)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
     permission_level = models.IntegerField(default=0)
