@@ -1,0 +1,21 @@
+.highlights {
+    max-width: 40em;
+}
+ 
+.tab-helper {
+    color: gray !important;
+    padding-right: 1em;
+}
+
+.rating-total {
+    color: gray !important;
+    font-weight: normal;
+}
+
+.policy-column-stat {
+    margin-bottom: 1em;
+}
+
+.policy-column-stat heading {
+    margin-bottom: 2px;
+}

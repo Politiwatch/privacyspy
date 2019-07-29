@@ -1,10 +1,66 @@
-<h3 class="title is-size-3">Privacy Policy Page</h3>
+{% load humanize %}
+
 {% if policy == None %}
-    <div class="notification is-danger">
-        Our database does not contain a privacy policy for this product.
-    </div>
+<div class="notification is-danger">
+    Our database does not contain a privacy policy for this product.
+</div>
 {% else %}
-    {% with policy.parse_highlights as highlights %}
-        {% include 'core/highlights.html'%}
-    {% endwith %}
+<div class="tabs">
+    <ul>
+        <li class="tab-helper">Jump to:</li>
+        <li class="has-text-weight-medium"><a href="#policy-overview">Overview</a></li>
+        <li><a class="has-text-weight-medium" href="#policy-ratings">Ratings</a></li>
+        <li><a class="has-text-weight-medium" href="#policy-revisions">Revisions</a></li>
+        <li><a class="has-text-weight-medium" href="#policy-highlights">Highlights</a></li>
+        <li><a class="has-text-weight-medium">Edit</a></li>
+    </ul>
+</div>
+<div class="columns" id="policy-overview">
+    <div class="column is-3">
+        <h3 class="is-size-1 has-text-weight-bold">
+            {% if policy.score > -1 %}
+            {{policy.score}}<span class="rating-total">/10</span>
+            {% else %}
+            Unrated
+            {% endif %}
+        </h3>
+        <div class="field is-grouped is-grouped-multiline">
+            <div class="control">
+                <div class="tags has-addons">
+                    <span class="tag is-dark">Flagged as Erroneous</span>
+                    {% if policy.out_of_date or policy.erroneous %}
+                    <span class="tag is-danger">Yes</span>
+                    {% else %}
+                    <span class="tag is-success">No</span>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="control">
+                <div class="tags has-addons">
+                    <span class="tag is-dark">Revisions</span>
+                    <span class="tag is-info">{{policy.revisions|length}}</span>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="policy-column-stat">
+            <div class="heading">Version Added</div>
+            <p>{{policy.added|naturalday|capfirst}}</p>
+        </div>
+        <div class="policy-column-stat">
+            <div class="heading">Ratings Updated</div>
+            <p>{{policy.updated|naturalday|capfirst}}</p>
+        </div>
+        <div class="policy-column-stat">
+            <div class="heading">Original Location</div>
+            <a class="button is-link is-small is-outlined" href="{{policy.original_url}}" target="_blank">Open in New
+                Tab</a>
+        </div>
+    </div>
+</div>
+{% with policy.parse_highlights as highlights %}
+<div id="policy-highlights">
+    {% include 'core/highlights.html'%}
+</div>
+{% endwith %}
 {% endif %}
