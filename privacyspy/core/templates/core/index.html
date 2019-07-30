@@ -1,8 +1,68 @@
 {% extends 'core/base.html' %}
 
 {% block content %}
-<h1 class='title'>Rated Products</h1>
-{% for product in products %}
-{% include 'core/product_box.html' %}
-{% endfor %}
+<h1 class='title has-text-centered'>Revealing what privacy policies do.</h1>
+<br>
+<div class="tile is-ancestor">
+    <div class="tile is-parent is-vertical is-3">
+        <article class="tile is-child card">
+            <h4>Hello World!</h4>
+        </article>
+        <article class="tile is-child card">
+            <h4>Hello World!</h4>
+        </article>
+    </div>
+    <div class="tile is-parent is-5">
+        <article class="tile is-child card landing-highlights">
+            <p class="subtitle is-child has-text-centered">Key Points</p>
+            {% for keyword in keywords %}
+            <span class="landing-invisible-text">
+                {% for i in n %}
+                &nbsp;
+                {% endfor %}
+            </span>
+            {% endfor %}
+        </article>
+    </div>
+    <div class="tile is-parent is-4">
+        <article class="tile is-child card">
+            <div class="card-header">
+                <p class="has-text-centered">Highlights</p>
+            </div>
+            <p class="card-description has-text-centered">We use natural language processing to identify the most
+                important pieces of a
+                privacy policy. It lets you
+                quickly navigate the policy should you decide to read the entire thing.</p>
+            <div class="landing-highlights">
+                {% for keyword in keywords %}
+                <span class="landing-invisible-text">
+                    {% for i in n %}
+                    &nbsp;
+                    {% endfor %}
+                </span>
+                <span class="landing-visible-text">{{ keyword }}</span>
+                {% endfor %}
+            </div>
+        </article>
+    </div>
+</div>
+<br>
+<div class="has-text-centered">
+    <button class="blue-button">
+        Explore our database of 1.7+ million privacy policies
+    </button>
+    or
+    <button class="orange-button">
+        Install PrivacySpy browser extension
+    </button>
+</div>
+<br>
+<div class="privacyspy-footer">
+    <div class="content has-text-centered">
+        <p>
+            <strong>PrivacySpy</strong> is a <a href="https://politiwatch.org">Politiwatch 501(c)(3)</a>
+            initiative maintained by Miles McCain & Igor Barakaiev.
+        </p>
+    </div>
+</div>
 {% endblock %}

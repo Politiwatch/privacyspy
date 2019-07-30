@@ -4,8 +4,8 @@
 </div>
 {% else %}
 <div class="highlights">
-{% for sentence in highlights %}
-<span style="background-color: {{sentence.color}}">{{sentence.sentence|safe}}</span>
-{% endfor %}
+    {% for sentence in highlights %}
+    <span style="background-color: {{sentence.color}}" class="highlighted-text">{{sentence.sentence|safe}}</span>
+    {% endfor %}
 </div>
 {% endif %}

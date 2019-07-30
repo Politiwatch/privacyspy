@@ -1,5 +1,28 @@
+@keyframes loadingblink {
+	0% {
+		background: rgba(0,0,0,0.04);
+	}
+	50% {
+		background: rgba(0,0,0,0.06);
+	}
+	100% {
+		background: rgba(0,0,0,0.04);
+	}
+}
+
+body {
+    background: #fafafa;
+    font-family: 'Zilla Slab', serif;
+}
+
 .highlights {
     max-width: 40em;
+    font-family: "Inter-Regular", sans-serif;
+    background: white;
+    box-shadow: 0 2px 2px rgba(0,0,0,.2);
+    padding: 10px;
+    line-height: 180%;
+    border-radius: 2px;
 }
  
 .tab-helper {
@@ -37,4 +60,96 @@
 
 .policy-score {
     font-size: 125% !important;
+}
+
+.landing-invisible-text {
+    background-color: rgba(0, 0, 0, 0.05);
+    animation: loadingblink infinite ease-in-out 1s;
+    -webkit-animation: loadingblink 1s ease-in-out infinite
+}
+
+.landing-visible-text {
+    background: linear-gradient(45deg, #4FC3F7, #29B6F6);
+    color: white;
+    margin-right: 5px;
+    margin-left: 10px;
+    padding: 3px 5px;
+    border-radius: 2px;
+}
+
+.landing-highlights {
+    line-height: 200%;
+    border-radius: 2px;
+    padding-top: 15px;
+}
+
+.card {
+    box-shadow: 0 2px 2px rgba(0,0,0,.2);
+    padding: 15px;
+    border-radius: 2px;
+}
+
+.blue-button {
+    background: linear-gradient(45deg, #4FC3F7, #29B6F6);
+    padding: 10px;
+    color: white;
+    font-weight: 600;
+    border: 0;
+    margin: 5px;
+    border-radius: 2px;
+    line-height: 1;
+    font-family: 'Zilla Slab', serif;
+    font-size: 1.1rem;
+}
+
+.blue-button:hover{
+    cursor: pointer;
+}
+
+.orange-button {
+    background: linear-gradient(45deg, #F06292, #EC407A);
+    padding: 10px;
+    color: white;
+    font-weight: 600;
+    border: 0;
+    margin: 5px;
+    border-radius: 2px;
+    line-height: 1;
+    font-family: 'Zilla Slab', serif;
+    font-size: 1.1rem;
+}
+
+.white-button {
+    background: white;
+    padding: 10px;
+    color: black;
+    font-weight: 600;
+    border: 0;
+    margin: 5px;
+    border-radius: 2px;
+    line-height: 1;
+    font-family: 'Zilla Slab', serif;
+    font-size: 1.1rem;
+}
+
+.card-header {
+    padding: 6px 0px;
+    margin-bottom: 15px;
+    box-shadow: 0 1px 0px rgba(0,0,0,.1);
+    display: block;
+    background: linear-gradient(45deg, #F06292, #EC407A);
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.25;
+    border-radius: 2px;
+}
+
+.card-description {
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 0.9rem;
+}
+
+.highlighted-text {
+    padding: 1px 3px;
 }
