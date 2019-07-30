@@ -1,0 +1,60 @@
+{% load humanize %}
+
+<div class="rubric-selection box">
+    <div class="selection-overview" onclick="toggleRubricSelection('#selection-{{selection.id}}')">
+        <div class="level">
+            <div class="level-left">
+                <span class="icon is-small level-item">
+                    <i class="fas fa-chevron-down" id="selection-{{selection.id}}-icon"></i>
+                </span>
+                <h4 class="is-size-4 level-item">
+                    <span class="has-text-dark-grey">{{selection.option.question.text}}</span>
+                    <strong>&nbsp;{{selection.option.text}}</strong></h4>
+            </div>
+            <div class="level-right">
+                <div class="level-item">
+                    <h4 class="is-size-4 has-text-weight-bold">
+                        {{selection.option.value|floatformat:"-1"}}<span
+                            class="rating-total">/{{selection.option.question.max_value|floatformat:"-1"}}</span>
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="selection-expanded" id="selection-{{selection.id}}">
+        <br>
+        {% if selection.option.description %}
+        <div class="notification">{{selection.option.description}}</div>
+        {% endif %}
+        {% if selection.option.question.description %}
+        <div class="notification">{{selection.option.question.description}}</div>
+        {% endif %}
+        <div class="columns">
+            <div class="column">
+                <p class="heading">Possible Options</p>
+                <table class="table is-fullwidth is-striped">
+                    {% for option in selection.option.question.options %}
+                    <tr {% if option == selection.option %}class="is-selected is-light" {% endif %}>
+                        <td title="{{option.description}}">{{option.text}}</td>
+                        <td><strong>{{option.value|floatformat:"-1"}}</strong>/{{option.question.max_value|floatformat:"-1"}}
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            </div>
+            {% if selection.citation %}
+            <div class="column">
+                <p class="heading">Citation</p>
+                <p>{{selection.citation}}</p>
+            </div>
+            {% endif %}
+            {% if selection.note %}
+            <div class="column">
+                <p class="heading">Note</p>
+                <p>{{selection.note}}</p>
+            </div>
+            {% endif %}
+        </div>
+        <small class="has-text-grey">Decided {{selection.updated|naturalday}}. Click <a href="#">here</a> to flag this entry as incorrect.</small>
+    </div>
+</div>
