@@ -8,8 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{title}} | PrivacySpy</title>
     <script defer src="{% static 'core/js/fontawesome.js' %}"></script>
+    <script src="{% static 'core/js/jquery.js' %}"></script>
     <link rel="stylesheet" href="{% static 'core/css/bulma.css' %}">
     <link rel="stylesheet" href="{% static 'core/css/core.css' %}">
+    <noscript>
+        <link rel="stylesheet" href="{% static 'core/css/noscript.css' %}">
+    </noscript>
 </head>
 
 <body>
@@ -54,7 +58,6 @@
                 </div>
             </div>
         </div>
-        <hr>
     </nav>
     <section class="section">
         <div class="container">
@@ -62,6 +65,7 @@
             {% endblock %}
         </div>
     </section>
+    <script src="{% static 'core/js/core.js' %}"></script>
 </body>
 
 </html>
