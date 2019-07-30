@@ -46,6 +46,7 @@ class PrivacyPolicy(models.Model):
     original_url = models.TextField()
     published = models.BooleanField(default=False)
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
+    cached_score = models.FloatField(null=True, default=None)
 
     def rubric_selections(self):
         return RubricSelection.objects.filter(policy=self).order_by("-option__value")
@@ -64,13 +65,28 @@ class PrivacyPolicy(models.Model):
 
     @property
     def score(self):
+        if self.cached_score != None:
+            return self.cached_score
+        else:
+            return self.calculate_score()
+
+    def calculate_score(self, update_cache=True):
         selections = self.rubric_selections()
         max_score = sum(
             [selection.option.question.max_value for selection in selections])
         score = sum([selection.option.value for selection in selections])
         if max_score == 0:
             return float('NaN')
-        return (score / max_score) * 10
+        final_score = (score / max_score) * 10
+        if update_cache:
+            if self.cached_score != final_score:
+                self.cached_score = final_score
+                self.save()
+        return final_score
+
+    def update_cached_score(self):
+        self.cached_score = self.calculate_score()
+        self.save()
 
     @property
     def revisions(self):
