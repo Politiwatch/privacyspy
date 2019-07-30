@@ -6,6 +6,13 @@ import requests
 from django.utils.html import escape
 from .util import to_hex_code, lighten_color
 import threading
+from django.utils.crypto import get_random_string
+from datetime import timedelta
+from django.utils import timezone
+from django.contrib.auth.models import User
+from django.contrib.auth import login
+from .email import send_email
+
 
 class Product(models.Model):
     name = models.TextField()
@@ -15,13 +22,20 @@ class Product(models.Model):
 
     @property
     def current_policy(self):
-        policies = PrivacyPolicy.objects.filter(product=self, published=True).order_by("-added")
+        policies = PrivacyPolicy.objects.filter(
+            product=self, published=True).order_by("-added")
         if policies.count() == 0:
             return None
         return policies[0]
 
+    @property
+    def revisions(self):
+        most_recent = self.current_policy
+        return [policy for policy in PrivacyPolicy.objects.filter(product=self, published=True).order_by("-added") if policy != most_recent]
+
     def __str__(self):
         return self.name
+
 
 class PrivacyPolicy(models.Model):
     added = models.DateTimeField(auto_now_add=True)
@@ -39,7 +53,8 @@ class PrivacyPolicy(models.Model):
     def questions_with_selections(self):
         selections = []
         for question in RubricQuestion.objects.all():
-            answers = RubricSelection.objects.filter(policy=self, option__question=question)
+            answers = RubricSelection.objects.filter(
+                policy=self, option__question=question)
             if answers.count() > 0:
                 question.answer = answers[0]
             else:
@@ -50,7 +65,8 @@ class PrivacyPolicy(models.Model):
     @property
     def score(self):
         selections = self.rubric_selections()
-        max_score = sum([selection.option.question.max_value for selection in selections])
+        max_score = sum(
+            [selection.option.question.max_value for selection in selections])
         score = sum([selection.option.value for selection in selections])
         if max_score == 0:
             return float('NaN')
@@ -58,15 +74,18 @@ class PrivacyPolicy(models.Model):
 
     @property
     def revisions(self):
-        return PrivacyPolicy.objects.filter(product=self.product)
+        return PrivacyPolicy.objects.filter(product=self.product, published=True)
 
     def parse_highlights(self):
         if self.highlights_json.strip() == "":
             return None
         data = json.loads(self.highlights_json)
         for sentence in data:
-            sentence["sentence"] = escape(sentence["sentence"]).replace("\n", "<br>")
-            sentence["color"] = "#" + to_hex_code(*lighten_color(213, 0, 249, 1.25 - sentence["score"]))
+            sentence["sentence"] = escape(
+                sentence["sentence"]).replace("\n", "<br>")
+            sentence["color"] = "#" + \
+                to_hex_code(*lighten_color(213, 0, 249,
+                                           1.25 - sentence["score"]))
         return data
 
     def load_highlights_via_url(self, url):
@@ -93,6 +112,7 @@ class PrivacyPolicy(models.Model):
         t = threading.Thread(target=do_task)
         t.start()
 
+
 class RubricQuestion(models.Model):
     text = models.TextField()
     description = models.TextField(blank=True, default="")
@@ -106,11 +126,13 @@ class RubricQuestion(models.Model):
     def options(self):
         return RubricOption.objects.filter(question=self)
 
+
 class RubricOption(models.Model):
     text = models.TextField()
     question = models.ForeignKey(RubricQuestion, on_delete=models.CASCADE)
     value = models.FloatField()
     description = models.TextField(blank=True, default="")
+
 
 class RubricSelection(models.Model):
     option = models.ForeignKey(RubricOption, on_delete=models.CASCADE)
@@ -119,14 +141,53 @@ class RubricSelection(models.Model):
     note = models.TextField(blank=True, default="")
     updated = models.DateTimeField(auto_now=True)
 
+
 class Edit(models.Model):
     user = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
     description = models.TextField()
+
 
 class SuggestedAction(models.Model):
     edit = models.ForeignKey(Edit, on_delete=models.CASCADE)
     eval_action = models.TextField()
 
+
 class Profile(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     permission_level = models.IntegerField(default=0)
+
+
+class LoginKey(models.Model):
+    email = models.TextField()
+    token = models.TextField()
+    expires = models.DateTimeField()
+    used = models.BooleanField(default=False)
+
+    @staticmethod
+    def go_for_email(email): # note: all email addresses are treated as lowercase
+        key = LoginKey.objects.create(email=email.lower(), token=get_random_string(
+            length=32), expires=timezone.now() + timedelta(hours=1))
+        send_email("Your PrivacySpy Login", "login", email.lower(), {
+            "link": "https://privacyspy.org/login/?token=" + key.token
+        })
+
+    @staticmethod
+    def log_in_via_token(request):
+        token = request.GET.get("token", None)
+        if token == None:
+            return False
+        keys = LoginKey.objects.filter(token=token, expires__gt=timezone.now(), used=False)
+        if keys.count() > 0:
+            key = keys[0]
+            key.used = True
+            key.save()
+            users = User.objects.filter(email=key.email)
+            if users.count() == 0:
+                user = User.objects.create_user(username="newuser" + get_random_string(length=5), email=key.email)
+                profile = Profile.objects.create(user=user)
+                login(request, user)
+                return True
+            else:
+                login(request, users[0])
+                return True
+        return False

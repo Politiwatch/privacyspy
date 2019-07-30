@@ -22,8 +22,10 @@
         <li><a class="has-text-weight-medium" href="#edit-policy-ratings">Highlights</a></li>
         <li><a class="has-text-weight-medium" href="#edit-policy-ratings">Ratings</a></li>
         <li><a class="has-text-weight-medium" href="#edit-policy-revisions">Suggestions</a></li>
-        <li><a class="has-text-weight-medium" href="/admin/core/privacypolicy/{{policy.id}}/change/">Admin Panel</a></li>
-        <li><a class="has-text-weight-medium" href="{% url 'product' policy.product.slug %}?revision={{policy.id}}">Public View</a></li>
+        <li><a class="has-text-weight-medium" href="/admin/core/privacypolicy/{{policy.id}}/change/">Admin Panel</a>
+        </li>
+        <li><a class="has-text-weight-medium"
+                href="{% url 'product' policy.product.slug %}?revision={{policy.id}}">Public View</a></li>
     </ul>
 </div>
 {% for action in actions %}
@@ -180,6 +182,20 @@
 <div class="columns" id="edit-policy-ratings">
     <div class="column is-2">
         <h1 class="is-size-3 has-text-weight-light">Ratings</h1>
+        <div class="field is-grouped is-grouped-multiline">
+            <div class="control">
+                <div class="tags has-addons">
+                    <span class="tag is-light">Answered</span>
+                    <span class="tag is-primary">{{policy.rubric_selections|length}}/{{policy.questions_with_selections|length}}</span>
+                </div>
+            </div>
+            <div class="control">
+                <div class="tags has-addons">
+                    <span class="tag is-light">Score</span>
+                    <span class="tag is-primary">{{policy.score}}</span>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="column">
         <hr>
@@ -200,10 +216,12 @@
                             <label class="label">Selection</label>
                             <div class="select">
                                 <select name="{{question.id}}-selection">
-                                    <option value="None" {% if question.answer == None %}selected{% endif %}>Unset (will clear entry)
+                                    <option value="None" {% if question.answer == None %}selected{% endif %}>Unset (will
+                                        clear entry)
                                     </option>
                                     {% for option in question.options %}
-                                    <option value="{{option.id}}" {% if question.answer.option == option %}selected{% endif %}>
+                                    <option value="{{option.id}}"
+                                        {% if question.answer.option == option %}selected{% endif %}>
                                         {{option.text}} {% if option.description %}({{option.description}}){% endif %}
                                         [{{option.value}}]</option>
                                     {% endfor %}
@@ -216,16 +234,16 @@
                         <div class="field">
                             <label class="label">Citation</label>
                             <textarea class="textarea" name="{{question.id}}-citation"
-                            placeholder="Cite the relevant part of the privacy policy here...">{% if question.answer %}{{question.answer.citation}}{% endif %}</textarea>
+                                placeholder="Cite the relevant part of the privacy policy here...">{% if question.answer %}{{question.answer.citation}}{% endif %}</textarea>
                         </div>
                     </div>
                     <div class="column">
-                            <div class="field">
-                                <label class="label">Note</label>
-                                <textarea class="textarea" name="{{question.id}}-note"
+                        <div class="field">
+                            <label class="label">Note</label>
+                            <textarea class="textarea" name="{{question.id}}-note"
                                 placeholder="Anything special to add? This usually isn't necessary.">{% if question.answer %}{{question.answer.note}}{% endif %}</textarea>
-                            </div>
                         </div>
+                    </div>
                 </div>
             </div>
             <hr>

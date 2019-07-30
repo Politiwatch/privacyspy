@@ -1,0 +1,64 @@
+<nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="container">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="{% url 'index' %}">
+                <strong>PrivacySpy</strong>
+            </a>
+
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item">
+                    Home
+                </a>
+                <a class="navbar-item">
+                    Rankings
+                </a>
+                <a class="navbar-item">
+                    Extension
+                </a>
+            </div>
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    {% if user.is_authenticated %}
+                    <div class="dropdown is-hoverable">
+                        <div class="dropdown-trigger">
+                            <button class="button" aria-haspopup="true" aria-controls="dropdown-menu4">
+                                <span>{{user.username}}</span>
+                                <span class="icon is-small">
+                                    <i class="fas fa-angle-down" aria-hidden="true"></i>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+                            <div class="dropdown-content">
+                                <p class="dropdown-item">Hello, {{user.username}} ({{user.email}}).</p>
+                                {% if 'newuser' in user.username %}
+                                <hr class="dropdown-divider">
+                                <p class="dropdown-item">You currently have an auto-generated username. You can change it on the 'My Account' page.</p>
+                                {% endif %}
+                                <hr class="dropdown-divider">
+                                <a href="{% url 'account' %}" class="dropdown-item">My Account</a>
+                                <a href="{% url 'logout' %}" class="dropdown-item">Log Out</a>
+                            </div>
+                        </div>
+                    </div>
+                    {% else %}
+                    <div class="buttons">
+                        <a class="button is-primary" href="{% url 'login' %}">
+                            <strong>Sign Up or Log In</strong>
+                        </a>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>

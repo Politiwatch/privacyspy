@@ -1,4 +1,5 @@
 from colorsys import rgb_to_hls, hls_to_rgb
+from django.contrib.auth.models import User
 
 def adjust_color_lightness(r, g, b, factor):
     h, l, s = rgb_to_hls(r / 255.0, g / 255.0, b / 255.0)
@@ -14,3 +15,6 @@ def darken_color(r, g, b, factor=0.1):
 
 def to_hex_code(r, g, b):
     return "%02x%02x%02x" % (r, g, b)
+
+def username_exists(username):
+    return User.objects.filter(username=username).count() > 0

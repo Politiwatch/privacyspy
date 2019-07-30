@@ -1,0 +1,40 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+<h1 class="title">Your Account</h1>
+<div class="columns">
+    <div class="column is-4">
+        {% if message %}
+        <div class="notification is-success">
+            {{message}}
+        </div>
+        {% endif %}
+        {% if error %}
+        <div class="notification is-danger">
+            {{error}}
+        </div>
+        {% endif %}
+        <form method="POST">
+            {% csrf_token %}
+            <div class="field">
+                <label class="label">Username</label>
+                <div class="control">
+                    <input class="input" type="text" name="username" value="{{user.username}}">
+                </div>
+                <p class="help">Your username is public information.</p>
+            </div>
+            <div class="field">
+                <label class="label">Email</label>
+                <div class="control">
+                    <input class="input" type="text" value="{{user.email}}" disabled>
+                </div>
+                <p class="help">To change your email, please <a href="mailto:contact@privacyspy.org">contact us</a>.</p>
+            </div>
+            <button type="submit" class="button is-link">Update Information</button>
+        </form>
+        <hr>
+        <a href="{% url 'logout' %}" class="button is-warning">Log Out</a>
+        <a href="{% url 'delete_account' %}" class="button is-danger">Delete Account</a>
+    </div>
+</div>
+{% endblock %}

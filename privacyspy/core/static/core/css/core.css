@@ -153,3 +153,6 @@ body {
 .highlighted-text {
     padding: 1px 3px;
 }
+.pad {
+    margin-bottom: 0.5em;
+}

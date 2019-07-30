@@ -6,8 +6,8 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('product/<product_slug>/', views.product, name='product'),
     path('edit-policy/<policy_id>/', views.edit_policy, name='edit_policy'),
-    # path('login/', views._login, name='login'),
-    # path('register/', views.register, name='register'),
-    # path('reset/', views.reset, name='reset'),
-    # path('logout/', views._logout, name="logout"),
+    path('login/', views.login_user, name='login'),
+    path('account/', views.account, name="account"),
+    path('logout/', views.logout_user, name="logout"),
+    path("delete-account/", views.delete_account, name="delete_account")
 ]
