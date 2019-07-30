@@ -19,3 +19,22 @@
 .policy-column-stat heading {
     margin-bottom: 2px;
 }
+
+.selection-overview {
+    cursor: pointer;
+}
+
+.selection-expanded {
+    display: none;
+}
+
+@media(max-width: 767px) { /* <== You can change this break point as per your  needs */
+    .reverse-order-columns {
+      flex-direction: column-reverse;
+      display: flex;
+    }
+  }
+
+.policy-score {
+    font-size: 125% !important;
+}
