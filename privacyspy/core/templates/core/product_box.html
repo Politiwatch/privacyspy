@@ -7,12 +7,17 @@
                 </figure>
             </div>
             <div class="media-content">
-                <div class="content">
-                    <p>
-                        <strong>{{product.name}}</strong>
-                        <br>
-                        {{product.description}}
-                    </p>
+                <div class="content columns">
+                    <div class="column">
+                        <p>
+                            <strong>{{product.name}}</strong>
+                            <br>
+                            {{product.description}}
+                        </p>
+                    </div>
+                    <div class="column is-narrow">
+                        <h2 class="title is-size-2">{{product.current_policy.score|floatformat:"-1"}}</h2>
+                    </div>
                 </div>
             </div>
         </article>

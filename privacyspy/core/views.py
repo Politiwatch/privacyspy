@@ -157,5 +157,12 @@ def delete_account(request):
         return redirect('index')
     return render(request, 'core/delete_account.html', context={
         "title": "Delete Account",
-        "user": request.user
+        "user": request.user,
+    })
+
+def directory(request):
+    return render(request, 'core/directory.html', context={
+        "title": "Product Directory",
+        "user": request.user,
+        "products": Product.objects.all()
     })

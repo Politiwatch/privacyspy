@@ -9,5 +9,6 @@ urlpatterns = [
     path('login/', views.login_user, name='login'),
     path('account/', views.account, name="account"),
     path('logout/', views.logout_user, name="logout"),
-    path("delete-account/", views.delete_account, name="delete_account")
+    path("delete-account/", views.delete_account, name="delete_account"),
+    path("directory/", views.directory, name="directory")
 ]

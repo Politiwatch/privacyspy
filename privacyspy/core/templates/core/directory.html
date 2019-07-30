@@ -1,0 +1,20 @@
+{% extends 'core/base.html' %}
+
+{% load humanize %}
+
+{% block content %}
+<h1 class="title">Directory</h1>
+<p class="subtitle">Explore our directory of {{products|length|intcomma}} products' privacy policies.</p>
+
+<br><br><br>
+
+<div class="columns">
+    <div class="column is-4">
+        {% for product in products %}
+        {% include 'core/product_box.html' %}
+        <br>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}

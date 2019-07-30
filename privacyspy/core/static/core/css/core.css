@@ -34,6 +34,10 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
+.top-pad {
+    padding-top: 8px;
+}
+
 .highlights {
     padding: 10px;
     line-height: 180%;

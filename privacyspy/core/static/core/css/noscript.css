@@ -1,3 +1,3 @@
-.selection-expanded {
+.selection-expanded, #navMenu {
     display: visible !important;
 }
