@@ -12,7 +12,9 @@
         <li><a class="has-text-weight-medium" href="#policy-ratings">Ratings</a></li>
         <li><a class="has-text-weight-medium" href="#policy-revisions">Revisions</a></li>
         <li><a class="has-text-weight-medium" href="#policy-highlights">Highlights</a></li>
+        {% if user.is_superuser %}
         <li><a class="has-text-weight-medium" href="{% url 'edit_policy' policy.id %}">Edit</a></li>
+        {% endif %}
     </ul>
 </div>
 <br>
