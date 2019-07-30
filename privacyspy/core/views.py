@@ -86,6 +86,7 @@ def edit_policy(request, policy_id):
                 else:
                     if question.answer != None:
                         question.answer.delete()
+            policy.calculate_score()
             actions.append("Successfully updated ratings.")
 
     return render(request, 'core/edit_policy.html', context={
