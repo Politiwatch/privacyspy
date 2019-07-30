@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Product, PrivacyPolicy, RubricQuestion, RubricOption, RubricSelection, Edit, SuggestedAction, Profile
+from .models import Product, PrivacyPolicy, RubricQuestion, RubricOption, RubricSelection, Edit, SuggestedAction, Profile, LoginKey
 
 # Register your models here.
 admin.site.register(Product)
@@ -10,3 +10,4 @@ admin.site.register(RubricSelection)
 admin.site.register(Edit)
 admin.site.register(SuggestedAction)
 admin.site.register(Profile)
+admin.site.register(LoginKey)
