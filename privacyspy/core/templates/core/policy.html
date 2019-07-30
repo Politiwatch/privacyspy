@@ -15,12 +15,18 @@
         <li><a class="has-text-weight-medium" href="{% url 'edit_policy' policy.id %}">Edit</a></li>
     </ul>
 </div>
+<br>
 <div class="columns reverse-order-columns">
     <div class="column is-8">
-        <br>
         <div id="policy-ratings">
+            <h4 class="is-size-4 has-text-weight-light">Ratings</h4>
+            <hr>
             {% for selection in policy.rubric_selections %}
             {% include 'core/rubric_selection.html' %}
+            {% empty %}
+            <div class="notification">
+                No ratings have been established for this privacy policy. Try selecting a different revision or product.
+            </div>
             {% endfor %}
         </div>
         {% with policy.parse_highlights as highlights %}
@@ -32,47 +38,85 @@
         </div>
         {% endwith %}
     </div>
-    <div class="column is-offset-1" id="policy-overview">
-        <h3 class="is-size-1 has-text-weight-bold">
-            <span class="policy-score">
-                {% if policy.score > -1 %}
-                {{policy.score|floatformat:"-1"}}<span class="rating-total">/10</span>
-                {% else %}
-                Unrated
-                {% endif %}
-            </span>
-        </h3>
-        <div class="field is-grouped is-grouped-multiline">
-            <div class="control">
-                <div class="tags has-addons">
-                    <span class="tag is-dark">Flagged as Erroneous</span>
-                    {% if policy.out_of_date or policy.erroneous %}
-                    <span class="tag is-danger">Yes</span>
+    <div class="column is-offset-1">
+        <div id="policy-overview">
+            <h4 class="is-size-4 has-text-weight-light">Overview</h4>
+            <h3 class="is-size-1 has-text-weight-bold">
+                <span class="policy-score">
+                    {% if policy.score > -1 %}
+                    {{policy.score|floatformat:"-1"}}<span class="rating-total">/10</span>
                     {% else %}
-                    <span class="tag is-success">No</span>
+                    Unrated
                     {% endif %}
+                </span>
+            </h3>
+            <div class="field is-grouped is-grouped-multiline">
+                <div class="control">
+                    <div class="tags has-addons">
+                        <span class="tag is-dark">Flagged as Inaccurate</span>
+                        {% if policy.out_of_date or policy.erroneous %}
+                        <span class="tag is-danger">Yes</span>
+                        {% else %}
+                        <span class="tag is-success">No</span>
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="control">
+                    <div class="tags has-addons">
+                        <span class="tag is-dark">Revisions</span>
+                        <span class="tag is-info">{{policy.revisions|length}}</span>
+                    </div>
                 </div>
             </div>
-            <div class="control">
-                <div class="tags has-addons">
-                    <span class="tag is-dark">Revisions</span>
-                    <span class="tag is-info">{{policy.revisions|length}}</span>
-                </div>
+            <br>
+            <div class="policy-column-stat">
+                <div class="heading">Version Added</div>
+                <p>{{policy.added|naturalday|capfirst}}</p>
+            </div>
+            <div class="policy-column-stat">
+                <div class="heading">Ratings Updated</div>
+                <p>{{policy.updated|naturalday|capfirst}}</p>
+            </div>
+            <div class="policy-column-stat">
+                <div class="heading">Original Location</div>
+                <a class="button is-link is-small is-outlined" href="{{policy.original_url}}" target="_blank">Open in
+                    New
+                    Tab</a>
             </div>
         </div>
         <br>
-        <div class="policy-column-stat">
-            <div class="heading">Version Added</div>
-            <p>{{policy.added|naturalday|capfirst}}</p>
-        </div>
-        <div class="policy-column-stat">
-            <div class="heading">Ratings Updated</div>
-            <p>{{policy.updated|naturalday|capfirst}}</p>
-        </div>
-        <div class="policy-column-stat">
-            <div class="heading">Original Location</div>
-            <a class="button is-link is-small is-outlined" href="{{policy.original_url}}" target="_blank">Open in New
-                Tab</a>
+        <div id="policy-revisions">
+            <h4 class="is-size-4 has-text-weight-light pad">Revisions</h4>
+            <div class="dropdown is-hoverable">
+                <div class="dropdown-trigger">
+                    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu4">
+                        <span>Select Revision</span>
+                        <span class="icon is-small">
+                            <i class="fas fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                    </button>
+                </div>
+                <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+                    <div class="dropdown-content">
+                        <a href="{% url 'product' product_slug=policy.product.slug %}"
+                            class="dropdown-item {% if policy.product.current_policy == policy %}is-active{% endif %}">Latest</a>
+                        <hr class="dropdown-divider">
+                        {% with policy.product.revisions as revisions %}
+                        {% for revision in revisions %}
+                        <a href="{% url 'product' policy.product.slug %}?revision={{revision.id}}"
+                            class="dropdown-item {% if policy == revision %}is-active{% endif %}">{{revision.added|naturalday|capfirst}}</a>
+                        {% empty %}
+                        <p class="dropdown-item has-text-grey">PrivacySpy has no other revisions of this privacy policy
+                            in its database.</p>
+                        {% endfor %}
+                        {% if revisions %}
+                        <hr class="dropdown-divider">
+                        <p class="dropdown-item has-text-grey">Note that the times listed above are when the policy revision was added to PrivacySpy, not when it was originally published or last updated.</p>
+                        {% endif %}
+                        {% endwith %}
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

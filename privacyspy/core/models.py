@@ -20,6 +20,11 @@ class Product(models.Model):
             return None
         return policies[0]
 
+    @property
+    def revisions(self):
+        most_recent = self.current_policy
+        return [policy for policy in PrivacyPolicy.objects.filter(product=self, published=True).order_by("-added") if policy != most_recent]
+
     def __str__(self):
         return self.name
 
@@ -58,7 +63,7 @@ class PrivacyPolicy(models.Model):
 
     @property
     def revisions(self):
-        return PrivacyPolicy.objects.filter(product=self.product)
+        return PrivacyPolicy.objects.filter(product=self.product, published=True)
 
     def parse_highlights(self):
         if self.highlights_json.strip() == "":
