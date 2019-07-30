@@ -18,18 +18,31 @@
 <br>
 <div class="columns reverse-order-columns">
     <div class="column is-8">
+        {% if policy.product.current_policy != policy %}
+        <div class="notification is-warning">
+            You are viewing an archived version of this product's privacy policy, created
+            {{policy.updated|naturalday}}. To view the most recent version, <a
+                href="{% url 'product' product_slug=policy.product.slug %}">click here</a>.
+        </div>
+        {% endif %}
         <div id="policy-ratings">
             <h4 class="is-size-4 has-text-weight-light">Ratings</h4>
+            {% with policy.rubric_selections as rubric_selections %}
+            {% if rubric_selections|length != 0 %}
             <hr>
-            {% for selection in policy.rubric_selections %}
+            {% endif %}
+            {% for selection in rubric_selections %}
             {% include 'core/rubric_selection.html' %}
             {% empty %}
+            <br>
             <div class="notification">
                 No ratings have been established for this privacy policy. Try selecting a different revision or product.
             </div>
             {% endfor %}
+            {% endwith %}
         </div>
         {% with policy.parse_highlights as highlights %}
+        <br>
         <br>
         <h4 class="is-size-4 has-text-weight-light">Highlighted Privacy Policy</h4>
         <br>
@@ -111,7 +124,8 @@
                         {% endfor %}
                         {% if revisions %}
                         <hr class="dropdown-divider">
-                        <p class="dropdown-item has-text-grey">Note that the times listed above are when the policy revision was added to PrivacySpy, not when it was originally published or last updated.</p>
+                        <p class="dropdown-item has-text-grey">Note that the times listed above are when the policy
+                            revision was added to PrivacySpy, not when it was originally published or last updated.</p>
                         {% endif %}
                         {% endwith %}
                     </div>
