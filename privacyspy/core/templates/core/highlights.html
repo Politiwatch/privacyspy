@@ -4,7 +4,6 @@
 </div>
 {% else %}
 <div class="highlights">
-<h3 class="title is-size-4">Highlighted Privacy Policy</h3>
 {% for sentence in highlights %}
 <span style="background-color: {{sentence.color}}">{{sentence.sentence|safe}}</span>
 {% endfor %}
