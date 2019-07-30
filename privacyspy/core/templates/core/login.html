@@ -1,2 +1,31 @@
+{% extends 'core/base.html' %}
+
 {% block content %}
+<div class="columns">
+    <div class="column is-4">
+        <h3 class="title is-size-3">Log In or Sign Up</h3>
+        {% if error %}
+        <div class="notification is-danger">{{error}}</div>
+        {% endif %}
+        {% if message %}
+        <div class="notification is-success">{{message}}</div>
+        {% endif %}
+        <p>PrivacySpy uses passwordless authentication. Regardless of whether you already have an account, enter your
+            email address below and we'll send you a link to login.</p>
+        <br>
+        <form method="POST">
+            {% csrf_token %}
+            <div class="field">
+                <label class="label">Email</label>
+                <div class="control has-icons-left">
+                    <input class="input" name="email" type="email" placeholder="Your email...">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-envelope"></i>
+                    </span>
+                </div>
+            </div>
+            <button type="submit" class="button is-primary">Let's Go</button>
+        </form>
+    </div>
+</div>
 {% endblock %}

@@ -1,12 +1,16 @@
-from django.shortcuts import render, get_object_or_404
-from .models import Product, PrivacyPolicy, RubricQuestion, RubricSelection, RubricOption
+from django.shortcuts import render, get_object_or_404, redirect
+from .models import Product, PrivacyPolicy, RubricQuestion, RubricSelection, RubricOption, LoginKey
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.decorators import user_passes_test
+from django.contrib.auth import logout
+import re
+from .util import username_exists
 
 def index(request):
     return render(request, 'core/index.html', context={
         "title": "Making online privacy (slightly) simpler",
-        "products": Product.objects.all()
+        "products": Product.objects.all(),
+        "user": request.user
     })
 
 def product(request, product_slug):
@@ -19,7 +23,8 @@ def product(request, product_slug):
     return render(request, 'core/product.html', context={
         "product": product,
         "title": product.name + " Privacy Policy",
-        "policy": policy
+        "policy": policy,
+        "user": request.user
     })
 
 @user_passes_test(lambda u: u.is_superuser)
@@ -71,5 +76,65 @@ def edit_policy(request, policy_id):
         "policy": policy,
         "title": "Editing Privacy Policy",
         "actions": actions,
-        "rubric_questions": policy.questions_with_selections()
+        "rubric_questions": policy.questions_with_selections(),
+        "user": request.user
+    })
+
+def login_user(request):
+    error = None
+    message = None
+    if request.user.is_authenticated:
+        return redirect('index')
+    if LoginKey.log_in_via_token(request):
+        return redirect('index')
+    if request.method == "POST":
+        email = request.POST.get("email", "")
+        if re.fullmatch(r"[^@]+@[^@]+\.[^@]+", email):
+            LoginKey.go_for_email(email)
+            message = "A login link has been sent to the email address you provided. Check your inbox."
+        else:
+            error = "Please enter a valid email address!"
+    return render(request, 'core/login.html', context={
+        "error": error,
+        "message": message,
+        "title": "Log In or Sign Up",
+        "user": request.user
+    })
+
+def account(request):
+    error = None
+    message = None
+    if request.method == "POST":
+        new_username = request.POST.get("username", None)
+        if new_username != None and new_username != request.user.username:
+            if len(new_username) > 24:
+                error = "Your username must be shorter than 24 characters."
+            elif not new_username.isalnum():
+                error = "Your username must be alphanumeric."
+            else:
+                if username_exists(new_username):
+                    error = "That username already exists. Please choose a different one."
+                else:
+                    request.user.username = new_username
+                    request.user.save()
+                    message = "Your account information was successfully updated."
+    return render(request, 'core/manage_account.html', context={
+        "user": request.user,
+        "title": "My Account",
+        "error": error,
+        "message": message
+    })
+
+def logout_user(request):
+    logout(request)
+    return redirect('index')
+
+@login_required
+def delete_account(request):
+    if request.method == "POST":
+        request.user.delete()
+        return redirect('index')
+    return render(request, 'core/delete_account.html', context={
+        "title": "Delete Account",
+        "user": request.user
     })
