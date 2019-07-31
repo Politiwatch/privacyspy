@@ -3,22 +3,16 @@
         <article class="media">
             <div class="media-left">
                 <figure class="image is-64x64">
-                    <img src="{{product.icon}}" alt="Icon for {{product.name}}">
+                    <img src="{{product.icon}}" class="is-rounded" alt="Icon for {{product.name}}">
                 </figure>
             </div>
             <div class="media-content">
-                <div class="content columns">
-                    <div class="column">
-                        <p>
-                            <strong>{{product.name}}</strong>
-                            <br>
-                            {{product.description}}
-                        </p>
-                    </div>
-                    <div class="column is-narrow">
-                        <h2 class="title is-size-2">{{product.current_policy.score|floatformat:"-1"}}</h2>
-                    </div>
-                </div>
+                <p>
+                    <strong>{{product.name}}</strong>&nbsp;<span class="product-box-rating has-text-grey">
+                        {% if product.current_policy.score > -1 %}{{product.current_policy.score|floatformat:"-1"}}/10{% else %}Unrated{% endif %}</span>
+                    <br>
+                    {{product.description}}
+                </p>
             </div>
         </article>
     </div>
