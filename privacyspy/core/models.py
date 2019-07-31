@@ -12,12 +12,19 @@ from django.utils import timezone
 from django.contrib.auth.models import User
 from django.contrib.auth import login
 from .email import send_email
+from urllib.parse import urlparse
 
 
 class Product(models.Model):
+    def __extract_hostname_from_policy__(self):
+        if self.current_policy == None:
+            return None
+        return urlparse(self.current_policy.original_url).hostname.lower()
+
     name = models.TextField()
     slug = models.TextField(unique=True)
     icon = models.TextField(blank=True, default="")
+    hostname = models.TextField(default="UNSET")
     description = models.TextField()
 
     @property
