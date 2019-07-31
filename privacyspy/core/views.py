@@ -164,5 +164,6 @@ def directory(request):
     return render(request, 'core/directory.html', context={
         "title": "Product Directory",
         "user": request.user,
-        "products": Product.objects.all()
+        "products": Product.objects.all(),
+        "num_policies": PrivacyPolicy.objects.filter(published=True).count()
     })
