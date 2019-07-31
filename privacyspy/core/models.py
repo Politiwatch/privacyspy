@@ -63,6 +63,12 @@ class PrivacyPolicy(models.Model):
             selections.append(question)
         return selections
 
+    def suggestions(self, only_open=True):
+        if only_open:
+            return Suggestion.objects.filter(policy=self, status="O")
+        else:
+            return Suggestion.objects.filter(policy=self)
+
     @property
     def score(self):
         if self.cached_score != None:
@@ -158,14 +164,16 @@ class RubricSelection(models.Model):
     updated = models.DateTimeField(auto_now=True)
 
 
-class Edit(models.Model):
-    user = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
-    description = models.TextField()
-
-
-class SuggestedAction(models.Model):
-    edit = models.ForeignKey(Edit, on_delete=models.CASCADE)
-    eval_action = models.TextField()
+class Suggestion(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    history = models.TextField(blank=True)
+    policy = models.ForeignKey(PrivacyPolicy, on_delete=models.CASCADE)
+    rubric_selection = models.ForeignKey(RubricSelection, on_delete=models.CASCADE, null=True, blank=True)
+    text = models.TextField()
+    status = models.CharField(max_length=1, default="O") # 'O' -> open, 'D' -> declined, 'R' -> resolved (& implemented) 
+    comment = models.TextField(blank=True)
+    created = models.DateTimeField(auto_now_add=True)
+    updated = models.DateTimeField(auto_now=True)
 
 
 class Profile(models.Model):
