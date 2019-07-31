@@ -68,7 +68,9 @@ def edit_policy(request, policy_id):
             for question in policy.questions_with_selections():
                 option_str = request.POST.get(
                     str(question.id) + '-selection', "None")
-                if option_str != "None":
+                if option_str == "None":
+                    continue
+                if option_str != "unset":
                     option = get_object_or_404(
                         RubricOption, id=int(option_str))
                     citation = request.POST.get(
