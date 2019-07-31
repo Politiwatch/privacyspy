@@ -1,7 +1,17 @@
 {% extends 'core/base.html' %}
 
 {% block content %}
-<h1 class='title has-text-centered'>Revealing what privacy policies do.</h1>
+<div class="columns">
+    <div class="column is-5">
+        <h1 class='title massive'>We monitor privacy policies.</h1>
+        <a class="button is-primary is-medium is-outlined" href="{% url 'directory' %}">
+            Explore the Directory
+        </a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="button is-link is-medium is-outlined">
+            Install the Extension
+        </a>
+    </div>
+</div>
 <br>
 <div class="tile is-ancestor">
     <div class="tile is-parent is-vertical is-3">
@@ -48,13 +58,7 @@
 </div>
 <br>
 <div class="has-text-centered">
-    <button class="button is-primary is-large">
-        Explore the Database
-    </button>
-    
-    <button class="button is-success is-large">
-        Install the Extension
-    </button>
+
 </div>
 <br>
 <div class="privacyspy-footer">
