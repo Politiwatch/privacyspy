@@ -7,7 +7,6 @@
 {% else %}
 <div class="tabs">
     <ul>
-        <li class="tab-helper">Jump to:</li>
         <li class="has-text-weight-medium"><a href="#policy-overview">Overview</a></li>
         <li><a class="has-text-weight-medium" href="#policy-ratings">Ratings</a></li>
         <li><a class="has-text-weight-medium" href="#policy-revisions">Revisions</a></li>
@@ -53,7 +52,7 @@
         </div>
         {% endwith %}
     </div>
-    <div class="column is-offset-1">
+    <div class="column is-2 is-offset-1">
         <div id="policy-overview">
             <h4 class="is-size-4 has-text-weight-light">Overview</h4>
             <h3 class="is-size-1 has-text-weight-bold">
@@ -68,7 +67,7 @@
             <div class="field is-grouped is-grouped-multiline">
                 <div class="control">
                     <div class="tags has-addons">
-                        <span class="tag is-dark">Flagged as Inaccurate</span>
+                        <span class="tag is-light">Flagged as Inaccurate</span>
                         {% if policy.out_of_date or policy.erroneous %}
                         <span class="tag is-danger">Yes</span>
                         {% else %}
@@ -78,7 +77,7 @@
                 </div>
                 <div class="control">
                     <div class="tags has-addons">
-                        <span class="tag is-dark">Revisions</span>
+                        <span class="tag is-light">Revisions</span>
                         <span class="tag is-info">{{policy.revisions|length}}</span>
                     </div>
                 </div>
