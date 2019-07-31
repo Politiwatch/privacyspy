@@ -3,5 +3,5 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('mirror/', views.mirror, name="mirror"),
+    path('retrieve_by_url/', views.retrieve_by_url, name="retrieve_by_url"),
 ]
