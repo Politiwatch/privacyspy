@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404, redirect
-from .models import Product, PrivacyPolicy, RubricQuestion, RubricSelection, RubricOption, LoginKey
+from .models import Product, PrivacyPolicy, RubricQuestion, RubricSelection, Suggestion, RubricOption, LoginKey
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.decorators import user_passes_test
 from django.contrib.auth import logout
@@ -141,6 +141,7 @@ def account(request):
                     message = "Your account information was successfully updated."
     return render(request, 'core/manage_account.html', context={
         "user": request.user,
+        "request": request,
         "title": "My Account",
         "error": error,
         "message": message
@@ -160,12 +161,74 @@ def delete_account(request):
     return render(request, 'core/delete_account.html', context={
         "title": "Delete Account",
         "user": request.user,
+        "request": request,
     })
+
 
 def directory(request):
     return render(request, 'core/directory.html', context={
         "title": "Product Directory",
         "user": request.user,
+        "request": request,
         "products": Product.objects.all(),
         "num_policies": PrivacyPolicy.objects.filter(published=True).count()
     })
+
+@login_required
+def suggestions(request):
+    if request.method == "POST":
+        suggestion_id = request.POST.get("id", None)
+        if suggestion_id != None:
+            suggestion = get_object_or_404(Suggestion, id=suggestion_id)
+            text = request.POST.get("text", None)
+            comment = request.POST.get("comment", None)
+            status = request.POST.get("status", None)
+            if text != None and request.user == suggestion.user:
+                suggestion.text = text
+            if comment != None and request.user.is_superuser:
+                suggestion.comment = comment
+            if status != None and request.user.is_superuser and status in ['O', 'D', 'R']:
+                suggestion.status = status
+            suggestion.save()
+    if request.GET.get("next", None) != None:
+        return redirect(request.GET.get("next"))
+    
+    return render(request, "core/suggestions.html", context={
+        "suggestions": Suggestion.user_suggestions(request.user),
+        "user": request.user,
+        "request": request,
+        "submitted": request.GET.get("submitted", "False") == "True",
+        "all_suggestions": Suggestion.all_open_suggestions() if request.user.is_superuser else [] 
+    })
+
+@login_required
+def create_suggestion(request):
+    error = None
+    if request.method == "POST":
+        text = request.POST.get("text", None)
+        policy_id = request.POST.get("policy", None)
+        rubric_selection_id = request.POST.get("rubric_selection", None)
+        if len(text.strip()) != 0:
+            policy = get_object_or_404(PrivacyPolicy, id=int(policy_id)) if policy_id != None else None
+            rubric_selection = get_object_or_404(RubricSelection, id=int(rubric_selection_id)) if rubric_selection_id != None else None
+            Suggestion.objects.create(user=request.user, policy=policy, rubric_selection=rubric_selection, text=text)
+            return redirect("/suggestions/?submitted=True")
+        else:
+            error = "You submitted an empty message!"
+    else:
+        policy_id = request.GET.get("policy", None)
+        rubric_selection_id = request.GET.get("selection", None)
+        policy = None
+        rubric_selection = None
+        if policy_id != None:
+            policy = get_object_or_404(PrivacyPolicy, id=int(policy_id))
+        if rubric_selection_id != None:
+            rubric_selection = get_object_or_404(RubricSelection, id=int(rubric_selection_id))
+        return render(request, "core/create_suggestion.html", context={
+            "user": request.user,
+            "request": request,
+            "error": None,
+            "policy": policy,
+            "rubric_selection": rubric_selection,
+            "text": request.GET.get("text", None)
+        })

@@ -10,5 +10,7 @@ urlpatterns = [
     path('account/', views.account, name="account"),
     path('logout/', views.logout_user, name="logout"),
     path("delete-account/", views.delete_account, name="delete_account"),
-    path("directory/", views.directory, name="directory")
+    path("directory/", views.directory, name="directory"),
+    path("suggestions/", views.suggestions, name="suggestions"),
+    path("create-suggestion/", views.create_suggestion, name="create_suggestion"),
 ]

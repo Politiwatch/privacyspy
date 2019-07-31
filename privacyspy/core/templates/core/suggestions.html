@@ -1,0 +1,23 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+<h1 class="title massive">Suggestions</h1>
+<p class="subtitle">See all your contributions in one place.</p>
+{% if submitted %}
+<div class="notification is-success">
+Thank you for your submission! You can see its status and edit it below. A staff member will address it shortly.
+</div>
+{% endif %}
+{% for suggestion in suggestions %}
+{% include 'core/suggestion.html' %}
+{% empty %}
+<div class="notification">You don't currently have any suggestions to see.</div>
+{% endfor %}
+
+{% if user.is_superuser %}
+<h3 class="title is-size-3">Suggestion Queue</h3>
+{% for suggestion in all_suggestions %}
+{% include 'core/suggestion.html' %}
+{% endfor %}
+{% endif %}
+{% endblock %}

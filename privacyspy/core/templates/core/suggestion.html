@@ -1,0 +1,84 @@
+{% load humanize %}
+
+<div class="box" id="suggestion-{{suggestion.id}}">
+    <form method="POST"
+        action="{% url 'suggestions' %}?next={{request.build_absolute_uri|urlencode:''}}#suggestion-{{suggestion.id}}">
+        {% csrf_token %}
+        <input type="hidden" name="id" value="{{suggestion.id}}">
+        <div class="columns">
+            <div class="column">
+                <p>Suggestion by <strong>{{suggestion.user.username}}</strong>
+                    {% if suggestion.policy %}
+                    for <strong><a
+                            href="{% url 'product' product_slug=suggestion.policy.product.slug %}">{{suggestion.policy.product.name}}</a></strong>
+                {% endif %}
+                {% if suggestion.rubric_selection %}
+                ({{suggestion.rubric_selection.option.question.text}})
+                {% endif %}
+                </p>
+            </div>
+            <div class="column is-narrow">
+                <div class="field is-grouped is-grouped-multiline">
+                    <div class="control">
+                        <div class="tags has-addons">
+                            <span class="tag is-light">Created</span>
+                            <span class="tag is-info">{{suggestion.created|naturalday|capfirst}}</span>
+                        </div>
+                    </div>
+                    <div class="control">
+                        <div class="tags has-addons">
+                            <span class="tag is-light">Updated</span>
+                            <span class="tag is-info">{{suggestion.updated|naturalday|capfirst}}</span>
+                        </div>
+                    </div>
+                    <div class="control">
+                        <div class="tags has-addons">
+                            <span class="tag is-light">Status</span>
+                            {% if suggestion.status == "O" %}
+                            <span class="tag is-primary">Open</span>
+                            {% elif suggestion.status == "D" %}
+                            <span class="tag is-danger">Declined</span>
+                            {% elif suggestion.status == "R" %}
+                            <span class="tag is-success">Resolved</span>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column">
+                <p class="heading">Suggestion</p>
+                <textarea class="textarea" name="text"
+                    {% if user != suggestion.user %}disabled{% endif %}>{{suggestion.text}}</textarea>
+            </div>
+            <div class="column">
+                <p class="heading">Response</p>
+                <textarea class="textarea" name="comment" {% if not user.is_superuser %}disabled{% endif %}
+                    placeholder="There is not currently any response to this suggestion.">{{suggestion.comment}}</textarea>
+            </div>
+        </div>
+        {% if user.is_superuser %}
+        <div class="select">
+            <select>
+                <option value="O" {% if suggestion.status == "O" %}selected{% endif %}>Open</option>
+                <option value="D" {% if suggestion.status == "D" %}selected{% endif %}>Declined</option>
+                <option value="R" {% if suggestion.status == "R" %}selected{% endif %}>Resolved</option>
+            </select>
+        </div>
+        {% endif %}
+        <button type="submit" class="button is-link">Save</button>
+        {% if user.is_superuser %}
+        {% if suggestion.rubric_selection != None %}
+        <a class="button is-link is-outlined"
+            href="{% url 'edit_policy' policy_id=suggestion.policy.id %}#question-id-{{suggestion.rubric_selection.option.question.id}}">Open
+            Question Editor</a>
+        {% endif %}
+        {% if suggestion.policy != None %}
+        <a class="button is-link is-outlined"
+            href="{% url 'edit_policy' policy_id=suggestion.policy.id %}">Open
+            Policy Editor</a>
+        {% endif %}
+        {% endif %}
+    </form>
+</div>
