@@ -19,9 +19,9 @@
     <ul>
         <li class="tab-helper">Jump to:</li>
         <li class="has-text-weight-medium"><a href="#edit-policy-overview">Metadata</a></li>
-        <li><a class="has-text-weight-medium" href="#edit-policy-ratings">Highlights</a></li>
+        <li><a class="has-text-weight-medium" href="#edit-policy-highlights">Highlights</a></li>
         <li><a class="has-text-weight-medium" href="#edit-policy-ratings">Ratings</a></li>
-        <li><a class="has-text-weight-medium" href="#edit-policy-revisions">Suggestions</a></li>
+        <li><a class="has-text-weight-medium" href="#edit-policy-suggestions">Suggestions</a></li>
         <li><a class="has-text-weight-medium" href="/admin/core/privacypolicy/{{policy.id}}/change/">Admin Panel</a>
         </li>
         <li><a class="has-text-weight-medium"
@@ -186,13 +186,14 @@
             <div class="control">
                 <div class="tags has-addons">
                     <span class="tag is-light">Answered</span>
-                    <span class="tag is-primary">{{policy.rubric_selections|length}}/{{policy.questions_with_selections|length}}</span>
+                    <span
+                        class="tag is-primary">{{policy.rubric_selections|length}}/{{policy.questions_with_selections|length}}</span>
                 </div>
             </div>
             <div class="control">
                 <div class="tags has-addons">
                     <span class="tag is-light">Score</span>
-                    <span class="tag is-primary">{{policy.score}}</span>
+                    <span class="tag is-primary">{{policy.score|floatformat:"-1"}}</span>
                 </div>
             </div>
         </div>
@@ -203,53 +204,30 @@
             <input type="hidden" name="section" value="ratings">
             {% csrf_token %}
             {% for question in rubric_questions %}
-            <div class="rubric-selection-editor">
-                <h3 class="title is-size-4">{{question.text}} {% if question.answer == None %}<span
-                        class="tag is-warning is-medium">Unanswered</span>{% endif %} <span
-                        class="tag is-light is-medium">{{question.max_value}}</span></h3>
-                {% if question.description %}
-                <p class="subtitle">{{question.description}}</p>
-                {% endif %}
-                <div class="columns">
-                    <div class="column is-4">
-                        <div class="field">
-                            <label class="label">Selection</label>
-                            <div class="select">
-                                <select name="{{question.id}}-selection">
-                                    <option value="None" {% if question.answer == None %}selected{% endif %}>Unset (will
-                                        clear entry)
-                                    </option>
-                                    {% for option in question.options %}
-                                    <option value="{{option.id}}"
-                                        {% if question.answer.option == option %}selected{% endif %}>
-                                        {{option.text}} {% if option.description %}({{option.description}}){% endif %}
-                                        [{{option.value}}]</option>
-                                    {% endfor %}
-                                </select>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="column">
-                        <div class="field">
-                            <label class="label">Citation</label>
-                            <textarea class="textarea" name="{{question.id}}-citation"
-                                placeholder="Cite the relevant part of the privacy policy here...">{% if question.answer %}{{question.answer.citation}}{% endif %}</textarea>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="field">
-                            <label class="label">Note</label>
-                            <textarea class="textarea" name="{{question.id}}-note"
-                                placeholder="Anything special to add? This usually isn't necessary.">{% if question.answer %}{{question.answer.note}}{% endif %}</textarea>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            {% include 'core/edit_rubric_selection.html' %}
             <hr>
             {% endfor %}
             <button type="submit" class="button is-link">Save Ratings</button>
         </form>
+    </div>
+</div>
+<div class="columns" id="edit-policy-ratings">
+    <div class="column is-2">
+        <h1 class="is-size-3 has-text-weight-light">Suggestions</h1>
+        <div class="field is-grouped is-grouped-multiline">
+            <div class="control">
+                <div class="tags has-addons">
+                    <span class="tag is-light">Open Suggestions</span>
+                    <span class="tag is-primary">{{policy.suggestions|length}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="column">
+        <hr>
+        {% for suggestion in policy.suggestions %}
+        {% include 'core/suggestion.html' %}
+        {% endfor %}
     </div>
 </div>
 {% endblock %}
