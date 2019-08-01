@@ -1,13 +1,13 @@
 {% extends 'core/base.html' %}
 
 {% block content %}
-<h1 class="title massive">Submit Suggestion</h1>
+<h1 class="title massive">Submit a Suggestion</h1>
 <p class="subtitle">Use this page to submit a suggestion or correction. Thanks!</p>
-{% if error %}
-<div class="notification is-danger">{{error}}</div>
-{% endif %}
 <div class="columns">
     <div class="column is-6">
+        {% if error %}
+        <div class="notification is-danger">{{error}}</div>
+        {% endif %}
         <form method="POST">
             {% csrf_token %}
             <div class="field">
@@ -18,27 +18,20 @@
                 </div>
             </div>
             {% if policy %}
+            <input type="hidden" name="policy" value="{{policy.id}}">
             <div class="field">
                 <label class="label">Policy</label>
                 <div class="control">
-                    <div class="select">
-                        <select name="policy" disabled>
-                            <option value="{{policy.id}}" selected>{{policy.product.name}}</option>
-                        </select>
-                    </div>
+                    <input type="text" class="input" value="{{policy.product.name}}" disabled>
                 </div>
             </div>
             {% endif %}
             {% if rubric_selection %}
+            <input type="hidden" name="rubric-selection" value="{{rubric_selection.id}}">
             <div class="field">
                 <label class="label">Rubric Question</label>
                 <div class="control">
-                    <div class="select">
-                        <select name="rubric_selection" disabled>
-                            <option value="{{rubric_selection.id}}" selected>{{rubric_selection.option.question.text}}
-                            </option>
-                        </select>
-                    </div>
+                    <input type="text" class="input" value="{{rubric_selection.option.question.text}}" disabled>
                 </div>
             </div>
             {% endif %}

@@ -43,6 +43,7 @@
                                 {% endif %}
                                 <hr class="dropdown-divider">
                                 <a href="{% url 'account' %}" class="dropdown-item">My Account</a>
+                                <a href="{% url 'suggestions' %}" class="dropdown-item">My Suggestions</a>
                                 <a href="{% url 'logout' %}" class="dropdown-item">Log Out</a>
                             </div>
                         </div>
@@ -50,7 +51,10 @@
                     {% else %}
                     <div class="buttons">
                         <a class="button is-primary" href="{% url 'login' %}">
-                            <strong>Sign Up or Log In</strong>
+                            <strong>Sign Up</strong>
+                        </a>
+                        <a class="button is-light" href="{% url 'login' %}">
+                            <strong>Log In</strong>
                         </a>
                     </div>
                     {% endif %}

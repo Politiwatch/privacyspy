@@ -180,22 +180,25 @@ def suggestions(request):
         suggestion_id = request.POST.get("id", None)
         if suggestion_id != None:
             suggestion = get_object_or_404(Suggestion, id=suggestion_id)
-            text = request.POST.get("text", None)
-            comment = request.POST.get("comment", None)
-            status = request.POST.get("status", None)
-            if text != None and request.user == suggestion.user:
-                suggestion.text = text
-            if comment != None and request.user.is_superuser:
-                suggestion.comment = comment
-            if status != None and request.user.is_superuser and status in ['O', 'D', 'R']:
-                suggestion.status = status
-            suggestion.save()
+            if suggestion.status == "O" or request.user.is_superuser:
+                text = request.POST.get("text", None)
+                comment = request.POST.get("comment", None)
+                status = request.POST.get("status", None)
+                if text != None and len(text.strip()) != 0 and request.user == suggestion.user:
+                    suggestion.text = text
+                if comment != None and request.user.is_superuser:
+                    suggestion.comment = comment
+                if status != None and request.user.is_superuser and status in ['O', 'D', 'R']:
+                    suggestion.status = status
+                suggestion.save()
     if request.GET.get("next", None) != None:
         return redirect(request.GET.get("next"))
     
     return render(request, "core/suggestions.html", context={
-        "suggestions": Suggestion.user_suggestions(request.user),
+        "open_suggestions": Suggestion.user_open_suggestions(request.user),
+        "closed_suggestions": Suggestion.user_closed_suggestions(request.user),
         "user": request.user,
+        "title": "Suggestions",
         "request": request,
         "submitted": request.GET.get("submitted", "False") == "True",
         "all_suggestions": Suggestion.all_open_suggestions() if request.user.is_superuser else [] 
@@ -205,9 +208,10 @@ def suggestions(request):
 def create_suggestion(request):
     error = None
     if request.method == "POST":
+        print(request.POST)
         text = request.POST.get("text", None)
         policy_id = request.POST.get("policy", None)
-        rubric_selection_id = request.POST.get("rubric_selection", None)
+        rubric_selection_id = request.POST.get("rubric-selection", None)
         if len(text.strip()) != 0:
             policy = get_object_or_404(PrivacyPolicy, id=int(policy_id)) if policy_id != None else None
             rubric_selection = get_object_or_404(RubricSelection, id=int(rubric_selection_id)) if rubric_selection_id != None else None
@@ -215,20 +219,20 @@ def create_suggestion(request):
             return redirect("/suggestions/?submitted=True")
         else:
             error = "You submitted an empty message!"
-    else:
-        policy_id = request.GET.get("policy", None)
-        rubric_selection_id = request.GET.get("selection", None)
-        policy = None
-        rubric_selection = None
-        if policy_id != None:
-            policy = get_object_or_404(PrivacyPolicy, id=int(policy_id))
-        if rubric_selection_id != None:
-            rubric_selection = get_object_or_404(RubricSelection, id=int(rubric_selection_id))
-        return render(request, "core/create_suggestion.html", context={
-            "user": request.user,
-            "request": request,
-            "error": None,
-            "policy": policy,
-            "rubric_selection": rubric_selection,
-            "text": request.GET.get("text", None)
-        })
+    policy_id = request.GET.get("policy", None)
+    rubric_selection_id = request.GET.get("selection", None)
+    policy = None
+    rubric_selection = None
+    if policy_id != None:
+        policy = get_object_or_404(PrivacyPolicy, id=int(policy_id))
+    if rubric_selection_id != None:
+        rubric_selection = get_object_or_404(RubricSelection, id=int(rubric_selection_id))
+    return render(request, "core/create_suggestion.html", context={
+        "user": request.user,
+        "request": request,
+        "error": error,
+        "policy": policy,
+        "rubric_selection": rubric_selection,
+        "text": request.GET.get("text", None),
+        "title": "Submit a Suggestion"
+    })

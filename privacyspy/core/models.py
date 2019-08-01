@@ -173,7 +173,7 @@ class RubricSelection(models.Model):
 
 class Suggestion(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    policy = models.ForeignKey(PrivacyPolicy, on_delete=models.CASCADE)
+    policy = models.ForeignKey(PrivacyPolicy, on_delete=models.CASCADE, null=True, blank=True)
     rubric_selection = models.ForeignKey(RubricSelection, on_delete=models.CASCADE, null=True, blank=True)
     text = models.TextField()
     status = models.CharField(max_length=1, default="O") # 'O' -> open, 'D' -> declined, 'R' -> resolved (& implemented) 
@@ -182,8 +182,12 @@ class Suggestion(models.Model):
     updated = models.DateTimeField(auto_now=True)
 
     @staticmethod
-    def user_suggestions(user):
-        return Suggestion.objects.filter(user=user).order_by("status")
+    def user_open_suggestions(user):
+        return Suggestion.objects.filter(user=user, status="O").order_by("-updated")
+
+    @staticmethod
+    def user_closed_suggestions(user):
+        return Suggestion.objects.filter(user=user).exclude(status="O").order_by("-updated")
 
     @staticmethod
     def all_open_suggestions():

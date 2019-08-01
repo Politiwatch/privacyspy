@@ -2,7 +2,9 @@
 
 {% if policy == None %}
 <div class="notification is-danger">
-    Our database does not contain a privacy policy for this product.
+    {% with "Add a policy for " as policy_message %}
+    Our database does not contain a privacy policy for this product. <a href="{% url 'create_suggestion' %}?text={{policy_message|urlencode}}{{product.name|urlencode}}">Click here</a> to suggest we add one. <i>(Note: only registered users can suggest changes.)</i>
+    {% endwith %}
 </div>
 {% else %}
 <div class="tabs">
@@ -11,6 +13,7 @@
         <li><a class="has-text-weight-medium" href="#policy-ratings">Ratings</a></li>
         <li><a class="has-text-weight-medium" href="#policy-revisions">Revisions</a></li>
         <li><a class="has-text-weight-medium" href="#policy-highlights">Highlights</a></li>
+        <li><a class="has-text-weight-medium" href="{% url 'create_suggestion' %}?policy={{policy.id}}">Suggest Edit</a></li>
         {% if user.is_superuser %}
         <li><a class="has-text-weight-medium" href="{% url 'edit_policy' policy.id %}">Edit</a></li>
         {% endif %}

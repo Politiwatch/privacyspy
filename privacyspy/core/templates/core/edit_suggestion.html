@@ -50,7 +50,7 @@
             <div class="column">
                 <p class="heading">Suggestion</p>
                 <textarea class="textarea" name="text"
-                    {% if user != suggestion.user %}disabled{% endif %}>{{suggestion.text}}</textarea>
+                    {% if user != suggestion.user or suggestion.status != "O" %}disabled{% endif %}>{{suggestion.text}}</textarea>
             </div>
             <div class="column">
                 <p class="heading">Response</p>
@@ -60,14 +60,16 @@
         </div>
         {% if user.is_superuser %}
         <div class="select">
-            <select>
+            <select name="status">
                 <option value="O" {% if suggestion.status == "O" %}selected{% endif %}>Open</option>
                 <option value="D" {% if suggestion.status == "D" %}selected{% endif %}>Declined</option>
                 <option value="R" {% if suggestion.status == "R" %}selected{% endif %}>Resolved</option>
             </select>
         </div>
         {% endif %}
+        {% if user.is_superuser or suggestion.status == "O" %}
         <button type="submit" class="button is-link">Save</button>
+        {% endif %}
         {% if user.is_superuser %}
         {% if suggestion.rubric_selection != None %}
         <a class="button is-link is-outlined"
