@@ -30,6 +30,21 @@
     }
 }
 
+.is-collapsed {
+    max-height: 64em;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.is-margined {
+    margin: 10px;
+}
+
+.is-upped {
+    top: -5px;
+    position: relative;
+}
+
 body {
     font-family: 'Inter', sans-serif;
 }
@@ -61,7 +76,6 @@ body {
 }
 
 .rating-total {
-    color: gray !important;
     font-weight: normal;
 }
 
@@ -102,6 +116,12 @@ body {
     background-color: rgba(0, 0, 0, 0.05);
     animation: loadingblink infinite ease-in-out 1s;
     -webkit-animation: loadingblink 1s ease-in-out infinite
+}
+
+.is-selected {
+    border: 1.5px solid gray !important;
+    border-radius: 6px;
+    padding: 6px;
 }
 
 .landing-visible-text {

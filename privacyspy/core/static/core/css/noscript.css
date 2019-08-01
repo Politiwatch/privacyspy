@@ -1,3 +1,7 @@
 .selection-expanded, #navMenu {
     display: visible !important;
 }
+
+.is-collapsed {
+    max-height: unset !important;
+}

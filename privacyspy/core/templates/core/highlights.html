@@ -3,9 +3,12 @@
     No highlights have been established for this privacy policy. To see the original document, <a href="{{policy.original_url}}" target="_blank">click here</a>.
 </div>
 {% else %}
-<div class="highlights">
+<div class="highlights is-collapsed" id="highlights">
     {% for sentence in highlights %}
     <span style="background-color: {{sentence.color}}" class="highlighted-text">{{sentence.sentence|safe}}</span>
     {% endfor %}
+</div>
+<div class="expand-highlights">
+    <button class="button is-small is-dark is-outlined" onclick="showHighlights()">View All Highlights</button>
 </div>
 {% endif %}

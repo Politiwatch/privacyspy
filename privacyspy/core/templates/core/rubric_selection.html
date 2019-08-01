@@ -7,6 +7,9 @@
                 <span class="icon is-small level-item">
                     <i class="fas fa-chevron-down" id="selection-{{selection.id}}-icon"></i>
                 </span>
+                <span class="icon is-small level-item">
+                    <i class="fas fa-circle {{selection.option.color}}"></i>
+                </span>
                 <h4 class="is-size-5 level-item">
                     <span class="has-text-dark-grey">{{selection.option.question.text}}</span>
                     <strong>&nbsp;{{selection.option.text}}</strong></h4>
@@ -22,40 +25,43 @@
         </div>
     </div>
     <div class="selection-expanded" id="selection-{{selection.id}}">
-        <br>
-        {% if selection.option.description %}
-        <div class="notification">{{selection.option.description}}</div>
-        {% endif %}
-        {% if selection.option.question.description %}
-        <div class="notification">{{selection.option.question.description}}</div>
-        {% endif %}
-        <div class="columns">
-            <div class="column">
-                <p class="heading">Possible Options</p>
-                <table class="table is-fullwidth is-striped">
-                    {% for option in selection.option.question.options %}
-                    <tr {% if option == selection.option %}class="is-selected is-light" {% endif %}>
-                        <td title="{{option.description}}">{{option.text}}</td>
-                        <td><strong>{{option.value|floatformat:"-1"}}</strong>/{{option.question.max_value|floatformat:"-1"}}
-                        </td>
-                    </tr>
-                    {% endfor %}
-                </table>
-            </div>
-            {% if selection.citation %}
-            <div class="column">
-                <p class="heading">Citation</p>
-                <p>{{selection.citation}}</p>
-            </div>
+        <div class="box is-margined">
+            {% if selection.option.description %}
+            <div class="notification">{{selection.option.description}}</div>
             {% endif %}
-            {% if selection.note %}
-            <div class="column">
-                <p class="heading">Note</p>
-                <p>{{selection.note}}</p>
-            </div>
+            {% if selection.option.question.description %}
+            <div class="notification">{{selection.option.question.description}}</div>
             {% endif %}
+            <div class="columns">
+                <div class="column">
+                    <p class="heading">Possible Options</p>
+                    <table class="table is-fullwidth is-striped">
+                        {% for option in selection.option.question.options %}
+                        <tr {% if option == selection.option %}class="is-selected is-light" {% endif %}>
+                            <td title="{{option.description}}">{{option.text}}</td>
+                            <td><strong>{{option.value|floatformat:"-1"}}</strong>/{{option.question.max_value|floatformat:"-1"}}
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </table>
+                </div>
+                {% if selection.citation %}
+                <div class="column">
+                    <p class="heading">Citation</p>
+                    <p>{{selection.citation}}</p>
+                </div>
+                {% endif %}
+                {% if selection.note %}
+                <div class="column">
+                    <p class="heading">Note</p>
+                    <p>{{selection.note}}</p>
+                </div>
+                {% endif %}
+            </div>
+            <small class="has-text-grey">Decided {{selection.updated|naturalday}}. <a
+                    href="{% url 'create_suggestion' %}?policy={{policy.id}}&selection={{selection.id}}">Click here</a>
+                to suggest a change or to flag this conclusion as incorrect.</small>
         </div>
-        <small class="has-text-grey">Decided {{selection.updated|naturalday}}. <a href="{% url 'create_suggestion' %}?policy={{policy.id}}&selection={{selection.id}}">Click here</a> to suggest a change or to flag this entry as incorrect.</small>
     </div>
-    <hr>
+    <br>
 </div>

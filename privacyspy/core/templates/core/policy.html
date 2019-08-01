@@ -3,7 +3,9 @@
 {% if policy == None %}
 <div class="notification is-danger">
     {% with "Add a policy for " as policy_message %}
-    Our database does not contain a privacy policy for this product. <a href="{% url 'create_suggestion' %}?text={{policy_message|urlencode}}{{product.name|urlencode}}">Click here</a> to suggest we add one. <i>(Note: only registered users can suggest changes.)</i>
+    Our database does not contain a privacy policy for this product. <a
+        href="{% url 'create_suggestion' %}?text={{policy_message|urlencode}}{{product.name|urlencode}}">Click here</a>
+    to suggest we add one. <i>(Note: only registered users can suggest changes.)</i>
     {% endwith %}
 </div>
 {% else %}
@@ -13,15 +15,16 @@
         <li><a class="has-text-weight-medium" href="#policy-ratings">Ratings</a></li>
         <li><a class="has-text-weight-medium" href="#policy-revisions">Revisions</a></li>
         <li><a class="has-text-weight-medium" href="#policy-highlights">Highlights</a></li>
-        <li><a class="has-text-weight-medium" href="{% url 'create_suggestion' %}?policy={{policy.id}}">Suggest Edit</a></li>
+        <li><a class="has-text-weight-medium" href="{% url 'create_suggestion' %}?policy={{policy.id}}">Suggest Edit</a>
+        </li>
         {% if user.is_superuser %}
         <li><a class="has-text-weight-medium" href="{% url 'edit_policy' policy.id %}">Edit</a></li>
         {% endif %}
     </ul>
 </div>
-<br>
 <div class="columns reverse-order-columns">
     <div class="column is-8">
+        <br>
         {% if policy.product.current_policy != policy %}
         <div class="notification is-warning">
             You are viewing an archived version of this product's privacy policy, created
@@ -30,10 +33,8 @@
         </div>
         {% endif %}
         <div id="policy-ratings">
-            <h4 class="is-size-4 has-text-weight-light">Ratings</h4>
             {% with policy.rubric_selections as rubric_selections %}
             {% if rubric_selections|length != 0 %}
-            <hr>
             {% endif %}
             {% for selection in rubric_selections %}
             {% include 'core/rubric_selection.html' %}
@@ -47,44 +48,21 @@
         </div>
         {% with policy.parse_highlights as highlights %}
         <br>
-        <br>
-        <h4 class="is-size-4 has-text-weight-light">Highlighted Privacy Policy</h4>
-        <br>
-        <div id="policy-highlights">
-            {% include 'core/highlights.html'%}
-        </div>
+        <h4 class="subtitle is-size-4" id="policy-highlights">Highlighted Privacy Policy</h4>
+        {% include 'core/highlights.html'%}
         {% endwith %}
     </div>
     <div class="column is-2 is-offset-1">
         <div id="policy-overview">
-            <h4 class="is-size-4 has-text-weight-light">Overview</h4>
-            <h3 class="is-size-1 has-text-weight-bold">
+            <h3 class="is-size-1 is-marginless has-text-weight-bold {{policy.color}}">
                 <span class="policy-score">
                     {% if policy.score > -1 %}
-                    {{policy.score|floatformat:"-1"}}<span class="rating-total">/10</span>
+                    {{policy.score|floatformat:"-1"}}<span class="has-text-grey has-text-weight-normal">/10</span>
                     {% else %}
                     Unrated
                     {% endif %}
                 </span>
             </h3>
-            <div class="field is-grouped is-grouped-multiline">
-                <div class="control">
-                    <div class="tags has-addons">
-                        <span class="tag is-light">Flagged as Inaccurate</span>
-                        {% if policy.out_of_date or policy.erroneous %}
-                        <span class="tag is-danger">Yes</span>
-                        {% else %}
-                        <span class="tag is-success">No</span>
-                        {% endif %}
-                    </div>
-                </div>
-                <div class="control">
-                    <div class="tags has-addons">
-                        <span class="tag is-light">Revisions</span>
-                        <span class="tag is-info">{{policy.revisions|length}}</span>
-                    </div>
-                </div>
-            </div>
             <div class="policy-column-stat top-pad">
                 <div class="heading">Version Added</div>
                 <p>{{policy.added|naturalday|capfirst}}</p>
@@ -95,42 +73,44 @@
             </div>
             <div class="policy-column-stat">
                 <div class="heading">Original Location</div>
-                <a class="button is-link is-small is-outlined" href="{{policy.original_url}}" target="_blank">Open in
+                <a class="button is-dark is-small is-outlined" href="{{policy.original_url}}" target="_blank">Open in
                     New
                     Tab</a>
             </div>
-        </div>
-        <br>
-        <div id="policy-revisions">
-            <h4 class="is-size-4 has-text-weight-light pad">Revisions</h4>
-            <div class="dropdown is-hoverable">
-                <div class="dropdown-trigger">
-                    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu4">
-                        <span>Select Revision</span>
-                        <span class="icon is-small">
-                            <i class="fas fa-angle-down" aria-hidden="true"></i>
-                        </span>
-                    </button>
-                </div>
-                <div class="dropdown-menu" id="dropdown-menu4" role="menu">
-                    <div class="dropdown-content">
-                        <a href="{% url 'product' product_slug=policy.product.slug %}"
-                            class="dropdown-item {% if policy.product.current_policy == policy %}is-active{% endif %}">Latest</a>
-                        <hr class="dropdown-divider">
-                        {% with policy.product.revisions as revisions %}
-                        {% for revision in revisions %}
-                        <a href="{% url 'product' policy.product.slug %}?revision={{revision.id}}"
-                            class="dropdown-item {% if policy == revision %}is-active{% endif %}">{{revision.added|naturalday|capfirst}}</a>
-                        {% empty %}
-                        <p class="dropdown-item has-text-grey">PrivacySpy has no other revisions of this privacy policy
-                            in its database.</p>
-                        {% endfor %}
-                        {% if revisions %}
-                        <hr class="dropdown-divider">
-                        <p class="dropdown-item has-text-grey">Note that the times listed above are when the policy
-                            revision was added to PrivacySpy, not when it was originally published or last updated.</p>
-                        {% endif %}
-                        {% endwith %}
+            <div class="policy-column-stat" id="policy-revisions">
+                <div class="heading">Revisions</div>
+                <div class="dropdown is-hoverable">
+                    <div class="dropdown-trigger">
+                        <button class="button is-small is-dark is-outlined" aria-haspopup="true"
+                            aria-controls="dropdown-menu4">
+                            <span>Select Revision</span>
+                            <span class="icon is-small">
+                                <i class="fas fa-angle-down" aria-hidden="true"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+                        <div class="dropdown-content">
+                            <a href="{% url 'product' product_slug=policy.product.slug %}"
+                                class="dropdown-item {% if policy.product.current_policy == policy %}is-active{% endif %}">Latest</a>
+                            <hr class="dropdown-divider">
+                            {% with policy.product.revisions as revisions %}
+                            {% for revision in revisions %}
+                            <a href="{% url 'product' policy.product.slug %}?revision={{revision.id}}"
+                                class="dropdown-item {% if policy == revision %}is-active{% endif %}">{{revision.added|naturalday|capfirst}}</a>
+                            {% empty %}
+                            <p class="dropdown-item has-text-grey">PrivacySpy has no other revisions of this privacy
+                                policy
+                                in its database.</p>
+                            {% endfor %}
+                            {% if revisions %}
+                            <hr class="dropdown-divider">
+                            <p class="dropdown-item has-text-grey">Note that the times listed above are when the policy
+                                revision was added to PrivacySpy, not when it was originally published or last updated.
+                            </p>
+                            {% endif %}
+                            {% endwith %}
+                        </div>
                     </div>
                 </div>
             </div>

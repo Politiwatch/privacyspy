@@ -4,7 +4,7 @@ from django.conf import settings
 import json
 import requests
 from django.utils.html import escape
-from .util import to_hex_code, lighten_color
+from .util import to_hex_code, lighten_color, ratio_color
 import threading
 from django.utils.crypto import get_random_string
 from datetime import timedelta
@@ -75,6 +75,9 @@ class PrivacyPolicy(models.Model):
             return Suggestion.objects.filter(policy=self, status="O")
         else:
             return Suggestion.objects.filter(policy=self)
+
+    def color(self):
+        return ratio_color(self.score / 10)
 
     @property
     def score(self):
@@ -162,6 +165,9 @@ class RubricOption(models.Model):
     value = models.FloatField()
     description = models.TextField(blank=True, default="")
 
+    def color(self):
+        return ratio_color(float(self.value) / float(self.question.max_value))
+
 
 class RubricSelection(models.Model):
     option = models.ForeignKey(RubricOption, on_delete=models.CASCADE)
@@ -173,10 +179,13 @@ class RubricSelection(models.Model):
 
 class Suggestion(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    policy = models.ForeignKey(PrivacyPolicy, on_delete=models.CASCADE, null=True, blank=True)
-    rubric_selection = models.ForeignKey(RubricSelection, on_delete=models.CASCADE, null=True, blank=True)
+    policy = models.ForeignKey(
+        PrivacyPolicy, on_delete=models.CASCADE, null=True, blank=True)
+    rubric_selection = models.ForeignKey(
+        RubricSelection, on_delete=models.CASCADE, null=True, blank=True)
     text = models.TextField()
-    status = models.CharField(max_length=1, default="O") # 'O' -> open, 'D' -> declined, 'R' -> resolved (& implemented) 
+    # 'O' -> open, 'D' -> declined, 'R' -> resolved (& implemented)
+    status = models.CharField(max_length=1, default="O")
     comment = models.TextField(blank=True, default="")
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
@@ -206,7 +215,7 @@ class LoginKey(models.Model):
     used = models.BooleanField(default=False)
 
     @staticmethod
-    def go_for_email(email): # note: all email addresses are treated as lowercase
+    def go_for_email(email):  # note: all email addresses are treated as lowercase
         key = LoginKey.objects.create(email=email.lower(), token=get_random_string(
             length=32), expires=timezone.now() + timedelta(hours=1))
         send_email("Your PrivacySpy Login", "login", email.lower(), {
@@ -218,14 +227,16 @@ class LoginKey(models.Model):
         token = request.GET.get("token", None)
         if token == None:
             return False
-        keys = LoginKey.objects.filter(token=token, expires__gt=timezone.now(), used=False)
+        keys = LoginKey.objects.filter(
+            token=token, expires__gt=timezone.now(), used=False)
         if keys.count() > 0:
             key = keys[0]
             key.used = True
             key.save()
             users = User.objects.filter(email=key.email)
             if users.count() == 0:
-                user = User.objects.create_user(username="newuser" + get_random_string(length=5), email=key.email)
+                user = User.objects.create_user(
+                    username="newuser" + get_random_string(length=5), email=key.email)
                 profile = Profile.objects.create(user=user)
                 login(request, user)
                 return True
