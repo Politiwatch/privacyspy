@@ -25,7 +25,7 @@ class Product(models.Model):
     slug = models.TextField(unique=True)
     icon = models.TextField(blank=True, default="")
     hostname = models.TextField(default="UNSET")
-    description = models.TextField()
+    description = models.TextField(default="")
 
     @property
     def current_policy(self):
