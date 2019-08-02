@@ -21,12 +21,15 @@
 <br><br><br>
 
 <div class="columns">
-    <div class="column is-4">
-        {% for product in products %}
-        {% include 'core/product_box.html' %}
-        <br>
-        {% endfor %}
-    </div>
+
+    {% for product in products %}
+    <div class="column">{% include 'core/product_box.html' %}</div>
+    {% if forloop.counter|divisibleby:"3" and not forloop.last %}
+</div>
+<div class="row">
+    {% endif %}
+    {% endfor %}
+
 </div>
 
 {% endblock %}

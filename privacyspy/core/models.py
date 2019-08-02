@@ -26,6 +26,7 @@ class Product(models.Model):
     icon = models.TextField(blank=True, default="")
     hostname = models.TextField(default="UNSET")
     description = models.TextField(default="")
+    featured = models.BooleanField(default=False)
 
     @property
     def current_policy(self):

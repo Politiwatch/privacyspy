@@ -1,13 +1,13 @@
 <a href="{% url 'product' product_slug=product.slug %}">
     <div class="box">
         <article class="media">
+            {% if product.icon %}
             <div class="media-left">
-                {% if product.icon %}
                 <figure class="image is-64x64">
                     <img src="{{product.icon}}" class="is-rounded" alt="Icon for {{product.name}}">
                 </figure>
-                {% endif %}
             </div>
+            {% endif %}
             <div class="media-content is-upped">
                 <p class="is-size-5">
                     <strong>{{product.name}}</strong>&nbsp;<span class="product-box-rating has-text-grey">

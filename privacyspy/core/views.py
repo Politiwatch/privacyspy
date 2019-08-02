@@ -13,7 +13,7 @@ def index(request):
         "n": range(60),
         "keywords": ["privacy", "is", "a",
                      "fundamental", "right"],
-        "products": Product.objects.all(),
+        "products": Product.objects.filter(featured=True),
         "user": request.user
     })
 

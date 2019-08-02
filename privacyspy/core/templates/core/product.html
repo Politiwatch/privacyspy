@@ -2,13 +2,13 @@
 
 {% block content %}
 <div class="columns">
+    {% if product.icon %}
     <div class="column is-narrow">
-        {% if product.icon %}
         <figure class="image is-96x96">
             <img src="{{product.icon}}" class="is-rounded" alt="Icon for {{product.name}}">
         </figure>
-        {% endif %}
     </div>
+    {% endif %}
     <div class="column">
         <h1 class='title massive'>{{product.name}}</h1>
         <p class='subtitle is-slightly-right'>{{product.description}}</p>
