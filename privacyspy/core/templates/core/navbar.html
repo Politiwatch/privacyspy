@@ -1,12 +1,13 @@
+{% load static %}
+
 <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="container">
         <div class="navbar-brand">
             <a class="navbar-item" href="{% url 'index' %}">
-                <strong>PrivacySpy</strong>
+                <img src="{% static 'core/img/PrivacySpy-logo.jpg' %}">
             </a>
 
-            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
-                data-target="navMenu">
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
@@ -39,7 +40,8 @@
                                 <p class="dropdown-item">Hello, {{user.username}} ({{user.email}}).</p>
                                 {% if 'newuser' in user.username %}
                                 <hr class="dropdown-divider">
-                                <p class="dropdown-item">You currently have an auto-generated username. You can change it on the 'My Account' page.</p>
+                                <p class="dropdown-item">You currently have an auto-generated username. You can change
+                                    it on the 'My Account' page.</p>
                                 {% endif %}
                                 <hr class="dropdown-divider">
                                 <a href="{% url 'account' %}" class="dropdown-item">My Account</a>
