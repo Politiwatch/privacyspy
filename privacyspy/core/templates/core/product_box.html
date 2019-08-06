@@ -10,7 +10,7 @@
             {% endif %}
             <div class="media-content is-upped">
                 <p class="is-size-5">
-                    <strong>{{product.name}}</strong>&nbsp;<span class="product-box-rating has-text-grey">
+                    <strong>{{product.name}}</strong>&nbsp;<span class="product-box-rating {{product.current_policy.color}}">
                         {% if product.current_policy.score > -1 %}{{product.current_policy.score|floatformat:"-1"}}/10{% else %}Unrated{% endif %}</span>
                 </p>
                 <p>{{product.description}}</p>

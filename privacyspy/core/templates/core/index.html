@@ -1,64 +1,50 @@
 {% extends 'core/base.html' %}
 
 {% block content %}
-<div class="columns">
-    <div class="column is-5">
-        <h1 class='title massive'>We monitor privacy policies.</h1>
-        <a class="button is-link is-medium" href="{% url 'directory' %}">
+<section class="hero is-medium is-bold">
+    <div class="hero-body">
+        <h1 class="title massive">
+            We monitor privacy policies.
+        </h1>
+        <h2 class="subtitle is-size-3">
+            PrivacySpy rates, highlights, and monitors {{total_policies}} privacy policies.
+        </h2>
+        <a class="button is-link is-large" href="{% url 'directory' %}">
             Explore the Directory
         </a>&nbsp;&nbsp;&nbsp;&nbsp;
-        <a class="button is-link is-medium is-outlined">
+        <a class="button is-link is-large is-outlined">
             Install the Extension
         </a>
     </div>
-</div>
-<br>
-<div class="tile is-ancestor">
-    <div class="tile is-parent is-vertical is-3">
-        <article class="tile is-child card">
-            <h4>Hello World!</h4>
-        </article>
-        <article class="tile is-child card">
-            <h4>Hello World!</h4>
-        </article>
-    </div>
-    <div class="tile is-parent is-5">
-        <article class="tile is-child card landing-highlights">
-            <p class="subtitle is-child has-text-centered">Key Points</p>
-            {% for keyword in keywords %}
-            <span class="landing-invisible-text">
-                {% for i in n %}
-                &nbsp;
-                {% endfor %}
-            </span>
+</section>
+<section class="hero is-small is-fullwidth">
+    <div class="hero-body">
+        <div class="columns">
+            {% for product in featured_products %}
+            <div class="column">
+                {% include 'core/product_box.html' %}
+            </div>
             {% endfor %}
-        </article>
+        </div>
     </div>
-    <div class="tile is-parent is-4">
-        <article class="tile is-child card">
-            <div class="card-header">
-                <p class="has-text-centered">Highlights</p>
-            </div>
-            <p class="card-description has-text-centered">We use natural language processing to identify the most
-                important pieces of a
-                privacy policy. It lets you
-                quickly navigate the policy should you decide to read the entire thing.</p>
-            <div class="landing-highlights">
-                {% for keyword in keywords %}
-                <span class="landing-invisible-text">
-                    {% for i in n %}
-                    &nbsp;
-                    {% endfor %}
-                </span>
-                <span class="landing-visible-text">{{ keyword }}</span>
-                {% endfor %}
-            </div>
-        </article>
-    </div>
-</div>
+</section>
 <br>
-<div class="has-text-centered">
-
+<div class="columns">
+    <div class="column has-text-centered">
+        <h3 class="title is-size-4 is-marginless">Ratings</h3>
+        <p>We rate our policies using a consistent and vetted rubric. You can understand the key features and drawbacks
+            of any rated policy at a glance.</p>
+    </div>
+    <div class="column has-text-centered">
+        <h3 class="title is-size-4 is-marginless">Highlights</h3>
+        <p>We use natural language processing to bring your attention to key elements of privacy policies. After all,
+            reading something is better than reading nothing.</p>
+    </div>
+    <div class="column has-text-centered">
+        <h3 class="title is-size-4 is-marginless">Monitoring</h3>
+        <p>We send you updates when privacy policies you follow are updated&mdash;so you can stay on top of your
+            privacy, even as policies change over time.</p>
+    </div>
 </div>
 <br>
 <div class="privacyspy-footer">

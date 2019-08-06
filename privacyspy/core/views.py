@@ -13,8 +13,9 @@ def index(request):
         "n": range(60),
         "keywords": ["privacy", "is", "a",
                      "fundamental", "right"],
-        "products": Product.objects.filter(featured=True),
-        "user": request.user
+        "total_policies": PrivacyPolicy.objects.all().count(),
+        "user": request.user,
+        "featured_products": Product.objects.filter(featured=True)[:3]
     })
 
 
@@ -170,7 +171,7 @@ def directory(request):
         "title": "Product Directory",
         "user": request.user,
         "request": request,
-        "products": Product.objects.all(),
+        "products": Product.objects.filter(featured=True),
         "num_policies": PrivacyPolicy.objects.filter(published=True).count()
     })
 

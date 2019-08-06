@@ -26,8 +26,10 @@ def username_exists(username):
 
 
 def ratio_color(ratio):
-    if ratio > 0.7:
-        return "has-text-success"
-    if ratio > 0.3:
-        return "has-text-warning"
-    return "has-text-danger"
+    if ratio > -1:
+        if ratio > 0.7:
+            return "has-text-success"
+        if ratio > 0.3:
+            return "has-text-warning"
+        return "has-text-danger"
+    return "has-text-grey"
