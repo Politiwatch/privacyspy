@@ -99,15 +99,6 @@ body {
     display: none;
 }
 
-@media(max-width: 767px) {
-
-    /* <== You can change this break point as per your  needs */
-    .reverse-order-columns {
-        flex-direction: column-reverse;
-        display: flex;
-    }
-}
-
 .policy-score {
     font-size: 125% !important;
 }
@@ -163,4 +154,23 @@ body {
 
 .massive {
     font-size: 400%;
+}
+
+.massive.subtitle {
+    font-size: 200%;
+}
+
+@media(max-width: 767px) {
+    .reverse-order-columns {
+        flex-direction: column-reverse;
+        display: flex;
+    }
+
+    .massive {
+        font-size: 300% !important;
+    }
+
+    .massive.subtitle {
+        font-size: 150% !important;
+    }
 }

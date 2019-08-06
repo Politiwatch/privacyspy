@@ -9,7 +9,7 @@
         <form method="GET">
             <div class="control has-icons-right">
                 <input class="input search-input is-large" name="search" type="text"
-                    placeholder="Search {{num_policies|intcomma}} privacy policies...">
+                    placeholder="Search {{num_policies|intcomma}} privacy policies..." {% if search != None %}value="{{search}}"{% endif %}>
                 <span class="icon is-small is-right has-cursor-pointer" onclick="$(this).submit()">
                     <i class="fas fa-search"></i>
                 </span>
@@ -18,7 +18,17 @@
     </div>
 </div>
 
-<br><br><br>
+<br>
+{% if search %}
+<div class="notification">
+Your search yielded {{products|length|intcomma}} results.
+{% if overflow %}
+Only the first 50 results are shown. If you don't see what you are looking for, try narrowing your search.
+{% endif %}
+<a href="{% url 'directory' %}">Clear search.</a>
+</div>
+{% endif %}
+<br>
 
 <div class="columns">
 

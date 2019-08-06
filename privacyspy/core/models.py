@@ -11,8 +11,11 @@ from datetime import timedelta
 from django.utils import timezone
 from django.contrib.auth.models import User
 from django.contrib.auth import login
+from django.contrib.postgres.search import SearchVector
+from django.conf import settings
 from .email import send_email
 from urllib.parse import urlparse
+from django.db.models import Q
 
 
 class Product(models.Model):
@@ -21,12 +24,20 @@ class Product(models.Model):
             return None
         return urlparse(self.current_policy.original_url).hostname.lower()
 
-    name = models.TextField()
+    name = models.TextField(db_index=True)
     slug = models.TextField(unique=True)
     icon = models.TextField(blank=True, default="")
-    hostname = models.TextField(default="UNSET")
-    description = models.TextField(default="")
+    hostname = models.TextField(default="UNSET", db_index=True)
+    description = models.TextField(default="", db_index=True)
     featured = models.BooleanField(default=False)
+
+    @staticmethod
+    def search(query):
+        if not settings.DEBUG:
+            return Product.objects.annotate(
+                search=SearchVector('name', 'hostname')
+            ).filter(search=query)
+        return Product.objects.filter(name__contains=query)
 
     @property
     def current_policy(self):

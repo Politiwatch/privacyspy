@@ -3,6 +3,7 @@ from .models import Product, PrivacyPolicy, RubricQuestion, RubricSelection, Sug
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.decorators import user_passes_test
 from django.contrib.auth import logout
+from django.db.models import Q
 import re
 from .util import username_exists
 
@@ -167,11 +168,21 @@ def delete_account(request):
 
 
 def directory(request):
+    search = request.GET.get("search", None)
+    products = None
+    if search == None:
+        products = Product.objects.filter(featured=True)
+    else:
+        products = Product.search(search)
+    overflow = products.count() > 50 and search != None
+
     return render(request, 'core/directory.html', context={
         "title": "Product Directory",
         "user": request.user,
         "request": request,
-        "products": Product.objects.filter(featured=True),
+        "products": products[:50],
+        "search": search,
+        "overflow": overflow,
         "num_policies": PrivacyPolicy.objects.filter(published=True).count()
     })
 
