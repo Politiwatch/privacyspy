@@ -35,6 +35,17 @@
         <hr>
         <a href="{% url 'logout' %}" class="button is-warning">Log Out</a>
         <a href="{% url 'delete_account' %}" class="button is-danger">Delete Account</a>
+        <hr>
+        <h3 class="title is-size-4 is-small-margin">Watching</h3>
+        <p class="has-text-grey">To unwatch a product, go to the product's page and click <i>unwatch</i>.</p>
+        <br>
+        {% for product in profile.watching_products.all %}
+        {% include 'core/product_box.html' %}
+        {% empty %}
+        <div class="notification">
+        You are not currently watching any products.
+        </div>
+        {% endfor %}
     </div>
 </div>
 {% endblock %}

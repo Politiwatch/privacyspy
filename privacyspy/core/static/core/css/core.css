@@ -79,6 +79,10 @@ body {
     font-weight: normal;
 }
 
+.is-small-margin {
+    margin-bottom: 0.5em !important;
+}
+
 .policy-column-stat {
     margin-bottom: 1em;
 }
@@ -173,4 +177,8 @@ body {
     .massive.subtitle {
         font-size: 150% !important;
     }
+}
+
+.is-borderless {
+    border: none !important;
 }

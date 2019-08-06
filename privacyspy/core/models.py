@@ -55,6 +55,10 @@ class Product(models.Model):
     def __str__(self):
         return self.name
 
+    def watchers(self):
+        profiles = self.profile_set.all()
+        return [p.user for p in profiles]
+
 
 class PrivacyPolicy(models.Model):
     added = models.DateTimeField(auto_now_add=True)
@@ -127,8 +131,9 @@ class PrivacyPolicy(models.Model):
         for sentence in data:
             sentence["sentence"] = escape(
                 sentence["sentence"]).replace("\n", "<br>")
+            factor = 10
             sentence["color"] = "#" + \
-                to_hex_code(*lighten_color(213, 0, 249,
+                to_hex_code(*lighten_color(213 + factor, 0, 249 + factor,
                                            1.25 - sentence["score"]))
         return data
 
@@ -218,6 +223,11 @@ class Suggestion(models.Model):
 class Profile(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     permission_level = models.IntegerField(default=0)
+    watching_products = models.ManyToManyField(Product)
+
+    @staticmethod
+    def for_user(user):
+        return Profile.objects.get(user=user)
 
 
 class LoginKey(models.Model):

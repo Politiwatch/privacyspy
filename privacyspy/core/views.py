@@ -1,14 +1,17 @@
 from django.shortcuts import render, get_object_or_404, redirect
-from .models import Product, PrivacyPolicy, RubricQuestion, RubricSelection, Suggestion, RubricOption, LoginKey
+from .models import Product, PrivacyPolicy, RubricQuestion, RubricSelection, Suggestion, RubricOption, LoginKey, Profile
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.decorators import user_passes_test
 from django.contrib.auth import logout
 from django.db.models import Q
 import re
+import random
 from .util import username_exists
 
 
 def index(request):
+    credit = ["<a href='https://rmrm.io'>Miles McCain</a>", "<a href='https://igor.fyi'>Igor Barakaiev</a>"]
+    random.shuffle(credit)
     return render(request, 'core/index.html', context={
         "title": "Making online privacy (slightly) simpler",
         "n": range(60),
@@ -16,22 +19,38 @@ def index(request):
                      "fundamental", "right"],
         "total_policies": PrivacyPolicy.objects.all().count(),
         "user": request.user,
-        "featured_products": Product.objects.filter(featured=True)[:3]
+        "featured_products": Product.objects.filter(featured=True)[:3],
+        "credit": credit
     })
 
 
 def product(request, product_slug):
     product = get_object_or_404(Product, slug=product_slug)
+    if request.method == "POST" and request.user.is_authenticated:
+        action = request.POST.get("action", None)
+        profile = Profile.for_user(request.user)
+        if action == "watch":
+            profile.watching_products.add(product)
+        elif action == "unwatch":
+            profile.watching_products.remove(product)
+        profile.save()
     policy = request.GET.get("revision", None)
     if policy == None:
         policy = product.current_policy
     else:
         policy = get_object_or_404(PrivacyPolicy, id=policy, product=product)
+    watching = False
+    if request.user.is_authenticated:
+        if product in Profile.for_user(request.user).watching_products.all():
+            watching = True
+    if request.GET.get("next", None) != None:
+        return redirect(request.GET.get("next", None))
     return render(request, 'core/product.html', context={
         "product": product,
         "title": product.name + " Privacy Policy",
         "policy": policy,
-        "user": request.user
+        "user": request.user,
+        "watching": watching,
     })
 
 
@@ -146,7 +165,8 @@ def account(request):
         "request": request,
         "title": "My Account",
         "error": error,
-        "message": message
+        "message": message,
+        "profile": Profile.for_user(request.user)
     })
 
 
@@ -203,8 +223,6 @@ def suggestions(request):
                 if status != None and request.user.is_superuser and status in ['O', 'D', 'R']:
                     suggestion.status = status
                 suggestion.save()
-    if request.GET.get("next", None) != None:
-        return redirect(request.GET.get("next"))
     
     return render(request, "core/suggestions.html", context={
         "open_suggestions": Suggestion.user_open_suggestions(request.user),

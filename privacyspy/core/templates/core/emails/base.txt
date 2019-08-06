@@ -1,2 +1,5 @@
+{% block content %}
+{% endblock %}
+
 --------
 PrivacySpy is a Politiwatch initiative. We use plaintext email because it's more secure and better for your privacy. We will never email you without your consent. To change your email preferences, log in to your account.

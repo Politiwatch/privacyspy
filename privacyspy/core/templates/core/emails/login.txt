@@ -1,3 +1,6 @@
+{% extends 'core/emails/base.txt' %}
+
+{% block content %}
 Hi there,
 
 You are receiving this email because someone (probably you) is logging in to an account on PrivacySpy.
@@ -8,5 +11,4 @@ If you didn't request this email, you can safely discard it.
 
 Best,
 PrivacySpy
-
-{% include 'core/emails/footer.txt' %}
+{% endblock %}
