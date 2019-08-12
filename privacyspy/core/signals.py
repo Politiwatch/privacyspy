@@ -6,7 +6,7 @@ from .email import send_many_emails
 @receiver(post_save, sender=Product)
 def handle_product_update(sender, **kwargs):
     instance = kwargs["instance"]
-    send_many_emails("[%s] Metadata updated" % instance.name, 'update', [user.email for user in instance.product.watchers()], {
+    send_many_emails("[%s] Metadata updated" % instance.name, 'update', [user.email for user in instance.watchers()], {
         "product": instance,
         "updates": ["Metadata (name, description, etc) updated"]
     })
