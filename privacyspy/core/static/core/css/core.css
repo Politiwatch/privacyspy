@@ -30,6 +30,21 @@
     }
 }
 
+.is-80-percent {
+    max-width: 80% !important;
+}
+
+.beta {
+    font-size: 12px;
+}
+
+.is-40-width {
+    max-width: 40em;
+    margin: auto;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
 .is-collapsed {
     max-height: 64em;
     overflow: hidden;
@@ -42,6 +57,11 @@
 
 .is-upped {
     top: -5px;
+    position: relative;
+}
+
+.is-upped-slight {
+    top: -3px;
     position: relative;
 }
 
@@ -181,4 +201,9 @@ body {
 
 .is-borderless {
     border: none !important;
+}
+
+.infopane {
+    line-height: 1.75em;
+    font-size: 110%;
 }

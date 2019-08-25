@@ -1,0 +1,22 @@
+.tagline-highlight {
+    background-color: #fd2ffd50;
+    padding: 2px;
+    border-radius: 3px;
+}
+
+#titlepane {
+    max-width: 45em;
+    margin: auto;
+}
+
+#header-subtitle {
+    font-size: 150% !important;
+}
+
+.is-downward {
+    padding-top: 25px;
+}
+
+.hero {
+    border-radius: 6px;
+}
