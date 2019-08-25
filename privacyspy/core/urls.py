@@ -13,4 +13,5 @@ urlpatterns = [
     path("directory/", views.directory, name="directory"),
     path("suggestions/", views.suggestions, name="suggestions"),
     path("create-suggestion/", views.create_suggestion, name="create_suggestion"),
+    path("terms-and-privacy/", views.terms_and_privacy, name="terms_and_privacy")
 ]
