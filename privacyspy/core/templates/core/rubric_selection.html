@@ -2,25 +2,34 @@
 
 <div class="rubric-selection">
     <div class="selection-overview" onclick="toggleRubricSelection('#selection-{{selection.id}}')">
-        <div class="level">
-            <div class="level-left">
-                <span class="icon is-small level-item">
-                    <i class="fas fa-chevron-down" id="selection-{{selection.id}}-icon"></i>
-                </span>
-                <span class="icon is-small level-item">
-                    <i class="fas fa-circle {{selection.option.color}}"></i>
-                </span>
-                <h4 class="is-size-5 level-item">
-                    <span class="has-text-dark-grey">{{selection.option.question.text}}</span>
-                    <strong>&nbsp;{{selection.option.text}}</strong></h4>
+        <div class="columns is-mobile">
+            <div class="column is-narrow">
+                <h4 class="is-size-5">
+                    <span class="icon">
+                        <i class="fas fa-chevron-down" id="selection-{{selection.id}}-icon"></i>
+                    </span>
+                </h4>
             </div>
-            <div class="level-right">
-                <div class="level-item">
-                    <h4 class="is-size-4 has-text-weight-bold">
-                        {{selection.option.value|floatformat:"-1"}}<span
-                            class="rating-total">/{{selection.option.question.max_value|floatformat:"-1"}}</span>
-                    </h4>
-                </div>
+            <div class="column is-narrow">
+                <h4 class="is-size-5">
+                    <span class="icon">
+                        <i class="fas fa-circle {{selection.option.color}}"></i>
+                    </span>
+                </h4>
+            </div>
+            <div class="column">
+                <h4 class="is-size-5 is-upped-slight">
+                    <div class="answer">
+                        <span class="has-text-dark-grey">{{selection.option.question.text}}</span>
+                        <strong>&nbsp;{{selection.option.text}}</strong>
+                    </div>
+                </h4>
+            </div>
+            <div class="column is-narrow is-upped-slight">
+                <h4 class="is-size-4 has-text-weight-bold">
+                    {{selection.option.value|floatformat:"-1"}}<span
+                        class="rating-total">/{{selection.option.question.max_value|floatformat:"-1"}}</span>
+                </h4>
             </div>
         </div>
     </div>
