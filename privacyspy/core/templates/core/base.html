@@ -21,11 +21,13 @@
     <link rel="icon" type="image/png" sizes="32x32" href="{% static 'core/img/favicon-32x32.png' %}">
     <link rel="icon" type="image/png" sizes="16x16" href="{% static 'core/img/favicon-16x16.png' %}">
     <link rel="manifest" href="{% static 'core/img/site.webmanifest' %}">
-    <link rel="mask-icon" href="{% static 'core/img/safari-pinned-tab.svg" color="#4d77ff">
+    <link rel="mask-icon" href="{% static 'core/img/safari-pinned-tab.svg' %}" color="#4d77ff">
     <link rel="shortcut icon" href="{% static 'core/img/favicon.ico' %}">
     <meta name="msapplication-TileColor" content="#2d89ef">
     <meta name="msapplication-config" content="{% static 'core/img/browserconfig.xml' %}">
     <meta name="theme-color" content="#ffffff">
+    {% block head %}
+    {% endblock %}
 </head>
 
 <body>
@@ -34,6 +36,17 @@
         <div class="container">
             {% block content %}
             {% endblock %}
+            <hr class="is-40-width">
+            <div class="privacyspy-footer">
+                <div class="content has-text-centered">
+                    <p>
+                        <strong>PrivacySpy</strong> is an <a href="https://github.com/Politiwatch/privacyspy-core">open-source</a> <a href="https://politiwatch.org">Politiwatch 501(c)(3)</a>
+                        initiative maintained by {% autoescape off %}{{credit|join:" & "}}{% endautoescape %}. Nothing
+                        on this site
+                        is legal advice. <a href="{% url 'terms_and_privacy' %}">Terms &amp; Privacy</a>. <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA.</a>
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
     <script src="{% static 'core/js/core.js' %}"></script>
