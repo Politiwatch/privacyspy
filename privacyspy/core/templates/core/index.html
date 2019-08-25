@@ -1,25 +1,36 @@
 {% extends 'core/base.html' %}
 
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'core/css/index.css' %}">
+{% endblock %}
+
 {% block content %}
-<section class="hero is-medium is-bold">
-    <div class="hero-body">
+<section class="hero is-medium">
+    <div class="hero-body has-text-centered" id="titlepane">
         <h1 class="title massive">
-            We monitor privacy policies.
+            We track privacy.
         </h1>
-        <h2 class="subtitle massive">
-            PrivacySpy rates, highlights, and monitors {{total_policies}} privacy policies.
-        </h2>
-        <a class="button is-primary is-large" href="{% url 'directory' %}">
-            Explore the Directory
-        </a>
-        &nbsp;&nbsp;
-        <div class="is-hidden-desktop"><br></div>
-        <a class="button is-primary is-large is-outlined">
-            Install the Extension
-        </a>
+        {% include 'core/rating-divider.html' %}
+        <div class="">
+            <h2 class="subtitle" id="header-subtitle">
+                PrivacySpy <strong>rates</strong>, <strong>highlights</strong>, and <strong>monitors</strong>
+                {{total_policies}} privacy policies. When it comes to privacy, we've got your back.
+            </h2>
+            <a class="button is-primary is-medium" href="{% url 'directory' %}">
+                Search the Directory
+            </a>
+            <div class="is-hidden-desktop">
+                <br></div>
+            <a class="button is-primary is-medium is-outlined">
+                Install the Extension
+            </a>
+        </div>
     </div>
 </section>
-<section class="hero is-small is-fullwidth">
+<hr class="is-40-width">
+<section class="hero is-normal is-fullwidth">
     <div class="hero-body">
         <div class="columns">
             {% for product in featured_products %}
@@ -30,31 +41,28 @@
         </div>
     </div>
 </section>
-<br>
-<div class="columns">
-    <div class="column has-text-centered">
-        <h3 class="title is-size-4 is-marginless">Ratings</h3>
-        <p>We rate our policies using a consistent and vetted rubric. You can understand the key features and drawbacks
-            of any rated policy at a glance.</p>
+<hr class="is-40-width">
+<section class="hero is-normal is-fullwidth">
+    <div class="hero-body">
+        <div class="columns has-text-centered">
+            <div class="column infopane">
+                <h3 class="title is-size-3">Ratings</h3>
+                <p>We rate our policies using a consistent and vetted rubric. You can understand the key features and
+                    drawbacks
+                    of any rated policy at a glance.</p>
+            </div>
+            <div class="column infopane">
+                <h3 class="title is-size-3">Highlights</h3>
+                <p>We use natural language processing to bring your attention to key elements of privacy policies. After
+                    all,
+                    reading something is better than reading nothing.</p>
+            </div>
+            <div class="column infopane">
+                <h3 class="title is-size-3">Monitoring</h3>
+                <p>We send you updates when privacy policies you follow are updated&mdash;so you can stay on top of your
+                    privacy, even as policies change over time.</p>
+            </div>
+        </div>
     </div>
-    <div class="column has-text-centered">
-        <h3 class="title is-size-4 is-marginless">Highlights</h3>
-        <p>We use natural language processing to bring your attention to key elements of privacy policies. After all,
-            reading something is better than reading nothing.</p>
-    </div>
-    <div class="column has-text-centered">
-        <h3 class="title is-size-4 is-marginless">Monitoring</h3>
-        <p>We send you updates when privacy policies you follow are updated&mdash;so you can stay on top of your
-            privacy, even as policies change over time.</p>
-    </div>
-</div>
-<br>
-<div class="privacyspy-footer">
-    <div class="content has-text-centered">
-        <p>
-            <strong>PrivacySpy</strong> is a <a href="https://politiwatch.org">Politiwatch 501(c)(3)</a>
-            initiative maintained by {% autoescape off %}{{credit|join:" & "}}{% endautoescape %}.
-        </p>
-    </div>
-</div>
+</section>
 {% endblock %}
