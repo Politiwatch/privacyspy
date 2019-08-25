@@ -8,19 +8,29 @@ import re
 import random
 from .util import username_exists
 
-
-def index(request):
+def _render(request, template, context=None):
+    if context == None:
+        context = {}
     credit = ["<a href='https://rmrm.io'>Miles McCain</a>", "<a href='https://igor.fyi'>Igor Barakaiev</a>"]
     random.shuffle(credit)
-    return render(request, 'core/index.html', context={
+    context["credit"] = credit
+    context["user"] = request.user
+    context["request"] = request
+    return render(request, template, context=context)
+
+def index(request):
+    return _render(request, 'core/index.html', context={
         "title": "Making online privacy (slightly) simpler",
         "n": range(60),
         "keywords": ["privacy", "is", "a",
                      "fundamental", "right"],
         "total_policies": PrivacyPolicy.objects.all().count(),
-        "user": request.user,
-        "featured_products": Product.objects.filter(featured=True)[:3],
-        "credit": credit
+        "featured_products": Product.objects.filter(featured=True)[:6],
+    })
+
+def terms_and_privacy(request):
+    return _render(request, 'core/terms_and_privacy.html', context={
+        "title": "Terms & Privacy"
     })
 
 
@@ -45,11 +55,10 @@ def product(request, product_slug):
             watching = True
     if request.GET.get("next", None) != None:
         return redirect(request.GET.get("next", None))
-    return render(request, 'core/product.html', context={
+    return _render(request, 'core/product.html', context={
         "product": product,
         "title": product.name + " Privacy Policy",
         "policy": policy,
-        "user": request.user,
         "watching": watching,
     })
 
@@ -112,12 +121,11 @@ def edit_policy(request, policy_id):
             policy.calculate_score()
             actions.append("Successfully updated ratings.")
 
-    return render(request, 'core/edit_policy.html', context={
+    return _render(request, 'core/edit_policy.html', context={
         "policy": policy,
         "title": "Editing Privacy Policy",
         "actions": actions,
         "rubric_questions": policy.questions_with_selections(),
-        "user": request.user
     })
 
 
@@ -135,11 +143,10 @@ def login_user(request):
             message = "A login link has been sent to the email address you provided. Check your inbox."
         else:
             error = "Please enter a valid email address!"
-    return render(request, 'core/login.html', context={
+    return _render(request, 'core/login.html', context={
         "error": error,
         "message": message,
         "title": "Log In or Sign Up",
-        "user": request.user
     })
 
 
@@ -160,8 +167,7 @@ def account(request):
                     request.user.username = new_username
                     request.user.save()
                     message = "Your account information was successfully updated."
-    return render(request, 'core/manage_account.html', context={
-        "user": request.user,
+    return _render(request, 'core/manage_account.html', context={
         "request": request,
         "title": "My Account",
         "error": error,
@@ -180,10 +186,8 @@ def delete_account(request):
     if request.method == "POST":
         request.user.delete()
         return redirect('index')
-    return render(request, 'core/delete_account.html', context={
+    return _render(request, 'core/delete_account.html', context={
         "title": "Delete Account",
-        "user": request.user,
-        "request": request,
     })
 
 
@@ -196,10 +200,8 @@ def directory(request):
         products = Product.search(search)
     overflow = products.count() > 50 and search != None
 
-    return render(request, 'core/directory.html', context={
+    return _render(request, 'core/directory.html', context={
         "title": "Product Directory",
-        "user": request.user,
-        "request": request,
         "products": products[:50],
         "search": search,
         "overflow": overflow,
@@ -224,12 +226,10 @@ def suggestions(request):
                     suggestion.status = status
                 suggestion.save()
     
-    return render(request, "core/suggestions.html", context={
+    return _render(request, "core/suggestions.html", context={
         "open_suggestions": Suggestion.user_open_suggestions(request.user),
         "closed_suggestions": Suggestion.user_closed_suggestions(request.user),
-        "user": request.user,
         "title": "Suggestions",
-        "request": request,
         "submitted": request.GET.get("submitted", "False") == "True",
         "all_suggestions": Suggestion.all_open_suggestions() if request.user.is_superuser else [] 
     })
@@ -257,9 +257,7 @@ def create_suggestion(request):
         policy = get_object_or_404(PrivacyPolicy, id=int(policy_id))
     if rubric_selection_id != None:
         rubric_selection = get_object_or_404(RubricSelection, id=int(rubric_selection_id))
-    return render(request, "core/create_suggestion.html", context={
-        "user": request.user,
-        "request": request,
+    return _render(request, "core/create_suggestion.html", context={
         "error": error,
         "policy": policy,
         "rubric_selection": rubric_selection,
