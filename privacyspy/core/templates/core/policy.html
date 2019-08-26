@@ -39,7 +39,6 @@
             {% for selection in rubric_selections %}
             {% include 'core/rubric_selection.html' %}
             {% empty %}
-            <br>
             <div class="notification">
                 No ratings have been established for this privacy policy. Try selecting a different revision or product.
             </div>
@@ -52,7 +51,7 @@
         {% include 'core/highlights.html'%}
         {% endwith %}
     </div>
-    <div class="column is-2 is-offset-1">
+    <div class="column is-offset-1 has-text-centered">
         <div id="policy-overview">
             <h3 class="is-size-1 is-marginless has-text-weight-bold {{policy.color}}">
                 <span class="policy-score">
