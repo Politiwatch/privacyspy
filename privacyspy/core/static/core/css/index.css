@@ -19,6 +19,6 @@
     padding-top: 25px;
 }
 
-.hero {
-    border-radius: 6px;
+.homepage-image {
+    max-width: 300px;
 }
