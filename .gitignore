@@ -18,6 +18,7 @@ lib/
 lib64/
 parts/
 sdist/
+privacyspy/static
 var/
 wheels/
 *.egg-info/

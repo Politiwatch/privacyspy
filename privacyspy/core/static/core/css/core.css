@@ -197,6 +197,10 @@ body {
         flex-direction: column-reverse;
         display: flex;
     }
+
+    .is-centered-mobile {
+        text-align: center;
+    }
      
     .image.is-96x96 {
         height: 96px;
@@ -271,6 +275,6 @@ body {
     font-size: 110%;
 }
 
-.min-width-25 {
-    min-width: 25em;
+.min-width-20 {
+    min-width: 20em;
 }

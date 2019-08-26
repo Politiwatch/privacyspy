@@ -2837,7 +2837,6 @@ a.tag:hover {
       color: rgba(122, 122, 122, 0.3); }
 
 .input, .textarea {
-  /* box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.1); */
   max-width: 100%;
   width: 100%; }
   .input[readonly], .textarea[readonly] {
