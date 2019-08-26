@@ -13,6 +13,13 @@
                     <strong>{{product.name}}</strong>&nbsp;<span
                         class="product-box-rating {{product.current_policy.color}}">
                         {% if product.current_policy.score > -1 %}{{product.current_policy.score|floatformat:"-1"}}/10{% else %}Unrated{% endif %}</span>
+                        {% if product.has_active_warning %}
+                        &nbsp;
+                        <span class="has-text-danger">
+                            <i class="fas fa-exclamation-circle"
+                                title="A high or medium severity warning was published for this product in the last 6 months"></i>
+                        </span>
+                        {% endif %}
                 </p>
                 <p>{{product.description}}</p>
             </div>

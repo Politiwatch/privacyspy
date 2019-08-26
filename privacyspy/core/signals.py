@@ -1,6 +1,6 @@
 from django.db.models.signals import post_save
 from django.dispatch import receiver
-from .models import Product, PrivacyPolicy
+from .models import Product, PrivacyPolicy, Warning
 from .email import send_many_emails
 
 @receiver(post_save, sender=Product)
@@ -17,4 +17,12 @@ def handle_policy_update(sender, **kwargs):
     send_many_emails("[%s] Policy updated" % instance.product.name, 'update', [user.email for user in instance.product.watchers()], {
         "product": instance.product,
         "updates": ["Policy (score, highlights, etc) updated"]
+    })
+
+@receiver(post_save, sender=Warning)
+def handle_warning_published(sender, **kwargs):
+    instance = kwargs["instance"]
+    send_many_emails("[%s] Warning posted" % instance.product.name, 'warning', [user.email for user in instance.product.watchers()], {
+        "product": instance.product,
+        "warning": instance
     })

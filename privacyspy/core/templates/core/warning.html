@@ -1,0 +1,11 @@
+{% load humanize %}
+
+<article class="message {% if warning.severity > 2 %}is-danger{% else %}is-warning{% endif %}">
+    <div class="message-body">
+        <h4
+            class="title is-size-4 is-small-margin {% if warning.severity > 2 %}has-text-danger{% else %}has-text-warning{% endif %}">
+            {{warning.title}}</h4>
+        <p class="heading">Posted {{warning.added|naturalday}}, last updated {{warning.updated|naturaltime}}.</p>
+        <p>{{warning.description}}</p>
+    </div>
+</article>

@@ -59,6 +59,39 @@ class Product(models.Model):
         profiles = self.profile_set.all()
         return [p.user for p in profiles]
 
+    def warnings(self):
+        return Warning.objects.filter(product=self).order_by("-added")
+
+    def has_active_warning(self):
+        warnings = self.warnings().filter(severity__gt=2)
+        if len(warnings) == 0:
+            return False
+        most_recent = warnings[0]
+        timediff = timezone.now() - most_recent.added
+        if timediff < timedelta(weeks=24):
+            return True
+        return False
+
+
+class Warning(models.Model):
+    title = models.TextField()
+    description = models.TextField()
+    added = models.DateTimeField(auto_now_add=True)
+    updated = models.DateTimeField(auto_now=True)
+    severity = models.IntegerField() # 1=low, 2=med, 3=high
+    product = models.ForeignKey(Product, on_delete=models.CASCADE)
+
+    def severity_word(self): # turns the #-based severity into a word
+        if self.severity < 2:
+            return "Low"
+        if self.severity == 2:
+            return "Medium"
+        if self.severity > 2:
+            return "High"
+    
+    def __str__(self):
+        return self.title + " (%s)" % self.product.name
+
 
 class PrivacyPolicy(models.Model):
     added = models.DateTimeField(auto_now_add=True)
