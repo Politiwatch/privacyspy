@@ -1,11 +1,10 @@
 .tagline-highlight {
-    background-color: #fd2ffd50;
-    padding: 2px;
-    border-radius: 3px;
+    color: #b603b6;
+    font-weight: bold !important;
 }
 
 #titlepane {
-    max-width: 60em;
+    max-width: 64em;
     margin: auto;
 }
 
