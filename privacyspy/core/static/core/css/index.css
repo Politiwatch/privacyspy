@@ -5,12 +5,14 @@
 }
 
 #titlepane {
-    max-width: 45em;
+    max-width: 60em;
     margin: auto;
 }
 
-#header-subtitle {
-    font-size: 150% !important;
+@media(min-width: 769px) {
+    #header-subtitle {
+        font-size: 150% !important;
+    }
 }
 
 .is-downward {

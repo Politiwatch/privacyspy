@@ -215,6 +215,7 @@ body {
     .subtitle {
         padding-top: 10px;
         text-align: center;
+        font-size: 20px !important;
     }
 
     .policy-column-stat {

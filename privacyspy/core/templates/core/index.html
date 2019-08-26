@@ -8,24 +8,33 @@
 
 {% block content %}
 <section class="hero is-medium">
-    <div class="hero-body has-text-centered" id="titlepane">
-        <h1 class="title massive">
-            We track privacy.
-        </h1>
-        {% include 'core/rating-divider.html' %}
-        <div class="">
-            <h2 class="subtitle" id="header-subtitle">
-                PrivacySpy <strong>rates</strong>, <strong>highlights</strong>, and <strong>monitors</strong>
-                {{total_policies}} privacy policies. When it comes to privacy, we've got your back.
-            </h2>
-            <a class="button is-primary is-medium" href="{% url 'directory' %}">
-                Search the Directory
-            </a>
-            <div class="is-hidden-desktop">
-                <br></div>
-            <a class="button is-primary is-medium is-outlined">
-                Install the Extension
-            </a>
+    <div class="hero-body" id="titlepane">
+        <div class="columns reverse-order-columns">
+            <div class="column is-fullwidth">
+                <h1 class="title massive">
+                    We track privacy.
+                </h1>
+                <!-- {% include 'core/rating-divider.html' %} -->
+                <div class="is-centered-mobile">
+                    <h2 class="subtitle" id="header-subtitle">
+                        PrivacySpy <span class="tagline-highlight">rates</span>, <span
+                            class="tagline-highlight">highlights</span>, and <span
+                            class="tagline-highlight">monitors</span>
+                        {{total_policies}} privacy policies. Understand how your data is being used.
+                    </h2>
+                    <a class="button is-primary is-medium" href="{% url 'directory' %}">
+                        Search the Directory
+                    </a>
+                    <div class="is-hidden-desktop">
+                        <br></div>
+                    <a class="button is-primary is-medium is-outlined">
+                        Install the Extension
+                    </a>
+                </div>
+            </div>
+            <div class="column is-4">
+                <img src="{% static 'core/img/fingerprint_graphic.svg' %}" height="100%">
+            </div>
         </div>
     </div>
 </section>
