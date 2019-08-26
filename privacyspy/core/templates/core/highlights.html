@@ -1,9 +1,11 @@
+{% load markdown_deux_tags %}
+
 {% if highlights == None %}
 <div class="notification">
     No highlights have been established for this privacy policy. To see the original document, <a href="{{policy.original_url}}" target="_blank">click here</a>.
 </div>
 {% else %}
-<div class="highlights is-collapsed" id="highlights">
+<div class="highlights is-collapsed content" id="highlights">
     {% for sentence in highlights %}
     <span style="background-color: {{sentence.color}}" class="highlighted-text">{{sentence.sentence|safe}}</span>
     {% endfor %}

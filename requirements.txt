@@ -1,3 +1,4 @@
 django
 requests
 django_extensions
+django-markdown-deux

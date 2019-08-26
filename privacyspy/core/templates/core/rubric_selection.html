@@ -1,4 +1,5 @@
 {% load humanize %}
+{% load markdown_deux_tags %}
 
 <div class="rubric-selection">
     <div class="selection-overview" onclick="toggleRubricSelection('#selection-{{selection.id}}')">
@@ -36,10 +37,10 @@
     <div class="selection-expanded" id="selection-{{selection.id}}">
         <div class="box is-margined">
             {% if selection.option.description %}
-            <div class="notification">{{selection.option.description}}</div>
+            <div class="notification content">{{selection.option.description|markdown}}</div>
             {% endif %}
             {% if selection.option.question.description %}
-            <div class="notification">{{selection.option.question.description}}</div>
+            <div class="notification content">{{selection.option.question.description|markdown}}</div>
             {% endif %}
             <div class="columns">
                 <div class="column">
@@ -57,13 +58,13 @@
                 {% if selection.citation %}
                 <div class="column">
                     <p class="heading">Citation</p>
-                    <p>{{selection.citation}}</p>
+                    <p class="content">{{selection.citation|markdown}}</p>
                 </div>
                 {% endif %}
                 {% if selection.note %}
                 <div class="column">
                     <p class="heading">Note</p>
-                    <p>{{selection.note}}</p>
+                    <p class="content">{{selection.note|markdown}}</p>
                 </div>
                 {% endif %}
             </div>

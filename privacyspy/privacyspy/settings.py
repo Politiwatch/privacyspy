@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.humanize',
     'django_extensions',
     'sass_processor',
+    'markdown_deux',
     'core',
     'api'
 ]
