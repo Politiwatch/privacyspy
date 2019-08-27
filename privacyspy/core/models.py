@@ -102,7 +102,7 @@ class PrivacyPolicy(models.Model):
     original_url = models.TextField()
     published = models.BooleanField(default=False)
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
-    cached_score = models.FloatField(null=True, default=None)
+    cached_score = models.FloatField(null=True, blank=True, default=None)
 
     def rubric_selections(self):
         return RubricSelection.objects.filter(policy=self).order_by("-option__value")
