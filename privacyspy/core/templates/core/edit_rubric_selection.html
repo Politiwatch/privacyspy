@@ -5,7 +5,7 @@
             class="tag is-warning is-medium">Unanswered</span>{% endif %} <span
             class="tag is-light is-medium">{{question.max_value}}</span></h3>
     {% if question.description %}
-    <p class="subtitle">{{question.description|markdown}}</p>
+    <div class="subtitle">{{question.description|markdown}}</div>
     {% endif %}
     <div class="columns">
         <div class="column is-4">
