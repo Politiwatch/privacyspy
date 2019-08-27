@@ -105,7 +105,7 @@ class PrivacyPolicy(models.Model):
     cached_score = models.FloatField(null=True, blank=True, default=None)
 
     def rubric_selections(self):
-        return RubricSelection.objects.filter(policy=self).order_by("-option__value")
+        return RubricSelection.objects.filter(policy=self).order_by("option__question__category")
 
     def questions_with_selections(self):
         selections = []
@@ -207,7 +207,7 @@ class RubricQuestion(models.Model):
 
     @property
     def options(self):
-        return RubricOption.objects.filter(question=self)
+        return RubricOption.objects.filter(question=self).order_by("value")
 
 
 class RubricOption(models.Model):
