@@ -6,17 +6,20 @@ from django.contrib.auth import logout
 from django.db.models import Q
 import re
 import random
-from .util import username_exists
+from .util import username_exists, get_client_ip
+
 
 def _render(request, template, context=None):
     if context == None:
         context = {}
-    credit = ["<a href='https://rmrm.io'>Miles McCain</a>", "<a href='https://igor.fyi'>Igor Barakaiev</a>"]
+    credit = ["<a href='https://rmrm.io'>Miles McCain</a>",
+              "<a href='https://igor.fyi'>Igor Barakaiev</a>"]
     random.shuffle(credit)
     context["credit"] = credit
     context["user"] = request.user
     context["request"] = request
     return render(request, template, context=context)
+
 
 def index(request):
     return _render(request, 'core/index.html', context={
@@ -27,6 +30,7 @@ def index(request):
         "total_policies": PrivacyPolicy.objects.all().count(),
         "featured_products": Product.objects.filter(featured=True)[:6],
     })
+
 
 def terms_and_privacy(request):
     return _render(request, 'core/terms_and_privacy.html', context={
@@ -133,16 +137,25 @@ def login_user(request):
     error = None
     message = None
     if request.user.is_authenticated:
+        if request.GET.get("next", None) != None:
+            return redirect(request.GET.get("next"))
         return redirect('index')
-    if LoginKey.log_in_via_token(request):
+    (token_logged_in, redirect_to) = LoginKey.log_in_via_token(request)
+    if token_logged_in:
+        if redirect_to != "":
+            return redirect(redirect_to)
         return redirect('index')
     if request.method == "POST":
-        email = request.POST.get("email", "")
-        if re.fullmatch(r"[^@]+@[^@]+\.[^@]+", email):
-            LoginKey.go_for_email(email)
-            message = "A login link has been sent to the email address you provided. Check your inbox."
+        if LoginKey.is_ip_overused(get_client_ip(request)):
+            error = "To prevent abuse, you may only request an email login link five times per hour. We're sorry for the inconvenience. Please check back later."
         else:
-            error = "Please enter a valid email address!"
+            email = request.POST.get("email", "")
+            redirect_to = request.GET.get("next", None)
+            if re.fullmatch(r"[^@]+@[^@]+\.[^@]+", email):
+                LoginKey.go_for_email(email, get_client_ip(request), redirect=redirect_to)
+                message = "A login link has been sent to the email address you provided. Check your inbox."
+            else:
+                error = "Please enter a valid email address!"
     return _render(request, 'core/login.html', context={
         "error": error,
         "message": message,
@@ -181,7 +194,7 @@ def logout_user(request):
     return redirect('index')
 
 
-@login_required
+@login_required(login_url="/login")
 def delete_account(request):
     if request.method == "POST":
         request.user.delete()
@@ -208,7 +221,8 @@ def directory(request):
         "num_policies": PrivacyPolicy.objects.filter(published=True).count()
     })
 
-@login_required
+
+@login_required(login_url="/login")
 def suggestions(request):
     if request.method == "POST":
         suggestion_id = request.POST.get("id", None)
@@ -225,16 +239,17 @@ def suggestions(request):
                 if status != None and request.user.is_superuser and status in ['O', 'D', 'R']:
                     suggestion.status = status
                 suggestion.save()
-    
+
     return _render(request, "core/suggestions.html", context={
         "open_suggestions": Suggestion.user_open_suggestions(request.user),
         "closed_suggestions": Suggestion.user_closed_suggestions(request.user),
         "title": "Suggestions",
         "submitted": request.GET.get("submitted", "False") == "True",
-        "all_suggestions": Suggestion.all_open_suggestions() if request.user.is_superuser else [] 
+        "all_suggestions": Suggestion.all_open_suggestions() if request.user.is_superuser else []
     })
 
-@login_required
+
+@login_required(login_url="/login")
 def create_suggestion(request):
     error = None
     if request.method == "POST":
@@ -243,9 +258,12 @@ def create_suggestion(request):
         policy_id = request.POST.get("policy", None)
         rubric_selection_id = request.POST.get("rubric-selection", None)
         if len(text.strip()) != 0:
-            policy = get_object_or_404(PrivacyPolicy, id=int(policy_id)) if policy_id != None else None
-            rubric_selection = get_object_or_404(RubricSelection, id=int(rubric_selection_id)) if rubric_selection_id != None else None
-            Suggestion.objects.create(user=request.user, policy=policy, rubric_selection=rubric_selection, text=text)
+            policy = get_object_or_404(PrivacyPolicy, id=int(
+                policy_id)) if policy_id != None else None
+            rubric_selection = get_object_or_404(RubricSelection, id=int(
+                rubric_selection_id)) if rubric_selection_id != None else None
+            Suggestion.objects.create(
+                user=request.user, policy=policy, rubric_selection=rubric_selection, text=text)
             return redirect("/suggestions/?submitted=True")
         else:
             error = "You submitted an empty message!"
@@ -256,7 +274,8 @@ def create_suggestion(request):
     if policy_id != None:
         policy = get_object_or_404(PrivacyPolicy, id=int(policy_id))
     if rubric_selection_id != None:
-        rubric_selection = get_object_or_404(RubricSelection, id=int(rubric_selection_id))
+        rubric_selection = get_object_or_404(
+            RubricSelection, id=int(rubric_selection_id))
     return _render(request, "core/create_suggestion.html", context={
         "error": error,
         "policy": policy,

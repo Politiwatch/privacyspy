@@ -82,7 +82,7 @@ admin.site.register(Profile, ProfileAdmin)
 
 
 class LoginKeyAdmin(admin.ModelAdmin):
-    list_display = ('email', 'expires', 'used', 'created')
+    list_display = ('email', 'expires', 'used', 'created', 'ip')
     list_filter = ('used',)
 
 

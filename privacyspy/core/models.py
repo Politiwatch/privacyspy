@@ -26,7 +26,8 @@ class Product(models.Model):
 
     name = models.TextField(db_index=True)
     slug = models.TextField(unique=True)
-    icon = models.TextField(blank=True, default="", help_text="Use https://www.base64-image.de/")
+    icon = models.TextField(blank=True, default="",
+                            help_text="Use https://www.base64-image.de/")
     hostname = models.TextField(default="UNSET", db_index=True)
     description = models.TextField(default="", db_index=True)
     featured = models.BooleanField(default=False)
@@ -78,17 +79,18 @@ class Warning(models.Model):
     description = models.TextField()
     added = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
-    severity = models.IntegerField(help_text="Possible values: 1 (low), 2 (medium), 3 (high)") # 1=low, 2=med, 3=high
+    severity = models.IntegerField(
+        help_text="Possible values: 1 (low), 2 (medium), 3 (high)")  # 1=low, 2=med, 3=high
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
 
-    def severity_word(self): # turns the #-based severity into a word
+    def severity_word(self):  # turns the #-based severity into a word
         if self.severity < 2:
             return "Low"
         if self.severity == 2:
             return "Medium"
         if self.severity > 2:
             return "High"
-    
+
     def __str__(self):
         return self.title + " (%s)" % self.product.name
 
@@ -280,13 +282,17 @@ class LoginKey(models.Model):
     email = models.TextField()
     token = models.TextField()
     expires = models.DateTimeField()
+    ip = models.GenericIPAddressField(null=True, blank=True)
+    redirect = models.TextField(blank=True, default="")
     used = models.BooleanField(default=False)
     created = models.DateTimeField(auto_now_add=True)
 
     @staticmethod
-    def go_for_email(email):  # note: all email addresses are treated as lowercase
+    def go_for_email(email, ip, redirect=None):  # note: all email addresses are treated as lowercase
+        if redirect == None:
+            redirect = ""
         key = LoginKey.objects.create(email=email.lower(), token=get_random_string(
-            length=32), expires=timezone.now() + timedelta(hours=1))
+            length=32), expires=timezone.now() + timedelta(hours=1), ip=ip, redirect=redirect)
         send_email("Your PrivacySpy Login", "login", email.lower(), {
             "link": "/login/?token=" + key.token
         })
@@ -298,7 +304,7 @@ class LoginKey(models.Model):
     def log_in_via_token(request):
         token = request.GET.get("token", None)
         if token == None:
-            return False
+            return (False, None)
         keys = LoginKey.objects.filter(
             token=token, expires__gt=timezone.now(), used=False)
         if keys.count() > 0:
@@ -311,8 +317,14 @@ class LoginKey(models.Model):
                     username="newuser_" + get_random_string(length=5), email=key.email)
                 profile = Profile.objects.create(user=user)
                 login(request, user)
-                return True
+                return (True, key.redirect)
             else:
                 login(request, users[0])
-                return True
-        return False
+                return (True, key.redirect)
+        return (False, None)
+
+    @staticmethod
+    def is_ip_overused(ip):
+        keys = LoginKey.objects.filter(
+            ip=ip, created__gt=timezone.now() - timedelta(hours=1)).count()
+        return keys > 5
