@@ -26,7 +26,7 @@ class Product(models.Model):
 
     name = models.TextField(db_index=True)
     slug = models.TextField(unique=True)
-    icon = models.TextField(blank=True, default="")
+    icon = models.TextField(blank=True, default="", help_text="Use https://www.base64-image.de/")
     hostname = models.TextField(default="UNSET", db_index=True)
     description = models.TextField(default="", db_index=True)
     featured = models.BooleanField(default=False)
