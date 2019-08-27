@@ -10,7 +10,7 @@ Description: {{warning.description}}
 Added: {{warning.added}}
 Severity: {{warning.severity_word}}
 
-To see the warning (or to unwatch {{product.name}}), go here: https://privacyspy.org{% url 'product' product_slug=product.slug%}#warnings
+To see the warning (or to unwatch {{product.name}}), go here: {{base_url}}{% url 'product' product_slug=product.slug%}#warnings
 
 Best,
 PrivacySpy

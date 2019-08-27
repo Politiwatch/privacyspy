@@ -5,7 +5,7 @@ Hi there,
 
 You are receiving this email because someone (probably you) is logging in to an account on PrivacySpy.
 
-To complete the login, go to the following link: {{link}}
+To complete the login, go to the following link: {{base_url}}{{link}}
 
 If you didn't request this email, you can safely discard it.
 

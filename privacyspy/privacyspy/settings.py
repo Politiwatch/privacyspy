@@ -29,6 +29,8 @@ ALLOWED_HOSTS = []
 
 HIGHLIGHTS_API_TOKEN = os.environ.get("API_TOKEN", None)
 
+BASE_URL = os.environ.get("BASE_URL", default="https://privacyspy.org")
+
 # Application definition
 
 INSTALLED_APPS = [

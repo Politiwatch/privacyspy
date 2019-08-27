@@ -287,7 +287,7 @@ class LoginKey(models.Model):
         key = LoginKey.objects.create(email=email.lower(), token=get_random_string(
             length=32), expires=timezone.now() + timedelta(hours=1))
         send_email("Your PrivacySpy Login", "login", email.lower(), {
-            "link": "https://privacyspy.org/login/?token=" + key.token
+            "link": "/login/?token=" + key.token
         })
 
     def is_valid(self):

@@ -5,6 +5,7 @@ from threading import Thread
 
 
 def send_email(subject, template, to, context):
+    context["base_url"] = settings.BASE_URL
     text_render = render_to_string(
         "core/emails/" + template + ".txt", context=context)
     if settings.DEBUG:
@@ -18,6 +19,7 @@ def send_email(subject, template, to, context):
 
 
 def send_many_emails(subject, template, to, context):
+    context["base_url"] = settings.BASE_URL
     def send():
         text_render = render_to_string(
             "core/emails/" + template + ".txt", context=context)
