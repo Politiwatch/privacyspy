@@ -122,10 +122,6 @@ body {
     font-size: 125% !important;
 }
 
-.tabs {
-    overflow: visible !important;
-}
-
 .landing-invisible-text {
     background-color: rgba(0, 0, 0, 0.05);
     animation: loadingblink infinite ease-in-out 1s;
