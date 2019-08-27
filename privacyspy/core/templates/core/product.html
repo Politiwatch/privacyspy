@@ -17,7 +17,7 @@
         <p class='subtitle is-slightly-right'>{{product.description}}</p>
     </div>
     {% if user.is_authenticated %}
-    <div class="column is-narrow">
+    <div class="column is-narrow is-centered-mobile">
         <form method="POST">
             {% csrf_token %}
             {% if watching %}
