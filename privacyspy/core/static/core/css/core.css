@@ -122,6 +122,10 @@ body {
     font-size: 125% !important;
 }
 
+.tabs {
+    overflow: visible !important;
+}
+
 .landing-invisible-text {
     background-color: rgba(0, 0, 0, 0.05);
     animation: loadingblink infinite ease-in-out 1s;
@@ -201,7 +205,7 @@ body {
     .is-centered-mobile {
         text-align: center;
     }
-     
+
     .image.is-96x96 {
         height: 96px;
         width: 96px;
