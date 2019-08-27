@@ -200,6 +200,7 @@ class RubricQuestion(models.Model):
     description = models.TextField(blank=True, default="")
     published = models.BooleanField(default=False)
     max_value = models.FloatField()
+    category = models.TextField(default="Unknown")
 
     def __str__(self):
         return self.text

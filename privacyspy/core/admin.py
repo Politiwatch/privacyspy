@@ -38,7 +38,7 @@ class RubricOptionInline(admin.StackedInline):
 
 
 class RubricQuestionAdmin(admin.ModelAdmin):
-    list_display = ('text', 'published', 'max_value')
+    list_display = ('text', 'published', 'max_value', 'category')
     list_filter = ('published',)
     search_fields = ['text', 'description']
     inlines = [RubricOptionInline]
