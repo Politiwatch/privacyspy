@@ -58,13 +58,13 @@
                 {% if selection.citation %}
                 <div class="column">
                     <p class="heading">Citation</p>
-                    <p class="content">{{selection.citation|markdown}}</p>
+                    <div class="content">{{selection.citation|markdown}}</div>
                 </div>
                 {% endif %}
                 {% if selection.note %}
                 <div class="column">
                     <p class="heading">Note</p>
-                    <p class="content">{{selection.note|markdown}}</p>
+                    <div class="content">{{selection.note|markdown}}</div>
                 </div>
                 {% endif %}
             </div>
