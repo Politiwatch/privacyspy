@@ -122,7 +122,7 @@ LOGGING = {
             'handlers': ['console'],
              'level': os.getenv('DJANGO_LOG_LEVEL', 'INFO'),
         },
-        'privacyspy': {
+        '': {
             'handlers': ['console'],
              'level': os.getenv('DJANGO_LOG_LEVEL', 'INFO'),
         },
@@ -154,6 +154,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = 'static'
+
+ADMINS = [os.getenv("ADMINS")]
 
 if not DEBUG:
     import django_heroku
