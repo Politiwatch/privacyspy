@@ -6,13 +6,13 @@
 <h1 class="title massive" style="margin-bottom: 12px;">Directory</h1>
 <div class="columns">
     <div class="column is-4">
-        <form method="GET">
+        <form method="GET" id="directory-search">
             <div class="control has-icons-right min-width-20">
                 <input class="input search-input is-large" name="search" type="text"
                     placeholder="Search {{num_policies|intcomma}} privacy policies..."
                     {% if search != None %}value="{{search}}" {% endif %}>
                 <span class="icon is-small is-right has-cursor-pointer" onclick="$(this).submit()">
-                    <i class="fas fa-search"></i>
+                    <i id="directory-search-icon" class="fas fa-search"></i>
                 </span>
             </div>
         </form>

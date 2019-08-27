@@ -16,6 +16,12 @@ function showHighlights() {
 document.addEventListener('DOMContentLoaded', () => {
 
   $(".is-collapsed").click(showHighlights);
+  $("button[type=submit]").click(function () {
+    $(this).addClass("is-loading");
+  });
+  $("#directory-search").submit(function () {
+    $("#directory-search-icon").removeClass("fa-search").addClass("fa-cog").addClass("fa-spin");
+  });
 
   // Get all "navbar-burger" elements
   const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
