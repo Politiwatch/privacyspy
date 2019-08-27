@@ -32,6 +32,10 @@ class Product(models.Model):
     description = models.TextField(default="", db_index=True)
     featured = models.BooleanField(default=False)
 
+    def get_absolute_url(self):
+        return "/product/%s" % (self.slug)
+    
+
     @staticmethod
     def search(query):
         if not settings.DEBUG:
@@ -94,6 +98,9 @@ class Warning(models.Model):
     def __str__(self):
         return self.title + " (%s)" % self.product.name
 
+    def get_absolute_url(self):
+        return "/product/%s/#warnings" % (self.product.slug)
+
 
 class PrivacyPolicy(models.Model):
     added = models.DateTimeField(auto_now_add=True)
@@ -105,6 +112,9 @@ class PrivacyPolicy(models.Model):
     published = models.BooleanField(default=False)
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
     cached_score = models.FloatField(null=True, blank=True, default=None)
+
+    def get_absolute_url(self):
+        return "/product/%s/?revision=%s" % (self.product.slug, str(self.id))
 
     def rubric_selections(self):
         return RubricSelection.objects.filter(policy=self).order_by("option__question__category")

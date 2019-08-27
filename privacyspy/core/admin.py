@@ -9,17 +9,25 @@ class WarningInline(admin.StackedInline):
     extra = 0
 
 
+class PrivacyPolicyInline(admin.StackedInline):
+    model = PrivacyPolicy
+    show_change_link = True
+    extra = 0
+
+
 class ProductAdmin(admin.ModelAdmin):
+    view_on_site = True
     list_display = ('name', 'slug', 'featured')
     list_filter = ('featured',)
     search_fields = ['name', 'hostname', 'description']
-    inlines = [WarningInline]
+    inlines = [WarningInline, PrivacyPolicyInline]
 
 
 admin.site.register(Product, ProductAdmin)
 
 
 class PrivacyPolicyAdmin(admin.ModelAdmin):
+    view_on_site = True
     list_display = ('id', 'product', 'added', 'updated',
                     'erroneous', 'out_of_date', 'published', 'cached_score')
     list_filter = ('published', 'out_of_date', 'erroneous')
@@ -90,6 +98,7 @@ admin.site.register(LoginKey, LoginKeyAdmin)
 
 
 class WarningAdmin(admin.ModelAdmin):
+    view_on_site = True
     list_display = ('title', 'product', 'added',
                     'updated', 'severity', 'severity_word')
     list_select_related = ('product',)

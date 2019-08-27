@@ -23,7 +23,7 @@
         <li><a class="has-text-weight-medium" href="#edit-policy-ratings">Ratings</a></li>
         <li><a class="has-text-weight-medium" href="#edit-policy-warnings">Warnings</a></li>
         <li><a class="has-text-weight-medium" href="#edit-policy-suggestions">Suggestions</a></li>
-        <li><a class="has-text-weight-medium" href="/admin/core/privacypolicy/{{policy.id}}/change/">Admin Panel</a>
+        <li><a class="has-text-weight-medium" href="{% url 'admin:core_privacypolicy_change' policy.id %}">Admin Panel</a>
         </li>
         <li><a class="has-text-weight-medium"
                 href="{% url 'product' policy.product.slug %}?revision={{policy.id}}">Public View</a></li>

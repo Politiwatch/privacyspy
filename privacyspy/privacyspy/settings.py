@@ -141,6 +141,8 @@ STATIC_ROOT = 'static'
 
 ADMINS = [os.getenv("ADMINS")]
 
+ADMIN_SITE_URL = os.getenv("ADMIN_SITE_URL", "admin/")
+
 if not DEBUG:
     import django_heroku
     django_heroku.settings(locals(), logging=False)
