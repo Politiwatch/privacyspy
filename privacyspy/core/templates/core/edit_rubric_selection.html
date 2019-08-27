@@ -1,9 +1,11 @@
+{% load markdown_deux_tags %}
+
 <div class="rubric-selection-editor" id="question-id-{{question.id}}">
     <h3 class="title is-size-4">{{question.text}} {% if question.answer == None %}<span
             class="tag is-warning is-medium">Unanswered</span>{% endif %} <span
             class="tag is-light is-medium">{{question.max_value}}</span></h3>
     {% if question.description %}
-    <p class="subtitle">{{question.description}}</p>
+    <p class="subtitle">{{question.description|markdown}}</p>
     {% endif %}
     <div class="columns">
         <div class="column is-4">
