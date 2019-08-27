@@ -78,7 +78,7 @@ class Warning(models.Model):
     description = models.TextField()
     added = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
-    severity = models.IntegerField() # 1=low, 2=med, 3=high
+    severity = models.IntegerField(help_text="Possible values: 1 (low), 2 (medium), 3 (high)") # 1=low, 2=med, 3=high
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
 
     def severity_word(self): # turns the #-based severity into a word
@@ -218,6 +218,9 @@ class RubricOption(models.Model):
     def color(self):
         return ratio_color(float(self.value) / float(self.question.max_value))
 
+    def __str__(self):
+        return self.text
+
 
 class RubricSelection(models.Model):
     option = models.ForeignKey(RubricOption, on_delete=models.CASCADE)
@@ -239,6 +242,12 @@ class Suggestion(models.Model):
     comment = models.TextField(blank=True, default="")
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return "Suggestion from " + user.username
+
+    def is_open(self):
+        return self.status == "O"
 
     @staticmethod
     def user_open_suggestions(user):
@@ -262,12 +271,16 @@ class Profile(models.Model):
     def for_user(user):
         return Profile.objects.get(user=user)
 
+    def __str__(self):
+        return self.user.email
+
 
 class LoginKey(models.Model):
     email = models.TextField()
     token = models.TextField()
     expires = models.DateTimeField()
     used = models.BooleanField(default=False)
+    created = models.DateTimeField(auto_now_add=True)
 
     @staticmethod
     def go_for_email(email):  # note: all email addresses are treated as lowercase
@@ -276,6 +289,9 @@ class LoginKey(models.Model):
         send_email("Your PrivacySpy Login", "login", email.lower(), {
             "link": "https://privacyspy.org/login/?token=" + key.token
         })
+
+    def is_valid(self):
+        return (not self.used) and timezone.now() < self.expires
 
     @staticmethod
     def log_in_via_token(request):
@@ -291,7 +307,7 @@ class LoginKey(models.Model):
             users = User.objects.filter(email=key.email)
             if users.count() == 0:
                 user = User.objects.create_user(
-                    username="newuser" + get_random_string(length=5), email=key.email)
+                    username="newuser_" + get_random_string(length=5), email=key.email)
                 profile = Profile.objects.create(user=user)
                 login(request, user)
                 return True
