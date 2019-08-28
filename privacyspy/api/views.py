@@ -5,39 +5,25 @@ from core.models import Product, PrivacyPolicy, RubricQuestion, RubricOption, Ru
 from urllib.parse import urlparse
 
 
-def retrieve_by_url(request):
-    url = request.GET.get("url", "")
-    if url == "":
+def retrieve_products(request):
+    hostname = request.GET.get("hostname", "").strip().lower()
+    if hostname == "":
         return JsonResponse({
-            "error": "No URL provided."
+            "error": "No hostname provided."
         })
 
-    hostname = urlparse(url).hostname.lower()
-
-    token = request.GET.get("token", "")
-    if token == "":
-        return JsonResponse({
-            "error": "No token provided."
-        })
-    elif token != os.environ.get("api_token"):
-        return JsonResponse({
-            "error": "Invalid token."
-        })
-
-    try:
-        products = Product.objects.filter(
-            hostname__contains=hostname)
-        policies = []
-        for entry in products:
-            try:
-                policies.append(PrivacyPolicy.objects.filter(
-                    product=entry, published=True, out_of_date=False, erroneous=False).order_by('-added')[0])
-            except:
-                pass
-    except:
-        return JsonResponse({
-            "error": "Couldn't find any policy at given URL."
-        })
+    elements = hostname.split(".")
+    regex = "\.?".join(
+        ["(%s\.)?" % element for element in elements[:-2]] + elements[-2:])
+    print(regex)
+    products = Product.objects.filter(
+        hostname__iregex=regex)[:10]
+    policies = []
+    for entry in products:
+        print("hello\n")
+        temp = entry.current_policy
+        if temp != None:
+            policies.append(temp)
 
     response = []
     for policy in policies:
@@ -73,12 +59,12 @@ def retrieve_by_url(request):
 
         response.append({
             "url": policy.original_url,
-            "highlights": policy.highlights_json,
             "added": policy.added,
             "cached_score": policy.cached_score,
             "product_name": policy.product.name,
             "product_description": policy.product.description,
-            "rubric": rubric
+            "rubric": rubric,
+            "warnings": [warning.to_dict() for warning in policy.product.warnings()]
         })
 
     return JsonResponse({"response": response, "status": "success"})

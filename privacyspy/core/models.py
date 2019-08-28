@@ -34,7 +34,6 @@ class Product(models.Model):
 
     def get_absolute_url(self):
         return "/product/%s" % (self.slug)
-    
 
     @staticmethod
     def search(query):
@@ -97,6 +96,15 @@ class Warning(models.Model):
 
     def __str__(self):
         return self.title + " (%s)" % self.product.name
+
+    def to_dict(self):
+        return {
+            "title": self.title,
+            "description": self.description,
+            "added": self.added,
+            "updatd": self.updated,
+            "severity": self.severity
+        }
 
     def get_absolute_url(self):
         return "/product/%s/#warnings" % (self.product.slug)
@@ -298,7 +306,8 @@ class LoginKey(models.Model):
     created = models.DateTimeField(auto_now_add=True)
 
     @staticmethod
-    def go_for_email(email, ip, redirect=None):  # note: all email addresses are treated as lowercase
+    # note: all email addresses are treated as lowercase
+    def go_for_email(email, ip, redirect=None):
         if redirect == None:
             redirect = ""
         key = LoginKey.objects.create(email=email.lower(), token=get_random_string(
