@@ -57,12 +57,14 @@ def retrieve_products(request):
 
             rubric.append(rubric_obj)
 
+        description = policy.product.description
+
         response.append({
             "url": policy.original_url,
             "added": policy.added,
             "cached_score": policy.cached_score,
             "product_name": policy.product.name,
-            "product_description": policy.product.description,
+            "product_description": description if description != "" else None,
             "rubric": rubric,
             "warnings": [warning.to_dict() for warning in policy.product.warnings()]
         })
