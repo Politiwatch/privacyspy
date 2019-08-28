@@ -31,16 +31,10 @@
 {% endif %}
 <br>
 
-<div class="columns">
-
+<div class="columns is-multiline">
     {% for product in products %}
-    <div class="column">{% include 'core/product_box.html' %}</div>
-    {% if forloop.counter|divisibleby:"3" and not forloop.last %}
-</div>
-<div class="row">
-    {% endif %}
+    <div class="column is-4">{% include 'core/product_box.html' %}</div>
     {% endfor %}
-
 </div>
 
 {% endblock %}
