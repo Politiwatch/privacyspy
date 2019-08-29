@@ -4,19 +4,79 @@
 <div class="text is-40-width">
     <h1 class="title massive" style="margin-bottom: 12px;">About</h1>
     <div class="content">
-        <p class="has-text-weight-bold">We believe that users have the right to know exactly how companies store,
-            process, and share their
-            personal data.</p>
         <p>
-            Privacy policies satisfy this right but they are inaccessible. <a
-                href="https://privacyspy.org">PrivacySpy</a>
-            aims to change this by creating a look-up
-            platform containing a standardized and consistent <a href="#rubric">rubric</a>
-            that serves as a proxy of privacy policies' quality. </p>
+            <blockquote class="is-size-5">We believe that you have the right to know exactly how companies store,
+                process, and share your personal data.<br><br>
+                <a href="{% url 'create_suggestion' %}" class="button is-small is-primary">Submit Suggestion</a>
+                <a href="https://github.com/Politiwatch/PrivacySpy-Core"
+                    class="button is-small is-primary is-outlined">Source
+                    Code</a>
+                <a href="https://github.com/Politiwatch/PrivacySpy-Core" class="button is-small is-primary is-outlined"
+                    disabled>Donate to Politiwatch</a>
+            </blockquote>
+        </p>
+        <p>
+            Unfortunately, most privacy policies are convoluted&mdash;sometimes even intentionally so. They can be
+            difficult to read, and even more difficult to comprehend. Rarely do they provide actionable insight into
+            protecting one's data.</p>
+        <p>Making matters worse, companies are often only held accountable for their privacy practices when a data
+            breach occurs or when they experience fallout from mishandling user data (think Facebook's Cambridge
+            Analytica scandal, for example).</p>
+        <p>If companies were held accountable for their privacy policies&mdash;not just for creating policies, but also
+            for creating <i>good</i> ones&mdash;our data would be safer. And if our data is safer, <a
+                href="https://www.scientificamerican.com/article/will-democracy-survive-big-data-and-artificial-intelligence/">so
+                is democracy</a>. Because <a href="https://whyprivacymatters.org">privacy matters</a>.</p>
+        <h1 id="features" class="title is-size-3">Features</h1>
+        <p><strong>PrivacySpy is helping to make privacy policies relevant.</strong> Privacy policies should be
+            more than just a box to check; they are fundamental to ensuring data transparency and allowing users to make
+            informed choices. PrivacySpy is trying to make this our reality in three ways:</p>
+        <p><strong>Ratings &mdash; </strong>We rate our policies using a consistent and vetted rubric. You can
+            understand the key features and
+            drawbacks
+            of any rated policy at a glance.</p>
+        <p><strong>Highlights &mdash; </strong>We use natural language processing to bring your attention to key
+            elements of privacy policies. After
+            all, reading something is better than reading nothing.</p>
+        <p><strong>Warnings &mdash; </strong>When a product or company in our database is found mishandling user data,
+            we note it on our
+            website. That way, you can contextualize a service's privacy policy with its record.</p>
+        <h1 id="definitions" class="title is-size-3">Definitions</h1>
+        <p>PrivacySpy uses a number of terms to describe how companies handle personal information. To ensure
+            consistency,
+            we've defined the key ones below. Note that our rubric, ratings, and defintions not intended to be read as
+            legal
+            documents.</p>
+        <p><strong>Personal data &mdash;</strong> (from the GDPR) "any information relating to an identified or
+            identifiable
+            natural person
+            ('data subject')" <span class="has-text-grey-light">(examples include IP addresses, individual usage
+                statistics,
+                etc.)</span></p>
+        <p><strong>Non-critical purposes &mdash;</strong> any use of personal data beyond what is reasonably necessary
+            to
+            provide the user a desired core service <span class="has-text-grey-light">(a critical use of personal data
+                would be
+                using email addresses to send
+                password reset emails; a non-critical use of personal data would be using email addresses and browsing
+                habits to
+                serve behavioral marketing)</span></p>
+        <h1 id="rubric" class="title is-size-3">Rubric</h1>
+        <p>A key element of PrivacySpy is its ratings, which are calculated based on a consistent rubric. All of our
+            scores
+            are fully transparent and backed by citations and/or notes.</p>
+        <p>We acknowledge that no rubric, no matter how good, can perfectly encapsulate the 'quality' of a privacy
+            policy.
+            That's why we don't ask you to trust us. We've included our full grading system below so you can evaluate it
+            for
+            yourself.</p>
+        <p>If you have an idea for how we could improve our rubric, please feel free to <a
+                href="{% url 'create_suggestion' %}">create a suggestion</a>.</p>
     </div>
-    <h1 id="rubric" class="title is-size-3">Rubric</h1>
-    {% for question in rubric_questions %}
+    {% for category, questions in rubric_questions.items %}
+    <h3 id="rubric-{{category}}" class="title is-size-5">{{category}}</h3>
+    {% for question in questions %}
     {% include 'core/rubric_question.html' %}
+    {% endfor %}
     {% endfor %}
 </div>
 {% endblock %}

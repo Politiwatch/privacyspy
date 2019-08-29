@@ -4,6 +4,7 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth.decorators import user_passes_test
 from django.contrib.auth import logout
 from django.db.models import Q
+from django.conf import settings
 import re
 import random
 from .util import username_exists, get_client_ip
@@ -39,9 +40,19 @@ def terms_and_privacy(request):
 
 
 def about(request):
+    rubric_categories = []
+    if settings.DEBUG:
+        rubric_categories = set([question.category for question in RubricQuestion.objects.all()])
+    else:
+        rubric_categories = RubricQuestion.objects.all().distinct("category")
+    rubric_questions = {}
+    for category in rubric_categories:
+        rubric_questions[category] = []
+        for question in RubricQuestion.objects.filter(category__iexact=category, published=True).order_by("-max_value"):
+            rubric_questions[category].append(question)
     return _render(request, 'core/about.html', context={
         "title": "About",
-        "rubric_questions": RubricQuestion.objects.all()
+        "rubric_questions": rubric_questions,
     })
 
 
