@@ -13,10 +13,10 @@
             aims to change this by creating a look-up
             platform containing a standardized and consistent <a href="#rubric">rubric</a>
             that serves as a proxy of privacy policies' quality. </p>
-        <h1 id="rubric">Rubric</h1>
-        {% for question in rubric_questions %}
-        {% include 'core/rubric_question.html' %}
-        {% endfor %}
     </div>
+    <h1 id="rubric" class="title is-size-3">Rubric</h1>
+    {% for question in rubric_questions %}
+    {% include 'core/rubric_question.html' %}
+    {% endfor %}
 </div>
 {% endblock %}
