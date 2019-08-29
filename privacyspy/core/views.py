@@ -41,10 +41,7 @@ def terms_and_privacy(request):
 
 def about(request):
     rubric_categories = []
-    if settings.DEBUG:
-        rubric_categories = set([question.category for question in RubricQuestion.objects.all()])
-    else:
-        rubric_categories = RubricQuestion.objects.all().distinct("category")
+    rubric_categories = set([question.category for question in RubricQuestion.objects.all()])
     rubric_questions = {}
     for category in rubric_categories:
         rubric_questions[category] = []
