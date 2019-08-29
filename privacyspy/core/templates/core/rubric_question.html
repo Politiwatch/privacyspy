@@ -1,0 +1,50 @@
+{% load humanize %}
+{% load markdown_deux_tags %}
+
+<div class="rubric-selection">
+    <div class="selection-overview" onclick="toggleRubricSelection('#selection-{{selection.id}}')">
+        <div class="columns is-mobile">
+            <div class="column is-narrow">
+                <h4 class="is-size-5">
+                    <span class="icon">
+                        <i class="fas fa-chevron-down" id="selection-{{selection.id}}-icon"></i>
+                    </span>
+                </h4>
+            </div>
+            <div class="column">
+                <h4 class="is-size-5 is-upped-slight">
+                    <div class="answer">
+                        <span>{{question.text}}</span>
+                    </div>
+                </h4>
+            </div>
+            <div class="column is-narrow is-upped-slight">
+                <h4 class="is-size-4">
+                    <span class="rating-total">{{question.max_value|floatformat:"-1"}}</span>
+                </h4>
+            </div>
+        </div>
+    </div>
+    <div class="selection-expanded" id="selection-{{selection.id}}">
+        <div class="box is-margined">
+            {% if question.description %}
+            <div class="notification content">{{question.description|markdown}}</div>
+            {% endif %}
+            <div class="columns">
+                <div class="column">
+                    <p class="heading">Possible Options</p>
+                    <table class="table is-fullwidth is-striped">
+                        {% for option in question.options %}
+                        <tr {% if option == selection.option %}class="is-selected is-light" {% endif %}>
+                            <td title="{{option.description}}">{{option.text}}</td>
+                            <td><strong>{{option.value|floatformat:"-1"}}</strong>/{{option.question.max_value|floatformat:"-1"}}
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+</div>

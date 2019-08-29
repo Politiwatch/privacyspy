@@ -25,6 +25,9 @@
                 <a class="navbar-item">
                     Extension
                 </a>
+                <a class="navbar-item" href="{% url 'about' %}">
+                    About
+                </a>
             </div>
             <div class="navbar-end">
                 <div class="navbar-item">
@@ -48,7 +51,8 @@
                                 {% endif %}
                                 <hr class="dropdown-divider">
                                 {% if user.is_superuser %}
-                                <a href="{% url 'admin:index' %}" class="dropdown-item has-text-danger has-text-weight-bold">Admin Site</a>
+                                <a href="{% url 'admin:index' %}"
+                                    class="dropdown-item has-text-danger has-text-weight-bold">Admin Site</a>
                                 {% endif %}
                                 <a href="{% url 'account' %}" class="dropdown-item">My Account</a>
                                 <a href="{% url 'suggestions' %}" class="dropdown-item">My Suggestions</a>

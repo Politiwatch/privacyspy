@@ -1,0 +1,22 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+<div class="text is-40-width">
+    <h1 class="title massive" style="margin-bottom: 12px;">About</h1>
+    <div class="content">
+        <p class="has-text-weight-bold">We believe that users have the right to know exactly how companies store,
+            process, and share their
+            personal data.</p>
+        <p>
+            Privacy policies satisfy this right but they are inaccessible. <a
+                href="https://privacyspy.org">PrivacySpy</a>
+            aims to change this by creating a look-up
+            platform containing a standardized and consistent <a href="#rubric">rubric</a>
+            that serves as a proxy of privacy policies' quality. </p>
+        <h1 id="rubric">Rubric</h1>
+        {% for question in rubric_questions %}
+        {% include 'core/rubric_question.html' %}
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

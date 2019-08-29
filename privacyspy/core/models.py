@@ -265,7 +265,7 @@ class Suggestion(models.Model):
     updated = models.DateTimeField(auto_now=True)
 
     def __str__(self):
-        return "Suggestion from " + user.username
+        return "Suggestion from " + self.user.username
 
     def is_open(self):
         return self.status == "O"
