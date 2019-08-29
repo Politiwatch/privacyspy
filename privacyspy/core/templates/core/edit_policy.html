@@ -31,7 +31,12 @@
 </div>
 {% for action in actions %}
 <div class="notification">
-    {{action}}
+    {{action|safe}}
+</div>
+{% endfor %}
+{% for error in errors %}
+<div class="notification is-danger">
+    {{error|safe}}
 </div>
 {% endfor %}
 <div class="columns" id="edit-policy-metadata">
