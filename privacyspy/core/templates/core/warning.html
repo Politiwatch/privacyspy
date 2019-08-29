@@ -1,4 +1,5 @@
 {% load humanize %}
+{% load markdown_deux_tags %}
 
 <article class="message {% if warning.severity > 2 %}is-danger{% else %}is-warning{% endif %}">
     <div class="message-body">
@@ -6,6 +7,6 @@
             class="title is-size-4 is-small-margin {% if warning.severity > 2 %}has-text-danger{% else %}has-text-warning{% endif %}">
             {{warning.title}}</h4>
         <p class="heading">Posted {{warning.added|naturalday}}, last updated {{warning.updated|naturaltime}}.</p>
-        <p>{{warning.description}}</p>
+        <div class="content">{{warning.description|markdown}}</div>
     </div>
 </article>
