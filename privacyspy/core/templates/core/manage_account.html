@@ -41,6 +41,7 @@
         <br>
         {% for product in profile.watching_products.all %}
         {% include 'core/product_box.html' %}
+        <br>
         {% empty %}
         <div class="notification">
         You are not currently watching any products.
