@@ -103,6 +103,10 @@
                 <p>{{policy.product.warnings|length}}</p>
             </div>
             <div class="policy-column-stat">
+                <div class="heading">Maintained by</div>
+                <p>{% if policy.product.maintainers|length == 0 %}Admins{% else %}{{policy.product.maintainers|join:", "}}{% endif %}</p>
+            </div>
+            <div class="policy-column-stat">
                 <div class="heading">Original Location</div>
                 <a class="button is-dark is-small is-outlined" href="{{policy.original_url}}" target="_blank">Open in
                     New
