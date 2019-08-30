@@ -31,6 +31,14 @@ class Product(models.Model):
     hostname = models.TextField(default="UNSET", db_index=True)
     description = models.TextField(default="", db_index=True)
     featured = models.BooleanField(default=False)
+    maintainers = models.ManyToManyField(User)
+
+    def is_maintainer(self, user):
+        return self.maintainers.filter(id=user.id).exists()
+
+    @staticmethod
+    def is_maintaining(user):
+        return user.product_set.all()
 
     def get_absolute_url(self):
         return "/product/%s" % (self.slug)
@@ -197,8 +205,9 @@ class PrivacyPolicy(models.Model):
                 "token": settings.HIGHLIGHTS_API_TOKEN,
                 "url": url
             }).json()
-            self.highlights_json = json.dumps(data["response"])
-            self.save()
+            if isinstance(data["response"], list):
+                self.highlights_json = json.dumps(data["response"])
+                self.save()
         t = threading.Thread(target=do_task)
         t.start()
 
