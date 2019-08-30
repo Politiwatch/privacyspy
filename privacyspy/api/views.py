@@ -79,10 +79,11 @@ def retrieve_database(request):
     for product in products:
         policy = product.current_policy
         output.append({
+            "name": product.name,
+            "hostname": product.hostname,
+            "slug": product.slug,
             "score": policy.cached_score,
             "last_updated": policy.updated,
-            "slug": product.slug,
-            "hostname": product.hostname,
             "icon": product.icon,
             "has_warnings_active": product.has_active_warning()
         })
