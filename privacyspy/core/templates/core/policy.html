@@ -104,7 +104,7 @@
             </div>
             <div class="policy-column-stat">
                 <div class="heading">Maintained by</div>
-                <p>{% if policy.product.maintainers|length == 0 %}Admins{% else %}{{policy.product.maintainers|join:", "}}{% endif %}</p>
+                <p>{% if policy.product.maintainers.all|length == 0 %}Admins{% else %}{{policy.product.maintainers.all|join:", "}}{% endif %}</p>
             </div>
             <div class="policy-column-stat">
                 <div class="heading">Original Location</div>
