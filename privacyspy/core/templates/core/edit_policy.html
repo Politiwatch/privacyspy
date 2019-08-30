@@ -99,6 +99,7 @@
                     </div>
                 </div>
             </div>
+            {% if user.is_superuser %}
             <div class="field is-horizontal">
                 <div class="field-label is-normal">
                     <label class="label">Published</label>
@@ -112,6 +113,7 @@
                     </div>
                 </div>
             </div>
+            {% endif %}
             <div class="field is-horizontal">
                 <div class="field-label is-normal">
                 </div>

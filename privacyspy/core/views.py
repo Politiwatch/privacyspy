@@ -5,6 +5,7 @@ from django.contrib.auth.decorators import user_passes_test
 from django.contrib.auth import logout
 from django.db.models import Q
 from django.conf import settings
+from django.http import HttpResponseForbidden
 import re
 import random
 from .util import username_exists, get_client_ip
@@ -74,17 +75,22 @@ def product(request, product_slug):
             watching = True
     if request.GET.get("next", None) != None:
         return redirect(request.GET.get("next", None))
+    is_maintainer = request.user.is_authenticated and product.is_maintainer(request.user)
     return _render(request, 'core/product.html', context={
         "product": product,
         "title": product.name + " Privacy Policy",
         "policy": policy,
         "watching": watching,
+        "is_maintainer": is_maintainer
     })
 
 
-@user_passes_test(lambda u: u.is_superuser)
+@login_required
 def edit_policy(request, policy_id):
     policy = get_object_or_404(PrivacyPolicy, id=policy_id)
+
+    if not (request.user.is_superuser or policy.product.is_maintainer(request.user)):
+        raise HttpResponseForbidden()
 
     actions = []
     errors = []
@@ -98,7 +104,7 @@ def edit_policy(request, policy_id):
                 "erroneous", policy.erroneous) == "True"
             policy.original_url = request.POST.get(
                 "original-url", policy.original_url)
-            if request.user.is_superuser:
+            if request.user.is_superuser: # only allowed for superusers
                 policy.published = request.POST.get(
                     "published", policy.published) == "True"
             policy.save()

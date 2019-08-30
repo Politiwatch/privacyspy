@@ -20,6 +20,7 @@ class ProductAdmin(admin.ModelAdmin):
     list_display = ('name', 'slug', 'featured')
     list_filter = ('featured',)
     search_fields = ['name', 'hostname', 'description']
+    filter_horizontal = ('maintainers',)
     inlines = [WarningInline, PrivacyPolicyInline]
 
 
@@ -83,6 +84,7 @@ admin.site.register(Suggestion, SuggestionAdmin)
 
 class ProfileAdmin(admin.ModelAdmin):
     list_display = ('user', 'permission_level')
+    filter_horizontal = ('watching_products',)
     list_select_related = ('user',)
 
 
