@@ -2,8 +2,11 @@
 
 <div class="rubric-selection-editor" id="question-id-{{question.id}}">
     <h3 class="title is-size-4">{{question.text}} {% if question.answer == None %}<span
-            class="tag is-warning is-medium">Unanswered</span>{% endif %} <span
-            class="tag is-light is-medium">{{question.max_value}}</span></h3>
+            class="tag is-danger is-medium">Unanswered</span>{% else %}
+        {% if not question.answer.has_note_or_citation %}<span class="tag is-danger is-medium">No Note or
+            Citation</span>{% endif %}
+        {% endif %}
+        <span class="tag is-light is-medium">{{question.max_value}}</span> </h3>
     {% if question.description %}
     <div class="subtitle">{{question.description|markdown}}</div>
     {% endif %}

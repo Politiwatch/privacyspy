@@ -4,6 +4,7 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth.decorators import user_passes_test
 from django.contrib.auth import logout
 from django.db.models import Q
+from django.conf import settings
 import re
 import random
 from .util import username_exists, get_client_ip
@@ -39,9 +40,16 @@ def terms_and_privacy(request):
 
 
 def about(request):
+    rubric_categories = []
+    rubric_categories = set([question.category for question in RubricQuestion.objects.all()])
+    rubric_questions = {}
+    for category in rubric_categories:
+        rubric_questions[category] = []
+        for question in RubricQuestion.objects.filter(category__iexact=category, published=True).order_by("-max_value"):
+            rubric_questions[category].append(question)
     return _render(request, 'core/about.html', context={
         "title": "About",
-        "rubric_questions": RubricQuestion.objects.all()
+        "rubric_questions": rubric_questions,
     })
 
 
@@ -79,6 +87,7 @@ def edit_policy(request, policy_id):
     policy = get_object_or_404(PrivacyPolicy, id=policy_id)
 
     actions = []
+    errors = []
     if request.method == "POST":
         print(request.POST)
         section = request.POST.get("section", None)
@@ -89,8 +98,9 @@ def edit_policy(request, policy_id):
                 "erroneous", policy.erroneous) == "True"
             policy.original_url = request.POST.get(
                 "original-url", policy.original_url)
-            policy.published = request.POST.get(
-                "published", policy.published) == "True"
+            if request.user.is_superuser:
+                policy.published = request.POST.get(
+                    "published", policy.published) == "True"
             policy.save()
             actions.append("Successfully updated metadata.")
         if section == "highlight-by-url":
@@ -126,6 +136,10 @@ def edit_policy(request, policy_id):
                             question.answer.citation = citation
                             question.answer.note = note
                             question.answer.save()
+                    print('.....' + citation)
+                    if not question.answer.has_note_or_citation():
+                        print("appending note")
+                        errors.append("The question <strong>%s</strong> is missing a citation or a note. All questions must have either a citation or a note." % question.text)
                 else:
                     if question.answer != None:
                         question.answer.delete()
@@ -137,6 +151,7 @@ def edit_policy(request, policy_id):
         "title": "Editing Privacy Policy",
         "actions": actions,
         "rubric_questions": policy.questions_with_selections(),
+        "errors": errors,
     })
 
 

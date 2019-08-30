@@ -250,6 +250,9 @@ class RubricSelection(models.Model):
     note = models.TextField(blank=True, default="")
     updated = models.DateTimeField(auto_now=True)
 
+    def has_note_or_citation(self):
+        return len(self.note) + len(self.citation) > 0
+
 
 class Suggestion(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
