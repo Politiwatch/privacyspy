@@ -14,5 +14,6 @@ urlpatterns = [
     path("suggestions/", views.suggestions, name="suggestions"),
     path("create-suggestion/", views.create_suggestion, name="create_suggestion"),
     path("terms-and-privacy/", views.terms_and_privacy, name="terms_and_privacy"),
-    path("about/", views.about, name="about")
+    path("about/", views.about, name="about"),
+    path("contributions/", views.contributions, name="contributions")
 ]

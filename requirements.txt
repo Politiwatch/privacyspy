@@ -6,3 +6,4 @@ gunicorn
 django-heroku
 whitenoise
 django-sass-processor
+python-slugify

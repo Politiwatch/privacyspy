@@ -23,7 +23,8 @@
         <li><a class="has-text-weight-medium" href="#edit-policy-ratings">Ratings</a></li>
         <li><a class="has-text-weight-medium" href="#edit-policy-warnings">Warnings</a></li>
         <li><a class="has-text-weight-medium" href="#edit-policy-suggestions">Suggestions</a></li>
-        <li><a class="has-text-weight-medium" href="{% url 'admin:core_privacypolicy_change' policy.id %}">Admin Panel</a>
+        <li><a class="has-text-weight-medium" href="{% url 'admin:core_privacypolicy_change' policy.id %}">Admin
+                Panel</a>
         </li>
         <li><a class="has-text-weight-medium"
                 href="{% url 'product' policy.product.slug %}?revision={{policy.id}}">Public View</a></li>
@@ -121,6 +122,17 @@
                     <button type="submit" class="button is-link">Save Metadata</button>
                 </div>
             </div>
+            {% if not policy.product.published %}
+            <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                </div>
+                <div class="field-body">
+                    <a class="button is-link is-outlined"
+                        href="{% url 'create_suggestion' %}?policy={{policy.id}}&text=I%20am%20submitting%20this%20product%20for%20publication.%0A%0A%28More%20info%3F%20Include%20it%20here.%20The%20product%20will%20automatically%20be%20associated%20with%20your%20request.%29">Submit
+                        for Publication</a>
+                </div>
+            </div>
+            {% endif %}
         </form>
     </div>
 </div>
@@ -256,7 +268,8 @@
     </div>
     <div class="column">
         <hr>
-        <div class="notification">To add or edit a warning, do so on the admin website. Editing warnings is not currently supported on this
+        <div class="notification">To add or edit a warning, do so on the admin website. Editing warnings is not
+            currently supported on this
             page.</div>
         {% for warning in policy.product.warnings %}
         {% include 'core/warning.html' %}

@@ -9,6 +9,11 @@
     {% endwith %}
 </div>
 {% else %}
+{% if not policy.published or not policy.product.published %}
+<div class="notification is-warning">
+    This page is not published. While you can access it via its direct link, it is not yet displayed on the website.
+</div>
+{% endif %}
 <div class="tabs">
     <ul>
         <li class="has-text-weight-medium"><a href="#policy-overview">Overview</a></li>

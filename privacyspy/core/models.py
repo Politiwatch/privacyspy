@@ -31,7 +31,11 @@ class Product(models.Model):
     hostname = models.TextField(default="UNSET", db_index=True)
     description = models.TextField(default="", db_index=True)
     featured = models.BooleanField(default=False)
+    published = models.BooleanField(default=True)
     maintainers = models.ManyToManyField(User)
+
+    def create_blank_policy(self, url):
+        PrivacyPolicy.objects.create(original_url=url, product=self, published=True)
 
     def is_maintainer(self, user):
         return self.maintainers.filter(id=user.id).exists()
@@ -48,7 +52,7 @@ class Product(models.Model):
         if not settings.DEBUG:
             return Product.objects.annotate(
                 search=SearchVector('name', 'hostname')
-            ).filter(search=query)
+            ).filter(search=query, published=True)
         return Product.objects.filter(name__contains=query)
 
     @property
@@ -281,6 +285,19 @@ class Suggestion(models.Model):
 
     def is_open(self):
         return self.status == "O"
+
+    def can_edit(self, user):
+        if user == self.user:
+            return True
+        return self.can_super_edit(user)
+
+    def can_super_edit(self, user):
+        if user.is_superuser:
+            return True
+        if self.policy != None:
+            if self.policy.product.is_maintainer(user):
+                return True
+        return False
 
     @staticmethod
     def user_open_suggestions(user):

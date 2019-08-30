@@ -1,0 +1,67 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+<h1 class="title massive">Contributions</h1>
+<div class="columns">
+    <div class="column is-4">
+        {% if message %}
+        <div class="notification is-success">
+            {{message}}
+        </div>
+        {% endif %}
+        {% if error %}
+        <div class="notification is-danger">
+            {{error}}
+        </div>
+        {% endif %}
+        <form method="POST">
+            <h3 class="title is-size-4">Create New Product</h3>
+            {% csrf_token %}
+            <div class="field">
+                <label class="label">Name</label>
+                <div class="control">
+                    <input class="input" type="text" name="name" value="{{prefilled.name}}">
+                </div>
+                <p class="help">Examples: <i>Google, Facebook, iTunes, YouTube</i> &mdash; anything with its own
+                    distinct privacy policy.</p>
+            </div>
+            <div class="field">
+                <label class="label">Description</label>
+                <div class="control">
+                    <input class="input" type="text" name="description" value="{{prefilled.description}}">
+                </div>
+                <p class="help">What is the service? What does it do? Don't copy from somewhere else!</p>
+            </div>
+            <div class="field">
+                <label class="label">Hostname</label>
+                <div class="control">
+                    <input class="input" type="text" name="hostname" value="{{prefilled.hostname}}">
+                </div>
+                <p class="help">This is the highest-level domain name that the policy applies to. Examples:
+                    <i>google.com, facebook.com, itunes.apple.com, youtube.com, </i>etc.</p>
+            </div>
+            <div class="field">
+                <label class="label">Policy URL</label>
+                <div class="control">
+                    <input class="input" type="text" name="policy-url" value="{{prefilled.policy_url}}">
+                </div>
+                <p class="help">This is the link to the privacy policy.</p>
+            </div>
+            <button type="submit" class="button is-link">Create New Policy</button>
+        </form>
+        <hr>
+        <h3 class="title is-size-4 is-small-margin">Maintaining</h3>
+        <p class="has-text-grey">You have edit access to the products you maintain. Please contact the admins (via the
+            suggestion system) if you would like to be removed as a maintainer for a product.</p>
+        <br>
+        {% for product in maintaining %}
+        {% include 'core/product_box.html' %}
+        <br>
+        {% empty %}
+        <div class="notification">
+            You are not currently maintaining any products.
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

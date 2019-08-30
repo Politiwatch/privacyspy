@@ -7,6 +7,7 @@ from django.db.models import Q
 from django.conf import settings
 from django.http import HttpResponseForbidden
 import re
+from slugify import slugify
 import random
 from .util import username_exists, get_client_ip
 
@@ -42,7 +43,8 @@ def terms_and_privacy(request):
 
 def about(request):
     rubric_categories = []
-    rubric_categories = set([question.category for question in RubricQuestion.objects.all()])
+    rubric_categories = set(
+        [question.category for question in RubricQuestion.objects.all()])
     rubric_questions = {}
     for category in rubric_categories:
         rubric_questions[category] = []
@@ -75,13 +77,51 @@ def product(request, product_slug):
             watching = True
     if request.GET.get("next", None) != None:
         return redirect(request.GET.get("next", None))
-    is_maintainer = request.user.is_authenticated and product.is_maintainer(request.user)
+    is_maintainer = request.user.is_authenticated and product.is_maintainer(
+        request.user)
     return _render(request, 'core/product.html', context={
         "product": product,
         "title": product.name + " Privacy Policy",
         "policy": policy,
         "watching": watching,
         "is_maintainer": is_maintainer
+    })
+
+
+@login_required
+def contributions(request):
+    error = None
+    message = None
+    prefilled = {}
+    if request.method == "POST":
+        name = request.POST.get("name", None)
+        description = request.POST.get("description", None)
+        hostname = request.POST.get("hostname", None)
+        policy_url = request.POST.get("policy-url", None)
+
+        prefilled["name"] = name if name != None else ""
+        prefilled["description"] = description if description != None else ""
+        prefilled["hostname"] = hostname if hostname != None else ""
+        prefilled["policy_url"] = policy_url if policy_url != None else ""
+
+        if None in [name, description, hostname, policy_url]:
+            error = "Please fill out all the required fields!"
+        else:
+            slug = slugify(name)
+            if Product.objects.filter(slug=slug).exists():
+                error = "A product with that name already exists; please add a different product."
+            else:
+                product = Product.objects.create(name=name, description=description, hostname=hostname, slug=slug, published=False)
+                product.create_blank_policy(policy_url)
+                product.maintainers.add(request.user)
+                Profile.for_user(request.user).watching_products.add(product)
+                return redirect(product)
+    return _render(request, 'core/contributions.html', context={
+        "title": "Contributions",
+        "maintaining": Product.is_maintaining(request.user),
+        "prefilled": prefilled,
+        "error": error,
+        "message": message
     })
 
 
@@ -104,7 +144,7 @@ def edit_policy(request, policy_id):
                 "erroneous", policy.erroneous) == "True"
             policy.original_url = request.POST.get(
                 "original-url", policy.original_url)
-            if request.user.is_superuser: # only allowed for superusers
+            if request.user.is_superuser:  # only allowed for superusers
                 policy.published = request.POST.get(
                     "published", policy.published) == "True"
             policy.save()
@@ -145,7 +185,8 @@ def edit_policy(request, policy_id):
                     print('.....' + citation)
                     if not question.answer.has_note_or_citation():
                         print("appending note")
-                        errors.append("The question <strong>%s</strong> is missing a citation or a note. All questions must have either a citation or a note." % question.text)
+                        errors.append(
+                            "The question <strong>%s</strong> is missing a citation or a note. All questions must have either a citation or a note." % question.text)
                 else:
                     if question.answer != None:
                         question.answer.delete()
@@ -257,15 +298,15 @@ def suggestions(request):
         suggestion_id = request.POST.get("id", None)
         if suggestion_id != None:
             suggestion = get_object_or_404(Suggestion, id=suggestion_id)
-            if suggestion.status == "O" or request.user.is_superuser:
+            if suggestion.can_edit(request.user) and (suggestion.is_open() or suggestion.can_super_edit(request.user)):
                 text = request.POST.get("text", None)
                 comment = request.POST.get("comment", None)
                 status = request.POST.get("status", None)
                 if text != None and len(text.strip()) != 0 and request.user == suggestion.user:
                     suggestion.text = text
-                if comment != None and request.user.is_superuser:
+                if comment != None and suggestion.can_super_edit(request.user):
                     suggestion.comment = comment
-                if status != None and request.user.is_superuser and status in ['O', 'D', 'R']:
+                if status != None and suggestion.can_super_edit(request.user) and status in ['O', 'D', 'R']:
                     suggestion.status = status
                 suggestion.save()
 
