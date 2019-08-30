@@ -84,7 +84,6 @@ def retrieve_database(request):
             "slug": product.slug,
             "score": policy.cached_score,
             "last_updated": policy.updated,
-            "icon": product.icon,
             "has_warnings_active": product.has_active_warning()
         })
 
