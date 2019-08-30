@@ -70,3 +70,21 @@ def retrieve_products(request):
         })
 
     return JsonResponse({"response": response, "status": "success"})
+
+
+def retrieve_database(request):
+    products = Product.objects.all()
+
+    output = []
+    for product in products:
+        policy = product.current_policy
+        output.append({
+            "score": policy.cached_score,
+            "last_updated": policy.updated,
+            "slug": product.slug,
+            "hostname": product.hostname,
+            "icon": product.icon,
+            "has_warnings_active": product.has_active_warning()
+        })
+
+    return JsonResponse(output, safe=False)
