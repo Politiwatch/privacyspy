@@ -208,7 +208,7 @@ class PrivacyPolicy(models.Model):
     def load_highlights_via_url(self, url):
         def do_task():
             print("Loading highlights from %s..." % url)
-            data = requests.get("http://highlights-api.privacyspy.org/analyze", params={
+            data = requests.get("https://highlights-api.privacyspy.org/analyze", params={
                 "token": settings.HIGHLIGHTS_API_TOKEN,
                 "url": url
             }).json()
@@ -221,7 +221,7 @@ class PrivacyPolicy(models.Model):
     def load_highlights_via_plaintext(self, plaintext):
         def do_task():
             print("Loading highlights from plaintext...")
-            data = requests.post("http://highlights-api.privacyspy.org/analyze", data={
+            data = requests.post("https://highlights-api.privacyspy.org/analyze", data={
                 "token": settings.HIGHLIGHTS_API_TOKEN,
                 "plain_text": plaintext,
             }).json()
