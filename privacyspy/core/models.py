@@ -205,7 +205,7 @@ class PrivacyPolicy(models.Model):
     def load_highlights_via_url(self, url):
         def do_task():
             print("Loading highlights from %s..." % url)
-            data = requests.get("https://highlights-api.privacyspy.org/analyze", params={
+            data = requests.get("http://highlights-api.privacyspy.org/analyze", params={
                 "token": settings.HIGHLIGHTS_API_TOKEN,
                 "url": url
             }).json()
@@ -222,8 +222,9 @@ class PrivacyPolicy(models.Model):
                 "token": settings.HIGHLIGHTS_API_TOKEN,
                 "plain_text": plaintext,
             }).json()
-            self.highlights_json = json.dumps(data["response"])
-            self.save()
+            if isinstance(data["response"], list):
+                self.highlights_json = json.dumps(data["response"])
+                self.save()
         t = threading.Thread(target=do_task)
         t.start()
 
