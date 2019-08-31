@@ -17,8 +17,8 @@ class PrivacyPolicyInline(admin.StackedInline):
 
 class ProductAdmin(admin.ModelAdmin):
     view_on_site = True
-    list_display = ('name', 'slug', 'featured')
-    list_filter = ('featured',)
+    list_display = ('name', 'slug', 'featured', 'published')
+    list_filter = ('featured','published')
     search_fields = ['name', 'hostname', 'description']
     filter_horizontal = ('maintainers',)
     inlines = [WarningInline, PrivacyPolicyInline]
