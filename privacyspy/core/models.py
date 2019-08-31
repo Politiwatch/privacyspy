@@ -53,7 +53,7 @@ class Product(models.Model):
             return Product.objects.annotate(
                 search=SearchVector('name', 'hostname')
             ).filter(search=query, published=True)
-        return Product.objects.filter(name__contains=query)
+        return Product.objects.filter(name__contains=query, published=True)
 
     @property
     def current_policy(self):

@@ -55,10 +55,10 @@
             <div class="column">
                 <p class="heading">Response</p>
                 <textarea class="textarea" name="comment" {% if not user.is_superuser %}disabled{% endif %}
-                    placeholder="There is not currently any response to this suggestion.">{{suggestion.comment}}</textarea>
+                    placeholder="No admin or policy maintainer has responded yet.">{{suggestion.comment}}</textarea>
             </div>
         </div>
-        {% if user.is_superuser %}
+        {% if user.is_superuser or is_maintainer %}
         <div class="select">
             <select name="status">
                 <option value="O" {% if suggestion.status == "O" %}selected{% endif %}>Open</option>
@@ -67,10 +67,10 @@
             </select>
         </div>
         {% endif %}
-        {% if user.is_superuser or suggestion.status == "O" %}
+        {% if user.is_superuser or is_maintainer or suggestion.status == "O" %}
         <button type="submit" class="button is-link">Save</button>
         {% endif %}
-        {% if user.is_superuser %}
+        {% if user.is_superuser or is_maintainer %}
         {% if suggestion.rubric_selection != None %}
         <a class="button is-link is-outlined"
             href="{% url 'edit_policy' policy_id=suggestion.policy.id %}#question-id-{{suggestion.rubric_selection.option.question.id}}">Open

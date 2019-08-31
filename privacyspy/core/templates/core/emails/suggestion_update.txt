@@ -1,0 +1,12 @@
+{% extends 'core/emails/base.txt' %}
+
+{% block content %}
+Hi there,
+
+You are receiving this email because a response was posted to your suggestion.
+
+You can view your suggestions here: {{base_url}}{% url 'account' %}
+
+Best,
+PrivacySpy
+{% endblock %}

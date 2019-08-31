@@ -137,7 +137,7 @@
                             {% with policy.product.revisions as revisions %}
                             {% for revision in revisions %}
                             <a href="{% url 'product' policy.product.slug %}?revision={{revision.id}}"
-                                class="dropdown-item {% if policy == revision %}is-active{% endif %}">{{revision.added|naturalday|capfirst}}</a>
+                                class="dropdown-item {% if policy == revision %}is-active{% endif %}">{{revision.added|naturalday|capfirst}}</a> {% if not revision.published %}<span class="has-text-grey-light">(not published)</span>{% endif %}
                             {% empty %}
                             <p class="dropdown-item has-text-grey">PrivacySpy has no other revisions of this privacy
                                 policy

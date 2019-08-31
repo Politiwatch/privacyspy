@@ -10,7 +10,7 @@ import re
 from slugify import slugify
 import random
 from .util import username_exists, get_client_ip
-
+from .email import send_email
 
 def _render(request, template, context=None):
     if context == None:
@@ -199,6 +199,7 @@ def edit_policy(request, policy_id):
         "actions": actions,
         "rubric_questions": policy.questions_with_selections(),
         "errors": errors,
+        "is_maintainer": True, # for editing suggestions on the page
     })
 
 
@@ -302,13 +303,19 @@ def suggestions(request):
                 text = request.POST.get("text", None)
                 comment = request.POST.get("comment", None)
                 status = request.POST.get("status", None)
+                edited = False
                 if text != None and len(text.strip()) != 0 and request.user == suggestion.user:
                     suggestion.text = text
+                    edited = True
                 if comment != None and suggestion.can_super_edit(request.user):
                     suggestion.comment = comment
+                    edited = True
                 if status != None and suggestion.can_super_edit(request.user) and status in ['O', 'D', 'R']:
                     suggestion.status = status
+                    edited = True
                 suggestion.save()
+                if edited and request.user != suggestion.user:
+                    send_email("Suggestion response", "suggestion_update", suggestion.user.email, context={})
 
     return _render(request, "core/suggestions.html", context={
         "open_suggestions": Suggestion.user_open_suggestions(request.user),
