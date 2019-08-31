@@ -303,6 +303,18 @@ class Suggestion(models.Model):
             return True
         return self.can_super_edit(user)
 
+    def super_editors(self): # people who need to respond, essentially
+        users = []
+        if self.policy == None:
+            users.extend(User.objects.filter(is_superuser=True))
+        else:
+            maintainers = self.policy.maintainers.all()
+            if maintainers.count() == 0:
+               users.extend(User.objects.filter(is_superuser=True))
+            else:
+                users.extend(maintainers)
+        return users
+
     def can_super_edit(self, user):
         if user.is_superuser:
             return True

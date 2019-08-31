@@ -10,7 +10,8 @@ import re
 from slugify import slugify
 import random
 from .util import username_exists, get_client_ip, separate_rubric_questions_by_category
-from .email import send_email
+from .email import send_email, send_many_emails
+
 
 def _render(request, template, context=None):
     if context == None:
@@ -42,7 +43,8 @@ def terms_and_privacy(request):
 
 
 def about(request):
-    rubric_questions = separate_rubric_questions_by_category(RubricQuestion.objects.all())
+    rubric_questions = separate_rubric_questions_by_category(
+        RubricQuestion.objects.all())
     return _render(request, 'core/about.html', context={
         "title": "About",
         "rubric_questions": rubric_questions,
@@ -104,7 +106,8 @@ def contributions(request):
             if Product.objects.filter(slug=slug).exists():
                 error = "A product with that name already exists; please add a different product."
             else:
-                product = Product.objects.create(name=name, description=description, hostname=hostname, slug=slug, published=False)
+                product = Product.objects.create(
+                    name=name, description=description, hostname=hostname, slug=slug, published=False)
                 product.create_blank_policy(policy_url)
                 product.maintainers.add(request.user)
                 Profile.for_user(request.user).watching_products.add(product)
@@ -192,7 +195,7 @@ def edit_policy(request, policy_id):
         "actions": actions,
         "rubric_questions": policy.questions_with_selections(),
         "errors": errors,
-        "is_maintainer": True, # for editing suggestions on the page
+        "is_maintainer": True,  # for editing suggestions on the page
     })
 
 
@@ -308,7 +311,8 @@ def suggestions(request):
                     edited = True
                 suggestion.save()
                 if edited and request.user != suggestion.user:
-                    send_email("Suggestion response", "suggestion_update", suggestion.user.email, context={})
+                    send_email("Suggestion response", "suggestion_update",
+                               suggestion.user.email, context={})
 
     return _render(request, "core/suggestions.html", context={
         "open_suggestions": Suggestion.user_open_suggestions(request.user),
@@ -332,8 +336,10 @@ def create_suggestion(request):
                 policy_id)) if policy_id != None else None
             rubric_selection = get_object_or_404(RubricSelection, id=int(
                 rubric_selection_id)) if rubric_selection_id != None else None
-            Suggestion.objects.create(
+            suggestion = Suggestion.objects.create(
                 user=request.user, policy=policy, rubric_selection=rubric_selection, text=text)
+            send_many_emails("[%s] New suggestion" % (policy.product.name if policy != None else "Global"), "suggestion_posted", [
+                             user.email for user in suggestion.super_editors() if user.email != None], context={"suggestion": suggestion})
             return redirect("/suggestions/?submitted=True")
         else:
             error = "You submitted an empty message!"
