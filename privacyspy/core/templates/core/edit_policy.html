@@ -3,10 +3,10 @@
 {% load humanize %}
 
 {% block content %}
-<div class="columns">
+<div class="level">
     {% if policy.product.icon %}
-    <div class="column is-narrow is-centered-mobile">
-        <figure class="image is-64x64">
+    <div class="column is-narrow">
+        <figure class="image is-96x96">
             <img src="{{policy.product.icon}}" class="is-rounded" alt="Icon for {{product.name}}">
         </figure>
     </div>
@@ -61,7 +61,7 @@
         </div>
     </div>
     <div class="column">
-        <hr>
+        <hr class="is-hidden-mobile">
         <form method="POST">
             {% csrf_token %}
             <input type="hidden" name="section" value="metadata">
@@ -153,7 +153,7 @@
         </div>
     </div>
     <div class="column">
-        <hr>
+        <hr class="is-hidden-mobile">
         <form method="POST">
             {% csrf_token %}
             <input type="hidden" name="section" value="highlight-by-url">
@@ -221,7 +221,7 @@
         </div>
     </div>
     <div class="column is-10">
-        <hr>
+        <hr class="is-hidden-mobile">
         <form method="POST">
             <input type="hidden" name="section" value="ratings">
             {% csrf_token %}
@@ -269,8 +269,9 @@
         </div>
     </div>
     <div class="column">
-        <hr>
-        <div class="notification">To add or edit a warning, bring it up with an admin by submitting a suggestion. Editing warnings is not
+        <hr class="is-hidden-mobile">
+        <div class="notification">To add or edit a warning, bring it up with an admin by submitting a suggestion.
+            Editing warnings is not
             currently supported on this
             page.</div>
         {% for warning in policy.product.warnings %}

@@ -4,7 +4,7 @@ from django.conf import settings
 import json
 import requests
 from django.utils.html import escape
-from .util import to_hex_code, lighten_color, ratio_color
+from .util import to_hex_code, lighten_color, ratio_color, separate_rubric_questions_by_category
 import threading
 from django.utils.crypto import get_random_string
 from datetime import timedelta
@@ -151,6 +151,9 @@ class PrivacyPolicy(models.Model):
             selections.append(question)
         return selections
 
+    def categorized_rubric_selections(self):
+        return separate_rubric_questions_by_category(self.rubric_selections())
+
     def suggestions(self, only_open=True):
         if only_open:
             return Suggestion.objects.filter(policy=self, status="O")
@@ -264,8 +267,16 @@ class RubricSelection(models.Model):
     note = models.TextField(blank=True, default="")
     updated = models.DateTimeField(auto_now=True)
 
+    @property
+    def category(self):
+        return self.option.question.category
+
+    @property
+    def max_value(self):
+        return self.option.question.max_value
+
     def has_note_or_citation(self):
-        return len(self.note) + len(self.citation) > 0
+        return len(self.note.strip()) + len(self.citation.strip()) > 0
 
 
 class Suggestion(models.Model):

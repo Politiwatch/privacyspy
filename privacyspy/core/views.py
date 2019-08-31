@@ -9,7 +9,7 @@ from django.http import HttpResponseForbidden
 import re
 from slugify import slugify
 import random
-from .util import username_exists, get_client_ip
+from .util import username_exists, get_client_ip, separate_rubric_questions_by_category
 from .email import send_email
 
 def _render(request, template, context=None):
@@ -42,14 +42,7 @@ def terms_and_privacy(request):
 
 
 def about(request):
-    rubric_categories = []
-    rubric_categories = set(
-        [question.category for question in RubricQuestion.objects.all()])
-    rubric_questions = {}
-    for category in rubric_categories:
-        rubric_questions[category] = []
-        for question in RubricQuestion.objects.filter(category__iexact=category, published=True).order_by("-max_value"):
-            rubric_questions[category].append(question)
+    rubric_questions = separate_rubric_questions_by_category(RubricQuestion.objects.all())
     return _render(request, 'core/about.html', context={
         "title": "About",
         "rubric_questions": rubric_questions,
@@ -183,7 +176,7 @@ def edit_policy(request, policy_id):
                             question.answer.note = note
                             question.answer.save()
                     print('.....' + citation)
-                    if not question.answer.has_note_or_citation():
+                    if len(citation.strip()) + len(note.strip()) == 0:
                         print("appending note")
                         errors.append(
                             "The question <strong>%s</strong> is missing a citation or a note. All questions must have either a citation or a note." % question.text)

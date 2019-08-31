@@ -41,3 +41,14 @@ def get_client_ip(request):
     else:
         ip = request.META.get('REMOTE_ADDR')
     return ip
+
+def separate_rubric_questions_by_category(questions):
+    rubric_categories = []
+    rubric_categories = set(
+        [question.category for question in questions])
+    rubric_questions = {}
+    for category in rubric_categories:
+        rubric_questions[category] = []
+        for question in [question for question in sorted(questions, key=lambda k: k.max_value) if question.category.lower() == category.lower()]:
+            rubric_questions[category].append(question)
+    return rubric_questions
