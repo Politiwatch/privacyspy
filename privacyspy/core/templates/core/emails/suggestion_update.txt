@@ -5,7 +5,7 @@ Hi there,
 
 You are receiving this email because a response was posted to your suggestion.
 
-You can view your suggestions here: {{base_url}}{% url 'account' %}
+You can view your suggestions here: {{base_url}}{% url 'suggestions' %}
 
 Best,
 PrivacySpy
