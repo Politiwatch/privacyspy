@@ -308,7 +308,7 @@ class Suggestion(models.Model):
         if self.policy == None:
             users.extend(User.objects.filter(is_superuser=True))
         else:
-            maintainers = self.policy.maintainers.all()
+            maintainers = self.policy.product.maintainers.all()
             if maintainers.count() == 0:
                users.extend(User.objects.filter(is_superuser=True))
             else:
