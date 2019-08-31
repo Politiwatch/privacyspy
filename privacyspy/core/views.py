@@ -11,11 +11,26 @@ from slugify import slugify
 import random
 from .util import username_exists, get_client_ip, separate_rubric_questions_by_category
 from .email import send_email, send_many_emails
+from meta.views import Meta
 
 
-def _render(request, template, context=None):
+def _render(request, template, context=None, title=None, description=None):
     if context == None:
         context = {}
+
+    title = title + " | PrivacySpy" if title != None else "PrivacySpy | Tracking and rating privacy policies."
+    context["meta"] = Meta(
+        url=request.build_absolute_uri(),
+        title=title,
+        description="PrivacySpy rates, highlights, and monitors 6 privacy policies. Understand how your data is being used.",
+        use_og=True,
+        use_twitter=True,
+        use_facebook=True,
+        site_name="PrivacySpy",
+        locale=""
+    )
+    context["title"] = title
+
     credit = ["<a href='https://rmrm.io'>Miles McCain</a>",
               "<a href='https://igor.fyi'>Igor Barakaiev</a>"]
     random.shuffle(credit)
@@ -27,28 +42,24 @@ def _render(request, template, context=None):
 
 def index(request):
     return _render(request, 'core/index.html', context={
-        "title": "Making online privacy (slightly) simpler",
         "n": range(60),
         "keywords": ["privacy", "is", "a",
                      "fundamental", "right"],
         "total_policies": PrivacyPolicy.objects.all().count(),
         "featured_products": Product.objects.filter(featured=True)[:6],
-    })
+    }, title="Making online privacy (slightly) simpler")
 
 
 def terms_and_privacy(request):
-    return _render(request, 'core/terms_and_privacy.html', context={
-        "title": "Terms & Privacy"
-    })
+    return _render(request, 'core/terms_and_privacy.html', title="Terms & Privacy")
 
 
 def about(request):
     rubric_questions = separate_rubric_questions_by_category(
         RubricQuestion.objects.all())
     return _render(request, 'core/about.html', context={
-        "title": "About",
         "rubric_questions": rubric_questions,
-    })
+    }, title="About")
 
 
 def product(request, product_slug):
@@ -76,11 +87,10 @@ def product(request, product_slug):
         request.user)
     return _render(request, 'core/product.html', context={
         "product": product,
-        "title": product.name + " Privacy Policy",
         "policy": policy,
         "watching": watching,
         "is_maintainer": is_maintainer
-    })
+    }, title=product.name + " Privacy Policy")
 
 
 @login_required
@@ -113,12 +123,11 @@ def contributions(request):
                 Profile.for_user(request.user).watching_products.add(product)
                 return redirect(product)
     return _render(request, 'core/contributions.html', context={
-        "title": "Contributions",
         "maintaining": Product.is_maintaining(request.user),
         "prefilled": prefilled,
         "error": error,
         "message": message
-    })
+    }, title="Contributions")
 
 
 @login_required
@@ -191,12 +200,11 @@ def edit_policy(request, policy_id):
 
     return _render(request, 'core/edit_policy.html', context={
         "policy": policy,
-        "title": "Editing Privacy Policy",
         "actions": actions,
         "rubric_questions": policy.questions_with_selections(),
         "errors": errors,
         "is_maintainer": True,  # for editing suggestions on the page
-    })
+    }, title="Editing: %s (%s)" % (policy.product.name, policy.id))
 
 
 def login_user(request):
@@ -226,8 +234,7 @@ def login_user(request):
     return _render(request, 'core/login.html', context={
         "error": error,
         "message": message,
-        "title": "Log In or Sign Up",
-    })
+    }, title="Log In or Sign Up")
 
 
 def account(request):
@@ -249,11 +256,10 @@ def account(request):
                     message = "Your account information was successfully updated."
     return _render(request, 'core/manage_account.html', context={
         "request": request,
-        "title": "My Account",
         "error": error,
         "message": message,
         "profile": Profile.for_user(request.user)
-    })
+    }, title="Account")
 
 
 def logout_user(request):
@@ -266,9 +272,7 @@ def delete_account(request):
     if request.method == "POST":
         request.user.delete()
         return redirect('index')
-    return _render(request, 'core/delete_account.html', context={
-        "title": "Delete Account",
-    })
+    return _render(request, 'core/delete_account.html', title="Delete Account")
 
 
 def directory(request):
@@ -281,12 +285,11 @@ def directory(request):
     overflow = products.count() > 50 and search != None
 
     return _render(request, 'core/directory.html', context={
-        "title": "Product Directory",
         "products": products[:50],
         "search": search,
         "overflow": overflow,
         "num_policies": PrivacyPolicy.objects.filter(published=True).count()
-    })
+    }, title="Directory")
 
 
 @login_required(login_url="/login")
@@ -317,10 +320,9 @@ def suggestions(request):
     return _render(request, "core/suggestions.html", context={
         "open_suggestions": Suggestion.user_open_suggestions(request.user),
         "closed_suggestions": Suggestion.user_closed_suggestions(request.user),
-        "title": "Suggestions",
         "submitted": request.GET.get("submitted", "False") == "True",
         "all_suggestions": Suggestion.all_open_suggestions() if request.user.is_superuser else []
-    })
+    }, title="Suggestions")
 
 
 @login_required(login_url="/login")
@@ -357,5 +359,4 @@ def create_suggestion(request):
         "policy": policy,
         "rubric_selection": rubric_selection,
         "text": request.GET.get("text", None),
-        "title": "Submit a Suggestion"
-    })
+    }, title="Submit a Suggestion")

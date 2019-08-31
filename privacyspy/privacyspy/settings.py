@@ -29,7 +29,10 @@ ALLOWED_HOSTS = []
 
 HIGHLIGHTS_API_TOKEN = os.environ.get("API_TOKEN", None)
 
-BASE_URL = os.environ.get("BASE_URL", default="https://privacyspy.org")
+META_SITE_DOMAIN = os.environ.get("META_SITE_DOMAIN", "privacyspy.org")
+META_SITE_PROTOCOL = os.environ.get("META_SITE_PROTOCOL", "https")
+
+BASE_URL = META_SITE_PROTOCOL + "://" + META_SITE_DOMAIN
 
 # Application definition
 
@@ -45,7 +48,8 @@ INSTALLED_APPS = [
     'sass_processor',
     'markdown_deux',
     'core',
-    'api'
+    'api',
+    'meta'
 ]
 
 MIDDLEWARE = [
@@ -57,6 +61,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'htmlmin.middleware.HtmlMinifyMiddleware',
+    'htmlmin.middleware.MarkRequestMiddleware',
 ]
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
@@ -142,6 +148,8 @@ STATIC_ROOT = 'static'
 ADMINS = [os.getenv("ADMINS")]
 
 ADMIN_SITE_URL = os.getenv("ADMIN_SITE_URL", "admin/")
+
+HTML_MINIFY = not DEBUG
 
 if not DEBUG:
     import django_heroku
