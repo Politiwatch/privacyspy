@@ -49,6 +49,6 @@ def separate_rubric_questions_by_category(questions):
     rubric_questions = {}
     for category in rubric_categories:
         rubric_questions[category] = []
-        for question in [question for question in sorted(questions, key=lambda k: k.max_value) if question.category.lower() == category.lower()]:
+        for question in [question for question in sorted(questions, key=lambda k: k.max_value, reverse=True) if question.category.lower() == category.lower()]:
             rubric_questions[category].append(question)
     return rubric_questions
