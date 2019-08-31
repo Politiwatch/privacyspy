@@ -27,7 +27,7 @@ def _render(request, template, context=None, title=None, description=None):
         use_twitter=True,
         use_facebook=True,
         site_name="PrivacySpy",
-        image="https://privacyspy.org/static/img/graphic.png",
+        image="https://privacyspy.org/static/core/img/graphic.png",
         locale=""
     )
     context["title"] = title
