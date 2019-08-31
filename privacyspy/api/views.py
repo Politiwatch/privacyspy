@@ -1,6 +1,7 @@
 from django.http import JsonResponse
 import os
-
+from datetime import timedelta
+from django.utils import timezone
 from core.models import Product, PrivacyPolicy, RubricQuestion, RubricOption, RubricSelection
 from urllib.parse import urlparse
 
@@ -17,7 +18,7 @@ def retrieve_products(request):
         ["(%s\.)?" % element for element in elements[:-2]] + elements[-2:])
     print(regex)
     products = Product.objects.filter(
-        hostname__iregex=regex)[:10]
+        hostname__iregex=regex, published=True)[:10]
     policies = []
     for entry in products:
         print("hello\n")
@@ -71,20 +72,28 @@ def retrieve_products(request):
 
     return JsonResponse({"response": response, "status": "success"})
 
+database_cache = None
 
 def retrieve_database(request):
-    products = Product.objects.all()
+    global database_cache
 
-    output = []
-    for product in products:
-        policy = product.current_policy
-        output.append({
-            "name": product.name,
-            "hostname": product.hostname,
-            "slug": product.slug,
-            "score": policy.cached_score,
-            "last_updated": policy.updated,
-            "has_warnings_active": product.has_active_warning()
-        })
-
-    return JsonResponse(output, safe=False)
+    if database_cache == None or timezone.now() - database_cache["last_updated"] > timedelta(hours=2):
+        print("Refreshing cache...")
+        output = []
+        products = Product.objects.filter(published=True)
+        for product in products:
+            policy = product.current_policy
+            if policy != None:
+                output.append({
+                    "name": product.name,
+                    "hostname": product.hostname,
+                    "slug": product.slug,
+                    "score": policy.cached_score,
+                    "last_updated": policy.updated,
+                    "has_warnings_active": product.has_active_warning()
+                })
+        database_cache = {
+            "last_updated": timezone.now(),
+            "data": output
+        }
+    return JsonResponse(database_cache["data"], safe=False)
