@@ -70,7 +70,9 @@ def retrieve_products(request):
             "warnings": [warning.to_dict() for warning in policy.product.warnings()]
         })
 
-    return JsonResponse({"response": response, "status": "success"})
+    response = JsonResponse({"response": response, "status": "success"})
+    response["Access-Control-Allow-Origin"] = "*"
+    return response
 
 database_cache = None
 
@@ -96,4 +98,6 @@ def retrieve_database(request):
             "last_updated": timezone.now(),
             "data": output
         }
-    return JsonResponse(database_cache["data"], safe=False)
+    response = JsonResponse(database_cache["data"], safe=False)
+    response["Access-Control-Allow-Origin"] = "*"
+    return response

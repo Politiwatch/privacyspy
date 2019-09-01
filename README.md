@@ -3,10 +3,10 @@ Core Django webserver for PrivacySpy
 
 ### TODO
 
-- [ ] Make everything work well for maintainers
-- [ ] Make warnings editable by maintainers
-- [ ] Separate rubric items by category
-- [ ] Fix the weird spacing inside rubric items
-- [ ] Send an update email when a suggestion is edited
-- [ ] Fix HR locations for mobile on edit policy page
-- [ ] List 'official maintainers'
+- [x] Make everything work well for maintainers
+- [x] Make warnings editable by maintainers
+- [x] Separate rubric items by category
+- [x] Fix the weird spacing inside rubric items
+- [x] Send an update email when a suggestion is edited
+- [x] Fix HR locations for mobile on edit policy page
+- [x] List 'official maintainers'
