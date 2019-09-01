@@ -155,13 +155,13 @@ def edit_policy(request, policy_id):
                     "published", policy.published) == "True"
             policy.save()
             actions.append("Successfully updated metadata.")
-        if section == "highlight-by-url":
+        if section == "highlight-by-url" and request.user.is_superuser:
             url = request.POST.get("source-url", None)
             if url != None:
                 policy.load_highlights_via_url(url)
                 actions.append(
                     "Loading highlights via the given URL in a background thread.")
-        if section == "highlight-by-plaintext":
+        if section == "highlight-by-plaintext" and request.user.is_superuser:
             text = request.POST.get("source-text", None)
             if text != None:
                 policy.load_highlights_via_plaintext(text)

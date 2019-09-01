@@ -138,7 +138,8 @@
         </form>
     </div>
 </div>
-<div class="columns" id="edit-policy-metadata">
+{% if user.is_superuser %}
+<div class="columns" id="edit-policy-highlights">
     <div class="column is-2">
         <h1 class="is-size-3 has-text-weight-light">Highlights</h1>
         <div class="control">
@@ -201,6 +202,7 @@
         </form>
     </div>
 </div>
+{% endif %}
 <div class="columns" id="edit-policy-ratings">
     <div class="column is-2">
         <h1 class="is-size-3 has-text-weight-light">Ratings</h1>
