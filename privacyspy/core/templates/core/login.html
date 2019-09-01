@@ -4,11 +4,17 @@
 <h3 class="title massive">Log In or Sign Up</h3>
 <div class="columns">
     <div class="column is-4">
+        {% if error or message %}
         {% if error %}
         <div class="notification is-danger">{{error}}</div>
         {% endif %}
         {% if message %}
         <div class="notification is-success">{{message}}</div>
+        {% endif %}
+        {% else %}
+        {% if next %}
+        <div class="notification">You must login to view this page. You will be redirected when you authenticate.</div>
+        {% endif %}
         {% endif %}
         <p>PrivacySpy uses passwordless authentication. Regardless of whether you already have an account, enter your
             email address below and we'll send you a link to login.</p>

@@ -235,6 +235,7 @@ def login_user(request):
     return _render(request, 'core/login.html', context={
         "error": error,
         "message": message,
+        "next": request.GET.get("next", None)
     }, title="Log In or Sign Up")
 
 
