@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   $(".is-collapsed").click(showHighlights);
   $("button[type=submit]").click(function () {
-    $(this).addClass("is-loading");
+    $(this).addClass("is-loading").wait(10000).removeClass("is-loading");
   });
   $("#directory-search").submit(function () {
     $("#directory-search-icon").removeClass("fa-search").addClass("fa-cog").addClass("fa-spin");
