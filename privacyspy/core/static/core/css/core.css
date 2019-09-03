@@ -279,3 +279,12 @@ body {
 .min-width-20 {
     min-width: 20em;
 }
+
+.save-message {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+    max-width: 400px;
+    display: none;
+}

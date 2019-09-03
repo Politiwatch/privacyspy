@@ -292,4 +292,15 @@
         {% endfor %}
     </div>
 </div>
+<article class="save-message message is-danger">
+    <div class="message-body">
+        <strong>Consider saving your work!</strong> It's been at least 10 minutes since you last saved. Remember that
+        saving doesn't happen automatically!
+    </div>
+</article>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    $(".save-message").delay(1000*60*10).fadeIn();
+});
+</script>
 {% endblock %}
