@@ -278,9 +278,9 @@ def delete_account(request):
 
 
 def directory(request):
-    search = request.GET.get("search", None)
+    search = request.GET.get("search", "")
     products = None
-    if search == None:
+    if search.strip() == "":
         products = Product.objects.filter(featured=True)
     else:
         products = Product.search(search)
