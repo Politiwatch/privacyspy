@@ -318,7 +318,8 @@ def suggestions(request):
                 if edited and request.user != suggestion.user:
                     send_email("Suggestion response", "suggestion_update",
                                suggestion.user.email, context={})
-
+    if request.GET.get("next", None) != None:
+        return redirect(request.GET.get("next"))
     return _render(request, "core/suggestions.html", context={
         "open_suggestions": Suggestion.user_open_suggestions(request.user),
         "closed_suggestions": Suggestion.user_closed_suggestions(request.user),
