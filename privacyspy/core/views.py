@@ -181,7 +181,7 @@ def edit_policy(request, policy_id):
                     note = request.POST.get(str(question.id) + "-note", "")
                     if question.answer == None:
                         RubricSelection.objects.create(
-                            option=option, policy=policy, citation=citation)
+                            option=option, policy=policy, citation=citation, note=note)
                     else:
                         if not (question.answer.option == option and question.answer.citation == citation and question.answer.note == note):
                             question.answer.option = option
