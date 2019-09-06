@@ -110,7 +110,7 @@ def contributions(request):
         prefilled["hostname"] = hostname if hostname != None else ""
         prefilled["policy_url"] = policy_url if policy_url != None else ""
 
-        if None in [name, description, hostname, policy_url]:
+        if min([len(i.strip()) for i in [name, description, hostname, policy_url]]) == 0:
             error = "Please fill out all the required fields!"
         else:
             slug = slugify(name)
