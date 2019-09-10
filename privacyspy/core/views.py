@@ -22,7 +22,7 @@ def _render(request, template, context=None, title=None, description=None):
     context["meta"] = Meta(
         url=request.build_absolute_uri(),
         title=title,
-        description="PrivacySpy rates, highlights, and monitors 6 privacy policies. Understand how your data is being used.",
+        description="PrivacySpy rates, highlights, and monitors privacy policies. Understand how your data is being used.",
         use_og=True,
         use_twitter=True,
         use_facebook=True,
