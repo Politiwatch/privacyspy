@@ -65,7 +65,7 @@
                 <option value="D" {% if suggestion.status == "D" %}selected{% endif %}>Declined</option>
                 <option value="R" {% if suggestion.status == "R" %}selected{% endif %}>Resolved</option>
             </select>
-        </div>
+        </div>&nbsp;
         {% endif %}
         {% if user.is_superuser or is_maintainer or suggestion.status == "O" %}
         <button type="submit" class="button is-link">Save</button>
@@ -74,12 +74,12 @@
         {% if suggestion.rubric_selection != None %}
         <a class="button is-link is-outlined"
             href="{% url 'edit_policy' policy_id=suggestion.policy.id %}#question-id-{{suggestion.rubric_selection.option.question.id}}">Open
-            Question Editor</a>
+            Question Editor</a>&nbsp;
         {% endif %}
         {% if suggestion.policy != None %}
         <a class="button is-link is-outlined"
             href="{% url 'edit_policy' policy_id=suggestion.policy.id %}">Open
-            Policy Editor</a>
+            Policy Editor</a>&nbsp;
         {% endif %}
         {% endif %}
     </form>
