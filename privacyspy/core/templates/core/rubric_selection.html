@@ -58,7 +58,11 @@
                 {% if selection.citation %}
                 <div class="column">
                     <p class="heading">Citation</p>
-                    <div class="content">{{selection.citation|markdown}}</div>
+                    <div class="content">
+                        <blockquote>
+                            {{selection.citation|markdown}}
+                        </blockquote>
+                    </div>
                 </div>
                 {% endif %}
                 {% if selection.note %}
