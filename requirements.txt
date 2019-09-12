@@ -9,3 +9,4 @@ django-sass-processor
 python-slugify
 django-meta
 django-htmlmin
+django-debug-toolbar

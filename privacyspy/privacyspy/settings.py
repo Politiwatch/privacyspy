@@ -49,7 +49,8 @@ INSTALLED_APPS = [
     'markdown_deux',
     'core',
     'api',
-    'meta'
+    'meta',
+    'debug_toolbar',
 ]
 
 MIDDLEWARE = [
@@ -59,6 +60,7 @@ MIDDLEWARE = [
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'htmlmin.middleware.HtmlMinifyMiddleware',
@@ -150,6 +152,18 @@ ADMINS = [os.getenv("ADMINS")]
 ADMIN_SITE_URL = os.getenv("ADMIN_SITE_URL", "admin/")
 
 HTML_MINIFY = not DEBUG
+
+INTERNAL_IPS = [
+    "127.0.0.1"
+]
+
+DEBUG_TOOLBAR_ENABLED = os.getenv("DEBUG_TOOLBAR_ENABLED", "False") == "True"
+
+DEBUG_TOOLBAR_CONFIG = {
+    'SHOW_TOOLBAR_CALLBACK': lambda request: not request.is_ajax() and request.user.is_superuser
+} if DEBUG_TOOLBAR_ENABLED else {
+    'SHOW_TOOLBAR_CALLBACK': lambda request: False
+}
 
 if not DEBUG:
     import django_heroku
