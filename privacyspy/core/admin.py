@@ -26,6 +26,10 @@ class ProductAdmin(admin.ModelAdmin):
 
 admin.site.register(Product, ProductAdmin)
 
+def recalculate_score(modeladmin, request, queryset):
+    for policy in queryset:
+        policy.update_cached_score()
+recalculate_score.short_description = "Recalculate score (update score cache)"
 
 class PrivacyPolicyAdmin(admin.ModelAdmin):
     view_on_site = True
@@ -34,6 +38,7 @@ class PrivacyPolicyAdmin(admin.ModelAdmin):
     list_filter = ('published', 'out_of_date', 'erroneous')
     list_select_related = ('product',)
     search_fields = ['product__name']
+    actions = [recalculate_score]
 
 
 admin.site.register(PrivacyPolicy, PrivacyPolicyAdmin)
