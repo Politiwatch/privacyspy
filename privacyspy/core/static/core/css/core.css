@@ -288,3 +288,7 @@ body {
     max-width: 400px;
     display: none;
 }
+
+.has-margin-bottom {
+    margin-bottom: 18px;
+}

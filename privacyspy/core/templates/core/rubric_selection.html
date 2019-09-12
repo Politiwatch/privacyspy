@@ -36,6 +36,8 @@
     </div>
     <div class="selection-expanded" id="selection-{{selection.id}}">
         <div class="box is-margined">
+            <p class="has-margin-bottom"><small class="has-text-grey">Decided {{selection.updated|naturalday}}. This question accounts for
+                    {{selection.option.question.weight|floatformat:"-1"}}% of the final score.</small></p>
             {% if selection.option.description %}
             <div class="notification content">{{selection.option.description|markdown}}</div>
             {% endif %}
@@ -72,9 +74,12 @@
                 </div>
                 {% endif %}
             </div>
-            <small class="has-text-grey">Decided {{selection.updated|naturalday}}. <a
-                    href="{% url 'create_suggestion' %}?policy={{policy.id}}&selection={{selection.id}}">Click here</a>
-                to suggest a change or to flag this conclusion as incorrect, or <a href="/about/">here</a> for more information.</small>
+            <p><small class="has-text-grey">
+                    <a href="{% url 'create_suggestion' %}?policy={{policy.id}}&selection={{selection.id}}">Click
+                        here</a>
+                    to suggest a change or to flag this conclusion as incorrect, or <a href="/about/">here</a> for more
+                    information.
+                </small></p>
         </div>
     </div>
     <br>

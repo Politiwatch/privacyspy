@@ -61,6 +61,23 @@
                 password reset emails; a non-critical use of personal data would be using email addresses and browsing
                 habits to
                 serve behavioral marketing)</span></p>
+        <h1 id="ratings" class="title is-size-3">Calculating Ratings</h1>
+        <p>A product's overall rating is calculated according to its subratings in all of the rubric questions (see below).
+            Here are the steps our scoring algorithm takes to calculate the overall score:
+        </p>
+        <p>
+            <ol>
+                <li>Find the total number of points the policy receives across all rubric questions (subscore sum);</li>
+                <li>Find the total number of possible points to receive (maximum score sum);</li>
+                <li>Divide the points received by the points possible;</li>
+                <li>Multiply by 10 (to fit the score to the final ten-point scale).</li>
+            </ol>
+        </p>
+        <p>For example, if there are three total questions with max scores of 5, 10, and 10, the total number of possible
+            points is 25. If a policy receives scores of 4, 7, and 6 on each of those questions (respectively), it will have
+            received 17 points. The overall score would be (4 + 7 + 6) / (5 + 10 + 10) = (17 / 25) = 0.68, which, when fitted
+            to our final ten-point scale, is displayed as 6.8.
+        </p>
         <h1 id="rubric" class="title is-size-3">Rubric</h1>
         <p>A key element of PrivacySpy is its ratings, which are calculated based on a consistent rubric. All of our
             scores

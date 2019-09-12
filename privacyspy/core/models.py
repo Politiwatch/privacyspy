@@ -186,7 +186,7 @@ class PrivacyPolicy(models.Model):
         return final_score
 
     def update_cached_score(self):
-        self.cached_score = self.calculate_score()
+        self.cached_score = self.calculate_score(update_cache=False)
         self.save()
 
     @property
@@ -246,6 +246,12 @@ class RubricQuestion(models.Model):
     @property
     def options(self):
         return RubricOption.objects.filter(question=self).order_by("value")
+
+    @property
+    def weight(self):
+        if not hasattr(self, "_cached_weight"):
+            self._cached_weight = self.max_value / sum([question.max_value for question in RubricQuestion.objects.filter(published=True)]) * 100
+        return self._cached_weight
 
 
 class RubricOption(models.Model):
