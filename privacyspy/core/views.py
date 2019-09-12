@@ -42,12 +42,14 @@ def _render(request, template, context=None, title=None, description=None):
 
 
 def index(request):
+    featured = list(Product.objects.filter(featured=True))
+    random.shuffle(featured)
     return _render(request, 'core/index.html', context={
         "n": range(60),
         "keywords": ["privacy", "is", "a",
                      "fundamental", "right"],
         "total_policies": PrivacyPolicy.objects.all().count(),
-        "featured_products": Product.objects.filter(featured=True)[:6],
+        "featured_products": featured[:6],
     }, title="Making online privacy (slightly) simpler")
 
 
