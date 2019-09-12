@@ -68,7 +68,7 @@
         </div>&nbsp;
         {% endif %}
         {% if user.is_superuser or is_maintainer or suggestion.status == "O" %}
-        <button type="submit" class="button is-link">Save</button>
+        <button type="submit" class="button is-link">Save</button>&nbsp;
         {% endif %}
         {% if user.is_superuser or is_maintainer %}
         {% if suggestion.rubric_selection != None %}
