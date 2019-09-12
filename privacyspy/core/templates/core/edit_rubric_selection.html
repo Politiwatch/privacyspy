@@ -8,13 +8,41 @@
         {% endif %}
         <span class="tag is-light is-medium">{{question.max_value}}</span> </h3>
     {% if question.description %}
-    <div class="subtitle">{{question.description|markdown}}</div>
+    <div class="notification content">{{question.description|markdown}}</div>
     {% endif %}
     <div class="columns">
-        <div class="column is-4">
+        <div class="column is-5">
             <div class="field">
                 <label class="label">Selection</label>
-                <div class="select">
+                <div class="box">
+                    <table class="table is-fullwidth">
+                        {% for option in question.options %}
+                        <tr>
+                            <td><input type="radio" name="{{question.id}}-selection" value="{{option.id}}"
+                                    {% if question.answer.option == option %}checked{% endif %}></td>
+                            <td title="{{option.description}}">{{option.text}} {% if option == question.answer.option %}<strong>(current)</strong>{% endif %}
+                                {% if option.description %}
+                                <div class="has-text-grey-light content">
+                                    {{ option.description|markdown }}
+                                </div>
+                                {% endif %}
+
+                            </td>
+                            <td><strong>{{option.value|floatformat:"-1"}}</strong>/{{option.question.max_value|floatformat:"-1"}}
+                            </td>
+                        </tr>
+                        {% endfor %}
+                        <tr>
+                            <td>
+                                <input type="radio" name="{{question.id}}-selection" value="unset"
+                                    {% if question.answer == None %}checked{% endif %}>
+                            </td>
+                            <td title="{{option.description}}"><p class="has-text-grey-light">Unset &amp; cleared</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- <div class="select">
                     <select name="{{question.id}}-selection">
                         <option value="unset" {% if question.answer == None %}selected{% endif %}>Unset (will
                             clear entry)
@@ -25,7 +53,7 @@
                             [{{option.value}}]</option>
                         {% endfor %}
                     </select>
-                </div>
+                </div> -->
             </div>
 
         </div>
@@ -35,8 +63,6 @@
                 <textarea class="textarea" name="{{question.id}}-citation"
                     placeholder="Cite the relevant part of the privacy policy here...">{% if question.answer %}{{question.answer.citation}}{% endif %}</textarea>
             </div>
-        </div>
-        <div class="column">
             <div class="field">
                 <label class="label">Note</label>
                 <textarea class="textarea" name="{{question.id}}-note"
