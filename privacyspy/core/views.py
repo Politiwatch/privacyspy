@@ -49,7 +49,7 @@ def index(request):
         "keywords": ["privacy", "is", "a",
                      "fundamental", "right"],
         "total_policies": PrivacyPolicy.objects.all().count(),
-        "featured_products": featured[:6],
+        "featured_products": featured[:9],
     }, title="Making online privacy (slightly) simpler")
 
 
