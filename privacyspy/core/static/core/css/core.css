@@ -292,3 +292,8 @@ body {
 .has-margin-bottom {
     margin-bottom: 18px;
 }
+
+.abbreviated {
+    max-height: 300px;
+    overflow-y: auto;
+}

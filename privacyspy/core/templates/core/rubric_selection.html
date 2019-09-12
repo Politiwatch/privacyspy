@@ -61,7 +61,7 @@
                 <div class="column">
                     <p class="heading">Citation</p>
                     <div class="content">
-                        <blockquote>
+                        <blockquote class="abbreviated">
                             {{selection.citation|markdown}}
                         </blockquote>
                     </div>
@@ -70,7 +70,7 @@
                 {% if selection.note %}
                 <div class="column">
                     <p class="heading">Note</p>
-                    <div class="content">{{selection.note|markdown}}</div>
+                    <div class="content abbreviated">{{selection.note|markdown}}</div>
                 </div>
                 {% endif %}
             </div>
