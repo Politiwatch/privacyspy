@@ -115,7 +115,7 @@ def contributions(request):
         else:
             slug = slugify(name)
             if Product.objects.filter(slug=slug).exists():
-                error = "A product with that name already exists; please add a different product."
+                error = "A product with that name already exists; please add a different product. (This might be because someone has already created a draft policy with that name.)"
             else:
                 product = Product.objects.create(
                     name=name, description=description, hostname=hostname, slug=slug, published=False)
