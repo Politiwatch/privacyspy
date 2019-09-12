@@ -33,7 +33,7 @@ def _render(request, template, context=None, title=None, description=None):
     context["title"] = title
 
     credit = ["<a href='https://rmrm.io'>Miles McCain</a>",
-              "<a href='https://igor.fyi'>Igor Barakaiev</a>"]
+              "<a href='https://github.com/ibarakaiev'>Igor Barakaiev</a>"]
     random.shuffle(credit)
     context["credit"] = credit
     context["user"] = request.user
