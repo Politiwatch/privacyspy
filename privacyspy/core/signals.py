@@ -13,6 +13,8 @@ def handle_product_update(sender, **kwargs):
     instance = kwargs["instance"]
     if is_product_recently_notified(instance):
         return
+    instance.last_email_blast = timezone.now()
+    instance.save()
     send_many_emails("[%s] Metadata updated" % instance.name, 'update', [user.email for user in instance.watchers()], {
         "product": instance,
         "updates": ["Metadata (name, description, etc) updated"]
@@ -23,6 +25,8 @@ def handle_policy_update(sender, **kwargs):
     instance = kwargs["instance"]
     if is_product_recently_notified(instance.product):
         return
+    instance.product.last_email_blast = timezone.now()
+    instance.product.save()
     send_many_emails("[%s] Policy updated" % instance.product.name, 'update', [user.email for user in instance.product.watchers()], {
         "product": instance.product,
         "updates": ["Policy (score, highlights, etc) updated"]
