@@ -29,7 +29,7 @@
     <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/ppembnadnhiknioggbglgiciihgmkmnd">
 
     {% include 'meta/meta.html' %}
-    <meta content="https://privacyspy.org/static/core/img/graphic.png" property="og:image"/>
+    <meta content="https://privacyspy.org/static/core/img/graphic.png" property="og:image" />
 
     {% block head %}
     {% endblock %}
@@ -41,17 +41,20 @@
         <div class="container">
             {% block content %}
             {% endblock %}
-            <hr class="is-40-width">
-            <div class="privacyspy-footer">
-                <div class="content has-text-centered">
-                    <p>
-                        <strong>PrivacySpy</strong> is an <a href="https://github.com/Politiwatch/privacyspy-core">open-source</a>
-                        initiative maintained by {% autoescape off %}{{credit|join:", "}}{% endautoescape %}, and the <a href="https://politiwatch.org">Politiwatch</a> team. Not legal advice. <a href="{% url 'terms_and_privacy' %}">Terms &amp; Privacy</a>. <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA.</a>
-                    </p>
-                </div>
-            </div>
         </div>
     </section>
+    <footer class="footer">
+        <div class="content container has-text-centered">
+            <p>
+                <strong>PrivacySpy</strong> is an <a
+                    href="https://github.com/Politiwatch/privacyspy-core">open-source</a>
+                initiative maintained by {% autoescape off %}{{credit|join:", "}}{% endautoescape %}, and
+                the <a href="https://politiwatch.org">Politiwatch</a> team. Not legal advice. <a
+                    href="{% url 'terms_and_privacy' %}">Terms &amp; Privacy</a>. <a rel="license"
+                    href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA.</a>
+            </p>
+        </div>
+    </footer>
     <script src="{% static 'core/js/core.js' %}"></script>
 </body>
 
