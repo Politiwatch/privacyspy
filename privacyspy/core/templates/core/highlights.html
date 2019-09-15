@@ -14,11 +14,10 @@
 </noscript>
 {% if policy.highlighted_snapshot == "" %}
 <div class="notification">
-    No highlighted policy snapshot has been created for this privacy policy.
+    No highlighted policy snapshot has been created for this privacy policy. To view the policy at its original location, <a href="{{policy.original_url}}" target="_blank">click here</a>.
 </div>
 <div class="expand-highlights">
-    <button class="button is-dark is-outlined" disabled>Highlighted Snapshot Not Available</button>&nbsp;
-    <a class="button is-dark is-outlined" href="{{policy.original_url}}" target="_blank">View Original Policy</a>
+    <button class="button is-dark is-outlined" disabled>Highlighted Snapshot Not Available</button>
 </div>
 {% else %}
 <div class="modal {% if request.get.highlights %}is-active{% endif %}" id="highlights-modal">
