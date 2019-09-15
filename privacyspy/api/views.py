@@ -93,7 +93,7 @@ def retrieve_database(request):
                     "score": policy.cached_score,
                     "last_updated": policy.updated,
                     "has_warnings_active": product.has_active_warning(),
-                    "has_highlights": len(policy.highlights_json) > 0
+                    "has_highlights": len(policy.highlighted_snapshot) > 0
                 })
         database_cache = {
             "last_updated": timezone.now(),
