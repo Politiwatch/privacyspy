@@ -1,13 +1,6 @@
 {% load markdown_deux_tags %}
 {% load static %}
 
-<p class="has-text-grey">
-    Highlighted policy snapshots are a highly experimental feature that provide an annotated version of the privacy
-    policy (displayed in a simplified 'reader view') with automatically-generated highlights. This feature is still
-    in development; policies may not be extracted properly into 'reader view,' and the highlights may
-    not always represent the most important parts of this document.
-</p>
-<br>
 <noscript>
 <div class="notification is-warning">Unfortunately, due to the experimental nature of highlighted policy snapshots,
     they are not currently available without JavaScript enabled.</div>
@@ -20,6 +13,11 @@
     <button class="button is-dark is-outlined" disabled>Highlighted Snapshot Not Available</button>
 </div>
 {% else %}
+<div class="notification">
+    Highlighted policy snapshots are a highly experimental feature that provide an annotated version of the privacy
+    policy (displayed in a simplified 'reader view') with automatically-generated highlights. This feature is still in its
+    early stages, so apologies if things don't look right!
+</div>
 <div class="modal {% if request.get.highlights %}is-active{% endif %}" id="highlights-modal">
     <div class="modal-background" onclick="closeHighlights()"></div>
     <div class="modal-content">
