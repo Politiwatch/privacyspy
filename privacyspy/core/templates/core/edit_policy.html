@@ -145,7 +145,7 @@
         <div class="control">
             <div class="tags has-addons">
                 <span class="tag is-light">Present</span>
-                {% if policy.highlights_json|length == 0 %}
+                {% if policy.highlighted_snapshot|length == 0 %}
                 <span class="tag is-danger">No</span>
                 {% else %}
                 <span class="tag is-success">Yes</span>

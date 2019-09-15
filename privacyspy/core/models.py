@@ -127,6 +127,7 @@ class PrivacyPolicy(models.Model):
     added = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
     highlights_json = models.TextField(blank=True)
+    highlighted_snapshot = models.TextField(blank=True)
     out_of_date = models.BooleanField(default=False)
     erroneous = models.BooleanField(default=False)
     original_url = models.TextField()
@@ -193,28 +194,28 @@ class PrivacyPolicy(models.Model):
     def revisions(self):
         return PrivacyPolicy.objects.filter(product=self.product, published=True)
 
-    def parse_highlights(self):
-        if self.highlights_json.strip() == "":
-            return None
-        data = json.loads(self.highlights_json)
-        for sentence in data:
-            sentence["sentence"] = escape(
-                sentence["sentence"]).replace("\n", "<br>")
-            factor = 10
-            sentence["color"] = "#" + \
-                to_hex_code(*lighten_color(213 + factor, 0, 249 + factor,
-                                           1.25 - sentence["score"]))
-        return data
+    # def parse_highlights(self):
+    #     if self.highlights_json.strip() == "":
+    #         return None
+    #     data = json.loads(self.highlights_json)
+    #     for sentence in data:
+    #         sentence["sentence"] = escape(
+    #             sentence["sentence"]).replace("\n", "<br>")
+    #         factor = 10
+    #         sentence["color"] = "#" + \
+    #             to_hex_code(*lighten_color(213 + factor, 0, 249 + factor,
+    #                                        1.25 - sentence["score"]))
+    #     return data
 
     def load_highlights_via_url(self, url):
         def do_task():
             print("Loading highlights from %s..." % url)
-            data = requests.get("https://highlights-api.privacyspy.org/analyze", params={
+            data = requests.get(settings.HIGHLIGHTS_API_URL + "/analyze", params={
                 "token": settings.HIGHLIGHTS_API_TOKEN,
                 "url": url
             }).json()
-            if isinstance(data["response"], list):
-                self.highlights_json = json.dumps(data["response"])
+            if data["status"] == "success":
+                self.highlighted_snapshot = data["response"]
                 self.save()
         t = threading.Thread(target=do_task)
         t.start()
@@ -222,12 +223,12 @@ class PrivacyPolicy(models.Model):
     def load_highlights_via_plaintext(self, plaintext):
         def do_task():
             print("Loading highlights from plaintext...")
-            data = requests.post("https://highlights-api.privacyspy.org/analyze", data={
+            data = requests.post(settings.HIGHLIGHTS_API_URL + "/analyze", data={
                 "token": settings.HIGHLIGHTS_API_TOKEN,
                 "plain_text": plaintext,
             }).json()
-            if isinstance(data["response"], list):
-                self.highlights_json = json.dumps(data["response"])
+            if data["status"] == "success":
+                self.highlighted_snapshot = data["response"]
                 self.save()
         t = threading.Thread(target=do_task)
         t.start()

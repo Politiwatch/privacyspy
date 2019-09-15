@@ -34,6 +34,8 @@ META_SITE_PROTOCOL = os.environ.get("META_SITE_PROTOCOL", "https")
 
 BASE_URL = META_SITE_PROTOCOL + "://" + META_SITE_DOMAIN
 
+HIGHLIGHTS_API_URL = os.environ.get("HIGHLIGHTS_API_URL", "https://highlights-api.privacyspy.org")
+
 # Application definition
 
 INSTALLED_APPS = [

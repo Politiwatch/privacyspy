@@ -60,7 +60,6 @@
             {% endif %}
             {% endwith %}
         </section>
-        {% with policy.parse_highlights as highlights %}
         <br>
         <section id="warnings">
             <h4 class="subtitle is-size-4" id="warnings">Warnings</h4>
@@ -81,9 +80,8 @@
         </section>
         <br><br>
         <section id="policy-highlights">
-            <h4 class="subtitle is-size-4" id="policy-highlights">Highlighted Privacy Policy</h4>
+            <h4 class="subtitle is-size-4" id="policy-highlights">Highlighted Policy Snapshot <span class="heading is-inline">ALPHA</span></h4>
             {% include 'core/highlights.html'%}
-            {% endwith %}
         </section>
 
     </div>

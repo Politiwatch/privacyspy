@@ -1,16 +1,39 @@
 {% load markdown_deux_tags %}
+{% load static %}
 
-{% if highlights == None %}
+<p class="has-text-grey">
+    Highlighted policy snapshots are a highly experimental feature that provide an annotated version of the privacy
+    policy (displayed in a simplified 'reader view') with automatically-generated highlights. This feature is still
+    in development; policies may not be extracted properly into 'reader view,' and the highlights may
+    not always represent the most important parts of this document.
+</p>
+<br>
+<noscript>
+<div class="notification is-warning">Unfortunately, due to the experimental nature of highlighted policy snapshots,
+    they are not currently available without JavaScript enabled.</div>
+</noscript>
+{% if policy.highlighted_snapshot == "" %}
 <div class="notification">
-    No highlights have been established for this privacy policy. To see the original document, <a href="{{policy.original_url}}" target="_blank">click here</a>.
-</div>
-{% else %}
-<div class="highlights is-collapsed content" id="highlights">
-    {% for sentence in highlights %}
-    <span style="background-color: {{sentence.color}}" class="highlighted-text">{{sentence.sentence|safe}}</span>
-    {% endfor %}
+    No highlighted policy snapshot has been created for this privacy policy.
 </div>
 <div class="expand-highlights">
-    <button class="button is-small is-dark is-outlined" onclick="showHighlights()">Expand</button>
+    <button class="button is-dark is-outlined" disabled>Highlighted Snapshot Not Available</button>
+    <a class="button is-dark is-outlined" href="{{policy.original_url}}">View Original Policy</a>
 </div>
+{% else %}
+<div class="modal {% if request.get.highlights %}is-active{% endif %}" id="highlights-modal">
+    <div class="modal-background" onclick="closeHighlights()"></div>
+    <div class="modal-content">
+        <p class="heading has-text-light has-text-centered">Experimental Highlighted Snapshot (Alpha)</p>
+        <article class="content box is-tall">
+            {{policy.highlighted_snapshot|safe}}
+        </article>
+    </div>
+    <button class="modal-close is-large" aria-label="close" onclick="closeHighlights()"></button>
+</div>
+<div class="expand-highlights">
+    <button class="button is-dark is-outlined" onclick="openHighlights()">Show Experimental Highlighted
+        Snapshot</button>
+</div>
+<script src="{% static 'core/js/highlights.js' %}"></script>
 {% endif %}
