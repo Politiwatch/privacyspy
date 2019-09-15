@@ -17,8 +17,8 @@
     No highlighted policy snapshot has been created for this privacy policy.
 </div>
 <div class="expand-highlights">
-    <button class="button is-dark is-outlined" disabled>Highlighted Snapshot Not Available</button>
-    <a class="button is-dark is-outlined" href="{{policy.original_url}}">View Original Policy</a>
+    <button class="button is-dark is-outlined" disabled>Highlighted Snapshot Not Available</button>&nbsp;
+    <a class="button is-dark is-outlined" href="{{policy.original_url}}" target="_blank">View Original Policy</a>
 </div>
 {% else %}
 <div class="modal {% if request.get.highlights %}is-active{% endif %}" id="highlights-modal">
