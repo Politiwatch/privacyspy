@@ -57,6 +57,7 @@
         <p class="has-text-grey">You have edit access to the products you maintain. Please contact the admins (via the
             suggestion system) if you would like to be removed as a maintainer for a product.</p>
         <br>
+        <section class="maintaining">
         {% for product in maintaining %}
         {% include 'core/product_box.html' %}
         <br>
@@ -65,6 +66,7 @@
             You are not currently maintaining any products.
         </div>
         {% endfor %}
+        </section>
     </div>
 </div>
 {% endblock %}
