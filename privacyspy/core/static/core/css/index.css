@@ -21,3 +21,7 @@
 .homepage-image {
     max-width: 300px;
 }
+
+.hover-darken:hover {
+    color: #888 !important;
+}

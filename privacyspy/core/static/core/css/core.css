@@ -246,7 +246,7 @@ body {
     }
 }
 
-@media (max-width: 1023px) and (min-width: 768px) {
+@media (max-width: 1023px) {
     .display-block-mobile {
         display: block;
     }
@@ -260,20 +260,8 @@ body {
         padding-bottom: 0.5em;
         text-align: center;
     }
-}
 
-@media(max-width:384px) {
-    .display-block-mobile {
-        display: block;
-    }
-
-    .margin-auto-mobile {
-        margin: auto;
-    }
-
-    .product-box-title-mobile {
-        padding-top: 1em;
-        padding-bottom: 0.5em;
+    .product-box-description {
         text-align: center;
     }
 }

@@ -8,7 +8,7 @@
 
 {% block content %}
 <section class="hero is-medium">
-    <div class="hero-body" id="titlepane">
+    <div class="hero-body is-centered" id="titlepane">
         <div class="columns reverse-order-columns">
             <div class="column is-fullwidth">
                 <h1 class="title massive">
@@ -16,10 +16,9 @@
                 </h1>
                 <div class="is-centered-mobile">
                     <h2 class="subtitle" id="header-subtitle">
-                        PrivacySpy <span class="tagline-highlight">rates</span>, <span
-                            class="tagline-highlight">highlights</span>, and <span
-                            class="tagline-highlight">monitors</span> privacy policies.
-                            Let's make informed data privacy decisions.
+                        PrivacySpy is an open project to <span class="tagline-highlight">grade</span>, <span
+                            class="tagline-highlight">annotate</span>, and <span
+                            class="tagline-highlight">archive</span> privacy policies. <wbr><a class="has-text-grey-light hover-darken" href="{% url 'about' %}">Here's&nbsp;why that&nbsp;matters.</a>
                     </h2>
                     <a class="button is-primary is-medium" href="{% url 'directory' %}">
                         Search the Directory
