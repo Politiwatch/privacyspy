@@ -39,6 +39,7 @@
         <h3 class="title is-size-4 is-small-margin">Watching</h3>
         <p class="has-text-grey">To unwatch a product, go to the product's page and click <i>unwatch</i>.</p>
         <br>
+        <section class="watching">
         {% for product in profile.watching_products.all %}
         {% include 'core/product_box.html' %}
         <br>
@@ -47,6 +48,7 @@
         You are not currently watching any products.
         </div>
         {% endfor %}
+        </section>
     </div>
 </div>
 {% endblock %}
