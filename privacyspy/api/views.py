@@ -4,7 +4,7 @@ from datetime import timedelta
 from django.utils import timezone
 from core.models import Product, PrivacyPolicy, RubricQuestion, RubricOption, RubricSelection
 from urllib.parse import urlparse
-
+import math
 
 def retrieve_products(request):
     hostname = request.GET.get("hostname", "").strip().lower()
@@ -90,7 +90,7 @@ def retrieve_database(request):
                     "name": product.name,
                     "hostname": product.hostname,
                     "slug": product.slug,
-                    "score": policy.cached_score if policy.cached_score != float("NaN") else None,
+                    "score": policy.cached_score if not math.isnan(policy.cached_score if policy.cached_score != None else float('NaN')) else None,
                     "last_updated": policy.updated,
                     "has_warnings_active": product.has_active_warning(),
                     "has_highlights": len(policy.highlighted_snapshot) > 0
