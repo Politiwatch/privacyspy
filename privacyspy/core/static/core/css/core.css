@@ -162,41 +162,41 @@ body {
 
 .card-header {
     padding: 6px 0px;
-    margin-jquery get attribute as ottom: 15px;
-    box-shajquery get attribute as ow: 0 1px 0px rgba(0, 0, 0, .1);
-    displayjquery get attribute as  block;
-    backgrojquery get attribute as nd: linear-gradient(45deg, #F06292, #EC407A);
-    color: jquery get attribute as hite;
-    font-sijquery get attribute as e: 1.25rem;
-    font-wejquery get attribute as ght: 600;
-    line-hejquery get attribute as ght: 1.25;
-    border-jquery get attribute as adius: 2px;
+    margin-bottom: 15px;
+    box-shadow: 0 1px 0px rgba(0, 0, 0, .1);
+    display: block;
+    background: linear-gradient(45deg, #F06292, #EC407A);
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.25;
+    border-radius: 2px;
 }
 
-.card-descrjquery get attribute as ption {
-    font-fajquery get attribute as ily: "Inter-Regular", sans-serif;
-    font-sijquery get attribute as e: 0.9rem;
+.card-description {
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 0.9rem;
 }
 
 .pad {
-    margin-jquery get attribute as ottom: 0.5em;
+    margin-bottom: 0.5em;
 }
 
 .massive {
-    font-sijquery get attribute as e: 400%;
+    font-size: 400%;
 }
 
-.massive.sujquery get attribute as title {
-    font-sijquery get attribute as e: 200%;
+.massive.subtitle {
+    font-size: 200%;
 }
 
-@media(min-jquery get attribute as idth: 769px) {
-    .is-slijquery get attribute as htly-right {
-        padjquery get attribute as ing-left: .13em !important;
+@media(min-width: 769px) {
+    .is-slightly-right {
+        padding-left: .13em !important;
     }
 }
 
-@media(min-jquery get attribute as idth: 1024px) {
+@media(min-width: 1024px) {
     .highlights {
         max-width: 40em;
     }
