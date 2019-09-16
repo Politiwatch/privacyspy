@@ -45,6 +45,10 @@
     margin-bottom: 3em;
 }
 
+.product-box {
+    height: 100%;
+}
+
 .is-collapsed {
     max-height: 15em;
     overflow: hidden;
