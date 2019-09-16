@@ -90,7 +90,7 @@ def retrieve_database(request):
                     "name": product.name,
                     "hostname": product.hostname,
                     "slug": product.slug,
-                    "score": policy.cached_score,
+                    "score": policy.cached_score if policy.cached_score != float("NaN") else None,
                     "last_updated": policy.updated,
                     "has_warnings_active": product.has_active_warning(),
                     "has_highlights": len(policy.highlighted_snapshot) > 0
