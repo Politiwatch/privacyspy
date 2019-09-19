@@ -17,6 +17,7 @@ Please help us out! Feel free to submit a PR. PrivacySpy is a small enough proje
 ## Related Repositories
 
 * [PrivacySpy Extension](https://github.com/Politiwatch/PrivacySpy-Extension)
+* [PrivacySpy Highlights API](https://github.com/Politiwatch/PrivacySpy-API) (for NLP highlights)
 
 ## Other Stuff
 
