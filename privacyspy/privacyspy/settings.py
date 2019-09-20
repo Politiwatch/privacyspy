@@ -53,6 +53,8 @@ INSTALLED_APPS = [
     'api',
     'meta',
     'debug_toolbar',
+    'reversion',
+    'reversion_compare'
 ]
 
 MIDDLEWARE = [

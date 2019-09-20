@@ -35,6 +35,7 @@ class Product(models.Model):
     maintainers = models.ManyToManyField(User)
     last_email_blast = models.DateTimeField(auto_now=True)
 
+
     def create_blank_policy(self, url):
         PrivacyPolicy.objects.create(original_url=url, product=self, published=True)
 

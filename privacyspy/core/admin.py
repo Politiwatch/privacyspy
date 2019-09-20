@@ -1,6 +1,6 @@
 from django.contrib import admin
 from .models import Product, PrivacyPolicy, Warning, RubricQuestion, RubricOption, RubricSelection, Suggestion, Profile, LoginKey
-
+from reversion_compare.admin import CompareVersionAdmin
 
 class WarningInline(admin.StackedInline):
     model = Warning
@@ -15,7 +15,7 @@ class PrivacyPolicyInline(admin.StackedInline):
     extra = 0
 
 
-class ProductAdmin(admin.ModelAdmin):
+class ProductAdmin(CompareVersionAdmin):
     view_on_site = True
     list_display = ('name', 'slug', 'featured', 'published')
     list_filter = ('featured','published')
@@ -31,7 +31,7 @@ def recalculate_score(modeladmin, request, queryset):
         policy.update_cached_score()
 recalculate_score.short_description = "Recalculate score (update score cache)"
 
-class PrivacyPolicyAdmin(admin.ModelAdmin):
+class PrivacyPolicyAdmin(CompareVersionAdmin):
     view_on_site = True
     list_display = ('id', 'product', 'added', 'updated',
                     'erroneous', 'out_of_date', 'published', 'cached_score')
@@ -51,7 +51,7 @@ class RubricOptionInline(admin.StackedInline):
     extra = 0
 
 
-class RubricQuestionAdmin(admin.ModelAdmin):
+class RubricQuestionAdmin(CompareVersionAdmin):
     list_display = ('text', 'published', 'max_value', 'category')
     list_filter = ('published',)
     search_fields = ['text', 'description']
@@ -61,7 +61,7 @@ class RubricQuestionAdmin(admin.ModelAdmin):
 admin.site.register(RubricQuestion, RubricQuestionAdmin)
 
 
-class RubricOptionAdmin(admin.ModelAdmin):
+class RubricOptionAdmin(CompareVersionAdmin):
     list_display = ('text', 'question', 'value')
     search_fields = ['text', 'description']
 
@@ -69,7 +69,7 @@ class RubricOptionAdmin(admin.ModelAdmin):
 admin.site.register(RubricOption, RubricOptionAdmin)
 
 
-class RubricSelectionAdmin(admin.ModelAdmin):
+class RubricSelectionAdmin(CompareVersionAdmin):
     list_display = ('id', 'option', 'policy', 'updated')
     search_fields = ['note', 'citation']
 
@@ -77,7 +77,7 @@ class RubricSelectionAdmin(admin.ModelAdmin):
 admin.site.register(RubricSelection, RubricSelectionAdmin)
 
 
-class SuggestionAdmin(admin.ModelAdmin):
+class SuggestionAdmin(CompareVersionAdmin):
     list_display = ('id', 'user', 'policy', 'rubric_selection',
                     'status', 'created', 'updated')
     list_select_related = ('policy', 'rubric_selection')
@@ -87,7 +87,7 @@ class SuggestionAdmin(admin.ModelAdmin):
 admin.site.register(Suggestion, SuggestionAdmin)
 
 
-class ProfileAdmin(admin.ModelAdmin):
+class ProfileAdmin(admin.ModelAdmin): # not tracking changes
     list_display = ('user', 'permission_level')
     filter_horizontal = ('watching_products',)
     list_select_related = ('user',)
@@ -96,7 +96,7 @@ class ProfileAdmin(admin.ModelAdmin):
 admin.site.register(Profile, ProfileAdmin)
 
 
-class LoginKeyAdmin(admin.ModelAdmin):
+class LoginKeyAdmin(admin.ModelAdmin): # not tracking changes
     list_display = ('email', 'expires', 'used', 'created', 'ip')
     list_filter = ('used',)
 
@@ -104,7 +104,7 @@ class LoginKeyAdmin(admin.ModelAdmin):
 admin.site.register(LoginKey, LoginKeyAdmin)
 
 
-class WarningAdmin(admin.ModelAdmin):
+class WarningAdmin(CompareVersionAdmin):
     view_on_site = True
     list_display = ('title', 'product', 'added',
                     'updated', 'severity', 'severity_word')

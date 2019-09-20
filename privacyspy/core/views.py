@@ -12,6 +12,7 @@ import random
 from .util import username_exists, get_client_ip, separate_rubric_questions_by_category
 from .email import send_email, send_many_emails
 from meta.views import Meta
+import reversion
 
 
 def _render(request, template, context=None, title=None, description=None):
@@ -50,7 +51,7 @@ def index(request):
                      "fundamental", "right"],
         "total_policies": PrivacyPolicy.objects.all().count(),
         "featured_products": featured[:9],
-    }, title="Making online privacy (slightly) simpler")
+    }, title="Rating, annotating, and archiving privacy policies")
 
 
 def terms_and_privacy(request):
@@ -119,12 +120,14 @@ def contributions(request):
             if Product.objects.filter(slug=slug).exists():
                 error = "A product with that name already exists; please add a different product. (This might be because someone has already created a draft policy with that name.)"
             else:
-                product = Product.objects.create(
-                    name=name, description=description, hostname=hostname, slug=slug, published=False)
-                product.create_blank_policy(policy_url)
-                product.maintainers.add(request.user)
-                Profile.for_user(request.user).watching_products.add(product)
-                return redirect(product)
+                with reversion.create_revision():
+                    reversion.set_user(request.user)
+                    product = Product.objects.create(
+                        name=name, description=description, hostname=hostname, slug=slug, published=False)
+                    product.create_blank_policy(policy_url)
+                    product.maintainers.add(request.user)
+                    Profile.for_user(request.user).watching_products.add(product)
+                    return redirect(product)
     return _render(request, 'core/contributions.html', context={
         "maintaining": Product.is_maintaining(request.user),
         "prefilled": prefilled,
@@ -143,63 +146,62 @@ def edit_policy(request, policy_id):
     actions = []
     errors = []
     if request.method == "POST":
-        print(request.POST)
-        section = request.POST.get("section", None)
-        if section == "metadata":
-            policy.out_of_date = request.POST.get(
-                "out-of-date", policy.out_of_date) == "True"
-            policy.erroneous = request.POST.get(
-                "erroneous", policy.erroneous) == "True"
-            policy.original_url = request.POST.get(
-                "original-url", policy.original_url)
-            if request.user.is_superuser:  # only allowed for superusers
-                policy.published = request.POST.get(
-                    "published", policy.published) == "True"
-            policy.save()
-            actions.append("Successfully updated metadata.")
-        if section == "highlight-by-url" and request.user.is_superuser:
-            url = request.POST.get("source-url", None)
-            if url != None:
-                policy.load_highlights_via_url(url)
-                actions.append(
-                    "Loading highlights via the given URL in a background thread.")
-        if section == "highlight-by-plaintext" and request.user.is_superuser:
-            text = request.POST.get("source-text", None)
-            if text != None:
-                policy.load_highlights_via_plaintext(text)
-                actions.append(
-                    "Loading highlights via plaintext in a background thread.")
-        if section == "ratings":
-            for question in policy.questions_with_selections():
-                option_str = request.POST.get(
-                    str(question.id) + '-selection', "None")
-                if option_str == "None":
-                    continue
-                if option_str != "unset":
-                    option = get_object_or_404(
-                        RubricOption, id=int(option_str))
-                    citation = request.POST.get(
-                        str(question.id) + "-citation", "")
-                    note = request.POST.get(str(question.id) + "-note", "")
-                    if question.answer == None:
-                        RubricSelection.objects.create(
-                            option=option, policy=policy, citation=citation, note=note)
+        with reversion.create_revision():
+            reversion.set_user(request.user)
+            section = request.POST.get("section", None)
+            if section == "metadata":
+                policy.out_of_date = request.POST.get(
+                    "out-of-date", policy.out_of_date) == "True"
+                policy.erroneous = request.POST.get(
+                    "erroneous", policy.erroneous) == "True"
+                policy.original_url = request.POST.get(
+                    "original-url", policy.original_url)
+                if request.user.is_superuser:  # only allowed for superusers
+                    policy.published = request.POST.get(
+                        "published", policy.published) == "True"
+                policy.save()
+                actions.append("Successfully updated metadata.")
+            if section == "highlight-by-url" and request.user.is_superuser:
+                url = request.POST.get("source-url", None)
+                if url != None:
+                    policy.load_highlights_via_url(url)
+                    actions.append(
+                        "Loading highlights via the given URL in a background thread.")
+            if section == "highlight-by-plaintext" and request.user.is_superuser:
+                text = request.POST.get("source-text", None)
+                if text != None:
+                    policy.load_highlights_via_plaintext(text)
+                    actions.append(
+                        "Loading highlights via plaintext in a background thread.")
+            if section == "ratings":
+                for question in policy.questions_with_selections():
+                    option_str = request.POST.get(
+                        str(question.id) + '-selection', "None")
+                    if option_str == "None":
+                        continue
+                    if option_str != "unset":
+                        option = get_object_or_404(
+                            RubricOption, id=int(option_str))
+                        citation = request.POST.get(
+                            str(question.id) + "-citation", "")
+                        note = request.POST.get(str(question.id) + "-note", "")
+                        if question.answer == None:
+                            RubricSelection.objects.create(
+                                option=option, policy=policy, citation=citation, note=note)
+                        else:
+                            if not (question.answer.option == option and question.answer.citation == citation and question.answer.note == note):
+                                question.answer.option = option
+                                question.answer.citation = citation
+                                question.answer.note = note
+                                question.answer.save()
+                        if len(citation.strip()) + len(note.strip()) == 0:
+                            errors.append(
+                                "The question <strong>%s</strong> is missing a citation or a note. All questions must have either a citation or a note." % question.text)
                     else:
-                        if not (question.answer.option == option and question.answer.citation == citation and question.answer.note == note):
-                            question.answer.option = option
-                            question.answer.citation = citation
-                            question.answer.note = note
-                            question.answer.save()
-                    print('.....' + citation)
-                    if len(citation.strip()) + len(note.strip()) == 0:
-                        print("appending note")
-                        errors.append(
-                            "The question <strong>%s</strong> is missing a citation or a note. All questions must have either a citation or a note." % question.text)
-                else:
-                    if question.answer != None:
-                        question.answer.delete()
-            policy.calculate_score()
-            actions.append("Successfully updated ratings.")
+                        if question.answer != None:
+                            question.answer.delete()
+                policy.calculate_score()
+                actions.append("Successfully updated ratings.")
 
     return _render(request, 'core/edit_policy.html', context={
         "policy": policy,
@@ -299,27 +301,29 @@ def directory(request):
 @login_required(login_url="/login")
 def suggestions(request):
     if request.method == "POST":
-        suggestion_id = request.POST.get("id", None)
-        if suggestion_id != None:
-            suggestion = get_object_or_404(Suggestion, id=suggestion_id)
-            if suggestion.can_edit(request.user) and (suggestion.is_open() or suggestion.can_super_edit(request.user)):
-                text = request.POST.get("text", None)
-                comment = request.POST.get("comment", None)
-                status = request.POST.get("status", None)
-                edited = False
-                if text != None and len(text.strip()) != 0 and request.user == suggestion.user:
-                    suggestion.text = text
-                    edited = True
-                if comment != None and suggestion.can_super_edit(request.user):
-                    suggestion.comment = comment
-                    edited = True
-                if status != None and suggestion.can_super_edit(request.user) and status in ['O', 'D', 'R']:
-                    suggestion.status = status
-                    edited = True
-                suggestion.save()
-                if edited and request.user != suggestion.user:
-                    send_email("Suggestion response", "suggestion_update",
-                               suggestion.user.email, context={})
+        with reversion.create_revision():
+            reversion.set_user(request.user)
+            suggestion_id = request.POST.get("id", None)
+            if suggestion_id != None:
+                suggestion = get_object_or_404(Suggestion, id=suggestion_id)
+                if suggestion.can_edit(request.user) and (suggestion.is_open() or suggestion.can_super_edit(request.user)):
+                    text = request.POST.get("text", None)
+                    comment = request.POST.get("comment", None)
+                    status = request.POST.get("status", None)
+                    edited = False
+                    if text != None and len(text.strip()) != 0 and request.user == suggestion.user:
+                        suggestion.text = text
+                        edited = True
+                    if comment != None and suggestion.can_super_edit(request.user):
+                        suggestion.comment = comment
+                        edited = True
+                    if status != None and suggestion.can_super_edit(request.user) and status in ['O', 'D', 'R']:
+                        suggestion.status = status
+                        edited = True
+                    suggestion.save()
+                    if edited and request.user != suggestion.user:
+                        send_email("Suggestion response", "suggestion_update",
+                                suggestion.user.email, context={})
     if request.GET.get("next", None) != None:
         return redirect(request.GET.get("next"))
     return _render(request, "core/suggestions.html", context={
@@ -334,22 +338,24 @@ def suggestions(request):
 def create_suggestion(request):
     error = None
     if request.method == "POST":
-        print(request.POST)
-        text = request.POST.get("text", None)
-        policy_id = request.POST.get("policy", None)
-        rubric_selection_id = request.POST.get("rubric-selection", None)
-        if len(text.strip()) != 0:
-            policy = get_object_or_404(PrivacyPolicy, id=int(
-                policy_id)) if policy_id != None else None
-            rubric_selection = get_object_or_404(RubricSelection, id=int(
-                rubric_selection_id)) if rubric_selection_id != None else None
-            suggestion = Suggestion.objects.create(
-                user=request.user, policy=policy, rubric_selection=rubric_selection, text=text)
-            send_many_emails("[%s] New suggestion" % (policy.product.name if policy != None else "Global"), "suggestion_posted", [
-                             user.email for user in suggestion.super_editors() if user.email != None], context={"suggestion": suggestion})
-            return redirect("/suggestions/?submitted=True")
-        else:
-            error = "You submitted an empty message!"
+        with reversion.create_revision():
+            reversion.set_user(request.user)
+            print(request.POST)
+            text = request.POST.get("text", None)
+            policy_id = request.POST.get("policy", None)
+            rubric_selection_id = request.POST.get("rubric-selection", None)
+            if len(text.strip()) != 0:
+                policy = get_object_or_404(PrivacyPolicy, id=int(
+                    policy_id)) if policy_id != None else None
+                rubric_selection = get_object_or_404(RubricSelection, id=int(
+                    rubric_selection_id)) if rubric_selection_id != None else None
+                suggestion = Suggestion.objects.create(
+                    user=request.user, policy=policy, rubric_selection=rubric_selection, text=text)
+                send_many_emails("[%s] New suggestion" % (policy.product.name if policy != None else "Global"), "suggestion_posted", [
+                                user.email for user in suggestion.super_editors() if user.email != None], context={"suggestion": suggestion})
+                return redirect("/suggestions/?submitted=True")
+            else:
+                error = "You submitted an empty message!"
     policy_id = request.GET.get("policy", None)
     rubric_selection_id = request.GET.get("selection", None)
     policy = None
