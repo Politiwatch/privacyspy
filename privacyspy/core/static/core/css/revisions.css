@@ -1,0 +1,26 @@
+.compare-table {
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+del,
+ins {
+    color: #000;
+    text-decoration: none;
+}
+
+del {
+    background-color: #ffe6e6;
+}
+
+ins {
+    background-color: #e6ffe6;
+}
+
+sup.follow {
+    color: #5555ff;
+}
+
+.is-selected-mild {
+    background-color: #f4f4f4;
+}

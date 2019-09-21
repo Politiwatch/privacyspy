@@ -15,5 +15,7 @@ urlpatterns = [
     path("create-suggestion/", views.create_suggestion, name="create_suggestion"),
     path("terms-and-privacy/", views.terms_and_privacy, name="terms_and_privacy"),
     path("about/", views.about, name="about"),
-    path("contributions/", views.contributions, name="contributions")
+    path("contributions/", views.contributions, name="contributions"),
+    path("revisions/policy/<int:pk>/", views.PolicyHistoryCompareView.as_view(), name="policy_revisions"),
+    path("revisions/selection/<int:pk>/", views.SelectionHistoryCompareView.as_view(), name="selection_revisions"),
 ]

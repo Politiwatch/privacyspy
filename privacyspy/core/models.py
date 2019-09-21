@@ -191,6 +191,9 @@ class PrivacyPolicy(models.Model):
         self.cached_score = self.calculate_score(update_cache=False)
         self.save()
 
+    def __str__(self):
+        return "%s (%s)" % (self.product.name, self.id)
+
     @property
     def revisions(self):
         return PrivacyPolicy.objects.filter(product=self.product, published=True)
@@ -286,6 +289,10 @@ class RubricSelection(models.Model):
 
     def has_note_or_citation(self):
         return len(self.note.strip()) + len(self.citation.strip()) > 0
+
+    def __str__(self):
+        text = self.option.question.text
+        return "\"%s\" for %s (%s)" % ((text[:50] + '...') if len(text) > 50 else text, self.policy.product.name, str(self.policy.id))
 
 
 class Suggestion(models.Model):

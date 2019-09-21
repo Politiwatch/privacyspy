@@ -13,6 +13,7 @@ from .util import username_exists, get_client_ip, separate_rubric_questions_by_c
 from .email import send_email, send_many_emails
 from meta.views import Meta
 import reversion
+from reversion_compare.views import HistoryCompareDetailView
 
 
 def _render(request, template, context=None, title=None, description=None):
@@ -32,11 +33,6 @@ def _render(request, template, context=None, title=None, description=None):
         locale=""
     )
     context["title"] = title
-
-    credit = ["<a href='https://rmrm.io'>Miles McCain</a>",
-              "<a href='https://github.com/ibarakaiev'>Igor Barakaiev</a>"]
-    random.shuffle(credit)
-    context["credit"] = credit
     context["user"] = request.user
     context["request"] = request
     return render(request, template, context=context)
@@ -371,3 +367,13 @@ def create_suggestion(request):
         "rubric_selection": rubric_selection,
         "text": request.GET.get("text", None),
     }, title="Submit a Suggestion")
+
+
+# For showing revision histories
+class PolicyHistoryCompareView(HistoryCompareDetailView):
+    model = PrivacyPolicy
+    template_name = "core/revisions.html"
+
+class SelectionHistoryCompareView(HistoryCompareDetailView):
+    model = RubricSelection
+    template_name = "core/revisions.html"

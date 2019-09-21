@@ -36,7 +36,7 @@
     </div>
     <div class="selection-expanded" id="selection-{{selection.id}}">
         <div class="box is-margined">
-            <p class="has-margin-bottom"><small class="has-text-grey">Decided {{selection.updated|naturalday}}. This question accounts for
+            <p class="has-margin-bottom"><small class="has-text-grey">Decided {{selection.updated|naturalday}} (<a href="{% url 'selection_revisions' pk=selection.id %}">revision history</a>). This question accounts for
                     {{selection.option.question.weight|floatformat:"0"}}% of the final score.</small></p>
             {% if selection.option.description %}
             <div class="notification content">{{selection.option.description|markdown}}</div>
