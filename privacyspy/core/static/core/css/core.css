@@ -203,6 +203,10 @@ body {
 
 }
 
+.is-semifullheight {
+    min-height: 77vh;
+}
+
 @media(max-width: 768px) {
     .reverse-order-columns {
         flex-direction: column-reverse;
