@@ -8,7 +8,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% if title %}
     <title>{{title}}</title>
+    {% endif %}
     <script defer src="{% static 'core/js/fontawesome.js' %}"></script>
     <script src="{% static 'core/js/jquery.js' %}"></script>
     <link rel="stylesheet" href="{% sass_src 'core/css/bulma.sass' %}">
