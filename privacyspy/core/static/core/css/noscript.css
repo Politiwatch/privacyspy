@@ -1,5 +1,5 @@
-.selection-expanded, #navMenu {
-    display: visible !important;
+.selection-expanded {
+    display: unset !important;
 }
 
 .is-collapsed {
