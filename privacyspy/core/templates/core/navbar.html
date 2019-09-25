@@ -55,7 +55,7 @@
                                     class="dropdown-item has-text-danger has-text-weight-bold">Admin Site</a>
                                 {% endif %}
                                 <a href="{% url 'account' %}" class="dropdown-item">Account</a>
-                                <a href="{% url 'suggestions' %}" class="dropdown-item">Suggestions</a>
+                                <a href="{% url 'suggestions' %}" class="dropdown-item">Suggestions {% if user.open_suggestions > 0 %}<span class="tag is-rounded is-info">{{user.open_suggestions}} open</span>{% endif %}</a>
                                 <a href="{% url 'contributions' %}" class="dropdown-item">Contributions</a>
                                 <a href="{% url 'logout' %}" class="dropdown-item">Log Out</a>
                             </div>

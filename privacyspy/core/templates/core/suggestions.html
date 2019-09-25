@@ -16,13 +16,15 @@ Thank you for your submission! You can see its status and edit it below. A staff
 {% endfor %}
 
 {% if closed_suggestions %}
-<br>
-<h3 class="title is-size-3">Previous Suggestions</h3>
+<a class="has-text-grey-light" id="show-previous" onclick="$('#previous-suggestions').slideDown(); $('#show-previous').hide(); $('#hide-previous').show();">+ Show Previous Suggestions</a>
+<a class="has-text-grey-light" style="display: none;" id="hide-previous" onclick="$('#previous-suggestions').slideUp(); $('#hide-previous').hide(); $('#show-previous').show();">- Hide Previous Suggestions</a>
+<br><br>
+<div id="previous-suggestions" style="display: none; padding: 10px;">
 {% for suggestion in closed_suggestions %}
 {% include 'core/edit_suggestion.html' %}
-{% empty %}
-<div class="notification">You don't currently have any closed suggestions to see.</div>
 {% endfor %}
+</div>
+<br><br>
 {% endif %}
 
 

@@ -344,6 +344,10 @@ class Suggestion(models.Model):
         return Suggestion.objects.filter(user=user, status="O").order_by("-updated")
 
     @staticmethod
+    def user_open_suggestions_count(user):
+        return Suggestion.objects.filter(user=user, status="O").count()
+
+    @staticmethod
     def user_closed_suggestions(user):
         return Suggestion.objects.filter(user=user).exclude(status="O").order_by("-updated")
 

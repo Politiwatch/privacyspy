@@ -34,6 +34,8 @@ def _render(request, template, context=None, title=None, description=None):
     )
     context["title"] = title
     context["user"] = request.user
+    if request.user.is_authenticated:
+        context["user"].open_suggestions = Suggestion.user_open_suggestions_count(request.user)
     context["request"] = request
     return render(request, template, context=context)
 
