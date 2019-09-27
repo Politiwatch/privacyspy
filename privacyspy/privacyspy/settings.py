@@ -54,7 +54,8 @@ INSTALLED_APPS = [
     'meta',
     'debug_toolbar',
     'reversion',
-    'reversion_compare'
+    'reversion_compare',
+    'privacy_analytics'
 ]
 
 MIDDLEWARE = [
@@ -64,6 +65,7 @@ MIDDLEWARE = [
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'privacy_analytics.middleware.AnalyticsMiddleware',
     'debug_toolbar.middleware.DebugToolbarMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',

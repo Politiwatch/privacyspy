@@ -20,7 +20,8 @@ from django.conf import settings
 urlpatterns = [
     path(settings.ADMIN_SITE_URL, admin.site.urls),
     path('', include('core.urls')),
-    path('api/', include('api.urls'))
+    path('api/', include('api.urls')),
+    path('analytics/', include('privacy_analytics.urls')),
 ]
 
 if settings.DEBUG_TOOLBAR_ENABLED:
