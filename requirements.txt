@@ -12,4 +12,4 @@ django-htmlmin
 django-debug-toolbar
 django-reversion
 django-reversion-compare
-django-privacy-analytics
+django-privacy-analytics>=0.1.1
