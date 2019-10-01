@@ -95,7 +95,7 @@ def product(request, product_slug):
     }, title=product.name + " Privacy Policy")
 
 
-@login_required
+@login_required(login_url="/login")
 def contributions(request):
     error = None
     message = None
@@ -134,7 +134,7 @@ def contributions(request):
     }, title="Contributions")
 
 
-@login_required
+@login_required(login_url="/login")
 def edit_policy(request, policy_id):
     policy = get_object_or_404(PrivacyPolicy, id=policy_id)
 
