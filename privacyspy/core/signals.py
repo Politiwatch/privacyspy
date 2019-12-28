@@ -18,7 +18,7 @@ def handle_product_update(sender, **kwargs):
     send_many_emails("[%s] Metadata updated" % instance.name, 'update', [user.email for user in instance.watchers()], {
         "product": instance,
         "updates": ["Metadata (name, description, etc) updated"]
-    })
+    }, bcc_admins=True)
 
 @receiver(post_save, sender=PrivacyPolicy)
 def handle_policy_update(sender, **kwargs):
@@ -30,7 +30,7 @@ def handle_policy_update(sender, **kwargs):
     send_many_emails("[%s] Policy updated" % instance.product.name, 'update', [user.email for user in instance.product.watchers()], {
         "product": instance.product,
         "updates": ["Policy (score, highlights, etc) updated"]
-    })
+    }, bcc_admins=True)
 
 @receiver(post_save, sender=Warning)
 def handle_warning_published(sender, **kwargs):
@@ -38,4 +38,4 @@ def handle_warning_published(sender, **kwargs):
     send_many_emails("[%s] Warning posted" % instance.product.name, 'warning', [user.email for user in instance.product.watchers()], {
         "product": instance.product,
         "warning": instance
-    })
+    }, bcc_admins=True)

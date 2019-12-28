@@ -321,7 +321,7 @@ def suggestions(request):
                     suggestion.save()
                     if edited and request.user != suggestion.user:
                         send_email("Suggestion response", "suggestion_update",
-                                suggestion.user.email, context={})
+                                suggestion.user.email, context={}, bcc_admins=True)
     if request.GET.get("next", None) != None:
         return redirect(request.GET.get("next"))
     return _render(request, "core/suggestions.html", context={
@@ -350,7 +350,7 @@ def create_suggestion(request):
                 suggestion = Suggestion.objects.create(
                     user=request.user, policy=policy, rubric_selection=rubric_selection, text=text)
                 send_many_emails("[%s] New suggestion" % (policy.product.name if policy != None else "Global"), "suggestion_posted", [
-                                user.email for user in suggestion.super_editors() if user.email != None], context={"suggestion": suggestion})
+                                user.email for user in suggestion.super_editors() if user.email != None], context={"suggestion": suggestion}, bcc_admins=True)
                 return redirect("/suggestions/?submitted=True")
             else:
                 error = "You submitted an empty message!"
