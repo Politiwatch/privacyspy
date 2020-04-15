@@ -59,6 +59,12 @@
         </div>
     </footer>
     <script src="{% static 'core/js/core.js' %}"></script>
+    <!-- Privacy-friendly, self-hosted analytics -->
+    {% if user.is_authenticated %}
+    <noscript><img src="//shynet.rmrm.io/ingress/e7ad854a-17c3-43a7-9f28-d1790e4b9965/{{user.email|urlencode}}/pixel.gif"></noscript> <script src="//shynet.rmrm.io/ingress/e7ad854a-17c3-43a7-9f28-d1790e4b9965/{{user.email|urlencode}}/script.js"></script>
+    {% else %}
+    <noscript><img src="//shynet.rmrm.io/ingress/e7ad854a-17c3-43a7-9f28-d1790e4b9965/pixel.gif"></noscript> <script src="//shynet.rmrm.io/ingress/e7ad854a-17c3-43a7-9f28-d1790e4b9965/script.js"></script>
+    {% endif %}
 </body>
 
 </html>
