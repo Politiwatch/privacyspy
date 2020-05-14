@@ -21,5 +21,5 @@ Please help us out! Feel free to submit a PR. PrivacySpy is a small enough proje
 
 ## Other Stuff
 
-PrivacySpy is an [open-source](https://github.com/Politiwatch/privacyspy-core) initiative maintained by [Miles McCain](https://rmrm.io/), [Igor Barakaiev](https://github.com/ibarakaiev), and the [Politiwatch](https://politiwatch.org/) team. Nothing on our platform is legal advice.
+PrivacySpy is an [open-source](https://github.com/Politiwatch/privacyspy-core) initiative maintained by [Miles McCain](https://miles.land/), [Igor Barakaiev](https://igor.fyi), and the [Politiwatch](https://politiwatch.org/) team. Nothing on our platform is legal advice.
 
