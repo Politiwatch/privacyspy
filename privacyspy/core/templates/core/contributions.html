@@ -4,7 +4,8 @@
 <h1 class="title massive">Contributions</h1>
 <div class="columns">
     <div class="column is-4">
-        {% if message %}
+	{% include 'core/edit_warning.html' %}
+	{% if message %}
         <div class="notification is-success">
             {{message}}
         </div>
