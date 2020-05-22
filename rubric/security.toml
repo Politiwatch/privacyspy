@@ -1,0 +1,39 @@
+category = "Transparency"
+slug = "security"
+text = "Does the policy outline the service's general security practices?"
+notes = []
+points = 3
+
+[[options]]
+slug = "no"
+text = "No"
+percent = 0
+
+[[options]]
+slug = "somewhat"
+text = "Somewhat"
+description = "The policy provides only a very vague overview of its security practices."
+percent = 30
+
+[[options]]
+slug = "yes"
+text = "Yes"
+percent = 60
+
+[[options]]
+slug = "yes-audits"
+text = "Yes, including audits"
+description = "The policy provides only a very vague overview of its security practices."
+percent = 75
+
+[[options]]
+slug = "na"
+text = "N/A"
+description = "The service doesn't collect any personal information."
+percent = 100
+
+[[options]]
+slug = "yes-independent-audits"
+text = "Yes, including independent audits"
+description = "Independent 'reviews,' 'monitoring,' etc. also count as independent audits."
+percent = 100

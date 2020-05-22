@@ -1,0 +1,27 @@
+category = "Transparency"
+slug = "data-breaches"
+text = "Does the policy require users to be notified in case of a data breach?"
+notes = ["Note that all companies operating in the EU are subject to [Art. 33 of the GDPR](http://www.privacy-regulation.eu/en/article-33-notification-of-a-personal-data-breach-to-the-supervisory-authority-GDPR.htm), which requires companies to notify their data protection authority of a data breach within 72 hours of discovering it."]
+points = 7
+
+[[options]]
+slug = "yes-72"
+text = "Yes, within 72 hours"
+percent = 100
+
+[[options]]
+slug = "na"
+text = "N/A"
+description = "The service collects so little personal data that notification would not be possible."
+percent = 100
+
+[[options]]
+slug = "eventually"
+text = "Yes, eventually"
+description = "Users will be notified in case of a data breach, but within an unspecified amount of time."
+percent = 60
+
+[[options]]
+slug = "no"
+text = "Not necessarily"
+percent = 0
