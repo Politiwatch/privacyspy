@@ -12,11 +12,18 @@
     "@babel/preset-typescript": "^7.9.0",
     "@types/jest": "^25.2.3",
     "@types/node": "^14.0.5",
+    "a17t": "^0.1.4",
     "babel-jest": "^26.0.1",
     "jest": "^26.0.1",
+    "tailwindcss": "^1.4.6",
     "toml": "^3.0.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^8.0.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-purgecss": "^2.2.0"
+  },
   "scripts": {
     "test": "jest"
   },
