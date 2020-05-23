@@ -1,0 +1,33 @@
+{
+  "name": "privacyspy",
+  "version": "0.0.1",
+  "description": "An open project to rate, annotate, and analyze privacy policies.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "@babel/preset-typescript": "^7.9.0",
+    "@types/jest": "^25.2.3",
+    "@types/node": "^14.0.5",
+    "babel-jest": "^26.0.1",
+    "jest": "^26.0.1",
+    "toml": "^3.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Politiwatch/privacyspy.git"
+  },
+  "author": "Politiwatch <secure@politiwatch.org>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Politiwatch/privacyspy/issues"
+  },
+  "homepage": "https://github.com/Politiwatch/privacyspy#readme"
+}
