@@ -20,6 +20,7 @@
   },
   "devDependencies": {
     "gulp": "^4.0.2",
+    "gulp-mustache": "^5.0.0",
     "gulp-postcss": "^8.0.0",
     "gulp-pug": "^4.0.1",
     "gulp-purgecss": "^2.2.0"

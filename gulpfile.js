@@ -1,10 +1,17 @@
 const gulp = require("gulp");
-const pug = require("gulp-pug");
+const mustache = require("gulp-mustache");
 const postcss = require("gulp-postcss");
 const purgecss = require("gulp-purgecss");
 
 function build() {
-  return gulp.src("./src/views/index.pug").pipe(pug()).pipe(gulp.dest("./"));
+  return gulp
+    .src("./src/views/**/*")
+    .pipe(
+      mustache({
+        msg: "Hello Gulp!",
+      })
+    )
+    .pipe(gulp.dest("./"));
 }
 
 function css() {
@@ -24,6 +31,11 @@ function purge() {
     )
     .pipe(gulp.dest("./static/css"));
 }
+
+gulp.watch("src/views/**/*.pug", function (cb) {
+  build();
+  cb();
+});
 
 if (process.env.NODE_ENV === "production") {
   exports.default = gulp.series(build, css, purge);
