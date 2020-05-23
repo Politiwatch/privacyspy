@@ -5,6 +5,11 @@
       Rating, annotating, and archiving privacy policies | PrivacySpy
     </title>
     <link rel="stylesheet" href="static/css/base.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/a17t@0.1.4/dist/a17t.min.css"
+    />
+    <link rel="stylesheet" href="static/js/fontawesome.js" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
@@ -75,15 +80,140 @@
       property="og:image"
     />
   </head>
-  <body>
+  <body class="antialiased">
     <div class="absolute top-0 left-0 right-0 w-full h-full overflow-hidden">
       <img
         class="absolute top-0 left-0 right-0 w-full h-full overflow-hidden select-none object-fit"
         src="./static/img/header-cloud.svg"
       />
     </div>
-    <div class="max-w-screen-xl w-full relative mx-auto px-6 pb-40 md:pb-24">
-      {{msg}}
+    <div
+      class="container relative flex flex-col max-w-screen-xl min-h-screen px-10 pt-8 pb-4 mx-auto sm:px-8 md:px-6 lg:px-4 md:py-6"
+    >
+      <div id="navbar" class="">
+        <header
+          class="h-12 md:flex md:justify-between sm:items-center sm:px-4 md:p-0 sm:py-3"
+        >
+          <div class="flex items-center justify-between py-3 sm:p-0">
+            <a href="#">
+              <div class="mr-6 select-none">
+                <h3 class="text-xl ~urge !low">
+                  <div class="flex items-center">
+                    <span
+                      class="inline-flex justify-center text-2xl align-centr"
+                    >
+                      <img class="h-8" src="static/img/logo-256.png" />
+                    </span>
+                    <p class="ml-4 font-semibold">PrivacySpy</p>
+                  </div>
+                </h3>
+              </div></a
+            >
+            <div class="md:hidden">
+              <button
+                type="button"
+                class="block text-gray-600 hover:text-gray-800 focus:text-white focus:outline-none"
+              >
+                <svg
+                  class="w-6 h-6 fill-current"
+                  viewBox="0 0 24 24"
+                  data-target="nav-menu"
+                  onclick="dropdown()"
+                >
+                  <path
+                    id="burger"
+                    fill-rule="evenodd"
+                    d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"
+                    style="display: none;"
+                  />
+                  <path
+                    id="cross"
+                    fill-rule="evenodd"
+                    d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div id="nav-menu" class="md:block hidden">
+            <div class="items-center px-8 py-4 md:flex md:p-0">
+              <a
+                href="directory"
+                class="block pt-4 text-lg portal md:mr-8 md:pt-0"
+                >Directory</a
+              >
+              <a
+                href="extension"
+                class="block pt-2 md:pt-0 text-lg portal md:mr-8"
+                >Extension</a
+              >
+              <a
+                href="contribute"
+                class="block pt-2 md:pt-0 text-lg portal md:mr-8"
+                >Contribute</a
+              >
+              <a href="about" class="block pt-2 md:pt-0 text-lg portal md:mr-8"
+                >About</a
+              >
+            </div>
+          </div>
+        </header>
+      </div>
+      <hr class="h-12 sep" />
+      <main
+        class="relative w-full md:w-3/4 mx-auto pt-8 pb-4 sm:px-8 md:px-6 lg:px-4 md:py-6"
+      >
+        <div
+          class="relative flex flex-col-reverse items-center justify-between mb-24 md:flex-row md:mt-24"
+        >
+          <section class="flex flex-col py-4 mt-6 mb-12 md:w-2/3 w-full">
+            <div class="text-center rounded-md md:text-left">
+              <h1
+                class="mt-6 text-5xl font-black leading-none mb-5 md:mt-0 md:text-6xl"
+              >
+                We track privacy.
+              </h1>
+            </div>
+            <h2
+              class="self-center w-5/6 mt-2 mb-6 text-lg font-medium text-center text-gray-600 md:self-start md:mt-0 md:text-left"
+            >
+              <span class="font-bold">PrivacySpy</span> is an open project to
+              <span class="font-black text-pink-600">rate</span>,
+              <span class="font-black text-pink-600">annotate</span>, and
+              <span class="font-black text-pink-600">archive</span>
+              privacy policies. Here's why that matters.
+            </h2>
+            <ul
+              class="flex flex-col md:flex-row items-center mt-2 text-xl font-semibold md:mt-1 md:justify-start"
+            >
+              <li class="button ~info bg-blue-600 !high active">
+                <a href="/directory" tabindex="0">Explore the Directory</a>
+              </li>
+              <li
+                class="ml-2 button ~info text-blue-600 !low active mt-2 md:mt-0"
+              >
+                <a href="/extension" tabindex="1">Install the Extension</a>
+              </li>
+            </ul>
+          </section>
+          <section
+            class="flex justify-center md:justify-end md:w-4/12 md:h-96"
+          ></section>
+        </div>
+      </main>
     </div>
+    <script>
+      var dropdownOpen = false;
+      var menu = document.getElementById("nav-menu");
+      var burger = document.getElementById("burger");
+      var cross = document.getElementById("cross");
+
+      function dropdown() {
+        menu.className = dropdownOpen ? "md:block hidden" : "md:block block";
+        burger.style.display = !dropdownOpen ? "block" : "none";
+        cross.style.display = dropdownOpen ? "block" : "none";
+        dropdownOpen = !dropdownOpen;
+      }
+    </script>
   </body>
 </html>
