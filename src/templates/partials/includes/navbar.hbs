@@ -1,0 +1,38 @@
+<div id="navbar" class="relative">
+  <header class="h-12 md:flex md:justify-between sm:items-center sm:px-4 md:p-0 sm:py-3">
+    <div class="flex items-center justify-between py-3 sm:p-0">
+      <a href="#">
+        <div class="mr-6 select-none">
+          <h3 class="text-xl ~urge !low">
+            <div class="flex items-center">
+              <span class="inline-flex justify-center text-2xl align-centr">
+                <img class="h-8" src="static/img/logo-256.png" />
+              </span>
+              <p class="ml-4 font-semibold">PrivacySpy</p>
+            </div>
+          </h3>
+        </div>
+      </a>
+      <div class="md:hidden">
+        <button type="button" class="block text-gray-600 hover:text-gray-800 focus:text-white focus:outline-none"
+          id="dropdown-button">
+          <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" data-target="nav-menu">
+            <path id="burger" fill-rule="evenodd"
+              d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"
+              style="display: none;" />
+            <path id="cross" fill-rule="evenodd"
+              d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div id="nav-menu" class="md:block hidden">
+      <div class="inline-block absolute right-0 p-4 md:float-none md:static md:p-0 md:flex items-center bg-white border rounded-lg shadow-lg md:bg-none md:border-none md:shadow-none">
+        <a href="directory" class="block md:pt-0 portal mr-6">Directory</a>
+        <a href="extension" class="block pt-2 md:pt-0 portal mr-6">Extension</a>
+        <a href="contribute" class="block pt-2 md:pt-0 portal mr-6">Contribute</a>
+        <a href="about" class="block pt-2 md:pt-0 portal">About</a>
+      </div>
+    </div>
+  </header>
+</div>

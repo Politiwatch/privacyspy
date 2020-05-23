@@ -1,17 +1,18 @@
 let gulp = require("gulp");
-let mustache = require("gulp-mustache");
+let handlebars = require('gulp-hb');
 let postcss = require("gulp-postcss");
-let purgecss = require("gulp-purgecss");
+let rename = require('gulp-rename');
 let del = require("del");
 
 gulp.task("cleanDist", () => {
-  return del("./dist");
+  return del("./dist/**/*");
 });
 
 gulp.task("buildTemplates", () => {
   return gulp
-    .src(["./src/templates/**/*.html"])
-    .pipe(mustache({}))
+    .src(["./src/templates/**/*.hbs"])
+    .pipe(handlebars().partials("./src/templates/partials/**/*.hbs"))
+    .pipe(rename({extname: ".html"}))
     .pipe(gulp.dest("./dist"));
 });
 
@@ -29,24 +30,15 @@ gulp.task("buildCss", () => {
         require("postcss-import"),
         require("tailwindcss")("tailwind.config.js"),
         require("autoprefixer"),
+        // require("@fullhuman/postcss-purgecss")({
+        //   content: ["./dist/**/*.html"],
+        // })
       ])
-    )
-    .pipe(gulp.dest("./dist/static/css/"));
+    ).pipe(gulp.dest("./dist/static/css/"));
 });
 
-gulp.task("purge", () => {
-  return gulp.src(["./dist/static/css/**/*.css"]).pipe(
-    purgecss({
-      content: ["./dist/**/*.html"],
-    })
-  );
-});
-
-gulp.watch("src/templates/**/*.html", () => {
-  return gulp
-    .src(["./src/templates/**/*.html"])
-    .pipe(mustache({}))
-    .pipe(gulp.dest("./dist"));
+gulp.watch(["src/templates/**/*.hbs", "rubric/", "products/"], () => {
+  return gulp.series(["buildTemplates"]);
 });
 
 gulp.task(
@@ -56,6 +48,5 @@ gulp.task(
     "buildTemplates",
     "collectStatic",
     "buildCss",
-    "purge",
   ])
 );

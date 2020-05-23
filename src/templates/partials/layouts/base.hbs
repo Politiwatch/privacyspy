@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  {{> includes/head }}
+</head>
+
+<body class="antialiased">
+  {{#> precontent }}
+  {{/precontent}}
+  <div
+    class="relative container max-w-screen-xl min-h-screen px-6 pt-2 md:pt-6 md:pt-8 pb-4 mx-auto sm:px-8 md:px-6 lg:px-4 md:py-6">
+    {{> includes/navbar }}
+    <hr class="h-12 sep" />
+    {{#> content }}
+    {{/content}}
+  </div>
+</body>
+
+</html>
