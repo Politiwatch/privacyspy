@@ -1,5 +1,6 @@
 import { loadRubric, loadProducts } from "../policies";
 import { Product, RubricQuestion } from "../policies/types";
+import { isMinFullSentence } from "./utils";
 import fs from "fs";
 
 let rubric: RubricQuestion[] = loadRubric();
@@ -13,12 +14,7 @@ describe("Product validation", () => {
             });
         
             describe(`has a valid description that is a full sentence`, () => {
-                test("longer than 20 characters", () => {
-                    expect(product.description.length).toBeGreaterThan(20);
-                });
-                test("ends with a period", () => {
-                    expect(product.description.endsWith(".")).toBeTruthy();
-                });
+                isMinFullSentence(product.description);
             });
         
             describe(`has hostname(s)`, () => {
@@ -59,6 +55,26 @@ describe("Product validation", () => {
                     test("has either a note or a citation", () => {
                         expect(selection.notes.length > 0 || selection.citations.length > 0).toBeTruthy();
                     })
+                });
+            }
+
+            for (let warning of product.warnings) {
+                describe(`warning "${warning.title}" is valid`, () => {
+                    test("severity is either low, medium, or high", () => {
+                        expect(["low", "medium", "high"].includes(warning.severity)).toBeTruthy();
+                    })
+
+                    test("has a title", () => {
+                        expect(warning.title.length).toBeGreaterThan(0);
+                    });
+
+                    describe("has a full-sentence description", () => {
+                        isMinFullSentence(warning.description);
+                    });
+
+                    test("has sources", () => {
+                        expect(warning.sources.length).toBeGreaterThan(0);
+                    });
                 });
             }
         });

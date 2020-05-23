@@ -43,6 +43,7 @@ export function loadProducts(questions: RubricQuestion[]): Product[] {
         }
 
         products.push({
+            warnings: [],
             ...object,
             rubric: rubric,
             score: calculateScore(rubric),

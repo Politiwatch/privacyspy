@@ -40,7 +40,7 @@ We use various technologies to collect and store information, including cookies,
 """]
 
 [[warnings]]
-title = "This is an example warning!"
+title = "This is an example warning"
 description = "Something very bad happened."
 severity = "medium"
 date = 2020-05-12T00:00:00Z

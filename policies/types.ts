@@ -24,7 +24,7 @@ export interface RubricSelection {
 export interface Warning {
     title: string;
     description: string;
-    date: Date;
+    date?: Date;
     severity: "low" | "medium" | "high";
     sources: URL[];
 }
