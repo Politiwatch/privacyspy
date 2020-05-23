@@ -1,7 +1,7 @@
 import fs from 'fs';
 import toml from 'toml';
 
-import { loadRubric, loadProducts } from "../policies";
+import { loadRubric, loadProducts } from "../parsing";
 
 let files: string[] = [];
 

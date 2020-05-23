@@ -1,5 +1,5 @@
-import { loadRubric, loadProducts } from "../policies";
-import { Product, RubricQuestion } from "../policies/types";
+import { loadRubric, loadProducts } from "../parsing";
+import { Product, RubricQuestion } from "../parsing/types";
 import { isMinFullSentence } from "./utils";
 import fs from "fs";
 
