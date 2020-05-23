@@ -1,20 +1,20 @@
-category = "Transparency"
+category = "transparency"
 slug = "history"
 text = "Is the policy's history made available?" 
 notes = []
 points = 5
 
 [[options]]
-slug = "no"
+id = "no"
 text = "No"
 percent = 0
 
 [[options]]
-slug = "last-modified"
+id = "last-modified"
 text = "Only the date it was last modified"
 percent = 50
 
 [[options]]
-slug = "yes"
+id = "yes"
 text = "Yes, with revisions or a changelog"
 percent = 100

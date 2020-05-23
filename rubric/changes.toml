@@ -1,21 +1,21 @@
-category = "Transparency"
+category = "transparency"
 slug = "changes"
 text = "Will affected users be notified when the policy is meaningfully changed?"
 notes = []
 points = 5
 
 [[options]]
-slug = "no"
+id = "no"
 text = "No"
 percent = 0
 
 [[options]]
-slug = "yes"
+id = "yes"
 text = "Yes"
 percent = 100
 
 [[options]]
-slug = "na"
+id = "na"
 text = "N/A"
 percent = 100
 description = "The policy doesn't collect any personal data, so notification would be impossible."

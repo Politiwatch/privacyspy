@@ -1,0 +1,47 @@
+name = "Google"
+description = "Google is an American technology and advertising giant known for its search engine and cloud services."
+hostnames = ["google.com"]
+policies = ["https://policies.google.com/privacy"]
+sort = 10 # optional sorting order
+icon = "icons/google.png"
+slug = "google"
+
+# Assessments
+
+[rubric.data-breaches]
+value = "no"
+notes = ["The policy doesn't specify a data breach protocol."]
+
+[rubric.history]
+value = "yes"
+citations = ["We change this Privacy Policy from time to time. We will not reduce your rights under this Privacy Policy without your explicit consent. We always indicate the date the last changes were published and we offer access to archived versions for your review. If changes are significant, we’ll provide a more prominent notice (including, for certain services, email notification of Privacy Policy changes)."]
+
+[rubric.changes]
+value = "yes"
+citations = ["We change this Privacy Policy from time to time. We will not reduce your rights under this Privacy Policy without your explicit consent. We always indicate the date the last changes were published and we offer access to archived versions for your review. If changes are significant, we’ll provide a more prominent notice (including, for certain services, email notification of Privacy Policy changes)."]
+
+[rubric.security]
+value = "yes-audits"
+citations = ["""
+We work hard to protect you and Google from unauthorized access, alteration, disclosure, or destruction of information we hold, including:
+
+* We use encryption to keep your data private while in transit
+* We offer a range of security features, like Safe Browsing, Security Checkup, and 2 Step Verification to help you protect your account
+* We review our information collection, storage, and processing practices, including physical security measures, to prevent unauthorized access to our systems
+* We restrict access to personal information to Google employees, contractors, and agents who need that information in order to process it. Anyone with this access is subject to strict contractual confidentiality obligations and may be disciplined or terminated if they fail to meet these obligations."
+"""]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = ["""
+In some circumstances, Google also collects information about you from publicly accessible sources. For example, if your name appears in your local newspaper, Google’s Search engine may index that article and display it to other people if they search for your name. We may also collect information about you from trusted partners, including marketing partners who provide us with information about potential customers of our business services, and security partners who provide us with information to protect against abuse. We also receive information from advertisers to provide advertising and research services on their behalf.
+
+We use various technologies to collect and store information, including cookies, pixel tags, local storage, such as browser web storage or application data caches, databases, and server logs.
+"""]
+
+[[warnings]]
+title = "This is an example warning!"
+description = "Something very bad happened."
+severity = "medium"
+date = 2020-05-12T00:00:00Z
+sources = ["https://nytimes.com/"]

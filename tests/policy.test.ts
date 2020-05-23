@@ -1,0 +1,66 @@
+import { loadRubric, loadProducts } from "../policies";
+import { Product, RubricQuestion } from "../policies/types";
+import fs from "fs";
+
+let rubric: RubricQuestion[] = loadRubric();
+let products: Product[] = loadProducts(rubric);
+
+describe("Product validation", () => {
+    for (let product of products) {
+        describe(`${product.name}`, () => {
+            test(`has a unique slug`, () => {
+                expect(products.filter(p => p.slug === product.slug).length).toEqual(1);
+            });
+        
+            describe(`has a valid description that is a full sentence`, () => {
+                test("longer than 20 characters", () => {
+                    expect(product.description.length).toBeGreaterThan(20);
+                });
+                test("ends with a period", () => {
+                    expect(product.description.endsWith(".")).toBeTruthy();
+                });
+            });
+        
+            describe(`has hostname(s)`, () => {
+                test("at least one exists", () => {
+                    expect(product.hostnames.length).toBeGreaterThan(0);
+                });
+        
+                test.each(product.hostnames)("%s is a valid hostname (doesn't specify protocol)", hostname => {
+                    expect(hostname.startsWith("http://")).toBeFalsy();
+                    expect(hostname.startsWith("https://")).toBeFalsy();
+                });
+            });
+        
+            test(`has link(s) to the original policy`, () => {
+                expect(product.policies.length).toBeGreaterThan(0);
+            });
+        
+            describe(`has a valid icon in the 'icons/' directory`, () => {
+                test("icon exists", () => {
+                    expect(product.icon).not.toBeUndefined();
+                    expect(product.icon.startsWith("icons/")).toBeTruthy();
+                    expect(fs.existsSync(product.icon)).toBeTruthy();
+                });
+        
+                test(`${product.name} icon is smaller than 30kb`, () => {
+                    expect(fs.statSync(product.icon).size).toBeLessThan(30000);
+                });
+            });
+    
+            for (let question of rubric) {
+                describe(`question '${question.slug}'`, () => {
+                    let selection = product.rubric.find(item => item.question.slug === question.slug);
+
+                    test("is scored", () => {
+                        expect(selection).not.toBeUndefined();
+                    });
+
+                    test("has either a note or a citation", () => {
+                        expect(selection.notes.length > 0 || selection.citations.length > 0).toBeTruthy();
+                    })
+                });
+            }
+        });
+    };
+})
