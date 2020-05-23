@@ -6,24 +6,36 @@
   "directories": {
     "test": "tests"
   },
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "@babel/core": "^7.9.6",
     "@babel/preset-env": "^7.9.6",
     "@babel/preset-typescript": "^7.9.0",
+    "@fortawesome/fontawesome-free": "^5.13.0",
+    "@types/gulp": "^4.0.6",
     "@types/jest": "^25.2.3",
     "@types/node": "^14.0.5",
     "a17t": "^0.1.4",
     "babel-jest": "^26.0.1",
-    "jest": "^26.0.1",
-    "tailwindcss": "^1.4.6",
-    "toml": "^3.0.0"
-  },
-  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "del": "^5.1.0",
     "gulp": "^4.0.2",
+    "gulp-cli": "^2.2.1",
+    "gulp-jest": "^4.0.3",
+    "gulp-livereload": "^4.0.2",
     "gulp-mustache": "^5.0.0",
     "gulp-postcss": "^8.0.0",
     "gulp-pug": "^4.0.1",
-    "gulp-purgecss": "^2.2.0"
+    "gulp-purgecss": "^2.2.0",
+    "import": "0.0.6",
+    "jest": "^26.0.1",
+    "jest-cli": "^26.0.1",
+    "postcss": "^7.0.30",
+    "run-sequence": "^2.2.1",
+    "tailwindcss": "^1.4.6",
+    "toml": "^3.0.0",
+    "ts-node": "^8.10.1",
+    "typescript": "^3.9.3"
   },
   "scripts": {
     "test": "jest"
