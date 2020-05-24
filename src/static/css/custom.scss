@@ -1,5 +1,5 @@
 .link {
-  padding: 2px 0 1px 0;
+  padding-bottom: 1px;
   text-decoration: none;
   transition: background-position 120ms ease-in-out, padding 120ms ease-in-out;
   background-size: 100% 200%;
@@ -7,20 +7,22 @@
   word-break: break-word;
 }
 
-.red-link-bottom {
+.blue-link {
   background-image: linear-gradient(
     transparent 0%,
     transparent calc(50% - 4px),
-    hsl(210, 100%, 75%) calc(50% - 4px),
-    hsl(205, 100%, 75%) 100%
+    hsl(207, 90%, 54%) calc(50% - 4px),
+    hsl(217, 90%, 54%) 100%
   );
 }
 
-.red-link-full {
-  background-image: linear-gradient(
-    transparent 0% transparent calc(50% - 4px),
-    hsl(210, 100%, 75%) calc(50% - 4px),
-    hsl(210, 100%, 75%) 100%
-  );
-  background-position: 0 100%;
+@variants hover, focus {
+  .blue-link-accent {
+    background-image: linear-gradient(
+      transparent 0%,
+      transparent calc(50% - 4px),
+      hsl(207, 90%, 49%) calc(50% - 4px),
+      hsl(217, 90%, 49%) 100%
+    );
+  }
 }
