@@ -28,6 +28,7 @@
     "gulp-postcss": "^8.0.0",
     "gulp-purgecss": "^2.2.0",
     "gulp-rename": "^2.0.0",
+    "handlebars-helpers": "^0.10.0",
     "jest": "^26.0.1",
     "jest-cli": "^26.0.1",
     "postcss": "^7.0.30",

@@ -1,10 +1,10 @@
-name = "Google2"
-description = "Google is an American technology and advertising giant known for its search engine and cloud services."
-hostnames = ["google.com"]
+name = "Apple"
+description = "Apple is an American technology giant known for making excellent high-end phones."
+hostnames = ["apple.com"]
 policies = ["https://policies.google.com/privacy"]
 sort = 10 # optional sorting order
-icon = "icons/google.png"
-slug = "google2"
+icon = "icons/apple.jpg"
+slug = "apple"
 
 # Assessments
 

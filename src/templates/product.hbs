@@ -1,25 +1,69 @@
 {{#> layouts/base title=product.name }}
 
 {{#*inline "content"}}
-<main class="w-full md:w-full mx-auto pt-8 pb-4 sm:px-8 md:px-6 lg:px-4 md:py-6 relative">
-  <div>
-    <div class="flex w-full justify-center mb-5">
-      <div class="flex flex-row content-center">
-        <img src="/static/icons/google.png" class="h-12 mr-4">
-        <h1 class="text-5xl font-extrabold text-gray-700 leading-none text-center w-full">{{product.name}}</h1>
+<main>
+  <header class="md:flex items-center">
+    <div class="md:flex items-center md:w-10/12 md:pr-8">
+      <img src="/static/{{product.icon}}" class="mx-auto h-12 md:mr-5">
+      <div class="text-center md:text-left flex-grow">
+        <h1 class="text-4xl heading my-4 md:my-0">{{product.name}}</h1>
+        <h3 class="text-lg w-full">{{product.description}}</h3>
       </div>
     </div>
-    <h3 class="text-lg text-center w-full">{{product.description}}</h3>
-  </div>
-  <div class="flex mt-6 md:mt-12 flex-col-reverse md:flex-row-reverse">
-    <section class="flex flex-col items-center md:items-left w-full md:w-1/4 p-4 md:mr-2">
-      <div class="text-5xl font-bold">{{product.score}}/10</div>
-      <a href="/about/#ratings" class="text-sm text-gray-500 hover:text-gray-600">How we calculate ratings →</a>
-      <a href="{{product.link}}" class="button field ~neutral mb-1 w-auto mt-6" target="_blank">Full Policy</a>
-    </section>
-    <section class="w-full md:w-3/4 shadow-md py-6 px-8 md:ml-2 justify-center md:justify-start border border-gray-100">
+    <div class="md:w-2/12 text-center md:text-left pt-4 md:pt-0">
+      <div class="heading text-4xl text-yellow-600">{{product.score}}<span class="text-gray-700 font-normal">/10</span>
+      </div>
+      <a href="/about/#ratings" class="text-sm portal text-gray-600 p-0">How we calculate ratings &rarr;</a>
+    </div>
+  </header>
+  <hr class="my-8">
+  <div class="md:flex">
+    <section class="w-full md:w-10/12 md:mr-24">
       <div>
-        <h3 class="font-bold text-gray-700 text-2xl">Handling</h3>
+        {{#each product.rubric}}
+        <div class="mb-6">
+          <div class="flex text-xl text-gray-800">
+            <div class="flex-shrink">
+              <i class="fas fa-angle-down"></i>
+            </div>
+            <div class="flex-shrink px-4">
+              <i class="fas fa-circle text-red-600"></i>
+            </div>
+            <div class="flex-grow">
+              <span>{{this.question.text}}</span>
+              <span class="text-gray-600">{{this.option.text}}</span>
+            </div>
+            <div class="flex-shrink-0 text-right pl-4">
+              <span>{{round (multiply (divide this.option.percent 100) this.question.points)}}</span><span
+                class="text-gray-600">/{{this.question.points}}</span>
+            </div>
+          </div>
+        </div>
+        {{/each}}
+      </div>
+    </section>
+    <section class="grid grid-cols-2 md:grid-cols-1 w-full md:w-2/12">
+      <div>
+        <p class="label">Last Updated</p>
+        <p>May 5, 2020</p>
+      </div>
+      <div>
+        <p class="label">Warnings</p>
+        <p>{{product.warnings.length}}</p>
+      </div>
+      <div>
+        <p class="label">Score Revisions</p>
+        <p>
+          <a href="https://github.com/politiwatch/privacyspy" target="_blank">View on GitHub &nearr;</a>
+        </p>
+      </div>
+      <div>
+        <p class="label">Sources</p>
+        <p>
+          {{#each product.policies}}
+          <a href="{{this}}" class="chip mb-1 mr-1 ~neutral" target="_blank">Source #{{add 1 @index}} &nearr;</a>
+          {{/each}}
+        </p>
       </div>
     </section>
   </div>

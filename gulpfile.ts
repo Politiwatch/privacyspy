@@ -6,6 +6,7 @@ let postcss = require("gulp-postcss");
 let rename = require("gulp-rename");
 let del = require("del");
 let hb = require("gulp-hb");
+let hbHelpers = require('handlebars-helpers');
 
 function hbsFactory(additionalData: object): any {
   return hb()
@@ -14,7 +15,8 @@ function hbsFactory(additionalData: object): any {
       rubric: rubric,
       products: products,
       ...additionalData,
-    });
+    }).helpers(hbHelpers());
+
 }
 
 let rubric: RubricQuestion[] = loadRubric();
@@ -56,7 +58,7 @@ gulp.task(
 
 gulp.task("collect static", () => {
   return gulp
-    .src(["./src/static/**/*", "!./src/static/**/*.{css,scss}"])
+    .src(["./src/static/**/*", "!./src/static/**/*.{css,scss}", "./node_modules/@fortawesome/fontawesome-free/**/*.{woff2,woff}"])
     .pipe(gulp.dest("./dist/static/"));
 });
 
@@ -94,3 +96,12 @@ gulp.task(
     "build css",
   ])
 );
+
+gulp.watch(
+  ["./src/templates/**/*", "./rubric/**/*", "./products/**/*"],
+  gulp.series("build pages", "collect static")
+);
+
+gulp.watch(
+  ["./src/**/*.{css,scss}", "build css"]
+)
