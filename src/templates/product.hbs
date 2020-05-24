@@ -1,7 +1,28 @@
 {{#> layouts/base title=product.name }}
 
 {{#*inline "content"}}
-{{product.score}}
-{{product}}
+<main class="w-full md:w-full mx-auto pt-8 pb-4 sm:px-8 md:px-6 lg:px-4 md:py-6 relative">
+  <div>
+    <div class="flex w-full justify-center mb-5">
+      <div class="flex flex-row content-center">
+        <img src="/static/icons/google.png" class="h-12 w-12 mr-3">
+        <h1 class="text-5xl font-extrabold text-gray-700 leading-none text-center w-full">{{product.name}}</h1>
+      </div>
+    </div>
+    <h3 class="text-lg text-center w-full">{{product.description}}</h3>
+  </div>
+  <div class="flex mt-6 md:mt-12 flex-col-reverse md:flex-row-reverse">
+    <section class="flex flex-col items-center md:items-left w-full md:w-1/4 p-4 md:mr-2">
+      <div class="text-5xl font-bold">{{product.score}}/10</div>
+      <a href="/about/#ratings" class="text-sm text-gray-500 hover:text-gray-600">How we calculate ratings →</a>
+      <a href="{{product.link}}" class="button field ~neutral mb-1 w-auto mt-6" target="_blank">Full Policy</a>
+    </section>
+    <section class="w-full md:w-3/4 shadow-md py-6 px-8 md:ml-2 justify-center md:justify-start border border-gray-100">
+      <div>
+        <h3 class="font-bold text-gray-700 text-2xl">Handling</h3>
+      </div>
+    </section>
+  </div>
+</main>
 {{/inline}}
 {{/layouts/base}}

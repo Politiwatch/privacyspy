@@ -1,13 +1,17 @@
 {{#> layouts/base title="Rating, annotating, and archiving privacy policies" }}
 
 {{#*inline "precontent"}}
+<div class="absolute top-0 left-0 right-0 w-full h-full overflow-hidden">
+  <img class="top-0 left-0 right-0 w-full h-full overflow-hidden select-none object-fit"
+    src="./static/img/header-cloud.svg" />
+</div>
 {{/inline}}
 {{#*inline "content"}}
 <main class="w-full md:w-3/4 mx-auto pt-8 pb-4 sm:px-8 md:px-6 lg:px-4 md:py-6">
   <div class="flex flex-col-reverse items-center justify-between mb-24 md:flex-row md:mt-24">
     <section class="flex flex-col py-4 mt-6 mb-12 md:w-2/3 w-full">
       <div class="text-center rounded-md md:text-left">
-        <h1 class="mt-6 text-5xl font-extrabold text-gray-800 leading-none mb-5 md:mt-0 md:text-6xl">
+        <h1 class="mt-6 text-5xl font-extrabold text-gray-700 leading-none mb-5 md:mt-0 md:text-6xl">
           We track privacy.
         </h1>
       </div>
@@ -17,15 +21,16 @@
         <span class="font-bold text-gray-700">rate</span>,
         <span class="font-bold text-gray-700">annotate</span>, and
         <span class="font-bold text-gray-700">archive</span>
-        privacy policies. <a href="about" class="link blue-link hover:blue-link-accent">Here's why that
+        privacy policies. <a href="about" class="text-pink-600 font-medium hover:text-pink-700 underline">Here's
+          why that
           matters</a>.
       </h2>
-      <ul class="flex flex-col md:flex-row items-center mt-2 text-xl font-semibold md:mt-1 md:justify-start">
-        <li class="button ~info bg-blue-500 !high active rounded-none">
+      <ul class="flex flex-col md:flex-row items-center mt-2 text-xl font-medium md:mt-1 md:justify-start">
+        <li class="button ~info bg-blue-500 !high active">
           <a href="/directory" tabindex="0">Explore the Directory</a>
         </li>
         <li class="ml-2 button ~info text-blue-500 !low active mt-2 md:mt-0">
-          <a href="/extension" tabindex="1">Install the Extension</a>
+          <span onclick="installBrowserExtension()" tabindex="1">Install the Extension</span>
         </li>
       </ul>
     </section>

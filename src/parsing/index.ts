@@ -80,7 +80,7 @@ export function loadProducts(questions: RubricQuestion[]): Product[] {
 
 // Calculates the product's overall score and returns a number between
 // 0 and 10 (inclusive).
-function calculateScore(selections: RubricSelection[]): number {
+function calculateScore(selections: RubricSelection[]): string {
   let totalPoints = 0;
   let earnedPoints = 0;
   for (let selection of selections) {
@@ -88,5 +88,5 @@ function calculateScore(selections: RubricSelection[]): number {
     earnedPoints +=
       (selection.option.percent / 100.0) * selection.question.points;
   }
-  return (earnedPoints * 10) / totalPoints;
+  return ((earnedPoints * 10) / totalPoints).toFixed(1);
 }

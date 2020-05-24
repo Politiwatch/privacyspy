@@ -1,7 +1,7 @@
 name = "Google"
 description = "Google is an American technology and advertising giant known for its search engine and cloud services."
 hostnames = ["google.com"]
-policies = ["https://policies.google.com/privacy"]
+link = "https://policies.google.com/privacy"
 sort = 10 # optional sorting order
 icon = "icons/google.png"
 slug = "google"

@@ -84,10 +84,6 @@ gulp.task("build css", () => {
     .pipe(gulp.dest("./dist/static/css/"));
 });
 
-gulp.watch(["src/templates/**/*.hbs", "rubric/", "products/"], () => {
-  gulp.task("build pages")();
-});
-
 gulp.task(
   "default",
   gulp.series([
