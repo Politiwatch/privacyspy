@@ -15,7 +15,17 @@ function hbsFactory(additionalData: object): any {
       rubric: rubric,
       products: products,
       ...additionalData,
-    }).helpers(hbHelpers());
+    }).helpers(hbHelpers()).helpers({
+      ratioColorClass: (ratio: number) => {
+        if (ratio < 0.35) {
+          return "text-red-500";
+        } else if (ratio < 0.7) {
+          return "text-yellow-500";
+        } else {
+          return "text-green-500";
+        }
+      }
+    });
 
 }
 
