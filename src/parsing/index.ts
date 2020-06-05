@@ -1,5 +1,5 @@
 import fs from "fs";
-import toml from "toml";
+import toml from "@iarna/toml";
 
 import {
   RubricOption,
@@ -19,7 +19,7 @@ export function loadRubric(): RubricQuestion[] {
         fs.readFileSync("rubric/" + file, {
           encoding: "utf-8",
         })
-      )
+      ) as any
     );
   }
   return questions;
@@ -27,17 +27,17 @@ export function loadRubric(): RubricQuestion[] {
 
 export function loadProducts(questions: RubricQuestion[]): Product[] {
   let products: Product[] = [];
-  let parentMap: { string: string } = {};
+  let parentMap: Record<string, string> = {};
   for (let file of fs
     .readdirSync("products/")
     .filter((file) => file.endsWith(".toml"))) {
-    let object = toml.parse(
+    let object: Product = toml.parse(
       fs.readFileSync("products/" + file, {
         encoding: "utf-8",
       })
-    );
+    ) as any;
 
-    if (object.parent !== undefined) {
+    if (object.parent != null) {
       parentMap[object.slug] = object.parent;
     }
 
@@ -81,7 +81,7 @@ export function loadProducts(questions: RubricQuestion[]): Product[] {
       ...object,
       rubric: rubric,
       score: calculateScore(rubric),
-    });
+    } as any);
   }
 
   for (let childSlug of Object.keys(parentMap)) {
@@ -101,7 +101,7 @@ export function loadProducts(questions: RubricQuestion[]): Product[] {
 
 // Calculates the product's overall score and returns a number between
 // 0 and 10 (inclusive).
-function calculateScore(selections: RubricSelection[]): string {
+function calculateScore(selections: RubricSelection[]): number {
   let totalPoints = 0;
   let earnedPoints = 0;
   for (let selection of selections) {
@@ -109,5 +109,5 @@ function calculateScore(selections: RubricSelection[]): string {
     earnedPoints +=
       (selection.option.percent / 100.0) * selection.question.points;
   }
-  return ((earnedPoints * 10) / totalPoints).toFixed(1);
+  return Number.parseFloat(((earnedPoints * 10) / totalPoints).toFixed(1));
 }

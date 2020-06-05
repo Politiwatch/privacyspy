@@ -1,5 +1,5 @@
 import fs from 'fs';
-import toml from 'toml';
+import toml from '@iarna/toml';
 
 import { loadRubric, loadProducts } from "../parsing";
 
