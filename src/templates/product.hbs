@@ -11,7 +11,8 @@
       </div>
     </div>
     <div class="md:w-2/12 text-center md:text-left pt-4 md:pt-0">
-      <div class="heading text-4xl {{ratioColorClass (divide product.score 10)}}">{{product.score}}<span class="text-gray-700 font-normal">/10</span>
+      <div class="heading text-4xl {{ratioColorClass (divide product.score 10)}}">{{product.score}}<span
+          class="text-gray-700 font-normal">/10</span>
       </div>
       <a href="/about/#ratings" class="text-sm portal text-gray-600 p-0">How we calculate ratings &rarr;</a>
     </div>
@@ -22,21 +23,26 @@
       <div>
         {{#each product.rubric}}
         <div class="mb-6">
-          <div class="flex text-xl text-gray-800">
-            <div class="flex-shrink">
-              <i class="fas fa-angle-down"></i>
+          <div>
+            <div class="flex text-xl text-gray-800 cursor-pointer">
+              <div class="flex-shrink">
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="flex-shrink mx-4">
+                <i class="fas fa-circle {{ratioColorClass (divide this.option.percent 100)}}"></i>
+              </div>
+              <div class="flex-grow">
+                <span>{{this.question.text}}</span>
+                <span class="text-gray-600">{{this.option.text}}</span>
+              </div>
+              <div class="flex-shrink-0 text-right pl-4">
+                <span>{{round (multiply (divide this.option.percent 100) this.question.points)}}</span><span
+                  class="text-gray-600">/{{this.question.points}}</span>
+              </div>
             </div>
-            <div class="flex-shrink px-4">
-              <i class="fas fa-circle {{ratioColorClass (divide this.option.percent 100)}}"></i>
-            </div>
-            <div class="flex-grow">
-              <span>{{this.question.text}}</span>
-              <span class="text-gray-600">{{this.option.text}}</span>
-            </div>
-            <div class="flex-shrink-0 text-right pl-4">
-              <span>{{round (multiply (divide this.option.percent 100) this.question.points)}}</span><span
-                class="text-gray-600">/{{this.question.points}}</span>
-            </div>
+          </div>
+          <div class="card ~neutral !low border">
+
           </div>
         </div>
         {{/each}}
