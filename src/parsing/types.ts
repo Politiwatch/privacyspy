@@ -37,7 +37,9 @@ export interface Product {
   sort: number;
   icon: string;
   slug: string;
-  score: number;
+  score?: number;
+  parent?: string;
+  children: Product[];
   rubric: RubricSelection[];
   warnings: Warning[];
 }

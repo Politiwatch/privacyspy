@@ -27,11 +27,7 @@ describe("Product validation", () => {
                     expect(hostname.startsWith("https://")).toBeFalsy();
                 });
             });
-        
-            test(`has link(s) to the original policy`, () => {
-                expect(product.policies.length).toBeGreaterThan(0);
-            });
-        
+
             describe(`has a valid icon in the 'icons/' directory`, () => {
                 test("icon exists", () => {
                     expect(product.icon).not.toBeUndefined();
@@ -43,39 +39,56 @@ describe("Product validation", () => {
                     expect(fs.statSync(product.icon).size).toBeLessThan(30000);
                 });
             });
+            if (product.parent != null) {
+                describe(`is a child product`, () => {
+                    test(`has no link(s) to original policies`, () => {
+                        expect(product.policies.length).toBe(0);
+                    });
+                    test(`has no rubric assessments`, () => {
+                        expect(product.rubric.length).toBe(0);
+                    });
+                    test(`has no warnings`, () => {
+                        expect(product.warnings.length).toBe(0);
+                    });
+                });
+            } else {
+                test(`has link(s) to the original policy`, () => {
+                    expect(product.policies.length).toBeGreaterThan(0);
+                });
+        
+                for (let question of rubric) {
+                    describe(`question '${question.slug}'`, () => {
+                        let selection = product.rubric.find(item => item.question.slug === question.slug);
     
-            for (let question of rubric) {
-                describe(`question '${question.slug}'`, () => {
-                    let selection = product.rubric.find(item => item.question.slug === question.slug);
-
-                    test("is scored", () => {
-                        expect(selection).not.toBeUndefined();
+                        test("is scored", () => {
+                            expect(selection).not.toBeUndefined();
+                        });
+    
+                        test("has either a note or a citation", () => {
+                            expect(selection.notes.length > 0 || selection.citations.length > 0).toBeTruthy();
+                        })
                     });
-
-                    test("has either a note or a citation", () => {
-                        expect(selection.notes.length > 0 || selection.citations.length > 0).toBeTruthy();
-                    })
-                });
-            }
-
-            for (let warning of product.warnings) {
-                describe(`warning "${warning.title}" is valid`, () => {
-                    test("severity is either low, medium, or high", () => {
-                        expect(["low", "medium", "high"].includes(warning.severity)).toBeTruthy();
-                    })
-
-                    test("has a title", () => {
-                        expect(warning.title.length).toBeGreaterThan(0);
+                }
+    
+                for (let warning of product.warnings) {
+                    describe(`warning "${warning.title}" is valid`, () => {
+                        test("severity is either low, medium, or high", () => {
+                            expect(["low", "medium", "high"].includes(warning.severity)).toBeTruthy();
+                        })
+    
+                        test("has a title", () => {
+                            expect(warning.title.length).toBeGreaterThan(0);
+                        });
+    
+                        describe("has a full-sentence description", () => {
+                            isMinFullSentence(warning.description);
+                        });
+    
+                        test("has sources", () => {
+                            expect(warning.sources.length).toBeGreaterThan(0);
+                        });
                     });
-
-                    describe("has a full-sentence description", () => {
-                        isMinFullSentence(warning.description);
-                    });
-
-                    test("has sources", () => {
-                        expect(warning.sources.length).toBeGreaterThan(0);
-                    });
-                });
+                }
             }
         });
     };

@@ -27,6 +27,7 @@ export function loadRubric(): RubricQuestion[] {
 
 export function loadProducts(questions: RubricQuestion[]): Product[] {
   let products: Product[] = [];
+  let parentMap: { string: string } = {};
   for (let file of fs
     .readdirSync("products/")
     .filter((file) => file.endsWith(".toml"))) {
@@ -36,11 +37,15 @@ export function loadProducts(questions: RubricQuestion[]): Product[] {
       })
     );
 
+    if (object.parent !== undefined) {
+      parentMap[object.slug] = object.parent;
+    }
+
     let rubric: RubricSelection[] = [];
     // Match items in the rubric object with their questions. We're only throwing errors here
     // because there is literally no way to parse the policies & link things together if certain
     // checks fail. All other checks should happen in distinct tests.
-    for (let questionId of Object.keys(object["rubric"])) {
+    for (let questionId of Object.keys(object["rubric"] || {})) {
       let question = questions.find((question) => question.slug === questionId);
       if (question === undefined) {
         throw new Error(
@@ -70,11 +75,27 @@ export function loadProducts(questions: RubricQuestion[]): Product[] {
 
     products.push({
       warnings: [],
+      children: [],
+      policies: [],
+      parent: null,
       ...object,
       rubric: rubric,
       score: calculateScore(rubric),
     });
   }
+
+  for (let childSlug of Object.keys(parentMap)) {
+    let child = products.find((prod) => prod.slug == childSlug);
+    let parent = products.find((prod) => prod.slug === child.parent);
+    if (parent === undefined) {
+      throw new Error(
+        `the product "${childSlug}" refers to "${child.parent}" as a parent, but no such product exists`
+      );
+    }
+    child.score = parent.score;
+    parent.children.push(child);
+  }
+
   return products;
 }
 
