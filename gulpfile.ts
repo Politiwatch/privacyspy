@@ -10,12 +10,26 @@ let hbHelpers = require("handlebars-helpers");
 var through = require("through2");
 let toml = require("@iarna/toml");
 
+let rubric: RubricQuestion[] = loadRubric();
+let products: Product[] = loadProducts(rubric);
+let api: object = products.map(product => {
+  return {
+    name: product.name,
+    hostnames: product.hostnames,
+    slug: product.slug,
+    score: product.score,
+    last_updated: product.lastUpdated,
+    has_warnings_active: product.warnings.length > 0,
+  }
+})
+
 function hbsFactory(additionalData: object): any {
   return hb()
     .partials("./src/templates/partials/**/*.hbs")
     .data({
       rubric: rubric,
       products: products,
+      api: api,
       ...additionalData,
     })
     .helpers(hbHelpers())
@@ -32,20 +46,18 @@ function hbsFactory(additionalData: object): any {
     });
 }
 
-let rubric: RubricQuestion[] = loadRubric();
-let products: Product[] = loadProducts(rubric);
-
 gulp.task("clean", () => {
   return del("./dist/**/*");
 });
 
 gulp.task("build general pages", () => {
   return gulp
-    .src("./src/templates/**/*.hbs", {
+    .src("./src/templates/**/*.{hbs}", {
       ignore: "./src/templates/product.hbs",
     })
-    .pipe(hbsFactory({}))
     .pipe(rename({ extname: ".html" }))
+    .pipe(gulp.src("./src/templates/**/*.json"))
+    .pipe(hbsFactory({}))
     .pipe(gulp.dest("./dist/"));
 });
 
