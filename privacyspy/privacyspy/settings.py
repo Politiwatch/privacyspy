@@ -173,4 +173,4 @@ DEBUG_TOOLBAR_CONFIG = {
 
 if not DEBUG:
     import django_heroku
-    django_heroku.settings(locals(), logging=False)
+    django_heroku.settings(locals(), logging=True)
