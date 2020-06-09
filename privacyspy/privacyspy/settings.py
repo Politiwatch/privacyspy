@@ -153,7 +153,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = 'static'
 
-ADMINS = [os.getenv("ADMINS")]
+ADMINS = [("Admin", email) for email in os.getenv("ADMINS").split(',')]
 
 ADMIN_SITE_URL = os.getenv("ADMIN_SITE_URL", "admin/")
 
