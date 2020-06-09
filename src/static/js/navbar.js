@@ -3,7 +3,6 @@ window.onload = function () {
   var menu = document.getElementById("nav-menu");
   var burger = document.getElementById("burger");
   var cross = document.getElementById("cross");
-  console.log("running");
 
   document.getElementById("dropdown-button").onclick = function () {
     menu.className = dropdownOpen ? "md:block hidden" : "md:block block";

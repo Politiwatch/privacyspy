@@ -47,3 +47,19 @@ function installBrowserExtension() {
     );
   }
 }
+
+function toggleRubricSelection(index) {
+  let element = document.getElementById("selection-" + index);
+  let chevron = document.getElementById("chevron-" + index);
+  if (element.classList.contains("hidden")) {
+    element.classList.remove("hidden");
+    element.classList.add("block");
+    chevron.classList.remove("fa-chevron-down");
+    chevron.classList.add("fa-chevron-up");
+  } else {
+    element.classList.remove("block");
+    element.classList.add("hidden");
+    chevron.classList.remove("fa-chevron-up");
+    chevron.classList.add("fa-chevron-down");
+  }
+}

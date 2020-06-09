@@ -2,75 +2,83 @@
 
 {{#*inline "content"}}
 <main>
-  <header class="md:flex items-center">
-    <div class="md:flex items-center md:w-10/12 md:pr-8">
-      <img src="/static/{{product.icon}}" class="mx-auto h-12 md:mr-5">
-      <div class="text-center md:text-left flex-grow">
-        <h1 class="text-4xl heading my-4 md:my-0">{{product.name}}</h1>
-        <h3 class="text-lg w-full">{{product.description}}</h3>
+  <header class="items-start md:flex">
+    <div class="items-start md:flex md:w-3/4 md:pr-20">
+      <img src="/static/{{product.icon}}" class="h-12 mx-auto mt-1 md:mr-5">
+      <div class="flex-grow ml-2 text-center md:text-left">
+        <h1 class="my-4 text-4xl font-extrabold text-black md:my-0">{{product.name}}</h1>
+        <h3 class="w-11/12 text-black text-md font-regular">{{product.description}}</h3>
       </div>
     </div>
-    <div class="md:w-2/12 text-center md:text-left pt-4 md:pt-0">
-      <div class="heading text-4xl {{ratioColorClass (divide product.score 10)}}">{{product.score}}<span
-          class="text-gray-700 font-normal">/10</span>
+    <div class="pt-4 text-center md:w-1/4 md:text-left md:pt-0">
+      <div class="heading score-size {{ratioColorClass (divide product.score 10)}}">{{product.score}}<span
+          class="font-normal text-gray-300">/10</span>
       </div>
-      <a href="/about/#ratings" class="text-sm portal text-gray-600 p-0">How we calculate ratings &rarr;</a>
+      <a href="/about/#ratings" class="p-0 -mt-2 text-sm text-gray-300 hover:text-blue-500">How we calculate ratings
+        &rarr;</a>
     </div>
   </header>
-  <hr class="my-8">
+  <hr class="my-8 border-gray-100">
   <div class="md:flex">
-    <section class="w-full md:w-10/12 md:pr-24">
-      <div>
-        {{#each product.rubric}}
-        <div class="mb-6">
-          <div>
-            <div class="flex text-xl text-gray-800 cursor-pointer">
-              <div class="flex-shrink">
-                <i class="fas fa-chevron-down"></i>
-              </div>
-              <div class="flex-shrink mx-4">
-                <i class="fas fa-circle {{ratioColorClass (divide this.option.percent 100)}}"></i>
-              </div>
-              <div class="flex-grow">
-                <span>{{this.question.text}}</span>
-                <span class="text-gray-600">{{this.option.text}}</span>
-              </div>
-              <div class="flex-shrink-0 text-right pl-4">
-                <span>{{round (multiply (divide this.option.percent 100) this.question.points)}}</span><span
-                  class="text-gray-600">/{{this.question.points}}</span>
-              </div>
+    <section class="w-full md:w-3/4 md:pr-20">
+      {{#each product.rubric}}
+
+      <div class="mb-6">
+        <div>
+          <div class="flex text-gray-800 cursor-pointer text-md" onclick="toggleRubricSelection({{add 1 @index}})">
+            <div class="flex-shrink">
+              <i class="fas fa-chevron-down" id="chevron-{{add 1 @index}}"></i>
+            </div>
+            <div class="flex-shrink h-2 mx-4">
+              <i class="fas fa-circle {{ratioColorClass (divide this.option.percent 100)}}"></i>
+            </div>
+            <div class="flex-grow">
+              <span>{{this.question.text}}&nbsp;</span>
+              <span class="text-gray-300">{{this.option.text}}</span>
+            </div>
+            <div class="flex-shrink-0 pl-4 text-right">
+              <span>{{round (multiply (divide this.option.percent 100) this.question.points)}}</span><span
+                class="text-gray-300">/{{this.question.points}}</span>
             </div>
           </div>
-          <div class="card ~neutral !low border">
-
-          </div>
         </div>
-        {{/each}}
+        <div id="selection-{{add 1 @index}}" class="hidden h-12 mt-3 border border-gray-200">
+
+        </div>
       </div>
+      {{/each}}
     </section>
-    <section class="md:w-2/12">
-      <div class="mb-4">
-        <p class="label">Last Updated</p>
-        <p>May 5, 2020</p>
+    <section class="md:w-1/4">
+      <div class="mb-6">
+        <p class="text-xs tracking-wider text-gray-300 uppercase">Last Updated</p>
+        <p class="mt-1 text-sm text-black">May 5, 2020</p>
       </div>
-      <div class="my-4">
-        <p class="label">Warnings</p>
-        <p>{{product.warnings.length}}</p>
-      </div>
-      <div class="my-4">
-        <p class="label">Score Revisions</p>
-        <p>
-          <a href="https://github.com/politiwatch/privacyspy" target="_blank">View on GitHub &nearr;</a>
-        </p>
-      </div>
-      <div class="my-4">
-        <p class="label">Sources</p>
+      <div class="my-6">
+        <p class="text-xs tracking-wider text-gray-300 uppercase">Sources</p>
         <p>
           {{#each product.policies}}
-          <a href="{{this}}" class="chip mb-1 mr-1 ~neutral" target="_blank">Source #{{add 1 @index}} &nearr;</a>
+          <a href="{{this}}" class="mt-1 text-sm text-black hover:text-blue-500" target="_blank">Source
+            #{{add 1 @index}} &rarr;</a>
           {{/each}}
         </p>
       </div>
+      <!-- Haven't tested this -->
+      {{#if product.affected_policies}}
+      <div class="my-6">
+        <p class="text-xs tracking-wider text-gray-300 uppercase">Affected Products</p>
+        {{#each product.affected_policies}}
+        <div class="flex flex-row items-center">
+          <div class="w-8 h-8">
+            <img src="static/{{this.icon}}">
+          </div>
+          <a href="{{this.link}}" class="mt-1 text-sm text-black hover:text-blue-500" target="_blank">{{this.name}}
+            #{{add 1 @index}} &rarr;
+          </a>
+        </div>
+        {{/each}}
+      </div>
+      {{/if}}
+      <!-- -->
     </section>
   </div>
 </main>
