@@ -109,6 +109,8 @@ def retrieve_everything(request):
         products = []
         for product in Product.objects.all():
             policy = product.current_policy
+            if policy is None:
+                continue
             products.append({
                 "name": product.name,
                 "slug": product.slug,
