@@ -102,3 +102,42 @@ def retrieve_database(request):
     response = JsonResponse(database_cache["data"], safe=False)
     response["Access-Control-Allow-Origin"] = "*"
     return response
+
+def retrieve_everything(request):
+    products = []
+    for product in Product.objects.all():
+        policy = product.current_policy
+        products.append({
+            "name": product.name,
+            "slug": product.slug,
+            "icon": product.icon,
+            "hostnames": [product.hostname],
+            "description": product.description,
+            "published": product.published,
+            "contributors": [maintainer.username for maintainer in product.maintainers.all()],
+            "warnings": [{
+                "title": warning.title,
+                "description": warning.description,
+                "added": warning.added.isoformat(),
+                "updated": warning.updated.isoformat(),
+                "severity": warning.severity,
+            } for warning in product.warnings()],
+            "sources": [policy.original_url],
+            "rubric": [{
+                "question": {
+                    "text": question.text,
+                    "description": question.description,
+                    "max_value": question.max_value,
+                    "category": question.category,
+                },
+                "answer": {
+                    "text": question.answer.option.text,
+                    "value": question.answer.option.value,
+                    "selection_description": question.answer.option.description,
+                    "citation": question.citation,
+                    "note": question.note,
+                    "updated": question.updated,
+                } if question.answer is not None else None,
+            } for question in policy.questions_with_selections()]
+        })
+    return JsonResponse(products, safe=False)
