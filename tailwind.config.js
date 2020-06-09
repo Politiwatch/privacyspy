@@ -12,7 +12,7 @@ module.exports = {
         },
         yellow: {
           ...colors.yellow,
-          "500": "#ffe310",
+          "500": "#fdd835",
         },
         green: {
           ...colors.green,

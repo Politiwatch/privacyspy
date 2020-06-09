@@ -45,22 +45,6 @@ function hbsFactory(additionalData: object): any {
           return "text-green-500";
         }
       },
-      ifRubricIndex: (index: number, options) => {
-        if (index == 0 || index == 4 || index == 8) {
-          return options.fn(this);
-        } else {
-          return options.inverse(this);
-        }
-      },
-      getRubricSectionTitle: (index: number) => {
-        if (index == 0) {
-          return "Transparency";
-        } else if (index == 4) {
-          return "Handling";
-        } else if (index == 8) {
-          return "Collection";
-        }
-      },
     });
 }
 
@@ -70,7 +54,7 @@ gulp.task("clean", () => {
 
 gulp.task("build general pages", () => {
   return gulp
-    .src("./src/templates/**/*.{hbs}", {
+    .src(["./src/templates/**/*.{hbs}", "./src/templates/*.hbs"], {
       ignore: "./src/templates/product.hbs",
     })
     .pipe(rename({ extname: ".html" }))
