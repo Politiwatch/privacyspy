@@ -110,7 +110,7 @@ def retrieve_everything(request):
         products.append({
             "name": product.name,
             "slug": product.slug,
-            "icon": product.icon,
+            # "icon": product.icon,
             "hostnames": [product.hostname],
             "description": product.description,
             "published": product.published,
