@@ -1,18 +1,19 @@
 import { Product, RubricQuestion } from "./src/parsing/types";
 import { loadRubric, loadProducts } from "./src/parsing/index";
 
-let gulp = require("gulp");
-let postcss = require("gulp-postcss");
-let rename = require("gulp-rename");
-let del = require("del");
-let hb = require("gulp-hb");
-let hbHelpers = require("handlebars-helpers");
-var through = require("through2");
-let toml = require("@iarna/toml");
+const gulp = require("gulp");
+const postcss = require("gulp-postcss");
+const rename = require("gulp-rename");
+const del = require("del");
+const hb = require("gulp-hb");
+const hbHelpers = require("handlebars-helpers");
+const through = require("through2");
+const toml = require("@iarna/toml");
 
-let rubric: RubricQuestion[] = loadRubric();
-let products: Product[] = loadProducts(rubric);
-let api: object = products.map(product => {
+const rubric: RubricQuestion[] = loadRubric();
+const products: Product[] = loadProducts(rubric);
+// eslint-disable-next-line @typescript-eslint/ban-types
+const api: object = products.map((product) => {
   return {
     name: product.name,
     hostnames: product.hostnames,
@@ -20,9 +21,10 @@ let api: object = products.map(product => {
     score: product.score,
     last_updated: product.lastUpdated,
     has_warnings_active: product.warnings.length > 0,
-  }
-})
+  };
+});
 
+// eslint-disable-next-line @typescript-eslint/ban-types
 function hbsFactory(additionalData: object): any {
   return hb()
     .partials("./src/templates/partials/**/*.hbs")
@@ -63,9 +65,9 @@ gulp.task("build general pages", () => {
 
 // Product page building
 // TODO: Make a bit nicer
-let productPageBuildTasks = [];
-for (let product of products) {
-  let taskName = `build ${product.slug}`;
+const productPageBuildTasks = [];
+for (const product of products) {
+  const taskName = `build ${product.slug}`;
   gulp.task(taskName, () => {
     return gulp
       .src("./src/templates/product.hbs")

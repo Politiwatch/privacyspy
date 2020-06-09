@@ -10,8 +10,8 @@ import {
 } from "./types";
 
 export function loadRubric(): RubricQuestion[] {
-  let questions: RubricQuestion[] = [];
-  for (let file of fs
+  const questions: RubricQuestion[] = [];
+  for (const file of fs
     .readdirSync("rubric/")
     .filter((file) => file.endsWith(".toml"))) {
     questions.push(
@@ -26,12 +26,12 @@ export function loadRubric(): RubricQuestion[] {
 }
 
 export function loadProducts(questions: RubricQuestion[]): Product[] {
-  let products: Product[] = [];
-  let parentMap: Record<string, string> = {};
-  for (let file of fs
+  const products: Product[] = [];
+  const parentMap: Record<string, string> = {};
+  for (const file of fs
     .readdirSync("products/")
     .filter((file) => file.endsWith(".toml"))) {
-    let object: Product = toml.parse(
+    const object: Product = toml.parse(
       fs.readFileSync("products/" + file, {
         encoding: "utf-8",
       })
@@ -41,18 +41,20 @@ export function loadProducts(questions: RubricQuestion[]): Product[] {
       parentMap[object.slug] = object.parent;
     }
 
-    let rubric: RubricSelection[] = [];
+    const rubric: RubricSelection[] = [];
     // Match items in the rubric object with their questions. We're only throwing errors here
     // because there is literally no way to parse the policies & link things together if certain
     // checks fail. All other checks should happen in distinct tests.
-    for (let questionId of Object.keys(object["rubric"] || {})) {
-      let question = questions.find((question) => question.slug === questionId);
+    for (const questionId of Object.keys(object["rubric"] || {})) {
+      const question = questions.find(
+        (question) => question.slug === questionId
+      );
       if (question === undefined) {
         throw new Error(
           `there is no rubric question with the id "${questionId}"`
         );
       }
-      let option = question.options.find(
+      const option = question.options.find(
         (option) => option.id === object["rubric"][questionId]["value"]
       );
       if (option === undefined) {
@@ -84,9 +86,9 @@ export function loadProducts(questions: RubricQuestion[]): Product[] {
     } as any);
   }
 
-  for (let childSlug of Object.keys(parentMap)) {
-    let child = products.find((prod) => prod.slug == childSlug);
-    let parent = products.find((prod) => prod.slug === child.parent);
+  for (const childSlug of Object.keys(parentMap)) {
+    const child = products.find((prod) => prod.slug == childSlug);
+    const parent = products.find((prod) => prod.slug === child.parent);
     if (parent === undefined) {
       throw new Error(
         `the product "${childSlug}" refers to "${child.parent}" as a parent, but no such product exists`
@@ -104,7 +106,7 @@ export function loadProducts(questions: RubricQuestion[]): Product[] {
 function calculateScore(selections: RubricSelection[]): number {
   let totalPoints = 0;
   let earnedPoints = 0;
-  for (let selection of selections) {
+  for (const selection of selections) {
     totalPoints += selection.question.points;
     earnedPoints +=
       (selection.option.percent / 100.0) * selection.question.points;
