@@ -134,9 +134,9 @@ def retrieve_everything(request):
                     "text": question.answer.option.text,
                     "value": question.answer.option.value,
                     "selection_description": question.answer.option.description,
-                    "citation": question.citation,
-                    "note": question.note,
-                    "updated": question.updated,
+                    "citation": question.answer.citation,
+                    "note": question.answer.note,
+                    "updated": question.answer.updated.isoformat(),
                 } if question.answer is not None else None,
             } for question in policy.questions_with_selections()]
         })
