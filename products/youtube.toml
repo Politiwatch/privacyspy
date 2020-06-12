@@ -5,3 +5,4 @@ sort = 10 # optional sorting order
 icon = "icons/youtube.png"
 slug = "youtube"
 parent = "google"
+contributors = ["Igor"]

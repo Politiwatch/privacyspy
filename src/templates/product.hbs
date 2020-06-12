@@ -76,7 +76,14 @@
           {{/each}}
         </p>
       </div>
-      <!-- Haven't tested this -->
+      <div class="mb-6">
+        <p class="text-sm text-gray-300">Contributors</p>
+        <p class="mt-1 text-sm text-black">
+          {{#each product.contributors as |contributor|}}
+            {{contributor}}{{#unless @last}}, {{/unless}}
+          {{/each}}
+        </p>
+      </div>
       {{#if product.children}}
       <div class="my-6">
         <p class="text-sm text-gray-300">Affected Products</p>

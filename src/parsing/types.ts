@@ -43,4 +43,5 @@ export interface Product {
   rubric: RubricSelection[];
   warnings: Warning[];
   lastUpdated: Date;
+  contributors: String[];
 }

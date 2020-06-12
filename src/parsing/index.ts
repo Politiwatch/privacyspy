@@ -79,6 +79,7 @@ export function loadProducts(questions: RubricQuestion[]): Product[] {
       warnings: [],
       children: [],
       policies: [],
+      contributors: [],
       parent: null,
       ...object,
       rubric: rubric,

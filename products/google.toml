@@ -5,6 +5,7 @@ policies = ["https://policies.google.com/privacy"]
 sort = 10 # optional sorting order
 icon = "icons/google.png"
 slug = "google"
+contributors = ["Miles"]
 
 # Assessments
 
