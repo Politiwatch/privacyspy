@@ -33,7 +33,7 @@ export interface Product {
   name: string;
   description: string;
   hostnames: string[];
-  policies: URL[];
+  sources: URL[];
   sort: number;
   icon: string;
   slug: string;

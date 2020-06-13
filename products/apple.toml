@@ -1,7 +1,7 @@
 name = "Apple"
 description = "Apple is an American technology giant known for making excellent high-end phones."
 hostnames = ["apple.com"]
-policies = ["https://policies.google.com/privacy"]
+sources = ["https://policies.google.com/privacy"]
 sort = 10 # optional sorting order
 icon = "icons/apple.jpg"
 slug = "apple"

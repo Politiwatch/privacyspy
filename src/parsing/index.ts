@@ -78,7 +78,7 @@ export function loadProducts(questions: RubricQuestion[]): Product[] {
     products.push({
       warnings: [],
       children: [],
-      policies: [],
+      sources: [],
       contributors: [],
       parent: null,
       ...object,
