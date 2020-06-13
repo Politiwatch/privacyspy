@@ -3,6 +3,10 @@ const { colors } = require("tailwindcss/defaultTheme");
 module.exports = {
   important: true,
   theme: {
+    opacity: {
+      "10": ".1",
+      "20": ".2",
+    },
     zIndex: {
       "-1": "-1",
       "1": "1",
