@@ -1,6 +1,7 @@
 {{#> layouts/base title=product.name }}
 
 {{#*inline "content"}}
+{{#if (not product.parent)}}
 <main>
   <header class="items-start md:flex">
     <div class="items-start md:flex md:w-4/5 md:pr-20">
@@ -100,5 +101,8 @@
     </section>
   </div>
 </main>
+{{else}}
+<p>This policy is a child of <a href="/product/{{product.parent}}">{{product.parent}}</a>. Eventually this will be a redirect.</p>
+{{/if}}
 {{/inline}}
 {{/layouts/base}}

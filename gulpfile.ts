@@ -68,8 +68,8 @@ gulp.task("clean", () => {
 
 gulp.task("build general pages", () => {
   return gulp
-    .src(["./src/templates/**/*.{hbs}", "./src/templates/*.hbs"], {
-      ignore: "./src/templates/product.hbs",
+    .src(["./src/templates/pages/**/*.hbs", "./src/templates/pages/*.hbs"], {
+      ignore: "./src/templates/pages/product.hbs",
     })
     .pipe(rename({ extname: ".html" }))
     .pipe(gulp.src("./src/templates/**/*.json"))
@@ -84,7 +84,7 @@ for (const product of products) {
   const taskName = `build ${product.slug}`;
   gulp.task(taskName, () => {
     return gulp
-      .src("./src/templates/product.hbs")
+      .src("./src/templates/pages/product.hbs")
       .pipe(hbsFactory({ product: product }))
       .pipe(rename(`/product/${product.slug}/index.html`))
       .pipe(gulp.dest("./dist/"));
