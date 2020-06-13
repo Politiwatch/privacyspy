@@ -41,8 +41,8 @@ We use various technologies to collect and store information, including cookies,
 """]
 
 [[warnings]]
-title = "This is an example warning"
-description = "Something very bad happened."
+title = "Exposed Phone Numbers"
+description = "In the latest privacy scandal for the tech giant, hundreds of millions of phone numbers linked to Facebook accounts were exposed on a server without authentication. Some of the records also included personal information such as the user's name, gender, and country."
 severity = "medium"
 date = 2020-05-12T00:00:00Z
-sources = ["https://nytimes.com/"]
+sources = ["https://nytimes.com/", "https://google.com"]
