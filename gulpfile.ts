@@ -26,13 +26,27 @@ const api: object = products.map((product) => {
 
 // eslint-disable-next-line @typescript-eslint/ban-types
 function hbsFactory(additionalData: object): any {
+  const GAFAMN = [
+    "google",
+    "apple",
+    "facebook",
+    "microsoft",
+    "amazon",
+    "netflix",
+  ];
+  const featured = products.filter((item) => {
+    return GAFAMN.includes(item.slug);
+  });
+
   return hb()
     .partials("./src/templates/partials/**/*.hbs")
     .data({
-      rubric: rubric,
-      products: products,
-      api: api,
+      rubric,
+      products,
+      api,
       ...additionalData,
+      featured,
+      product_count: products.length,
     })
     .helpers(hbHelpers())
     .helpers({

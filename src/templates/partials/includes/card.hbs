@@ -1,0 +1,19 @@
+<div class="rounded shadow-md outline-none">
+  <a href="product/{{product.slug}}">
+    <div class="p-4">
+      <div class="items-start pb-1 md:flex">
+        <img src="/static/{{product.icon}}" class="h-8 mx-auto mt-1 md:mr-5">
+        <div class="flex-grow ml-2 text-center md:text-left">
+          <div class="mt-6 text-xl font-bold leading-none md:mt-2 md:mb-3">
+            {{product.name}}&nbsp;
+            <div
+              class="text-xl font-extrabold leading-none md:my-0 inline-block {{ratioColorClass (divide product.score 10)}}">
+              {{product.score}}<span class="font-normal text-gray-400">/10</span>
+            </div>
+          </div>
+          <h3 class="mt-2 text-sm md:mt-0">{{product.description}}</h3>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>

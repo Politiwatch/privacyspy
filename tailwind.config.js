@@ -3,6 +3,10 @@ const { colors } = require("tailwindcss/defaultTheme");
 module.exports = {
   important: true,
   theme: {
+    zIndex: {
+      "-1": "-1",
+      "1": "1",
+    },
     extend: {
       colors: {
         black: "#010101",

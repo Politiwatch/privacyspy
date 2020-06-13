@@ -72,7 +72,7 @@
         <p>
           {{#each product.policies}}
           <a href="{{this}}" class="mt-1 text-sm hover:text-blue-500" target="_blank">Source
-            #{{add 1 @index}} &rarr;</a>
+            #{{add 1 @index}}</a>
           {{/each}}
         </p>
       </div>
@@ -80,7 +80,7 @@
         <p class="text-sm text-gray-300">Contributors</p>
         <p class="mt-1 text-sm text-black">
           {{#each product.contributors as |contributor|}}
-            {{contributor}}{{#unless @last}}, {{/unless}}
+          {{contributor}}{{#unless @last}}, {{/unless}}
           {{/each}}
         </p>
       </div>
@@ -97,7 +97,6 @@
         {{/each}}
       </div>
       {{/if}}
-      <!-- -->
     </section>
   </div>
 </main>
