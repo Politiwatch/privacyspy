@@ -64,6 +64,36 @@ function hbsFactory(additionalData: object): any {
           return "text-green-500";
         }
       },
+      getMonth: (order: number): string => {
+        switch (order) {
+          case 1:
+            return "Jan.";
+          case 2:
+            return "Feb.";
+          case 3:
+            return "Mar.";
+          case 4:
+            return "Apr.";
+          case 5:
+            return "May";
+          case 6:
+            return "June";
+          case 7:
+            return "July";
+          case 8:
+            return "Aug.";
+          case 9:
+            return "Sep.";
+          case 10:
+            return "Oct.";
+          case 11:
+            return "Nov.";
+          case 12:
+            return "Dec.";
+          default:
+            return "Jan.";
+        }
+      },
     });
 }
 
@@ -170,10 +200,13 @@ function getWarningsTimeline(warnings: Warning[]): object {
       (timeline["general"] = timeline["general"] || []).push(warning);
     } else {
       const dateObj = new Date(date);
-      const year = dateObj.getFullYear();
-      const month = new Intl.DateTimeFormat("en-US", { month: "long" }).format(
-        dateObj
-      );
+
+      // NOTE: years are negative!
+      // Since by default JS only sorts object keys in ascending order
+      // and only if a key is integer, it is simpler to introduce a negative
+      // sign than to create a different data structure and a custom handlebars helper.
+      const year = -dateObj.getFullYear();
+      const month = dateObj.getMonth();
       if (!(year in timeline)) {
         timeline[year] = {};
       }

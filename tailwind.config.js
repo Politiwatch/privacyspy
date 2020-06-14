@@ -15,6 +15,9 @@ module.exports = {
       "1": "1",
     },
     extend: {
+      width: {
+        "60": "15rem",
+      },
       colors: {
         black: "#010101",
         blue: {
