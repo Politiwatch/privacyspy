@@ -27,8 +27,8 @@
         &rarr;</a>
     </div>
   </header>
-  <hr class="sep h-16">
-  <div class="flex md:flex-row">
+  <hr class="h-16 sep">
+  <div class="flex flex-col md:flex-row">
     <section class="w-full md:w-4/5 md:pr-20">
       <div id="handling" class="mb-4 text-xl font-semibold text-center md:text-left">Handling</div>
       {{#each product.rubric}}
@@ -121,7 +121,8 @@
   </div>
 </main>
 {{else}}
-<p>This policy is a child of <a href="/product/{{product.parent}}">{{product.parent}}</a>. Eventually this will be a redirect.</p>
+<p>This policy is a child of <a href="/product/{{product.parent}}">{{product.parent}}</a>. Eventually this will be a
+  redirect.</p>
 {{/if}}
 {{/inline}}
 {{/layouts/base}}

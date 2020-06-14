@@ -1,4 +1,4 @@
-import { loadRubric, loadProducts } from "../parsing";
+import { loadRubric, loadProducts } from "../parsing/index";
 import { Product, RubricQuestion } from "../parsing/types";
 import { isMinFullSentence } from "./utils";
 import fs from "fs";
@@ -47,7 +47,7 @@ describe("Product validation", () => {
       if (product.parent != null) {
         describe(`is a child product`, () => {
           test(`has no link(s) to original policies`, () => {
-            expect(product.policies.length).toBe(0);
+            expect(product.sources.length).toBe(0);
           });
           test(`has no rubric assessments`, () => {
             expect(product.rubric.length).toBe(0);
@@ -58,7 +58,7 @@ describe("Product validation", () => {
         });
       } else {
         test(`has link(s) to the original policy`, () => {
-          expect(product.policies.length).toBeGreaterThan(0);
+          expect(product.sources.length).toBeGreaterThan(0);
         });
 
         for (const question of rubric) {

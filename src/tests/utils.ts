@@ -1,4 +1,4 @@
-export function isMinFullSentence(text) {
+export function isMinFullSentence(text: string): void {
   test("longer than 20 characters", () => {
     expect(text.length).toBeGreaterThan(20);
   });

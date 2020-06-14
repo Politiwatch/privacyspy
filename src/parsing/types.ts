@@ -25,7 +25,6 @@ export interface Warning {
   title: string;
   description: string;
   date?: Date;
-  severity: "low" | "medium" | "high";
   sources: URL[];
 }
 
@@ -34,7 +33,6 @@ export interface Product {
   description: string;
   hostnames: string[];
   sources: URL[];
-  sort: number;
   icon: string;
   slug: string;
   score: number;
@@ -43,5 +41,5 @@ export interface Product {
   rubric: RubricSelection[];
   warnings: Warning[];
   lastUpdated: Date;
-  contributors: String[];
+  contributors: string[];
 }

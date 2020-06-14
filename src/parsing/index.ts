@@ -1,78 +1,66 @@
 import fs from "fs";
 import toml from "@iarna/toml";
-
-import {
-  RubricOption,
-  RubricQuestion,
-  RubricSelection,
-  Warning,
-  Product,
-} from "./types";
+import { RubricQuestion, RubricSelection, Warning, Product } from "./types";
+import { getQuestionBySlug, getOptionBySlug } from "./utils";
 
 export function loadRubric(): RubricQuestion[] {
-  const questions: RubricQuestion[] = [];
-  for (const file of fs
+  const files = fs
     .readdirSync("rubric/")
-    .filter((file) => file.endsWith(".toml"))) {
-    questions.push(
-      toml.parse(
-        fs.readFileSync("rubric/" + file, {
-          encoding: "utf-8",
-        })
-      ) as any
-    );
+    .filter((file) => file.endsWith(".toml"));
+
+  const entries: RubricQuestion[] = [];
+  for (const file of files) {
+    const rubric_entry = toml.parse(
+      fs.readFileSync("rubric/" + file, {
+        encoding: "utf-8",
+      })
+    ) as any;
+
+    entries.push(rubric_entry);
   }
-  return questions;
+
+  return entries;
 }
 
 export function loadProducts(questions: RubricQuestion[]): Product[] {
-  const products: Product[] = [];
-  const parentMap: Record<string, string> = {};
-  for (const file of fs
+  const files = fs
     .readdirSync("products/")
-    .filter((file) => file.endsWith(".toml"))) {
-    const object: Product = toml.parse(
+    .filter((file) => file.endsWith(".toml"));
+
+  const products: Product[] = [];
+  const rubric: RubricSelection[] = [];
+  const parentMap: Record<string, string> = {};
+
+  for (const file of files) {
+    const product: Product = toml.parse(
       fs.readFileSync("products/" + file, {
         encoding: "utf-8",
       })
     ) as any;
 
-    if (object.parent != null) {
-      parentMap[object.slug] = object.parent;
-    }
+    if (product.parent !== undefined) {
+      parentMap[product.slug] = product.parent;
+    } else {
+      // Match items in the rubric object with their questions. We're only throwing errors here
+      // because there is literally no way to parse the policies & link things together if certain
+      // checks fail. All other checks should happen in distinct tests.
+      for (const questionSlug of Object.keys(product["rubric"])) {
+        const question = getQuestionBySlug(questions, questionSlug);
 
-    const rubric: RubricSelection[] = [];
-    // Match items in the rubric object with their questions. We're only throwing errors here
-    // because there is literally no way to parse the policies & link things together if certain
-    // checks fail. All other checks should happen in distinct tests.
-    for (const questionId of Object.keys(object["rubric"] || {})) {
-      const question = questions.find(
-        (question) => question.slug === questionId
-      );
-      if (question === undefined) {
-        throw new Error(
-          `there is no rubric question with the id "${questionId}"`
+        const option = getOptionBySlug(
+          question.options,
+          product["rubric"][questionSlug]["value"],
+          questionSlug
         );
+
+        rubric.push({
+          question: question,
+          option: option,
+          notes: [],
+          citations: [],
+          ...product["rubric"][questionSlug],
+        });
       }
-      const option = question.options.find(
-        (option) => option.id === object["rubric"][questionId]["value"]
-      );
-      if (option === undefined) {
-        throw new Error(
-          `the rubric question "${questionId}" has no option "${
-            object["rubric"][questionId]["value"]
-          }" (valid options: ${question.options
-            .map((option) => option.id)
-            .join(", ")})`
-        );
-      }
-      rubric.push({
-        question: question,
-        option: option,
-        notes: [],
-        citations: [],
-        ...object["rubric"][questionId],
-      });
     }
 
     products.push({
@@ -81,15 +69,15 @@ export function loadProducts(questions: RubricQuestion[]): Product[] {
       sources: [],
       contributors: [],
       parent: null,
-      ...object,
+      ...product,
       rubric: rubric,
       score: calculateScore(rubric),
     } as any);
   }
 
   for (const childSlug of Object.keys(parentMap)) {
-    const child = products.find((prod) => prod.slug == childSlug);
-    const parent = products.find((prod) => prod.slug === child.parent);
+    const child = products.find((el) => el.slug === childSlug);
+    const parent = products.find((el) => el.slug === child.parent);
     if (parent === undefined) {
       throw new Error(
         `the product "${childSlug}" refers to "${child.parent}" as a parent, but no such product exists`
@@ -98,6 +86,12 @@ export function loadProducts(questions: RubricQuestion[]): Product[] {
     child.score = parent.score;
     parent.children.push(child);
   }
+
+  products.sort((a, b) => {
+    if (a.slug > b.slug) return 1;
+    else if (a.slug < b.slug) return -1;
+    return 0;
+  });
 
   return products;
 }
