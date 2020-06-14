@@ -44,7 +44,7 @@ export function loadProducts(questions: RubricQuestion[]): Product[] {
       // Match items in the rubric object with their questions. We're only throwing errors here
       // because there is literally no way to parse the policies & link things together if certain
       // checks fail. All other checks should happen in distinct tests.
-      for (const questionSlug of Object.keys(product["rubric"])) {
+      for (const questionSlug in product["rubric"]) {
         const question = getQuestionBySlug(questions, questionSlug);
 
         const option = getOptionBySlug(
@@ -75,7 +75,7 @@ export function loadProducts(questions: RubricQuestion[]): Product[] {
     } as any);
   }
 
-  for (const childSlug of Object.keys(parentMap)) {
+  for (const childSlug in parentMap) {
     const child = products.find((el) => el.slug === childSlug);
     const parent = products.find((el) => el.slug === child.parent);
     if (parent === undefined) {
