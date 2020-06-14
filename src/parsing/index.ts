@@ -28,10 +28,11 @@ export function loadProducts(questions: RubricQuestion[]): Product[] {
     .filter((file) => file.endsWith(".toml"));
 
   const products: Product[] = [];
-  const rubric: RubricSelection[] = [];
   const parentMap: Record<string, string> = {};
 
   for (const file of files) {
+    const rubric: RubricSelection[] = [];
+
     const product: Product = toml.parse(
       fs.readFileSync("products/" + file, {
         encoding: "utf-8",

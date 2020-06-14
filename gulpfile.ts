@@ -1,4 +1,9 @@
-import { Product, RubricQuestion } from "./src/parsing/types";
+import {
+  Product,
+  RubricQuestion,
+  RubricSelection,
+  Warning,
+} from "./src/parsing/types";
 import { loadRubric, loadProducts } from "./src/parsing/index";
 
 const gulp = require("gulp");
@@ -85,7 +90,13 @@ for (const product of products) {
   gulp.task(taskName, () => {
     return gulp
       .src("./src/templates/pages/product.hbs")
-      .pipe(hbsFactory({ product: product }))
+      .pipe(
+        hbsFactory({
+          product: product,
+          timeline: getWarningsTimeline(product.warnings),
+          rubricCategories: getRubricCategories(product.rubric),
+        })
+      )
       .pipe(rename(`/product/${product.slug}/index.html`))
       .pipe(gulp.dest("./dist/"));
   });
@@ -148,3 +159,42 @@ gulp.watch(
 );
 
 gulp.watch(["./src/**/*.{css,scss}", "build css"]);
+
+// eslint-disable-next-line @typescript-eslint/ban-types
+function getWarningsTimeline(warnings: Warning[]): object {
+  const timeline = {};
+
+  for (const warning of warnings) {
+    const date = warning.date;
+    if (date === undefined) {
+      (timeline["general"] = timeline["general"] || []).push(warning);
+    } else {
+      const dateObj = new Date(date);
+      const year = dateObj.getFullYear();
+      const month = new Intl.DateTimeFormat("en-US", { month: "long" }).format(
+        dateObj
+      );
+      if (!(year in timeline)) {
+        timeline[year] = {};
+      }
+      if (!(month in timeline[year])) {
+        timeline[year][month] = [];
+      }
+      timeline[year][month].push(warning);
+    }
+  }
+
+  return timeline;
+}
+
+// eslint-disable-next-line @typescript-eslint/ban-types
+function getRubricCategories(selections: RubricSelection[]): object {
+  const categories = {};
+
+  for (const selection of selections) {
+    (categories[selection.question.category] =
+      categories[selection.question.category] || []).push(selection);
+  }
+
+  return categories;
+}

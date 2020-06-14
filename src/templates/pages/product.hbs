@@ -30,31 +30,30 @@
   <hr class="h-16 sep">
   <div class="flex flex-col md:flex-row">
     <section class="w-full md:w-4/5 md:pr-20">
-      <div id="handling" class="mb-4 text-xl font-semibold text-center md:text-left">Handling</div>
-      {{#each product.rubric}}
+      {{#forOwn rubricCategories}}
+      <div id="{{@key}}" class="mb-4 text-xl font-semibold text-center md:text-left">{{capitalize @key }}</div>
+      {{#each this as |selection|}}
       <div class="mb-6">
-        <div>
-          <div class="flex text-gray-800 cursor-pointer text-md" onclick="toggleRubricSelection({{add 1 @index}})">
-            <div class="flex-shrink">
-              <i class="fas fa-chevron-down" id="chevron-{{add 1 @index}}"></i>
-            </div>
-            <div class="flex-shrink mx-6">
-              <i class="fas fa-circle {{ratioColorClass (divide this.option.percent 100)}}"></i>
-            </div>
-            <div class="flex-grow">
-              <span>{{this.question.text}}&nbsp;</span>
-              <span class="text-gray-300">{{this.option.text}}</span>
-            </div>
-            <div class="flex-shrink-0 pl-4 text-right">
-              <span>{{round (multiply (divide this.option.percent 100) this.question.points)}}</span><span
-                class="text-gray-300">/{{this.question.points}}</span>
-            </div>
+        <div class="flex text-gray-800 cursor-pointer text-md" onclick="toggleRubricSelection({{add 1 @index}})">
+          <div class="flex-shrink">
+            <i class="fas fa-chevron-down" id="chevron-{{add 1 @index}}"></i>
+          </div>
+          <div class="flex-shrink mx-6">
+            <i class="fas fa-circle {{ratioColorClass (divide selection.option.percent 100)}}"></i>
+          </div>
+          <div class="flex-grow">
+            <span>{{selection.question.text}}&nbsp;</span>
+            <span class="text-gray-300">{{selection.option.text}}</span>
+          </div>
+          <div class="flex-shrink-0 pl-4 text-right">
+            <span>{{round (multiply (divide selection.option.percent 100) selection.question.points)}}</span><span
+              class="text-gray-300">/{{selection.question.points}}</span>
           </div>
         </div>
         <div id="selection-{{add 1 @index}}" class="flex hidden h-auto p-4 mt-3 border border-gray-100 rounded">
           <div>
             {{#each this.question.options as |option|}}
-            <div class="flex my-2 text-sm rounded {{#if (eq option this.selection)}}bg-blue-400 text-white{{/if}}">
+            <div class="flex my-2 text-sm rounded {{#if (eq option selection.selection)}}bg-blue-400 text-white{{/if}}">
               <div class="w-5/6">{{option.text}}</div>
               <div class="w-1/6 ml-4 font-medium text-right">{{option.percent}}%</div>
             </div>
@@ -63,8 +62,9 @@
         </div>
       </div>
       {{/each}}
+      {{/forOwn}}
       {{#if product.warnings}}
-      <div id="warnings" class="mt-8 text-xl font-bold text-center md:text-left">Warnings</div>
+      <div id="warnings" class="mt-8 text-xl font-semibold text-center md:text-left">Timeline</div>
       {{#each product.warnings as |warning|}}
       <div class="h-auto mt-4 rounded">
         <div class="p-4">
