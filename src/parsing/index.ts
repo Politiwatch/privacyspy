@@ -1,6 +1,6 @@
 import fs from "fs";
 import toml from "@iarna/toml";
-import { RubricQuestion, RubricSelection, Warning, Product } from "./types";
+import { RubricQuestion, RubricSelection, Product } from "./types";
 import { getQuestionBySlug, getOptionBySlug } from "./utils";
 
 export function loadRubric(): RubricQuestion[] {
