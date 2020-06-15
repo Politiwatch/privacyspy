@@ -1,7 +1,22 @@
 import fs from "fs";
 import toml from "@iarna/toml";
-import { RubricQuestion, RubricSelection, Product } from "./types";
+import { RubricQuestion, RubricSelection, Product, Contributor } from "./types";
 import { getQuestionBySlug, getOptionBySlug } from "./utils";
+
+export function loadContributors(): Contributor[] {
+  let data: object = toml.parse(
+    fs.readFileSync("CONTRIBUTORS.toml", { encoding: "utf-8" })
+  );
+  let contributors: Contributor[] = [];
+  for (let slug of Object.keys(data)) {
+    contributors.push({
+      slug: slug,
+      role: "contributor",
+      ...data[slug],
+    });
+  }
+  return contributors;
+}
 
 export function loadRubric(): RubricQuestion[] {
   const files = fs
@@ -22,7 +37,10 @@ export function loadRubric(): RubricQuestion[] {
   return entries;
 }
 
-export function loadProducts(questions: RubricQuestion[]): Product[] {
+export function loadProducts(
+  questions: RubricQuestion[],
+  contributors: Contributor[]
+): Product[] {
   const files = fs
     .readdirSync("products/")
     .filter((file) => file.endsWith(".toml"));
@@ -64,15 +82,27 @@ export function loadProducts(questions: RubricQuestion[]): Product[] {
       }
     }
 
+    // There are shorter ways to get the contributors, such as filtering the list of all contributors
+    // by whether they are listed in the policy, but this is the only approach I could come up with that
+    // would explicitly throw an error when a contributor is listed erroneously.
+    let productContributors: Contributor[] = [];
+    for (let contributorSlug of product.contributors){
+      let contributor = contributors.find(potentialContributor => potentialContributor.slug == <string> <unknown> contributorSlug);
+      if (contributor === undefined) {
+        throw new Error(`the product lists '${contributorSlug}' as a contributor, but no such contributor exists in CONTRIBUTORS.toml`);
+      }
+      productContributors.push(contributor);
+    }
+
     products.push({
       updates: [],
       children: [],
       sources: [],
-      contributors: [],
       parent: null,
       ...product,
       rubric: rubric,
       score: calculateScore(rubric),
+      contributors: productContributors,
     } as any);
   }
 

@@ -3,8 +3,9 @@ import {
   RubricQuestion,
   RubricSelection,
   Update,
+  Contributor,
 } from "./src/parsing/types";
-import { loadRubric, loadProducts } from "./src/parsing/index";
+import { loadRubric, loadProducts, loadContributors } from "./src/parsing/index";
 
 const gulp = require("gulp");
 const postcss = require("gulp-postcss");
@@ -15,8 +16,12 @@ const hbHelpers = require("handlebars-helpers");
 const through = require("through2");
 const toml = require("@iarna/toml");
 
+console.log(loadContributors());
+
 const rubric: RubricQuestion[] = loadRubric();
-const products: Product[] = loadProducts(rubric);
+const contributors: Contributor[] = loadContributors();
+const products: Product[] = loadProducts(rubric, contributors);
+
 // eslint-disable-next-line @typescript-eslint/ban-types
 const api: object = products.map((product) => {
   return {
@@ -30,6 +35,7 @@ const api: object = products.map((product) => {
 
 // eslint-disable-next-line @typescript-eslint/ban-types
 function hbsFactory(additionalData: object): any {
+  // TODO: is this the best way to do featured?
   const GAFAMN = [
     "google",
     "apple",
@@ -47,10 +53,10 @@ function hbsFactory(additionalData: object): any {
     .data({
       rubric,
       products,
+      contributors,
       api,
       ...additionalData,
       featured,
-      product_count: products.length,
     })
     .helpers(hbHelpers())
     .helpers({

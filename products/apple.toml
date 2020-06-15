@@ -5,7 +5,7 @@ sources = ["https://policies.google.com/privacy"]
 sort = 10 # optional sorting order
 icon = "icons/apple.jpg"
 slug = "apple"
-contributors = ["Miles", "Igor"]
+contributors = ["milesmcc", "ibarakaiev"]
 
 # Assessments
 

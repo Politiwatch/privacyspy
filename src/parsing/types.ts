@@ -5,6 +5,15 @@ export interface RubricOption {
   description?: string;
 }
 
+export interface Contributor {
+  slug: string;
+  name?: string;
+  website?: string;
+  github?: string;
+  email?: string;
+  role: "founder" | "admin" | "moderator" | "contributor";
+}
+
 export interface RubricQuestion {
   category: "transparency" | "collection" | "handling";
   slug: string;
@@ -41,5 +50,5 @@ export interface Product {
   rubric: RubricSelection[];
   updates: Update[];
   lastUpdated: Date;
-  contributors: string[];
+  contributors: Contributor[];
 }

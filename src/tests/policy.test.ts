@@ -1,12 +1,12 @@
-import { loadRubric, loadProducts } from "../parsing/index";
+import { loadRubric, loadProducts, loadContributors } from "../parsing/index";
 import { Product, RubricQuestion } from "../parsing/types";
 import { isMinFullSentence } from "./utils";
 import fs from "fs";
 
 const rubric: RubricQuestion[] = loadRubric();
-const products: Product[] = loadProducts(rubric);
+const products: Product[] = loadProducts(rubric, loadContributors());
 
-describe("Product validation", () => {
+describe("Product", () => {
   for (const product of products) {
     describe(`${product.name}`, () => {
       test(`has a unique slug`, () => {

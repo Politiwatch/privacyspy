@@ -2,8 +2,9 @@ import fs from "fs";
 import toml from "@iarna/toml";
 
 import { loadRubric, loadProducts } from "../parsing";
+import { loadContributors } from "../parsing/index";
 
-let files: string[] = [];
+let files: string[] = ["CONTRIBUTORS.toml"];
 
 files = files.concat(
   fs
@@ -39,3 +40,9 @@ test("products parse correctly", () => {
     loadProducts(loadRubric());
   }).not.toThrowError();
 });
+
+test("contributors parse correctly", () => {
+  expect(() => {
+    loadContributors();
+  }).not.toThrowError();
+})
