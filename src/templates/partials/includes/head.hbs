@@ -31,5 +31,9 @@
     name="twitter:description" />
 <meta content="https://privacyspy.org/static/core/img/graphic.png" name="twitter:image" />
 <meta content="https://privacyspy.org/static/core/img/graphic.png" property="og:image" />
+{{#if redirect }}
+<meta http-equiv="refresh" content="0; url='/product/{{redirect}}'" />
+{{else}}
 <script src="/static/js/navbar.js"></script>
 <script src="/static/js/core.js"></script>
+{{/if}}

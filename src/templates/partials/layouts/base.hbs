@@ -2,20 +2,22 @@
 <html>
 
 <head>
-  {{> includes/head }}
+  {{> includes/head redirect=redirect}}
 </head>
 
 <body class="antialiased">
+  {{#unless redirect}}
   {{#> precontent }}
   {{/precontent}}
   <div class="container relative max-w-screen-lg min-h-screen px-6 pt-2 mx-auto md:px-12">
     {{> includes/navbar }}
-    <hr class="sep h-16" />
+    <hr class="h-16 sep" />
     {{#> content }}
     {{/content}}
     <hr class="pb-32 sep" />
     {{> includes/footer }}
   </div>
+  {{/unless}}
 </body>
 
 </html>
