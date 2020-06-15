@@ -4,11 +4,11 @@ import { RubricQuestion, RubricSelection, Product, Contributor } from "./types";
 import { getQuestionBySlug, getOptionBySlug } from "./utils";
 
 export function loadContributors(): Contributor[] {
-  let data: object = toml.parse(
+  const data: object = toml.parse(
     fs.readFileSync("CONTRIBUTORS.toml", { encoding: "utf-8" })
   );
-  let contributors: Contributor[] = [];
-  for (let slug of Object.keys(data)) {
+  const contributors: Contributor[] = [];
+  for (const slug of Object.keys(data)) {
     contributors.push({
       slug: slug,
       role: "contributor",
@@ -85,11 +85,16 @@ export function loadProducts(
     // There are shorter ways to get the contributors, such as filtering the list of all contributors
     // by whether they are listed in the policy, but this is the only approach I could come up with that
     // would explicitly throw an error when a contributor is listed erroneously.
-    let productContributors: Contributor[] = [];
-    for (let contributorSlug of product.contributors){
-      let contributor = contributors.find(potentialContributor => potentialContributor.slug == <string> <unknown> contributorSlug);
+    const productContributors: Contributor[] = [];
+    for (const contributorSlug of product.contributors) {
+      const contributor = contributors.find(
+        (potentialContributor) =>
+          potentialContributor.slug == <string>(<unknown>contributorSlug)
+      );
       if (contributor === undefined) {
-        throw new Error(`the product lists '${contributorSlug}' as a contributor, but no such contributor exists in CONTRIBUTORS.toml`);
+        throw new Error(
+          `the product lists '${contributorSlug}' as a contributor, but no such contributor exists in CONTRIBUTORS.toml`
+        );
       }
       productContributors.push(contributor);
     }

@@ -1,106 +1,23 @@
+require("dotenv").config();
+
+import { Product, RubricQuestion, Contributor } from "./src/parsing/types";
+
 import {
-  Product,
-  RubricQuestion,
-  RubricSelection,
-  Update,
-  Contributor,
-} from "./src/parsing/types";
-import { loadRubric, loadProducts, loadContributors } from "./src/parsing/index";
+  loadRubric,
+  loadProducts,
+  loadContributors,
+} from "./src/parsing/index";
+
+import { hbsFactory, getProductPageBuildTasks } from "./src/build/index";
 
 const gulp = require("gulp");
 const postcss = require("gulp-postcss");
 const rename = require("gulp-rename");
 const del = require("del");
-const hb = require("gulp-hb");
-const hbHelpers = require("handlebars-helpers");
-const through = require("through2");
-const toml = require("@iarna/toml");
-
-console.log(loadContributors());
 
 const rubric: RubricQuestion[] = loadRubric();
 const contributors: Contributor[] = loadContributors();
 const products: Product[] = loadProducts(rubric, contributors);
-
-// eslint-disable-next-line @typescript-eslint/ban-types
-const api: object = products.map((product) => {
-  return {
-    name: product.name,
-    hostnames: product.hostnames,
-    slug: product.slug,
-    score: product.score,
-    last_updated: product.lastUpdated,
-  };
-});
-
-// eslint-disable-next-line @typescript-eslint/ban-types
-function hbsFactory(additionalData: object): any {
-  // TODO: is this the best way to do featured?
-  const GAFAMN = [
-    "google",
-    "apple",
-    "facebook",
-    "microsoft",
-    "amazon",
-    "netflix",
-  ];
-  const featured = products.filter((item) => {
-    return GAFAMN.includes(item.slug);
-  });
-
-  return hb()
-    .partials("./src/templates/partials/**/*.hbs")
-    .data({
-      rubric,
-      products,
-      contributors,
-      api,
-      ...additionalData,
-      featured,
-    })
-    .helpers(hbHelpers())
-    .helpers({
-      ratioColorClass: (ratio: number) => {
-        if (ratio < 0.35) {
-          return "text-red-500";
-        } else if (ratio < 0.7) {
-          return "text-yellow-500";
-        } else {
-          return "text-green-500";
-        }
-      },
-      getMonth: (order: number): string => {
-        switch (order) {
-          case 1:
-            return "Jan.";
-          case 2:
-            return "Feb.";
-          case 3:
-            return "Mar.";
-          case 4:
-            return "Apr.";
-          case 5:
-            return "May";
-          case 6:
-            return "June";
-          case 7:
-            return "July";
-          case 8:
-            return "Aug.";
-          case 9:
-            return "Sep.";
-          case 10:
-            return "Oct.";
-          case 11:
-            return "Nov.";
-          case 12:
-            return "Dec.";
-          default:
-            return "Jan.";
-        }
-      },
-    });
-}
 
 gulp.task("clean", () => {
   return del("./dist/**/*");
@@ -113,34 +30,13 @@ gulp.task("build general pages", () => {
     })
     .pipe(rename({ extname: ".html" }))
     .pipe(gulp.src("./src/templates/**/*.json"))
-    .pipe(hbsFactory({}))
+    .pipe(hbsFactory({ rubric, contributors, products }))
     .pipe(gulp.dest("./dist/"));
 });
 
-// Product page building
-// TODO: Make a bit nicer
-const productPageBuildTasks = [];
-for (const product of products) {
-  const taskName = `build ${product.slug}`;
-  gulp.task(taskName, () => {
-    return gulp
-      .src("./src/templates/pages/product.hbs")
-      .pipe(
-        hbsFactory({
-          product: product,
-          timeline: getUpdatesTimeline(product.updates),
-          rubricCategories: getRubricCategories(product.rubric),
-        })
-      )
-      .pipe(rename(`/product/${product.slug}/index.html`))
-      .pipe(gulp.dest("./dist/"));
-  });
-  productPageBuildTasks.push(taskName);
-}
-
 gulp.task(
   "build pages",
-  gulp.parallel(...productPageBuildTasks, "build general pages")
+  gulp.parallel(...getProductPageBuildTasks(products), "build general pages")
 );
 
 gulp.task("collect static", () => {
@@ -166,9 +62,13 @@ gulp.task("build css", () => {
           require("postcss-import"),
           require("tailwindcss")("tailwind.config.js"),
           require("autoprefixer"),
-          // require("@fullhuman/postcss-purgecss")({
-          //   content: ["./dist/**/*.html"],
-          // })
+          ...(process.env.NODE_ENV !== "debug"
+            ? [
+                require("@fullhuman/postcss-purgecss")({
+                  content: ["./dist/**/*.html"],
+                }),
+              ]
+            : []),
         ],
         { syntax: require("postcss-scss") }
       )
@@ -188,51 +88,10 @@ gulp.task(
   ])
 );
 
-gulp.watch(
-  ["./src/templates/**/*", "./rubric/**/*", "./products/**/*"],
-  gulp.series("build pages", "collect static")
-);
-
-gulp.watch(["./src/**/*.{css,scss}", "build css"]);
-
-// eslint-disable-next-line @typescript-eslint/ban-types
-function getUpdatesTimeline(updates: Update[]): object {
-  const timeline = {};
-
-  for (const update of updates) {
-    const date = update.date;
-    if (date === undefined) {
-      (timeline["general"] = timeline["general"] || []).push(update);
-    } else {
-      const dateObj = new Date(date);
-
-      // NOTE: years are negative!
-      // Since by default JS only sorts object keys in ascending order
-      // and only if a key is integer, it is simpler to introduce a negative
-      // sign than to create a different data structure and a custom handlebars helper.
-      const year = -dateObj.getFullYear();
-      const month = dateObj.getMonth();
-      if (!(year in timeline)) {
-        timeline[year] = {};
-      }
-      if (!(month in timeline[year])) {
-        timeline[year][month] = [];
-      }
-      timeline[year][month].push(update);
-    }
-  }
-
-  return timeline;
-}
-
-// eslint-disable-next-line @typescript-eslint/ban-types
-function getRubricCategories(selections: RubricSelection[]): object {
-  const categories = {};
-
-  for (const selection of selections) {
-    (categories[selection.question.category] =
-      categories[selection.question.category] || []).push(selection);
-  }
-
-  return categories;
+if (process.env.NODE_ENV === "debug") {
+  gulp.watch(
+    ["./src/templates/**/*", "./rubric/**/*", "./products/**/*"],
+    gulp.series("build pages", "collect static")
+  );
+  gulp.watch(["./src/**/*.{css,scss}", "build css"]);
 }
