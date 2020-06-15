@@ -18,6 +18,12 @@ module.exports = {
       width: {
         "60": "15rem",
       },
+      maxHeight: {
+        '60': '15rem',
+      },
+      cursor: {
+        'help': 'help'
+      },
       colors: {
         black: "#010101",
         blue: {

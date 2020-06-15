@@ -35,35 +35,7 @@
       <div class="pb-4">
         {{#each this as |selection|}}
         <div class="mb-6">
-          <div class="flex text-gray-800 cursor-pointer text-md"
-            onclick="toggleRubricSelection('{{selection.question.slug}}')">
-            <div class="flex-shrink">
-              <i class="fas fa-chevron-down" id="chevron-{{selection.question.slug}}"></i>
-            </div>
-            <div class="flex-shrink mx-6">
-              <i class="fas fa-circle {{ratioColorClass (divide selection.option.percent 100)}}"></i>
-            </div>
-            <div class="flex-grow">
-              <span>{{selection.question.text}}&nbsp;</span>
-              <span class="text-gray-300">{{selection.option.text}}</span>
-            </div>
-            <div class="flex-shrink-0 pl-4 text-right">
-              <span>{{round (multiply (divide selection.option.percent 100) selection.question.points)}}</span><span
-                class="text-gray-300">/{{selection.question.points}}</span>
-            </div>
-          </div>
-          <div id="selection-{{selection.question.slug}}"
-            class="flex hidden h-auto p-4 mt-3 border border-gray-100 rounded">
-            <div>
-              {{#each this.question.options as |option|}}
-              <div
-                class="flex my-2 text-sm rounded {{#if (eq option selection.selection)}}bg-blue-400 text-white{{/if}}">
-                <div class="w-5/6">{{option.text}}</div>
-                <div class="w-1/6 ml-4 font-medium text-right">{{option.percent}}%</div>
-              </div>
-              {{/each}}
-            </div>
-          </div>
+          {{> includes/rubricQuestion selection=selection}}
         </div>
         {{/each}}
       </div>
