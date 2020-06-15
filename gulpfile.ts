@@ -8,7 +8,7 @@ import {
   loadContributors,
 } from "./src/parsing/index";
 
-import { hbsFactory, getProductPageBuildTasks } from "./src/build/index";
+import { hbsFactory, getProductPageBuildTasks } from "./src/build/utils";
 
 const gulp = require("gulp");
 const postcss = require("gulp-postcss");
