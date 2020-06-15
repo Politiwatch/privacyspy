@@ -68,24 +68,27 @@
         {{/each}}
       </div>
       {{/forOwn}}
-      {{#if product.warnings}}
+      {{#if product.updates}}
       <section id="timeline" class="pt-4">
         <div id="updates" class="mb-4 text-xl font-semibold text-center md:text-left">Updates</div>
         {{#forOwn timeline}}
-        <div class="w-full mb-2 font-semibold text-center md:text-left">{{multiply -1 @key}}</div>
+        <div class="flex">
+          <div class="md:w-1/12 pb-2 text-center md:text-right md:pr-3 md:border-r border-gray-100">{{multiply -1 @key}}</div>
+        </div>
         {{#forOwn this}}
         <div class="flex flex-col md:flex-row">
-          <div class="w-full mb-2 text-center md:w-40 md:text-right md:mb-0">{{getMonth (add 1 @key)}}</div>
-          <div class="ml-6">
-            <div class="h-auto rounded">
-              {{#each this as |warning|}}
+          <div class="md:w-1/12 mb-2 text-center text-gray-400 md:text-right md:mb-0 md:pr-3 md:border-r border-gray-100">
+            {{getMonth (add 1 @key)}}</div>
+          <div class="md:w-11/12 pl-3">
+            <div class="h-auto">
+              {{#each this as |update|}}
               <div>
-                <div class="text-lg font-bold text-center md:text-left">{{warning.title}}</div>
-                <div class="mt-2 mb-2 text-sm">{{warning.description}}</div>
+                <div class="text-lg font-bold text-center md:text-left">{{update.title}}</div>
+                <div class="mt-2 mb-2 text-sm">{{update.description}}</div>
                 <div class="inline-block mb-6">
-                  {{#each warning.sources as |source|}}
-                  <a href="{{this}}" target="_blank" class="text-sm text-gray-300 hover:text-blue-500">Source
-                    #{{add 1 @index}}{{#unless @last}}, {{/unless}}</a>
+                  {{#each update.sources as |source|}}
+                  <a href="{{this}}" target="_blank" class="text-sm text-gray-400 hover:text-blue-500">Source
+                    #{{add 1 @index}}&nearr; </a>
                   {{/each}}
                 </div>
               </div>

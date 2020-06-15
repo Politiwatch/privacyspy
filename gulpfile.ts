@@ -2,7 +2,7 @@ import {
   Product,
   RubricQuestion,
   RubricSelection,
-  Warning,
+  Update,
 } from "./src/parsing/types";
 import { loadRubric, loadProducts } from "./src/parsing/index";
 
@@ -25,7 +25,6 @@ const api: object = products.map((product) => {
     slug: product.slug,
     score: product.score,
     last_updated: product.lastUpdated,
-    has_warnings_active: product.warnings.length > 0,
   };
 });
 
@@ -123,7 +122,7 @@ for (const product of products) {
       .pipe(
         hbsFactory({
           product: product,
-          timeline: getWarningsTimeline(product.warnings),
+          timeline: getUpdatesTimeline(product.updates),
           rubricCategories: getRubricCategories(product.rubric),
         })
       )
@@ -191,13 +190,13 @@ gulp.watch(
 gulp.watch(["./src/**/*.{css,scss}", "build css"]);
 
 // eslint-disable-next-line @typescript-eslint/ban-types
-function getWarningsTimeline(warnings: Warning[]): object {
+function getUpdatesTimeline(updates: Update[]): object {
   const timeline = {};
 
-  for (const warning of warnings) {
-    const date = warning.date;
+  for (const update of updates) {
+    const date = update.date;
     if (date === undefined) {
-      (timeline["general"] = timeline["general"] || []).push(warning);
+      (timeline["general"] = timeline["general"] || []).push(update);
     } else {
       const dateObj = new Date(date);
 
@@ -213,7 +212,7 @@ function getWarningsTimeline(warnings: Warning[]): object {
       if (!(month in timeline[year])) {
         timeline[year][month] = [];
       }
-      timeline[year][month].push(warning);
+      timeline[year][month].push(update);
     }
   }
 

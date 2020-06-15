@@ -21,7 +21,7 @@ export interface RubricSelection {
   citations: string[];
 }
 
-export interface Warning {
+export interface Update {
   title: string;
   description: string;
   date?: Date;
@@ -39,7 +39,7 @@ export interface Product {
   parent?: string;
   children: Product[];
   rubric: RubricSelection[];
-  warnings: Warning[];
+  updates: Update[];
   lastUpdated: Date;
   contributors: string[];
 }

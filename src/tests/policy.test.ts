@@ -52,8 +52,8 @@ describe("Product validation", () => {
           test(`has no rubric assessments`, () => {
             expect(product.rubric.length).toBe(0);
           });
-          test(`has no warnings`, () => {
-            expect(product.warnings.length).toBe(0);
+          test(`has no updates`, () => {
+            expect(product.updates.length).toBe(0);
           });
         });
       } else {
@@ -79,24 +79,18 @@ describe("Product validation", () => {
           });
         }
 
-        for (const warning of product.warnings) {
-          describe(`warning "${warning.title}" is valid`, () => {
-            test("severity is either low, medium, or high", () => {
-              expect(
-                ["low", "medium", "high"].includes(warning.severity)
-              ).toBeTruthy();
-            });
-
+        for (const update of product.updates) {
+          describe(`update "${update.title}" is valid`, () => {
             test("has a title", () => {
-              expect(warning.title.length).toBeGreaterThan(0);
+              expect(update.title.length).toBeGreaterThan(0);
             });
 
             describe("has a full-sentence description", () => {
-              isMinFullSentence(warning.description);
+              isMinFullSentence(update.description);
             });
 
             test("has sources", () => {
-              expect(warning.sources.length).toBeGreaterThan(0);
+              expect(update.sources.length).toBeGreaterThan(0);
             });
           });
         }

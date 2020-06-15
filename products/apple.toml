@@ -40,9 +40,8 @@ In some circumstances, Google also collects information about you from publicly 
 We use various technologies to collect and store information, including cookies, pixel tags, local storage, such as browser web storage or application data caches, databases, and server logs.
 """]
 
-[[warnings]]
-title = "This is an example warning"
+[[updates]]
+title = "This is an example update"
 description = "Something very bad happened."
-severity = "medium"
 date = 2020-05-12T00:00:00Z
 sources = ["https://nytimes.com/"]

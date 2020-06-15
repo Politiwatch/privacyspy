@@ -40,31 +40,31 @@ In some circumstances, Google also collects information about you from publicly 
 We use various technologies to collect and store information, including cookies, pixel tags, local storage, such as browser web storage or application data caches, databases, and server logs.
 """]
 
-[[warnings]]
+[[updates]]
 title = "Exposed Phone Numbers"
 description = "In the latest privacy scandal for the tech giant, hundreds of millions of phone numbers linked to Facebook accounts were exposed on a server without authentication. Some of the records also included personal information such as the user's name, gender, and country."
 date = 2020-05-12T00:00:00Z
 sources = ["https://nytimes.com/", "https://google.com"]
 
-[[warnings]]
+[[updates]]
 title = "Exposed Phone Numbers"
 description = "In the latest privacy scandal for the tech giant, hundreds of millions"
 date = 2020-05-12T00:00:00Z
 sources = ["https://nytimes.com/", "https://google.com"]
 
-[[warnings]]
+[[updates]]
 title = "Exposed Phone Numbers"
 description = "In the latest privacy scandal for the tech giant, hundreds of millions of phone numbers linked to Facebook accounts were exposed on a server without authentication. Some of the records also included personal information such as the user's name, gender, and country."
 date = 2020-10-12T00:00:00Z
 sources = ["https://nytimes.com/", "https://google.com"]
 
-[[warnings]]
+[[updates]]
 title = "Exposed Phone Numbers"
 description = "In the latest privacy scandal for the tech giant, hundreds of millions of phone numbers linked to Facebook accounts were exposed on a server without authentication. Some of the records also included personal information such as the user's name, gender, and country."
 date = 2020-09-12T00:00:00Z
 sources = ["https://nytimes.com/", "https://google.com"]
 
-[[warnings]]
+[[updates]]
 title = "Exposed Phone Numbers"
 description = "In the latest privacy scandal for the tech giant, hundreds of millions of phone numbers linked to Facebook accounts were exposed on a server without authentication. Some of the records also included personal information such as the user's name, gender, and country."
 date = 2019-09-12T00:00:00Z
