@@ -27,6 +27,13 @@ gulp.task("clean", () => {
   return del("./dist/**/*");
 });
 
+gulp.task("build api", () => {
+  return gulp
+    .src(["./src/templates/pages/api/**/*.json"])
+    .pipe(hbsFactory({ rubric, contributors, products }))
+    .pipe(gulp.dest("./dist/api/"));
+});
+
 gulp.task("build general pages", () => {
   return gulp
     .src(["./src/templates/pages/**/*.hbs", "./src/templates/pages/*.hbs"], {
@@ -36,7 +43,6 @@ gulp.task("build general pages", () => {
       ],
     })
     .pipe(rename({ extname: ".html" }))
-    .pipe(gulp.src("./src/templates/**/*.json"))
     .pipe(hbsFactory({ rubric, contributors, products }))
     .pipe(gulp.dest("./dist/"));
 });
@@ -46,7 +52,8 @@ gulp.task(
   gulp.parallel(
     ...getProductPageBuildTasks(products),
     ...getDirectoryPagesTasks(products),
-    "build general pages"
+    "build general pages",
+    "build api"
   )
 );
 
