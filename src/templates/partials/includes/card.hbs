@@ -1,17 +1,19 @@
 <div class="border border-gray-100 rounded">
-  <a href="product/{{product.slug}}">
+  <a href="/product/{{product.slug}}">
     <div class="p-3">
-      <div class="items-start pb-1 md:flex">
-        <img src="/static/{{product.icon}}" class="h-8 mx-auto mt-1 md:ml-2 md:mr-3">
-        <div class="flex-grow ml-2 text-center md:text-left leading-1">
-          <div class="mt-5 text-xl font-semibold md:mt-1 md:mb-2">
+      <div class="flex flex-col items-start pb-1 lg:flex-row">
+        <div class="w-full mx-auto mt-3 lg:mt-1 lg:w-10 md:ml-2 md:mr-3">
+          <img src="/static/{{product.icon}}" class="object-contain w-10 h-10 mx-auto lg:h-full lg:w-full lg:mx-0">
+        </div>
+        <div class="flex-grow ml-2 text-center lg:w-5/6 lg:text-left leading-1">
+          <div class="mt-5 text-xl font-semibold lg:mt-1 lg:mb-2">
             {{product.name}}&nbsp;
             <div
-              class="text-xl font-semibold leading-none md:my-0 inline-block {{ratioColorClass (divide product.score 10)}}">
+              class="text-xl font-semibold leading-none lg:my-0 inline-block {{ratioColorClass (divide product.score 10)}}">
               {{product.score}}<span class="font-normal">/10</span>
             </div>
           </div>
-          <h3 class="mt-2 text-sm md:mt-0">{{product.description}}</h3>
+          <h3 class="mt-2 text-sm lg:mt-0">{{product.description}}</h3>
         </div>
       </div>
     </div>

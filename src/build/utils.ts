@@ -22,7 +22,10 @@ export function hbsFactory(data: object = {}) {
       ...data,
     })
     .helpers(hbHelpers())
-    .helpers({ ratioColorClass, getMonth });
+    .helpers({
+      ratioColorClass,
+      getMonth,
+    });
 }
 
 export function getProductPageBuildTasks(products: Product[]) {
@@ -40,6 +43,42 @@ export function getProductPageBuildTasks(products: Product[]) {
   }
 
   return productPageBuildTasks;
+}
+
+export function getDirectoryPagesTasks(products: Product[]) {
+  const MAX_PER_PAGE = 30;
+
+  products = [...products, ...products, ...products, ...products, ...products];
+  products = [...products, ...products];
+
+  const pageCount = Math.ceil(products.length / MAX_PER_PAGE);
+
+  const directoryPagesTasks = [];
+  for (let i = 0; i < pageCount; i++) {
+    const taskName = `build directory page #${i + 1}`;
+    gulp.task(taskName, () => {
+      return (
+        gulp
+          .src("./src/templates/pages/directory.hbs")
+          .pipe(
+            hbsFactory({
+              listings: products.slice(
+                i * MAX_PER_PAGE,
+                Math.min(products.length, i * MAX_PER_PAGE + MAX_PER_PAGE)
+              ),
+              pages: [...Array(pageCount).keys()].map(String),
+              currentPage: i.toString(),
+            })
+          )
+          // the first page is directory, the second page is directory/2
+          .pipe(rename(`/directory/${i == 0 ? "" : i + 1 + "/"}index.html`))
+          .pipe(gulp.dest("./dist/"))
+      );
+    });
+    directoryPagesTasks.push(taskName);
+  }
+
+  return directoryPagesTasks;
 }
 
 function getFeaturedPolicies(products: Product[]): Product[] {

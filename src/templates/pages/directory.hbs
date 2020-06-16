@@ -1,0 +1,27 @@
+{{#> layouts/base title="Directory" }}
+
+{{#*inline "content"}}
+<div class="mb-12 text-5xl font-extrabold leading-none text-center sm:text-left">
+  Directory
+</div>
+<div class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
+  {{#each listings as |product|}}
+  {{> includes/card product=product }}
+  {{/each}}
+</div>
+
+<div class="flex flex-row justify-center w-auto mx-auto mt-8 text-center">
+  {{#each pages as |page|}}
+  {{#if (eq page ../currentPage)}}
+  <span class="mr-3 font-bold text-md">{{add 1 ../currentPage}}</span>
+  {{else}}
+  {{#if (eq page "0") }}
+  <a href="/directory" class="mr-3 text-md hover:text-blue-500">{{add 1 page}}</a>
+  {{else}}
+  <a href="/directory/{{add 1 page}}" class="mr-3 text-md hover:text-blue-500">{{add 1 page}}</a>
+  {{/if}}
+  {{/if}}
+  {{/each}}
+</div>
+{{/inline}}
+{{/layouts/base}}

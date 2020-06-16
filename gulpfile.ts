@@ -8,7 +8,11 @@ import {
   loadContributors,
 } from "./src/parsing/index";
 
-import { hbsFactory, getProductPageBuildTasks } from "./src/build/utils";
+import {
+  hbsFactory,
+  getProductPageBuildTasks,
+  getDirectoryPagesTasks,
+} from "./src/build/utils";
 
 const gulp = require("gulp");
 const postcss = require("gulp-postcss");
@@ -26,7 +30,10 @@ gulp.task("clean", () => {
 gulp.task("build general pages", () => {
   return gulp
     .src(["./src/templates/pages/**/*.hbs", "./src/templates/pages/*.hbs"], {
-      ignore: "./src/templates/pages/product.hbs",
+      ignore: [
+        "./src/templates/pages/product.hbs",
+        ".src/templates/pages/directory.hbs",
+      ],
     })
     .pipe(rename({ extname: ".html" }))
     .pipe(gulp.src("./src/templates/**/*.json"))
@@ -36,7 +43,11 @@ gulp.task("build general pages", () => {
 
 gulp.task(
   "build pages",
-  gulp.parallel(...getProductPageBuildTasks(products), "build general pages")
+  gulp.parallel(
+    ...getProductPageBuildTasks(products),
+    ...getDirectoryPagesTasks(products),
+    "build general pages"
+  )
 );
 
 gulp.task("collect static", () => {
