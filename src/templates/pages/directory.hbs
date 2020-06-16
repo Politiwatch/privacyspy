@@ -12,6 +12,7 @@
 
 <div class="flex flex-row justify-center w-auto mx-auto mt-8 text-center">
   {{#each pages as |page|}}
+  {{#if (shouldIncludePage page ../currentPage (length ../pages))}}
   {{#if (eq page ../currentPage)}}
   <span class="mr-3 font-bold text-md">{{add 1 ../currentPage}}</span>
   {{else}}
@@ -20,6 +21,10 @@
   {{else}}
   <a href="/directory/{{add 1 page}}" class="mr-3 text-md hover:text-blue-500">{{add 1 page}}</a>
   {{/if}}
+  {{/if}}
+  {{/if}}
+  {{#if (shouldIncludeEllipsis page ../currentPage (length ../pages))}}
+  <span class="mr-3 text-md">&#8230;</span>
   {{/if}}
   {{/each}}
 </div>

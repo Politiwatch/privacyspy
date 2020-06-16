@@ -5,6 +5,8 @@ const rename = require("gulp-rename");
 const hb = require("gulp-hb");
 const hbHelpers = require("handlebars-helpers");
 
+const PAGE_NUMBER_PADDING = 3;
+
 export function hbsFactory(data: object = {}) {
   return hb()
     .partials("./src/templates/partials/**/*.hbs")
@@ -25,6 +27,8 @@ export function hbsFactory(data: object = {}) {
     .helpers({
       ratioColorClass,
       getMonth,
+      shouldIncludePage,
+      shouldIncludeEllipsis,
     });
 }
 
@@ -48,8 +52,9 @@ export function getProductPageBuildTasks(products: Product[]) {
 export function getDirectoryPagesTasks(products: Product[]) {
   const MAX_PER_PAGE = 30;
 
-  products = [...products, ...products, ...products, ...products, ...products];
-  products = [...products, ...products];
+  for (let i = 0; i < 8; i++) {
+    products = [...products, ...products];
+  }
 
   const pageCount = Math.ceil(products.length / MAX_PER_PAGE);
 
@@ -106,6 +111,46 @@ function getExtensionAPI(products: Product[]) {
   });
 }
 
+function getUpdatesTimeline(updates: Update[]): object {
+  const timeline = {};
+
+  for (const update of updates) {
+    const date = update.date;
+    if (date === undefined) {
+      (timeline["general"] = timeline["general"] || []).push(update);
+    } else {
+      const dateObj = new Date(date);
+
+      // NOTE: years are negative!
+      // Since by default JS only sorts object keys in ascending order
+      // and only if a key is integer, it is simpler to introduce a negative
+      // sign than to create a different data structure and a custom handlebars helper.
+      const year = -dateObj.getFullYear();
+      const month = dateObj.getMonth();
+      if (!(year in timeline)) {
+        timeline[year] = {};
+      }
+      if (!(month in timeline[year])) {
+        timeline[year][month] = [];
+      }
+      timeline[year][month].push(update);
+    }
+  }
+
+  return timeline;
+}
+
+function getRubricCategories(selections: RubricSelection[]): object {
+  const categories = {};
+
+  for (const selection of selections) {
+    (categories[selection.question.category] =
+      categories[selection.question.category] || []).push(selection);
+  }
+
+  return categories;
+}
+
 function ratioColorClass(ratio: number): string {
   if (ratio < 0.35) {
     return "text-red-500";
@@ -147,42 +192,46 @@ function getMonth(order: number): string {
   }
 }
 
-function getUpdatesTimeline(updates: Update[]): object {
-  const timeline = {};
+function shouldIncludePage(
+  page: string,
+  currentPage: string,
+  totalCount: number
+): boolean {
+  let page_i = parseInt(page);
+  let currentPage_i = parseInt(currentPage);
 
-  for (const update of updates) {
-    const date = update.date;
-    if (date === undefined) {
-      (timeline["general"] = timeline["general"] || []).push(update);
-    } else {
-      const dateObj = new Date(date);
-
-      // NOTE: years are negative!
-      // Since by default JS only sorts object keys in ascending order
-      // and only if a key is integer, it is simpler to introduce a negative
-      // sign than to create a different data structure and a custom handlebars helper.
-      const year = -dateObj.getFullYear();
-      const month = dateObj.getMonth();
-      if (!(year in timeline)) {
-        timeline[year] = {};
-      }
-      if (!(month in timeline[year])) {
-        timeline[year][month] = [];
-      }
-      timeline[year][month].push(update);
-    }
+  if (
+    currentPage_i === page_i ||
+    Math.abs(page_i - currentPage_i) < PAGE_NUMBER_PADDING ||
+    page_i === 0 ||
+    page_i === totalCount - 1 ||
+    (page_i === totalCount - 2 &&
+      currentPage_i === totalCount - 2 - PAGE_NUMBER_PADDING) ||
+    (page_i === 1 && currentPage_i === PAGE_NUMBER_PADDING + 1) ||
+    (page_i === 3 && currentPage_i === 0) ||
+    (page_i === totalCount - 4 && currentPage_i === totalCount - 1)
+  ) {
+    return true;
   }
 
-  return timeline;
+  return false;
 }
 
-function getRubricCategories(selections: RubricSelection[]): object {
-  const categories = {};
+function shouldIncludeEllipsis(
+  page: string,
+  currentPage: string,
+  totalCount: number
+): boolean {
+  let page_i = parseInt(page);
+  let currentPage_i = parseInt(currentPage);
 
-  for (const selection of selections) {
-    (categories[selection.question.category] =
-      categories[selection.question.category] || []).push(selection);
+  if (
+    Math.abs(page_i - currentPage_i) === PAGE_NUMBER_PADDING &&
+    page_i < totalCount - 2 &&
+    page_i > 1
+  ) {
+    return true;
   }
 
-  return categories;
+  return false;
 }
