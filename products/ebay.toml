@@ -1,0 +1,82 @@
+name = "eBay"
+description = "Founded in 1995, eBay is an online retailer and auction site where users both buy and sell products."
+slug = "ebay"
+hostnames = [ "ebay.com" ]
+sources = [
+  "https://www.ebay.com/help/policies/member-behaviour-policies/user-privacy-notice-privacy-policy?id=4260"
+]
+icon = "ebay.png"
+updates = [ ]
+contributors = [ "milesmcc" ]
+
+[rubric.behavioral-marketing]
+value = "yes-opt-out"
+citations = [
+  "\"If you decide not to have your personal data processed by us for advertising purposes via cookies (and similar technologies), this does not mean that we will not show you advertisements. It simply means that these advertisements will not be personalized for you using first-party or third-party cookies, web beacons, or similar technologies.\"\r\n\r\n\"We process your personal data for various purposes and pursuant to various legal bases. We process your personal data primarily to provide and improve our Services, to provide you with a personalized user experience on this website, to contact you about your eBay account and our Services, to provide customer service, **to provide you with personalized advertising and marketing communications,** and to detect, prevent, mitigate and investigate fraudulent or illegal activity. We also share your information with third parties for these purposes.\""
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "\"We protect your personal data through technical and organizational security measures to minimize risks associated with data loss, misuse, unauthorized access and unauthorized disclosure and alteration. To this end we use firewalls and data encryption, for example, as well as physical access restrictions for our data centers and authorization controls for data access.\""
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "\"We also collect personal data about you from other sources and from third parties to the extent permitted by applicable law.\""
+]
+
+[rubric.history]
+value = "yes"
+notes = [
+  "A link at the top of the page allows navigation to a previous version of the policy, and the last revision date is available."
+]
+
+[rubric.data-deletion]
+value = "yes-contact"
+citations = [
+  "\"You can exercise your rights as a data subject via our contact forms. In addition, you are of course free to contact us in any other way.\""
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "No part of the policy specifies a data breach disclosure protocol."
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = [
+  "\"We process your personal data for various purposes and pursuant to various legal bases. We process your personal data primarily to provide and improve our Services, **to provide you with a personalized user experience on this website,** to contact you about your eBay account and our Services, to provide customer service, to provide you with personalized advertising and marketing communications, and to detect, prevent, mitigate and investigate fraudulent or illegal activity. **We also share your information with third parties for these purposes.**\""
+]
+
+[rubric.data-collection-reasoning]
+value = "mostly"
+citations = [
+  "\"We process your personal data for various purposes and pursuant to various legal bases. We process your personal data primarily to provide and improve our Services, to provide you with a personalized user experience on this website, to contact you about your eBay account and our Services, to provide customer service, to provide you with personalized advertising and marketing communications, and to detect, prevent, mitigate and investigate fraudulent or illegal activity. We also share your information with third parties for these purposes.\""
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-some"
+citations = [
+  "\"To manage the settings regarding the use of first-party cookies (and similar technologies) for advertising-related purposes, please go to AdChoice - eBay Advertising Preferences.\""
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "\"Where necessary, we transmit your personal data to processors and the following recipients for one or several of the purposes described above [...] Law enforcement agencies, courts, government agencies or public authorities, intergovernmental or supranational bodies...\""
+]
+
+[rubric.list-collected]
+value = "generally"
+notes = [
+  "While the \"What personal data we collect and process\" section is very specific, it is nonetheless filled with phrases like \"such as,\" making it a _general_ description, not an _exhaustive_ one."
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "\"We may change this User Privacy Notice at any time by posting the revised User Privacy Notice on this website and indicating the effective date of the revised User Privacy Notice. You will be notified of any material changes to this User Privacy Notice via My Messages in My eBay and/or by email.\""
+]

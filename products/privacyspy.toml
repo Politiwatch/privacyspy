@@ -1,0 +1,83 @@
+name = "PrivacySpy"
+description = "PrivacySpy is an initiative that strives to establish transparency in privacy policies."
+slug = "privacyspy"
+hostnames = [ "privacyspy.org" ]
+sources = [ "http://beta.privacyspy.org/terms-and-privacy/" ]
+icon = "privacyspy.png"
+updates = [ ]
+contributors = [ ]
+
+[rubric.behavioral-marketing]
+value = "no"
+citations = [
+  "\"We only ask for personal information when we truly need it to provide a service to you.\""
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "\"What data we store, we’ll protect within commercially acceptable means to prevent loss and theft, as well as unauthorised access, disclosure, copying, use or modification.\""
+]
+
+[rubric.third-party-collection]
+value = "no"
+citations = [
+  "\"We do not collect any personal information except that which you give yourself to the site...\""
+]
+
+[rubric.history]
+value = "last-modified"
+notes = [
+  "While one could check the full history on GitHub, only the last modified date is listed on the page."
+]
+
+[rubric.data-deletion]
+value = "yes-automated"
+citations = [
+  "\"You may delete all of your personal information from our systems by using the 'Delete Account' tool in your profile. If you do not have an account, we do not have any of your personal information.\""
+]
+
+[rubric.data-breaches]
+value = "yes-72"
+citations = [
+  "\"If we learn of a data breach, we will notify all affected users within 72 hours of discovery.\""
+]
+
+[rubric.third-party-access]
+value = "no"
+citations = [
+  "\"We don’t share any personally identifying information publicly or with third-parties.\""
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "\"We only ask for personal information when we truly need it to provide a service to you.\""
+]
+notes = [
+  "The data collected, such as email addresses and name, are all understandable. Logs are rotated."
+]
+
+[rubric.noncritical-purposes]
+value = "na"
+citations = [
+  "\"We do not collect any personal information except that which you give yourself to the site, however we will nonetheless make a best-effort attempt to respect Do Not Track (DNT) browser requests.\""
+]
+
+[rubric.law-enforcement]
+value = "strict"
+citations = [
+  "\"We don’t share any personally identifying information publicly or with third-parties, except when required to by a subpoena or valid court order.\""
+]
+
+[rubric.list-collected]
+value = "exhaustively"
+citations = [
+  "We collect the following data:\r\n\r\n- Your email address and name (when you sign up for an account)\r\n- Your IP address and browser \"user agent\" (in logs, which are periodically rotated)\r\n- Your actions performed on the website (edits, suggestions, and profile changes)\r\n- Aggregate website usage statistics (page views, general geographic breakdowns, device types)\r\n"
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "\"If we modify this privacy policy in any significant way, we will notify all users via email.\""
+]

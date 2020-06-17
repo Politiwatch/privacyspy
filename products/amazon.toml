@@ -1,0 +1,88 @@
+name = "Amazon"
+description = "Amazon is an American technology giant that specializes in e-commerce and cloud computing."
+slug = "amazon"
+hostnames = [ "amazon.com" ]
+sources = [
+  "https://www.amazon.com/gp/help/customer/display.html?ie=UTF8&nodeId=468496"
+]
+icon = "amazon.png"
+updates = [ ]
+contributors = [ ]
+
+[rubric.behavioral-marketing]
+value = "yes"
+citations = [
+  "\"Our site includes third-party advertising and links to other Web sites. For more information about third-party advertising at Amazon.com, including personalized or interest-based ads, please read our Interest-Based Ads policy.\"\r\n\r\n\"We use the information that you provide for such purposes as responding to your requests, **customizing future shopping for you,** improving our stores, and communicating with you.\"\r\n\r\n\"To help us make e-mails more useful and interesting, we often receive a confirmation when you open e-mail from Amazon.com if your computer supports such capabilities.\"\r\n\r\n\"Cookies are unique identifiers that we transfer to your device to enable our systems to recognize your device and to provide features such as 1-Click purchasing, Recommended for You , **personalized advertisements on other Web sites** (e.g., Amazon Associates with content served by Amazon.com and Web sites using Checkout by Amazon payment service), and storage of items in your Shopping Cart between visits.\""
+]
+
+[rubric.security]
+value = "yes"
+citations = [
+  "\"How Secure Is Information About Me?\r\n\r\nWe work to protect the security of your information during transmission by using Secure Sockets Layer (SSL) software, which encrypts information you input.\r\n\r\nWe reveal only the last four digits of your credit card numbers when confirming an order. Of course, we transmit the entire credit card number to the appropriate credit card company during order processing.\r\n\r\nIt is important for you to protect against unauthorized access to your password and to your computer. Be sure to sign off when finished using a shared computer. Click here for more information on how to sign off.\""
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "\"Examples of information we receive from other sources include updated delivery and address information from our carriers or other third parties, which we use to correct our records and deliver your next purchase or communication more easily; account information, purchase or redemption information, and page-view information from some merchants with which we operate co-branded businesses or for which we provide technical, fulfillment, advertising, or other services; search term and search result information from some searches conducted through the Web search features offered by our subsidiary, Alexa Internet; search results and links, including paid listings (such as Sponsored Links); and credit history information from credit bureaus, which we use to help prevent and detect fraud and to offer certain credit or financial services to some customers.\""
+]
+
+[rubric.history]
+value = "yes"
+notes = [
+  "The policy provides both a change log and a last modified date."
+]
+
+[rubric.data-deletion]
+value = "yes-automated"
+notes = [
+  "While there is no mention of it in the policy, the service allows for it in the settings."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "There is no mention of what happens in case of a data breach in the policy."
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = [
+  "\"Third-Party Service Providers: We employ other companies and individuals to perform functions on our behalf. Examples include fulfilling orders, delivering packages, sending postal mail and e-mail, removing repetitive information from customer lists, analyzing data, providing marketing assistance, providing search results and links (including paid listings and links), processing credit card payments, and providing customer service. They have access to personal information needed to perform their functions, but may not use it for other purposes.\""
+]
+
+[rubric.data-collection-reasoning]
+value = "mostly"
+notes = [
+  "While Amazon has a section for \"Examples of Information Collected\" and the section includes an extensive list of data collected with explanations why, the policy fails to explain how exactly each piece of data is used (for example, diagnostics data and automatic data)."
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-some"
+citations = [
+  "\"Examples of the information we collect and analyze include the Internet protocol (IP) address used to connect your computer to the Internet; login; e-mail address; password; computer and connection information such as browser type, version, and time zone setting, browser plug-in types and versions, operating system, and platform; purchase history, which we sometimes aggregate with similar information from other customers to create features like Top Sellers ; the full Uniform Resource Locator (URL) clickstream to, through, and from our Web site, including date and time; cookie number; products you viewed or searched for; and the phone number you used to call our 800 number. We may also use browser data such as cookies, Flash cookies (also known as Flash Local Shared Objects), or similar data on certain parts of our Web site for fraud prevention and other purposes. During some visits we may use software tools such as JavaScript to measure and collect session information, including page response times, download errors, length of visits to certain pages, page interaction information (such as scrolling, clicks, and mouse-overs), and methods used to browse away from the page. We may also collect technical information to help us identify your device for fraud prevention and diagnostic purposes.\"\r\n\r\n\"You can choose not to provide certain information, but then you might not be able to take advantage of many of our features.\""
+]
+notes = [
+  "Given that the service uses technologies like JavaScript for tracking, it is impossible to opt-out completely without losing access to core functionality."
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "\"We release account and other personal information when we believe release is appropriate to comply with the law; enforce or apply our Conditions of Use and other agreements; or protect the rights, property, or safety of Amazon.com, our users, or others.\""
+]
+
+[rubric.list-collected]
+value = "generally"
+notes = [
+  "The policy generally lists the data it collects, but it uses phrases like \"such as\" (which make the statements non-binding)."
+]
+
+[rubric.revision-notify]
+value = "no"
+citations = [
+  "\"We may e-mail periodic reminders of our notices and conditions, but you should check our Web site frequently to see recent changes.\""
+]
+notes = [
+  "As it is written in the policy, the service does not notify users in case of major changes to the policy. (Or at least the policy doesn't require it!)"
+]

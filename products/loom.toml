@@ -1,0 +1,81 @@
+name = "Loom"
+description = "Loom is a video sharing, markup, and collaboration tool for schools and workplaces."
+slug = "loom"
+hostnames = [ "loom.com" ]
+sources = [ "https://www.loom.com/privacy-policy" ]
+icon = "loom.png"
+updates = [ ]
+contributors = [ "milesmcc" ]
+
+[rubric.behavioral-marketing]
+value = "yes"
+citations = [
+  "Loom may use such Personal Information for sales, marketing, and support of the Loom Properties. This Personal Information is never shared with third parties other than Third Party Service Providers utilized by a User in connection with Loom Services."
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "Loom takes appropriate security measures to protect against unauthorized access, alteration, disclosure or destruction of Personal Information. These include, but are not limited to, internal reviews of: (a) Loom's data collection; (b) storage and processing practices; (c) electronic security measures; and (d) physical security measures to guard against unauthorized access to systems where Loom stores Personal Information.\r\n\r\nUnfortunately, no data transmission over the internet can be guaranteed to be 100% secure. As a result, while we are committed to protecting your Personal Information, we cannot ensure or warrant the security of any information you provide to us.\r\n\r\nAll Loom employees, contractors and agents who access Personal Information are bound by confidentiality obligations and may be subject to discipline, including termination and criminal prosecution or unauthorized use or disclosure of Personal Information."
+]
+
+[rubric.third-party-collection]
+value = "no"
+notes = [
+  "The policy does not mention any third parties as a potential source of personal data."
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [
+  "The date of the most recent version of the Privacy Policy is noted below under “Effective Date of this Privacy Policy.”"
+]
+
+[rubric.data-deletion]
+value = "yes-contact"
+citations = [
+  "Loom retains the Personal Information that we collect about you for as long as reasonably necessary for the purposes set out in this Privacy Policy. We also may retain your Personal Information for a longer period of time on the basis of our legitimate interests in providing or marketing our services to you or as necessary to comply with our legal obligations, to resolve disputes, and to enforce our agreements. Even if we delete some or all of your Personal Information, we may continue to retain and use information that has been aggregated or anonymized so that it can no longer be used for personal identification.\r\n\r\nUpon request, Loom will allow Users to update or correct Personal Information previously submitted, but only to the extent such activities will not compromise privacy or security interests. Additionally, upon request, Loom will delete Personal Information from the database where such information is stored; however, it may be impossible to entirely delete a User’s entry without some residual information being retained due to the manner in which data backups are maintained. Requests to delete Personal Information may be submitted to support@loom.com."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [ "The policy does not specify a data breach protocol." ]
+
+[rubric.third-party-access]
+value = "yes-unspecified-critical"
+citations = [
+  "Except as described below, we do not sell, transfer or otherwise disclose, sell, trade, or otherwise transfer your Personal Information to outside parties. This statement does not include trusted third party service providers who assist us in administering and providing the Loom Properties or provide services to us. Examples include storing and managed Content, analyzing data, providing marketing assistance, integrations of Third Party Services such as CRM and MAP services, processing credit card payments, and providing customer service. These third party service providers will have access to Personal Information needed to perform their functions, but may not use it for other purposes."
+]
+
+[rubric.data-collection-reasoning]
+value = "mostly"
+notes = [
+  "The policy does a generally good job of explaining how it uses personal data, although the direct purpose of some tracking data is left unspecified."
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-all"
+citations = [
+  "We will provide an individual opt-out choice, or opt-in for sensitive data, before we share your data with third parties other than our agents, or before we use it for a purpose other than which it was originally collected or subsequently authorized."
+]
+notes = [
+  "An exception is made for previously-mentioned uses in the policy."
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "In certain situations, we may be required to disclose Personal Information in response to lawful requests by public authorities, including to meet national security or law enforcement requirements."
+]
+
+[rubric.list-collected]
+value = "generally"
+citations = [
+  "Loom collects only the information required to provide products and services to you. The amount of information provided by you and collected by Loom depends on the circumstances. Loom may collect two (2) types of information about you: Personal and Non-Personal.\r\n\r\n[...]"
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "The terms in this Privacy Policy may be changed from time to time, so you should review it periodically for changes. We reserve the right, at any time, to modify or replace this Privacy Policy. The date of the most recent version of the Privacy Policy is noted below under “Effective Date of this Privacy Policy.” We may also notify you via email or other direct electronic communication method of any changes that, in our sole discretion, materially impact your use of the Loom Properties or the treatment of your Personal Information. Your use of the Loom Properties following the posting of any changes to the Privacy Policy constitutes acceptance of those changes."
+]

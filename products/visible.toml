@@ -1,0 +1,81 @@
+name = "Visible"
+description = "Visible is an all-digital wireless carrier owned by Verizon."
+slug = "visible"
+hostnames = [ "visible.com" ]
+sources = [ "https://www.visible.com/legal/privacy.html" ]
+icon = "visible.png"
+updates = [ ]
+contributors = [ "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "yes"
+citations = [
+  "We use the information we collect to deliver service, to market to you, and for other business purposes, including to: [...] Determine products and services that may interest you and market them to you, including on Visible sites and apps and on others’ sites, services, apps and devices as described in Section V below;"
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "We use reasonable measures to help protect information from loss, theft, misuse and unauthorized access, disclosure, alteration and destruction. You should understand that no data storage system or transmission of data over the Internet or any other public network can be guaranteed to be 100 percent secure."
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "We collect information about you from others. We may obtain information about you from other sources, including from companies that collect consumer information such as demographic and interest data. In addition, if you access third-party services, such as Facebook, Google, or Twitter, from our sites or apps, to log into our sites or apps, or to share information about your experience, we may collect information from these third-party services."
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [ "Effective Date: March 17, 2020" ]
+
+[rubric.data-deletion]
+value = "no"
+citations = [
+  "Requests that Visible delete your personal information are subject to exemptions under the CCPA. We will retain certain information required for security, legal, or other business or commercial purposes in accordance with our records retention policies and securely delete it at the end of the retention period."
+]
+notes = [
+  "This is possible if you are affected by the CCPA (resulting in a 5/5); otherwise, there is no information supporting the deletion of an account."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "The policy doesn't specify a data breach disclosure protocol."
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = [
+  "We share your information with service providers and partners that help us with a variety of things, including development and delivery of our sites, apps and service. This includes services provided by others to help us with analytics which may include storing and accessing cookies and other information on your computer or wireless device.\r\n\r\n[...]\r\n\r\nWe may share your information in connection with a substantial corporate transaction, such as a merger, consolidation, asset sale, or in the unlikely event of bankruptcy.\r\n\r\n[...]\r\n\r\nWe may aggregate or otherwise de-identify information and use it for our own purposes or share it with third parties for their own purposes."
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "We collect information you provide directly to us. This includes personal information (such as your name, email address, phone number, postal address, Social Security number, and date of birth), a username and password, payment information, and communications you send to us.\r\n\r\nWe collect information when you use our service. This includes information about the calls you make and receive, text messages you send and receive, websites you visit, mobile applications you use, and wireless network and device information, including location, Internet protocol (IP) address and connection speed, mobile telephone number, device and advertising identifiers, browser type, and operating system. Some Visible devices include Verizon-provided system applications that collect information about network and device conditions, which is used to secure and improve our network and services.\r\n\r\nWe also collect information when you visit our sites and use our apps, including through cookies and similar technology. This includes your IP address, mobile number, device and advertising identifiers; browser and platform type, operating system, connection speed and other attributes; pages that you visit before and after visiting our sites; the date and time of your visit; information about the links you click and pages you view within the sites and screen records.\r\n\r\nWe may use cookies, pixel tags, and similar technologies to automatically collect this information. Cookies are small bits of information that are stored by your computer’s web browser. Pixel tags are very small images or small pieces of data embedded in images, also known as “web beacons” or “clear GIFs,” that can recognize cookies, the time and date a page is viewed, a description of the page where the pixel tag is placed, and similar information from your computer or device. By using our websites and applications, you consent to our use of cookies and similar technologies.\r\n\r\nWe also allow advertising companies to collect information about your activity on our websites and in our app, for example through cookies, mobile ad identifiers, pixels, web beacons and social network plugins, to help us provide more relevant Visible advertisements on our website and on others’ sites and apps. The use of information collected about your visits over time and across different websites, apps and devices is known as “interest-based advertising.” Please see Section V below for more information with regard to the use of your information for these purposes.\r\n\r\nWe collect info when you contact us. When you contact us or we contact you, we may monitor or record that communication for quality assurance, training and security purposes.\r\n\r\nWe collect information about you from others. We may obtain information about you from other sources, including from companies that collect consumer information such as demographic and interest data. In addition, if you access third-party services, such as Facebook, Google, or Twitter, from our sites or apps, to log into our sites or apps, or to share information about your experience, we may collect information from these third-party services."
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-some"
+citations = [
+  "You can set up cookie controls through many browser settings and you can use industry-wide opt outs to control the use of cookies for interest-based advertising purposes.\r\n\r\nIf you would like to be removed from Visible’s email marketing list, you can opt-out by following the unsubscribe instructions, usually found at the bottom of the emails."
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "We may disclose information (1) to respond to subpoenas, court orders, legal process, law enforcement requests, legal claims or government inquiries and in emergencies such as those involving the danger of death or serious injury to any person; (2) to advance, protect or defend the rights, interests, property, safety, and security of Visible, our affiliates, users, or the public; (3) to identify, protect against, and address unauthorized or unlawful use of our sites, apps or service, or our network; and (4) to outside auditors and regulators."
+]
+
+[rubric.list-collected]
+value = "generally"
+citations = [
+  "We collect information you provide directly to us. This includes personal information (such as your name, email address, phone number, postal address, Social Security number, and date of birth), a username and password, payment information, and communications you send to us.\r\n\r\nWe collect information when you use our service. This includes information about the calls you make and receive, text messages you send and receive, websites you visit, mobile applications you use, and wireless network and device information, including location, Internet protocol (IP) address and connection speed, mobile telephone number, device and advertising identifiers, browser type, and operating system. Some Visible devices include Verizon-provided system applications that collect information about network and device conditions, which is used to secure and improve our network and services.\r\n\r\nWe also collect information when you visit our sites and use our apps, including through cookies and similar technology. This includes your IP address, mobile number, device and advertising identifiers; browser and platform type, operating system, connection speed and other attributes; pages that you visit before and after visiting our sites; the date and time of your visit; information about the links you click and pages you view within the sites and screen records.\r\n\r\nWe may use cookies, pixel tags, and similar technologies to automatically collect this information. Cookies are small bits of information that are stored by your computer’s web browser. Pixel tags are very small images or small pieces of data embedded in images, also known as “web beacons” or “clear GIFs,” that can recognize cookies, the time and date a page is viewed, a description of the page where the pixel tag is placed, and similar information from your computer or device. By using our websites and applications, you consent to our use of cookies and similar technologies.\r\n\r\nWe also allow advertising companies to collect information about your activity on our websites and in our app, for example through cookies, mobile ad identifiers, pixels, web beacons and social network plugins, to help us provide more relevant Visible advertisements on our website and on others’ sites and apps. The use of information collected about your visits over time and across different websites, apps and devices is known as “interest-based advertising.” Please see Section V below for more information with regard to the use of your information for these purposes.\r\n\r\nWe collect info when you contact us. When you contact us or we contact you, we may monitor or record that communication for quality assurance, training and security purposes.\r\n\r\nWe collect information about you from others. We may obtain information about you from other sources, including from companies that collect consumer information such as demographic and interest data. In addition, if you access third-party services, such as Facebook, Google, or Twitter, from our sites or apps, to log into our sites or apps, or to share information about your experience, we may collect information from these third-party services."
+]
+
+[rubric.revision-notify]
+value = "no"
+citations = [
+  "We may update this Privacy Policy from time to time. When we update the Privacy Policy, we will revise the “Effective Date” date above and post the new Privacy Policy."
+]

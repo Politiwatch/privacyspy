@@ -1,0 +1,78 @@
+name = "Wikipedia"
+description = "Wikipedia is a collection of free online encyclopedias managed by the Wikimedia Foundation."
+slug = "wikipedia"
+hostnames = [ "wikipedia.org,wikimedia.org" ]
+sources = [ "https://foundation.wikimedia.org/wiki/Privacy_policy" ]
+icon = "wikipedia.png"
+updates = [ ]
+contributors = [ "milesmcc" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+notes = [
+  "Wikimedia does not run advertisements—let alone personally targeted ones."
+]
+
+[rubric.security]
+value = "yes"
+citations = [
+  "\"We use a variety of physical and technical measures, policies, and procedures (such as access control procedures, network firewalls, and physical security) designed to protect our systems and your Personal Information. Unfortunately, there's no such thing as completely secure data transmission or storage, so we can't guarantee that our security will not be breached (by technical measures or through violation of our policies and procedures).\""
+]
+
+[rubric.third-party-collection]
+value = "no"
+notes = [
+  "No where in the policy are any third parties listed as data sources."
+]
+
+[rubric.history]
+value = "yes"
+citations = [
+  "\"In the event of substantial changes, we will provide the proposed changes to our users in at least three (3) languages (selected at our discretion) for open comment period lasting at least thirty (30) calendar days. Prior to the start of any comment period, we will provide notice of such changes and the opportunity to comment via the Wikimedia Sites, and via a notification on WikimediaAnnounce-L or a similar mailing list.\""
+]
+
+[rubric.data-deletion]
+value = "no"
+notes = [
+  "In order to attribute edit histories, accounts on Wikimedia sites cannot be deleted. This is a reasonable trade-off for maintaining transparency on the platform."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [ "The policy does not specify a data breach protocol." ]
+
+[rubric.third-party-access]
+value = "yes-unspecified-critical"
+citations = [
+  "\"As hard as we may try, we can't do it all. So sometimes we use third-party service providers or contractors who help run or improve the Wikimedia Sites for you and other users. We give access to your Personal Information to these providers or contractors as needed to perform their services for us or to use their tools and services. We put requirements, such as confidentiality agreements, in place to help ensure that these service providers treat your information consistently with, and no less protective of your privacy than, the principles of this Policy.\""
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+notes = [
+  "The policy [clearly explains](https://foundation.wikimedia.org/wiki/Privacy_policy#How_We_Use_Information_We_Receive_From_You) why it collects the personal data that it does."
+]
+
+[rubric.noncritical-purposes]
+value = "na"
+citations = [
+  "\"We and our service providers use your information for the legitimate purpose of pursuing our charitable mission...\""
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "\"We will access, use, preserve, and/or disclose your Personal Information if we reasonably believe it necessary to satisfy a valid and legally enforceable warrant, subpoena, court order, law or regulation, or other judicial or administrative order. However, if we believe that a particular request for disclosure of a user's information is legally invalid or an abuse of the legal system and the affected user does not intend to oppose the disclosure themselves, we will try our best to fight it.\""
+]
+
+[rubric.list-collected]
+value = "exhaustively"
+notes = [
+  "The policy exhaustively lists personal data that Wikimedia collects on its sites. Furthermore, most of Wikimedia's sites are open source, so the source code—and the data it collects—are publicly auditable."
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "\"In the event of substantial changes, we will provide the proposed changes to our users in at least three (3) languages (selected at our discretion) for open comment period lasting at least thirty (30) calendar days. Prior to the start of any comment period, we will provide notice of such changes and the opportunity to comment via the Wikimedia Sites, and via a notification on WikimediaAnnounce-L or a similar mailing list.\""
+]

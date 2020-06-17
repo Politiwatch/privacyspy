@@ -52,10 +52,6 @@ export function getProductPageBuildTasks(products: Product[]) {
 export function getDirectoryPagesTasks(products: Product[]) {
   const MAX_PER_PAGE = 30;
 
-  for (let i = 0; i < 8; i++) {
-    products = [...products, ...products];
-  }
-
   const pageCount = Math.ceil(products.length / MAX_PER_PAGE);
 
   const directoryPagesTasks = [];

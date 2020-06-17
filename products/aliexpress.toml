@@ -1,0 +1,81 @@
+name = "AliExpress"
+description = "AliExpress is an online marketplace for a wide variety of goods with worldwide service."
+slug = "aliexpress"
+hostnames = [ "aliexpress.com" ]
+sources = [
+  "https://helppage.aliexpress.com/buyercenter/questionAnswer.htm?isRouter=0&viewKey=1&id=1000099018&categoryIds=9205401"
+]
+icon = "aliexpress.png"
+updates = [ ]
+contributors = [ "vutut" ]
+
+[rubric.behavioral-marketing]
+value = "yes"
+citations = [
+  "Cookies or other similar technologies may be used to provide you with advertising based upon your browsing activities and interests."
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "We implement appropriate technical and organisational measures to prevent unauthorized access to the Site, to maintain data accuracy and to ensure the correct use of the information we hold. "
+]
+
+[rubric.third-party-collection]
+value = "critical-only"
+citations = [
+  "If you are a Buyer or Seller we may receive personal information about you from: \r\nSocial media platforms if you choose to register for a Platform account via a social media account. \r\n\r\nThird parties that are engaged by us to provide verification services."
+]
+
+[rubric.history]
+value = "no"
+notes = [ "No previous version or list of changes is available." ]
+
+[rubric.data-deletion]
+value = "no"
+notes = [ "Only for users within EEA countries by contacting someone." ]
+
+[rubric.data-breaches]
+value = "eventually"
+citations = [
+  "Upon becoming aware of a data breach, we will notify you and the regulatory authorities in accordance with the timescales and scope required by applicable data protection law."
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+notes = [
+  "Specifies general groups of parties but uses \"such as\" so the list is not complete."
+]
+
+[rubric.data-collection-reasoning]
+value = "somewhat"
+citations = [
+  "We may also use your personal information for other purposes that are not incompatible with the purposes we have disclosed to you if and where this is permitted by applicable data protection laws."
+]
+
+[rubric.noncritical-purposes]
+value = "no"
+notes = [
+  "No option to opt-out specified besides for legally required for users from EEA countries."
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "To our professional advisers, law enforcement agencies, insurers, government and regulatory and other organisations where we believe it is necessary to comply with applicable laws or to exercise, establish or defend our legal rights or protect your vital interests or those of any other person; or as otherwise required or permitted by applicable laws."
+]
+
+[rubric.list-collected]
+value = "generally"
+notes = [
+  "Lists collected data but with use of \"such as\" so the list is not exhaustive."
+]
+
+[rubric.revision-notify]
+value = "no"
+citations = [
+  "When we update our Privacy Policy, we will take appropriate measures to inform you, consistent with the significance of the changes we make, such as by posting an amended Privacy Policy on the Platform."
+]
+notes = [
+  "Unclear whether there is any direct contact to inform users beyond just changing the policy."
+]

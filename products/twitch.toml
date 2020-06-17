@@ -1,0 +1,79 @@
+name = "Twitch"
+description = "Twitch is an American live streaming platform that features primarily gaming content."
+slug = "twitch"
+hostnames = [ "twitch.tv" ]
+sources = [ "https://www.twitch.tv/p/legal/privacy-policy/" ]
+icon = "twitch.png"
+updates = [ ]
+contributors = [ "YuriiStasiuk" ]
+
+[rubric.behavioral-marketing]
+value = "yes-opt-out"
+citations = [
+  "Advertisers and Analytics Providers\r\n\r\nWe may use third-party Web analytics services in connection with the Twitch Services, such as those of Google Analytics, and its advertising features. These service providers use a variety of tracking technologies such as cookies to analyze how users use the Twitch Services. The information collected (described above in “Automatically Collected Information”) will be collected directly by these service providers to evaluate your use of the Twitch Services. For more information on how Google Analytics uses data from our websites and how you can control the information sent to Google, click here. To learn about opting out of Google Analytics, please click here. Because these opt outs are cookie-based, please note that if you get a new computer or device, install or start using a new browser, or erase or alter your browser’s cookie file, you may need to opt out again.\r\nDo Not Track\r\nDo Not Track (“DNT”) is a privacy preference that users can set in certain web browsers. DNT is a way for users to inform websites and services that they do not want certain information about their webpage visits collected over time and across websites or online services. We are committed to providing you with meaningful choices about the information collected on our website for third-party purposes, and that is why we provide the Network Advertising Initiative, Your Online Choices and the Digital Advertising Alliance opt-out links above. However, Twitch does not recognize or respond to browser-initiated DNT signals."
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "Twitch uses a variety of managerial, technical, and physical measures to protect the integrity and security of your information. These measures may vary based on the sensitivity of your information. However, no security precautions or systems can be completely secure. We cannot ensure or warrant the security of any information you transmit to Twitch, and you do so at your own risk. We cannot guarantee that such information may not be accessed, disclosed, altered, or destroyed by breach of any of our physical, technical, or managerial safeguards."
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "We may obtain additional information such as demographic and statistical information from third parties and sources other than the Twitch Services, such as advertisers or social media networks (such as Facebook) for which you have approved our access."
+]
+
+[rubric.history]
+value = "last-modified"
+notes = [
+  "The policy displays the date it was last modified on the top of the page."
+]
+
+[rubric.data-deletion]
+value = "yes-automated"
+citations = [
+  "If you would like to close your account and delete your profile information on www.twitch.tv go to https://www.twitch.tv/user/delete_account. For Twitch Services other than twitch.tv, you may update or delete information tied to your account, or close an account, by accessing the “My Account” area of the service or by submitting a help ticket to that service. If you close your account, Twitch may retain certain information about you for the activities described in this Privacy Policy, or as permitted or required by applicable law."
+]
+notes = [ "**Note: Twitch may retain some data.**" ]
+
+[rubric.data-breaches]
+value = "no"
+notes = [ "The policy doesn't specify a data breach protocol." ]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = [
+  "The Twitch Services may link to third-party websites or services. The privacy practices of those third parties are not governed by this Privacy Policy. We encourage you to review the privacy policies of these third-party websites and services to understand their practices.\r\n\r\nIf you connect to a third-party service (such as Facebook, Twitter, or another third-party application) through the Twitch Services or otherwise link your Twitch account with a third-party service, you are requesting and authorizing us to share or grant access to information on your behalf (such as your username, the fact that your connection originated from the Twitch Services, and other relevant usage and diagnostic information) with such third party. We may also send information about the content you watch or your activities on the Twitch Services to such third parties. For example, we may make information available to app developers, game developers, and game publishers to facilitate purchases and awards of digital goods, such as games and in-game items.\r\nWe may use third-party Web analytics services in connection with the Twitch Services, such as those of Google Analytics, and its advertising features. These service providers use a variety of tracking technologies such as cookies to analyze how users use the Twitch Services. The information collected (described above in “Automatically Collected Information”) will be collected directly by these service providers to evaluate your use of the Twitch Services. "
+]
+
+[rubric.data-collection-reasoning]
+value = "mostly"
+citations = [
+  "Twitch uses such information to operate, maintain, enhance, provide, create, and develop all of the features, functionality, and services (new or existing) found on the Twitch Services; provide security for our websites, products, software, or applications; manage relationships with Twitch account holders (e.g., Partners, Affiliates), including making or receiving payment; improve your experience with the Twitch Services by providing content recommendations and by delivering content that we hope you will find relevant and interesting, including advertising and marketing messages; allow you to comment on content, and participate in online games, contests, or rewards programs; prevent fraud and abuse; and understand the usage trends of our users.\r\nWe use your email address to communicate with you, including to notify you of major Twitch Services updates, for customer service purposes, or to contact you regarding any content that you have posted to or downloaded from the Twitch Services.\r\nTwitch may periodically send promotional materials or notifications to you related to the Twitch Services. If you want to stop receiving promotional materials, you can go to your account settings once you have logged in to the Twitch Services or follow the unsubscribe instructions at the bottom of any email from us. If you have installed a mobile app and you wish to stop receiving push notifications, you can change the settings either on your mobile device or through the app.\r\nIn certain cases, we have a legal obligation to collect and process your personal information (such as our obligation to share data with tax authorities)."
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-some"
+notes = [
+  "The policy provides links to opt-out sites and preferences for behavioral advertising, but does not provide a site-wide opting out of all non-critical tracking."
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "Twitch may disclose user information if we believe in good faith that such disclosure is necessary to comply with U.S. state and federal laws or other applicable laws around the world (for example, in the country of your residence), or respond to a court order, judicial or other government request, subpoena, or warrant in the manner legally required.\r\nTwitch also reserves the right to disclose information that we believe, in good faith, is appropriate or necessary to protect Twitch from potential liability or from fraudulent, abusive, or unlawful uses; investigate and defend ourselves against third-party claims, or allegations; protect the security or integrity of the Twitch Services; or protect the rights, property, or safety of Twitch, our users, or others.\r\n"
+]
+
+[rubric.list-collected]
+value = "generally"
+citations = [
+  "User-provided Information: You may provide a variety of information about yourself to us, such as your name, email address, postal mailing address, telephone number, credit card number, and billing information when you register for Twitch Services; upload, purchase, view, or download certain content or products from the Twitch Services; enter contests or sweepstakes; or otherwise use the features and functionality of the Twitch Services.\r\nAutomatically Collected Information: When you access the Twitch Services or open one of our emails, we automatically record and store certain information about your system by using cookies and other types of technologies. Cookies are small text files containing a string of alphanumeric characters that are sent to your browser. For information about what cookies are, how they work, how Twitch uses them, and how to remove them, please see our Cookie Policy . Examples of such information we automatically collect include Internet Protocol address (“IP Address”), a unique user ID, device and browser types and identifiers, referring and exit page addresses, software and system type, and information about your usage of Twitch Services.\r\nInformation from Other Sources: We may obtain additional information such as demographic and statistical information from third parties and sources other than the Twitch Services, such as advertisers or social media networks (such as Facebook) for which you have approved our access."
+]
+
+[rubric.revision-notify]
+value = "no"
+citations = [
+  "Twitch reserves the right to change, modify, add, or remove portions of this Privacy Policy at any time (for example to reflect updates to the Twitch Services or to reflect changes in the law). Please check this Privacy Policy periodically for those changes. Your continued use of the Twitch Services after the posting of changes constitutes your binding acceptance of such changes.\r\n\r\n"
+]

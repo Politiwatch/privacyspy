@@ -1,0 +1,87 @@
+name = "Slack"
+description = "Slack is an American cloud-based chat app designed for teams and workplaces."
+slug = "slack"
+hostnames = [ "slack.com" ]
+sources = [ "https://slack.com/privacy-policy" ]
+icon = "slack.png"
+updates = [ ]
+contributors = [ "owlswipe" ]
+
+[rubric.behavioral-marketing]
+value = "yes-opt-out"
+citations = [
+  "Slack may also process Other Information that constitutes your Personal Data for direct marketing purposes and you have a right to object to Slack’s use of your Personal Data for this purpose at any time."
+]
+
+[rubric.security]
+value = "yes-independent-audits"
+citations = [
+  "Slack takes security of data very seriously. Slack works hard to protect Other Information you provide from loss, misuse, and unauthorized access or disclosure. These steps take into account the sensitivity of the Other Information we collect, process and store, and the current state of technology. Slack has received internationally recognized security certifications for ISO 27001 (information security management system) and ISO 27018 (for protecting personal data in the cloud). To learn more about current practices and policies regarding security and confidentiality of the Services, please see our Security Practices. Given the nature of communications and information processing technology, Slack cannot guarantee that Information, during transmission through the Internet or while stored on our systems or otherwise in our care, will be absolutely safe from intrusion by others."
+]
+notes = [
+  "More security-related information, including a security whitepaper and SOC 2 Type II + SOC 3 certification, available on https://slack.com/security and https://slack.com/security-practices"
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "Location information. We receive information from you, your Customer and other third-parties that helps us approximate your location. We may, for example, use a business address submitted by your employer, or an IP address received from your browser or device to determine approximate location. Slack may also collect location information from devices in accordance with the consent process provided by your device.\r\n\r\nThird Party Data. Slack may receive data about organizations, industries, Website visitors, marketing campaigns and other matters related to our business from parent corporation(s), affiliates and subsidiaries, our partners or others that we use to make our own information better or more useful. This data may be combined with Other Information we collect and might include aggregate level data, such as which IP addresses correspond to zip codes or countries. Or it might be more specific: for example, how well an online marketing or email campaign performed."
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [ "Effective: April 20, 2018" ]
+
+[rubric.data-deletion]
+value = "yes-contact"
+citations = [
+  "Individuals located in certain countries, including the European Economic Area, have certain statutory rights in relation to their personal data. Subject to any exemptions provided by law, you may have the right to request access to Information, as well as to seek to update, delete or correct this Information. You can usually do this using the settings and tools provided in your Services account. If you cannot use the settings and tools, contact Customer for additional access and assistance. Please check https://slack.com/account/settings for Customer contact information.\r\n\r\n"
+]
+notes = [
+  "Slack requires a Workspace's Primary Owner to contact them to request deletion of a user's profile information. \"A Primary Owner is responsible for determining whether profile information requires deletion. Slack will only delete profile information at this person's request.\" \r\n\r\nMore information on deleting account data here: https://get.slack.help/hc/en-us/articles/360000360443-Delete-profile-information-from-Slack"
+]
+
+[rubric.data-breaches]
+value = "eventually"
+notes = [
+  "From linked document https://slack.com/security-practices: \"In the event of a security breach, Slack will promptly notify you of any unauthorized access to your Customer Data. Slack has incident management policies and procedures in place to handle such an event.\""
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+notes = [
+  "Slack also uses cookies from third-party providers like Google Analytics, Facebook, LinkedIn, Convertro, Quantcast, Drift, and Optimizely to track usage of their products and provide social media share buttons/advertising. From linked document https://slack.com/cookie-policy: \"We may use cookies to help us deliver marketing campaigns and track their performance (e.g., a user visited our Help Center and then made a purchase). Similarly, our partners may use cookies to provide us with information about your interactions with their services, but use of those third-party cookies would be subject to the service provider’s policies.\r\n\r\n\"Cookies help us learn how well our Sites and Services perform. We also use cookies to understand, improve, and research products, features, and services, including to create logs and record when you access our Sites and Services from different devices, such as your work computer or your mobile device.\""
+]
+
+[rubric.data-collection-reasoning]
+value = "mostly"
+citations = [
+  "Slack uses Other Information in furtherance of our legitimate interests in operating our Services, Websites and business. More specifically, Slack uses Other Information:\r\n\r\n- To provide, update, maintain and protect our Services, Websites and business. This includes use of Other Information to support delivery of the Services under a Customer Agreement, prevent or address service errors, security or technical issues, analyze and monitor usage, trends and other activities or at an Authorized User’s request.\r\n\r\n- As required by applicable law, legal process or regulation.\r\n\r\n- To communicate with you by responding to your requests, comments and questions. If you contact us, we may use your Other Information to respond.\r\n\r\n- To develop and provide search, learning and productivity tools and additional features. Slack tries to make the Services as useful as possible for specific Workspaces and Authorized Users. For example, we may improve search functionality by using Other Information to help determine and rank the relevance of content, channels or expertise to an Authorized User, make Services suggestions based on historical use and predictive models, identify organizational trends and insights, to customize a Services experience or create new productivity features and products.\r\n\r\n- To send emails and other communications. We may send you service, technical and other administrative emails, messages and other types of communications. We may also contact you to inform you about changes in our Services, our Services offerings, and important Services-related notices, such as security and fraud notices. These communications are considered part of the Services and you may not opt out of them. In addition, we sometimes send emails about new product features, promotional communications or other news about Slack. These are marketing messages so you can control whether you receive them.\r\n\r\n- For billing, account management and other administrative matters. Slack may need to contact you for invoicing, account management and similar reasons and we use account data to administer accounts and keep track of billing and payments.\r\n\r\n- To investigate and help prevent security issues and abuse.\r\n\r\nIf Information is aggregated or de-identified so it is no longer reasonably associated with an identified or identifiable natural person, Slack may use it for any business purpose. To the extent Information is associated with an identified or identifiable natural person and is protected as personal data under applicable data protection law, it is referred to in this Privacy Policy as “Personal Data.”"
+]
+
+[rubric.noncritical-purposes]
+value = "no"
+notes = [
+  "There is no mention of users having the ability to opt-out/opt-in of anything in Slack's privacy policy."
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "If we receive a request for information, we may disclose Other Information if we reasonably believe disclosure is in accordance with or required by any applicable law, regulation or legal process."
+]
+notes = [
+  "\"Other Information,\" which may be shared with law enforcement, includes all data Slack has on its users outside of customer-visible data in their Workspaces (\"such as\" everything users interact with, device information, approximate locations, IP addresses, third-party and first-party cookie information, contact information, and more)."
+]
+
+[rubric.list-collected]
+value = "generally"
+citations = [
+  "Slack may collect and receive Customer Data and other information and data (“Other Information”) in a variety of ways:\r\n\r\nCustomer Data. Customers or individuals granted access to a Workspace by a Customer (“Authorized Users”) routinely submit Customer Data to Slack when using the Services.\r\nOther Information. Slack also collects, generates and/or receives Other Information:\r\n\r\n1. Workspace and Account Information. To create or update a Workspace account, you or your Customer (e.g., your employer) supply Slack with an email address, phone number, password, domain and/or similar account details. For details on Workspace creation, click here. In addition, Customers that purchase a paid version of the Services provide Slack (or its payment processors) with billing details such as credit card information, banking information and/or a billing address.\r\n\r\n2. Usage Information.\r\n\r\n - Services Metadata. When an Authorized User interacts with the Services, metadata is generated that provides additional context about the way Authorized Users work. For example, Slack logs the Workspaces, channels, people, features, content and links you interact with, the types of files shared and what Third Party Services are used (if any).\r\n\r\n - Log data. As with most websites and technology services delivered over the Internet, our servers automatically collect information when you access or use our Websites or Services and record it in log files. This log data may include the Internet Protocol (IP) address, the address of the web page visited before using the Website or Services, browser type and settings, the date and time the Services were used, information about browser configuration and plugins, language preferences and cookie data.\r\n\r\n - Device information. Slack collects information about devices accessing the Services, including type of device, what operating system is used, device settings, application IDs, unique device identifiers and crash data. Whether we collect some or all of this Other Information often depends on the type of device used and its settings.\r\n\r\n - Location information. We receive information from you, your Customer and other third-parties that helps us approximate your location. We may, for example, use a business address submitted by your employer, or an IP address received from your browser or device to determine approximate location. Slack may also collect location information from devices in accordance with the consent process provided by your device.\r\n\r\n3. Cookie Information. Slack uses cookies and similar technologies in our Websites and Services that help us collect Other Information. The Websites and Services may also include cookies and similar tracking technologies of third parties, which may collect Other Information about you via the Websites and Services and across other websites and online services. For more details about how we use these technologies, please see our Cookie Policy.\r\n\r\n4. Third Party Services. Customer can choose to permit or restrict Third Party Services for their Workspace. Typically, Third Party Services are software that integrate with our Services, and Customer can permit its Authorized Users to enable and disable these integrations for their Workspace. Once enabled, the provider of a Third Party Service may share certain information with Slack. For example, if a cloud storage application is enabled to permit files to be imported to a Workspace, we may receive user name and email address of Authorized Users, along with additional information that the application has elected to make available to Slack to facilitate the integration. Authorized Users should check the privacy settings and notices in these Third Party Services to understand what data may be disclosed to Slack. When a Third Party Service is enabled, Slack is authorized to connect and access Other Information made available to Slack in accordance with our agreement with the Third Party Provider. We do not, however, receive or store passwords for any of these Third Party Services when connecting them to the Services. For more information on Third Party Services, click here.\r\n\r\n5. Contact Information. In accordance with the consent process provided by your device, any contact information that an Authorized User chooses to import (such as an address book from a device) is collected when using the Services.\r\n\r\n6. Third Party Data. Slack may receive data about organizations, industries, Website visitors, marketing campaigns and other matters related to our business from parent corporation(s), affiliates and subsidiaries, our partners or others that we use to make our own information better or more useful. This data may be combined with Other Information we collect and might include aggregate level data, such as which IP addresses correspond to zip codes or countries. Or it might be more specific: for example, how well an online marketing or email campaign performed.\r\n\r\n7. Additional Information Provided to Slack. We receive Other Information when submitted to our Websites or if you participate in a focus group, contest, activity or event, apply for a job, request support, interact with our social media accounts or otherwise communicate with Slack.\r\n\r\nGenerally, no one is under a statutory or contractual obligation to provide any Customer Data or Other Information (collectively, “Information”). However, certain Information is collected automatically and, if some Information, such as Workspace setup details, is not provided, we may be unable to provide the Services."
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "Slack may change this Privacy Policy from time to time. Laws, regulations and industry standards evolve, which may make those changes necessary, or we may make changes to our business. We will post the changes to this page and encourage you to review our Privacy Policy to stay informed. If we make changes that materially alter your privacy rights, Slack will provide additional notice, such as via email or through the Services. If you disagree with the changes to this Privacy Policy, you should deactivate your Services account. Contact the Customer if you wish to request the removal of Personal Data under their control."
+]

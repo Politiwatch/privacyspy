@@ -1,5 +1,5 @@
 category = "transparency"
-slug = "change-notifications"
+slug = "revision-notify"
 text = "Will affected users be notified when the policy is meaningfully changed?"
 notes = []
 points = 5

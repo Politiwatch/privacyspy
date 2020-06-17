@@ -1,0 +1,78 @@
+name = "Padlet"
+description = "Padlet is a education-oriented document creation and sharing platform."
+slug = "padlet"
+hostnames = [ "padlet.com" ]
+sources = [ "https://padlet.com/about/privacy" ]
+icon = "padlet.png"
+updates = [ ]
+contributors = [ "milesmcc" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+citations = [ "We do not use your information for marketing." ]
+
+[rubric.security]
+value = "yes-audits"
+citations = [
+  "The security of your personal information is important to us. We maintain administrative, technical and physical safeguards to protect against loss, theft, unauthorized use, disclosure, or retrieval of personal information. In particular:\r\n\r\n* We perform application security testing; penetration testing; conduct risk assessments; and monitor compliance with security policies \r\n* We periodically review our information collection, storage and processing practices, including physical security measures, to guard against unauthorized access to systems \r\n* We continually develop and implement features to keep your personal information safe \r\n* When you enter any information anywhere on the Service, we encrypt the transmission of that \r\ninformation using secure socket layer technology (SSL/TLS) by default \r\n* We ensure passwords are stored and transferred securely using encryption and salted hashing \r\n* The Service is hosted on servers at a third-party facility, with whom we have a contract providing for enhanced security measures. For example, personal information is stored on a server equipped with industry standard firewalls. In addition, the hosting facility provides a 24x7 security system, video surveillance, intrusion detection systems and locked cage areas \r\n* We operate a ‘bug bounty’ security program to encourage an active community of third-party security researchers to report any security bugs to us \r\n*We restrict access to personal information to authorized Padlet employees, agents or independent contractors who need to know that information in order to process it for us, and who are subject to strict confidentiality obligations and may be disciplined or terminated if they fail to meet these obligations \r\n*We require subprocessors to comply with security requirements via separate data processing agreements "
+]
+
+[rubric.third-party-collection]
+value = "critical-only"
+citations = [
+  "Padlet provides the ability to log in to the Service using your Google, Facebook, or Microsoft account. If you authenticate yourself using any of these services, you grant us access to your email address, and, if available, your name, photo, and username associated with them. We do not receive your password."
+]
+
+[rubric.history]
+value = "last-modified"
+notes = [
+  "The last modified date is listed at the top of the privacy policy."
+]
+
+[rubric.data-deletion]
+value = "yes-automated"
+citations = [
+  "You may delete your Account at any time. You can do so from your Account Settings page on the Site or the App or by emailing us at hello@padlet.com. If you email us, we may require sufficient identifying information to be able to determine that you own the account. \r\n\r\nWhen you delete your account, we delete: \r\n\r\n* your profile information and any other content you provide in your profile (such as your name, username, password, email address, and profile photos) \r\n* all the padlets you have created and all the content posted on them, whether or not that content was created by you \r\n"
+]
+
+[rubric.data-breaches]
+value = "eventually"
+citations = [
+  "If we learn of a security breach, we will attempt to notify you electronically (subject to any applicable laws) so that you can take appropriate protective steps; for example, we may post a notice on our Site or elsewhere on the Service, and email to your email address on file. Depending on where you live, you may have a legal right to receive notice of a security breach in writing."
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified-critical"
+citations = [
+  "First and foremost, you should know that Padlet does not sell or rent your personal information to any third-party for any purpose. \r\n\r\n[...]\r\n\r\nWe work with many vendors, service providers, and other partners to help us provide the Service by performing tasks on our behalf. These service providers may be located inside or outside of the European Economic Area (“EEA”). We may need to share or provide information (including personal information) to them to help them perform these business functions. E.g.: \r\n\r\n* We use Help Scout to manage customer support requests. We share your name, your email, and your messages with them. \r\n* We use Honeybadger to notify us when a user encounters an error so we can fix it promptly. We share your device information, IP, and email with them. \r\n* We use Chargebee to manage billing. They store your name, email, and credit card information. \r\n\r\nWe use 30-40 different providers to support our operations. These providers have limited access to your personal information to perform these tasks on our behalf, and are contractually bound to protect and use it only for the purpose for which it was disclosed and consistent with this Policy. Padlet has also entered into Data Processing Agreements with parties who process data on our behalf or in connection with the use of the Padlet Service"
+]
+
+[rubric.data-collection-reasoning]
+value = "mostly"
+notes = [
+  "The policy does a generally good job of listing the reason it collects the personal data that it does; it doesn't collect anything that couldn't be reasonably required to operate the service."
+]
+
+[rubric.noncritical-purposes]
+value = "na"
+notes = [
+  "The policy does not specify any non-critical uses of personal data."
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "We may disclose personal information if necessary to comply with the law, such as complying with a subpoena or other legal process. We may need to disclose personal information where, in good faith, we think it is necessary to protect the rights, property, or safety of Padlet, our employees, our community, or others, or to prevent violations of our Terms of Service or other agreements. This includes, without limitation, exchanging information with other companies and organizations for fraud protection or responding to law enforcement and government requests."
+]
+
+[rubric.list-collected]
+value = "generally"
+notes = [
+  "The policy does a generally good job of listing all categories of data it collects, with examples. See \"Information You Give Us\" and \"Information We Track Automatically.\""
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "We may amend this Privacy Policy from time to time. In case of major changes, we will notify users by email addresses provided to us."
+]

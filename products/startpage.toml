@@ -1,0 +1,78 @@
+name = "Startpage.com"
+description = "Startpage.com is a privacy focused search engine."
+slug = "startpage"
+hostnames = [ "startpage.com" ]
+sources = [ "https://www.startpage.com/en/privacy-policy/" ]
+icon = "startpage.png"
+updates = [ ]
+contributors = [ "vutut" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+citations = [
+  "In order to enable the prevention of click fraud, some non-identifying system information is shared, but because we never share personal information or information that could uniquely identify you, the ads we display are not connected to any individual user."
+]
+
+[rubric.security]
+value = "na"
+citations = [
+  "Startpage.com doesn’t log or share your personal information. \r\n"
+]
+
+[rubric.third-party-collection]
+value = "no"
+citations = [
+  "Startpage.com doesn’t log or share your personal information. "
+]
+
+[rubric.history]
+value = "no"
+notes = [ "No date of publication or revisions in the privacy policy." ]
+
+[rubric.data-deletion]
+value = "na"
+citations = [
+  "Startpage.com doesn’t log or share your personal information. "
+]
+
+[rubric.data-breaches]
+value = "na"
+notes = [
+  "No personally identifiable data is collected, thus notification is not possible."
+]
+
+[rubric.third-party-access]
+value = "no"
+citations = [
+  "Startpage.com doesn’t log or share your personal information. "
+]
+
+[rubric.data-collection-reasoning]
+value = "na"
+citations = [
+  "Startpage.com doesn’t log or share your personal information. "
+]
+
+[rubric.noncritical-purposes]
+value = "na"
+citations = [
+  "Startpage.com doesn’t log or share your personal information. "
+]
+
+[rubric.law-enforcement]
+value = "na"
+citations = [
+  "Any request will have to come from Dutch judicial authorities. We’ll only comply if we’re legally obliged to do so. But we’re not likely to receive requests by governments to hand over user data – simply because we don’t have any."
+]
+
+[rubric.list-collected]
+value = "na"
+citations = [
+  "Startpage.com doesn’t log or share your personal information. "
+]
+
+[rubric.revision-notify]
+value = "na"
+citations = [
+  "Startpage.com doesn’t log or share your personal information. "
+]

@@ -1,0 +1,89 @@
+name = "Zoom"
+description = "Zoom is a popular video conferencing and telecommunication service."
+slug = "zoom"
+hostnames = [ "zoom.us" ]
+sources = [ "https://zoom.us/privacy" ]
+icon = "zoom.png"
+updates = [ ]
+contributors = [ "milesmcc" ]
+
+[rubric.behavioral-marketing]
+value = "yes"
+citations = [
+  "Specific Requests. In addition to the uses described above, Zoom may also receive data from you for specific purposes. When you give it to us, we use the data for that specific purpose: [...] To personalize marketing communications and website content based on your preferences, such as in response to your request for specific information on products and services that may be of interest."
+]
+notes = [
+  "The data used for this kind of targeting is only collected from the marketing site, not the services."
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "Zoom is committed to protecting your personal data. We use a combination of industry-standard security technologies, procedures, and organizational controls and measures to protect your data from unauthorized access, use, or disclosure. \r\n\r\nWe recommend you take every precaution in protecting your data when you are on the Internet. For example, change your passwords often, use a combination of upper and lower-case letters, numbers, and symbols when creating passwords, and make sure you use a secure browser. If you have any questions about the security of your data, please contact  our security team at security@zoom.us"
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "(In table \"Data we may obtain about you\")\r\n\r\nThird Parties --- Data Enrichment services, Mailing Lists, Public Sources --- Send you marketing communications, unless you tell us not to (or if you say it’s OK, i.e., opt-in); Provide tailored information based on your interests\r\n"
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [
+  "If we make any material changes to the way we handle personal data as described here, we will notify you by posting an updated notice on our website. We encourage you to review this page regularly for the latest information on our privacy practices. The effective date at the top of this policy indicates when the policy was last revised."
+]
+
+[rubric.data-deletion]
+value = "yes-automated"
+citations = [
+  "We will retain personal data collected for as long as required to do what we say we will in this policy, unless a longer retention period is required by law. Customers can delete their own content."
+]
+notes = [
+  "It is unclear whether this applies to data collected for marketing."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "The policy has no mention of a data breach disclosure protocol."
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = [
+  "Data we may obtain about you: Data collected through the use of cookies and pixels (Data collected from tools such as Google Analytics and Google Ads)"
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+notes = [
+  "The privacy policy contains several tables that lay out the types of data collected and how it's used."
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-some"
+citations = [
+  "[We send] you marketing communications, unless you tell us not to (or if you say it’s OK, i.e., opt-in)\r\n\r\nYou have choices about what cookies can be used. You can adjust cookie settings by turning off optional cookies in your browser’s setting or by using our Cookie Preferences link at the bottom of the Zoom homepage. To ensure that you do not receive Advertising Cookies, you can adjust the slider at the Cookie Preferences link to “Required Cookies/CCPA Opt-Out”.\r\n\r\nBecause of CCPA’s broad definition, as is the case with many providers since the CCPA became law, we provide a “Do Not Sell My Personal Information” link at the bottom of our marketing sites. You can use this link to change your Cookie Preferences and opt out of the use of these advertising tools. If you opt out, Personal Data that was used by these tools will no longer be shared with third parties in a way that constitutes a “sale” under CCPA."
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "In certain limited circumstances, courts, law enforcement agencies, regulatory agencies, or security authorities in those other countries may be entitled to access your personal data.\r\n\r\nIn certain situations, Zoom may be required to disclose personal data in response to valid and lawful requests by public authorities or pursuant to requests from law enforcement."
+]
+
+[rubric.list-collected]
+value = "generally"
+notes = [
+  "While the policy is relatively clear about the data it collects, it uses ambiguous language like \"such as\" to avoid concrete statements."
+]
+
+[rubric.revision-notify]
+value = "no"
+citations = [
+  "If we make any material changes to the way we handle personal data as described here, we will notify you by posting an updated notice on our website."
+]
+notes = [
+  "Users are not actively notified; changes are announced via a banner on their website. (Few users interact with Zoom via the site; most use a desktop/mobile app.)"
+]

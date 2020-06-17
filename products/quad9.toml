@@ -1,0 +1,74 @@
+name = "Quad9"
+description = "Quad9 is a nonprofit organization supported by IBM, Packet Clearing House, Global Cyber Alliance, and many other cybersecurity organizations for the purpose of operating a privacy-and-security-centric public DNS resolver."
+slug = "quad9"
+hostnames = [ "quad9.net" ]
+sources = [ "https://quad9.net/policy/" ]
+icon = "quad9.png"
+updates = [ ]
+contributors = [ "ibarakaiev", "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+citations = [
+  "Except as described in this Data Policy, Quad9 does not intentionally share, sell, or rent individual personal information associated with the requestor (i.e. source IP address or any other information that can positively identify the system using our infrastructure) with anyone without your permission."
+]
+
+[rubric.security]
+value = "na"
+citations = [
+  "Quad9 believes that privacy and control of your personal information is critical to your trust and therefore to the success of the system. Quad9 does not store PII IP address data on permanent storage methods (disk) or transmit that data out of the datacenter in which the query was received. All logging and inter-datacenter traffic is encrypted. Quad9 makes available encryption between clients and the Quad9 system to further protect against data interception or modification."
+]
+
+[rubric.third-party-collection]
+value = "no"
+citations = [
+  "As an open DNS resolver, there is no signup or requirement to disclose PII to us other than that which is provided by accessing the service."
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [ "Updated February 7, 2018." ]
+
+[rubric.data-deletion]
+value = "na"
+notes = [
+  "The only personally identifiable data that Quad9 collects is IP addresses; however, they are encrypted."
+]
+
+[rubric.data-breaches]
+value = "na"
+notes = [ "No contact information is collected." ]
+
+[rubric.third-party-access]
+value = "no"
+citations = [
+  "Except as described in this Data Policy, Quad9 does not intentionally share, sell, or rent individual personal information associated with the requestor (i.e. source IP address or any other information that can positively identify the system using our infrastructure) with anyone without your permission.\r\n\r\nQuad9 DNS Services generate and share high level anonymized aggregate statistics including threat metrics on threat type, geolocation, and if available, sector, as well as other vertical metrics including performance metrics on the Quad9 DNS Services (i.e. number of threats blocked, infrastructure uptime) when available with the Quad9 threat intelligence (TI) partners, academic researchers, or the public.\r\n\r\nQuad9 DNS Services share anonymized data on specific domains queried (records such as domain, timestamp, geolocation, number of hits, first seen, last seen) with its threat intelligence partners. Quad9 DNS Services also builds, stores, and may share certain DNS data streams which store high level information about domain resolved, query types, result codes, and timestamp. These streams do not contain IP address information of requestor and cannot be correlated to IP address or other PII."
+]
+
+[rubric.data-collection-reasoning]
+value = "na"
+notes = [
+  "The service only collects technical data needed to operate."
+]
+
+[rubric.noncritical-purposes]
+value = "na"
+notes = [
+  "All data used is explicitly for the purpose of providing the service."
+]
+
+[rubric.law-enforcement]
+value = "na"
+citations = [
+  "\"It may be required by law, litigation, legal process, and/or legally binding requests from public and governmental authorities within or outside your country of residence for Quad9 to disclose your personal information.\"\r\n\r\n\"Quad9 believes that privacy and control of your personal information is critical to your trust and therefore to the success of the system. Quad9 does not store PII IP address data on permanent storage methods (disk) or transmit that data out of the datacenter in which the query was received. All logging and inter-datacenter traffic is encrypted. Quad9 makes available encryption between clients and the Quad9 system to further protect against data interception or modification.\""
+]
+
+[rubric.list-collected]
+value = "exhaustively"
+citations = [
+  "As an open DNS resolver, there is no signup or requirement to disclose PII to us other than that which is provided by accessing the service. The only method by which Quad9 can identify end user requests is by the IP address of the client. IP addresses may represent individual persons or devices, or they may represent (via NAT or forwarding resolvers) large groups of end users.  Quad9 does not and cannot distinguish between single and multiple users behind a single IP address. [...]  Our normal course of data management does not have any IP address information or other PII logged to disk or transmitted out of the location in which the query was received.\r\n[...]\r\n\r\nWhen you use Quad9 DNS Services, here is the full list of items that are included in our logs:\r\n- Request domain name, e.g. example.net\r\n- Record type of requested domain, e.g. A, AAAA, NS, MX, TXT, etc.\r\n- Transport protocol on which the request arrived, i.e. TCP, UDP, and encryption status of the protocol\r\n- Origin IP general geolocation information: i.e. geocode, region ID, city ID, and metro code\r\n- Protocol version IP address – IPv4, or IPv6\r\n- Response code sent, e.g. SUCCESS, SERVFAIL, NXDOMAIN, etc.\r\n- Absolute arrival time\r\n- Name of the Quad9-operated machine that processed this request\r\n- Quad9 target IP to which this request was addressed (no relation to the user’s IP address)\r\n\r\nWe may keep the following data as summary information, including all the above EXCEPT for data about the DNS record requested:\r\n- Currently-advertised BGP-summarized IP prefix/netmask of apparent client origin\r\n- Autonomous system number (BGP ASN) of apparent client origin"
+]
+
+[rubric.revision-notify]
+value = "na"
+notes = [ "No contact information is ever collected." ]

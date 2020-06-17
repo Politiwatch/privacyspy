@@ -33,6 +33,7 @@ describe("Product", () => {
         );
       });
 
+      /*
       describe(`has a valid icon in the 'icons/' directory`, () => {
         test("icon exists", () => {
           expect(product.icon).not.toBeUndefined();
@@ -43,7 +44,7 @@ describe("Product", () => {
         test(`${product.name} icon is smaller than 30kb`, () => {
           expect(fs.statSync(product.icon).size).toBeLessThan(30000);
         });
-      });
+      });*/
       if (product.parent != null) {
         describe(`is a child product`, () => {
           test(`has no link(s) to original policies`, () => {

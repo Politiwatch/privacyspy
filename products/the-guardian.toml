@@ -1,0 +1,76 @@
+name = "The Guardian"
+description = "The Guardian is a leading British news organization with worldwide coverage."
+slug = "the-guardian"
+hostnames = [ "theguardian.co.uk" ]
+sources = [ "https://www.theguardian.com/help/privacy-policy" ]
+icon = "the-guardian.png"
+updates = [ ]
+contributors = [ "vutut" ]
+
+[rubric.behavioral-marketing]
+value = "yes-opt-out"
+citations = [ "We use personalised online advertising on our sites. " ]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "We have implemented appropriate technical and organisational controls to protect your personal data against unauthorised processing and against accidental loss, damage or destruction. "
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "We also use information on the content you have viewed on our sites and apps and your interaction with the content to add you to groups with similar interests and preferences, so that we can make our online advertising more relevant. Sometimes we use data about your interests or demographics that third parties have collected from you online to add to these groups."
+]
+
+[rubric.history]
+value = "yes"
+citations = [
+  "Changes to the Privacy Policy\r\n\r\nIf we decide to change our privacy policy we will post the changes here. If the changes are significant, we may also choose to email all our registered users with the new details. If required by law, we will get your permission or give you the opportunity to opt out of any new uses of your data."
+]
+
+[rubric.data-deletion]
+value = "yes-contact"
+citations = [
+  "You also have the right to ask us to delete your personal data or restrict how it is used. [...] If you want to make any of these requests, please contact dataprotection@theguardian.com.\r\n\r\n[...]\r\n\r\nThere may be exceptions to the right to erasure for specific legal reasons which, if applicable, we will set out for you in response to your request."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [ "The policy does not mention a breach disclosure protocol." ]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = [
+  "We may also share online data collected through cookies and similar technology with our advertising partners."
+]
+
+[rubric.data-collection-reasoning]
+value = "somewhat"
+citations = [
+  "We collect personal data when you sign up for our services and when you browse our sites or use our apps. This information is used to provide our journalism and other services, display advertising and analyse how visitors use our sites or apps."
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-all"
+notes = [
+  "The Guardian provides a detailed cookie notice and privacy settings on its site."
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "We may reveal your personal data to any law enforcement agency, court, regulator, government authority or other organisation if we are required to do so to meet a legal or regulatory obligation, or otherwise to protect our rights or the rights of anyone else."
+]
+
+[rubric.list-collected]
+value = "generally"
+notes = [
+  "The policy lists examples but uses the word \"including\" which allows for collection of unlisted data."
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "If we decide to change our privacy policy we will post the changes here. If the changes are significant, we may also choose to email all our registered users with the new details. If required by law, we will get your permission or give you the opportunity to opt out of any new uses of your data."
+]

@@ -1,0 +1,80 @@
+name = "VSCO"
+description = "VSCO is an image sharing social network and photography platform for iOS and Android."
+slug = "vsco"
+hostnames = [ "vsco.co" ]
+sources = [ "https://vsco.co/about/privacy_policy" ]
+icon = "vsco.png"
+updates = [ ]
+contributors = [ "YuriiStasiuk" ]
+
+[rubric.behavioral-marketing]
+value = "yes"
+citations = [
+  "Ads on our Service — We may permit third party online advertising networks to collect information about your use of our website over time so that they may play or display ads that may be relevant to your interests on our Service or on other websites or services. "
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "Keeping your information safe — VSCO cares about the security of your information, and **uses commercially reasonable safeguards** to preserve the integrity and security of all information collected through the Service. However, VSCO cannot ensure or warrant the security of any information you transmit to VSCO or guarantee that information on the Service may not be accessed, disclosed, altered, or destroyed. Your privacy settings may also be affected by changes to the functionality of VSCO’s distributors, such as social networks. VSCO is not responsible for the functionality or security measures of any third party."
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "We may receive information about you from third parties. For example, if you access our websites or Service through a third-party connection or log-in, for example, through Facebook Connect, by “following,” “liking,” adding the VSCO application, linking your account to the VSCO Service, etc., that third party may pass certain information about your use of its service to VSCO. This information could include, but is not limited to any information that you have permitted the third party to share with us, and any information you have made public in connection with that service. We may use this information to find your contacts on the Service, to let you know what your contacts are doing on the Service, and to let your contacts know what you are doing on the Service. We may also use it to suggest additional users or friends you may want to follow or connect with. You should always review, and if necessary, adjust your privacy settings on third-party websites and services before linking or connecting them to VSCO’s websites or Service. You may also unlink your third party account from the Service by adjusting your settings on the third party service."
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [
+  "VSCO may, in its sole discretion, modify or update this Privacy Policy from time to time, and so you should review this page periodically. When we change the policy in a material manner, we will update the ‘last modified’ date at the bottom of this page."
+]
+
+[rubric.data-deletion]
+value = "no"
+notes = [
+  "The policy does not specify whether a user can delete and export their personal data."
+]
+
+[rubric.data-breaches]
+value = "eventually"
+citations = [
+  "In the event that any information under our control is compromised as a result of a breach of security, VSCO will take reasonable steps to investigate the situation and where appropriate, notify those individuals whose information may have been compromised and take other steps, in accordance with any applicable laws and regulations."
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = [
+  "We may share your information with third-party business partners, consultants and service providers that perform services on our behalf for the purpose of providing the Service to you (e.g., email providers, advertising networks, content or service fulfillment, analytics companies, etc.). Those business partners will be given limited access to your information that is reasonably necessary to deliver the Service. We may also share your information with our business partners who offer a service to you jointly with us, for example, when running a co-sponsored contest or promotion. From time to time, we may share your information with third parties who we think may offer you products or services you may enjoy."
+]
+
+[rubric.data-collection-reasoning]
+value = "mostly"
+citations = [
+  "We use or may use the data collected through cookies, log files, device identifiers, location data and clear gifs information to: (a) remember information so that you will not have to re-enter it during your visit or the next time you visit the site; (b) provide custom, personalized content and information, including advertising; (c) to provide and monitor the effectiveness of our Service; (d) monitor aggregate metrics such as total number of visitors, traffic, and demographic patterns; (e) diagnose or fix technology problems; (f) help you efficiently access your information after you sign in; and (h) track User Content and Users to the extent necessary to comply as a service provider with the Digital Millennium Copyright Act; and (i) to provide advertising to your browser or device."
+]
+
+[rubric.noncritical-purposes]
+value = "no"
+notes = [
+  "Because third-party advertisers are on the platform (and there is no way to opt-out of advertising), the user cannot control whether their personal data is used or collected for non-critical purposes."
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "VSCO will disclose your information where required to do so by law or subpoena or if we reasonably believe that such action is necessary to (a) comply with the law and the reasonable requests of law enforcement; (b) to enforce our Terms of Use, or to protect the security or integrity of our Service; and/or (c) to exercise or protect the rights, property, or personal safety of VSCO, our Users or others."
+]
+
+[rubric.list-collected]
+value = "generally"
+citations = [
+  "Analytics information — We may directly collect analytics data, or use third-party analytics tools to help us measure traffic and usage trends for the Service. These tools collect information sent by your browser as part of a web page request, including the web pages you visit, your browser add-ons, your browser’s width and height, and other information that assists us in improving the Service. We may collect and use this analytics information in aggregate form such that it cannot reasonably be manipulated to identify any particular individual user.\r\nCookies information — When you visit the Service, we and our third party partners may send one or more cookies — a small text file containing a string of alphanumeric characters — to your computer that uniquely identifies your browser and lets VSCO help you log in faster and enhance your navigation through the site. A cookie may also convey information to us about how you use the Service (e.g., the pages you view, the links you click and other actions you take on the Service), and allow us or our business partners to track your usage of the Service over time. You can reset your web browser to refuse all cookies or to indicate when a cookie is being sent. However, some features of the Service may not function properly if the ability to accept cookies is disabled. You can find out more about our use of cookies and similar technologies in our Cookie Policy.\r\nLog file information — Log file information is automatically reported by your browser each time you access a web page. When you use our Service, our servers automatically record certain log file information. These server logs may include anonymous information such as your web request, Internet Protocol (“IP”) address, browser type, referring / exit pages and URLs, number of clicks and how you interact with links on the Service, domain names, landing pages, pages viewed, and other such information.\r\nClear gifs/web beacons information — When you use the Service, we may employ clear gifs (also known as web beacons) which are used to anonymously track the online usage patterns of our Users anonymously. In addition, we may also use clear gifs in HTML-based emails sent to our Users to track which emails are opened and which links are clicked by recipients. The information is allows for more accurate reporting and improvement of the Service.\r\nDevice identifiers — When you access the Service by or through a mobile device (including but not limited to smart-phones or tablets) or computer, we may access, collect, monitor and/or remotely store one or more “device identifiers.” Device identifiers are small data files or similar data structures stored on or associated with your mobile device, which uniquely identify your mobile device. A device identifier may be data stored in connection with the device hardware, data stored in connection with the device’s operating system or other software, or data sent to the device by VSCO. A device identifier may convey information to us about how you browse and use the Service. A device identifier may remain persistently on your device, to help you log in faster and enhance your navigation through the Service. Some features of the Service may not function properly if use or availability of device identifiers is impaired or disabled.\r\nLocation data — When you access the Service by or through a mobile device, we may access, collect, monitor and/or remotely store “location data,” which may include GPS coordinates (e.g. latitude and/or longitude) or similar information regarding the location of your mobile device. Location data may convey to us information about how you browse and use the Service. Some features of the Service, particularly location-based services, may not function properly if use or availability of location data is impaired or disabled.\r\nAds on our Service — We may permit third party online advertising networks to collect information about your use of our website over time so that they may play or display ads that may be relevant to your interests on our Service or on other websites or services. Typically, these third-party ad servers or ad networks use cookies and other tracking technology to compile information about your browser’s or device’s visits and usage patterns on the Service and on other sites around the Web, to send you the ads that appear on the Service, to measure the effectiveness of their ads and to personalize the advertising content. The VSCO Privacy Policy does not apply to, and we cannot control the activities of, third-party advertisers. For more information about your choices regarding the use of your personal information for online advertising, please see our Cookie Policy."
+]
+
+[rubric.revision-notify]
+value = "no"
+citations = [
+  "VSCO may, in its sole discretion, modify or update this Privacy Policy from time to time, and so you should review this page periodically. When we change the policy in a material manner, we will update the ‘last modified’ date at the bottom of this page."
+]

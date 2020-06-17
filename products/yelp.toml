@@ -1,0 +1,93 @@
+name = "Yelp"
+description = "Yelp is a business directory service that provides crowdfunded reviews for its listings."
+slug = "yelp"
+hostnames = [ "yelp.com" ]
+sources = [ "https://www.yelp.com/tos/privacy_en_us_20190329" ]
+icon = "yelp.png"
+updates = [ ]
+contributors = [ "kulchynska" ]
+
+[rubric.behavioral-marketing]
+value = "yes"
+citations = [
+  "\tIntended to make advertising more relevant to users and more valuable to advertisers. For example, we may use Cookies to serve you interest-based ads, such as ads that are displayed to you based on your visits to other websites, or to tell us if you have recently clicked on an ad."
+]
+notes = [
+  "While Yelp allows users to opt-out of marking communications, there is no opt-out mechanism for the personal targeting of ads on the platform itself."
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "We use various safeguards to protect the personal information submitted to us, both during transmission and once we receive it. However, no method of transmission over the Internet or via mobile device, or method of electronic storage, is 100% secure. Therefore, while we strive to use commercially acceptable means to protect your personal information, we cannot guarantee its absolute security."
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "Third Party Accounts: If you sign up for, or log into, Yelp using a third party service like Facebook or Google, or link your Yelp account to your account with a third party service like Facebook, Instagram or Twitter, we may receive information about you from such third party service. If you post content to a third party service through the Service, that third party service will also receive that content, which will be visible to anyone that has access to it through that third party service.\r\n\r\n We may rely on third party providers to support or provide some of the services that are available through the Service, such as reservations and food delivery. We may also rely on third party providers to perform certain services for us in connection with your use of the Service, such as communications and hosting services, network security, technical and customer support, tracking and reporting functions, quality assurance testing, payment processing, **our own marketing of the Service,** and other functions. **We may share information from or about you with these third party providers so that they can perform their services or complete your requests.**"
+]
+notes = [
+  "However, they do not disclose your personal information to third parties for the purpose of directly marketing their goods or services to you unless you first agree to such disclosure."
+]
+
+[rubric.history]
+value = "yes"
+citations = [
+  "Last Updated on March 29, 2019. This Privacy Policy is effective March 29, 2019 for all users. To review the previous policy, please click here."
+]
+
+[rubric.data-deletion]
+value = "no"
+citations = [
+  "You can close your account by clicking here. We will remove certain public posts from view and/or dissociate them from your account profile, but we may retain information about you for the purposes authorized under this Privacy Policy unless prohibited by law. For example, we may retain information to prevent, investigate, or identify possible wrongdoing in connection with the Service or to comply with legal obligations. Please note that businesses cannot remove their business listings, ratings, or reviews by closing their accounts."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [ "The policy doesn't specify a data breach protocol." ]
+
+[rubric.third-party-access]
+value = "yes-specified-noncritical"
+citations = [
+  "Advertisers: We may allow third parties to use Cookies through the Service to collect the same type of information for the same purposes as we do. In doing so, we adhere to the Digital Advertising Alliance’s Self-Regulatory Principles for Online Behavioral Advertising. **Third parties may be able to associate the information they collect with other information they have about you from other sources.** We do not necessarily have access to or control over the Cookies they use, but you may be able to opt out of some of their practices by visiting the following links: Network Advertising Initiative, Omniture and Digital Advertising Alliance"
+]
+notes = [
+  "Parties are specified in the \"Third Party Terms\" section of Service Terms. You can find them by following the link https://www.yelp.com/static?p=thirdpartyterms"
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  " We use that information to provide the Service’s functionality, fulfill your requests, improve the Service’s quality, engage in research and analysis relating to the Service, personalize your experience, track usage of the Service, provide feedback to third party businesses that are listed on the Service, display relevant advertising, market the Service, provide customer support, message you, back up our systems, allow for disaster recovery, enhance the security of the Service, and comply with legal obligations. Even when we do not retain such information, it still must be transmitted to our servers initially and stored long enough to process."
+]
+notes = [
+  "Yelp privacy policy lists all personal data it collects and the purposes of such collection in paragraph 1. INFORMATION WE COLLECT AND HOW WE USE IT"
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-some"
+citations = [
+  " you may be able to opt-out of some of their practices by visiting the following links: Network Advertising Initiative, Omniture and Digital Advertising Alliance. Please note that opting out does not prevent the display of all advertisements to you."
+]
+notes = [
+  "While Yelp allows users to opt-out of marketing communication, there is no opt-out for third-party targeting advertising or tracking cookies."
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "We may investigate and disclose information from or about you if we have a good faith belief that such investigation or disclosure: (a) is reasonably necessary to comply with legal processes and law enforcement instructions and orders, such as a search warrant, subpoena, statute, judicial proceeding, or other legal process or law enforcement requests served on us; (b) is helpful to prevent, investigate, or identify possible wrongdoing in connection with the Service; or (c) protects our rights, reputation, property, or that of our users, affiliates, or the public, such as disclosures in connection with Yelp’s Consumer Alerts program. If you flag or otherwise complain to us about content through the Service, we may share the substance of your complaint with the contributor of that content in order to provide an opportunity for the contributor to respond. "
+]
+
+[rubric.list-collected]
+value = "generally"
+citations = [
+  "Account Information: If you create a Yelp account, we may store and use the information you provide during that process, such as your full name, email address, zip code, physical address, and other information you may provide with your account, such as your gender, phone number, and birth date.\r\n\r\nPublic Content: Your contributions to the Service are intended for public consumption and are therefore viewable by the public, including your photos, ratings, reviews, tips, lists, Collections, compliments, Ask the Community posts, Yelp Talk posts, and edits to business listing information\r\n\r\nTransactions: If you initiate a transaction through the Service, such as a reservation or purchase, we may collect and store information about you, such as your name, phone number, address, email, and payment information (such as a credit card number and expiration date), as well as any other information you provide to us\r\n\r\nWe may also store information that your computer or mobile device may provide to us in connection with your use of the Service, such as your browser type, type of computer or mobile device, browser language, IP address, WiFi information such as SSID, mobile carrier, phone number, unique device identifier, advertising identifier, location (including geolocation, beacon based location, and GPS location), and requested and referring URLs and mobile applications\r\n\r\nThe information that we collect and store through those different uses may be cross-referenced and combined, and your contributions through one Yelp platform will typically be similarly visible and accessible through all other Yelp platforms.\r\n\r\n We may also receive and store your location whenever our mobile applications are running, including when running in the background, if you enable our mobile apps to access such information in the course of using the Service"
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "If we make material changes to this Privacy Policy, we will notify you by email or by posting a notice on the Service prior to or on the effective date of the changes. By continuing to access or use the Service after those changes become effective, you acknowledge the revised Privacy Policy."
+]

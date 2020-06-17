@@ -1,0 +1,83 @@
+name = "Instagram"
+description = "Instagram is a popular photo sharing social network owned and operated by Facebook."
+slug = "instagram"
+hostnames = [ "instagram.com" ]
+sources = [ "https://help.instagram.com/519522125107875" ]
+icon = "instagram.png"
+updates = [ ]
+contributors = [ "milesmcc" ]
+
+[rubric.behavioral-marketing]
+value = "yes"
+citations = [
+  "\"We use the information we have to deliver our Products, including to personalize features and content (including your News Feed, Instagram Feed, Instagram Stories and ads) and make suggestions for you (such as groups or events you may be interested in or topics you may want to follow) on and off our Products. To create personalized Products that are unique and relevant to you, we use your connections, preferences, interests and activities based on the data we collect and learn from you and others (including any data with special protections you choose to provide); how you use and interact with our Products; and the people, places, or things you're connected to and interested in on and off our Products. Learn more about how we use information about you to personalize your Facebook and Instagram experience, including features, content and recommendations in Facebook Products; you can also learn more about how we choose the ads that you see.\""
+]
+
+[rubric.security]
+value = "no"
+notes = [
+  "The policy does not mention its steps to ensure data security."
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "\"Advertisers, app developers, and publishers can send us information through Facebook Business Tools they use, including our social plug-ins (such as the Like button), Facebook Login, our APIs and SDKs, or the Facebook pixel. These partners provide information about your activities off Facebook—including information about your device, websites you visit, purchases you make, the ads you see, and how you use their services—whether or not you have a Facebook account or are logged into Facebook. For example, a game developer could use our API to tell us what games you play, or a business could tell us about a purchase you made in its store. We also receive information about your online and offline actions and purchases from third-party data providers who have the rights to provide us with your information.\""
+]
+
+[rubric.history]
+value = "last-modified"
+notes = [
+  "While the policy lists the date it was last modified, it does not show a full revision history."
+]
+
+[rubric.data-deletion]
+value = "yes-automated"
+citations = [
+  "\"We provide you with the ability to access, rectify, port and erase your data. Learn more in your Facebook Settings and Instagram Settings.\""
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "The policy does not require that users be notified in case of a data breach."
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified-critical"
+citations = [
+  "\"We work with third-party partners who help us provide and improve our Products or who use Facebook Business Tools to grow their businesses, which makes it possible to operate our companies and provide free services to people around the world. We don't sell any of your information to anyone, and we never will. We also impose strict restrictions on how our partners can use and disclose the data we provide.\""
+]
+notes = [
+  "While Instagram does provide personal data to third-party partners, it only shares _personal_ information (non-aggregated) with its service providers who are bound to restrictive privacy agreements."
+]
+
+[rubric.data-collection-reasoning]
+value = "mostly"
+notes = [
+  "To Instagram's credit, they are transparent about why they collect the data that they do—even if that data is used for less-than-ideal purposes like behavioral marketing."
+]
+
+[rubric.noncritical-purposes]
+value = "no"
+notes = [
+  "There is no way to opt-out of personalized ads on Instagram, for example."
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "\"We access, preserve and share your information with regulators, law enforcement or others [...] In response to a legal request (like a search warrant, court order or subpoena) if we have a good faith belief that the law requires us to do so. This may include responding to legal requests from jurisdictions outside of the United States when we have a good-faith belief that the response is required by law in that jurisdiction, affects users in that jurisdiction, and is consistent with internationally recognized standards.\""
+]
+
+[rubric.list-collected]
+value = "generally"
+notes = [
+  "While the policy is clear about the data it collects, it is not explicit. It uses a variety of phrases (like \"such as\") to avoid making absolute statements about collected information."
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "\"We'll notify you before we make changes to this policy and give you the opportunity to review the revised policy before you choose to continue using our Products.\""
+]
