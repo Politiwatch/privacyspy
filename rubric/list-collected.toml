@@ -1,5 +1,5 @@
 category = "collection"
-slug = "personal-data-list"
+slug = "list-collected"
 text = "Does the policy list the personal data it collects?"
 notes = []
 points = 10

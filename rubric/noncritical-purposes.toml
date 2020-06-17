@@ -1,6 +1,6 @@
 category = "collection"
-slug = "noncritical-purposes-control"
-text = "Does the service allow the user to control whether personal data is used or collected for non-critical purposes?"
+slug = "noncritical-purposes"
+text = "Does the service allow the user to control whether personal data is collected or used for non-critical purposes?"
 notes = ["Some services allow users to opt-out or opt-in to of non-critical collection or use of personal data, such as collecting data for personalized advertisements."]
 points = 10
 

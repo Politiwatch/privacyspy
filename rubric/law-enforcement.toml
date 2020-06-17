@@ -1,7 +1,7 @@
 category = "handling"
 slug = "law-enforcement"
 text = "When does the policy allow law enforcement access to personal data?"
-notes = ["Even if there is a reasonable delay before the data is fully deleted (as is common), the data still counts as \"permanently deleted\" and satisfies the parameters for this question."]
+notes = []
 points = 5
 
 [[options]]

@@ -1,5 +1,5 @@
 category = "handling"
-slug = "account-deletion"
+slug = "data-deletion"
 text = "Does the service allow you to permanently delete your personal data?"
 notes = ["Even if there is a reasonable delay before the data is fully deleted (as is common), the data still counts as \"permanently deleted\" and satisfies the parameters for this question."]
 points = 5
