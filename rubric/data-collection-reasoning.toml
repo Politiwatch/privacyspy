@@ -1,0 +1,32 @@
+category = "collection"
+slug = "data-collection-reasoning"
+text = "Is it clear why the service collects the personal data that it does?"
+notes = []
+points = 10
+
+[[options]]
+id = "no"
+text = "No"
+percent = 0
+
+[[options]]
+id = "somewhat"
+text = "Somewhat"
+percent = 30
+
+[[options]]
+id = "mostly"
+text = "Mostly"
+percent = 70
+
+[[options]]
+id = "yes"  
+text = "Yes"
+percent = 100
+
+[[options]]
+id = "na"
+text = "N/A"
+description = "The service doesn't collect any personal information."
+percent = 100
+

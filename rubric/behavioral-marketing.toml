@@ -1,0 +1,25 @@
+category = "handling"
+slug = "behavioral-marketing"
+text = "Does the policy allow personally-targeted or behavioral marketing?"
+notes = []
+points = 10
+
+[[options]]
+id = "yes"
+text = "Yes"
+percent = 0
+
+[[options]]
+id = "yes-opt-out"
+text = "Yes, but you may opt-out"
+percent = 35
+
+[[options]]
+id = "yes-opt-in"
+text = "Yes, but you must opt-in"
+percent = 70
+
+[[options]]
+id = "no"
+text = "No"
+percent = 100

@@ -16,13 +16,13 @@
 
   <hr class="h-16 sep">
 
-  <div class="grid gap-6 md:hidden">
+  <div class="grid gap-6 sm:hidden">
     {{#each (first featured 3) as |product|}}
     {{> includes/card product=product }}
     {{/each}}
   </div>
 
-  <div class="hidden grid-cols-3 gap-6 md:grid">
+  <div class="hidden grid-cols-2 gap-6 md:grid-cols-3 sm:grid">
     {{#each featured as |product|}}
     {{> includes/card product=product }}
     {{/each}}

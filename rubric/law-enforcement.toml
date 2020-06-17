@@ -1,0 +1,38 @@
+category = "handling"
+slug = "law-enforcement"
+text = "When does the policy allow law enforcement access to personal data?"
+notes = ["Even if there is a reasonable delay before the data is fully deleted (as is common), the data still counts as \"permanently deleted\" and satisfies the parameters for this question."]
+points = 5
+
+[[options]]
+id = "always"
+text = "Always"
+description = "This includes cases in which law enforcement either runs the service or has a known backdoor into (or relationship with) the service."
+percent = 0
+
+[[options]]
+id = "unspecified"
+text = "Not specified"
+percent = 0
+
+[[options]]
+id = "reasonable"
+text = "When reasonably requested"
+percent = 60
+
+[[options]]
+id = "strict"
+text = "Only when required by a court order or subpoena"
+percent = 80
+
+[[options]]
+id = "na"
+text = "N/A (no personal data to share)"
+description = "The service would have no personal data to share with law enforcement."
+percent = 100
+
+[[options]]
+id = "never"
+text = "Never (special legal jurisdiction)"
+description = "The service operates in a jurisdiction in which sharing data with law enforcement is never required."
+percent = 100

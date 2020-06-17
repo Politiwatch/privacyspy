@@ -1,0 +1,34 @@
+category = "collection"
+slug = "personal-data-list"
+text = "Does the policy list the personal data it collects?"
+notes = []
+points = 10
+
+[[options]]
+id = "no"
+text = "No"
+description = "The policy does not claim to not collect personal data, but it also doesn't provide any meaningful insight into the types of personal data it collects."
+percent = 0
+
+[[options]]
+id = "summarily"
+text = "Only summarily"
+description = "The policy uses overly vague language to provide a summary of the types of collected personal data."
+percent = 30
+
+[[options]]
+id = "generally"
+text = "Yes, generally"
+description = "All general categories of collected personal data are listed, though not all types of personal data are explicitly mentioned (for example, the list might use a phrase like 'such as' when listing types of personal data)."
+percent = 70
+
+[[options]]
+id = "exhaustively"
+text = "Yes, exhaustively"
+description = "All types of collected personal data are listed specifically"
+percent = 100
+
+[[options]]
+id = "na"
+text = "N/A (no personal data is collected)"
+percent = 100
