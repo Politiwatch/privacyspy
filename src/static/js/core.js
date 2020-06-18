@@ -16,7 +16,7 @@ var isSafari =
     return p.toString() === "[object SafariRemoteNotification]";
   })(
     !window["safari"] ||
-    (typeof safari !== "undefined" && safari.pushNotification)
+      (typeof safari !== "undefined" && safari.pushNotification)
   );
 
 // Internet Explorer 6-11
@@ -50,11 +50,10 @@ function installBrowserExtension() {
   }
 }
 
-
 // MOBILE DROPDOWNS
 
 function closeAllMobileDropdowns() {
-  document.querySelectorAll('.mobile-dropdown').forEach(dropdown => {
+  document.querySelectorAll(".mobile-dropdown").forEach((dropdown) => {
     dropdown.classList.add("hidden");
   });
 }
@@ -77,16 +76,19 @@ function hasParentOfClass(element, classname) {
   return element.parentNode && hasParentOfClass(element.parentNode, classname);
 }
 
-window.addEventListener("click", ev => {
-  if(document.activeElement.classList.contains("dropdown-toggler")) {
-    return;
+window.addEventListener("click", (ev) => {
+  ev = ev || window.event;
+  if (ev.target.classList.contains("dropdown-toggler")) {
+    return 0;
   }
 
-  if (document.activeElement === null || !hasParentOfClass(document.activeElement, "mobile-dropdown")) {
+  if (
+    document.activeElement === null ||
+    !hasParentOfClass(document.activeElement, "mobile-dropdown")
+  ) {
     closeAllMobileDropdowns();
   }
 });
-
 
 // RUBRIC EXPANSIONS
 
