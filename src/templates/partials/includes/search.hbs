@@ -1,9 +1,9 @@
 <div class="relative w-2/3 sm:w-full" style="z-index: 10;">
-    <button class="p-1 text-gray-600 outline-none appearance-none fas fa-search md:hidden dropdown-toggler" title="Open search..." tabindex="0"
-        onclick="toggleMobileDropdown('#search-container')"></button>
+    <button class="p-1 text-gray-600 outline-none appearance-none fas fa-search md:hidden dropdown-toggler"
+        title="Open search..." tabindex="0" onclick="toggleMobileDropdown('search-container')"></button>
     <div class="hidden mobile-dropdown focus-within:block md:block" id="search-container">
         <input
-            class="absolute right-0 w-64 h-8 px-2 py-1 mt-2 placeholder-gray-400 border border-gray-200 rounded outline-none appearance-none md:mt-0 md:inset-auto md:block md:static hover:border-gray-300 focus:border-gray-400"
+            class="absolute right-0 w-64 h-8 px-2 py-1 mt-2 placeholder-gray-400 border border-gray-200 rounded outline-none appearance-none search-container-focus md:mt-0 md:inset-auto md:block md:static hover:border-gray-300 focus:border-gray-400"
             type="search" placeholder="Search (press /)" id="searchBox" oninput="onSearchInput()">
         <div class="absolute right-0 hidden w-64 mt-12 bg-white border border-gray-200 rounded md:inset-auto md:mt-2 hover:border-gray-300"
             id="searchDropdown">

@@ -59,11 +59,15 @@ function closeAllMobileDropdowns() {
   });
 }
 
-function toggleMobileDropdown(selector) {
-  let comp = document.querySelector(selector);
+function toggleMobileDropdown(id) {
+  let comp = document.getElementById(id);
   if (comp.classList.contains("hidden")) {
     closeAllMobileDropdowns();
     comp.classList.remove("hidden");
+    if(document.querySelector("." + id + "-focus") !== null){
+      console.log("focusing");
+      document.querySelector("." + id + "-focus").focus();
+    }
   } else {
     comp.classList.add("hidden");
   }
