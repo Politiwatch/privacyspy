@@ -7,15 +7,14 @@
     </div>
     <div class="flex-grow">
         <span>{{selection.question.text}}&nbsp;</span>
-        <span class="text-gray-300">{{selection.option.text}}</span>
+        <span class="text-gray-400">{{selection.option.text}}</span>
     </div>
     <div class="flex-shrink-0 pl-4 text-right">
         <span>{{round (multiply (divide selection.option.percent 100) selection.question.points)}}</span><span
-            class="text-gray-300">/{{selection.question.points}}</span>
+            class="text-gray-400">/{{selection.question.points}}</span>
     </div>
 </div>
-<div id="selection-{{selection.question.slug}}"
-    class="hidden h-auto p-4 mt-3 border border-gray-100 rounded">
+<div id="selection-{{selection.question.slug}}" class="hidden h-auto p-4 mt-3 border border-gray-100 rounded">
     {{#if selection.question.notes}}
     <div class="content text-xs text-gray-600 mx-2 mb-4">
         {{#each selection.question.notes as |note|}}

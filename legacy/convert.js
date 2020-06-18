@@ -70,17 +70,19 @@ for (let entry of database) {
     policy["rubric"][question_slug] = rubric_obj;
   }
 
-  policy["updates"] = [];
-  for (let warning of entry["warnings"]) {
-    let update_obj = {
-      title: warning["title"],
-      description: warning["description"],
-      // there are so few products that currently have warnings that it's easier to enter sources and fix dates ourselves
-      date: warning["added"],
-      sources: [],
-    };
+  if (entry["warnings"].length > 0) {
+    policy["updates"] = [];
+    for (let warning of entry["warnings"]) {
+      let update_obj = {
+        title: warning["title"],
+        description: warning["description"],
+        // there are so few products that currently have warnings that it's easier to enter sources and fix dates ourselves
+        date: warning["added"],
+        sources: [],
+      };
 
-    policy["updates"].push(update_obj);
+      policy["updates"].push(update_obj);
+    }
   }
 
   policy["contributors"] = [];

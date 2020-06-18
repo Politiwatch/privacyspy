@@ -10,7 +10,7 @@
         <h3 class="w-11/12 text-md font-regular">{{product.description}}</h3>
         {{#if product.children}}
         <div class="mt-4 text-sm text-center md:text-left">
-          <span class="text-gray-300">This policy also applies to:</span>
+          <span class="text-gray-400">This policy also applies to:</span>
           {{#each product.children}}
           <span>{{this.name}}</span>
           {{/each}}
@@ -22,7 +22,7 @@
       <div class="score-size font-extrabold leading-none md:mb-2 md:my-0 {{ratioColorClass (divide product.score 10)}}">
         {{product.score}}<span class="font-normal text-gray-400">/10</span>
       </div>
-      <a href="/about/#ratings" class="p-0 -mt-2 text-sm text-gray-300 hover:text-blue-500">How we calculate ratings
+      <a href="/about/#ratings" class="p-0 -mt-2 text-sm text-gray-400 hover:text-blue-500">How we calculate ratings
         &rarr;</a>
     </div>
   </header>
@@ -77,11 +77,11 @@
     </section>
     <section class="w-full mt-10 text-center md:text-left md:w-1/5 md:mt-0">
       <div class="mb-6">
-        <p class="text-sm text-gray-300">Last Updated</p>
+        <p class="text-sm text-gray-400">Last Updated</p>
         <p class="mt-1 text-sm text-black">May 5, 2020</p>
       </div>
       <div class="my-6">
-        <p class="text-sm text-gray-300">Sources</p>
+        <p class="text-sm text-gray-400">Sources</p>
         <p>
           {{#each product.sources}}
           <a href="{{this}}" class="mt-1 text-sm hover:text-blue-500" target="_blank">Source
@@ -90,7 +90,7 @@
         </p>
       </div>
       <div class="mb-6">
-        <p class="text-sm text-gray-300">Contributors</p>
+        <p class="text-sm text-gray-400">Contributors</p>
         <p class="mt-1 text-sm text-black">
           {{#each product.contributors as |contributor|}}
           {{contributor.slug}}{{#unless @last}}, {{/unless}}
@@ -99,7 +99,7 @@
       </div>
       {{#if product.children}}
       <div class="my-6">
-        <p class="text-sm text-gray-300">Affected Products</p>
+        <p class="text-sm text-gray-400">Affected Products</p>
         {{#each product.children}}
         <div class="inline-flex flex-row items-center w-auto max-w-full mx-auto mt-1 mb-1 md:mx-0 justify-left">
           <div class="flex items-center w-6 h-6">
