@@ -16,7 +16,7 @@ var isSafari =
     return p.toString() === "[object SafariRemoteNotification]";
   })(
     !window["safari"] ||
-    (typeof safari !== "undefined" && safari.pushNotification)
+      (typeof safari !== "undefined" && safari.pushNotification)
   );
 
 // Internet Explorer 6-11
