@@ -57,12 +57,20 @@ gulp.task(
   )
 );
 
+gulp.task("collect dependencies", () => {
+  return gulp
+    .src([
+      "./node_modules/lunr/lunr.min.js",
+    ])
+    .pipe(gulp.dest("./dist/static/deps/"));
+})
+
 gulp.task("collect static", () => {
   return gulp
     .src([
       "./src/static/**/*",
-      "!./src/static/**/*.{css,scss}",
       "./node_modules/@fortawesome/fontawesome-free/**/*.{woff2,woff}",
+      "!./src/static/**/*.{css,scss}",
     ])
     .pipe(gulp.dest("./dist/static/"));
 });
@@ -100,6 +108,7 @@ gulp.task(
   gulp.series([
     "clean",
     "build pages",
+    "collect dependencies",
     "collect static",
     "collect product icons",
     "build css",

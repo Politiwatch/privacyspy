@@ -1,5 +1,5 @@
 <div id="navbar" class="relative">
-  <header class="h-12 border-b border-gray-100 md:flex md:justify-between sm:items-center sm:px-4 md:px-0 sm:pt-6 sm:pb-8">
+  <header class="h-12 md:flex md:justify-between sm:items-center sm:px-4 md:px-0 sm:pt-6 sm:pb-8">
     <div class="flex items-center justify-between py-3 sm:p-0">
       <a href="/">
         <div class="mr-6 select-none">
@@ -24,12 +24,15 @@
     </div>
     <div id="nav-menu" class="hidden md:block">
       <div
-        class="absolute right-0 items-center inline-block p-4 bg-white border border-gray-100 rounded shadow-lg font-regular md:float-none md:static md:p-0 md:flex md:bg-none md:border-none md:shadow-none">
-        <a href="/directory/" class="block mr-12 text-sm md:pt-0 hover:text-blue-500">Directory</a>
+        class="absolute right-0 items-center inline-block p-4 text-right bg-white border border-gray-100 md:text-left md:float-none md:static md:p-0 md:flex md:bg-none md:border-none md:shadow-none">
+        <a href="/directory/" class="block text-sm md:mr-6 md:pt-0 hover:text-blue-500">Directory</a>
         <span onclick="installBrowserExtension()"
-          class="block pt-2 mr-12 text-sm cursor-pointer md:pt-0 hover:text-blue-500">Extension</span>
-        <a href="/contribute/" class="block pt-2 mr-12 text-sm md:pt-0 hover:text-blue-500">Contribute</a>
-        <a href="/about/" class="block pt-2 text-sm md:pt-0 hover:text-blue-500">About</a>
+          class="block pt-2 text-sm cursor-pointer md:mr-6 md:pt-0 hover:text-blue-500">Extension</span>
+        <a href="/contribute/" class="block pt-2 text-sm md:mr-6 md:pt-0 hover:text-blue-500">Contribute</a>
+        <a href="/about/" class="block pt-2 text-sm md:pt-0 hover:text-blue-500 md:mr-6">About</a>
+        <div class="pt-2 md:pt-0">
+          {{> includes/search }}
+        </div>
       </div>
     </div>
   </header>

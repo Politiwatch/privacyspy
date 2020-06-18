@@ -102,6 +102,8 @@ function getExtensionAPI(products: Product[]) {
       hostnames: product.hostnames,
       slug: product.slug,
       score: product.score,
+      icon: product.icon,
+      description: product.description,
       last_updated: product.lastUpdated,
     };
   });
