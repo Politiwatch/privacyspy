@@ -5,7 +5,7 @@ window.onload = function () {
   var cross = document.getElementById("cross");
 
   document.getElementById("dropdown-button").onclick = function () {
-    menu.className = dropdownOpen ? "md:block hidden" : "md:block block";
+    menu.className = dropdownOpen ? "lg:block hidden" : "lg:block block";
     burger.style.display = !dropdownOpen ? "block" : "none";
     cross.style.display = dropdownOpen ? "block" : "none";
     dropdownOpen = !dropdownOpen;

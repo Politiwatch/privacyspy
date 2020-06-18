@@ -26,28 +26,30 @@ function buildIndex() {
 }
 
 function loadIndex() {
-  index = lunr.Index.load(JSON.parse(window.localStorage.getItem("searchIndex")));
-  
+  index = lunr.Index.load(
+    JSON.parse(window.localStorage.getItem("searchIndex"))
+  );
+
   products = {};
-  for(let product of JSON.parse(window.localStorage.getItem("products"))){
+  for (let product of JSON.parse(window.localStorage.getItem("products"))) {
     products[product["slug"]] = product;
   }
 
   console.log("Search index loaded!");
 }
 
-function search(query){
+function search(query) {
   let results = [];
-  for (let doc of index.search(query + "*")){
+  for (let doc of index.search(query + "*")) {
     results.push(products[doc.ref]);
   }
   return results;
 }
 
 function waitFor(variable, callback) {
-  var interval = setInterval(function() {
+  var interval = setInterval(function () {
     if (window[variable] !== null) {
-      clearInterval(interval)
+      clearInterval(interval);
       callback();
     }
   }, 200);
@@ -55,43 +57,50 @@ function waitFor(variable, callback) {
 
 function onSearchInput() {
   console.log("search input!");
-  waitFor("index", () => {
-    console.log("running search...");
-    let query = document.querySelector("#searchBox").value;
-    let dropdown = document.querySelector("#searchDropdown");
-    let noResultsComp = document.querySelector("#searchNoResults");
-    let resultsComp = document.querySelector("#searchResults");
-    if (query.length === 0) {
-      dropdown.classList.add("hidden");
-    } else {
-      dropdown.classList.remove("hidden");
-      let results = search(query);
-      if (results.length === 0) {
-        noResultsComp.classList.remove("hidden");
-        resultsComp.classList.add("hidden");
+  waitFor(
+    "index",
+    () => {
+      console.log("running search...");
+      let query = document.querySelector("#searchBox").value;
+      let dropdown = document.querySelector("#searchDropdown");
+      let noResultsComp = document.querySelector("#searchNoResults");
+      let resultsComp = document.querySelector("#searchResults");
+      if (query.length === 0) {
+        dropdown.classList.add("hidden");
       } else {
-        noResultsComp.classList.add("hidden");
-        let html = "";
-        for (let product of results.slice(0, 8)){
-          html += `
-          <a href="/product/${product.slug}/" class="flex rounded items-center outline-none focus:bg-gray-100 px-2 py-1 font-medium searchResult">
-            <img src="/static/icons/${product.icon}" class="h-4 w-4 mr-2">
+        dropdown.classList.remove("hidden");
+        let results = search(query);
+        if (results.length === 0) {
+          noResultsComp.classList.remove("hidden");
+          resultsComp.classList.add("hidden");
+        } else {
+          noResultsComp.classList.add("hidden");
+          let html = "";
+          for (let product of results.slice(0, 8)) {
+            html += `
+          <a href="/product/${product.slug}/" class="flex rounded items-center outline-none focus:bg-gray-100 px-2 py-1 hover:text-blue-500 searchResult">
+            <img src="/static/icons/${product.icon}" class="h-4 w-4 mr-4">
             ${product.name}
-          </a>`
+          </a>`;
+          }
+          resultsComp.innerHTML = html;
+          resultsComp.classList.remove("hidden");
         }
-        resultsComp.innerHTML = html;
-        resultsComp.classList.remove("hidden");
       }
-    }
-  }, 100);
+    },
+    100
+  );
 }
 
-window.addEventListener("keydown", event => {
-  if(event.keyCode == 191 && !event.isComposing) {
+window.addEventListener("keydown", (event) => {
+  if (event.keyCode == 191 && !event.isComposing) {
     event.preventDefault();
     document.querySelector("#searchBox").focus();
   }
-  if(event.keyCode == 13 && document.querySelector("#searchBox") == document.activeElement) {
+  if (
+    event.keyCode == 13 &&
+    document.querySelector("#searchBox") == document.activeElement
+  ) {
     document.querySelector(".searchResult").click();
   }
 });
@@ -101,9 +110,9 @@ if (
   window.localStorage.getItem("products") === null ||
   window.localStorage.getItem("searchIndexBuilt") === null ||
   JSON.parse(window.localStorage.getItem("searchIndexBuilt")) <
-  Date.now() - 1000 * 60 * 60 * 24
+    Date.now() - 1000 * 60 * 60 * 24
 ) {
   buildIndex().then(loadIndex);
 } else {
   loadIndex();
-};
+}

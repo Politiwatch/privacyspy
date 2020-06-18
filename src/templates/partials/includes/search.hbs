@@ -1,10 +1,10 @@
-<div class="relative" style="z-index: 10;">
-    <input class="input ~neutral !low h-8" type="search" placeholder="Search (press /)" id="searchBox"
-        oninput="onSearchInput()">
-    <div class="absolute hidden w-full mt-2 bg-white border border-gray-100 rounded shadow" id="searchDropdown">
+<div class="relative w-2/3 sm:w-full" style="z-index: 10;">
+    <input
+        class="h-8 px-4 placeholder-gray-500 border border-gray-200 rounded appearance-none hover:border-gray-300 focus:border-gray-400"
+        type="search" placeholder="Search (press /)" id="searchBox" oninput="onSearchInput()">
+    <div class="absolute hidden w-full mt-2 bg-white border border-gray-200 rounded hover:border-gray-300"
+        id="searchDropdown">
         <div id="searchNoResults" class="hidden p-2 text-sm text-gray-600">No results. Try another query.</div>
-        <div class="hidden p-2" id="searchResults">
-
-        </div>
+        <div class="hidden p-2" id="searchResults"></div>
     </div>
 </div>

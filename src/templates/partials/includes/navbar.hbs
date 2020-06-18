@@ -1,15 +1,21 @@
 <div id="navbar" class="relative">
-  <header class="h-12 md:flex md:justify-between sm:items-center sm:px-4 md:px-0 sm:pt-6 sm:pb-8">
-    <div class="flex items-center justify-between py-3 sm:p-0">
-      <a href="/">
-        <div class="mr-6 select-none">
-          <h3 class="inline-flex items-center text-lg sm:pt-1">
-            <img src="/static/img/logo-black.svg" class="w-6 h-6 mr-2 opacity-40">
-            <p class="font-semibold">PrivacySpy</p>
-          </h3>
+  <header class="flex justify-between h-12 pt-6 pb-8 sm:items-center sm:px-4 lg:px-0">
+    <div class="flex items-center justify-between w-full p-0">
+      <div class="flex flex-row items-center">
+        <a href="/">
+          <div class="mr-6 select-none">
+            <h3 class="inline-flex items-center pt-1 text-lg">
+              <img src="/static/img/logo-black.svg" class="w-6 h-6 mr-2 opacity-40">
+              <p class="font-semibold">PrivacySpy</p>
+            </h3>
+          </div>
+        </a>
+
+        <div class="pt-0 lg:ml-8 md:ml-6 sm:ml-4">
+          {{> includes/search }}
         </div>
-      </a>
-      <div class="md:hidden">
+      </div>
+      <div class="lg:hidden">
         <button type="button" class="block text-gray-600 hover:text-gray-800 focus:text-white focus:outline-none"
           id="dropdown-button">
           <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" data-target="nav-menu">
@@ -22,17 +28,15 @@
         </button>
       </div>
     </div>
-    <div id="nav-menu" class="hidden md:block">
+    <div id="nav-menu" class="hidden lg:block">
       <div
-        class="absolute right-0 items-center inline-block p-4 text-right bg-white border border-gray-100 md:text-left md:float-none md:static md:p-0 md:flex md:bg-none md:border-none md:shadow-none" style="z-index: 5;">
-        <a href="/directory/" class="block text-sm md:mr-6 md:pt-0 hover:text-blue-500">Directory</a>
+        class="absolute right-0 items-center inline-block p-4 mt-6 bg-white border border-gray-100 rounded lg:rounded-none lg:mt-0 lg:text-left lg:float-none lg:static lg:p-0 lg:flex lg:bg-none lg:border-none lg:shadow-none"
+        style="z-index: 11;">
+        <a href="/directory/" class="block mr-10 text-sm lg:pt-0 hover:text-blue-500">Directory</a>
         <span onclick="installBrowserExtension()"
-          class="block pt-2 text-sm cursor-pointer md:mr-6 md:pt-0 hover:text-blue-500">Extension</span>
-        <a href="/contribute/" class="block pt-2 text-sm md:mr-6 md:pt-0 hover:text-blue-500">Contribute</a>
-        <a href="/about/" class="block pt-2 text-sm md:pt-0 hover:text-blue-500 md:mr-6">About</a>
-        <div class="pt-2 md:pt-0">
-          {{> includes/search }}
-        </div>
+          class="block pt-2 mr-10 text-sm cursor-pointer lg:pt-0 hover:text-blue-500">Extension</span>
+        <a href="/contribute/" class="block pt-2 mr-10 text-sm lg:pt-0 hover:text-blue-500">Contribute</a>
+        <a href="/about/" class="block pt-2 text-sm lg:pt-0 hover:text-blue-500 lg:mr-6">About</a>
       </div>
     </div>
   </header>
