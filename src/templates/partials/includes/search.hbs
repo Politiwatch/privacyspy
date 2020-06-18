@@ -1,7 +1,7 @@
 <div class="relative w-2/3 sm:w-full" style="z-index: 10;">
-    <i class="text-gray-600 fas fa-search md:hidden" title="Open search..." tabindex="0"
-        onclick="openSearchMobile()"></i>
-    <div class="hidden focus-within:block md:block" id="searchContainer">
+    <i class="text-gray-600 fas fa-search md:hidden dropdown-toggler" title="Open search..." tabindex="0"
+        onclick="toggleMobileDropdown('#search-container')"></i>
+    <div class="hidden mobile-dropdown focus-within:block md:block" id="search-container">
         <input
             class="absolute right-0 w-64 h-8 px-2 py-1 mt-2 placeholder-gray-400 border border-gray-200 rounded outline-none appearance-none md:mt-0 md:inset-auto md:block md:static hover:border-gray-300 focus:border-gray-400"
             type="search" placeholder="Search (press /)" id="searchBox" oninput="onSearchInput()">

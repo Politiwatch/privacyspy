@@ -56,11 +56,9 @@ function waitFor(variable, callback) {
 }
 
 function onSearchInput() {
-  console.log("search input!");
   waitFor(
     "index",
     () => {
-      console.log("running search...");
       let query = document.querySelector("#searchBox").value;
       let dropdown = document.querySelector("#searchDropdown");
       let noResultsComp = document.querySelector("#searchNoResults");
@@ -104,10 +102,6 @@ window.addEventListener("keydown", (event) => {
     document.querySelector(".searchResult").click();
   }
 });
-
-function openSearchMobile() {
-  document.querySelector("#searchContainer").classList.toggle("hidden");
-}
 
 if (
   window.localStorage.getItem("searchIndex") === null ||

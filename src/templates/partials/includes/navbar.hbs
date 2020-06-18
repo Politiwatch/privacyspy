@@ -15,8 +15,8 @@
           {{> includes/search }}
       </div>
       <div class="lg:hidden">
-        <button type="button" class="block text-gray-600 hover:text-gray-800 focus:text-white focus:outline-none"
-          id="dropdown-button">
+        <button type="button" class="block text-gray-600 dropdown-toggler hover:text-gray-800 focus:text-white focus:outline-none"
+          id="dropdown-button" onclick="toggleMobileDropdown('#nav-menu')">
           <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" data-target="nav-menu">
             <path id="burger" fill-rule="evenodd"
               d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"
@@ -27,7 +27,7 @@
         </button>
       </div>
     </div>
-    <div id="nav-menu" class="hidden lg:block">
+    <div id="nav-menu" class="hidden mobile-dropdown lg:block">
       <div
         class="absolute right-0 items-center inline-block p-4 mt-6 bg-white border border-gray-100 rounded lg:rounded-none lg:mt-0 lg:text-left lg:float-none lg:static lg:p-0 lg:flex lg:bg-none lg:border-none lg:shadow-none"
         style="z-index: 11;">

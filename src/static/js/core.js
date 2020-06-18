@@ -1,3 +1,5 @@
+// EXTENSION INSTALLERS
+
 // Opera 8.0+
 var isOpera =
   (!!window.opr && !!opr.addons) ||
@@ -14,7 +16,7 @@ var isSafari =
     return p.toString() === "[object SafariRemoteNotification]";
   })(
     !window["safari"] ||
-      (typeof safari !== "undefined" && safari.pushNotification)
+    (typeof safari !== "undefined" && safari.pushNotification)
   );
 
 // Internet Explorer 6-11
@@ -47,6 +49,46 @@ function installBrowserExtension() {
     );
   }
 }
+
+
+// MOBILE DROPDOWNS
+
+function closeAllMobileDropdowns() {
+  document.querySelectorAll('.mobile-dropdown').forEach(dropdown => {
+    dropdown.classList.add("hidden");
+  });
+}
+
+function toggleMobileDropdown(selector) {
+  let comp = document.querySelector(selector);
+  if (comp.classList.contains("hidden")) {
+    closeAllMobileDropdowns();
+    comp.classList.remove("hidden");
+  } else {
+    comp.classList.add("hidden");
+  }
+}
+
+function hasParentOfClass(element, classname) {
+  if (element === document) {
+    return false;
+  }
+  if (element.classList.contains(classname)) return true;
+  return element.parentNode && hasParentOfClass(element.parentNode, classname);
+}
+
+window.addEventListener("click", ev => {
+  if(document.activeElement.classList.contains("dropdown-toggler")) {
+    return;
+  }
+
+  if (document.activeElement === null || !hasParentOfClass(document.activeElement, "mobile-dropdown")) {
+    closeAllMobileDropdowns();
+  }
+});
+
+
+// RUBRIC EXPANSIONS
 
 function toggleRubricSelection(index) {
   let element = document.getElementById("selection-" + index);
