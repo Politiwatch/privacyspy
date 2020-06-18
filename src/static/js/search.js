@@ -105,6 +105,10 @@ window.addEventListener("keydown", (event) => {
   }
 });
 
+function openSearchMobile() {
+  document.querySelector("#searchContainer").classList.toggle("hidden");
+}
+
 if (
   window.localStorage.getItem("searchIndex") === null ||
   window.localStorage.getItem("products") === null ||

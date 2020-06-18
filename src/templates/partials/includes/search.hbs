@@ -1,10 +1,14 @@
 <div class="relative w-2/3 sm:w-full" style="z-index: 10;">
-    <input
-        class="h-8 px-4 placeholder-gray-400 border border-gray-200 rounded outline-none appearance-none hover:border-gray-300 focus:border-gray-400"
-        type="search" placeholder="Search (press /)" id="searchBox" oninput="onSearchInput()">
-    <div class="absolute hidden w-full mt-2 bg-white border border-gray-200 rounded hover:border-gray-300"
-        id="searchDropdown">
-        <div id="searchNoResults" class="hidden p-2 text-sm text-gray-600">No results. Try another query.</div>
-        <div class="hidden p-2" id="searchResults"></div>
+    <i class="text-gray-600 fas fa-search md:hidden" title="Open search..." tabindex="0"
+        onclick="openSearchMobile()"></i>
+    <div class="hidden focus-within:block md:block" id="searchContainer">
+        <input
+            class="absolute right-0 w-64 h-8 px-2 py-1 mt-2 placeholder-gray-400 border border-gray-200 rounded outline-none appearance-none md:mt-0 md:inset-auto md:block md:static hover:border-gray-300 focus:border-gray-400"
+            type="search" placeholder="Search (press /)" id="searchBox" oninput="onSearchInput()">
+        <div class="absolute right-0 hidden w-64 mt-12 bg-white border border-gray-200 rounded md:inset-auto md:mt-2 hover:border-gray-300"
+            id="searchDropdown">
+            <div id="searchNoResults" class="hidden p-2 text-sm text-gray-600">No results. Try another query.</div>
+            <div class="hidden p-2" id="searchResults"></div>
+        </div>
     </div>
 </div>
