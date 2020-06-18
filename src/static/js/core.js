@@ -50,22 +50,21 @@ function installBrowserExtension() {
   }
 }
 
-
 // MOBILE DROPDOWNS
 
 function closeAllMobileDropdowns() {
-  document.querySelectorAll('.mobile-dropdown').forEach(dropdown => {
+  document.querySelectorAll(".mobile-dropdown").forEach((dropdown) => {
     dropdown.classList.add("hidden");
   });
 }
 
 function toggleMobileDropdown(id) {
+  console.log("Toggling " + id);
   let comp = document.getElementById(id);
   if (comp.classList.contains("hidden")) {
     closeAllMobileDropdowns();
     comp.classList.remove("hidden");
-    if(document.querySelector("." + id + "-focus") !== null){
-      console.log("focusing");
+    if (document.querySelector("." + id + "-focus") !== null) {
       document.querySelector("." + id + "-focus").focus();
     }
   } else {
@@ -81,16 +80,13 @@ function hasParentOfClass(element, classname) {
   return element.parentNode && hasParentOfClass(element.parentNode, classname);
 }
 
-window.addEventListener("click", ev => {
-  if(document.activeElement.classList.contains("dropdown-toggler")) {
-    return;
-  }
-
-  if (document.activeElement === null || !hasParentOfClass(document.activeElement, "mobile-dropdown")) {
+window.addEventListener("click", (ev) => {
+  if (
+    !(hasParentOfClass(ev.target, "mobile-dropdown") || hasParentOfClass(ev.target, "dropdown-toggler"))
+  ) {
     closeAllMobileDropdowns();
   }
 });
-
 
 // RUBRIC EXPANSIONS
 
