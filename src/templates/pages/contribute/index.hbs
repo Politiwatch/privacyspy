@@ -1,0 +1,147 @@
+{{#> layouts/base title="Contribute" }}
+
+{{#*inline "content"}}
+<main class="max-w-2xl mx-auto content">
+  {{#markdown}}
+  <h1 class="mb-4 text-5xl font-extrabold">Contribute</h1>
+  We're thrilled that you want to contribute to PrivacySpy. This guide will explain how to contribute policies, corrections, suggestions, and code changes.
+
+  Note that all contributions to PrivacySpy will take place in our [GitHub repository](https://github.com/politiwatch/privacyspy). If you don't have one already, you'll need to sign up for a GitHub account to participate.
+
+  ### Table of Contents
+
+  * [Sharing suggestions and requests](#sharing-suggestions-and-requests)
+  * [Submitting a new product](#submitting-a-new-product)
+  * [Changing an existing product](#changing-an-existing-product)
+  * [Product assessment guide](#product-assessment-guide)
+  * [Contributors file guide](#contributors-file-guide)
+
+  ### Sharing suggestions and requests
+
+  If you have an idea for PrivacySpy, think you found an error, or want to just bring something up with the team, feel free to [create an issue](https://github.com/Politiwatch/privacyspy/issues/new) in our GitHub repository. Creating issues in the GitHub repository is the best way share feedback and comments.
+
+  If your issue is a suggestion&mdash;such as a request to add a new product to our database, or to fix an error&mdash;consider making the change yourself then submitting your modifications as a pull request (see [changing an existing policy](#changing-an-existing-policy) below to learn how). If you're not comfortable implementing the change yourself or don't know how, though, feel free to just create an issue.
+
+  ### Submitting a new product
+
+  Submitting a new product to PrivacySpy isn't too hard. The first step is to fork PrivacySpy so that you can submit changes as a pull request&mdash;if you're unsure what this means, you can learn about pull requests [here](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests).
+
+  Then, once you have a version of PrivacySpy on your own GitHub account, here are the general steps you need to take to add a new product:
+
+  1. **Create a new file in the `products/` directory called `<product slug>.toml`**. (A _slug_ is a short and unique ID.) For example, if you were adding DuckDuckGo, the name of the file would be `duckduckgo.toml`. TOML is the file format we use for writing policies; if you're unfamiliar with it, you can learn more about TOML [here](https://learnxinyminutes.com/docs/toml/).
+
+  2. **Add an icon for your new product to the `icons/` directory.** The name of the icon file should correspond to the product slug from Step 1; for example, for DuckDuckGo, you'd want to name the icon file `duckduckgo.png` or `duckduckgo.jpg`. Icon images should be square and smaller than 30kb.
+
+  3. **Add yourself to `CONTRIBUTORS.toml` if you haven't already.** Fill out as much or as little information as you want. For information about how how this file works, refer to the [contributors file guide](#contributors-file-guide) below.
+
+  4. **Fill in all the necessary info in the `<product slug>.toml` file.** Refer to the [product assessment guide](#product-assessment-guide) below to learn about how this file works.
+
+  5. **Make sure all tests pass.** You can run tests using the `npm test` command. To ensure high quality content, PrivacySpy has an automated system to check whether changes are appropriate. While it won't catch all issues, the automated testing system will let you know if you've made any obvious mistakes.
+
+  6. **Once all tests pass, submit a pull request!** To add your changes back to PrivacySpy, submit a pull request. (Be sure to follow the instructions in the Pull Request message template.) Once you do, a member of the PrivacySpy team will look over your changes and either merge them or request revisions. Don't worry if your changes aren't accepted on the first try&mdash;mistakes are inevitable. Just implement the requested changes, then resubmit the pull request!
+
+  7. **That's it!** Congratulations&mdash;you've contributed a policy to PrivacySpy!
+
+  ### Changing an existing product
+
+  To change an existing product on PrivacySpy&mdash;to submit a correction, for example&mdash;you'll need to submit a pull request. Fortunately, this process is quite simple: just edit the product file in the `products/` directory! To edit Google's entry, for example, simply edit the file at `products/google.toml`. Then, run the `npm test` command and make sure all tests pass. Finally, submit your changes as a pull request. (Be sure to follow the instructions in the Pull Request message template.)
+  
+  To learn about how the product TOML file works, review the [product assessment guide](#product-assessment-guide) below.
+
+  ### Product assessment guide
+  
+  Each product on PrivacySpy is stored in the `products/` directory as a TOML file. If you're unfamiliar with the TOML file format, you can learn about it [here](https://learnxinyminutes.com/docs/toml/). In short, it's a flexible data serialization format like JSON or YAML that's designed to be written and understood by humans.
+
+  If you're ever confused about the file format for products, you can always look at another existing product file for reference (such as [this one](https://github.com/Politiwatch/privacyspy/blob/v2/products/apple.toml)).
+
+  #### Product metadata
+
+  Metadata about the product&mdash;the name, description, and hostnames, for example&mdash;belongs at the top of the product file. For metadata, we use a simple `key = value` format.
+
+  * **`name`**: this field holds the product's human-readable name as a string. Spaces and capitalization is allowed. For example, for DuckDuckGo, the value of `name` would be `DuckDuckGo`.
+
+  * **`description`**: this field contains the description of the product as a string. The description should be a complete sentence, and often mentions the owner and/or country of the product.
+
+  * **`slug`**: this field contains the product's slug (its unique ID). The slug can contain only letters, numbers, and dashes. No two products can have the same slug, because the slug determines the URL where the policy will be hosted. (For example, a product with the slug `duckduckgo` would be accessible at `https://privacyspy.org/product/duckduckgo`.) The slug should be the same as the file but without `.toml`.
+
+  * **`hostnames`**: this field contains an array of strings; each string should be a [hostname](https://en.wikipedia.org/wiki/Hostname) (i.e., domain name) of the product. For example, the value of `hostnames` for 1Password is `[ "1password.com" ]`. (Don't worry about subdomains; you don't need to include `my.1password.com` if you include `1password.com`.) Usually this array has only one element, but there are some cases when a product has multiple hostnames (e.g., GitHub, which uses `github.com` and `github.io`).
+
+  * **`sources`**: this field contains an array of strings; each string should be the URL of a source used in grading the policy. (Almost always, the company's privacy policy itself would be included here as a source. Sometimes you'd want to include the company's security policy as well, if they have one.)
+
+  * **`icon`**: this field contains a string; the string should be the name of the icon file corresponding to this product in the `icons/` directory. (E.g., if the product's icon was located at `icons/1password.png`, the value of the `icon` field would be `1password.png`.)
+
+  * **`contributors`**: this field contains an array of strings; each string corresponds to the the slug of each contributor (you!) in the `CONTRIBUTORS.toml` file. See the [contributors file guide](#contributors-file-guide) below for more information. Usually, people use their GitHub username as their slug.
+
+  * **`updates`**: this field contains an array of update objects; each update object represents an event on the timeline of a product. More information about update objects is available below. Note that we only include it in the metadata if it's empty; if present, we list updates themselves after the rubric section.
+
+  <details>
+
+  </details>
+  
+  #### Product grading (rubric)
+
+  The next section of the product file is the rubric. This is where we encode the score of the product across each of the rubric questions.
+
+  Each question is included in the file with the following structure:
+
+  ```toml
+  [rubric.<question ID>]
+  value = "<answer ID>"
+  citations = [
+    # Direct quotes from the sources that support the value, if applicable. (Strings.)
+  ]
+  notes = [
+    # Any special notes you want to include about the selection. (Strings.)
+  ]
+  ```
+
+  Each question has an ID (`<question id>`, also known as the question's _slug_), and each possible value of that question also has an ID. For example, the question that assesses whether the product uses behavioral marketing has the id `behavioral-marketing`, and the IDs of the answers are `yes`, `yes-opt-out` (yes, but you can opt out), `yes-opt-in` (yes, but you must opt-in), and `no`.
+
+  Note that all questions must be graded, and each grade must have at least one citation or note (as shown above).
+
+  #### Questions &amp; options
+
+  {{#each rubric as |question|}}
+  <div class="p-4 mb-12 border border-gray-200 rounded">
+  <h4 class="mb-4">
+    <code>{{question.slug}}</code> &mdash; {{question.text}}
+  </h4>
+  
+  {{#if notes}}
+  <blockquote>
+  {{#each notes as |note|}}
+  {{#markdown}}{{note}}{{/markdown}}
+  {{/each}}
+  </blockquote>
+  {{/if}}
+
+  <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+  {{#each options as |option|}}
+  <div class="p-4 bg-gray-100 rounded">
+    <kbd class="text-sm">{{option.id}}</kbd>
+    <p>
+      <strong>{{option.text}}</strong>
+      ({{option.percent}}%)
+    </p>
+    {{#if option.description}}
+    <p class="mt-2 text-sm">
+    {{option.description}}
+    </p>
+    {{/if}}
+  </div>
+  {{/each}}
+  </div>
+  <details>
+    <summary class="mt-2 cursor-pointer">Sample TOML section</summary>
+<pre class="mt-2"><code>[rubric.{{question.slug}}]
+value = {{#each question.options as |option|}}"{{option.id}}" {{#if (not @last)}}/ {{/if}}{{/each}}
+citations = ["Citations, if applicable"]
+notes = ["Any notes, if applicable"]</code></pre>
+  </details>
+  </div>
+  
+  {{/each}}
+  {{/markdown}}
+</main>
+{{/inline}}
+{{/layouts/base}}
