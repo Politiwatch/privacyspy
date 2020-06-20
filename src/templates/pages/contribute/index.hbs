@@ -75,7 +75,15 @@
   * **`updates`**: this field contains an array of update objects; each update object represents an event on the timeline of a product. More information about update objects is available below. Note that we only include it in the metadata if it's empty; if present, we list updates themselves after the rubric section.
 
   <details>
-
+    <summary class="cursor-pointer">Example metadata TOML</summary>
+<pre><code>name = "Twitter"
+description = "Twitter is a microblogging social network and is popular among American public figures."
+slug = "twitter"
+hostnames = [ "twitter.com" ]
+sources = [ "https://twitter.com/en/privacy" ]
+icon = "twitter.png"
+updates = [ ]
+contributors = [ "milesmcc" ]</code></pre>
   </details>
   
   #### Product grading (rubric)
@@ -141,6 +149,22 @@ notes = ["Any notes, if applicable"]</code></pre>
   </div>
   
   {{/each}}
+
+  #### Updates
+
+  Whenever a product has a major privacy-related event (such as a data breach, an overhaul of their privacy policy, or anything else of this nature), we try to include it as an update on PrivacySpy.
+
+  Each product has an array of update objects. An update object looks like this:
+
+  ```toml
+title = "Data Breach"
+description = "More than 540 million records about Facebook users were publicly exposed on Amazon's cloud computing service, according to a cybersecurity research firm."
+date = 2019-08-28T13:35:35.375727+00:00
+sources = [ "https://www.cbsnews.com/news/millions-facebook-user-records-exposed-amazon-cloud-server/" ]
+```
+
+  As you can probably gather, `title` is a string that represents the title of the update; `description` is a string that explains what happened (in full sentences); `date` 
+  
   {{/markdown}}
 </main>
 {{/inline}}
