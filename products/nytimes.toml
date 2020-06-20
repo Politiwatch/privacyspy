@@ -5,7 +5,6 @@ hostnames = [ "nytimes.com" ]
 sources = [
   "https://help.nytimes.com/hc/en-us/articles/115014892108-Privacy-policy"
 ]
-icon = "nytimes.png"
 updates = [ ]
 contributors = [ "UnKnOwN" ]
 

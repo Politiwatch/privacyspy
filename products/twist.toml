@@ -3,7 +3,6 @@ description = "Twist is a team communication app built by Doist, the company res
 slug = "twist"
 hostnames = [ "twist.com" ]
 sources = [ "https://twist.com/privacy" ]
-icon = "twist.png"
 updates = [ ]
 contributors = [ "ibarakaiev" ]
 

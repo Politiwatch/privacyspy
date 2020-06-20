@@ -19,8 +19,7 @@ const products: Product[] = loadProducts(rubric, contributors);
         fs.existsSync("icons/" + product.slug + ".jpg") ||
         fs.existsSync("icons/" + product.slug + ".png") ||
         fs.existsSync("icons/" + product.slug + ".svg")
-      ) &&
-      product.slug === "github"
+      )
     ) {
       await fetchIcon(product.slug, product.hostnames);
     }
@@ -31,44 +30,63 @@ export async function fetchIcon(
   slug: string,
   hostnames: string[]
 ): Promise<string> {
-  return new Promise(async (resolve) => {
+  return new Promise((resolve, reject) => {
     let filename = null;
     for (const hostname of hostnames) {
-      await axios
+      axios
         .get("https://" + hostname)
         .then(async (response) => {
           const soup = new JSSoup(response.data);
 
+          console.log("attempting link icon");
           filename = await tryDownloadFromLinkTag(soup, slug, hostname, "icon");
 
-          if (filename === undefined) {
-            filename = await tryDownloadFromLinkTag(
-              soup,
-              slug,
-              hostname,
-              "apple-touch-icon"
-            );
+          console.log("found " + filename);
+
+          if (filename === null) {
+            console.log("attempting link apple-touch-icon");
+            try {
+              filename = await tryDownloadFromLinkTag(
+                soup,
+                slug,
+                hostname,
+                "apple-touch-icon"
+              );
+            } catch (err) {}
           }
 
-          if (filename === undefined) {
-            filename = await tryDownloadFromLinkTag(
-              soup,
-              slug,
-              hostname,
-              "fluid-icon"
-            );
+          if (filename === null) {
+            console.log("attempting link fluid-icon");
+            try {
+              filename = await tryDownloadFromLinkTag(
+                soup,
+                slug,
+                hostname,
+                "fluid-icon"
+              );
+            } catch (err) {}
           }
 
-          if (filename === undefined) {
-            filename = await tryDownloadOgImage(soup, slug, hostname);
+          if (filename === null) {
+            console.log("attempting og-image");
+            try {
+              filename = await tryDownloadOgImage(soup, slug, hostname);
+            } catch (err) {}
           }
         })
-        .catch(() => {
-          // placeholder
+        .catch((err) => {
+          console.log(err);
+          console.log("something went wrong!");
         });
     }
 
     resolve(filename);
+  });
+}
+
+function getRejectPromise(obj): Promise<string> {
+  return new Promise((resolve, reject) => {
+    reject(obj);
   });
 }
 
@@ -85,14 +103,11 @@ async function tryDownloadFromLinkTag(
           continue;
         }
       }
-
-      const filename = await download(slug, link.attrs.href, hostname);
-      console.log("here rel=" + rel + ", hostname = " + hostname);
-      if (filename.includes(slug)) {
-        return filename;
-      }
+      console.log("trying " + link.attrs.href);
+      return download(slug, link.attrs.href, hostname);
     }
   }
+  return getRejectPromise("no icons fit requirements");
 }
 
 async function tryDownloadOgImage(
@@ -108,12 +123,10 @@ async function tryDownloadOgImage(
         }
       }
 
-      const filename = await download(slug, link.attrs.content, hostname);
-      if (filename.includes(slug)) {
-        return filename;
-      }
+      return download(slug, link.attrs.content, hostname);
     }
   }
+  return getRejectPromise("no icons fit requirements");
 }
 
 async function download(
@@ -122,21 +135,24 @@ async function download(
   hostname: string
 ): Promise<string> {
   const ext = getExtension(url);
-  return new Promise(async (resolve, reject) => {
+  return new Promise((resolve, reject) => {
     if (ext !== null) {
       if (!url.includes("http")) {
         url = "https://" + hostname + url;
       }
       console.log("inside, url=" + url);
-      await probe(url)
-        .then(async (result) => {
+      if (ext === ".svg") {
+        resolve(null);
+      }
+      probe(url)
+        .then((result) => {
           if (
             result.width / result.height > 0.95 &&
             result.width / result.height < 1.05 &&
             result.width >= 96 &&
             result.height >= 96
           ) {
-            await axios({
+            axios({
               method: "get",
               url: url,
               responseType: "stream",
@@ -152,6 +168,7 @@ async function download(
           }
         })
         .catch(() => {
+          console.log("error!");
           resolve(null);
         });
     }

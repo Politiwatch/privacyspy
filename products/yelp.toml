@@ -3,7 +3,6 @@ description = "Yelp is a business directory service that provides crowdfunded re
 slug = "yelp"
 hostnames = [ "yelp.com" ]
 sources = [ "https://www.yelp.com/tos/privacy_en_us_20190329" ]
-icon = "yelp.png"
 updates = [ ]
 contributors = [ "kulchynska" ]
 

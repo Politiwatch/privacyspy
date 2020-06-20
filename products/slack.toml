@@ -3,7 +3,6 @@ description = "Slack is an American cloud-based chat app designed for teams and 
 slug = "slack"
 hostnames = [ "slack.com" ]
 sources = [ "https://slack.com/privacy-policy" ]
-icon = "slack.png"
 updates = [ ]
 contributors = [ "owlswipe" ]
 

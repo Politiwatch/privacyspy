@@ -5,7 +5,6 @@ hostnames = [ "amazon.com" ]
 sources = [
   "https://www.amazon.com/gp/help/customer/display.html?ie=UTF8&nodeId=468496"
 ]
-icon = "amazon.png"
 updates = [ ]
 contributors = [ ]
 

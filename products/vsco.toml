@@ -3,7 +3,6 @@ description = "VSCO is an image sharing social network and photography platform 
 slug = "vsco"
 hostnames = [ "vsco.co" ]
 sources = [ "https://vsco.co/about/privacy_policy" ]
-icon = "vsco.png"
 updates = [ ]
 contributors = [ "YuriiStasiuk" ]
 

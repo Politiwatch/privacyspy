@@ -3,7 +3,6 @@ description = "StackOverflow is a question-and-answer forum for computer science
 slug = "stack-overflow"
 hostnames = [ "stackoverflow.com" ]
 sources = [ "https://stackoverflow.com/legal/privacy-policy" ]
-icon = "stack-overflow.png"
 updates = [ ]
 contributors = [ "YuriiStasiuk" ]
 

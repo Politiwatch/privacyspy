@@ -3,7 +3,6 @@ description = "Wikipedia is a collection of free online encyclopedias managed by
 slug = "wikipedia"
 hostnames = [ "wikipedia.org", "wikimedia.org" ]
 sources = [ "https://foundation.wikimedia.org/wiki/Privacy_policy" ]
-icon = "wikipedia.png"
 updates = [ ]
 contributors = [ "milesmcc" ]
 

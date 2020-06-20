@@ -3,7 +3,6 @@ description = "Quad9 is a nonprofit organization supported by IBM, Packet Cleari
 slug = "quad9"
 hostnames = [ "quad9.net" ]
 sources = [ "https://quad9.net/policy/" ]
-icon = "quad9.png"
 updates = [ ]
 contributors = [ "ibarakaiev", "doamatto" ]
 

@@ -3,7 +3,6 @@ description = "Flipgrid is a Microsoft-owned video recording and sharing service
 slug = "flipgrid"
 hostnames = [ "flipgrid.com" ]
 sources = [ "https://legal.flipgrid.com/privacy.html" ]
-icon = "flipgrid.png"
 updates = [ ]
 contributors = [ "milesmcc" ]
 

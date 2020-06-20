@@ -2,8 +2,7 @@ name = "2ndLine"
 description = 'A "virtual phone" service that provides you with a second phone number for free.'
 slug = "2ndline"
 hostnames = [ "2ndline.co" ]
-sources = [ "2ndline.co/privacy" ]
-icon = "2ndline.png"
+sources = [ "https://2ndline.co/privacy" ]
 updates = [ ]
 contributors = [ "mrhedgehog0" ]
 

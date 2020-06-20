@@ -3,7 +3,6 @@ description = "Netflix is an online video streaming and film production company 
 slug = "netflix"
 hostnames = [ "netflix.com" ]
 sources = [ "https://help.netflix.com/legal/privacy" ]
-icon = "netflix.png"
 updates = [ ]
 contributors = [ "kulchynska" ]
 

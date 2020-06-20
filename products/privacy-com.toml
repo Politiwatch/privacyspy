@@ -3,7 +3,6 @@ description = "Privacy.com is an online service for generating virtual cards to 
 slug = "privacy-com"
 hostnames = [ "privacy.com" ]
 sources = [ "https://privacy.com/terms#privacy-policy" ]
-icon = "privacy-com.png"
 updates = [ ]
 contributors = [ "owlswipe" ]
 

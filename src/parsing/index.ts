@@ -57,6 +57,8 @@ export function loadProducts(
       })
     ) as any;
 
+    product.icon = fs.readdirSync("icons/").find(filename => filename.split(".")[0] === product.slug);
+
     if (product.parent !== undefined) {
       parentMap[product.slug] = product.parent;
     } else {

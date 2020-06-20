@@ -3,7 +3,6 @@ description = "PrivacySpy is an initiative that strives to establish transparenc
 slug = "privacyspy"
 hostnames = [ "privacyspy.org" ]
 sources = [ "http://beta.privacyspy.org/terms-and-privacy/" ]
-icon = "privacyspy.png"
 updates = [ ]
 contributors = [ ]
 

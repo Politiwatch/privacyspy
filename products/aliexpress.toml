@@ -5,7 +5,6 @@ hostnames = [ "aliexpress.com" ]
 sources = [
   "https://helppage.aliexpress.com/buyercenter/questionAnswer.htm?isRouter=0&viewKey=1&id=1000099018&categoryIds=9205401"
 ]
-icon = "aliexpress.png"
 updates = [ ]
 contributors = [ "vutut" ]
 

@@ -3,7 +3,6 @@ description = "Facebook, Inc. is the world's largest online social network and h
 slug = "facebook"
 hostnames = [ "facebook.com" ]
 sources = [ "https://www.facebook.com/privacy/explanation" ]
-icon = "facebook.png"
 contributors = [ "ibarakaiev", "milesmcc" ]
 
 [rubric.behavioral-marketing]

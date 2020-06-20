@@ -3,7 +3,6 @@ description = "Fastmail is an email service that offers paid email accounts for 
 slug = "fastmail"
 hostnames = [ "fastmail.com" ]
 sources = [ "https://www.fastmail.com/about/privacy/" ]
-icon = "fastmail.png"
 updates = [ ]
 contributors = [ "doamatto" ]
 

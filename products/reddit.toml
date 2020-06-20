@@ -3,7 +3,6 @@ description = "Reddit is a news aggregation and message board website with thous
 slug = "reddit"
 hostnames = [ "reddit.com" ]
 sources = [ "https://www.redditinc.com/policies/privacy-policy" ]
-icon = "reddit.png"
 updates = [ ]
 contributors = [ "milesmcc" ]
 

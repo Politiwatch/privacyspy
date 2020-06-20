@@ -3,7 +3,6 @@ description = "Padlet is a education-oriented document creation and sharing plat
 slug = "padlet"
 hostnames = [ "padlet.com" ]
 sources = [ "https://padlet.com/about/privacy" ]
-icon = "padlet.png"
 updates = [ ]
 contributors = [ "milesmcc" ]
 

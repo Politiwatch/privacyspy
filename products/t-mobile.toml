@@ -5,7 +5,6 @@ hostnames = [ "t-mobile.com" ]
 sources = [
   "https://www.t-mobile.com/responsibility/privacy/privacy-policy"
 ]
-icon = "t-mobile.png"
 updates = [ ]
 contributors = [ "owlswipe" ]
 

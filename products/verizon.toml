@@ -3,7 +3,6 @@ description = "Verizon is an American multinational telecommunications conglomer
 slug = "verizon"
 hostnames = [ "verizon.com", "verizonwireless.com", "vzw.com" ]
 sources = [ "https://www.verizon.com/about/privacy/full-privacy-policy" ]
-icon = "verizon.png"
 updates = [ ]
 contributors = [ "doamatto" ]
 

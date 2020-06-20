@@ -3,7 +3,6 @@ description = "The Guardian is a leading British news organization with worldwid
 slug = "the-guardian"
 hostnames = [ "theguardian.co.uk" ]
 sources = [ "https://www.theguardian.com/help/privacy-policy" ]
-icon = "the-guardian.png"
 updates = [ ]
 contributors = [ "vutut" ]
 

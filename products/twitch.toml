@@ -3,7 +3,6 @@ description = "Twitch is an American live streaming platform that features prima
 slug = "twitch"
 hostnames = [ "twitch.tv" ]
 sources = [ "https://www.twitch.tv/p/legal/privacy-policy/" ]
-icon = "twitch.png"
 updates = [ ]
 contributors = [ "YuriiStasiuk" ]
 

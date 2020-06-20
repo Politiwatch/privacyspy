@@ -3,7 +3,6 @@ description = 'Discord is a chatting service for gamers, featuring VoIP calling 
 slug = "discord"
 hostnames = [ "discordapp.com" ]
 sources = [ "https://discordapp.com/privacy" ]
-icon = "discord.png"
 updates = [ ]
 contributors = [ "nep" ]
 
