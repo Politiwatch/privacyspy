@@ -115,7 +115,7 @@ def retrieve_everything(request):
                 "name": product.name,
                 "slug": product.slug,
                 # "icon": product.icon,
-                "hostnames": [product.hostname],
+                "hostnames": product.hostname.split(","),
                 "description": product.description,
                 "published": product.published,
                 "contributors": [maintainer.username for maintainer in product.maintainers.all()],
