@@ -1,7 +1,7 @@
 name = "Apple"
 description = "Apple is a high-end American computer equipment, smartphone, and software producer."
 slug = "apple"
-hostnames = [ "apple.com,itunes.com" ]
+hostnames = [ "apple.com", "itunes.com" ]
 sources = [ "https://www.apple.com/legal/privacy/en-ww/" ]
 icon = "apple.jpg"
 updates = [ ]

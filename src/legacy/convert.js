@@ -3,7 +3,7 @@ const fs = require("fs");
 
 const database = JSON.parse(
   fs
-    .readFileSync("legacy/legacy_database.json", "utf-8")
+    .readFileSync("src/legacy/legacy_database.json", "utf-8")
     .replace(/[\x00-\x1F\x7F-\x9F]/g, "")
 );
 
@@ -27,7 +27,7 @@ for (let entry of database) {
   policy["name"] = entry["name"];
   policy["description"] = entry["description"];
   policy["slug"] = entry["slug"];
-  policy["hostnames"] = entry["hostnames"];
+  policy["hostnames"] = entry["hostnames"][0].split(",");
   policy["sources"] = entry["sources"];
   policy["icon"] = entry["slug"] + ".png";
 
@@ -70,14 +70,14 @@ for (let entry of database) {
     policy["rubric"][question_slug] = rubric_obj;
   }
 
+  policy["updates"] = [];
   if (entry["warnings"].length > 0) {
-    policy["updates"] = [];
     for (let warning of entry["warnings"]) {
       let update_obj = {
         title: warning["title"],
         description: warning["description"],
         // there are so few products that currently have warnings that it's easier to enter sources and fix dates ourselves
-        date: warning["added"],
+        date: new Date(warning["added"]),
         sources: [],
       };
 
