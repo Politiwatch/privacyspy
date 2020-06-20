@@ -27,9 +27,15 @@ for (let entry of database) {
   policy["name"] = entry["name"];
   policy["description"] = entry["description"];
   policy["slug"] = entry["slug"];
-  policy["hostnames"] = entry["hostnames"][0].split(",");
+  policy["hostnames"] = entry["hostnames"];
   policy["sources"] = entry["sources"];
-  policy["icon"] = entry["slug"] + ".png";
+
+  existingIcon = fs.readdirSync("icons/").find(f => f.startsWith(entry["slug"]));
+  if (existingIcon != null) {
+    policy["icon"] = existingIcon;
+  } else {
+    policy["icon"] = entry["slug"] + ".png";
+  }
 
   policy["rubric"] = {};
   for (let rubric_entry of entry["rubric"]) {
