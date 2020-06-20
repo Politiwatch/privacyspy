@@ -154,16 +154,37 @@ notes = ["Any notes, if applicable"]</code></pre>
 
   Whenever a product has a major privacy-related event (such as a data breach, an overhaul of their privacy policy, or anything else of this nature), we try to include it as an update on PrivacySpy.
 
-  Each product has an array of update objects. An update object looks like this:
+  Each product has an array of update objects. An update object (inside the `updates` array) looks like this:
 
   ```toml
+[[updates]]
 title = "Data Breach"
 description = "More than 540 million records about Facebook users were publicly exposed on Amazon's cloud computing service, according to a cybersecurity research firm."
-date = 2019-08-28T13:35:35.375727+00:00
+date = 2019-08-28
 sources = [ "https://www.cbsnews.com/news/millions-facebook-user-records-exposed-amazon-cloud-server/" ]
 ```
 
-  As you can probably gather, `title` is a string that represents the title of the update; `description` is a string that explains what happened (in full sentences); `date` 
+  As you can probably gather, `title` is a string that represents the title of the update; `description` is a string that explains what happened (in full sentences); `date` is the date of the update; and `sources` is an array of URLs that provide information about the update.
+
+  Note that to insert the update into the `updates` array, we put `[[update]]` on top of the object, as per the TOML spec.
+
+  ### Contributors file guide
+
+  Contributors like you deserve to be recogized for your additions to PrivacySpy. That's why we maintain the `CONTRIBUTORS.toml` file (in the root of the repository) where each contributor is listed with some minimal biographical information.
+
+  > You aren't required to add any biographical information to the `CONTRIBUTORS.toml` file if you don't want to.
+
+  Here's a template for what to put in the file:
+
+```toml
+[your_slug] # usually the same as your GitHub username
+name = "Your Name" # optional
+website = "http://example.com" # optional
+github = "example" # optional
+email = "example@example.com" # optional
+```
+
+  The only required element is `[your_slug]`. You can think of `your_slug` as your PrivacySpy "username"&mdash;it's what you'd add to the `contributors` array in policies you contribute to.
   
   {{/markdown}}
 </main>
