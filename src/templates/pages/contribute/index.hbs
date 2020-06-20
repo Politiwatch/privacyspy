@@ -10,19 +10,19 @@
 
   ### Table of Contents
 
-  * [Sharing suggestions and requests](#sharing-suggestions-and-requests)
-  * [Submitting a new product](#submitting-a-new-product)
-  * [Changing an existing product](#changing-an-existing-product)
-  * [Product assessment guide](#product-assessment-guide)
-  * [Contributors file guide](#contributors-file-guide)
+  * [Sharing suggestions and requests](#suggestions)
+  * [Submitting a new product](#submitting)
+  * [Changing an existing product](#changing)
+  * [Product assessment guide](#product-guide)
+  * [Contributors file guide](#contributors-guide)
 
-  ### Sharing suggestions and requests
+  <h3 id="suggestions">Sharing suggestions and requests</h3>
 
   If you have an idea for PrivacySpy, think you found an error, or want to just bring something up with the team, feel free to [create an issue](https://github.com/Politiwatch/privacyspy/issues/new) in our GitHub repository. Creating issues in the GitHub repository is the best way share feedback and comments.
 
   If your issue is a suggestion&mdash;such as a request to add a new product to our database, or to fix an error&mdash;consider making the change yourself then submitting your modifications as a pull request (see [changing an existing policy](#changing-an-existing-policy) below to learn how). If you're not comfortable implementing the change yourself or don't know how, though, feel free to just create an issue.
 
-  ### Submitting a new product
+  <h3 id="submitting">Submitting a new product</h3>
 
   Submitting a new product to PrivacySpy isn't too hard. The first step is to fork PrivacySpy so that you can submit changes as a pull request&mdash;if you're unsure what this means, you can learn about pull requests [here](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests).
 
@@ -42,13 +42,13 @@
 
   7. **That's it!** Congratulations&mdash;you've contributed a policy to PrivacySpy!
 
-  ### Changing an existing product
+  <h3 id="changing">Changing an existing product</h3>
 
   To change an existing product on PrivacySpy&mdash;to submit a correction, for example&mdash;you'll need to submit a pull request. Fortunately, this process is quite simple: just edit the product file in the `products/` directory! To edit Google's entry, for example, simply edit the file at `products/google.toml`. Then, run the `npm test` command and make sure all tests pass. Finally, submit your changes as a pull request. (Be sure to follow the instructions in the Pull Request message template.)
   
   To learn about how the product TOML file works, review the [product assessment guide](#product-assessment-guide) below.
 
-  ### Product assessment guide
+  <h3 id="product-guide">Product assessment guide</h3>
   
   Each product on PrivacySpy is stored in the `products/` directory as a TOML file. If you're unfamiliar with the TOML file format, you can learn about it [here](https://learnxinyminutes.com/docs/toml/). In short, it's a flexible data serialization format like JSON or YAML that's designed to be written and understood by humans.
 
@@ -75,7 +75,15 @@
   * **`updates`**: this field contains an array of update objects; each update object represents an event on the timeline of a product. More information about update objects is available below. Note that we only include it in the metadata if it's empty; if present, we list updates themselves after the rubric section.
 
   <details>
-
+    <summary class="cursor-pointer">Example metadata TOML</summary>
+<pre><code>name = "Twitter"
+description = "Twitter is a microblogging social network and is popular among American public figures."
+slug = "twitter"
+hostnames = [ "twitter.com" ]
+sources = [ "https://twitter.com/en/privacy" ]
+icon = "twitter.png"
+updates = [ ]
+contributors = [ "milesmcc" ]</code></pre>
   </details>
   
   #### Product grading (rubric)
@@ -141,6 +149,43 @@ notes = ["Any notes, if applicable"]</code></pre>
   </div>
   
   {{/each}}
+
+  #### Updates
+
+  Whenever a product has a major privacy-related event (such as a data breach, an overhaul of their privacy policy, or anything else of this nature), we try to include it as an update on PrivacySpy.
+
+  Each product has an array of update objects. An update object (inside the `updates` array) looks like this:
+
+  ```toml
+[[updates]]
+title = "Data Breach"
+description = "More than 540 million records about Facebook users were publicly exposed on Amazon's cloud computing service, according to a cybersecurity research firm."
+date = 2019-08-28
+sources = [ "https://www.cbsnews.com/news/millions-facebook-user-records-exposed-amazon-cloud-server/" ]
+```
+
+  As you can probably gather, `title` is a string that represents the title of the update; `description` is a string that explains what happened (in full sentences); `date` is the date of the update; and `sources` is an array of URLs that provide information about the update.
+
+  Note that to insert the update into the `updates` array, we put `[[update]]` on top of the object, as per the TOML spec.
+
+  <h3 id="contributors-guide">Contributors file guide</h3>
+
+  Contributors like you deserve to be recogized for your additions to PrivacySpy. That's why we maintain the `CONTRIBUTORS.toml` file (in the root of the repository) where each contributor is listed with some minimal biographical information.
+
+  > You aren't required to add any biographical information to the `CONTRIBUTORS.toml` file if you don't want to.
+
+  Here's a template for what to put in the file:
+
+```toml
+[your_slug] # usually the same as your GitHub username
+name = "Your Name" # optional
+website = "http://example.com" # optional
+github = "example" # optional
+email = "example@example.com" # optional
+```
+
+  The only required element is `[your_slug]`. You can think of `your_slug` as your PrivacySpy "username"&mdash;it's what you'd add to the `contributors` array in policies you contribute to.
+  
   {{/markdown}}
 </main>
 {{/inline}}

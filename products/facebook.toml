@@ -76,12 +76,12 @@ citations = [
 
 [[updates]]
 title = "Exposed Phone Numbers"
-description = "In the latest privacy scandal for the tech giant, hundreds of millions of phone numbers linked to Facebook accounts were exposed on a server without authentication. Some of the records also included personal information such as the user's name, gender, and country."
-date = "2019-09-05T13:00:55.983593+00:00"
-sources = [ "https://techcrunch.com/2019/09/04/facebook-phone-numbers-exposed/" ]
+description = "In the latest privacy scandal for the tech giant, hundreds of millions of phone numbers linked to Facebook accounts were [exposed](https://techcrunch.com/2019/09/04/facebook-phone-numbers-exposed/) on a server without authentication. Some of the records also included personal information such as the user's name, gender, and country."
+date = 2019-09-05T13:00:55.983Z
+sources = [ ]
 
 [[updates]]
 title = "Data Breach"
-description = "More than 540 million records about Facebook users were publicly exposed on Amazon's cloud computing service, according to a cybersecurity research firm."
-date = "2019-08-28T13:35:35.375727+00:00"
-sources = [ "https://www.cbsnews.com/news/millions-facebook-user-records-exposed-amazon-cloud-server/" ]
+description = "More than 540 million records about Facebook users were [publicly exposed](https://www.cbsnews.com/news/millions-facebook-user-records-exposed-amazon-cloud-server/) on Amazon's cloud computing service, according to a cybersecurity research firm."
+date = 2019-08-28T13:35:35.375Z
+sources = [ ]
