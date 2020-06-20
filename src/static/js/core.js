@@ -82,7 +82,10 @@ function hasParentOfClass(element, classname) {
 
 window.addEventListener("click", (ev) => {
   if (
-    !(hasParentOfClass(ev.target, "mobile-dropdown") || hasParentOfClass(ev.target, "dropdown-toggler"))
+    !(
+      hasParentOfClass(ev.target, "mobile-dropdown") ||
+      hasParentOfClass(ev.target, "dropdown-toggler")
+    )
   ) {
     closeAllMobileDropdowns();
   }

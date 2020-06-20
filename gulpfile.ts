@@ -59,11 +59,9 @@ gulp.task(
 
 gulp.task("collect dependencies", () => {
   return gulp
-    .src([
-      "./node_modules/lunr/lunr.min.js",
-    ])
+    .src(["./node_modules/lunr/lunr.min.js"])
     .pipe(gulp.dest("./dist/static/deps/"));
-})
+});
 
 gulp.task("collect static", () => {
   return gulp

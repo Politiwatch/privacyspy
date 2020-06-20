@@ -10,7 +10,7 @@ module.exports = {
     "plugin:prettier/recommended",
   ],
   rules: {
-    "@typescript-eslint/no-var-requires": false,
-    "@typescript-eslint/ban-types": false,
+    "@typescript-eslint/no-var-requires": 0,
+    "@typescript-eslint/ban-types": 0,
   },
 };
