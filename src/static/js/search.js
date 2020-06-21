@@ -77,7 +77,7 @@ function onSearchInput() {
           for (let product of results.slice(0, 8)) {
             html += `
           <a href="/product/${product.slug}/" class="flex rounded items-center outline-none focus:bg-gray-100 px-2 py-1 hover:text-blue-500 searchResult">
-            <img src="/static/icons/${product.icon}" class="h-4 w-4 mr-2">
+            <img src="/static/icons/${product.icon}" class="h-4 w-4 mr-2 rounded">
             ${product.name}
           </a>`;
           }
