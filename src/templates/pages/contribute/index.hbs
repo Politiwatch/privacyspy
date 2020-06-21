@@ -8,6 +8,8 @@
 
   Note that all contributions to PrivacySpy will take place in our [GitHub repository](https://github.com/politiwatch/privacyspy). If you don't have one already, you'll need to sign up for a GitHub account to participate.
 
+  To see all of PrivacySpy's existing contributors, check out the [contributors page](/contributors/).
+
   ### Table of Contents
 
   * [Sharing suggestions and requests](#suggestions)
@@ -62,7 +64,7 @@
 
   * **`description`**: this field contains the description of the product as a string. The description should be a complete sentence, and often mentions the owner and/or country of the product.
 
-  * **`slug`**: this field contains the product's slug (its unique ID). The slug can contain only letters, numbers, and dashes. No two products can have the same slug, because the slug determines the URL where the policy will be hosted. (For example, a product with the slug `duckduckgo` would be accessible at `https://privacyspy.org/product/duckduckgo`.) The slug should be the same as the file but without `.toml`.
+  * **`slug`**: this field contains the product's slug (its unique ID). The slug can contain only letters, numbers, and dashes. No two products can have the same slug, because the slug determines the URL where the policy will be hosted. (For example, a product with the slug `duckduckgo` would be accessible at `/product/duckduckgo`.) The slug should be the same as the file but without `.toml`.
 
   * **`hostnames`**: this field contains an array of strings; each string should be a [hostname](https://en.wikipedia.org/wiki/Hostname) (i.e., domain name) of the product. For example, the value of `hostnames` for 1Password is `[ "1password.com" ]`. (Don't worry about subdomains; you don't need to include `my.1password.com` if you include `1password.com`.) Usually this array has only one element, but there are some cases when a product has multiple hostnames (e.g., GitHub, which uses `github.com` and `github.io`).
 
