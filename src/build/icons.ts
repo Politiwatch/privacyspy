@@ -12,8 +12,14 @@ let products = loadProducts(loadRubric(), loadContributors());
 (async () => {
   for (let product of products) {
     try {
-      if (fs.readdirSync("icons/").find(item => item.split(".")[0] === product.slug)) {
-        console.log("An icon is already present for " + product.slug + ", skipping...");
+      if (
+        fs
+          .readdirSync("icons/")
+          .find((item) => item.split(".")[0] === product.slug)
+      ) {
+        console.log(
+          "An icon is already present for " + product.slug + ", skipping..."
+        );
         continue;
       }
       await getIcon(product);
@@ -44,38 +50,55 @@ async function getIcon(product: Product) {
           ].includes(link.attrs.rel.toLowerCase()) &&
           link.attrs.href !== undefined
         ) {
-          potentialIcons.push(new URL(link.attrs.href, response.request.res.responseUrl).href);
+          potentialIcons.push(
+            new URL(link.attrs.href, response.request.res.responseUrl).href
+          );
         }
       }
     } catch (err) {
       console.log("An error occured while fetching " + hostname);
     }
   }
-  
+
   let wroteIcon = false;
-  for (let iconUrl of potentialIcons){
+  for (let iconUrl of potentialIcons) {
     if (wroteIcon) {
       break;
     }
     try {
       console.log(iconUrl);
-      let icon = await axios.get(iconUrl, {
-        responseType: 'arraybuffer'
-      }).then(response => Buffer.from(response.data, 'binary'));
+      let type = iconUrl
+        .split(".")
+        .slice(-1)
+        .pop()
+        .split("#")[0]
+        .split("?")[0]
+        .toLowerCase();
+      let icon = await axios
+        .get(iconUrl, {
+          responseType: "arraybuffer",
+        })
+        .then((response) => Buffer.from(response.data, "binary"));
       let dimensions = sizeOf(icon);
-      if (Math.abs(1 - dimensions.width / dimensions.height) <= 0.2 && dimensions.width >= 64 && icon.length < 30000){
-        let dest = "icons/" + product.slug + "." + iconUrl.split(".").slice(-1).pop().split("#")[0].split("?")[0];
-        console.log(`Writing icon ${dimensions.width}x${dimensions.height} icon to ${dest}`)
+      if (
+        Math.abs(1 - dimensions.width / dimensions.height) <= 0.2 &&
+        (dimensions.width >= 64 || type == "svg") &&
+        icon.length < 30000
+      ) {
+        let dest = "icons/" + product.slug + "." + type;
+        console.log(
+          `Writing icon ${dimensions.width}x${dimensions.height} icon to ${dest}`
+        );
         fs.writeFileSync(dest, icon);
         wroteIcon = true;
       }
-    } catch(err) {
+    } catch (err) {
       console.log(err);
       console.log("An error occurred while trying to get an icon: " + err);
     }
   }
   console.log(product.slug + ": " + potentialIcons.length + " potential icons");
-  if (!wroteIcon){
+  if (!wroteIcon) {
     console.log("    ...couldn't find a suitable icon.");
   }
 }
