@@ -7,10 +7,10 @@ const axios = require("axios").default;
 const JSSoup = require("jssoup").default;
 const fs = require("fs");
 
-let products = loadProducts(loadRubric(), loadContributors());
+const products = loadProducts(loadRubric(), loadContributors());
 
 (async () => {
-  for (let product of products) {
+  for (const product of products) {
     try {
       if (
         fs
@@ -32,13 +32,13 @@ let products = loadProducts(loadRubric(), loadContributors());
 })();
 
 async function getIcon(product: Product) {
-  let potentialIcons = [];
-  for (let hostname of product.hostnames) {
+  const potentialIcons = [];
+  for (const hostname of product.hostnames) {
     try {
-      let homeUrl = "http://" + hostname;
-      let response = await axios.get(homeUrl);
-      let soup = new JSSoup(response.data);
-      for (let link of soup.findAll("link")) {
+      const homeUrl = "http://" + hostname;
+      const response = await axios.get(homeUrl);
+      const soup = new JSSoup(response.data);
+      for (const link of soup.findAll("link")) {
         if (
           link.attrs.rel &&
           [
@@ -55,37 +55,42 @@ async function getIcon(product: Product) {
           );
         }
       }
+      potentialIcons.push(
+        "https://raw.githubusercontent.com/rdimascio/icons/master/icons/color/" +
+          product.slug +
+          ".svg"
+      );
     } catch (err) {
       console.log("An error occured while fetching " + hostname);
     }
   }
 
   let wroteIcon = false;
-  for (let iconUrl of potentialIcons) {
+  for (const iconUrl of potentialIcons) {
     if (wroteIcon) {
       break;
     }
     try {
       console.log(iconUrl);
-      let type = iconUrl
+      const type = iconUrl
         .split(".")
         .slice(-1)
         .pop()
         .split("#")[0]
         .split("?")[0]
         .toLowerCase();
-      let icon = await axios
+      const icon = await axios
         .get(iconUrl, {
           responseType: "arraybuffer",
         })
         .then((response) => Buffer.from(response.data, "binary"));
-      let dimensions = sizeOf(icon);
+      const dimensions = sizeOf(icon);
       if (
         Math.abs(1 - dimensions.width / dimensions.height) <= 0.2 &&
         (dimensions.width >= 64 || type == "svg") &&
         icon.length < 30000
       ) {
-        let dest = "icons/" + product.slug + "." + type;
+        const dest = "icons/" + product.slug + "." + type;
         console.log(
           `Writing icon ${dimensions.width}x${dimensions.height} icon to ${dest}`
         );
