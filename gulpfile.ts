@@ -39,7 +39,7 @@ gulp.task("build general pages", () => {
     .src(["./src/templates/pages/**/*.hbs", "./src/templates/pages/*.hbs"], {
       ignore: [
         "./src/templates/pages/product.hbs",
-        ".src/templates/pages/directory.hbs",
+        "./src/templates/pages/directory.hbs",
       ],
     })
     .pipe(rename({ extname: ".html" }))
