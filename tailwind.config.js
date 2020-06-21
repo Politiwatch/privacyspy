@@ -4,6 +4,8 @@ module.exports = {
   purge: [
     './src/**/*.hbs',
     './src/**/*.js',
+    './src/**/*.ts',
+    './gulpfile.ts',
   ],
   important: true,
   theme: {
