@@ -86,13 +86,6 @@ gulp.task("build css", () => {
           require("postcss-import"),
           require("tailwindcss")("tailwind.config.js"),
           require("autoprefixer"),
-          ...(process.env.NODE_ENV !== "debug"
-            ? [
-                require("@fullhuman/postcss-purgecss")({
-                  content: ["./dist/**/*.html"],
-                }),
-              ]
-            : []),
         ],
         { syntax: require("postcss-scss") }
       )
