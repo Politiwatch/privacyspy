@@ -1,4 +1,10 @@
-import { Product, RubricSelection, Update } from "../parsing/types";
+import {
+  Product,
+  RubricSelection,
+  Update,
+  RubricQuestion,
+} from "../parsing/types";
+import { loadRubric } from "../parsing/index";
 
 const gulp = require("gulp");
 const rename = require("gulp-rename");
@@ -11,6 +17,7 @@ export function hbsFactory(data: object = {}) {
   return hb()
     .partials("./src/templates/partials/**/*.hbs")
     .data({
+      categorizedRubricQuestions: getGeneralRubricCategories(loadRubric()),
       ...(data["products"] && {
         // landing page, API endpoint
         api: getExtensionAPI(data["products"]),
@@ -136,6 +143,19 @@ function getUpdatesTimeline(updates: Update[]): object {
   }
 
   return timeline;
+}
+
+function getGeneralRubricCategories(questions: RubricQuestion[]): object {
+  // TODO: refactor
+  const categories = {};
+
+  for (const question of questions) {
+    (categories[question.category] = categories[question.category] || []).push(
+      question
+    );
+  }
+
+  return categories;
 }
 
 function getRubricCategories(selections: RubricSelection[]): object {

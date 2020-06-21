@@ -34,7 +34,7 @@
       <div class="pb-4">
         {{#each this as |selection|}}
         <div class="mb-6">
-          {{> includes/rubricQuestion selection=selection}}
+          {{> includes/rubricQuestion selection=selection question=selection.question }}
         </div>
         {{/each}}
       </div>
