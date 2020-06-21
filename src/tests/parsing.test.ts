@@ -1,8 +1,7 @@
 import fs from "fs";
 import toml from "@iarna/toml";
 
-import { loadRubric, loadProducts } from "../parsing";
-import { loadContributors } from "../parsing/index";
+import { loadRubric, loadProducts, loadContributors } from "../parsing";
 
 let files: string[] = ["CONTRIBUTORS.toml"];
 
@@ -35,14 +34,14 @@ test("rubric parses correctly", () => {
   }).not.toThrowError();
 });
 
-test("products parse correctly", () => {
-  expect(() => {
-    loadProducts(loadRubric());
-  }).not.toThrowError();
-});
-
 test("contributors parse correctly", () => {
   expect(() => {
     loadContributors();
   }).not.toThrowError();
-})
+});
+
+test("products parse correctly", () => {
+  expect(() => {
+    loadProducts(loadRubric(), loadContributors());
+  }).not.toThrowError();
+});

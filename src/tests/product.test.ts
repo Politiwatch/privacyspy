@@ -36,12 +36,11 @@ describe("Product", () => {
       describe(`has a valid icon in the 'icons/' directory`, () => {
         test("icon exists", () => {
           expect(product.icon).not.toBeUndefined();
-          expect(product.icon.startsWith("icons/")).toBeTruthy();
-          expect(fs.existsSync(product.icon)).toBeTruthy();
+          expect(fs.existsSync("icons/" + product.icon)).toBeTruthy();
         });
 
         test(`${product.name} icon is smaller than 30kb`, () => {
-          expect(fs.statSync(product.icon).size).toBeLessThan(30000);
+          expect(fs.statSync("icons/" + product.icon).size).toBeLessThan(30000);
         });
       });
       if (product.parent != null) {
