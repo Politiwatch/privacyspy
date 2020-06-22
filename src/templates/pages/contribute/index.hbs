@@ -70,8 +70,6 @@
 
   * **`sources`**: this field contains an array of strings; each string should be the URL of a source used in grading the policy. (Almost always, the company's privacy policy itself would be included here as a source. Sometimes you'd want to include the company's security policy as well, if they have one.)
 
-  * **`icon`**: this field contains a string; the string should be the name of the icon file corresponding to this product in the `icons/` directory. (E.g., if the product's icon was located at `icons/1password.png`, the value of the `icon` field would be `1password.png`.)
-
   * **`contributors`**: this field contains an array of strings; each string corresponds to the the slug of each contributor (you!) in the `CONTRIBUTORS.toml` file. See the [contributors file guide](#contributors-file-guide) below for more information. Usually, people use their GitHub username as their slug.
 
   * **`updates`**: this field contains an array of update objects; each update object represents an event on the timeline of a product. More information about update objects is available below. Note that we only include it in the metadata if it's empty; if present, we list updates themselves after the rubric section.
@@ -173,7 +171,7 @@ sources = [ "https://www.cbsnews.com/news/millions-facebook-user-records-exposed
 
   Contributors like you deserve to be recogized for your additions to PrivacySpy. That's why we maintain the `CONTRIBUTORS.toml` file (in the root of the repository) where each contributor is listed with some minimal biographical information.
 
-  > You aren't required to add any biographical information to the `CONTRIBUTORS.toml` file if you don't want to.
+  **You aren't required to add any biographical information to the `CONTRIBUTORS.toml` file if you don't want to.**
 
   Here's a template for what to put in the file:
 
