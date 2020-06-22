@@ -32,7 +32,7 @@
         {{#if selection}}Score{{else}}Options{{/if}}
       </p>
       {{#each (sortBy question.options "percent") as |option|}}
-      <div class="flex text-sm rounded px-2 py-1 {{#if (eq option.id ../selection.option.id)}}bg-gray-100{{/if}}">
+      <div class="flex text-sm rounded px-2 py-1 {{#if (eq option.id ../selection.option.id)}} bg-gray-100 {{/if}}">
         <div class="w-5/6">
           <span>{{option.text}}</span>&nbsp;{{#if option.description}}{{> includes/info option.description}}{{/if}}
           {{#if (eq option.id ../selection.option.id)}}
