@@ -108,7 +108,7 @@ gulp.task(
 
 if (process.env.NODE_ENV === "debug") {
   gulp.watch(
-    ["./src/templates/**/*", "./rubric/**/*", "./products/**/*"],
+    ["./src/templates/**/*"],
     gulp.series("build pages", "collect static")
   );
   gulp.watch(["./src/**/*.{css,scss}", "build css"]);
