@@ -1,5 +1,5 @@
 name = "Quad9"
-description = "Quad9 is a nonprofit organization supported by IBM, Packet Clearing House, Global Cyber Alliance, and many other cybersecurity organizations for the purpose of operating a privacy-and-security-centric public DNS resolver."
+description = "Quad9 is a non-profit public DNS resolver that puts an emphasis on privacy and security."
 slug = "quad9"
 hostnames = [ "quad9.net" ]
 sources = [ "https://quad9.net/policy/" ]
