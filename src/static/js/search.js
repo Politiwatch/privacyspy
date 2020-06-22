@@ -40,8 +40,12 @@ function loadIndex() {
 
 function search(query) {
   let results = [];
-  for (let doc of index.search(query + "*")) {
-    results.push(products[doc.ref]);
+  let foundProducts = [];
+  for (let doc of [...index.search(query + "*"), ...index.search(query)]) {
+    if (!foundProducts.includes(doc.ref)){
+      results.push(products[doc.ref]);
+      foundProducts.push(doc.ref);
+    }
   }
   return results;
 }
