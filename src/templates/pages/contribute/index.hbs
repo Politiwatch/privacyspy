@@ -3,7 +3,7 @@
 {{#*inline "content"}}
 <main class="max-w-2xl mx-auto content">
   {{#markdown}}
-  <h1 class="mb-4 text-5xl font-extrabold">Contribute</h1>
+  <h1 class="text-5xl extrabold">Contribute</h1>
   We're thrilled that you want to contribute to PrivacySpy. This guide will explain how to contribute policies, corrections, suggestions, and code changes.
 
   Note that all contributions to PrivacySpy will take place in our [GitHub repository](https://github.com/politiwatch/privacyspy). If you don't have one already, you'll need to sign up for a GitHub account to participate.
@@ -107,15 +107,15 @@ contributors = [ "milesmcc" ]</code></pre>
   Note that all questions must be graded, and each grade must have at least one citation or note (as shown above).
 
   #### Questions &amp; options
-
+  <hr class="h-2 sep">
   {{#each rubric as |question|}}
-  <div class="p-4 mb-12 border border-gray-200 rounded">
+  <div class="p-4 mb-12 border border-gray-100 rounded-lg shadow-md md:p-6">
   <h4 class="mb-4">
     <code>{{question.slug}}</code> &mdash; {{question.text}}
   </h4>
   
   {{#if notes}}
-  <blockquote>
+  <blockquote class="content">
   {{#each notes as |note|}}
   {{#markdown}}{{note}}{{/markdown}}
   {{/each}}
@@ -124,7 +124,7 @@ contributors = [ "milesmcc" ]</code></pre>
 
   <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
   {{#each options as |option|}}
-  <div class="p-4 bg-gray-100 rounded">
+  <div class="p-4 border rounded">
     <kbd class="text-sm">{{option.id}}</kbd>
     <p>
       <strong>{{option.text}}</strong>
@@ -139,7 +139,7 @@ contributors = [ "milesmcc" ]</code></pre>
   {{/each}}
   </div>
   <details>
-    <summary class="mt-2 cursor-pointer">Sample TOML section</summary>
+    <summary class="mt-4 cursor-pointer">Sample TOML section</summary>
 <pre class="mt-2"><code>[rubric.{{question.slug}}]
 value = {{#each question.options as |option|}}"{{option.id}}" {{#if (not @last)}}/ {{/if}}{{/each}}
 citations = ["Citations, if applicable"]

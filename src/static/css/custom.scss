@@ -4,15 +4,25 @@
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --family-secondary: var(--family-primary);
   --color-content: #010101;
+  --color-title: #010101;
   --color-urge: #0366d6;
 }
 
-.heading {
-  font-weight: 800;
+.heading, .content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
+  font-weight: 700 !important;
 }
 
 .content strong {
   font-weight: 600;
+}
+
+.content {
+  font-size: 14px;
+}
+
+.content a {
+  text-decoration: none !important;
+  color: var(--color-urge) !important;
 }
 
 .link {
