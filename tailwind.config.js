@@ -1,7 +1,7 @@
 const { colors } = require("tailwindcss/defaultTheme");
 
 module.exports = {
-  purge: ["./src/**/*.hbs", "./src/**/*.js", "./src/**/*.ts", "./gulpfile.ts"],
+  purge: false,
   important: true,
   theme: {
     opacity: {

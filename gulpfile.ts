@@ -80,16 +80,7 @@ gulp.task("collect product icons", () => {
 gulp.task("build css", () => {
   return gulp
     .src(["./src/static/css/base.scss"])
-    .pipe(
-      postcss(
-        [
-          require("postcss-import"),
-          require("tailwindcss")("tailwind.config.js"),
-          require("autoprefixer"),
-        ],
-        { syntax: require("postcss-scss") }
-      )
-    )
+    .pipe(postcss())
     .pipe(rename({ extname: ".css" }))
     .pipe(gulp.dest("./dist/static/css/"));
 });
