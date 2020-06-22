@@ -93,7 +93,7 @@
         <p class="text-sm text-gray-400">Contributors</p>
         <p class="mt-1 text-sm text-black">
           {{#each product.contributors as |contributor|}}
-          {{contributor.slug}}{{#unless @last}}, {{/unless}}
+          <a href="/contributors/#contributor-{{contributor.slug}}" class="no-underline">{{contributor.slug}}</a>{{#unless @last}}, {{/unless}}
           {{/each}}
         </p>
       </div>

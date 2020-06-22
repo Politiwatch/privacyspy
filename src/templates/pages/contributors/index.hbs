@@ -10,7 +10,7 @@
   {{/markdown}}
   <div class="grid grid-cols-1 gap-4 mt-8 md:grid-cols-3">
       {{#each contributors}}
-        <div class="p-4 border border-gray-200 rounded">
+        <div class="p-4 border border-gray-200 rounded" id="contributor-{{slug}}">
             <p class="label">
               {{slug}}
               {{#if (not (eq role "contributor"))}}
