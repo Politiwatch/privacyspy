@@ -3,8 +3,8 @@
     <i class="fas fa-chevron-down" id="chevron-{{question.slug}}"></i>
   </div>
   {{#if selection}}
-  <div class="flex-shrink mx-6">
-    <i class="fas fa-circle {{ratioColorClass (divide selection.option.percent 100)}}"></i>
+  <div class="flex-shrink mr-6">
+    <i class="fas fa-sm fa-circle {{ratioColorClass (divide selection.option.percent 100)}}"></i>
   </div>
   {{/if}}
   <div class="flex-grow">
