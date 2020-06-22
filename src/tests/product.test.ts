@@ -15,6 +15,10 @@ describe("Product", () => {
         );
       });
 
+      test(`has contributors listed`, () => {
+        expect(product.contributors.length).toBeGreaterThan(0);
+      });
+
       describe(`has a valid description that is a full sentence`, () => {
         isMinFullSentence(product.description);
       });

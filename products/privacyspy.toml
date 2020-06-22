@@ -4,7 +4,7 @@ slug = "privacyspy"
 hostnames = [ "privacyspy.org" ]
 sources = [ "http://beta.privacyspy.org/terms-and-privacy/" ]
 updates = [ ]
-contributors = [ ]
+contributors = [ "milesmcc", "ibarakaiev" ]
 
 [rubric.behavioral-marketing]
 value = "no"
