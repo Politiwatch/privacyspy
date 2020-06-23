@@ -46,7 +46,12 @@ export function getProductPageBuildTasks(products: Product[]) {
     gulp.task(taskName, () => {
       return gulp
         .src("./src/templates/pages/product.hbs")
-        .pipe(hbsFactory({ product: product }))
+        .pipe(
+          hbsFactory({
+            product: product,
+            description: `${product.name} has a score of ${product.score}/10 on PrivacySpy, an open project to rate and annotate privacy policies.`,
+          })
+        )
         .pipe(rename(`/product/${product.slug}/index.html`))
         .pipe(gulp.dest("./dist/"));
     });

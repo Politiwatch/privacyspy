@@ -2,11 +2,11 @@
 <html>
 
 <head>
-  {{> includes/head redirect=redirect}}
+  {{> includes/head product_redirect=product_redirect}}
 </head>
 
 <body class="antialiased">
-  {{#unless redirect}}
+  {{#unless product_redirect}}
   {{#> precontent }}
   {{/precontent}}
   <div class="container relative max-w-screen-lg min-h-screen px-6 pt-2 mx-auto md:px-12">

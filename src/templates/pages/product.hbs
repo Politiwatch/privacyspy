@@ -1,4 +1,4 @@
-{{#> layouts/base title=product.name redirect=product.parent }}
+{{#> layouts/base title=product.name product_redirect=product.parent description=description }}
 
 {{#*inline "content"}}
 <main>
@@ -61,7 +61,8 @@
                   <div class="mt-2 mb-2 text-sm">{{{markdown update.description}}}</div>
                   <div class="block mb-6 text-center md:text-left">
                     {{#each update.sources as |source|}}
-                    <a href="{{this}}" target="_blank" class="block mr-2 text-sm text-gray-400 hover:text-blue-500">Source
+                    <a href="{{this}}" target="_blank"
+                      class="block mr-2 text-sm text-gray-400 hover:text-blue-500">Source
                       #{{add 1 @index}}&nbsp;&nearr; </a>
                     {{/each}}
                   </div>
