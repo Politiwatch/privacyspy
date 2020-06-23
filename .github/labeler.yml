@@ -14,7 +14,7 @@ frontend:
 - any: ['src/**/*.hbs']
 
 meta:
-- any: ["./*"]
+- "./*"
 
 icon:
 - any: ["icons/**/*"]
