@@ -2,22 +2,26 @@
 
 Most people don’t have the patience to read privacy policies. But privacy is important, and we shouldn’t just trust that products are treating our data right. PrivacySpy uses a consistent rubric to grade privacy policies on a ten-point scale.
 
-## Debugging
+View the site at [privacyspy.org](https://privacyspy.org)!
 
-If you'd like to run this webserver on your own machine, make sure you set the environment variable `DEBUG` to `True` — otherwise, you might have trouble with Heroku's wrapper.
+## Contributing
+
+To learn how to contribute, please check out the [contributing guide](https://privacyspy.org/contribute/). When submitting pull requests, make sure you follow the requested format (shown in the template).
+
+## Running Locally
+
+* Install dependencies with `npm i`
+* Build the site to `/dist` with `gulp`
+* Run all tests with `npm test`
 
 ## License
 
 PrivacySpy is licensed under GPLv3 (see LICENSE).
 
-## Contributing
-
-Please help us out! Feel free to submit a PR. PrivacySpy is a small enough project that we don't yet require a specific format for contributions. Just submit a PR!
-
 ## Related Repositories
 
 * [PrivacySpy Extension](https://github.com/Politiwatch/PrivacySpy-Extension)
-* [PrivacySpy Highlights API](https://github.com/Politiwatch/PrivacySpy-API) (for NLP highlights)
+* [PrivacySpy Legacy](https://github.com/Politiwatch/PrivacySpy-Legacy)
 
 ## Other Stuff
 
