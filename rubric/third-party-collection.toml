@@ -1,0 +1,22 @@
+category = "collection"
+slug = "third-party-collection"
+text = "Does the service collect personal data from third parties?"
+notes = ["This includes the use of data brokers and independent verification authorities (such as background check providers)."]
+points = 10
+
+[[options]]
+id = "yes"
+text = "Yes"
+percent = 0
+
+[[options]]
+id = "critical-only"
+text = "Yes, but for critical data only"
+description = "For example, a blog providing user avatars or a bank conducting identity verification would count."
+percent = 70
+
+[[options]]
+id = "no"
+text = "No"
+percent = 100
+

@@ -1,0 +1,36 @@
+{{#> layouts/base title="Directory" }}
+
+{{#*inline "content"}}
+<div class="mb-4 text-5xl font-extrabold leading-none text-center sm:text-left">
+  Directory
+</div>
+<div class="text-lg text-center text-gray-500 md:text-left">Viewing page {{add currentPage 1}} of {{length pages}}.
+</div>
+<hr class="h-12 sep">
+
+<div class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
+  {{#each listings as |product|}}
+  {{> includes/card product=product }}
+  {{/each}}
+</div>
+
+<div class="flex flex-row justify-center w-auto mx-auto mt-12 text-center text-md">
+  {{#each pages as |page|}}
+  {{#if (shouldIncludePage page ../currentPage (length ../pages))}}
+  {{#if (eq page ../currentPage)}}
+  <span class="mr-3 font-bold text-blue-500 rounded-full ">{{add 1 ../currentPage}}</span>
+  {{else}}
+  {{#if (eq page "0") }}
+  <a href="/directory" class="mr-3 hover:text-blue-500">{{add 1 page}}</a>
+  {{else}}
+  <a href="/directory/{{add 1 page}}" class="mr-3 hover:text-blue-500">{{add 1 page}}</a>
+  {{/if}}
+  {{/if}}
+  {{/if}}
+  {{#if (shouldIncludeEllipsis page ../currentPage (length ../pages))}}
+  <span class="mr-3">&#8230;</span>
+  {{/if}}
+  {{/each}}
+</div>
+{{/inline}}
+{{/layouts/base}}

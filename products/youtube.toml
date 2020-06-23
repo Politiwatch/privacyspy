@@ -1,0 +1,6 @@
+name = "YouTube"
+description = "YouTube is a popular video sharing platform owned by Google."
+hostnames = ["youtube.com"]
+slug = "youtube"
+parent = "google"
+contributors = ["ibarakaiev"]

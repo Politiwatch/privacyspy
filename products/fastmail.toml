@@ -1,0 +1,74 @@
+name = "Fastmail"
+description = "Fastmail is an email service that offers paid email accounts for individuals and organizations."
+slug = "fastmail"
+hostnames = [ "fastmail.com" ]
+sources = [ "https://www.fastmail.com/about/privacy/" ]
+contributors = [ "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+citations = [
+  "We may use your name and email address to send direct marketing communications to you and let you know more about our services or related services that we believe will be of interest to you. We may contact you by email, or through other communication channels that we think you may find helpful. In all cases, we will respect your preferences for how you would like us to manage marketing activity with you.\r\n[...]\r\n\r\nTo protect your privacy rights and to ensure you have control over how we manage marketing with you:\r\n\r\n- users of the FastMail, Listbox and Pobox services can opt out of any non-essential communication by de-selecting the relevant checkbox in the settings page in the web interface;\r\n- even after opting in, you can ask us to stop sending email marketing by following the “unsubscribe” or opt-out links in electronic communications. Alternatively you can contact us; and\r\n[...]\r\nWe do not profile you to customise services for you, provide personalised content or show you personalised advertisements based on your individual interests, preferences, or related activities."
+]
+
+[rubric.security]
+value = "yes"
+citations = [
+  "We store most of your personal information electronically. We implement and maintain appropriate technical and organisational security measures, policies and procedures designed to reduce the risk of accidental destruction or loss, misuse or interference or the unauthorised disclosure, access or modification to such information appropriate to the nature of the information concerned.\r\n\r\nThe security of your information is paramount and a critical consideration for FastMail in the provision of its services to you. Please see further information on the security measures we engage on our websites and platform and when you use any of our services.\r\n\r\nWe work hard to protect you and FastMail from unauthorised access, alteration, disclosure, or destruction of information we hold. Measures we take include:\r\n\r\n- placing confidentiality requirements and restricted access protocols on our staff members and service providers who need access to your information in order to process it to provide our services to you;\r\n- destroying your personal information if it is no longer needed to provide you with our service;\r\n- destroying logging or other transactional information that may incidentally contain personal information in accordance with our schedules to clear such information;\r\n- following strict security procedures in the access, storage and disclosure of your personal information to prevent unauthorised access to it; and\r\n- using secure communication transmission software (known as \"secure sockets layer\" or \"SSL\") that encrypts all information you input on our website before it is sent to us. SSL is an industry standard encryption protocol and this ensure that the information is reasonably protected against unauthorised interception.\r\nAs the security of information depends in part on the security of the computer and/or device you use to communicate with us and the security you use to protect your user IDs and passwords, please take appropriate measures to protect this information."
+]
+
+[rubric.third-party-collection]
+value = "no"
+notes = [ "N/A" ]
+
+[rubric.history]
+value = "yes"
+citations = [
+  "This privacy policy came into effect on May 25th, 2020. The only change from our previous policy is the amendment of 'FastMail' to 'Fastmail' to reflect our updated name."
+]
+
+[rubric.data-deletion]
+value = "yes-automated"
+citations = [
+  "You can also delete certain information, or your entire FastMail account should you wish to do so. You can download and export a copy of all of your data and content in your FastMail account if you want to back it up or use it with a service outside of FastMail."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [ "The policy does not specify a data breach protocol." ]
+
+[rubric.third-party-access]
+value = "yes-unspecified-critical"
+citations = [
+  "We may share your personal information in the manner and for the purposes described below:\r\n\r\n* with third parties who help manage our business and deliver services. These include service providers who help manage our systems. Some of these providers use “cloud based” IT applications or systems, which means that your Personal Information will be hosted on their servers, but under our control and direction. We require all our service providers and third parties to respect the confidentiality and security of Personal Information and our contracts with them generally include obligations for them to comply with applicable privacy laws and to use any personal information we share with them solely for the purpose of providing services to us.\r\n* with your consent or as necessary to complete any transaction or provide any product which you have requested or authorised — for example when sending emails to a friend, sharing photos or documents on shared drives, or linking accounts with another service from fastmail. Or where you direct us to share your personal information with a third-party service provider in order to integrate our services with a service that they may provide, for example with a third-party calendar provider, mail provider or cloud file storage provider. Again, we require all our service providers and third parties to respect the confidentiality and security of Personal Information and our contracts with them generally include obligations for them to comply with applicable privacy laws and to use any personal information we share with them solely for the purpose of providing services to us. Any personal information which is provided directly by you and received by a third party directly may be stored and will be used by them according to their privacy policy;\r\n* with account administrators — if you work for or are part of an organisation that uses Fastmail services, your account administrators and/or resellers who manage your account will have access to your Fastmail account. They may be able to: access and retain information and your email stored in your account; view statistics regarding your account; change your account password; suspend or terminate your account access; receive your account information in order to satisfy applicable law, regulation, legal process, or enforceable governmental request; and: restrict your ability to delete or edit your information or your privacy settings.\r\n\r\n[...]\r\n\r\n* with government organisations and agencies, law enforcement, regulators to comply with all applicable laws, regulations and rules, and requests of law enforcement, regulatory and other governmental agencies;\r\n* with banks and payment providers to authorise and complete payments, though we only maintain a record of your email address (for PayPal), or the last four digits of your credit card and expiry date (for credit card);\r\n* if, in the future, we sell or transfer some or all of our business or assets to a third party, we may disclose information to a potential or actual third party purchaser of our business or assets; and \r\n* we may share in aggregate, statistical form, nonpersonal information regarding the visitors to our website, traffic patterns, and website usage with our partners and affiliates.\r\n\r\n[...]\r\n\r\n* We use Matomo, a web analysis service of InnoCraft Inc. (“Matomo”). Matomo uses cookies to monitor traffic to, and use of our marketing websites only. There is no Matomo tracking once you are logged in. Information about the use of our website generated by these cookies is generally transferred to a Matomo server in the USA and stored there. Matomo uses this information on our behalf to evaluate usage of our website, and to compile reports on activities. All personal information, including IP addresses, are anonymised by them. Matomo respects Do Not Track browser flags; you may opt out of tracking by setting your browser to Do Not Track."
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "We use this information to:\r\n\r\n* provide you with our services and to maintain, manage and improve our services;\r\n* help our services deliver more useful, customised content such as more accurate search results;\r\n* send you notifications when you receive new mail or events; we may also send you a notification if we detect suspicious activity, like an attempt to sign in to your account from an unusual location;\r\n* at your option, contact you to let you know about updates to our services or information we feel may be of interest to you (see more information at Direct Marketing);\r\n* provide you with customer support including technical support and troubleshooting (for example, to reset your password);\r\n* protect you and conduct security investigations and fraud and abuse analysis (including to help us flag spam mail);\r\n* conduct analytics and measurement to understand how our services are used;\r\ncomply with our legal obligations, for example when assisting governments and law enforcement agencies or regulators (as may be required by law);\r\n* improve the safety and reliability of our services. This includes detecting, preventing, and responding to fraud, abuse, security risks, and technical issues that could harm FastMail, you, our users, or the general public."
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-all"
+citations = [
+  "To protect your privacy rights and to ensure you have control over how we manage marketing with you:\r\n\r\n* users of the FastMail, Listbox and Pobox services can opt out of any non-essential communication by de-selecting the relevant checkbox in the settings page in the web interface;\r\n* even after opting in, you can ask us to stop sending email marketing by following the “unsubscribe” or opt-out links in electronic communications. Alternatively you can contact us; and\r\n[...]\r\n* Matomo respects Do Not Track browser flags; you may opt out of tracking by setting your browser to Do Not Track."
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "Your use of FastMail products and services is subject to your organisation's policies, if any. You should direct your privacy inquiries, including any requests to exercise your data protection rights, to your organisation’s account administrator.\r\n\r\n[We may share data with] government organisations and agencies, law enforcement, regulators to comply with all applicable laws, regulations and rules, and requests of law enforcement, regulatory and other governmental agencies;"
+]
+
+[rubric.list-collected]
+value = "exhaustively"
+citations = [
+  "If you register to use, or use, one of our websites or services including FastMail https://www.fastmail.com, Pobox (Lifetime Email) https://www.pobox.com, Listbox https://www.listbox.com or Topicbox https://www.topicbox.com, personal information that may be collected directly from you includes name, billing address, mobile phone number, organisation name, your own domain name, IP address, browser user-agent and billing details (credit card, or PayPal account). We also collect some of this information if you are using our services on a trial basis. Our help page on each service explains how your information is deleted if you decide not to proceed.\r\n\r\nWe may also collect personal information such as IP address, device information and log information by using cookies. Please see Cookies for more information on this and our Cookies Policy.\r\n\r\nWe process mail sent and received from your account to block spam and fraud. We receive information from third party services to assist us in identifying spam. If you report a message to us, either through the service or via customer support, as spam or not spam, we may share that message with the third party service that flagged it to improve the accuracy of future filtering. See further below on your rights when we disclose your information to our third party service providers.\r\n\r\nWe also store information from your address book, calendar, notes and files on our servers until you delete them (for more information on data retention see our security help page). We will also share this information with your devices and external accounts where you have authorised us to do so.\r\n\r\nWe also collect the email content you create, upload, or receive from others when using our services. We use this information to deliver our services, like processing the terms you search for in order to return results or helping you add addresses to messages by suggesting recipients from your contacts.\r\n\r\nEach time you connect to our service, we log your IP address, your client identifier (browser or mail client information) and your username. If you send mail, we also log the email address you're using to send mail and the email address you're sending to. If you take action on mail in your mailbox, we also log the activities taken. This is necessary for providing proof of delivery and fraud analysis. For example, we need this information for detecting deliverability issues if there are failures sending email that we either detect through monitoring or when you ask if email you are sending/receiving is working properly. We also need your IP address and username to help you validate if someone else has gained access to your account to send spam or for other fraudulent purposes.\r\n[...]\r\nIn a multi-user account, if you are permitted to access and use a user account on any of our services by the registered user directly, we may collect the following information about you: IP address and name.\r\n\r\nThe registered account holder is responsible for your access and use if they provide you with access to and use of an account and the Personal Information residing in that account."
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "We may review or update this privacy policy from time to time to keep it up to date with legal requirements and the way we operate our business. We will place any updates on this webpage, so please regularly check for updates. If we make fundamental changes to this privacy policy, we may take additional steps to notify you including by posting on our website(s), through pop-up notices or via email. We will not reduce your rights under this Privacy Policy without your explicit consent."
+]

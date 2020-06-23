@@ -1,0 +1,79 @@
+name = "Taco Bell"
+description = 'Taco Bell is a fast food chain owned by Yum! Foods that sells "mexican-inspired" cuisine.'
+slug = "taco-bell"
+hostnames = [ "tacobell.com" ]
+sources = [ "https://www.tacobell.com/legal-notices/privacy-policy" ]
+contributors = [ "nep" ]
+
+[rubric.behavioral-marketing]
+value = "yes-opt-out"
+citations = [
+  "We may use your location information to provide personalized content and advertising, to enhance your shopping and dining experience, to allow you to view deals and products available to you based on your location [...] For more information on how to block, delete and/or disable tracking technologies, see “Your Choices and Control Over Your Information” below."
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "Security of your information is very important to us, and we have put in place safeguards to preserve the integrity and security of information we collect and share with our service providers. However, no security system is impenetrable and we cannot guarantee the security of our systems at all times."
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "Information provided by others. From time to time, we may receive information about you from third parties and other users. For example we may obtain information from our marketing partners or from third parties to enhance or supplement our existing user information. We may also collect information about you that is publicly available. We may combine this information with the information we collect from you directly."
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [
+  " When we change this Policy in a material manner, we will so indicating but updating the “last modified” date in the heading of this Policy"
+]
+
+[rubric.data-deletion]
+value = "no"
+citations = [
+  "We will retain your personal information as long as reasonably necessary to maintain the Service, to meet legal and accounting obligations, and for the other purposes described in this Privacy Policy. We may anonymize and/or aggregate personal information and store it in order to analyze aggregate metrics and trends. "
+]
+notes = [ "The policy does not specify whether data can be deleted." ]
+
+[rubric.data-breaches]
+value = "eventually"
+citations = [
+  "In the event that any information under our control is compromised as a result of a breach of data security, we will take reasonable steps to investigate the situation and, where appropriate, notify those individuals whose information may have been compromised and take additional steps, in accordance with any applicable laws and regulations."
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = [
+  "Our third party providers may collect location data through GPS, Wi-Fi, wireless network triangulation or other similar methods."
+]
+
+[rubric.data-collection-reasoning]
+value = "somewhat"
+citations = [
+  "2. HOW DO WE USE PERSONAL INFORMATION?\r\n\r\nTo fulfill your requests and provide our Services to you.\r\n\r\nFor marketing purposes.\r\n\r\nTo communicate with you.\r\n\r\nTo monitor, improve and develop our products and services\r\n\r\nTo protect the security and integrity of our business, comply with legal requirements and obligations, or as otherwise permitted by law. "
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-some"
+citations = [
+  "If you would prefer not to accept cookies, most browsers will allow you to: (i) change your browser settings to notify you when you receive a cookie, which lets you choose whether or not to accept it; (ii) disable existing cookies; or (iii) set your browser to automatically reject cookies. For more information on how to block, delete and/or disable tracking technologies, see “Your Choices and Control Over Your Information” below."
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "We may also use information in order to comply with laws, regulations, court orders, or other legal obligations or to assist in an investigation, to protect and defend our rights and property, or the rights or safety of third parties, to enforce our Terms of Use, this Policy, or agreements with third parties, to detect and prevent fraud or for crime-prevention purposes, or for any other reason permitted by law."
+]
+
+[rubric.list-collected]
+value = "generally"
+citations = [
+  "The categories of information we collect **may include**:\r\n\r\nContact and profile information.\r\n\r\nPayment and transaction information. \r\n\r\nComments, chat and opinions. \r\n\r\n[...]"
+]
+
+[rubric.revision-notify]
+value = "no"
+notes = [
+  "The policy does not specify whether it will notify users when the policy is updated."
+]

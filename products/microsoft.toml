@@ -1,0 +1,82 @@
+name = "Microsoft"
+description = "Microsoft is an American technology company, best known for creating Windows and Office."
+slug = "microsoft"
+hostnames = [ "Microsoft.com" ]
+sources = [ "https://privacy.microsoft.com/en-us/privacystatement" ]
+contributors = [ "UnKnOwN" ]
+
+[rubric.behavioral-marketing]
+value = "yes-opt-out"
+citations = [
+  "Many products include personalized features, such as recommendations that enhance your productivity and enjoyment. These features use automated processes to tailor your product experiences based on the data we have about you, such as inferences we make about you and your use of the product, activities, interests, and location.\r\n\r\nThe ads that you see may be selected based on data we process about you, such as your interests and favorites, your location, your transactions, how you use our products, your search queries, or the content you view. For example, if you view content on MSN about automobiles, we may show advertisements about cars; if you search “pizza places in Seattle” on Bing, you may see advertisements in your search results for restaurants in Seattle.\r\n\r\nThe ads that you see may also be selected based on other information learned about you over time using demographic data, location data, search queries, interests and favorites, usage data from our products and sites, as well as the sites and apps of our advertisers and partners. We refer to these ads as \"interest-based advertising\" in this statement. For example, if you view gaming content on xbox.com, you may see offers for games on MSN. To provide interest-based advertising, we combine cookies placed on your device using information that we collect (such as IP address) when your browser interacts with our websites. **If you opt out of receiving interest-based advertising, data associated with these cookies will not be used.**\r\n"
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "Microsoft is committed to protecting the security of your personal data. We use a variety of security technologies and procedures to help protect your personal data from unauthorized access, use, or disclosure. For example, we store the personal data you provide on computer systems that have limited access and are in controlled facilities. When we transmit highly confidential data (such as a credit card number or password) over the internet, we protect it through the use of encryption."
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "The third-party sources vary over time and include:\r\n\r\nData brokers from which we purchase demographic data to supplement the data we collect.\r\n\r\nServices that make user-generated content from their service available to others, such as local business reviews or public social media posts.\r\n\r\nCommunication services, including email providers and social networks, when you give us permission to access your data on such third-party services or networks.\r\n\r\nService providers that help us determine your device’s location.\r\n\r\nPartners with which we offer co-branded services or engage in joint marketing activities.\r\n\r\nDevelopers who create experiences through or for Microsoft products.\r\n\r\nThird parties that deliver experiences through Microsoft products, such as skills related to Cortana.\r\n\r\nPublicly-available sources, such as open government databases."
+]
+
+[rubric.history]
+value = "yes"
+citations = [
+  "When we post changes, we will revise the \"last updated\" date at the top of the statement and describe the changes on the Change history page."
+]
+
+[rubric.data-deletion]
+value = "yes-automated"
+citations = [
+  "You can control some of the data Microsoft processes through your use of a Microsoft account on the Microsoft privacy dashboard. From here, for example, you can view and clear the browsing, search, and location data associated with your Microsoft account."
+]
+notes = [
+  "Presumably, by clearing one's data in the privacy dashboard and then deleting one's account, the information will be permanently deleted."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [ "The policy doesn't specify a data breach protocol." ]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = [
+  "We may share data we collect with third parties, such as Oath, AppNexus, or Facebook (see below), so that the ads you see in our products, their products, or other sites and apps serviced by these partners are more relevant and valuable to you."
+]
+
+[rubric.data-collection-reasoning]
+value = "mostly"
+notes = [
+  "Microsoft extensively lists the types of data collected as well as purposes for collection. However, the reasons why the company collects data is not clearly explained for exactly each piece of data."
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-some"
+citations = [
+  "\"You can opt-out of interest-based advertising through the advertising links within MSN services, or by visiting the Microsoft opt-out page.\""
+]
+notes = [
+  "The opt-out tool mentioned in the citation is available for _some_ non-critical uses of information, but not across all Microsoft products."
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "Finally, we will retain, access, transfer, disclose, and preserve personal data, including your content, when we have a good faith belief that doing so is necessary to comply with applicable law or respond to valid legal process, including from law enforcement or other government agencies.\r\n\r\nAs our report shows, every year we reject a number of law enforcement requests. Challenges to government requests can take many forms. In many of these cases, we simply inform the requesting government that we are unable to disclose the requested information and explain our reason for rejecting the request. We also, where it is appropriate, challenge requests in court."
+]
+
+[rubric.list-collected]
+value = "generally"
+citations = [
+  "For example: \"Data about your device, your device configuration, and nearby networks. For example, data about the operating systems and other software installed on your device, including product keys. In addition, IP address, device identifiers (such as the IMEI number for phones), regional and language settings, and information about WLAN access points near your device.\""
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "If there are material changes to the statement, such as a change to the purposes of processing of personal data that is not consistent with the purpose for which it was originally collected, we will notify you either by prominently posting a notice of such changes before they take effect or by directly sending you a notification. We encourage you to periodically review this privacy statement to learn how Microsoft is protecting your information."
+]

@@ -1,0 +1,85 @@
+name = "Epic Games"
+description = "Epic Games is an American game development company. It is behind the Unreal Engine and a number of popular video games."
+slug = "epic-games"
+hostnames = [ "epicgames.com" ]
+sources = [ "https://www.epicgames.com/site/privacypolicy/" ]
+contributors = [ "milesmcc", "yaagesoft" ]
+
+[rubric.behavioral-marketing]
+value = "yes"
+citations = [
+  "To support our legitimate interests, consistent with your rights and preferences, we use personal information:\r\n[...]\r\nTo manage and customize advertisements or promotional offers."
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "We maintain appropriate administrative, technical, and physical safeguards to protect your personal information from accidental, unlawful, or unauthorized destruction, loss, alteration, access, disclosure, or use and other unlawful forms of processing. In some cases, your information is accessible when you log into a feature we offer, and in those cases you need to keep your user credentials and password confidential and secure so that your information is protected. "
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "In some cases, other parties provide us with information about you, or allow us to collect information about you. We generally collect information from other parties in four ways: (1) you access the Epic services using a website or device that is not controlled by us, such as a game console or social network, (2) you choose to use a social feature of the Epic services, (3) you purchase one of our games or applications from another party, or (4) you use Epic services that contain or require anti-cheat services from other parties. In some cases, we are not able to control the amount or type of information that other parties like social networks, make available to us. In those cases, we use only the data that we need to provide the types of services we think our users want and expect. Although we cannot control your privacy settings at those websites or how those other parties protect your privacy, once we receive information about you through those websites, we will treat it in accordance with this policy."
+]
+notes = [
+  "There is no guarantee that the data collected is used for only non-critical purposes."
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [
+  "This policy may be updated periodically to reflect changes in our personal information practices or relevant laws. We will indicate at the top of this policy when this policy was last updated. Please review this policy every time you access or use the Epic services to make sure that you have reviewed the most recent version."
+]
+
+[rubric.data-deletion]
+value = "no"
+citations = [
+  "If you are located in the EU or Epic entities located in the EU process your personal information, then we will provide you with the ability to request access to and correction or deletion of your personal information."
+]
+notes = [
+  "There is no guarantee that this functionality is provided for users outside of the EU."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [ "Is not mentioned" ]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = [
+  "We may share personal information we collect with Epic Games, Inc. subsidiaries to support the Epic services worldwide. We also will share information with service providers that perform services on our behalf and under our instructions. These service providers are not authorized by us to use or disclose the information except as necessary to perform services on our behalf or comply with legal requirements. We also may share certain limited information, such as device identifiers, with advertisers and other marketing partners for purposes of gauging the effectiveness of advertising and other marketing strategies."
+]
+
+[rubric.data-collection-reasoning]
+value = "somewhat"
+citations = [
+  "The type of information that we automatically collect may vary, but generally includes:\r\n\r\n- Technical information about your computer, device, hardware, or software you use to access the Internet or our services, such as IP address or other transactional or identifier information for your device (such as device make and model, information about device operating systems and browsers, or other device or system related specifications)\r\n\r\n- Usage information and statistics about your interaction with the Epic services, which may include the URLs of our websites that you have visited, URLs of referring and exiting pages, page views, time spent on a page, number of clicks, platform type, the application you used or the game you played, how long you used or played it and when, and other usage statistics\r\n\r\n- Crash reports, which may be automatically generated when a game or application crashes and includes information about your system and the crash\r\n\r\n- Information that facilitates a safer and more personalized experience, such as your display name or other user identification provided in connection with your application use or game play, saved preferences, game progress, and device identifiers or usage information for authentication and fraud prevention purposes\r\n\r\n- The location of your device, such as may be derived from your device’s IP address"
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-some"
+citations = [
+  "We provide you with choices about whether to provide us with personal information and whether it is shared. For example, we may seek your prior consent for certain processing. We are required to seek your consent before we use your personal information for any purpose incompatible with the purposes identified in this policy. You may withdraw your consent at any time by sending an email as specified in the “How to Contact Us” section below. Any withdrawal of consent is only effective on a going-forward basis and will not impact processing we undertook while relying on your consent."
+]
+notes = [
+  "Phrases like \"certain processing\" are vague, and there is no guarantee that the opt-outs they provide cover all non-critical data uses. "
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "We may also disclose information about you: (i) if we are required to do so by law, legal process, or a reasonable request from law enforcement authorities or other government officials, (ii) when we believe disclosure is necessary or appropriate to prevent physical harm or financial loss or in connection with an investigation of suspected or actual illegal activity, or (iii) if necessary to protect the vital interests of another individual (such as to prevent death, bodily harm, or serious damage to property)."
+]
+
+[rubric.list-collected]
+value = "generally"
+citations = [
+  "- Technical information about your computer, device, hardware, or software you use to access the Internet or our services, such as IP address or other transactional or identifier information for your device (such as device make and model, information about device operating systems and browsers, or other device or system related specifications);\r\n- Usage information and statistics about your interaction with the Epic services, which may include the URLs of our websites that you have visited, URLs of referring and exiting pages, page views, time spent on a page, number of clicks, platform type, the application you used or the game you played, how long you used or played it and when, and other usage statistics;\r\n- Crash reports, which may be automatically generated when a game or application crashes and includes information about your system and the crash;\r\n- Information that facilitates a safer and more personalized experience, such as your display name or other user identification provided in connection with your application use or game play, saved preferences, game progress, and device identifiers or usage information for authentication and fraud prevention purposes;\r\n- The location of your device, such as may be derived from your device’s IP address."
+]
+
+[rubric.revision-notify]
+value = "no"
+citations = [
+  "Please review this policy every time you access or use the Epic services to make sure that you have reviewed the most recent version."
+]

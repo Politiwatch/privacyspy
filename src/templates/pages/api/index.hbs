@@ -1,0 +1,17 @@
+{{#> layouts/base title="Code of Conduct" }}
+
+{{#*inline "content"}}
+<main class="max-w-2xl mx-auto content">
+  <h1 class="text-5xl extrabold mb-8">API Access</h1>
+  {{#markdown}}
+  We're happy to maintain an open API that you can use to incorporate PrivacySpy into your own application. So long as you follow our [Terms](/terms-and-privacy/) and attribute the information back to PrivacySpy, you can use the data however you wish.
+
+  The index of the PrivacySpy database is published at `/api/v2/index.json`.
+  
+  <p class="text-sm text-gray-600">
+    Want another endpoint? PrivacySpy is open source, so you can <a href="/contribute/">build it yourself</a>!
+  </p>
+  {{/markdown}}
+</main>
+{{/inline}}
+{{/layouts/base}}

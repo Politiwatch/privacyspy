@@ -1,0 +1,42 @@
+<div id="navbar" class="relative" style="z-index: 5;">
+  <header class="flex justify-between h-12 pt-6 pb-8 sm:items-center">
+    <div class="flex items-center justify-between w-full p-0">
+      <div class="flex flex-row items-center flex-grow">
+        <a href="/">
+          <div class="mr-6 select-none">
+            <h3 class="inline-flex items-center pt-1 text-lg">
+              <img src="/static/img/logo-black.svg" class="w-6 h-6 mr-2 opacity-40">
+              <p class="font-semibold">PrivacySpy</p>
+            </h3>
+          </div>
+        </a>
+      </div>
+      <div class="mr-4 sm:mr-8 sm:flex-grow">
+        {{> includes/search }}
+      </div>
+      <div class="lg:hidden">
+        <button type="button"
+          class="block text-gray-600 dropdown-toggler hover:text-gray-800 focus:text-white focus:outline-none"
+          id="dropdown-button" onclick="toggleMobileDropdown('nav-menu')">
+          <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" data-target="nav-menu">
+            <path id="burger" fill-rule="evenodd"
+              d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"
+              style="display: none;" />
+            <path id="cross" fill-rule="evenodd"
+              d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div id="nav-menu" class="hidden mobile-dropdown lg:block">
+      <div
+        class="absolute right-0 items-center inline-block p-4 mt-6 bg-white border border-gray-100 rounded lg:rounded-none lg:mt-0 lg:text-left lg:float-none lg:static lg:p-0 lg:flex lg:bg-none lg:border-none lg:shadow-none"
+        style="z-index: 11;">
+        <a href="/directory/" class="block mr-8 md:text-sm lg:pt-0 hover:text-blue-500">Directory</a>
+        <a href="/extension/" class="block pt-2 mr-8 md:text-sm lg:pt-0 hover:text-blue-500">Extension</a>
+        <a href="/contribute/" class="block pt-2 mr-8 md:text-sm lg:pt-0 hover:text-blue-500">Contribute</a>
+        <a href="/about/" class="block pt-2 md:text-sm lg:pt-0 hover:text-blue-500">About</a>
+      </div>
+    </div>
+  </header>
+</div>

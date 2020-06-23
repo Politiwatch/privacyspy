@@ -1,0 +1,78 @@
+name = "Google"
+description = "Google is an American technology and advertising giant known for its search engine and cloud services."
+slug = "google"
+hostnames = [ "google.com", "google" ]
+sources = [ "https://policies.google.com/privacy" ]
+contributors = [ "ibarakaiev" ]
+
+[rubric.behavioral-marketing]
+value = "yes-opt-out"
+citations = [
+  "\"We use the information we collect to customize our services for you, including providing recommendations, personalized content, and customized search results.\""
+]
+
+[rubric.security]
+value = "yes-audits"
+citations = [
+  "\"We work hard to protect you and Google from unauthorized access, alteration, disclosure, or destruction of information we hold, including:\r\n\r\n- We use encryption to keep your data private while in transit\r\n- We offer a range of security features, like Safe Browsing, Security Checkup, and 2 Step Verification to help you protect your account\r\n- We review our information collection, storage, and processing practices, including physical security measures, to prevent unauthorized access to our systems\r\n- We restrict access to personal information to Google employees, contractors, and agents who need that information in order to process it. Anyone with this access is subject to strict contractual confidentiality obligations and may be disciplined or terminated if they fail to meet these obligations.\""
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "\"In some circumstances, Google also collects information about you from publicly accessible sources. For example, if your name appears in your local newspaper, Google’s Search engine may index that article and display it to other people if they search for your name. We may also collect information about you from trusted partners, including marketing partners who provide us with information about potential customers of our business services, and security partners who provide us with information to protect against abuse. We also receive information from advertisers to provide advertising and research services on their behalf.\r\n\r\nWe use various technologies to collect and store information, including cookies, pixel tags, local storage, such as browser web storage or application data caches, databases, and server logs.\""
+]
+
+[rubric.history]
+value = "yes"
+citations = [
+  "\"We change this Privacy Policy from time to time. We will not reduce your rights under this Privacy Policy without your explicit consent. We always indicate the date the last changes were published and we offer access to archived versions for your review. If changes are significant, we’ll provide a more prominent notice (including, for certain services, email notification of Privacy Policy changes).\""
+]
+
+[rubric.data-deletion]
+value = "yes-automated"
+citations = [
+  "\"You can export a copy of content in your Google Account if you want to back it up or use it with a service outside of Google.\"\r\n\r\n\"To delete your information, you can:\r\n- Delete your content from specific Google services\r\n- Search for and then delete specific items from your account using My Activity\r\n- Delete specific Google products, including your information associated with those products\r\n- Delete your entire Google Account\""
+]
+
+[rubric.data-breaches]
+value = "no"
+citations = [
+  "\"The insights we gain from maintaining our services help us detect and automatically block security threats from ever reaching you. And if we do detect something risky that we think you should know about, we’ll notify you and help guide you through steps to stay better protected.\""
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = [
+  "\"We provide personal information to our affiliates and other trusted businesses or persons to process it for us, based on our instructions and in compliance with our Privacy Policy and any other appropriate confidentiality and security measures. For example, we use service providers to help us with customer support.\""
+]
+
+[rubric.data-collection-reasoning]
+value = "mostly"
+citations = [
+  "\"If you use our services to make and receive calls or send and receive messages, we may collect telephony log information like your phone number, calling-party number, receiving-party number, forwarding numbers, time and date of calls and messages, duration of calls, routing information, and types of calls.\""
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-all"
+citations = [
+  "\"This section describes key controls for managing your privacy across our services. You can also visit the [Privacy Checkup](https://myaccount.google.com/privacycheckup), which provides an opportunity to review and adjust important privacy settings. In addition to these tools, we also offer specific privacy settings in our products.\""
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "\"We will share personal information outside of Google if we have a good-faith belief that access, use, preservation, or disclosure of the information is reasonably necessary to:\r\n\r\n...\r\n- Meet any applicable law, regulation, legal process, or enforceable governmental request. We share information about the number and type of requests we receive from governments in our Transparency Report.\""
+]
+
+[rubric.list-collected]
+value = "generally"
+citations = [
+  "\"The activity information we collect may **include**: ...\"\r\n\r\n\"The information we collect **includes**: ...\"\r\n\r\n\"If you’re using an Android device with Google apps, your device periodically contacts Google servers to provide information about your device and connection to our services. This information **includes** things like your device type, carrier name, crash reports, and which apps you've installed.\""
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "\"We change this Privacy Policy from time to time. We will not reduce your rights under this Privacy Policy without your explicit consent. We always indicate the date the last changes were published and we offer access to archived versions for your review. If changes are significant, we’ll provide a more prominent notice (including, for certain services, email notification of Privacy Policy changes).\""
+]

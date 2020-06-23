@@ -1,0 +1,79 @@
+name = "Netflix"
+description = "Netflix is an online video streaming and film production company based in the United States."
+slug = "netflix"
+hostnames = [ "netflix.com" ]
+sources = [ "https://help.netflix.com/legal/privacy" ]
+contributors = [ "kulchynska" ]
+
+[rubric.behavioral-marketing]
+value = "yes-opt-out"
+citations = [
+  "If you are using a browser, then cookies and web beacons can be used to collect information to help determine your likely interests. If you are using a mobile device, tablet, or streaming media device that includes a resettable device identifier, then that identifier can be used to help determine your likely interests\r\nTo opt out of interest-based ads from Netflix in connection with an resettable device identifier on a mobile device, tablet, or streaming media devices, please configure the appropriate setting on your device"
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "Security\r\nWe use reasonable administrative, logical, physical and managerial measures to safeguard your personal information against loss, theft and unauthorized access, use and modification. These measures are designed to provide a level of security appropriate to the risks of processing your personal information."
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "We also obtain information from other sources \r\nservice providers that help us determine a location based on your IP address in order to customize our service and for other uses consistent with this Privacy Statement;\r\nonline and offline data providers, from which we obtain demographic,  interest based and online advertising related data;\r\n"
+]
+
+[rubric.history]
+value = "yes"
+citations = [
+  "Last Updated: April 24, 2019\r\n\r\nTo see the prior version of this document, please go to www.netflix.com/privacyupdates."
+]
+
+[rubric.data-deletion]
+value = "yes-automated"
+citations = [
+  "You can most easily do this by visiting the \"Account\" portion of our website, where you have the ability to access and update a broad range of information about your account, including your contact information, your Netflix payment information, and various related information about your account (such as the content you have viewed and rated). You must be signed in to access the \"Account\" section. You may also request that we delete personal information that we hold about you"
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [ "The policy does not specify a data breach protocol." ]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = [
+  "We disclose your information for certain purposes and to third parties, as described below:\r\n\r\nThe Netflix family of companies: We share your information among the Netflix family of companies (https://help.netflix.com/support/2101)\r\nService Providers: We use other companies, agents or contractors (\"Service Providers\") to perform services on our behalf or to assist us with the provision of services to you. For example, we engage Service Providers to provide marketing, advertising, communications, infrastructure and IT services\r\n"
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "We use information to provide, analyze, administer, enhance and personalize our services and marketing efforts, to process your registration, your orders and your payments, and to communicate with you on these and other topics. For example, we use information to:"
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-some"
+citations = [
+  "Netflix can then choose whether or not to send a given promotional communication to you on that third party site or app. You can opt out in the “Marketing Communications” section of the “Account” section of our website.\r\n"
+]
+notes = [
+  "While Netflix allows opting out of (presumably personalized) marketing, they do not specify an opt-out system for all non-critical data (like advertising identifiers)."
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "Protection of Netflix and others: Netflix and its Service Providers may disclose and otherwise use your personal and other information where we or they reasonably believe such disclosure is needed to (a) satisfy any applicable law, regulation, legal process, or governmental request"
+]
+
+[rubric.list-collected]
+value = "generally"
+notes = [
+  "The policy lists most of the data it collects relatively specifically, but it also uses language like \"includes\" (leaving open the possibility for other collected information)."
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "We will update this Privacy Statement from time to time in response to changing legal, regulatory or operational requirements. **We will provide notice of any such changes** (including when they will take effect) in accordance with law. Your continued use of the Netflix service after any such updates take effect will constitute acknowledgement and (as applicable) acceptance of those changes. If you do not wish to acknowledge or accept any updates to this Privacy Statement, you may cancel your use of the Netflix service. To see when this Privacy Statement was last updated, please see the \"Last Updated\" section below."
+]

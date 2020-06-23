@@ -1,0 +1,31 @@
+category = "collection"
+slug = "noncritical-purposes"
+text = "Does the service allow the user to control whether personal data is collected or used for non-critical purposes?"
+notes = ["Some services allow users to opt-out or opt-in to of non-critical collection or use of personal data, such as collecting data for personalized advertisements."]
+points = 10
+
+[[options]]
+id = "no"
+text = "No"
+percent = 0
+
+[[options]]
+id = "opt-out-some"
+text = "On an opt-out basis, but only for some non-critical data/uses"
+percent = 30
+
+[[options]]
+id = "opt-out-all"
+text = "On an opt-out basis, for all non-critical data/uses"
+percent = 60
+
+[[options]]
+id = "opt-in"
+text = "On an opt-in basis"
+percent = 60
+
+[[options]]
+id = "na"
+text = "N/A (no data used for non-critical purposes)"
+percent = 100
+

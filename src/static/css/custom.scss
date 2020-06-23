@@ -1,0 +1,59 @@
+:root {
+  --family-primary: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --family-secondary: var(--family-primary);
+  --color-content: #010101;
+  --color-title: #010101;
+  --color-urge: #0366d6;
+}
+
+.heading, .content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
+  font-weight: 700 !important;
+}
+
+.content strong {
+  font-weight: 600;
+}
+
+.content {
+  font-size: 14px;
+}
+
+.content a {
+  text-decoration: none !important;
+  color: var(--color-urge) !important;
+}
+
+.link {
+  padding-bottom: 1px;
+  text-decoration: none;
+  transition: background-position 120ms ease-in-out, padding 120ms ease-in-out;
+  background-size: 100% 200%;
+  background-position: 0 0;
+  word-break: break-word;
+}
+
+.blue-link {
+  background-image: linear-gradient(
+    transparent 0%,
+    transparent calc(50% - 4px),
+    hsl(207, 90%, 54%) calc(50% - 4px),
+    hsl(217, 90%, 54%) 100%
+  );
+}
+
+@variants hover, focus {
+  .blue-link-accent {
+    background-image: linear-gradient(
+      transparent 0%,
+      transparent calc(50% - 4px),
+      hsl(207, 90%, 45%) calc(50% - 4px),
+      hsl(217, 90%, 45%) 100%
+    );
+  }
+}
+
+.score-size {
+  font-size: 2.5rem !important;
+}

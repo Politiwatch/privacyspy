@@ -1,0 +1,86 @@
+name = "The New York Times"
+description = 'The New York Times is a New York newspaper and widely considered the "paper of record" in the United States.'
+slug = "nytimes"
+hostnames = [ "nytimes.com" ]
+sources = [
+  "https://help.nytimes.com/hc/en-us/articles/115014892108-Privacy-policy"
+]
+contributors = [ "UnKnOwN" ]
+
+[rubric.behavioral-marketing]
+value = "yes-opt-out"
+citations = [
+  "“These companies place or recognize cookies, pixel tags, web beacons or other technology to track certain information about our NYT Services website users. For example, in the course of serving certain advertisements, an advertiser may place or recognize a unique cookie on your browser in order to collect certain information about your use of the NYT Services. For another example, an advertiser or ad server may also be able to collect your device’s unique identifier in the course of serving an ad. In many cases, this information could be used to show you ads on other websites based on your interests.”"
+]
+notes = [
+  "Advertisers on the New York Times do offer opt-out tools, however they can sometimes be hard to use."
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "“We seek to protect personal information with reasonable organizational, technological and physical safeguards commensurate to the sensitivity of the personal information. Although we take appropriate measures to safeguard your information, we cannot guarantee its absolute security.”"
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "“Publicly available databases, including privately-held marketing and data analytics resources. For example, we may receive demographic information (age, sex, household income, job industry and job title) from these sources. [...] [From] Joint marketing third [parties], when they share the information with us.”"
+]
+
+[rubric.history]
+value = "last-modified"
+notes = [
+  "The last modified date is available at the top of the policy."
+]
+
+[rubric.data-deletion]
+value = "yes-contact"
+citations = [
+  "\"If you would like to request to review, correct, restrict or delete personal information that you have previously provided to us, object to the processing of personal information, or if you would like to request to receive an electronic copy of your personal information for purposes of transmitting it to another company (to the extent this right to data portability is provided to you by applicable law), you may contact us by completing this form.\""
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "Nothing is mentioned about data breaches in the privacy policy."
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = [
+  "\"We may also share personal information to third-party sponsors of sweepstakes, contests, and similar promotions and will let you know at the point of collection of your information if we do.\"\r\n\r\n\"One of the analytics service providers we use is Google Analytics.\"\r\n\r\n\"If you are a U.S. print subscriber, we may exchange or rent your name and postal mailing address (but not your email address) and certain other information, such as when you first subscribed to The New York Times with other reputable companies that offer marketing information or products through direct mail.\""
+]
+
+[rubric.data-collection-reasoning]
+value = "mostly"
+notes = [
+  "While the policy does a generally good job explaining how it uses the data (albeit sometimes for less-than-ideal purposes, like selling addresses to mailing marketers), not all information is accompanied by a clear explanation. "
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-some"
+citations = [
+  "“For opt-out options specific to Google Analytics, please visit https://tools.google.com/dlpage/gaoptout”\r\n\r\n“You may opt out of the use of the Google Doubleclick cookie by visiting the Google ad and content network privacy policy. ”"
+]
+notes = [
+  "The policy does provide a number of opt-out links, but their data can still be used for non-critical purposes internally within the New York Times (for example, for marketing)."
+]
+
+[rubric.law-enforcement]
+value = "unspecified"
+citations = [
+  "\"We may access, preserve and disclose personal information if we are required to do so by law or we have a good faith belief that such action is necessary to (1) comply with the law or with legal process; (2) protect and defend our rights and property; (3) protect against misuse or unauthorized use of the NYT Services; (4) protect the personal safety or property of our users or the public (among other things, this means that if you provide false information or attempt to pose as someone else, information about you may be disclosed as part of any investigation into your actions); and (5) cooperate with public and government authorities (which may be outside your country of residence).\""
+]
+
+[rubric.list-collected]
+value = "generally"
+notes = [
+  "Almost all categories are explicitly explained, however in the section “From other sources” some “including” phrases are used (thereby making the statements non-absolute)."
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "“If we make a significant or material change in the way we use or share your personal information, you will be notified via email and/or prominent notice within the NYT Services at least 30 days prior to the changes taking effect.”"
+]

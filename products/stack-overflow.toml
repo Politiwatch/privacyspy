@@ -1,0 +1,80 @@
+name = "Stack Overflow"
+description = "StackOverflow is a question-and-answer forum for computer science related issues."
+slug = "stack-overflow"
+hostnames = [ "stackoverflow.com" ]
+sources = [ "https://stackoverflow.com/legal/privacy-policy" ]
+contributors = [ "YuriiStasiuk" ]
+
+[rubric.behavioral-marketing]
+value = "yes"
+citations = [
+  "When you register for an account, and when you interact with Stack Overflow, we and authorized third parties place cookies on you and your account activity as described in more detail within our Cookies Policy. We use this information to serve you certain advertising content."
+]
+notes = [ "There is no clear opt-out function." ]
+
+[rubric.security]
+value = "yes"
+citations = [
+  "Security is important to us and we know it is important to you. Stack Overflow follows generally accepted standards to protect your personal information when processing, transferring, and storing your personal information including Transport Layer Security (“TLS”), by restricting your personal data when we do not need to access it and by keeping your personal data only as necessary to perform our legitimate business interests."
+]
+
+[rubric.third-party-collection]
+value = "no"
+notes = [
+  "The policy does not mention sharing data with any third parties."
+]
+
+[rubric.history]
+value = "yes"
+citations = [
+  "Previous versions of this privacy policy are available upon request."
+]
+
+[rubric.data-deletion]
+value = "yes-automated"
+citations = [
+  "Stack Overflow will delete personal information stored on you, which we are not required by necessity to maintain.\r\n\r\n"
+]
+notes = [
+  "Note that on the profile management page, there is an option to delete your account. It has the following warning text:\r\n\r\n\"User deletion is irreversible! By sending this request, your votes will be revoked, and all of your content will be made anonymous.\""
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [ "The policy does not specify a data breach protocol." ]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = [
+  "Stack Overflow partners with third parties to display advertisements on our public Network and within our Talent Platform. These partnerships provide third parties access to the developer community to promote themselves or services and to provide you with visibility into companies and third parties seeking to recruit you for employment opportunities, and for other purposes. In providing this opportunity, Stack Overflow and its third party partners may collect and use your personal information to tailor your advertising experience to suit your interests, skills, as well as to monitor your account activity in order to optimize our Products and Services."
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+notes = [
+  "For each bit of data Stack Overflow collects, it clearly discloses *why* that information is being collected."
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-some"
+citations = [
+  "Privacy is a guiding principle of all Stack Overflow Products and Services and we value your privacy. To this end, we provide you with the ability to control how your information is stored, and what information is collected. You may change or correct your account settings, and choose not to share certain information by creating a pseudonymous account. Additionally, much of the data we collect is voluntary and your choice entirely to provide us or not. You may also remove certain optional information that you no longer wish to be publicly displayed, such as your photo, or job history. In the event Stack Overflow decides to provide additional opt-out or opt-in mechanisms under the Privacy Shield Framework, the mechanisms will be clear, conspicuous, and readily available for you to exercise your choice."
+]
+
+[rubric.law-enforcement]
+value = "strict"
+citations = [
+  "Stack Overflow will not disclose your personal information to legal authorities except where such disclosure is by lawful request, including to meet legitimate national security or law enforcement demands (including a subpoena, court order, or other lawful legal demand by a legal authority with lawful jurisdiction)."
+]
+
+[rubric.list-collected]
+value = "generally"
+citations = [
+  "We collect information such as your username, password, email address, IP address (collected at each site visit).\r\n...\r\n...we collect a record of your communications with us and other third parties that are accessible to chat participants and certain authorized third parties. Other account information and usage information including your IP address and browser data...\r\n...\r\nwe collect certain personal information on you the account holder (or account unregistered job seeker)\r\n...\r\nData from advertising technologies like cookies, web beacons, pixels, ad tags, and browser/device identifiers\r\nInformation you have provided to us directly including profile information, your Developer Story, and in limited instances your job history\r\nUsage analytics including your visits to the Network, browsing and search history\r\nInformation from our advertising partners (e.g., device type and location)\r\n...\r\nOn behalf of the Entity, we collect Company or Entity name, Team Representative name, the names of authorized users, and you may elect to provide a Company or Team logo, trademark, or photo for account association purposes.\r\n...\r\nStack Overflow collects certain application metadata\r\n"
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "We may amend or update this policy from time to time, and will notify you of any material changes to this policy."
+]

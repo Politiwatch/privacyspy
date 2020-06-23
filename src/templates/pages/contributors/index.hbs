@@ -1,0 +1,57 @@
+{{#> layouts/base title="Contributors" }}
+
+{{#*inline "content"}}
+<main class="max-w-2xl mx-auto">
+  <div class="content">
+    <h1 class="text-5xl extrabold mb-8">Contributors</h1>
+    <p>Together, these individuals built PrivacySpy from the ground up. To learn how to contribute yourself, check out
+      the <a href="/contribute/">contributing guide</a>.</p>
+
+    <p class="text-sm text-gray-600">Are you a contributor? Add yourself to this page by editing
+      <code>CONTRIBUTORS.toml</code>.</p>
+  </div>
+  <div class="grid grid-cols-1 gap-4 mt-8 md:grid-cols-3">
+    {{#each contributors}}
+    <div class="p-4 border border-gray-200 rounded" id="contributor-{{slug}}">
+      <p class="label">
+        {{slug}}
+        {{#if (not (eq role "contributor"))}}
+        <span class="badge ~urge">{{capitalize role}}</span>
+        {{/if}}
+      </p>
+      <div class="text-sm text-gray-900">
+        {{#if name}}
+        <p class="mt-1">
+          <i class="mr-1 text-gray-600 fas fa-sm fa-id-card"></i>
+          {{name}}
+        </p>
+        {{/if}}
+        {{#if website}}
+        <p class="mt-1">
+          <i class="mr-1 text-gray-600 fas fa-sm fa-globe"></i>
+          {{#with (urlParse website)}}
+          <a href="{{../website}}" class="no-underline" {{#if (eq ../role "contributor")}}rel="nofollow noopener"
+            {{/if}}>{{ellipsis host 16}}&nearr;</a>
+          {{/with}}
+        </p>
+        {{/if}}
+        {{#if github}}
+        <p class="mt-1">
+          <i class="mr-1 text-gray-600 fab fa-sm fa-github"></i>
+          <a href="https://github.com/{{github}}" rel="nofollow noopener"
+            class="no-underline">{{ellipsis github 16}}&nearr;</a>
+        </p>
+        {{/if}}
+        {{#if email}}
+        <p class="mt-1">
+          <i class="mr-1 text-gray-600 fas fa-sm fa-envelope"></i>
+          <a href="mailto:{{email}}" class="no-underline">{{ellipsis email 16}}&nearr;</a>
+        </p>
+        {{/if}}
+      </div>
+    </div>
+    {{/each}}
+  </div>
+</main>
+{{/inline}}
+{{/layouts/base}}

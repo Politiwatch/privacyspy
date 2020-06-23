@@ -1,0 +1,67 @@
+{{#> layouts/base title="Extension" }}
+
+{{#*inline "content"}}
+<script>
+  // Opera 8.0+
+  var isOpera =
+    (!!window.opr && !!opr.addons) ||
+    !!window.opera ||
+    navigator.userAgent.indexOf(" OPR/") >= 0;
+
+  // Firefox 1.0+
+  var isFirefox = typeof InstallTrigger !== "undefined";
+
+  // Safari 3.0+ "[object HTMLElementConstructor]"
+  var isSafari =
+    /constructor/i.test(window.HTMLElement) ||
+    (function (p) {
+      return p.toString() === "[object SafariRemoteNotification]";
+    })(
+      !window["safari"] ||
+      (typeof safari !== "undefined" && safari.pushNotification)
+    );
+
+  // Internet Explorer 6-11
+  var isIE = /*@cc_on!@*/ false || !!document.documentMode;
+
+  // Edge 20+
+  var isEdge = !isIE && !!window.StyleMedia;
+
+  // Chrome 1 - 71
+  var isChrome =
+    !!window.chrome && (!!window.chrome.webstore || !!window.chrome.runtime);
+
+  // Blink engine detection
+  var isBlink = (isChrome || isOpera) && !!window.CSS;
+
+  function installBrowserExtension() {
+    if (isChrome) {
+      window.open(
+        "https://chrome.google.com/webstore/detail/ppembnadnhiknioggbglgiciihgmkmnd",
+        "_blank"
+      );
+    } else if (isFirefox) {
+      window.open(
+        "https://addons.mozilla.org/en-US/firefox/addon/privacyspy/",
+        "_blank"
+      );
+    } else {
+      alert(
+        "We can't detect your browser! To install the PrivacySpy extension, please navigate to the appropriate extension marketplace for your browser and install it."
+      );
+    }
+  }
+</script>
+<main class="max-w-2xl mx-auto content">
+  <h1 class="text-5xl extrabold mb-8">Extension</h1>
+  {{#markdown}}
+  We offer a free, open-source browser extension that displays the PrivacySpy rating of the sites you visit. It works by periodically downloading a copy of the PrivacySpy database from our [API](/api/), which means it never exposes your browsing activity to an external server.
+
+  The extension is available for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/privacyspy/) and [Chrome](https://chrome.google.com/webstore/detail/ppembnadnhiknioggbglgiciihgmkmnd). Its source code is [open source](https://github.com/politiwatch/privacyspy-extension).
+
+  <button onclick="installBrowserExtension()" class="font-medium text-blue-500 text-md mt-4">Install the Extension
+    &rarr;</button>
+  {{/markdown}}
+</main>
+{{/inline}}
+{{/layouts/base}}

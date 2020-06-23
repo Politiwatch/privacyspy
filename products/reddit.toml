@@ -1,0 +1,78 @@
+name = "Reddit"
+description = "Reddit is a news aggregation and message board website with thousands of sub-communities."
+slug = "reddit"
+hostnames = [ "reddit.com" ]
+sources = [ "https://www.redditinc.com/policies/privacy-policy" ]
+contributors = [ "milesmcc" ]
+
+[rubric.behavioral-marketing]
+value = "yes-opt-out"
+citations = [
+  "\"We may partner with third-party advertisers, ad networks, and analytics providers to deliver advertising and content targeted to your interests and to better understand your use of the Services. These third parties may collect information sent by your computer, browser, or mobile device in response to a request for content, such as unique identifiers, your IP address, or other information about your computer or device.\"\r\n\r\n\"You can adjust how we personalize advertisements for you by visiting your ads preferences here. You may also generally opt out of receiving personalized advertisements from certain third-party advertisers and ad networks.\""
+]
+
+[rubric.security]
+value = "yes"
+citations = [
+  "\"We take measures to help protect information about you from loss, theft, misuse and unauthorized access, disclosure, alteration, and destruction. For example, we use HTTPS while information is being transmitted. We also enforce technical and administrative access controls to limit which of our employees have access to non-public personal information.\""
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "\"We may receive information about you from other sources, including from other users and third parties, and combine that information with the other information we have about you. For example, we may receive demographic or interest information about you from third parties, including advertisers, and combine it with our own data using a common account identifier such as a hash of an email address or a mobile-device ID.\""
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [
+  "\"We may change this Privacy Policy from time to time. If we do, we will let you know by revising the date at the top of the policy.\""
+]
+
+[rubric.data-deletion]
+value = "yes-automated"
+citations = [
+  "\"You may delete your account information at any time from the user preferences page. When you delete your account, your profile is no longer visible to other users and disassociated from content you posted under that account. Please note, however, that the posts, comments, and messages you submitted prior to deleting your account will still be visible to others unless you first delete the specific content. We may also retain certain information about you as required by law or for legitimate business purposes after you delete your account.\""
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "No part of the policy specifies whether users must be notified in case of a data breach."
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified-critical"
+citations = [
+  "\"With our partners. We may share information with vendors, consultants, and other service providers (but not with advertisers and ad partners) who need access to such information to carry out work for us. The partner’s use of personal data will be subject to appropriate confidentiality and security measures.\""
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+notes = [
+  "Reddit's explanation for the data it collects is generally reasonable."
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-all"
+citations = [
+  "\"Some analytics providers we partner with may provide specific opt-out mechanisms and we may provide, as needed and as available, additional tools and third-party services that allow you to better understand cookies and how you can opt-out. For example, you may manage the use and collection of certain information by Google Analytics here.\"\r\n\r\n\"We also offer you choices about receiving personalized advertisements. You can adjust how we personalize advertisements for you by visiting your ads preferences here. You may also generally opt out of receiving personalized advertisements from certain third-party advertisers and ad networks. To learn more about these advertisements or to opt out, please visit the websites of the Digital Advertising Alliance and the Network Advertising Initiative, or if you are a user in the European Economic Area, Your Online Choices.\""
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "\"To comply with the law. We may share information in response to a request for information if we believe disclosure is in accordance with, or required by, any applicable law, regulation, legal process or governmental request, including, but not limited to, meeting national security or law enforcement requirements. To the extent the law allows it, we will attempt to provide you with prior notice before disclosing your information in response to such a request. Our Transparency Report has additional information about how we respond to government requests.\""
+]
+
+[rubric.list-collected]
+value = "generally"
+notes = [
+  "While the list is far from exhaustive (most categories only list examples), it is generally comprehensive."
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "\" If we make a change to this policy that, in our sole discretion, is material, we will provide you with additional notice (such as adding a statement to r/announcements, the front page of the Services or sending you a notification).\""
+]

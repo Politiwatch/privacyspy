@@ -1,0 +1,36 @@
+<title>
+    {{title}} | PrivacySpy
+</title>
+<link rel="stylesheet" href="/static/css/base.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="utf-8" />
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+<link href="/static/img/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180" />
+<link href="/static/img/fingerprint-icon.svg" rel="icon" type="image/svg+xml" />
+<link href="/static/img/favicon-32x32.png" rel="alternate icon" sizes="32x32" type="image/png" />
+<meta content="#ffffff" name="theme-color" />
+<link href="https://chrome.google.com/webstore/detail/ppembnadnhiknioggbglgiciihgmkmnd" rel="chrome-webstore-item" />
+<meta
+    content="{{default description "PrivacySpy is an open project to grade and monitor privacy policies for convenience and accountability. Let's make informed data privacy decisions." }}"
+    name="description" />
+<meta content="{{title}} | PrivacySpy" property="og:title" />
+<meta
+    content="{{default description "PrivacySpy is an open project to grade and monitor privacy policies for convenience and accountability. Let's make informed data privacy decisions." }}"
+    property="og:description" />
+<meta content="/static/core/img/graphic.png" property="og:image:secure_url" />
+<meta content="PrivacySpy" property="og:site_name" />
+<meta content="privacyspy.org" name="twitter:domain" />
+<meta content="{{title}} | PrivacySpy" name="twitter:title" />
+<meta content="http://privacyspy.org/" name="twitter:url" />
+<meta
+    content="{{default description "PrivacySpy is an open project to grade and monitor privacy policies for convenience and accountability. Let's make informed data privacy decisions." }}"
+    name="twitter:description" />
+<meta content="/static/core/img/graphic.png" name="twitter:image" />
+<meta content="/static/core/img/graphic.png" property="og:image" />
+{{#if product_redirect }}
+<meta http-equiv="refresh" content="0; url='/product/{{product_redirect}}'" />
+{{else}}
+<script src="/static/js/core.js"></script>
+<script src="/static/deps/lunr.min.js"></script>
+<script src="/static/js/search.js"></script>
+{{/if}}

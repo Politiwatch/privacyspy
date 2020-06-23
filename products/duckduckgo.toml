@@ -1,0 +1,77 @@
+name = "DuckDuckGo"
+description = "DuckDuckGo is an internet privacy company known for its search engine."
+slug = "duckduckgo"
+hostnames = [ "duckduckgo.com" ]
+sources = [ "https://duckduckgo.com/privacy" ]
+contributors = [ "unbeatable101", "ibarakaiev" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+citations = [
+  "Similarly, we may add an affiliate code to some eCommerce sites (e.g. Amazon & eBay) that results in small commissions being paid back to DuckDuckGo when you make purchases at those sites. We do not use any third parties to do the code insertion, and we do not work with any sites that share personally identifiable information (e.g. name, address, etc.) via their affiliate programs. This means that no information is shared from DuckDuckGo to the sites, and the only information that is collected from this process is product information, which is not tied to any particular user and which we do not save or store on our end. It is completely analogous to the search result case from the previous paragraph--we can see anonymous product info such that we cannot tie them to any particular person (or even tie multiple purchases together). This whole affiliate process is an attempt to keep advertising to a minimal level on DuckDuckGo."
+]
+notes = [
+  "While DuckDuckGo employs affiliate programs to generate revenue, there is no personalized marketing on the service as the it does not collect any personal data."
+]
+
+[rubric.security]
+value = "na"
+notes = [
+  "In addition to not collecting any personally identifiable information, DuckDuckGo's privacy policy also outlines how they handle redirects to other websites so that those websites don't have access to searches."
+]
+
+[rubric.third-party-collection]
+value = "no"
+citations = [
+  "We do not use any third parties to do the code insertion, and we do not work with any sites that share personally identifiable information (e.g. name, address, etc.) via their affiliate programs."
+]
+
+[rubric.history]
+value = "yes"
+notes = [ "The top of the privacy policy page includes a change-log." ]
+
+[rubric.data-deletion]
+value = "na"
+citations = [
+  "DuckDuckGo does not collect or share personal information. That is our privacy policy in a nutshell."
+]
+
+[rubric.data-breaches]
+value = "na"
+notes = [ "DuckDuckGo does not collect any personal information." ]
+
+[rubric.third-party-access]
+value = "no"
+citations = [
+  "We do not use any third parties to do the code insertion, and we do not work with any sites that share personally identifiable information (e.g. name, address, etc.) via their affiliate programs. This means that no information is shared from DuckDuckGo to the sites, and the only information that is collected from this process is product information, which is not tied to any particular user and which we do not save or store on our end."
+]
+
+[rubric.data-collection-reasoning]
+value = "na"
+citations = [
+  "DuckDuckGo does not collect or share personal information. That is our privacy policy in a nutshell."
+]
+
+[rubric.noncritical-purposes]
+value = "na"
+citations = [
+  "DuckDuckGo does not collect or share personal information. That is our privacy policy in a nutshell."
+]
+
+[rubric.law-enforcement]
+value = "na"
+citations = [
+  "Also, like anyone else, we will comply with court ordered legal requests. However, in our case, we don't expect any because there is nothing useful to give them since we don't collect any personal information."
+]
+
+[rubric.list-collected]
+value = "na"
+citations = [
+  "DuckDuckGo does not collect or share personal information. That is our privacy policy in a nutshell."
+]
+
+[rubric.revision-notify]
+value = "na"
+citations = [
+  "If this policy is substantively updated, we will update the text of this page and provide notice to you at [https://duckduckgo.com/about](https://duckduckgo.com/about) by writing '(Updated)' in red next to the link to this page (in the footer) for a period of at least 30 days."
+]

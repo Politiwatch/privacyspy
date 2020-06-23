@@ -1,0 +1,70 @@
+{{#> layouts/base title="About" }}
+
+{{#*inline "content"}}
+<main class="max-w-2xl mx-auto content">
+<h1 class='text-5xl mb-8'>About</h1>
+{{#markdown}}
+**Most people don't have the patience to read privacy policies. But privacy is important, and we shouldn't just trust that products are treating our data right. PrivacySpy uses a consistent rubric to grade privacy policies on a ten-point scale.**
+
+Most privacy policies are convoluted&mdash;sometimes even intentionally so. They can be difficult to read, and even more difficult to comprehend. Rarely do they provide actionable insight into protecting one's data.
+
+Making matters worse, companies are often only held accountable for their privacy practices when a data breach occurs or when they experience fallout from mishandling user data (think Facebook's Cambridge Analytica scandal, for example).
+
+If companies were held accountable for their privacy policies&mdash;not just for creating policies, but also for creating *good* ones&mdash;our data would be safer. Because [privacy matters](https://whyprivacymatters.org/).
+
+### Features
+
+PrivacySpy makes privacy policies more convenient and accessible for those who simply don't have the time&mdash;or patience&mdash;to read full privacy policies themselves. Privacy policies should be more than just a box to check; they are fundamental to ensuring data transparency and allowing users to make informed choices. Here's how PrivacySpy is trying to make this our reality:
+
+**Ratings** &mdash; We rate our policies using a consistent and vetted rubric. You can understand the key features and drawbacks of any rated policy at a glance.
+
+**Updates** &mdash; Whenever a company updates their privacy stance, we note it in our database. When a product or company in our database is found mishandling user data, for example, we post it as an update. That way, you can contextualize a service's privacy policy with its record.
+
+### Definitions
+
+PrivacySpy uses a number of terms to describe how companies handle personal information. To ensure consistency, we've defined the key ones below. Note that our rubric, ratings, and defintions not intended to be read as legal documents.
+
+**Personal data** &mdash; (from the GDPR) "any information relating to an identified or identifiable natural person ('data subject')" <span class="text-gray-400">(examples include IP addresses, individual usage statistics, etc.)</span>
+
+**Non-critical purposes** &mdash; any use of personal data beyond what is reasonably necessary to provide the user a desired core service <span class="text-gray-400">(a critical use of personal data would be using email addresses to send password reset emails; a non-critical use of personal data would be using email addresses and browsing habits to serve behavioral marketing)</span>
+
+### Calculating Ratings
+
+A product's overall rating is calculated according to its subratings in all of the rubric questions (see below). Higher ratings are better. Here are the steps our scoring algorithm takes to calculate the overall score:
+
+1. Find the total number of points the policy receives across all rubric questions (subscore sum);
+2. Find the total number of possible points to receive (maximum score sum);
+3. Divide the points received by the points possible;
+4. Multiply by 10 (to fit the score to the final ten-point scale).
+
+For example, if there are three total questions with max scores of 5, 10, and 10, the total number of possible points is 25. If a policy receives scores of 4, 7, and 6 on each of those questions (respectively), it will have received 17 points. The overall score would be (4 + 7 + 6) / (5 + 10 + 10) = (17 / 25) = 0.68, which, when fitted to our final ten-point scale, is displayed as 6.8.
+
+### Rubric
+
+A key element of PrivacySpy is its ratings, which are calculated based on a consistent rubric. All of our scores are fully transparent and backed by citations and/or notes.
+
+We acknowledge that no rubric, no matter how good, can perfectly encapsulate the 'quality' of a privacy policy. That's why we don't ask you to trust us. We've included our full grading system below so you can evaluate it for yourself.
+
+Note that while we do our best to ensure accuracy and consistency in our grading, there are bound to be some errors. If you find an error, please correct it using our 'suggestions' functionality (or offer to be a maintainer yourself). Thanks for helping us make PrivacySpy even better.
+
+If you have an idea for how we could improve our rubric, or want to learn about how to contribute, check out the [contributing guide](/contributing/).
+
+Our rubric is shown below.
+
+{{/markdown}}
+
+<div class="text-base">
+  {{#forOwn categorizedRubricQuestions}}
+  <div id="{{@key}}" class="mt-8 mb-4 text-lg font-bold text-center md:text-left">{{capitalize @key}}</div>
+  <div class="mb-4">
+    {{#each this as |question|}}
+    <div class="mb-6">
+      {{> includes/rubricQuestion question=question}}
+    </div>
+    {{/each}}
+  </div>
+  {{/forOwn}}
+</div>
+</main>
+{{/inline}}
+{{/layouts/base}}

@@ -1,0 +1,39 @@
+category = "handling"
+slug = "third-party-access"
+text = "Does the service allow third-party access to private personal data?"
+notes = [
+"""This may come in the form of outright data sharing or by using local third-party analytics software (such as Google Analytics, which collects a [plethora](https://en.wikipedia.org/wiki/Google_Analytics#Privacy) of user information).
+
+Note that whether the policy allows sharing aggregated user data does not affect this question.
+
+If the personal data is encrypted when it passes through the third-party, it does not count as third-party access (as the data is inaccessible to that party).
+
+If personal data has been made public by, for example, posting it to a blog, it does not count as private personal information (and is therefore not considered by this question)."""
+]
+points = 10
+
+[[options]]
+id = "yes-unspecified"
+text = "Yes"
+description = "The policy allows sharing personal data with third-parties (not just critical service providers), and does not explicitly list the third-parties."
+percent = 0
+
+[[options]]
+id = "yes-specified-noncritical"
+text = "Yes, all parties specified (including non-critical service providers such as advertisers)"
+percent = 30
+
+[[options]]
+id = "yes-unspecified-critical"
+text = "Yes, not all parties specified (but only to critical service providers)"
+percent = 70
+
+[[options]]
+id = "yes-specified-critical"
+text = "Yes, all parties specified (only to critical service providers)"
+percent = 80
+
+[[options]]
+id = "no"
+text = "No"
+percent = 100

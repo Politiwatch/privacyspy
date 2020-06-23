@@ -1,0 +1,87 @@
+name = "Twist"
+description = "Twist is a team communication app built by Doist, the company responsible for Todoist."
+slug = "twist"
+hostnames = [ "twist.com" ]
+sources = [ "https://twist.com/privacy" ]
+contributors = [ "ibarakaiev" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+notes = [
+  "The policy does not explicitly or indirectly allow personally-targeted or behavioral marketing."
+]
+
+[rubric.security]
+value = "yes-audits"
+citations = [
+  "\"At Twist, we maintain a security system that ... supports continuous monitoring for potential vulnerabilities.\"\r\n\r\n\"We regularly test, assess and evaluate the effectiveness of our processes and technology.\""
+]
+notes = [
+  "Twist has a [comprehensive separate page](https://twist.com/security) dedicated to their security practices."
+]
+
+[rubric.third-party-collection]
+value = "no"
+notes = [
+  "It is not inferred from the policy that Twist collects personal data from third parties."
+]
+
+[rubric.history]
+value = "last-modified"
+notes = [
+  "There is no option to review the privacy policy's history, but a last effective date is shown."
+]
+
+[rubric.data-deletion]
+value = "yes-automated"
+citations = [
+  "\"Upon [deleting your account](https://get.twist.help/hc/articles/115003963589), all your personal data will be removed from our production systems. Only an encrypted copy of your data will remain on our backup archives for 90 days. After this period, all data associated with your account will be deleted permanently.\""
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "The privacy policy does not specify a data breach protocol."
+]
+
+[rubric.third-party-access]
+value = "yes-specified-critical"
+citations = [
+  "\"Twist uses third party vendors and hosting partners to provide the necessary hardware, software, networking, storage, and related technology required to run Twist.\"\r\n\r\n\"When necessary, we use the following GDPR-compliant third party services:\r\n\r\n- Amazon Web Services\r\n- Google Analytics\r\n- Zendesk\r\n- SendGrid\r\n- Mailgun\r\n- Paypal\r\n- Stripe\r\n- Microsoft Azure\r\n- Microsoft Visual Studio App Center\r\n- Fabric (Crashlytics)\r\n- Baremetrics\r\n- MailChimp\r\n\"\r\n\r\n\"We do NOT partner with or have special relationships with any ad server companies.\""
+]
+notes = [
+  "([Source.](https://get.twist.help/hc/en-us/articles/360000808725))"
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "\"We only collect personal data that is required to provide our service, and we only store it insofar that it is necessary to deliver these services.\"\r\n\r\n\"Twist also collects user activity data for analytical purposes. The user data we collect is used to improve Twist and the quality of our service.\"\r\n\r\n\"Your information is only used internally for the necessary operation of Twist and won't be shared with others.\""
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-all"
+notes = [
+  "Twist allows third-party apps integration who have their respective privacy practices."
+]
+
+[rubric.law-enforcement]
+value = "strict"
+citations = [
+  "\"We will not voluntarily disclose your data and information to any government organizations and entities. We will only disclose your data and information to government agencies when we are forced to fulfill legal or regulatory requirements. We will email or send Service notifications to our Customer if the Customer’s account is under investigation by government agencies.\""
+]
+
+[rubric.list-collected]
+value = "exhaustively"
+citations = [
+  "\"When registering for Todoist and Twist you voluntarily give us information such as your name and email address. You can access and update this information at any time in your personal Account Settings.\r\n\r\nIn addition, when you use our services, you give us the consent to use the following data:\r\n\r\n- Email\r\n- IP address\r\n- Device ID\r\n- Name and surname (optional, not processed)\r\n- Job (optional, not processed)\r\n- Phone number (optional, not processed)\r\n- VAT ID (optional)\r\n- Invoice address (for Unlimited accounts)\r\n\r\n\""
+]
+notes = [
+  "([Source.](https://get.twist.help/hc/en-us/articles/360000808725))"
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "\"If our information practices change in the future we will post the policy changes to our website and notify you of these changes.\""
+]

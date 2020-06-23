@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  {{> includes/head product_redirect=product_redirect}}
+</head>
+
+<body class="antialiased">
+  {{#unless product_redirect}}
+  {{#> precontent }}
+  {{/precontent}}
+  <div class="container relative max-w-screen-lg min-h-screen px-6 pt-2 mx-auto md:px-12">
+    {{> includes/navbar }}
+    <noscript>
+      <aside class="aside ~info">
+        <strong>You're visiting PrivacySpy without JavaScript enabled.</strong> Great&mdash;that's better for privacy. This is just a heads up that while the site should still work normally for you, some features&mdash;like search (which is done client-side) and icons&mdash;won't display properly.
+      </aside>
+    </noscript>
+    <hr class="h-16 sep" />
+    {{#> content }}
+    {{/content}}
+    <hr class="pb-48 sep" />
+    {{> includes/footer }}
+  </div>
+  {{/unless}}
+</body>
+
+</html>

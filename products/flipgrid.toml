@@ -1,0 +1,78 @@
+name = "Flipgrid"
+description = "Flipgrid is a Microsoft-owned video recording and sharing service for students."
+slug = "flipgrid"
+hostnames = [ "flipgrid.com" ]
+sources = [ "https://legal.flipgrid.com/privacy.html" ]
+contributors = [ "milesmcc" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+citations = [
+  "We do not use personal information to market or advertise to you or students, nor do we permit third parties to do so. Our Flipgrid website and apps do not show advertising.\r\n\r\n[...]\r\n\r\nFlipgrid does not use your personal information to market or advertise to you (regardless of whether you are a Student or other User). Flipgrid also does not use your personal information to track and target advertisements on third party websites or services."
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "We use security technologies and procedures to help protect your personal information from loss, misuse, and unauthorized access, use, disclosure, alteration, and destruction. Our security procedures and practices are consistent with industry standards applicable to our collection and use of personal information. In the event of an unauthorized release, disclosure, or acquisition of User information, Flipgrid will notify affected individuals (either directly or through Grid Owners), as required by applicable law. While we use reasonable efforts to protect your personal information, we cannot guarantee its absolute security."
+]
+
+[rubric.third-party-collection]
+value = "critical-only"
+citations = [
+  "When a Grid Owner logs into an existing account through their Microsoft or Google account, we may collect first and last name, email address and other information specific to that third party account to authenticate the Grid Owner."
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [
+  "If we make changes to this Privacy Policy that we believe will materially affect your rights, we will notify you by email about these changes and post a notice to the Service and change the \"Last Updated\" date above."
+]
+
+[rubric.data-deletion]
+value = "yes-contact"
+citations = [
+  "Users may send requests about their personal information to our contact information in Section 14 below, including to change contact choices, opt out of our sharing with others, and review, update, correct, or delete personal information. Once the User has been authenticated, we will use commercially reasonable efforts to honor these requests. We may retain an archived copy of User records as required by law. Such opt outs may result in disruption or cancellation of the Service or impairment of certain Service functionality."
+]
+
+[rubric.data-breaches]
+value = "eventually"
+citations = [
+  "In the event of an unauthorized release, disclosure, or acquisition of User information, Flipgrid will notify affected individuals (either directly or through Grid Owners), as required by applicable law."
+]
+
+[rubric.third-party-access]
+value = "no"
+notes = [
+  "Because Flipgrid is owned by Microsoft, it is conceivable that they own their hosting infrastructure—so Flipgrid may not even have _any_ third party service providers!"
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "We store and process User personal information in the United States, and we use this information as follows:\r\n\r\n* To provide the Service, including updating, securing, troubleshooting, and providing support.\r\n* To improve and develop the Service.\r\n* To respond to User comments and questions and provide customer service* .\r\n* To communicate with Grid Owners about upcoming Microsoft education or Flipgrid events, new Flipgrid features and other news.\r\n* To send the User information including confirmations, technical notices, updates, security alerts, and support and administrative messages.\r\n* To identify specific Users in our system.\r\n* To facilitate the creation and management of accounts on our Service.\r\n* To process and deliver orders.\r\n* To comply with applicable laws, including website accessibility laws that may require transcription of audio or other methods to make User content available on the Service.\r\n* For other purposes with your permission."
+]
+
+[rubric.noncritical-purposes]
+value = "na"
+notes = [
+  "The policy does not specify any significant non-critical uses of data."
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "We may also share User personal information for legal, protection, and safety purposes. For example,\r\n\r\n* We may share information to comply with applicable laws.\r\n* We may share information to respond to lawful requests and legal processes.\r\n* We may share information in an emergency, such as protecting the safety of our employees and agents, our Users, or any person.\r\n* We may share information to protect the rights and property of Flipgrid, our agents, employees, customers, and others, including by enforcing our agreements, policies, and terms of use.\r\n* We may disclose or transfer your personal information in connection with the sale, merger, bankruptcy, sale of assets or reorganization, in whole or in part, of our company."
+]
+
+[rubric.list-collected]
+value = "generally"
+notes = [
+  "The policy does a generally good job of listing all the data it collects, but it does not provide granular, highly-specific details."
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "If we make changes to this Privacy Policy that we believe will materially affect your rights, we will notify you by email about these changes and post a notice to the Service and change the \"Last Updated\" date above."
+]

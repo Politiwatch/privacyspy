@@ -1,0 +1,83 @@
+name = "Apple"
+description = "Apple is a high-end American computer equipment, smartphone, and software producer."
+slug = "apple"
+hostnames = [ "apple.com", "itunes.com" ]
+sources = [ "https://www.apple.com/legal/privacy/en-ww/" ]
+contributors = [ "YuriiStasiuk" ]
+
+[rubric.behavioral-marketing]
+value = "yes-opt-out"
+citations = [
+  "As is true of most internet services, we gather some information automatically and store it in log files. This information includes Internet Protocol (IP) addresses, browser type and language, Internet service provider (ISP), referring and exit websites and applications, operating system, date/time stamp, and clickstream data. We use this information to understand and analyze trends, to administer the site, to learn about user behavior on the site, to improve our product and services, and to gather demographic information about our user base as a whole. **Apple may use this information in our marketing and advertising services.**"
+]
+
+[rubric.security]
+value = "yes"
+citations = [
+  "Apple takes the security of your personal information very seriously. Apple online services such as the Apple Online Store and iTunes Store protect your personal information during transit using encryption such as Transport Layer Security (TLS). When your personal data is stored by Apple, we use computer systems with limited access housed in facilities using physical security measures. With the exception of iCloud Mail, iCloud data is stored in encrypted form including when we utilize third-party storage."
+]
+
+[rubric.third-party-collection]
+value = "critical-only"
+citations = [
+  "We may have received your personal information from other persons if that person has shared their content with you using Apple products, sent gift certificates and products, or invited you to participate in Apple services or forums. We may also validate the information provided by you when creating an Apple ID with a third party for security and fraud prevention purposes."
+]
+
+[rubric.history]
+value = "last-modified"
+notes = [ "The last modified date is listed at the top of the page." ]
+
+[rubric.data-deletion]
+value = "yes-automated"
+citations = [
+  "For other personal information we hold, we will provide you with access (including a copy) for any purpose including to request that we correct the data if it is inaccurate or delete the data if Apple is not required to retain it by law or for legitimate business purposes."
+]
+notes = [
+  "Apple also provides a full automatic data deletion tool at [privacy.apple.com](https://privacy.apple.com) (to comply with GDPR)."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [ "The policy does not specify a data breach protocol." ]
+
+[rubric.third-party-access]
+value = "yes-unspecified-critical"
+citations = [
+  "At times Apple may provide third parties with certain personal information to provide or improve our products and services, including to deliver products at your request, or to help Apple market to consumers. When we do, we require those third parties to handle it in accordance with relevant laws. Personal information will never be shared with third parties for their marketing purposes."
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "The personal information we collect allows us to keep you posted on Apple’s latest product announcements, software updates, and upcoming events. If you don’t want to be on our mailing list, you can opt-out anytime by updating your preferences.\r\n\r\nWe also use personal information to help us create, develop, operate, deliver, and improve our products, services, content and advertising, and for loss prevention and anti-fraud purposes. We may also use your personal information for account and network security purposes, including in order to protect our services for the benefit of all our users, and pre-screening or scanning uploaded content for potentially illegal content, including child sexual exploitation material. Where we use your information for anti-fraud purposes it arises from the conduct of an online transaction with us. We limit our uses of data for anti-fraud purposes to those which are strictly necessary and within our assessed legitimate interests to protect our customers and our services. For certain online transactions we may also validate the information provided by you with publicly accessible sources.\r\n\r\nWe may use your personal information, including date of birth, to verify identity, assist with identification of users, and to determine appropriate services. For example, we may use date of birth to determine the age of Apple ID account holders.\r\n\r\nFrom time to time, we may use your personal information to send important notices, such as communications about purchases and changes to our terms, conditions, and policies. Because this information is important to your interaction with Apple, you may not opt out of receiving these communications.\r\nWe may also use personal information for internal purposes such as auditing, data analysis, and research to improve Apple’s products, services, and customer communications.\r\n\r\nIf you enter into a sweepstake, contest, or similar promotion we may use the information you provide to administer those programs.\r\n\r\nIf you apply for a position at Apple or we receive your information in connection with a potential role at Apple, we may use your information to evaluate your candidacy and to contact you. If you are a candidate, you will receive more information about how Apple handles candidate personal information at the time of application."
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-all"
+citations = [
+  "Ads that are delivered by Apple’s advertising platform may appear in Apple News and in the App Store. If you do not wish to receive ads targeted to your interests from Apple's advertising platform, you can choose to enable Limit Ad Tracking, which will opt your Apple ID out of receiving such ads regardless of what device you are using. If you enable Limit Ad Tracking on your mobile device, third-party apps cannot use the Advertising Identifier, a non-personal device identifier, to serve you targeted ads. You may still see ads in the App Store or News based on context like your search query or the channel you are reading. In third-party apps, you may see ads based on other information."
+]
+notes = [
+  "Apart from advertising, Apple does not use personal data for any non-critical purposes."
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "It may be necessary − by law, legal process, litigation, and/or requests from public and governmental authorities within or outside your country of residence − for Apple to disclose your personal information. We may also disclose information about you if we determine that for purposes of national security, law enforcement, or other issues of public importance, disclosure is necessary or appropriate. We may also disclose information about you, but only where there is a lawful basis for doing so, if we determine that disclosure is reasonably necessary to enforce our terms and conditions or protect our operations or users.  This could include providing information to public or governmental authorities."
+]
+
+[rubric.list-collected]
+value = "generally"
+citations = [
+  "When you create an Apple ID, apply for commercial credit, purchase a product, download a software update, register for a class at an Apple Retail Store, connect to our services, contact us including by social media or participate in an online survey, we may collect a variety of information, including your name, mailing address, phone number, email address, contact preferences, device identifiers, IP address, location information, credit card information and profile information where the contact is via social media.\r\n\r\nWhen you share your content with family and friends using Apple products, send gift certificates and products, or invite others to participate in Apple services or forums, Apple may collect the information you provide about those people such as name, mailing address, email address, and phone number. Apple will use such information to fulfill your requests, provide the relevant product or service, or for anti-fraud purposes.\r\n\r\nIn certain jurisdictions, we may ask for a government issued ID in limited circumstances including when setting up a wireless account and activating your device, for the purpose of extending commercial credit, managing reservations, or as required by law."
+]
+notes = [
+  "In this and other parts of the policy, Apple clearly lists the personal data it collects, but also uses phrases like \"including\" to make its statements non-binding."
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "Apple may update its Privacy Policy from time to time. When we change the policy in a material way, a notice will be posted on our website along with the updated Privacy Policy. We will also contact you via your contact information on file, for example by email, notification or some other equivalent method. "
+]

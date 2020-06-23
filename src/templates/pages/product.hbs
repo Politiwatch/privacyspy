@@ -1,0 +1,122 @@
+{{#> layouts/base title=product.name product_redirect=product.parent description=description }}
+
+{{#*inline "content"}}
+<main>
+  <header class="items-start md:flex">
+    <div class="items-start md:flex md:w-4/5 md:pr-20">
+      <img src="/static/icons/{{product.icon}}" class="h-12 mx-auto mt-1 rounded md:mr-5">
+      <div class="flex-grow ml-2 text-center md:text-left">
+        <h1 class="my-4 text-4xl font-extrabold leading-none md:mb-3 md:my-0">{{product.name}}</h1>
+        <h3 class="w-11/12 text-md font-regular">{{product.description}}</h3>
+        {{#if product.children}}
+        <div class="mt-4 text-sm text-center md:text-left">
+          <span class="text-gray-400">This policy also applies to:</span>
+          {{#each product.children}}
+          <span>{{this.name}}</span>
+          {{/each}}
+        </div>
+        {{/if}}
+      </div>
+    </div>
+    <div class="pt-8 text-center md:w-1/5 md:text-left md:pt-0">
+      <div class="score-size font-extrabold leading-none md:mb-2 md:my-0 {{ratioColorClass (divide product.score 10)}}">
+        {{product.score}}<span class="font-normal">/10</span>
+      </div>
+      <a href="/about/#ratings" class="p-0 -mt-2 text-sm text-gray-400 hover:text-blue-500">How we calculate ratings
+        &rarr;</a>
+    </div>
+  </header>
+  <hr class="h-16 sep">
+  <div class="flex flex-col md:flex-row">
+    <section class="w-full md:w-4/5 md:pr-20">
+      {{#forOwn rubricCategories}}
+      <div id="{{@key}}" class="mb-4 text-xl font-semibold text-center md:text-left">{{capitalize @key }}</div>
+      <div class="pb-4">
+        {{#each this as |selection|}}
+        <div class="mb-6">
+          {{> includes/rubricQuestion selection=selection question=selection.question }}
+        </div>
+        {{/each}}
+      </div>
+      {{/forOwn}}
+      {{#if product.updates}}
+      <section id="timeline" class="pt-4">
+        <div id="updates" class="mb-4 text-xl font-semibold text-center md:text-left">Updates</div>
+        <div class="md:pl-2">
+          {{#forOwn timeline}}
+          <div class="flex">
+            <div class="w-full pb-2 text-center border-gray-100 md:w-1/12 md:text-right md:pr-3 md:border-r ">
+              {{multiply -1 @key}}</div>
+          </div>
+          {{#forOwn this}}
+          <div class="flex flex-col md:flex-row">
+            <div
+              class="w-full mb-2 text-center text-gray-400 border-gray-100 md:w-1/12 md:text-right md:mb-0 md:pr-4 md:border-r">
+              {{getMonth (add 1 @key)}}</div>
+            <div class="pl-4 md:w-11/12">
+              <div class="h-auto">
+                {{#each this as |update|}}
+                <div>
+                  <div class="text-lg font-bold text-center md:text-left">{{update.title}}</div>
+                  <div class="mt-2 mb-2 text-sm">{{{markdown update.description}}}</div>
+                  <div class="block mb-6 text-center md:text-left">
+                    {{#each update.sources as |source|}}
+                    <a href="{{this}}" target="_blank"
+                      class="block mr-2 text-sm text-gray-400 hover:text-blue-500">Source
+                      #{{add 1 @index}}&nbsp;&nearr; </a>
+                    {{/each}}
+                  </div>
+                </div>
+                {{/each}}
+              </div>
+            </div>
+          </div>
+          {{/forOwn}}
+          {{/forOwn}}
+        </div>
+
+      </section>
+      {{/if}}
+    </section>
+    <section class="w-full mt-10 text-center md:text-left md:w-1/5 md:mt-0">
+      <div class="mb-6">
+        <p class="text-sm text-gray-400">Last Updated</p>
+        <p class="mt-1 text-sm text-black">May 5, 2020</p>
+      </div>
+      <div class="my-6">
+        <p class="text-sm text-gray-400">Sources</p>
+        <p>
+          {{#each product.sources}}
+          <a href="{{this}}" class="mt-1 text-sm hover:text-blue-500" target="_blank">Source
+            #{{add 1 @index}}&nbsp;&nearr;</a>
+          {{/each}}
+        </p>
+      </div>
+      <div class="my-6">
+        <p class="text-sm text-gray-400">Contributors</p>
+        <p class="mt-1 text-sm text-black">
+          {{#each product.contributors as |contributor|}}
+          <a href="/contributors/#contributor-{{contributor.slug}}"
+            class="no-underline">{{contributor.slug}}</a>{{#unless @last}}, {{/unless}}
+          {{/each}}
+        </p>
+      </div>
+      {{#if product.children}}
+      <div class="my-6">
+        <p class="text-sm text-gray-400">Affected Products</p>
+        {{#each product.children}}
+        <div class="inline-flex flex-row items-center w-auto max-w-full mx-auto mt-1 mb-1 md:mx-0 justify-left">
+          <div class="flex items-center w-6 h-6 rounded">
+            <img src="/static/icons/{{this.icon}}">
+          </div>
+          <span class="ml-2 text-sm font-semibold">{{this.name}}</span>
+        </div>
+        <br>
+        {{/each}}
+      </div>
+      {{/if}}
+    </section>
+  </div>
+</main>
+{{/inline}}
+{{/layouts/base}}

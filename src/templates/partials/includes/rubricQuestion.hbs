@@ -1,0 +1,70 @@
+<div class="flex text-gray-800 cursor-pointer text-md" tabindex="0" onclick="toggleRubricSelection('{{question.slug}}')"
+  onkeydown="return event.keyCode != 13 || toggleRubricSelection('{{question.slug}}');">
+  <div class="flex-shrink mr-4 md:mr-6">
+    <i class="fas fa-chevron-down" id="chevron-{{question.slug}}"></i>
+  </div>
+  {{#if selection}}
+  <div class="flex-shrink mr-4 md:mr-6">
+    <i class="fas fa-sm fa-circle {{ratioColorClass (divide selection.option.percent 100)}}"></i>
+  </div>
+  {{/if}}
+  <div class="flex-grow">
+    <span>{{question.text}}&nbsp;</span>
+    <span class="text-gray-500">{{selection.option.text}}</span>
+  </div>
+  <div class="flex-shrink-0 ml-4 text-right md:ml-6">
+    <span>
+      {{#if selection}}{{round (multiply (divide selection.option.percent 100) question.points)}}{{/if}}</span><span
+      class="text-gray-500">{{#if selection}}/{{/if}}{{question.points}}</span>
+  </div>
+</div>
+<div id="selection-{{question.slug}}" class="hidden h-auto p-4 mt-3 border border-gray-100 rounded">
+  {{#if question.notes}}
+  <div class="mb-4 text-xs text-gray-600 content">
+    {{#each question.notes as |note|}}
+    {{{markdown note}}}
+    {{/each}}
+  </div>
+  {{/if}}
+  <div class="md:flex">
+    <div class="{{#if selection}}md:w-6/12{{else}}w-full{{/if}}">
+      <p class="mb-2 font-semibold text-center md:text-left">
+        {{#if selection}}Score{{else}}Options{{/if}}
+      </p>
+      {{#each (sortBy question.options "percent") as |option|}}
+      <div class="flex text-sm rounded px-2 py-1 {{#if (eq option.id ../selection.option.id)}} bg-gray-100 {{/if}}">
+        <div class="w-5/6">
+          <span>{{option.text}}</span>&nbsp;{{#if option.description}}{{> includes/info option.description}}{{/if}}
+          {{#if (eq option.id ../selection.option.id)}}
+          {{! for screen readers }}
+          <span class="hidden text-gray-400">(selected)</span>
+          {{/if}}
+        </div>
+        <div class="w-1/6 ml-4 font-medium text-right">
+          {{option.percent}}%
+        </div>
+      </div>
+      {{/each}}
+    </div>
+    {{#if selection}}
+    <div class="pl-2 md:w-6/12 md:ml-8">
+      {{#if selection.citations}}
+      <p class="mt-4 mb-2 font-semibold text-center md:mt-0 md:text-left">Citation</p>
+      <div class="max-w-full text-sm text-gray-600 content">
+        {{#each selection.citations as |citation|}}
+        {{{markdown citation}}}
+        {{/each}}
+      </div>
+      {{/if}}
+      {{#if selection.notes}}
+      <p class="mt-4 mb-2 font-semibold text-center md:mt-0 md:text-left">Notes</p>
+      <div class="max-w-full text-sm text-gray-600 content">
+        {{#each selection.notes as |note|}}
+        {{{markdown note}}}
+        {{/each}}
+      </div>
+      {{/if}}
+    </div>
+    {{/if}}
+  </div>
+</div>
