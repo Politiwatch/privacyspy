@@ -93,11 +93,11 @@ function getFeaturedPolicies(products: Product[]): Product[] {
   return products.filter((item) => {
     return [
       "google",
-      "apple",
+      "wikipedia",
       "facebook",
       "microsoft",
       "amazon",
-      "netflix",
+      "github",
     ].includes(item.slug);
   });
 }
