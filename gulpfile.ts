@@ -73,6 +73,10 @@ gulp.task("collect static", () => {
     .pipe(gulp.dest("./dist/static/"));
 });
 
+gulp.task("collect root favicon", () => {
+  return gulp.src(["./src/static/img/*.ico"]).pipe(gulp.dest("./dist/"));
+})
+
 gulp.task("collect product icons", () => {
   return gulp.src(["./icons/**/*"]).pipe(gulp.dest("./dist/static/icons/"));
 });
@@ -93,6 +97,7 @@ gulp.task(
     "collect dependencies",
     "collect static",
     "collect product icons",
+    "collect root favicon",
     "build css",
   ])
 );
