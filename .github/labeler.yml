@@ -1,0 +1,17 @@
+test:
+- any: ['src/tests/**/*']
+
+product:
+- any: ['products/**/*']
+
+rubric:
+- any: ['rubric/**/*']
+
+code:
+- any: ['src/**/*']
+
+frontend:
+- any: ['src/**/*.hbs']
+
+meta:
+- any: ["./*"]
