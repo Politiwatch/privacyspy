@@ -24,9 +24,9 @@ citations = [
 ]
 
 [rubric.history]
-value = "last-modified"
+value = "yes"
 notes = [
-  "While one could check the full history on GitHub, only the last modified date is listed on the page."
+  "Revision history is linked to on GitHub."
 ]
 
 [rubric.data-deletion]
