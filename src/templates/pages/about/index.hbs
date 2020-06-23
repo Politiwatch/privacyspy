@@ -10,15 +10,13 @@ Most privacy policies are convoluted&mdash;sometimes even intentionally so. They
 
 Making matters worse, companies are often only held accountable for their privacy practices when a data breach occurs or when they experience fallout from mishandling user data (think Facebook's Cambridge Analytica scandal, for example).
 
-If companies were held accountable for their privacy policies&mdash;not just for creating policies, but also for creating *good* ones&mdash;our data would be safer. And if our data is safer, [so is democracy](https://www.scientificamerican.com/article/will-democracy-survive-big-data-and-artificial-intelligence/). Because [privacy matters](https://whyprivacymatters.org/).
+If companies were held accountable for their privacy policies&mdash;not just for creating policies, but also for creating *good* ones&mdash;our data would be safer. Because [privacy matters](https://whyprivacymatters.org/).
 
 ### Features
 
-PrivacySpy makes privacy policies more convenient and accessible for those who simply don't have the time&mdash;or patience&mdash;to read full privacy policies themselves. Privacy policies should be more than just a box to check; they are fundamental to ensuring data transparency and allowing users to make informed choices. PrivacySpy is trying to make this our reality in three ways:
+PrivacySpy makes privacy policies more convenient and accessible for those who simply don't have the time&mdash;or patience&mdash;to read full privacy policies themselves. Privacy policies should be more than just a box to check; they are fundamental to ensuring data transparency and allowing users to make informed choices. Here's how PrivacySpy is trying to make this our reality:
 
 **Ratings** &mdash; We rate our policies using a consistent and vetted rubric. You can understand the key features and drawbacks of any rated policy at a glance.
-
-**Highlights** &mdash; We use natural language processing to bring your attention to key elements of privacy policies. After all, reading something is better than reading nothing. (Please note that this is an experimental feature accessible at the bottom of each policy page.)
 
 **Updates** &mdash; Whenever a company updates their privacy stance, we note it in our database. When a product or company in our database is found mishandling user data, for example, we post it as an update. That way, you can contextualize a service's privacy policy with its record.
 
@@ -57,7 +55,7 @@ Our rubric is shown below.
 
 <div class="text-base">
   {{#forOwn categorizedRubricQuestions}}
-  <div id="{{@key}}" class="mt-8 mb-4 text-lg font-medium text-center md:text-left">{{capitalize @key}}</div>
+  <div id="{{@key}}" class="mt-8 mb-4 text-lg font-bold text-center md:text-left">{{capitalize @key}}</div>
   <div class="mb-4">
     {{#each this as |question|}}
     <div class="mb-6">

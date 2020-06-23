@@ -1,11 +1,12 @@
 {{#> layouts/base title="Directory" }}
 
 {{#*inline "content"}}
-<div class="mb-2 text-5xl font-extrabold leading-none text-center sm:text-left">
+<div class="mb-4 text-5xl font-extrabold leading-none text-center sm:text-left">
   Directory
 </div>
-<div class="text-lg text-center text-gray-600 md:text-left">Viewing page {{add currentPage 1}} of {{length pages}}.</div>
-<hr class="h-16 sep">
+<div class="text-lg text-center text-gray-500 md:text-left">Viewing page {{add currentPage 1}} of {{length pages}}.
+</div>
+<hr class="h-12 sep">
 
 <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
   {{#each listings as |product|}}

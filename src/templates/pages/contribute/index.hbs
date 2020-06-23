@@ -6,9 +6,9 @@
   {{#markdown}}
   We're thrilled that you want to contribute to PrivacySpy. This guide will explain how to contribute policies, corrections, suggestions, and code changes.
 
-  Note that all contributions to PrivacySpy will take place in our [GitHub repository](https://github.com/politiwatch/privacyspy). If you don't have one already, you'll need to sign up for a GitHub account to participate.
+  Note that all contributions to PrivacySpy will take place in our [GitHub repository](https://github.com/politiwatch/privacyspy). If you don't have a GitHub account already, you'll need to sign up for one in order to participate.
 
-  To see all of PrivacySpy's existing contributors, check out the [contributors page](/contributors/).
+  To see all of PrivacySpy's existing contributors, check out our [contributors page](/contributors/).
 
   ### Table of Contents
 
@@ -32,8 +32,7 @@
 
   1. **Create a new file in the `products/` directory called `<product slug>.toml`**. (A _slug_ is a short and unique ID.) For example, if you were adding DuckDuckGo, the name of the file would be `duckduckgo.toml`. TOML is the file format we use for writing policies; if you're unfamiliar with it, you can learn more about TOML [here](https://learnxinyminutes.com/docs/toml/).
 
-  2. **Add an icon for your new product to the `icons/` directory.** The name of the icon file should correspond to the product slug from Step 1; for example, for DuckDuckGo, you'd want to name the icon file `duckduckgo.png` or `duckduckgo.jpg`. Icon images should be square and smaller than 30kb.
-
+  2. **Add an icon for your new product to the `icons/` directory.** The name of the icon file should correspond to the product slug from Step 1; for example, for DuckDuckGo, you'd want to name the icon file `duckduckgo.png` or `duckduckgo.jpg`. Icon images should be square and smaller than 30kb. You may use our script that helps you add icons quickly; to use it, simply run `npm run icons` and manually check if the icon has been downloaded and is correct.
   3. **Add yourself to `CONTRIBUTORS.toml` if you haven't already.** Fill out as much or as little information as you want. For information about how how this file works, refer to the [contributors file guide](#contributors-file-guide) below.
 
   4. **Fill in all the necessary info in the `<product slug>.toml` file.** Refer to the [product assessment guide](#product-assessment-guide) below to learn about how this file works.
@@ -46,7 +45,7 @@
 
   <h3 id="changing">Changing an existing product</h3>
 
-  To change an existing product on PrivacySpy&mdash;to submit a correction, for example&mdash;you'll need to submit a pull request. Fortunately, this process is quite simple: just edit the product file in the `products/` directory! To edit Google's entry, for example, simply edit the file at `products/google.toml`. Then, run the `npm test` command and make sure all tests pass. Finally, submit your changes as a pull request. (Be sure to follow the instructions in the Pull Request message template.)
+  To change an existing product on PrivacySpy&mdash;for example, to submit a correction or an update&mdash;you'll need to submit a pull request. Fortunately, this process is quite simple: just edit the product file in the `products/` directory! To edit Google's entry, for example, simply edit the file at `products/google.toml`. Then, run the `npm test` command and make sure all tests pass. Finally, submit your changes as a pull request. (Be sure to follow the instructions in the Pull Request message template.)
   
   To learn about how the product TOML file works, review the [product assessment guide](#product-assessment-guide) below.
 
@@ -58,7 +57,7 @@
 
   #### Product metadata
 
-  Metadata about the product&mdash;the name, description, and hostnames, for example&mdash;belongs at the top of the product file. For metadata, we use a simple `key = value` format.
+  Metadata about the product&mdash;the name, description, and hostnames, for example&mdash;belongs at the top of the product file. For metadata, we use a simple `key = "value"` format.
 
   * **`name`**: this field holds the product's human-readable name as a string. Spaces and capitalization is allowed. For example, for DuckDuckGo, the value of `name` would be `DuckDuckGo`.
 
@@ -66,13 +65,11 @@
 
   * **`slug`**: this field contains the product's slug (its unique ID). The slug can contain only letters, numbers, and dashes. No two products can have the same slug, because the slug determines the URL where the policy will be hosted. (For example, a product with the slug `duckduckgo` would be accessible at `/product/duckduckgo`.) The slug should be the same as the file but without `.toml`.
 
-  * **`hostnames`**: this field contains an array of strings; each string should be a [hostname](https://en.wikipedia.org/wiki/Hostname) (i.e., domain name) of the product. For example, the value of `hostnames` for 1Password is `[ "1password.com" ]`. (Don't worry about subdomains; you don't need to include `my.1password.com` if you include `1password.com`.) Usually this array has only one element, but there are some cases when a product has multiple hostnames (e.g., GitHub, which uses `github.com` and `github.io`).
+  * **`hostnames`**: this field contains an array of strings; each string should be a [hostname](https://en.wikipedia.org/wiki/Hostname) (i.e., domain name) of the product. For example, the value of `hostnames` for 1Password is `["1password.com"]`. (Don't worry about subdomains; you don't need to include `my.1password.com` if you include `1password.com`.) Usually this array has only one element, but there are some cases when a product has multiple hostnames (e.g., GitHub, which uses `["github.com", "github.io"]`).
 
   * **`sources`**: this field contains an array of strings; each string should be the URL of a source used in grading the policy. (Almost always, the company's privacy policy itself would be included here as a source. Sometimes you'd want to include the company's security policy as well, if they have one.)
 
   * **`contributors`**: this field contains an array of strings; each string corresponds to the the slug of each contributor (you!) in the `CONTRIBUTORS.toml` file. See the [contributors file guide](#contributors-file-guide) below for more information. Usually, people use their GitHub username as their slug.
-
-  * **`updates`**: this field contains an array of update objects; each update object represents an event on the timeline of a product. More information about update objects is available below. Note that we only include it in the metadata if it's empty; if present, we list updates themselves after the rubric section.
 
   <details>
     <summary class="cursor-pointer">Example metadata TOML</summary>
@@ -81,7 +78,6 @@ description = "Twitter is a microblogging social network and is popular among Am
 slug = "twitter"
 hostnames = [ "twitter.com" ]
 sources = [ "https://twitter.com/en/privacy" ]
-updates = [ ]
 contributors = [ "milesmcc" ]</code></pre>
   </details>
   
@@ -149,7 +145,7 @@ notes = ["Any notes, if applicable"]</code></pre>
   
   {{/each}}
 
-  #### Updates
+  <h3 id="updates">Updates</h3>
 
   Whenever a product has a major privacy-related event (such as a data breach, an overhaul of their privacy policy, or anything else of this nature), we try to include it as an update on PrivacySpy.
 
@@ -169,7 +165,7 @@ sources = [ "https://www.cbsnews.com/news/millions-facebook-user-records-exposed
 
   <h3 id="contributors-guide">Contributors file guide</h3>
 
-  Contributors like you deserve to be recogized for your additions to PrivacySpy. That's why we maintain the `CONTRIBUTORS.toml` file (in the root of the repository) where each contributor is listed with some minimal biographical information.
+  Contributors like you deserve to be recognized for your additions to PrivacySpy. That's why we maintain the `CONTRIBUTORS.toml` file (in the root of the repository) where each contributor is listed with some minimal biographical information.
 
   **You aren't required to add any biographical information to the `CONTRIBUTORS.toml` file if you don't want to.**
 
