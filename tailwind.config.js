@@ -33,11 +33,11 @@ module.exports = {
         },
         yellow: {
           ...colors.yellow,
-          "500": "#fdd835",
+          "500": "#F2C602",
         },
         green: {
           ...colors.green,
-          "500": "#26dc4e",
+          "500": "#1FC142",
         },
         red: {
           ...colors.red,
