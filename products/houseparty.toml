@@ -3,7 +3,6 @@ description = "Houseparty is a popular informal video chat and hangout app."
 slug = "houseparty"
 hostnames = [ "houseparty.com" ]
 sources = [ "https://houseparty.com/privacy/" ]
-updates = [ ]
 contributors = [ "milesmcc" ]
 
 [rubric.behavioral-marketing]

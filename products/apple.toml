@@ -3,7 +3,6 @@ description = "Apple is a high-end American computer equipment, smartphone, and 
 slug = "apple"
 hostnames = [ "apple.com", "itunes.com" ]
 sources = [ "https://www.apple.com/legal/privacy/en-ww/" ]
-updates = [ ]
 contributors = [ "YuriiStasiuk" ]
 
 [rubric.behavioral-marketing]

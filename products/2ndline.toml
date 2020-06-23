@@ -3,7 +3,6 @@ description = 'A "virtual phone" service that provides you with a second phone n
 slug = "2ndline"
 hostnames = [ "2ndline.co" ]
 sources = [ "https://2ndline.co/privacy" ]
-updates = [ ]
 contributors = [ "mrhedgehog0" ]
 
 [rubric.behavioral-marketing]

@@ -3,7 +3,6 @@ description = 'Discord is a chatting service for gamers, featuring VoIP calling 
 slug = "discord"
 hostnames = [ "discordapp.com" ]
 sources = [ "https://discordapp.com/privacy" ]
-updates = [ ]
 contributors = [ "nep" ]
 
 [rubric.behavioral-marketing]

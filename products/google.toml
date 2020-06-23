@@ -3,7 +3,6 @@ description = "Google is an American technology and advertising giant known for 
 slug = "google"
 hostnames = [ "google.com", "google" ]
 sources = [ "https://policies.google.com/privacy" ]
-updates = [ ]
 contributors = [ "ibarakaiev" ]
 
 [rubric.behavioral-marketing]

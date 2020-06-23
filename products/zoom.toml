@@ -3,7 +3,6 @@ description = "Zoom is a popular video conferencing and telecommunication servic
 slug = "zoom"
 hostnames = [ "zoom.us" ]
 sources = [ "https://zoom.us/privacy" ]
-updates = [ ]
 contributors = [ "milesmcc" ]
 
 [rubric.behavioral-marketing]

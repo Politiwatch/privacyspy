@@ -3,7 +3,6 @@ description = "Startpage.com is a privacy focused search engine."
 slug = "startpage"
 hostnames = [ "startpage.com" ]
 sources = [ "https://www.startpage.com/en/privacy-policy/" ]
-updates = [ ]
 contributors = [ "vutut" ]
 
 [rubric.behavioral-marketing]

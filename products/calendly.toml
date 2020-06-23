@@ -3,7 +3,6 @@ description = "Calendly is a free online appointment scheduling service."
 slug = "calendly"
 hostnames = [ "calendly.com" ]
 sources = [ "https://calendly.com/pages/privacy" ]
-updates = [ ]
 contributors = [ "ibarakaiev" ]
 
 [rubric.behavioral-marketing]

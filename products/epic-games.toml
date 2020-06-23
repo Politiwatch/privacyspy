@@ -3,7 +3,6 @@ description = "Epic Games is an American game development company. It is behind 
 slug = "epic-games"
 hostnames = [ "epicgames.com" ]
 sources = [ "https://www.epicgames.com/site/privacypolicy/" ]
-updates = [ ]
 contributors = [ "milesmcc", "yaagesoft" ]
 
 [rubric.behavioral-marketing]

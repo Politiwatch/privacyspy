@@ -1,7 +1,6 @@
 name = "YouTube"
 description = "YouTube is a popular video sharing platform owned by Google."
 hostnames = ["youtube.com"]
-sort = 10 # optional sorting order
 slug = "youtube"
 parent = "google"
 contributors = ["ibarakaiev"]

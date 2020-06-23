@@ -3,7 +3,6 @@ description = "DuckDuckGo is an internet privacy company known for its search en
 slug = "duckduckgo"
 hostnames = [ "duckduckgo.com" ]
 sources = [ "https://duckduckgo.com/privacy" ]
-updates = [ ]
 contributors = [ "unbeatable101", "ibarakaiev" ]
 
 [rubric.behavioral-marketing]

@@ -3,7 +3,6 @@ description = "Twitter is a microblogging social network and is popular among Am
 slug = "twitter"
 hostnames = [ "twitter.com" ]
 sources = [ "https://twitter.com/en/privacy" ]
-updates = [ ]
 contributors = [ "milesmcc" ]
 
 [rubric.behavioral-marketing]

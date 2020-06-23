@@ -3,7 +3,6 @@ description = "Visible is an all-digital wireless carrier owned by Verizon."
 slug = "visible"
 hostnames = [ "visible.com" ]
 sources = [ "https://www.visible.com/legal/privacy.html" ]
-updates = [ ]
 contributors = [ "doamatto" ]
 
 [rubric.behavioral-marketing]

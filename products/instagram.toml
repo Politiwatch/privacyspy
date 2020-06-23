@@ -3,7 +3,6 @@ description = "Instagram is a popular photo sharing social network owned and ope
 slug = "instagram"
 hostnames = [ "instagram.com" ]
 sources = [ "https://help.instagram.com/519522125107875" ]
-updates = [ ]
 contributors = [ "milesmcc" ]
 
 [rubric.behavioral-marketing]

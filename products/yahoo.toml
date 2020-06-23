@@ -3,7 +3,6 @@ description = "Yahoo! is an American technology company owned by Verizon that pr
 slug = "yahoo"
 hostnames = [ "yahoo.com" ]
 sources = [ "https://policies.yahoo.com/xa/en/yahoo/privacy/index.htm" ]
-updates = [ ]
 contributors = [ "ibarakaiev" ]
 
 [rubric.behavioral-marketing]

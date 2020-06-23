@@ -5,7 +5,6 @@ hostnames = [ "github.com" ]
 sources = [
   "https://help.github.com/en/articles/github-privacy-statement"
 ]
-updates = [ ]
 contributors = [ "ftsell", "milesmcc" ]
 
 [rubric.behavioral-marketing]

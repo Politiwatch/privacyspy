@@ -3,7 +3,6 @@ description = "Loom is a video sharing, markup, and collaboration tool for schoo
 slug = "loom"
 hostnames = [ "loom.com" ]
 sources = [ "https://www.loom.com/privacy-policy" ]
-updates = [ ]
 contributors = [ "milesmcc" ]
 
 [rubric.behavioral-marketing]

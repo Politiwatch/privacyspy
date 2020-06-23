@@ -3,7 +3,6 @@ description = "Quad9 is a non-profit public DNS resolver that puts an emphasis o
 slug = "quad9"
 hostnames = [ "quad9.net" ]
 sources = [ "https://quad9.net/policy/" ]
-updates = [ ]
 contributors = [ "ibarakaiev", "doamatto" ]
 
 [rubric.behavioral-marketing]

@@ -3,7 +3,6 @@ description = 'Taco Bell is a fast food chain owned by Yum! Foods that sells "me
 slug = "taco-bell"
 hostnames = [ "tacobell.com" ]
 sources = [ "https://www.tacobell.com/legal-notices/privacy-policy" ]
-updates = [ ]
 contributors = [ "nep" ]
 
 [rubric.behavioral-marketing]

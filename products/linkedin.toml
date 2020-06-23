@@ -3,7 +3,6 @@ description = "LinkedIn is a social network for professional communication owned
 slug = "linkedin"
 hostnames = [ "linkedin.com" ]
 sources = [ "https://www.linkedin.com/legal/privacy-policy" ]
-updates = [ ]
 contributors = [ "Anastasia" ]
 
 [rubric.behavioral-marketing]

@@ -3,7 +3,6 @@ description = "Microsoft is an American technology company, best known for creat
 slug = "microsoft"
 hostnames = [ "Microsoft.com" ]
 sources = [ "https://privacy.microsoft.com/en-us/privacystatement" ]
-updates = [ ]
 contributors = [ "UnKnOwN" ]
 
 [rubric.behavioral-marketing]
