@@ -1,20 +1,13 @@
-test:
-- any: ['src/tests/**/*']
+test: "src/tests/**/*"
 
-product:
-- any: ['products/**/*']
+product: "products/**/*"
 
-rubric:
-- any: ['rubric/**/*']
+rubric: "rubric/**/*"
 
-code:
-- any: ['src/**/*']
+code: "src/**/*"
 
-frontend:
-- any: ['src/**/*.hbs']
+frontend: "src/**/*.hbs"
 
-meta:
-- "./*"
+meta: "./*"
 
-icon:
-- any: ["icons/**/*"]
+icon: "icons/**/*"
