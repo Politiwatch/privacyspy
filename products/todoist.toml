@@ -1,5 +1,5 @@
 name = "Todoist"
-description = "TickTick is a cross-platform and collaborative to-do app"
+description = "Todoist is a cross-platform and collaborative task list (todo list) app for individuals and businesses."
 slug = "todoist"
 hostnames = [ "todoist.com" ]
 sources = [ "https://todoist.com/privacy?lang=en" ]
@@ -14,7 +14,7 @@ citations = [
 [rubric.security]
 value = "yes"
 citations = [
-  "All data and information transmitted with Service is secured by SSL protocol."
+  "All data and information transmitted with [the] Service is secured by SSL protocol."
 ]
 notes = [
   "A more in-depth whitepaper can be found at https://todoist.com/security"
