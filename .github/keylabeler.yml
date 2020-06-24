@@ -9,10 +9,10 @@ matchBody: false
 
 # Explicit keyword mappings to labels. Form of match:label. Required.
 labelMappings:
-    bug: bug
-    broken: bug
-    issue: bug
-    typo: bug
+    bug: problem
+    broken: problem
+    issue: problem
+    typo: problem
     product: product
     rubric: rubric
     test: test
@@ -21,4 +21,7 @@ labelMappings:
     process: process
     add: enhancement
     new: enhancement
+    request: enhancement
     implement: enhancement
+    icon: icon
+    icons: icon
