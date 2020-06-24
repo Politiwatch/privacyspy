@@ -5,11 +5,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Install modules
+    - name: Install Modules
       run: npm i
-    - name: Run tests
+    - name: Run Tests
       run: npm test
-    - uses: IgnusG/jest-report-action@v2.3.3
-      if: always()
+    - name: Publish Test Report
+      uses: scacap/action-surefire-report@v1
       with:
-        access-token: ${{ secrets.GITHUB_TOKEN }}
+        github_token: ${{ secrets.GITHUB_TOKEN }}
