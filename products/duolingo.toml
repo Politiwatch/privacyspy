@@ -1,0 +1,82 @@
+name = "Duolingo"
+description = "Duolingo is an American platform that includes a language-learning website and mobile app, as well as a digital language-proficiency assessment exam."
+slug = "duolingo"
+hostnames = [ "duolingo.com" ]
+sources = [ "https://www.duolingo.com/privacy" ]
+contributors = [ "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "yes-opt-out"
+citations = [
+  "To support and enhance the Service, we work with a variety of third party advertising networks, marketing analytics service providers and website analysis firms, such as Google, Facebook, Oath, and Unity (collectively, “Third Party Advertising Service Providers”). \n[...]\nYou can opt out of Google Analytics without affecting how you visit our site – \n[...]\nYou can opt-out of receiving personalized ads from advertisers and ad networks that are members of the Network Advertising Initiative (“NAI”) or who follow the DAA Self-Regulatory Principles for Online Behavioral Advertising using their respective opt-out tools."
+]
+
+[rubric.security]
+value = "no"
+citations = [
+  "Duolingo has implemented administrative and technical safeguards it believes are appropriate to protect the confidentiality, integrity and availability of your personal data, Testing ID, User Photo, access credentials, and Duolingo English Test results. However, given sufficient resources, a determined attacker could defeat those safeguards and may, as a result, gain access to the data we seek to protect."
+]
+notes = [
+  "It states that it tries to protect your data, but never discloses how so."
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "Third Party Data\nWe also collect information about you from third parties. For more information, see Information obtained by Third Parties."
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [ "Last revised on 11th October, 2018" ]
+
+[rubric.data-deletion]
+value = "yes-automated"
+citations = [
+  "You also have the following rights in relation to the personal data we hold about you, unless provided otherwise by local law:\n[...]\nTo delete your account with Duolingo by following the instructions available through the Service."
+]
+notes = [
+  "You use the account settings panel at https://www.duolingo.com/settings/account"
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "There aren't any mentions about how Duolingo handles breaches."
+]
+
+[rubric.third-party-access]
+value = "yes-specified-noncritical"
+citations = [
+  "Duolingo shares your personal data only when it is necessary to offer the Service, legally required, or permitted by you.\n\nWe will provide personal data to hosting providers such as Amazon Web Services, search engine providers such as Google, analytics providers such as Crashlytics, and support providers such as ZenDesk."
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "Information you provide\nThrough the registration process, you will provide us with your name, e-mail address (or parent’s e-mail address), and age or date of birth. You will also provide us with your payment transaction information if you choose to pay for Duolingo services.\n\nActivity Data\nWhen you use the Service, you will submit information and content to your profile. We will also generate data about your use of our Services including your engagement in educational activities on the Service, or your sending of messages and otherwise transmitting information to other users (“Activity Data”). We also collect technical data about how you interact with our Services; for more information, see Cookies.\n\nLive Speaking Practice\nWhen you take a Live Speaking Lesson, we will use your computer's microphone throughout the lesson to speak to your tutor. You also have the option of using your camera to share your video with your tutor. Duolingo records these audio and video lessons and retains them until you close your Duolingo account. Duolingo uses this data to help improve the quality of the lessons and for internal research purposes.\n\nDuolingo does not share any of your personal data with your tutor. You are completely anonymous to them by default, and you can freely choose whether you show them your video or tell them any personal details such as your name during the conversation. Duolingo only shares some basic skill level information with the tutor, prior to your lesson, so they understand how best to speak to you.\n\nTest Data\nIf you register for the Duolingo English Test, you will also provide us with your gender, native language, secondary school, and self-reported test scores for other exams. Each time you take a test you must also provide a photo of a current, valid driver’s license, passport, or other government issued ID and a take a photo of your face to verify your identity (“Testing ID”).\n\nWhen you use the Service to take an examination in the Duolingo English Test you must provide access to your computer’s webcam and microphone. We will use them to record you and your screen during the entire examination period (“Testing Video”). While using the Duolingo English Test, you will submit answers to questions and other information as part of the testing and evaluation process.\n\nThird Party Data\nWe also collect information about you from third parties. For more information, see Information obtained by Third Parties.\n\nProduct Research and Development\nWe may contact you to participate in product research activities. These may include surveys, interviews, and other types of feedback sessions. When you participate in these research activities, the information you provide will be used to test, improve, and develop our products. We will record the video, audio and text transcriptions of this feedback together with any additional contact information you provide and will retain this data for two years."
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-some"
+citations = [
+  "We will provide personal data to hosting providers such as Amazon Web Services, search engine providers such as Google, analytics providers such as Crashlytics, and support providers such as ZenDesk."
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "We will be required to access and disclose personal data in response to lawful requests, such as subpoenas or court orders, or in compliance with applicable laws. Additionally, we will access and share account or other personal data when we believe it is necessary to comply with law, to protect our interests or property, to prevent fraud or other illegal activity perpetrated through the Service or using the Duolingo name, or to prevent imminent harm. This will include accessing and sharing personal data with other companies, lawyers, agents or government agencies."
+]
+
+[rubric.list-collected]
+value = "exhaustively"
+citations = [
+  "Information you provide\nThrough the registration process, you will provide us with your name, e-mail address (or parent’s e-mail address), and age or date of birth. You will also provide us with your payment transaction information if you choose to pay for Duolingo services.\n\nActivity Data\nWhen you use the Service, you will submit information and content to your profile. We will also generate data about your use of our Services including your engagement in educational activities on the Service, or your sending of messages and otherwise transmitting information to other users (“Activity Data”). We also collect technical data about how you interact with our Services; for more information, see Cookies.\n\nLive Speaking Practice\nWhen you take a Live Speaking Lesson, we will use your computer's microphone throughout the lesson to speak to your tutor. You also have the option of using your camera to share your video with your tutor. Duolingo records these audio and video lessons and retains them until you close your Duolingo account. Duolingo uses this data to help improve the quality of the lessons and for internal research purposes.\n\nDuolingo does not share any of your personal data with your tutor. You are completely anonymous to them by default, and you can freely choose whether you show them your video or tell them any personal details such as your name during the conversation. Duolingo only shares some basic skill level information with the tutor, prior to your lesson, so they understand how best to speak to you.\n\nTest Data\nIf you register for the Duolingo English Test, you will also provide us with your gender, native language, secondary school, and self-reported test scores for other exams. Each time you take a test you must also provide a photo of a current, valid driver’s license, passport, or other government issued ID and a take a photo of your face to verify your identity (“Testing ID”).\n\nWhen you use the Service to take an examination in the Duolingo English Test you must provide access to your computer’s webcam and microphone. We will use them to record you and your screen during the entire examination period (“Testing Video”). While using the Duolingo English Test, you will submit answers to questions and other information as part of the testing and evaluation process.\n\nThird Party Data\nWe also collect information about you from third parties. For more information, see Information obtained by Third Parties.\n\nProduct Research and Development\nWe may contact you to participate in product research activities. These may include surveys, interviews, and other types of feedback sessions. When you participate in these research activities, the information you provide will be used to test, improve, and develop our products. We will record the video, audio and text transcriptions of this feedback together with any additional contact information you provide and will retain this data for two years."
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "We may update our Privacy Policy to reflect changes to our information practices. If we do this and the changes are material, we will post a notice that we have made changes to this Privacy Policy on the Website for at least 7 days before the changes are made, and we will indicate the date these terms were last revised at the bottom of the Privacy Policy."
+]

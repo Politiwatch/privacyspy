@@ -17,13 +17,13 @@ notes = [
 [rubric.security]
 value = "somewhat"
 citations = [
-  "Zoom is committed to protecting your personal data. We use a combination of industry-standard security technologies, procedures, and organizational controls and measures to protect your data from unauthorized access, use, or disclosure. \r\n\r\nWe recommend you take every precaution in protecting your data when you are on the Internet. For example, change your passwords often, use a combination of upper and lower-case letters, numbers, and symbols when creating passwords, and make sure you use a secure browser. If you have any questions about the security of your data, please contact  our security team at security@zoom.us"
+  "Zoom is committed to protecting your personal data. We use a combination of industry-standard security technologies, procedures, and organizational controls and measures to protect your data from unauthorized access, use, or disclosure. \n\nWe recommend you take every precaution in protecting your data when you are on the Internet. For example, change your passwords often, use a combination of upper and lower-case letters, numbers, and symbols when creating passwords, and make sure you use a secure browser. If you have any questions about the security of your data, please contact  our security team at security@zoom.us"
 ]
 
 [rubric.third-party-collection]
 value = "yes"
 citations = [
-  "(In table \"Data we may obtain about you\")\r\n\r\nThird Parties --- Data Enrichment services, Mailing Lists, Public Sources --- Send you marketing communications, unless you tell us not to (or if you say it’s OK, i.e., opt-in); Provide tailored information based on your interests\r\n"
+  "(In table \"Data we may obtain about you\")\n\nThird Parties --- Data Enrichment services, Mailing Lists, Public Sources --- Send you marketing communications, unless you tell us not to (or if you say it’s OK, i.e., opt-in); Provide tailored information based on your interests\n"
 ]
 
 [rubric.history]
@@ -62,13 +62,13 @@ notes = [
 [rubric.noncritical-purposes]
 value = "opt-out-some"
 citations = [
-  "[We send] you marketing communications, unless you tell us not to (or if you say it’s OK, i.e., opt-in)\r\n\r\nYou have choices about what cookies can be used. You can adjust cookie settings by turning off optional cookies in your browser’s setting or by using our Cookie Preferences link at the bottom of the Zoom homepage. To ensure that you do not receive Advertising Cookies, you can adjust the slider at the Cookie Preferences link to “Required Cookies/CCPA Opt-Out”.\r\n\r\nBecause of CCPA’s broad definition, as is the case with many providers since the CCPA became law, we provide a “Do Not Sell My Personal Information” link at the bottom of our marketing sites. You can use this link to change your Cookie Preferences and opt out of the use of these advertising tools. If you opt out, Personal Data that was used by these tools will no longer be shared with third parties in a way that constitutes a “sale” under CCPA."
+  "[We send] you marketing communications, unless you tell us not to (or if you say it’s OK, i.e., opt-in)\n\nYou have choices about what cookies can be used. You can adjust cookie settings by turning off optional cookies in your browser’s setting or by using our Cookie Preferences link at the bottom of the Zoom homepage. To ensure that you do not receive Advertising Cookies, you can adjust the slider at the Cookie Preferences link to “Required Cookies/CCPA Opt-Out”.\n\nBecause of CCPA’s broad definition, as is the case with many providers since the CCPA became law, we provide a “Do Not Sell My Personal Information” link at the bottom of our marketing sites. You can use this link to change your Cookie Preferences and opt out of the use of these advertising tools. If you opt out, Personal Data that was used by these tools will no longer be shared with third parties in a way that constitutes a “sale” under CCPA."
 ]
 
 [rubric.law-enforcement]
 value = "reasonable"
 citations = [
-  "In certain limited circumstances, courts, law enforcement agencies, regulatory agencies, or security authorities in those other countries may be entitled to access your personal data.\r\n\r\nIn certain situations, Zoom may be required to disclose personal data in response to valid and lawful requests by public authorities or pursuant to requests from law enforcement."
+  "In certain limited circumstances, courts, law enforcement agencies, regulatory agencies, or security authorities in those other countries may be entitled to access your personal data.\n\nIn certain situations, Zoom may be required to disclose personal data in response to valid and lawful requests by public authorities or pursuant to requests from law enforcement."
 ]
 
 [rubric.list-collected]

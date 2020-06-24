@@ -1,0 +1,84 @@
+name = "WordPress"
+description = "WordPress is an accessible online tool for sites creation."
+slug = "wordpress"
+hostnames = [ "wordpress.com" ]
+sources = [ "https://automattic.com/privacy/" ]
+contributors = [ "UnKnOwN" ]
+
+[rubric.behavioral-marketing]
+value = "yes"
+citations = [
+  "\"Automattic uses cookies and other technologies like pixel tags to help us identify and track visitors, usage, and access preferences for our Services, as well as track and understand email campaign effectiveness and to deliver targeted ads.\""
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "While no online service is 100% secure, we work very hard to protect information about you against unauthorized access, use, alteration, or destruction, and take reasonable measures to do so, such as monitoring our Services for potential vulnerabilities and attacks."
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "We may also get information about you from other sources. For example, if you create or log into your WordPress.com account through another service (like Google) or if you connect your website or account to a social media service (like Twitter) through our Publicize feature, we will receive information from that service (such as your username, basic profile information, and friends list) via the authorization procedures used by that service. The information we receive depends on which services you authorize and any options that are available.\n\nWe may also get information, such as a mailing address, from third party services about individuals who are not yet our users (…but we hope will be!), which we may use, for example, for marketing and advertising purposes like postcards and other mailers advertising our services."
+]
+
+[rubric.history]
+value = "yes"
+notes = [
+  "The change-log is available in the bottom of the privacy-policy."
+]
+
+[rubric.data-deletion]
+value = "yes-contact"
+citations = [
+  "Your Rights [...]\n\nRequest access to your personal data;\n\nRequest correction or deletion of your personal data;\n\nObject to our use and processing of your personal data;\n\nRequest that we limit our use and processing of your personal data; and\n\nRequest portability of your personal data.\n\nYou can usually access, correct, or delete your personal data using your account settings and tools that we offer, but if you aren’t able to do that, or you would like to contact us about one of the other rights, scroll down to How to Reach Us to, well, find out how to reach us."
+]
+notes = [
+  "Presumably, deletion of the data from your account means deletion from the databases."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "Nothing is mentioned about data breaches in the privacy policy."
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = [
+  "We may share information about you with third party vendors who need to know information about you in order to provide their services to us, or to provide their services to you or your site. This group includes vendors that help us provide our Services to you (like payment providers that process your credit and debit card information, payment providers you use for your ecommerce operations, fraud prevention services that allow us to analyze fraudulent payment transactions, postal and email delivery services that help us stay in touch with you, customer chat and email support services that help us communicate with you, registrars, registries, and data escrow services that allow us to provide domain registration services, and your hosting provider if your site is not hosted by Automattic), those that assist us with our marketing efforts (e.g. by providing tools for identifying a specific marketing target group or improving our marketing campaigns), those that help us understand and enhance our Services (like analytics providers), and companies that make products available on our websites (such as the extensions on WooCommerce.com), who may need information about you in order to, for example, provide technical or other support services to you. We require vendors to agree to privacy commitments in order to share information with them. Other vendors are listed in our more specific policies."
+]
+notes = [
+  "In the Cookie Policy, you can find specified parties which place cookies on your device. "
+]
+
+[rubric.data-collection-reasoning]
+value = "mostly"
+notes = [
+  "The purposes of using the data are explained well, however not every piece of information is accompanied by a clear explanation."
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-some"
+notes = [
+  "You can limit access to information on your device, reject cookies and opt-out of marketing communications. However some of your information can still be used for non-critical purposes.\n"
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "We may disclose information about you in response to a subpoena, court order, or other governmental request. "
+]
+
+[rubric.list-collected]
+value = "generally"
+notes = [
+  "The policy does good job in explaining the data it collects, however, some \"such as\" are used, thus, making the statements non-absolute."
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "Although most changes are likely to be minor, Automattic may change its Privacy Policy from time to time. Automattic encourages visitors to frequently check this page for any changes to its Privacy Policy. If we make changes, we will notify you by revising the change log below, and, in some cases, we may provide additional notice (such as adding a statement to our homepage or the WordPress.com Blog, or sending you a notification through email or your dashboard). Your further use of the Services after a change to our Privacy Policy will be subject to the updated policy."
+]

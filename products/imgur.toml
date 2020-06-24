@@ -1,0 +1,76 @@
+name = "Imgur"
+description = "Imgur is an image sharing, storytelling and public chatting community "
+slug = "imgur"
+hostnames = [ "imgur.com" ]
+sources = [ "https://imgur.com/privacy" ]
+contributors = [ "kulchynska" ]
+
+[rubric.behavioral-marketing]
+value = "yes-opt-out"
+citations = [
+  "We also partner with third party advertisers who may (themselves or through their partners) place and/or recognize cookies on your device that collect data about which pages and ads are viewed while our app or site is being used. Advertiser cookies enable customized ads that are selected for display on your device based on the anonymous information collected. No personal data is on, connected to, or derivable from, these cookies. \n\nIf you block or disable cookies and other tracking technologies, instead of getting customized ads you will see non-customized (generic) ads."
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "We take every reasonable precaution to protect the data on our servers from loss, misuse, unauthorized access, disclosure, alteration, or destruction, taking into account the risk level and the nature of the data. You are responsible for taking every reasonable precaution on your end to protect any unauthorized person from accessing your Imgur account."
+]
+
+[rubric.third-party-collection]
+value = "no"
+citations = [
+  "Because we don’t collect information about the identity of our users and don’t receive any information from third parties enabling us to identify our users, we have no means of knowing, or providing you with information about, whatever anonymous data about you we might have on our servers – unless you have a username."
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [ "Your Privacy Rights – Effective June 14, 2019" ]
+
+[rubric.data-deletion]
+value = "yes-automated"
+citations = [
+  " If you have a username, you may log in and access your data, correct whatever information you deem to be incorrect, opt out of information sharing with our advertisers, or delete your account. \n"
+]
+
+[rubric.data-breaches]
+value = "yes-72"
+citations = [
+  "This privacy policy applies to all Imgur users worldwide. For users in the European Economic Area (EEA) and in Switzerland, Imgur complies with the principles of the U.S.-EU Privacy Shield Program and the U.S.-Swiss Privacy Shield Program, and participates in both programs."
+]
+
+[rubric.third-party-access]
+value = "no"
+citations = [
+  "we are subject to the investigatory and enforcement powers of the Federal Trade Commission, and we are liable for the unauthorized transfer to third parties of user personal data"
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "On occasion we may run a contest or other type of promotion, and to enable us to award prizes to the winners as well as to comply with the applicable laws, we collect real names and contact information – so if you win a contest, we’ll ask for that information and we’ll use it only for those two specific purposes. "
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-all"
+citations = [
+  "We collect whatever personal data about you that you choose to give us, such as a contact email address (which we do not make public) and profile information."
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "We also use such data to enable us to comply with copyright law, with 18 USC §2258A (illegal content), and to respond to lawful requests by public authorities, including national security, courts, and law enforcement."
+]
+
+[rubric.list-collected]
+value = "generally"
+citations = [
+  "We collect whatever personal data about you that you choose to give us, such as a contact email address (which we do not make public) and profile information.\n\nTo set up an account, you give us your cell phone number and we’ll text you a confirmation code to verify that it’s your number.\n\n"
+]
+
+[rubric.revision-notify]
+value = "no"
+citations = [
+  "We may revise our privacy policy from time to time by posting the changes here. "
+]

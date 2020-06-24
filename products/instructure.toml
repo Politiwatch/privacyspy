@@ -1,0 +1,81 @@
+name = "Instructure"
+description = "Instructure is an educational technology company based in Salt Lake City, Utah that developed the Canvas learning management system, which is a comprehensive cloud-native software package."
+slug = "instructure"
+hostnames = [ "instructure.com" ]
+sources = [ "https://www.instructure.com/policies/marketing-privacy" ]
+contributors = [ "UnKnOwN" ]
+
+[rubric.behavioral-marketing]
+value = "yes-opt-out"
+citations = [
+  "TARGETING AND ADVERTISING COOKIES: These cookies are used to deliver adverts more relevant to you and your interests. They are also used to limit the number of times you see an advertisement as well as help measure the effectiveness of the advertising campaigns. They are usually placed by advertising networks with our permission. They remember that you have visited a website and this information is shared with other organizations such as advertisers.\n\nIf you don't want to receive cookies, you can alter your browser settings."
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "Instructure takes reasonable steps to help protect your personal data in an effort to prevent unauthorized access, use, or disclosure. Despite these measures, you should know that Instructure cannot fully eliminate security risks associated with personal data."
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "To make our Site more useful to you, our servers (which may be hosted by a third party service provider) collect information from you, including browser type, operating system, Internet Protocol (IP) address, domain name, geographic location, and/or a date/time stamp for your visit."
+]
+
+[rubric.history]
+value = "last-modified"
+notes = [
+  "The last modified date is available at the top of the policy.No"
+]
+
+[rubric.data-deletion]
+value = "no"
+citations = [
+  "You may also request changes or deletions by e-mailing us at the e-mail address set forth below. We will respond to your request, when permitted by law, within 30 days. We may be unable to delete information that resides in our archives."
+]
+notes = [
+  "In can be reasonably inferred that your data can't be permanently deleted."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "Nothing is mentioned about data breaches in the privacy policy."
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = [
+  "We may also work with third parties that collect data about your use of the Site and other sites or apps over time for non-advertising purposes.  Instructure uses Google Analytics and other third-party services to improve the performance of the Site and for analytics and marketing purposes."
+]
+
+[rubric.data-collection-reasoning]
+value = "mostly"
+notes = [
+  "The explanation for data usage is generally well, however not a;; data types are accompanied by a clear explanation. "
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-some"
+notes = [
+  "You can opt-out of Google Analytics, remove and reject cookies from our Site with your browser settings and stop receiving newsletters or promotional communications from the company. However, your information can still be used for non-critical purposes in Instructure. "
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "Instructure may disclose information about you if it believes such disclosure is necessary to (a) comply with laws or to respond to lawful requests and legal process"
+]
+
+[rubric.list-collected]
+value = "generally"
+notes = [
+  "The service lists the data it collects generally well, however, some \"such as\" phrases are used (for example in the analytics section), which make statements non-absolute. "
+]
+
+[rubric.revision-notify]
+value = "no"
+citations = [
+  "Instructure may change this Privacy Policy from time to time. If we make any changes to this Policy, we will change the “Last Updated” date above. If such changes are material, a notice of the changes will be posted along with the revised Privacy Policy. "
+]

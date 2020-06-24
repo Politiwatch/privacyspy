@@ -1,0 +1,59 @@
+name = "IMDb"
+description = "An online database of information related to films, television programs, home videos, video games, and streaming content online"
+slug = "imdb"
+hostnames = [ "imdb.com" ]
+sources = [ "https://www.imdb.com/privacy?ref_=ft_pvc" ]
+contributors = [ "YuriiStasiuk" ]
+
+[rubric.behavioral-marketing]
+value = "yes"
+citations = [
+  "We use web beacons (also known as “action tags” or “single-pixel gifs”) and other technologies to measure the effectiveness of certain site features and to conduct research and analysis. We also allow third parties to place web beacons and other technologies on our site to conduct research and analysis, but we do not provide personal information to such third parties."
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "If you use our subscription service, we work to protect the security of your subscription information during transmission by using Secure Sockets Layer (SSL) software, which encrypts information you input."
+]
+
+[rubric.third-party-collection]
+value = "critical-only"
+citations = [
+  "We might receive information about you from other sources and add it to our account information. Click here to see examples of the information we receive.\nExamples of information we receive from other sources include updated delivery and address information so that we can correct our records and deliver your next communication more easily.\n\n"
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [
+  "Last Updated, February 8, 2018. To see what has changed click here."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [ "Not specified" ]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = [
+  "Affiliated Businesses We Do Not Control: We work closely with our affiliated businesses. In some cases, we will include offerings from these businesses on IMDb. In other cases, we may include joint offerings from IMDb and these businesses on IMDb. You can tell when another business is involved in the offering, and we share user information related to those offerings with that business.\nAgents: We employ other companies and individuals to perform functions on our behalf. Examples include sending e-mail, removing repetitive information from user lists, analyzing data, and providing marketing assistance. They have access to personal information needed to perform their functions, but may not use it for other purposes.\nPromotional Offers: Sometimes we send offers to selected groups of IMDb users on behalf of other businesses. When we do this, we do not give that business your name and e-mail address. If you do not want to receive such offers, please use our User Administration pages to adjust your preferences.\n"
+]
+
+[rubric.law-enforcement]
+value = "always"
+citations = [
+  "We release account and other personal information when we believe release is appropriate to comply with law"
+]
+
+[rubric.list-collected]
+value = "exhaustively"
+citations = [
+  "You provide most such information when you register, search, post, participate in a contest or questionnaire, or communicate with us. For example, you provide information when you search for a movie, actor or director; provide information in our registration form; communicate with us by phone, e-mail, or otherwise; complete a questionnaire or a contest entry form; vote in a poll; provide movie reviews or information related to movies; participate in a discussion board; and employ our notification services. As a result of those actions, you might supply us with such information as your name, e-mail address, physical address, zip code, and phone number; your age and gender; the movies and actors you like or dislike; and your general movie preferences.\nExamples of the information we collect and analyze include the Internet protocol (IP) address used to connect your computer to the Internet; login; password; computer and connection information such as browser type and version, operating system, and platform; purchase history; the full Uniform Resource Locators (URL) clickstream to, through, and from our Web site, including date and time; cookie number; and pages you viewed or searched for. We may also use browser data such as cookies, Flash cookies (also known as Flash Local Shared Objects), or similar data on certain parts of our Web site for fraud prevention and other purposes. During some visits we may use software tools such as JavaScript to measure and collect session information, including page response times, download errors, length of visits to certain pages, page interaction information (such as scrolling, clicks, and mouse-overs), and methods used to browse away from the page."
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "We may e-mail periodic reminders of our notices and conditions, unless you have instructed us not to, but you should check our Web site frequently to see recent changes."
+]
+notes = [ "Not specified" ]

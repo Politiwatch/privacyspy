@@ -1,0 +1,87 @@
+name = "TickTick"
+description = "TickTick is a cross-platform and collaborative to-do app"
+slug = "ticktick"
+hostnames = [ "ticktick.com" ]
+sources = [ "https://www.ticktick.com/about/privacy" ]
+contributors = [ "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+notes = [ "This service doesn't allow targeted marketing" ]
+
+[rubric.security]
+value = "yes"
+citations = [
+  "TickTick is built with strong security features that continuously protect your information. SSL protocol secures all data and information transmitted with Service. The insights we gain from maintaining our services help us detect and automatically block security threats from ever reaching you. And if we do detect something risky that we think you should know about, we'll notify you and help guide you through steps to stay better protected.\n\n\n\nWe work hard to protect you and TickTick from unauthorized access, alteration, disclosure, or destruction of information we hold. You can learn more about our security measures from the Security page. "
+]
+notes = [
+  "This security page can be found at: https://ticktick.com/about/security"
+]
+
+[rubric.third-party-collection]
+value = "critical-only"
+citations = [
+  "When absolutely necessary, TickTick uses third party services and hosting partners who are also GDPR-compliant, such as AWS, Stripe, and Google. In such instances, we take essential security methods to guarantee that we comply with GDPR when sending and receiving data from third parties."
+]
+notes = [
+  "This is from a privacy FAQ addendum quoted found at https://support.ticktick.com/hc/en-us/articles/360035545551"
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [ "Date of Last Revision: October 31, 2019" ]
+
+[rubric.data-deletion]
+value = "yes-automated"
+citations = [
+  "All your private information will be deleted from our systems after deleting your account. There will be a 0-7 day period for your encrypted data to be kept in our backup archives. After this period, all your data will be permanently deleted. "
+]
+notes = [
+  "You can get a step-by-step tutorial on how to delete this data at https://support.ticktick.com/hc/en-us/articles/360011759031. This is quoted from a privacy FAQ addendum found at https://support.ticktick.com/hc/en-us/articles/360035545551"
+]
+
+[rubric.data-breaches]
+value = "yes-72"
+citations = [
+  "When a data breach that’s very likely to result in a risk for the rights of our users happened, we would notify you via official notifications or emails within 72 hours of first having become aware of the breach. We will do maximum possible efforts to maintain individuals’ privacy and to keep your data secure."
+]
+notes = [
+  "This is found on the security whitepaper (which is an addendum to the privacy policy) at https://ticktick.com/about/security"
+]
+
+[rubric.third-party-access]
+value = "yes-specified-critical"
+citations = [
+  "When absolutely necessary, TickTick uses third party services and hosting partners who are also GDPR-compliant, such as AWS, Stripe, and Google. In such instances, we take essential security methods to guarantee that we comply with GDPR when sending and receiving data from third parties."
+]
+notes = [
+  "This is quoted from a privacy FAQ addendum found at https://support.ticktick.com/hc/en-us/articles/360035545551"
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "We use data to build better services. Your information will not be shared with others and will only be used internally for the purposes described below: We use your information to deliver our services or information you requested, and to process and complete any transactions; We also use your information to ensure our services are working as intended, such as tracking outages or troubleshooting issues that you report to us. And we use your information to make improvements to our services - for example, to analyze usage and trends with anonymous user data, and to improve the quality of our service and user experience; TickTick collects email addresses from those who communicate with us via email, as well as information provided through voluntary activities such as site registration or survey participation. We use the information we collect to interact with you directly; We use information to help improve the safety and reliability of our services. This includes detecting, preventing, and responding to fraud, abuse, security risks, and technical issues that could harm TickTick, our users, or the public."
+]
+
+[rubric.noncritical-purposes]
+value = "na"
+notes = [ "Your data is not used for non critical purposes." ]
+
+[rubric.law-enforcement]
+value = "unspecified"
+notes = [
+  "It is not mentioned how the service will respond to legal orders"
+]
+
+[rubric.list-collected]
+value = "generally"
+citations = [
+  "At the time you register for TickTick, you voluntarily give us information such as your name and email address. You have the access and can update this information under your personal Account Settings at any time. We also collect aggregated, anonymous user data about the use of the app. \n[...]\nWe collect information about the browsers and devices you use to access TickTick. The user data we collect is used to enhance TickTick and the quality of our service. We only collect personal data required to deliver our services, and we only store it to the extent that it is essential to perform these services.\n[...]\nAt the time you register for TickTick, you voluntarily give us information such as your name and email address. You have access and can update this information under your personal Account Settings at any time. \nAdditionally, we collect information about your activity on our services. You give us your consent when using our services to use the following data: Email; IP address; Device ID; Name and surname (optional, unprocessed); Activity to add to-dos; Your location information when you allow TickTick to access your location for location-based reminders; People with whom you collaborate or share content."
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "If our Privacy Policy changes at some time in the future, we will not reduce your rights under this Privacy Policy without your explicit consent. We always indicate the date the latest changes were published. If changes are significant, we'll provide a more prominent notice (including, for certain services, email notification of Privacy Policy changes).\n\n\n\nPlease check back periodically to keep informed of updates or changes to this Privacy Policy. By continuing to access and to use TickTick, you are agreeing to be bound by the revised policy."
+]

@@ -1,0 +1,72 @@
+name = "Letterboxd"
+description = "Letterboxd is an online social networking service."
+slug = "letterboxd"
+hostnames = [ "https://letterboxd.com/" ]
+sources = [ "https://letterboxd.com/legal/privacy-policy/" ]
+contributors = [ "Donno" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+notes = [ "Not mentioned in privacy policy" ]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "You must keep any login, password or account information relating to your use of the Website secure at all times, and must immediately notify us of any unauthorized use of such information or any other breach of security. We will not be liable for any loss or damage if you fail to comply with this security obligation."
+]
+
+[rubric.third-party-collection]
+value = "no"
+notes = [
+  "Only optional:\nIf you connect your Facebook or Twitter accounts to your account with \nLetterboxd, we will access these accounts to identify which of your friends on those services are also using Letterboxd."
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [
+  "This policy was last updated in November 2019 and is effective from 1 November 2019."
+]
+
+[rubric.data-deletion]
+value = "yes-contact"
+citations = [
+  "Deactivation and deletion: Your account can be deactivated in Settings, and you can request permanent deletion via email following deactivation. When deactivated, your Letterboxd account, including your username, profile and content will no longer be viewable on the Website, App or API, but they will be retained unless and until you separately request permanent deletion via email. If you don’t request deletion, then it is possible to request the reactivation of your account if it was accidentally or wrongfully deactivated. We cannot restore permanently deleted accounts."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [ "No data breach policy mentioned." ]
+
+[rubric.third-party-access]
+value = "no"
+citations = [
+  "Unless you have expressly authorized us to do so, we will not disclose your personal information to any third party"
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "The personal information you provide us will only be used in relation to the services we provide you, to communicate with you in relation to our services or to co-operate with any government, industry or regulatory authorities.\n\nWe use Log Data to operate our services and to ensure their secure, reliable, and robust performance. For example, we use Log Data to protect the security of your account and to determine what features are popular on our services. We also use this data to improve the content we show you and to identify potential misuse of our services."
+]
+
+[rubric.noncritical-purposes]
+value = "no"
+notes = [ "Not mentioned in privacy policy" ]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "The personal information you provide us will only be used in relation to the services we provide you, to communicate with you in relation to our services or to co-operate with any government, industry or regulatory authorities."
+]
+
+[rubric.list-collected]
+value = "exhaustively"
+citations = [
+  "Personal information: In order to use particular services that we offer, you may need to submit certain personal information such as your email address, name, address, telephone number, gender and date of birth. You may be asked to submit further information from time to time. If you connect your Facebook or Twitter accounts to your account with Letterboxd, we will access these accounts to identify which of your friends on those services are also using Letterboxd."
+]
+
+[rubric.revision-notify]
+value = "no"
+citations = [
+  "Changes to Privacy Policy: We may amend or update this Privacy Policy from time to time, with or without notice to you. You agree to be bound by the Privacy Policy that is in effect at the time you access and use the Website, App or API."
+]

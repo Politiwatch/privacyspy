@@ -22,7 +22,7 @@ citations = [
 [rubric.third-party-collection]
 value = "critical-only"
 citations = [
-  "If you are a Buyer or Seller we may receive personal information about you from: \r\nSocial media platforms if you choose to register for a Platform account via a social media account. \r\n\r\nThird parties that are engaged by us to provide verification services."
+  "If you are a Buyer or Seller we may receive personal information about you from: \nSocial media platforms if you choose to register for a Platform account via a social media account. \n\nThird parties that are engaged by us to provide verification services."
 ]
 
 [rubric.history]

@@ -1,0 +1,73 @@
+name = "Quora"
+description = "Quora is an American Q&A website. "
+slug = "quora"
+hostnames = [ "quora.com" ]
+sources = [ "https://www.quora.com/about/privacy" ]
+contributors = [ "UnKnOwN" ]
+
+[rubric.behavioral-marketing]
+value = "yes-opt-out"
+citations = [
+  "As described in our Cookie Policy, we may also work with third parties such as network advertisers to serve ads on the Quora Platform and on third-party websites or other media (e.g., social networking platforms), such as Google AdSense (more info here) and Facebook Audience Network (more info here). These third parties may use cookies, JavaScript, web beacons (including clear GIFs), Flash LSOs and other tracking technologies to measure the effectiveness of their ads and to personalize advertising content to you."
+]
+notes = [ "However, Quora service offers an opting-out option." ]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "The security of your information is important to us. Quora has implemented safeguards to protect the information we collect. However, no website or Internet transmission is completely secure. We urge you to take steps to keep your personal information safe, such as choosing a strong password and keeping it private, as well as logging out of your user account, and closing your web browser when finished using the Quora Platform on a shared or unsecured device."
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "We may also receive information about you from third parties, such as other users, partners (including ad partners), or our affiliated companies."
+]
+
+[rubric.history]
+value = "last-modified"
+notes = [
+  "The last modified date is available at the top of the policy"
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "Nothing is mentioned about data breaches in the privacy policy. "
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = [
+  "We do not sell your personal data – such as your name and contact information – to third parties to use for their own marketing purposes. [...] We may share your information with third party service providers who use this information to perform services for us, such as payment processors, hosting providers, auditors, advisors, consultants, customer service and support providers, as well as those who assist us in providing the Ad Services."
+]
+
+[rubric.data-collection-reasoning]
+value = "mostly"
+notes = [
+  "While the purposes for collecting information are generally listed, not all the data collected in accompanied by a clear explanation of how it is used. "
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-some"
+notes = [
+  "You can opt-out of tracking by Quora Pixels, receiving emails or targeted advertisement, however, still, a big amount of data will be used for non-critical purposes (for analytics for example). "
+]
+
+[rubric.law-enforcement]
+value = "unspecified"
+citations = [
+  "We may disclose your information if we are required to do so by law."
+]
+
+[rubric.list-collected]
+value = "generally"
+notes = [
+  "The service does good job in listing the data types it collects, however not all information is specified and some \"such as\" phrases are used."
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "If we change our privacy policies and procedures, we will post those changes on this page. If we make any changes to this Privacy Policy that materially change how we treat your personal information, we will endeavor to provide you with reasonable notice of such changes, such as via prominent notice in the Quora Platform or to your email address of record, and where required by law, we will obtain your consent or give you the opportunity to opt out of such changes."
+]

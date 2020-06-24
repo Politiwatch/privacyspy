@@ -3,7 +3,7 @@ description = "Apple is a high-end American computer equipment, smartphone, and 
 slug = "apple"
 hostnames = [ "apple.com", "itunes.com" ]
 sources = [ "https://www.apple.com/legal/privacy/en-ww/" ]
-contributors = [ "milesmcc" ]
+contributors = [ "YuriiStasiuk" ]
 
 [rubric.behavioral-marketing]
 value = "yes-opt-out"
@@ -14,7 +14,7 @@ citations = [
 [rubric.security]
 value = "yes"
 citations = [
- "Apple takes the security of your personal information very seriously. Apple online services such as the Apple Online Store and iTunes Store protect your personal information during transit using encryption such as Transport Layer Security (TLS). When your personal data is stored by Apple, we use computer systems with limited access housed in facilities using physical security measures. With the exception of iCloud Mail, iCloud data is stored in encrypted form including when we utilize third-party storage."
+  "Apple takes the security of your personal information very seriously. Apple online services such as the Apple Online Store and iTunes Store protect your personal information during transit using encryption such as Transport Layer Security (TLS). When your personal data is stored by Apple, we use computer systems with limited access housed in facilities using physical security measures. With the exception of iCloud Mail, iCloud data is stored in encrypted form including when we utilize third-party storage."
 ]
 
 [rubric.third-party-collection]

@@ -1,0 +1,81 @@
+name = "Bank of America"
+description = "Bank of America is an American multinational investment bank and financial services company."
+slug = "bank-of-america"
+hostnames = [ "bankofamerica.com" ]
+sources = [
+  "https://www.bankofamerica.com/security-center/online-privacy-notice/"
+]
+contributors = [ "PSalant" ]
+
+[rubric.behavioral-marketing]
+value = "yes-opt-out"
+citations = [
+  "Online Behavioral Advertising\n\nWe or our advertising service providers may use certain information about your activities on our Sites, such as pages visited and search key words entered to help determine which of our advertisements or offers may be of interest to you. We limit access and collection of information for specific purposes by advertising service providers. We may use this online information for online and offline advertising."
+]
+notes = [
+  "Important Reminder\n\nIn order for online behavioral advertising opt outs from our Sites and on other sites to work on your device, your browser must be set to accept cookies. If you delete cookies, buy a new device, access our Site or other sites from a different device, login under a different screen name, or change web browsers, you will need to opt-out again. If your browser has scripting disabled, you do not need to opt out, as online behavioral advertising technology does not work when scripting is disabled."
+]
+
+[rubric.security]
+value = "no"
+notes = [
+  "This document does not appear to describe this company's security practices at all."
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "How We Collect and Use Other Information\n\nWe and our third-party service providers may collect and use Other Information in a variety of ways"
+]
+
+[rubric.history]
+value = "no"
+notes = [ "The history of this policy is not made available." ]
+
+[rubric.data-deletion]
+value = "no"
+notes = [
+  "There is no mention of a mechanism to permanently delete personal data; there is only mention of an opt-out mechanism for future data collection."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "There is no mention of notification practices in the event of a data breach."
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = [
+  "Additional Information\n\nThird party widgets – we may allow certain widgets (e.g., social share buttons) on our Sites that enable users to easily share information on another platform, such as a social media platform. The third parties that own these widgets may have access to information about your browsing on pages of our Sites where these widgets are placed. You may wish to review information at the third party site, such as social media platforms where you have an account, to determine how these third parties collect and treat such information."
+]
+
+[rubric.data-collection-reasoning]
+value = "mostly"
+citations = [
+  "How We Use Personal Information\n\nWe may use Personal Information: ..."
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-all"
+citations = [
+  "Advertising Choices\n\nYou may set your choices for advertising in the following ways:\n\nOnline Behavioral Advertising: If you prefer we not use information based on online Site behavior to provide online and offline tailored content and advertising, you may opt out of online behavioral advertising.\n\nOpting out also means that the online content and advertising you receive on our non-servicing sites (i.e. before sign-in) will be untailored and will not be based on your online behavior or your relationship.\n\nPlease note that if you opt out of this advertising, you may still receive untailored advertising from Bank of America. When accessing online account servicing areas (i.e. after sign-in), such as Online Banking or MyMerrill, you may receive tailored content and advertising based on your account relationships. In addition, financial advisors/Client Managers may continue to use information collected online as described in this Notice to provide details on products and services in accordance with account agreements. See Important Reminder section below.\n\nBank managed Direct Marketing: If you prefer we not deliver you marketing offers in email, postal mail or through telemarketing you may manage your direct marketing choices online or:\n\n    by telephone at 888.341.5000 — our menu will prompt you through the choices,\n    through your assigned account representative (e.g., Financial Advisor, Mortgage Loan Officer) or a representative at a banking center\n\nAdvertising on third party sites: Bank of America participates in the Digital Advertising Alliance (DAA) self-regulatory program, uses the Advertising Options Icon layer on our behavioral ads on third party sites (excluding ads appearing on platforms that do not accept the icon) and adheres to the DAA self-regulatory Principles for Online Behavioral Advertising. Anyone receiving a behavioral ad may click on the displayed icon to receive more information and can opt out at that time or by visiting the third party site's privacy policy for an opt out mechanism.\n\nYou may also opt out of receiving behavioral ads from many sites through the Network Advertising Initiative's Opt-Out Tool layer or other tools provided by the publishing platform."
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "for risk control, for fraud detection and prevention, to comply with laws and regulations, and to comply with other legal process and law enforcement requirements"
+]
+
+[rubric.list-collected]
+value = "generally"
+citations = [
+  "Personal Information We Collect Online\n\nPersonal Information means personally identifiable information such as information you provide via forms, surveys, applications or other online fields including name, postal or email addresses, telephone, fax or mobile numbers, or account numbers."
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "How We Use Personal Information\n...\n- to inform you about important information regarding the Site, products or services for which you apply or may be interested in applying for, or in which you are already enrolled, changes to terms, conditions, and policies and/or other administrative information"
+]

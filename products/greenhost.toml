@@ -1,0 +1,73 @@
+name = "Greenhost"
+description = "Greenhost is a domain provider and VPS provider"
+slug = "greenhost"
+hostnames = [ "greenhost.net", "grenhost.nl", "service.greenhost.net" ]
+sources = [ "https://greenhost.net/legal/privacy-policy/" ]
+contributors = [ "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+notes = [ "Data isn't used for targeted advertising" ]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "Greenhost has implemented reasonable measures to protect against unauthorised access to and unlawful interception or processing of personal information that Greenhost stores and controls. However, it is impossible to fully eliminate security risks. Third parties may circumvent our security measures to (un)lawfully intercept data we collect, Greenhost transmissions or private communications. If any such security breach occurs we will inform relevant authorities of the breach and we will post a notice to the Websites."
+]
+
+[rubric.third-party-collection]
+value = "no"
+notes = [ "Data isn't collected from third parties" ]
+
+[rubric.history]
+value = "no"
+citations = [ "Version: 2019-1" ]
+notes = [
+  "It could be inferred that this means 2019, January; however, it isn't clear enough to be certain"
+]
+
+[rubric.data-deletion]
+value = "yes-contact"
+citations = [
+  "You are entitled to access and correct your data, or ask us to delete it. Many changes can be made in our Self Service Centre. You are also entitled to withdraw previously given consent to this privacy statement, or to object to our processing of your data. You are also entitled to data portability, which means that we will provide you with a copy of the data we have on you, upon your request. If you want to use any of these rights, please send your specific request to support@greenhost.net. We will respond to your request as soon as possible, but at the latest 4 weeks after your request.\n\nNote that these rights do not apply if they conflict with other legal obligations, such as the obligation to keep records for all contracts and invoices for a period of 7 years."
+]
+
+[rubric.data-breaches]
+value = "eventually"
+citations = [
+  "If any such security breach occurs we will inform relevant authorities of the breach and we will post a notice to the Websites."
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified-critical"
+citations = [
+  "We do not sell or otherwise voluntarily provide the non personal browsing information we collect about you or your website usage to third parties. In general it is not our practice to disclose personal information to third parties. An exception can be made in a good faith belief that disclosing your personal information to a third party is reasonably necessary to: - take action regarding suspected illegal activities; - enforce or apply our Terms and Conditions or Privacy Policy; - comply with legal processes, such as a search warrant, subpoena, statute, or court order; or - protect our rights, reputation, and property, or that of our users, affiliates, or the public.\n\nIf we do provide your data to a third party, we only do so after entering into a processors agreement with that third party to maintain a comparable level of security and confidentiality. Greenhost will remain responsible for the processing.\n\nIf Greenhost is required to provide a third party with your personal information (whether by subpoena or otherwise) Greenhost will use reasonable means to notify you promptly of that event, unless prohibited by law or if Greenhost is otherwise advised in legal proceedings."
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "purposes of data collection\nto allow you to create an account\nto be able to provide our Services\nto be able to contact you if this is required to deliver our Services\nto inform you of any changes in our Products and Services\nto handle your payment\nto send you our newsletters\nto meet legal requirements"
+]
+
+[rubric.noncritical-purposes]
+value = "na"
+notes = [ "Data isn't used for non-critical purposes" ]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "An exception can be made in a good faith belief that disclosing your personal information to a third party is reasonably necessary to: - take action regarding suspected illegal activities; - enforce or apply our Terms and Conditions or Privacy Policy; - comply with legal processes, such as a search warrant, subpoena, statute, or court order; or - protect our rights, reputation, and property, or that of our users, affiliates, or the public."
+]
+
+[rubric.list-collected]
+value = "generally"
+citations = [
+  "What information do we collect\nName, address, place of residence\nTelephone number\nEmail address(es)\nPayment details, such as account numbers and ways of payment\nType of customer (individual, business, NGO)\nOther details, that are actively provided while placing an order, in email correspondence, or by phone\nContact history\nServices you are subscribing to"
+]
+
+[rubric.revision-notify]
+value = "no"
+citations = [
+  "We may occasionally update this Privacy Policy. When we do, we will also revise the Effective Date below. We encourage you to periodically review this Privacy Policy to stay informed about how we are protecting the personal information we collect. Your continued use of the Services constitutes your agreement to this Privacy Policy and any updates."
+]

@@ -1,0 +1,89 @@
+name = "Weixin"
+description = "Chinese version of wechat. You will obey this privacy policy if you use a Chinese phone number or if you download your app from Chinese market place"
+slug = "weixin"
+hostnames = [ "weixin.qq.com" ]
+sources = [
+  "https://weixin.qq.com/cgi-bin/readtemplate?lang=en&t=weixin_agreement&s=privacy&cc=CN"
+]
+contributors = [ "Anonymous" ]
+
+[rubric.behavioral-marketing]
+value = "yes"
+citations = [
+  "For example, we may use the information we collect when you use one of our features, and provide you with specific content in another service, including, but not limited to ads (please click About our Advertising for more details),"
+]
+
+[rubric.security]
+value = "yes-audits"
+citations = [
+  "Currently, Weixin has passed the assessment test and undergone the record-filling of Level 3 Graded Protection of Information System Security. In terms of information security, Weixin has also implemented and achieved the certification to ISO27001, the international information security management system standard, TRUSTArc and some other authoritative international standards. "
+]
+notes = [
+  "In \"Information Security\" section, they listed some of their practice about information security, but not exhaustive. \n\nThe information security is audited then obtained ISO 27001 "
+]
+
+[rubric.third-party-collection]
+value = "no"
+citations = [
+  "At present, Weixin will not actively obtain your personal information from a third party outside of Tencent."
+]
+
+[rubric.history]
+value = "no"
+notes = [ "No such information is provided" ]
+
+[rubric.data-deletion]
+value = "no"
+citations = [
+  "Note: After you have deleted your account, we will delete or anonymize your personal information"
+]
+notes = [
+  "There is no guarantee that personal information is deleted, your personal information might be \"anonymized\", notice that it depends on what information they kept, it might be hard to \"truly anonymize\" some information like chat history or stream of usage data."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [ "No mention of data breach in the statement" ]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = [
+  "At present, Weixin will not actively share or transfer your personal information to any third parties outside of Tencent.\n\nIf there are other circumstances in which your personal information is to be shared or transferred [...]  we will directly obtain or verify the third party has obtained your prior express consent [...]\n\nIf we have to disclose such information publicly, we will inform you of the \n  - purpose of such disclosure, \n  - type of information disclosed \n  - the sensitive information that may be involved, \nand obtain your prior express consent.\n\nin accordance with relevant laws and regulations and national standards, [...] we may share, transfer, or publicly disclose personal information without prior consent of the subject of personal information"
+]
+notes = [
+  "They can (each node correspond to a paragraph in \"External Parties\" section):\n\n- share personal information with your consent or share personal information with third-party that have your consent.\n\n- publicly disclose personal information when notifying you of crucial detail, and obtain your consent\n\n- disclose personal information WITHOUT notice if it is related to jurisdiction etc.\n"
+]
+
+[rubric.data-collection-reasoning]
+value = "somewhat"
+notes = [
+  "In the \"1. The Information We Collect\" section, there are various mention of \"such as\" and \"including\".\n\nAnd they can collect personal information WITHOUT consent if it is related to things like \n\n- \"national interests\" and \"public safety\", \n- \"criminal investigation\", \n- \"protect vital legitimate interests of [...] individuals\" \n- \"maintenance of the safe and stable operation\"\n- \"legitimate news reporting\"\n- \"conducting statistical or academic research which is for public interest\" (research result can be provided externally)\n- \"stipulated by laws and regulations\""
+]
+
+[rubric.noncritical-purposes]
+value = "no"
+citations = [
+  "please click About our Advertising (https://privacy.qq.com/advertisement-en.htm) for more details "
+]
+notes = [
+  "The ads are provided by Tencent.\n\nIn Tencent ads control (https://privacy.qq.com/ads/optout.html, in Chinese) they only allow to opt out for 6 months: \nCan click the above button to opt out for 6 months (original text: \"可点击上方按钮进行为期六个月的关闭\"). "
+]
+
+[rubric.law-enforcement]
+value = "always"
+citations = [
+  "we may share, transfer, or publicly disclose personal information without prior consent of the subject of personal information:\n\n1) When it is directly related to national security or national defense;\n\n2) When it is directly related to public safety, public health, or major public interests;\n\n3) When it is directly related to a criminal investigation, prosecution, trial or execution of judgments;\n\n4) When it is for protecting vital legitimate interests of you or of other individuals, such as right of life, property, and reputation, while it’s hardly to obtain the consent of the individual; \n\n\nwe may collect and process your relevant personal information without asking for your consent:\n\n1) When it is directly related to national interests such as national security and national defense, or it is directly related to major public interests such as public safety, public health, and public knowledge;\n\n2) When it is directly related to a criminal investigation, prosecution, trial or execution of judgments;\n\n3) In order to protect vital legitimate interests of you or of other individuals, such as right of life, property, and reputation, while it’s hardly to obtain the consent of the individual;\n[...]\n9) When it is necessary for conducting statistical or academic research which is for public interest, [...]"
+]
+notes = [
+  "They can collect and disclose personal information WITHOUT consent for things like \"national security\" and \"public interests\""
+]
+
+[rubric.list-collected]
+value = "generally"
+notes = [ "In the \"1.The Information We Collect\" section" ]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "We may revise this Guideline in due course. In the event where the terms of this Guideline are amended, we will show you amended Guideline by way of push notifications and/or pop-up windows when you log in or when the APP version has been updated. Please note that we will follow the updated Guideline to collect, use and store your personal information only after you have tapped on the consent button in the pop-up window. "
+]

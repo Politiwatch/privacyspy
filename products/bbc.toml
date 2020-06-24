@@ -1,0 +1,76 @@
+name = "BBC"
+description = "BBC is a British broadcasting company."
+slug = "bbc"
+hostnames = [ "bbc.co.uk", " bbc.com" ]
+sources = [ "https://www.bbc.co.uk/usingthebbc/privacy-policy/" ]
+contributors = [ "newuser_mnWFF" ]
+
+[rubric.behavioral-marketing]
+value = "yes-opt-in"
+citations = [
+  "We'll only send you marketing emails or contact you about BBC programmes, services and your views on issues about the BBC if you've agreed to this."
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "We're strongly committed to keeping you and your family's information safe. And to do this we design our services with your safety in mind. We also have dedicated teams to look after your information security and privacy.\n\nAt the same time, no service can be completely secure - if you have any concerns that your BBC account or personal information has been put at risk, for example if someone could have found out your password, please get in touch straight away."
+]
+
+[rubric.third-party-collection]
+value = "critical-only"
+citations = [
+  "In order for us to give you quality experiences and to understand how you're using our services we often use other companies to process your personal information on our behalf. For example, sending you emails about things we think might interest you, to ask you what you think about our services, or to analyse data on how people use our digital services so we can improve them.\n\nWe make sure that your personal information is looked after as if we were handling it directly. We carefully select these companies, only share with them what they need to do the work and we make sure they keep your information secure."
+]
+
+[rubric.history]
+value = "last-modified"
+notes = [
+  "It says a version number (3.1) and the month and year of the last update (August 2019.)"
+]
+
+[rubric.data-deletion]
+value = "yes-automated"
+citations = [
+  "This depends on what information you're talking about.\n\na. If you're talking about BBC account\n\nYou can delete your account. Your account information is immediately deleted. Keep in mind:\n\n    we keep a record of how you've used our services, but this information can't be linked back to you\n    we also keep anything you've uploaded or commented on\n\nb. What about other information I've shared with you?\n\nWe might have collected other personal information that you might ask to be deleted that has nothing to do with BBC account.\n"
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "The privacy policy does not state whether the user will be contacted in the event of a data breach."
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = [
+  "In order for us to give you quality experiences and to understand how you're using our services we often use other companies to process your personal information on our behalf. For example, sending you emails about things we think might interest you, to ask you what you think about our services, or to analyse data on how people use our digital services so we can improve them.\n\nWe make sure that your personal information is looked after as if we were handling it directly. We carefully select these companies, only share with them what they need to do the work and we make sure they keep your information secure."
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "We'll give you details about why we need your personal information and how we'll use it before you begin, unless it's obvious.\n\na. Information that you give us\n\nWe might ask for your name and contact details, your date of birth or financial details, depending on what you're doing. If you apply to take part in a programme on politics, for example, we might ask you about your political opinions. Information you give us might include information in a creation you share with us, such as people's names that appear in the creation.\n\nWhen you register for a BBC account, or update your details or settings we ask for some personal information, like your email address and age.\n\nb. Device information\n\nDevices are lots of things like:\n\n    your computer\n    your mobile\n    your TV\n    your tablet\n    your voice-enabled device\n\nWe automatically collect some technical information from these devices and web browsers even when you're not signed into to a BBC account. This might include:\n\n    IP (internet protocol) address\n    device ID\n    app ID\n    vendor ID\n    advertising ID\n\nc. Information on your activities outside the BBC when you talk about us\n\nLike if you've mentioned us in a Twitter post, we'll collect your Twitter handle.\n\nd. Information on how you use our services\n\nLike the articles you read and the programmes you watch.\n"
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-all"
+citations = [
+  "Some cookies are always on when you visit us, and you can’t turn them off unless you change your browser settings. We call these “strictly necessary cookies”. We use them to make sure our digital services work correctly and are meeting audience needs and interests.\n\nWe also use functional, performance and advertising cookies to make your experience more enjoyable. You can switch these on or off at any time and you can always change your mind. We’ll only use them if you’ve agreed.\n\nBear in mind there are some other cookies out there from other companies. These \"third-party cookies\" might track how you use different websites, including ours. For example, you might get a social media company’s cookie when you see the option to share something. You can turn them off, but not through us."
+]
+
+[rubric.law-enforcement]
+value = "unspecified"
+notes = [ "It isn't specified in the policy." ]
+
+[rubric.list-collected]
+value = "generally"
+citations = [
+  "We'll give you details about why we need your personal information and how we'll use it before you begin, unless it's obvious.\n\na. Information that you give us\n\nWe might ask for your name and contact details, your date of birth or financial details, depending on what you're doing. If you apply to take part in a programme on politics, for example, we might ask you about your political opinions. Information you give us might include information in a creation you share with us, such as people's names that appear in the creation.\n\nWhen you register for a BBC account, or update your details or settings we ask for some personal information, like your email address and age.\n\nb. Device information\n\nDevices are lots of things like:\n\n    your computer\n    your mobile\n    your TV\n    your tablet\n    your voice-enabled device\n\nWe automatically collect some technical information from these devices and web browsers even when you're not signed into to a BBC account. This might include:\n\n    IP (internet protocol) address\n    device ID\n    app ID\n    vendor ID\n    advertising ID\n\nc. Information on your activities outside the BBC when you talk about us\n\nLike if you've mentioned us in a Twitter post, we'll collect your Twitter handle.\n\nd. Information on how you use our services\n\nLike the articles you read and the programmes you watch.\n"
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "We update this policy sometimes. If we make important changes, like how we use your personal information, we'll let you know. It might be a notice, an email or a message in your app.\n\nIf you don't agree to the changes, then you can always stop using our services, delete your account and stop giving us any more personal information. We'd be sorry to see you go.\n"
+]

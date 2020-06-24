@@ -1,0 +1,81 @@
+name = "Ticketmaster"
+description = "Ticketmaster Entertainment, Inc. is an American ticket sales and distribution company."
+slug = "ticketmaster"
+hostnames = [ "ticketmaster.com" ]
+sources = [
+  "https://help.ticketmaster.com/s/article/Ticketmaster-Privacy-Policy?language=en_US"
+]
+contributors = [ "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+notes = [
+  "There's no information on whether or not the service uses your data for marketing purposes."
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "We have security measures in place to protect your information. The standard security measures we use will depend on the type of information collected. However, the Internet is not 100% secure. We cannot promise that your use of our sites will be completely safe. If you think that an unauthorized account has been created using your name, contact us at the address below."
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "We get information about you from third parties. For example, if you use a social media feature within our websites or apps or post to a social media platform, the social media site will give us some information about you."
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [ "Effective Date: January 1, 2020" ]
+
+[rubric.data-deletion]
+value = "yes-contact"
+citations = [
+  "You can modify information you have given us. To correct or delete information or update account settings, log into your account and follow the instructions. We make changes as soon as we can. This information may stay in our backup files. If we cannot make the changes you want, we will let you know and explain why. If you contact us requesting access to your information, we will respond within 45 days."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "There is no requirement for this service to alert in the case of a data breach per this policy."
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = [
+  "We may share information with third parties.\n\nWe will share information within the Live Nation family of companies. This may include Ticketmaster and Live Nation-owned or operated venues, for example.\n\nWe will share information with third parties who perform services on our behalf. For example, we share information with vendors who help us manage our IT infrastructure or who fulfill your purchases. Some vendors may be located outside of the United States.\n\nWe will share information with our business partners. This includes a third party who provides an event such as the artist, promoter or team, or sponsors an event, or who operates a venue where we hold events. Our partners use the information we give them as described in their privacy policies, which may include sending you marketing communications. You should read those polices to learn how they treat your information.\n\nWe will share information with third parties who sell products or services to you. We will disclose your information to a ticket buyer or seller for order fulfillment purposes if you buy or sell tickets via our resale platform, or with a third party who provides you with ticket insurance or merchandise, for example.\n\nWe may share information if we think we have to in order to comply with the law or to protect ourselves. For example, we will share information to respond to a court order or subpoena. We may also share information if a government agency or investigatory body requests it. Or, we might also share information when we are investigating potential fraud.\n\nWe may share information with any successor to all or part of our business. For example, if part of our business is sold we may give our customer list as part of that transaction.\n\nWe may share your information for reasons not described in this policy. We will tell you before we do this."
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "We use information as disclosed and described here.\n\nWe use information to provide you with products and services. We use your information to process your order and provide you with customer support. This includes sending you emails about your account or a ticket purchase. We might also contact you about this policy or our website terms.\n\nWe use information to respond to your requests or questions. For example, we might use your information to confirm your registration for an event or contest. You may give us your friend's information, for example via our referral service to tell a friend about our website or to purchase a gift card. We will only use your friend's information to provide services you requested. Your friend may contact us at privacy@livenation.com to ask us to delete their information.\n\nWe use information to improve our products and services. We might use your information to customize your experience with us. This could include displaying content based upon your preferences.\n\nWe may use your information to make our website, products, and services better. We may combine information we get from you with information about you we get from third parties.\n\nWe use information for security purposes. We use information to protect our company, our customers, or our websites. This includes to detect or prevent unlawful behavior.\n\nWe use information for marketing purposes. For example, we might send you information about special promotions or offers. We might also tell you about new features or products. These might be our own offers or products, or third-party offers or products we think you might find interesting. Or, for example, if you buy tickets from us we'll enroll you in our newsletter. To learn about your choices for these communications, read the choices section below.\n\nWe may also use push notifications on our mobile apps. We may use push notifications and your location information in our apps to send you alerts regarding local events.\n\nWe use information as otherwise permitted by law or as we may notify you.\n\nWe keep your information as long as it is necessary or relevant for our business. We also keep information to resolve disputes, enforce our agreements and otherwise required by law."
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-some"
+citations = [
+  "You have certain choices about how we use your information.\n\nYou can opt out of receiving our marketing emails. To stop receiving our promotional emails, click here or follow the instructions in any marketing email you get from us. You can also change your preferences in your account. It may take about ten days to process your request. Even if you opt out of getting marketing emails, we will still be sure to send you transactional messages. For example, we may still contact you about your orders.\n\nYou can control cookies and tracking tools. To learn how to manage how we - and our vendors - use cookies and other tracking tools, please click here.\n\nYou can control tools on your mobile devices. For example, you can turn off the GPS locator or push notifications on your device."
+]
+notes = [
+  "There are clauses for the California \"Shine the Light\" law and CCPA."
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "We may share information if we think we have to in order to comply with the law or to protect ourselves. For example, we will share information to respond to a court order or subpoena. We may also share information if a government agency or investigatory body requests it. Or, we might also share information when we are investigating potential fraud."
+]
+
+[rubric.list-collected]
+value = "generally"
+citations = [
+  "We collect information from and about you.\n\nContact and billing information. When you create an account, buy a ticket or have a ticket transferred to you by a friend, we will collect your contact and billing information, such as your name, street address, zip code, email, phone number and credit card number.\n\nInformation you post. We collect information you post in a public space on our website or on a third-party social media site.\n\nDemographic information. We might collect information like your age range, race, or gender, or information about events you like or products you buy. We might collect this as part of a survey, for example.\n\nAccessibility Information. We may collect details of your health requirements if you have accessibility requirements when attending events.\n\nOther information. If you use our website or apps, we may collect information about the browser and device you're using, your IP address, your location, the site you came from, the site you visit when you leave us, and how you used or didn't use our site or app. We may collect this using technology such as GPS and Wi-Fi.\n\nWe collect information in different ways.\n\nWe collect information directly from you. For example, if you buy tickets or register for a promotion. We also collect information if you post a comment on our websites or ask us a question.\n\nWe collect information from you passively. We use tracking tools like browser cookies and web beacons. To learn more about these tools and to control them, please click here. We also collect information from our apps.\n\nWe get information about you from third parties. For example, if you use a social media feature within our websites or apps or post to a social media platform, the social media site will give us some information about you."
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "From time to time we may change our privacy practices. We will notify you of any material changes to this policy as may be required by law. We will also post an updated copy on our website. Please check our site periodically for updates."
+]

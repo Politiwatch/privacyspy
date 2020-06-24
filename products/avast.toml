@@ -1,0 +1,80 @@
+name = "Avast"
+description = "Avast is a cybersecurity company that sell antivirus software on a freemium model"
+slug = "avast"
+hostnames = [ "avast.com" ]
+sources = [ "https://www.avast.com/privacy-policy" ]
+contributors = [ "Palovt" ]
+
+[rubric.behavioral-marketing]
+value = "yes-opt-out"
+citations = [
+  "To be able to offer our products and services for free, we serve third-party ads of advertising companies in our products for mobile devices. To enable the ad, we embed a software development kit (“SDK”) provided by an advertising company into the product, which then collects Personal Data in order to personalize ads for you. \n\n[...]\n\nYou can make certain choices about how your data is used by us by adjusting the privacy settings of the relevant product. Please check your product settings to set your privacy preferences there."
+]
+
+[rubric.security]
+value = "yes"
+citations = [
+  "Administrative Safeguards\n\nAccess to the Personal Data of our users is limited to authorized personnel who have a legitimate need to know based on their job descriptions, for example, employees who provide technical support to end users, or who service user accounts. In the case of third-party contractors who process personal information on our behalf, similar requirements are imposed. These third parties are contractually bound by confidentiality clauses, even when they leave. Where an individual employee no longer requires access, that individual's credentials are revoked.\n\nTechnical Safeguards\n\nWe store your personal information in our database using the protections described above. In addition, we utilize up-to-date firewall  protection for an additional layer of security. We use high-quality antivirus and anti-malware  software, and regularly update our virus  definitions. Third parties who we hire to provide services and who have access to our users' data are required to implement privacy and security practices that we deem adequate.\n\nPhysical Safeguards\n\nAccess to user information in our database by Internet requires using an encrypted VPN, except for email which requires user authentication. Otherwise, access is limited to our physical premises. Physical removal of Personal Data from our location is forbidden. Third-party contractors who process Personal Data on our behalf agree to provide reasonable physical safeguards."
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "We may also collect Personal Data from trusted third-party sources such as distributors, resellers, app stores, contact centers, and engage third parties such as marketing, survey, analytics or software suppliers to collect Personal Data to assist us."
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [
+  "We reserve the right to revise or modify this Privacy Policy. In addition, we may update this Privacy Policy to reflect changes to our data practices. If we make any material changes we will notify you by email (sent to the e-mail address specified in your account) or by means of a notice on this website prior to the change becoming effective. We encourage you to periodically review this page for the latest information on our privacy practices."
+]
+
+[rubric.data-deletion]
+value = "yes-contact"
+citations = [
+  "Right to erasure (\"right to be forgotten\") - You have the right to erasure of your Personal Data, but only in specific cases stipulated by law, e.g., if there is no legally recognized title on our part for further processing of your Personal Data (incl. protection of Avast’s legitimate interests and rights)."
+]
+notes = [
+  "They don't seem to have a button to request deletion of personal data."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [ "They don't mention it in their Privacy Policy." ]
+
+[rubric.third-party-access]
+value = "yes-specified-noncritical"
+citations = [
+  "We may use contractors and service providers to process your Personal Data for the purposes described in this Privacy Policy and Products Policy . We contractually require service providers to keep data secure and confidential. \n\nSuch service providers may include in particular contact centers, professional consultants (including for defence or exercise of our rights), and marketing/survey/analytics/software suppliers.\n\nSometimes these service providers, for example, our distributors, resellers, and app store partners, will be independent controllers of your data and their terms and conditions, end user license agreements (“EULA”) and privacy statements will apply to such relationships."
+]
+
+[rubric.data-collection-reasoning]
+value = "somewhat"
+citations = [
+  "We use your Personal Data for the following purposes and on the following grounds:\n\nProvision the download, activation, and performance of the product or service;\n\nKeep our products or services up-to-date, safe and free of errors;\n\nVerify your identity and entitlement to paid products or services, when you \ncontact us for support or access our services;\n\nProcess your purchase transactions;\n\nUpdate you on the status of your orders and licences;\n\nManage your subscriptions and user accounts; and\nProvide you with technical and customer support.\n"
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-some"
+citations = [
+  "You can make certain choices about how your data is used by us by adjusting the privacy settings of the relevant product. Please check your product settings to set your privacy preferences there."
+]
+notes = [ "Users seems to be able to opt-out in their products." ]
+
+[rubric.law-enforcement]
+value = "strict"
+citations = [
+  "In certain instances, it may be necessary for us to disclose your Personal Data to public authorities or as otherwise required by applicable law. No Personal Data will be disclosed to any public authority except in response to:\n\n    A subpoena, warrant or other process issued by a court or other public authority of competent jurisdiction;\n    A legal process having the same consequence as a court-issued request for data, in that if we were to refuse to provide such data, it would be in breach of local law, and it or its officers, executives or employees would be subject to liability for failing to honor such legal process;\n    Where such disclosure is necessary for us to enforce its legal rights pursuant to applicable law; or\n    A request for data with the purpose of identifying and/or preventing credit card fraud."
+]
+
+[rubric.list-collected]
+value = "generally"
+citations = [
+  "The sources from which we collect Personal Data include: \n\nData collected directly from you or your device relating to an identified or identifiable natural person (“Data Subject”), and may include direct identifiers such as name, address, email address, phone number, and online or indirect identifiers such as login account number, login password, marketing preferences, social media account, payment card number, or IP address; "
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "If we make any material changes we will notify you by email (sent to the e-mail address specified in your account) or by means of a notice on this website prior to the change becoming effective. We encourage you to periodically review this page for the latest information on our privacy practices."
+]

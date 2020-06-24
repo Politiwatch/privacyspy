@@ -1,0 +1,86 @@
+name = "V0LT"
+description = "V0LT produces free and open source software, services, and other content"
+slug = "v0lt"
+hostnames = [ "v0lttech.com" ]
+sources = [ "https://v0lttech.com/privacy.php" ]
+contributors = [ "cvieira" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+citations = [
+  "\"When you use V0LT content and services, you are never shown advertisements. Your information is never collected to display targeted marketing of any kind.\""
+]
+
+[rubric.security]
+value = "yes"
+citations = [
+  "\"Your password, on the other hand, is 'hashed', which means it is unreversably scrambled.\""
+]
+
+[rubric.third-party-collection]
+value = "no"
+citations = [
+  "\"V0LT never uses closed-source third party services by default. While I do use third party tools to develop and produce content, I only ever use open source software that I can verify isn't putting any back-doors or tracking software into V0LT content. The one exception to this rule is Itch.io. I use Itch to distribute most of my software. However, Itch is only loaded if you specifically set it in your account preferences. By default, only a link to the page is loaded, which doesn't allow for cross site tracking.\""
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [ "\"Last modified: Friday, May 22nd, 2020\"" ]
+
+[rubric.data-deletion]
+value = "yes-automated"
+notes = [
+  "Information can be manually deleted by the user. The account itself can't, but the only information directly associated with the account that can't be deleted is the username."
+]
+
+[rubric.data-breaches]
+value = "na"
+citations = [
+  "\"In the event that there is a successful attack on the V0LT server, I will do my best to notify everyone as soon as possible using ChatJet.\""
+]
+notes = [
+  "Contact information for users isn't recorded, but breaches are publicly announced on the site."
+]
+
+[rubric.third-party-access]
+value = "no"
+citations = [
+  "\"V0LT never uses closed-source third party services by default. While I do use third party tools to develop and produce content, I only ever use open source software that I can verify isn't putting any back-doors or tracking software into V0LT content. The one exception to this rule is Itch.io. I use Itch to distribute most of my software. However, Itch is only loaded if you specifically set it in your account preferences. By default, only a link to the page is loaded, which doesn't allow for cross site tracking.\""
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "\"V0LT collects very little information about you, but there are still certain things that must be collected in order to run the website, and specific services that you may choose to use. This graphic explains what information is collected and how it is handled.\""
+]
+notes = [
+  "The explanation of how each piece information is collected is fairly long, but can viewed at the policy link under \"Information Collected Summary\""
+]
+
+[rubric.noncritical-purposes]
+value = "na"
+citations = [
+  "\"V0LT collects very little information about you, but there are still certain things that must be collected in order to run the website, and specific services that you may choose to use.\""
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "\"When it's shared: Never, unless in the event of criminal activity\""
+]
+notes = [
+  "This quote is associated with multiple forms of personal information."
+]
+
+[rubric.list-collected]
+value = "exhaustively"
+citations = [
+  "\"V0LT collects very little information about you, but there are still certain things that must be collected in order to run the website, and specific services that you may choose to use. This graphic explains what information is collected and how it is handled.\""
+]
+notes = [
+  "The explanation of how each piece information is collected is fairly long, but can viewed at the policy link under \"Information Collected Summary\""
+]
+
+[rubric.revision-notify]
+value = "na"
+notes = [ "User's contact information is not recorded." ]

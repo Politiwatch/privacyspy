@@ -2,8 +2,8 @@ name = "PrivacySpy"
 description = "PrivacySpy is an initiative that strives to establish transparency in privacy policies."
 slug = "privacyspy"
 hostnames = [ "privacyspy.org" ]
-sources = [ "http://privacyspy.org/terms-and-privacy/" ]
-contributors = [ "milesmcc", "ibarakaiev" ]
+sources = [ "http://beta.privacyspy.org/terms-and-privacy/" ]
+contributors = [ ]
 
 [rubric.behavioral-marketing]
 value = "no"
@@ -24,9 +24,9 @@ citations = [
 ]
 
 [rubric.history]
-value = "yes"
+value = "last-modified"
 notes = [
-  "Revision history is linked to on GitHub."
+  "While one could check the full history on GitHub, only the last modified date is listed on the page."
 ]
 
 [rubric.data-deletion]
@@ -71,7 +71,7 @@ citations = [
 [rubric.list-collected]
 value = "exhaustively"
 citations = [
-  "We collect the following data:\r\n\r\n- Your email address and name (when you sign up for an account)\r\n- Your IP address and browser \"user agent\" (in logs, which are periodically rotated)\r\n- Your actions performed on the website (edits, suggestions, and profile changes)\r\n- Aggregate website usage statistics (page views, general geographic breakdowns, device types)\r\n"
+  "We collect the following data:\n\n- Your email address and name (when you sign up for an account)\n- Your IP address and browser \"user agent\" (in logs, which are periodically rotated)\n- Your actions performed on the website (edits, suggestions, and profile changes)\n- Aggregate website usage statistics (page views, general geographic breakdowns, device types)\n"
 ]
 
 [rubric.revision-notify]

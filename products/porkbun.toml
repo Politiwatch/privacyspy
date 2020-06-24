@@ -1,0 +1,72 @@
+name = "Porkbun"
+description = "Porkbun is an ICANN-accredited domain registrar"
+slug = "porkbun"
+hostnames = [ "porkbun.com" ]
+sources = [ "https://porkbun.com/legal/agreement/privacy_policy" ]
+contributors = [ "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "yes"
+citations = [
+  "Porkbun may advertise or work with trusted third parties to advertise Porkbun products on other websites in a targeted fashion. These targeted ads may be served to you based on tracked interactions on the Porkbun or partner websites that might include cookies or javascript code served on the Porkbun website, often by a trusted third party.\n\nBased on your account activity, we may market to you. We do utilize automated decision-making processes in order to decide how to market to you."
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "Porkbun utilizes industry-standard practices for safeguarding your private data, including encrypting your data. We utilize physical, electronic, and managerial procedures to help safeguard, prevent unauthorized access to, maintain data security of, and correctly use your information, although we do not guarantee its security.\n\nWe ensure our partners follow best-practices for safeguarding your data as well. For instance, click here to see our credit card processor Stripe’s privacy procedures: https://stripe.com/docs/security/stripe"
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "Supplemental data may be received about you from data taken from public sources and other sources such as companies we have paid, and other trusted partners, using data we have already collected about you. We use this data to detect fraud, detect account intrusion, and to better deliver products and services. For example: we determine your location data from ipinfo.io based on your IP address for security purposes."
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [ "The Privacy Policy is effective May 25, 2018." ]
+
+[rubric.data-deletion]
+value = "yes-contact"
+citations = [
+  "Porkbun will only retain the data we need in order to provide our products and services and as needed to fulfill our contracts. If you wish to have data removed that we rely upon to provide our products and services, you may request such data be deleted by emailing your request to privacy@porkbun.com. We will delete everything other than what’s required for contractual or required record-keeping purposes.\n\nIn most cases deleting your personal data will also require the deletion of your account and deletion or transfer out of any domains or products and services to another provider.\n\nWe will respond to any requests to remove personal data within 30 days."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "This policy does not require the service to alert users in case of a data breach"
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = [
+  "We utilize trusted third parties and contractors to provide our products and services and we may share your personal data with them, for instance:\n\n- payment processors such as PayPal or Stripe\n- fraud, abuse, and intrusion prevention services\n- companies that serve advertisements\n- companies that we contract to contact you on our behalf, such as Mailchimp or Google Suite. These communications may occur via email, text message, telephone, fax, chat rooms, social media, one-on-one chats, or the postal service. These may be initiated manually or in an automated fashion.\n- customer relationship management services\n- surveys and contest services\n\nIf we collect information from you in connection with a co-branded offer with one of our trusted partners, we’ll make sure we make it clear which partner’s privacy policy applies. If you believe your personal information has been submitted to us without your permission, please contact privacy@porkbun.com\n\nIf you connect to us from outside the country in which our servers, a partner’s servers, or a member of our staff are currently located, your data will pass across international borders.\n\n[...]\n\nWe will reveal your personal information to law enforcement, governmental authorities and private parties as required by the law. We may additionally disclose your personal data to comply with a legal process or claims process, to protect an individual’s safety, or to comply with requests from 3rd parties with legitimate interests. So long as we’re not legally or procedurally barred from doing so, we’ll try to inform you when we have revealed your personal data in one of the above scenarios.\n\nIf you believe that you or a 3rd party you legally represent has a legitimate interest and right to access personal data currently being redacted by Porkbun AND that this right overrides the interests and fundamental rights of the data subject, please contact privacy@porkbun.com. Requests for access to non-public WHOIS information will be answered within 30 days.\n\nYour activity on our site may be tracked by one or more analytics services such as Google Analytics. These sites may store cookies on your computer and use cookies to identify you. This data may be transmitted across international borders if those servers reside in a different country. The data we collect via these services may include information such as which pages you visited, how long you stayed, etc. In some instances, this data may contain information that could be used by Porkbun to personally identify you.\n\nPorkbun may advertise or work with trusted third parties to advertise Porkbun products on other websites in a targeted fashion. These targeted ads may be served to you based on tracked interactions on the Porkbun or partner websites that might include cookies or javascript code served on the Porkbun website, often by a trusted third party.\n\nBased on your account activity, we may market to you. We do utilize automated decision-making processes in order to decide how to market to you."
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "Here’s how we use the data:\n- normal operation of our products and services including domain registration and creating accounts\n- detection of fraud, abuse and intrusion, or the investigation of complaints about fraud or illegal activity\n- improving our products and services, including analysis of user behaviors in order to improve functionality or for marketing analysis\n- collection of aggregate data and statistics about use of our products and services\n- verifying your identity\n- communicating with you\n\nWe utilize trusted third parties and contractors to provide our products and services and we may share your personal data with them, for instance:\n\n- payment processors such as PayPal or Stripe\n- fraud, abuse, and intrusion prevention services\n- companies that serve advertisements\n- companies that we contract to contact you on our behalf, such as Mailchimp or Google Suite. These communications may occur via email, text message, telephone, fax, chat rooms, social media, one-on-one chats, or the postal service. These may be initiated manually or in an automated fashion.\n- customer relationship management services\n- surveys and contest services\n\nIf we collect information from you in connection with a co-branded offer with one of our trusted partners, we’ll make sure we make it clear which partner’s privacy policy applies. If you believe your personal information has been submitted to us without your permission, please contact privacy@porkbun.com\n\nIf you connect to us from outside the country in which our servers, a partner’s servers, or a member of our staff are currently located, your data will pass across international borders.\n\n[...]\n\nWe will reveal your personal information to law enforcement, governmental authorities and private parties as required by the law. We may additionally disclose your personal data to comply with a legal process or claims process, to protect an individual’s safety, or to comply with requests from 3rd parties with legitimate interests. So long as we’re not legally or procedurally barred from doing so, we’ll try to inform you when we have revealed your personal data in one of the above scenarios.\n\nIf you believe that you or a 3rd party you legally represent has a legitimate interest and right to access personal data currently being redacted by Porkbun AND that this right overrides the interests and fundamental rights of the data subject, please contact privacy@porkbun.com. Requests for access to non-public WHOIS information will be answered within 30 days.\n\nYour activity on our site may be tracked by one or more analytics services such as Google Analytics. These sites may store cookies on your computer and use cookies to identify you. This data may be transmitted across international borders if those servers reside in a different country. The data we collect via these services may include information such as which pages you visited, how long you stayed, etc. In some instances, this data may contain information that could be used by Porkbun to personally identify you.\n\nPorkbun may advertise or work with trusted third parties to advertise Porkbun products on other websites in a targeted fashion. These targeted ads may be served to you based on tracked interactions on the Porkbun or partner websites that might include cookies or javascript code served on the Porkbun website, often by a trusted third party.\n\nBased on your account activity, we may market to you. We do utilize automated decision-making processes in order to decide how to market to you."
+]
+
+[rubric.noncritical-purposes]
+value = "no"
+notes = [ "You cannot opt-out of non-critical usage of your data" ]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "We will reveal your personal information to law enforcement, governmental authorities and private parties as required by the law. We may additionally disclose your personal data to comply with a legal process or claims process, to protect an individual’s safety, or to comply with requests from 3rd parties with legitimate interests. So long as we’re not legally or procedurally barred from doing so, we’ll try to inform you when we have revealed your personal data in one of the above scenarios."
+]
+
+[rubric.list-collected]
+value = "generally"
+citations = [
+  "We typically collect private data collected from you when you voluntarily provide it to us, for instance, when you:\n\n- create an account. For example: email address, phone number, mailing address, fax number, username, and password.\n- purchase products and services. For example: credit card number and paypal account\n- contact us. For example: emailing support@porkbun.com or any other @porkbun.com email address, submitting a support request, or calling us on the telephone\n- sign up for a newsletter (email or postal address)\nenroll in an affiliate, referral, or reseller program (for example: name, email, postal address, social media handles, biographical information)\n- participate in a company-sponsored forum or chat channel\n- initiate a domain transfer\n- upload or otherwise input data into one of our web hosting services.\n\nWe also collect and store personal information in less-obvious ways in order to provide our products and services. These include:\n\n- usernames, account numbers, purchase history, coupon usage history, login history, default contacts, and default payment methods\n- records of your interactions with Porkbun support or Porkbun abuse and notes on your account\n- domain-related information such as domain contacts, WHOIS privacy service usage, expiration dates, transfer history, registry statuses, and DNS records of various types\n- logged data and metadata that includes date and time information about when you accessed Porkbun or any of its products and services\n\nWe also utilize information freely offered by your web browser such as:\n\n- your browser name and browser version\n- your device type, make, and model\n- your operating system\n- browser settings and capabilities\n- the presence of plugins\n- your display size, color depth, and resolution\n- your specified language preference\n\nLike many websites, we use \"cookies.\" Cookies are alphanumeric identifiers that Porkbun and its partners transfer to your computer's hard drive through your web browser to enable our respective systems to recognize your browser. We and our partners use persistent, identifying cookies to remember your information and to link your activities to you as well as temporary cookies. While you can take steps to turn off, block or disable cookies, if you do, Porkbun may not function and appear as we have designed it. Nonetheless, if you want to take these steps, you can do so by following the instructions associated with your browser. Our cookies and the cookies collected and stored by our trusted partners are used for purposes that include:\n\n- to track sessions, shopping cart contents, applied coupons, items purchased, and browsing behavior including links and buttons clicked\n- to detect and prevent fraud and account intrusion\n- to detect unique devices\n- to improve site experience\n- to prevent fraud\n -to collect analytics data and other data about how you use our products and services\n\nThe IP address of your computer is recorded and used for several purposes including:\n\n- to detect and prevent fraud and account intrusion\n- to customize your experience on the site\n- to approximate your location\n\nSupplemental data may be received about you from data taken from public sources and other sources such as companies we have paid, and other trusted partners, using data we have already collected about you. We use this data to detect fraud, detect account intrusion, and to better deliver products and services. For example: we determine your location data from ipinfo.io based on your IP address for security purposes."
+]
+
+[rubric.revision-notify]
+value = "no"
+notes = [ "There is no requirement to inform users of updates" ]

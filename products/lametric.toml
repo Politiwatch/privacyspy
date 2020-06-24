@@ -1,0 +1,30 @@
+name = "LaMetric"
+description = "Internet of Things smart devices"
+slug = "lametric"
+hostnames = [ "lametric.com" ]
+sources = [ "https://lametric.com/legal/privacy-policy" ]
+contributors = [ "VukAnd12" ]
+
+[rubric.data-deletion]
+value = "yes-contact"
+citations = [
+  "Request erasure of your personal data. This enables you to ask us to delete or remove personal data where there is no good reason for us continuing to process it. You also have the right to ask us to delete or remove your personal data where you have successfully exercised your right to object to processing (see below), where we may have processed your information unlawfully or where we are required to erase your personal data to comply with local law. Note, however, that we may not always be able to comply with your request of erasure for specific legal reasons which will be notified to you, if applicable, at the time of your request."
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "We have set out below, in a table format, a description of all the ways we plan to use your personal data, and which of the legal bases we rely on to do so. We have also identified what our legitimate interests are where appropriate."
+]
+
+[rubric.list-collected]
+value = "exhaustively"
+citations = [
+  "We have set out below, in a table format, a description of all the ways we plan to use your personal data, and which of the legal bases we rely on to do so. We have also identified what our legitimate interests are where appropriate."
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "We may revise the provisions of this Privacy Notice as necessary. The latest version of the Privacy Notice will govern the terms of use of your personal data by us, and it will always be published at https://lametric.com/legal/privacy-policy. If we make changes to this Privacy Notice, which in our opinion is important, we will send you an email to the email address specified in your account."
+]

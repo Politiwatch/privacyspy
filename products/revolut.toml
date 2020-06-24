@@ -1,0 +1,73 @@
+name = "Revolut"
+description = "Revolut Ltd is a British financial technology company that offers banking services."
+slug = "revolut"
+hostnames = [ "revolut.com" ]
+sources = [ "https://www.revolut.com/legal/privacy" ]
+contributors = [ "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "yes-opt-out"
+citations = [
+  "you can ask us to stop sending you marketing information by adjusting your marketing choices\n\n[...]\n\nYou can adjust your preferences, or tell us you don't want to hear from us, at any time. Just use the 'Privacy' section within the 'Profile' section of the Revolut app or click on the unsubscribe links on any marketing message we send you.\n"
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "We store your information on our secure servers.\n\nAny payment transactions carried out by us or our payment-processing providers will be encrypted using Secured Sockets Layer technology or a secure virtual private network.\n\nIf you use a password for the Revolut app or our website, you will need to keep this password confidential. Please do not share it with anyone.\n\nUnfortunately, providing information online is not completely secure. Although we will do our best to protect your personal information, we cannot guarantee that all information you provide through the Revolut app or our website will be secure. Once we have received your information, we will use strict procedures and security features to try to prevent unauthorised access.\n\nWhen you use our services, which include social networking, chat room or forum features, do not share any personal information that you don't want to be seen, collected or used by other users, as this information will become publicly available."
+]
+notes = [
+  "A slightly more in-depth security whitepaper is found at https://www.revolut.com/security"
+]
+
+[rubric.third-party-collection]
+value = "critical-only"
+citations = [
+  "We collect information from third parties, such as credit-reference agencies, fraud-prevention agencies and partners who help us to provide our services.\n\nThis includes your credit record, information to help us check your identity, and information relating to your transactions."
+]
+
+[rubric.history]
+value = "no"
+notes = [ "No date or changelog provided" ]
+
+[rubric.data-deletion]
+value = "yes-contact"
+citations = [
+  "You can ask us to delete your personal information if:\n✓ there's no good reason for us to continue using it;\n✓ you gave us consent (permission) to use the information and you have now withdrawn that consent;\n✓ you have objected to us using the information;\n✓ we have used the information unlawfully; or\n✓ the law requires us to delete the information.\nJust to let you know, we may not be able to agree to your request. As a firm authorised by the Financial Conduct Authority, we must keep certain customer information for at least six years (we've explained this in more detail below). If you've closed your Revolut account, we may not be able to delete your entire file because these regulatory responsibilities take priority. We will always let you know if we can't delete your information."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "This policy doesn't require the service to disclose data breaches."
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = [
+  "We share your personal information within the Revolut group of companies in order to provide you with the best service.\n\nFor example, we may share your information with Revolut Travel Ltd, in order to provide you with insurance mediation services (for example when we offer overseas medical insurance as part of a Premium or Metal plan).\n\nSuppliers who provide us with IT, payment and delivery services: To help us provide our services to you\n\nOur banking and financial-services partners and payments networks, including Visa and Mastercard: To help us provide our services to you this includes banking and lending partners, banking intermediaries and international payment-service providers\n\nCard manufacturing, personalisation and delivery companies: To create and deliver your personalised Revolut Card\n\nAdvertisers: To promote our services. (We provide anonymous information only for example, ‘500 men under 30 clicked on their advert’.)\n\nAnalytics providers and search information providers: To help us improve our website or app\n\nCustomer-service providers, survey providers and developers: To help us to provide our services to you\n\nCommunications services providers: To help us send you emails, push notifications and text messages\n\nCredit-reference and fraud-prevention agencies: To help us develop and offer credit products to you, and to check your identity and your eligibility for credit products.\n\nTo help us develop and offer credit products to you, and to check your identity and your eligibility for credit products.\n\nWe will only share your personal information in this way if you have asked for the relevant service. You can withdraw your permission at any time by contacting us through the Revolut app. However, this may affect your ability to continue to use those services.\n\nFrom time to time we may work with other partners to offer you co-branded services or promotional offers, and we will share some of your personal information with those partners. We will always get your consent before sharing your information for these purposes. You can withdraw your consent at any time by contacting us through the Revolut app.\n\nOur partners will have their own privacy notice explaining how they use your personal information. It's important that you read those privacy notices as well.\n\nIf you apply for a credit product, we'll share your personal information with credit-reference agencies to check whether you are likely to make repayments when due.\n\nWe also share your personal information with fraud-prevention agencies to check your identity, protect against fraud, keep to anti-money-laundering laws and confirm that you are eligible to use our products and services.\n\nIf fraud is detected, you could be refused certain services, finance or employment. You can contact us through the Revolut app to ask for more details of how your information will be used by us and these fraud-prevention agencies.\n\nWe may also need to share your personal information with other third-party organisations:\n\nif we have to do so under any law or regulation;\nif we sell our business;\nin connection with criminal or fraud investigations;\nto enforce our rights (and those of customers or others); or\nin connection with legal claims.\n\nWhen we use social media for marketing purposes, your information may be shared with the social-media platforms so that they can check if you also hold an account with them. If you do, we may ask the advertising partner or social-media provider to:\n\nuse your information to send our adverts to you, because we think that you might be interested in a new Revolut product or service;\nnot send you our adverts, because the marketing relates to a service that you already use; or\nsend our adverts to people who have a similar profile to you (for example, if one of our services is particularly useful to people with similar interests to the ones on your social-media profile, we may ask our advertising partner or social-media partner to send our adverts for that service to those people).\nAn example of how we may use social media for marketing purposes is through Facebook’s ‘Custom Audience’ tool, the terms of which are available here.\n\nThe legal basis would be the following.\n\nLegitimate interests\nYou can contact us as at any time, either through the Revolut app or by emailing dpo@revolut.com, if you do not want us to share your personal information for marketing purposes. Remember you can also manage your marketing preferences directly with any social-media provider that you have an account with."
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-some"
+citations = [
+  "We use your personal information to do the following.\n[...]\nProvide you with information about our goods or services, and our partner's promotions or offers, which we think you might be interested in. To help us do this, we may use information about you to help us better understand your interests. You can opt out of this by using the help service through the Revolut app or by emailing our Data Protection Officer at the address given above."
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "We may also need to share your personal information with other third-party organisations:\n\nif we have to do so under any law or regulation;\nif we sell our business;\nin connection with criminal or fraud investigations;\nto enforce our rights (and those of customers or others); or\nin connection with legal claims."
+]
+
+[rubric.list-collected]
+value = "generally"
+citations = [
+  "We collect different types of information from you and others\nThe table below explains what personal information we collect and use.\n\nWe collect information you provide when you:\n✓ fill in any forms;\n✓ correspond with us;\n✓ register to use the Revolut app;\n✓ open an account or use any of our services;\n✓ take part in online discussions, surveys or promotions;\n✓ speak with a member of our customer support team (either on the phone or through the Revolut app);\n✓ enter a competition; or\n✓ contact us for other reasons.\nWe will collect the following information.\n✓ Your name, address, and date of birth.\n✓ Your email address, phone number and details of the device you use (for example, your phone, computer or tablet).\n✓ Your username, password and other registration information.\n✓ Details of your bank account, including the account number, sort code and IBAN.\n✓ Details of your debit cards and credit cards, including the card number, expiry date and CVC (the last three digits of the number on the back of the card).\n✓ Identification documents (for example, your passport or driving licence number), copies of any documents you have provided for identification purposes, a personal description (if you provide one), and any other information you provide to prove you are eligible to use our services.\n✓ Records of our discussions, if you contact us or we contact you.\n✓ Your photo (only if you upload one).\n\nWhenever you use our website or the Revolut app, we collect the following information:\n✓ Technical information, including the internet protocol (IP) address used to connect your computer to the internet, your log-in information, the browser type and version, the time-zone setting, the operating system and platform, the type of device you use, a unique device identifier (for example, your device's IMEI number, the MAC address of the device's wireless network interface, or the mobile phone number used by the device), mobile network information, your mobile operating system, the type of mobile browser you use and so on.\n✓ Information about your visit, including the links you have clicked on, through and from our site (including date and time), services you viewed or searched for, page response times, download errors, length of visits to certain pages, page interaction information (such as scrolling and clicks), and methods used to browse away from the page.\n✓ Information on transactions (for example, payments into and out of your account), including the date, time, amount, currencies, exchange rate, beneficiary details, details of the merchant or ATMs associated with the transaction, IP address of sender and receiver, sender's and receiver's name and registration information, messages sent or received with the payment, details of device used to arrange the payment and the payment method used.\n✓ Information stored on your device, including if you give us access to contact information from your address book, log-in information, photos, videos or other digital content, check-ins (sometimes, we call this content information). The Revolut app will regularly collect this information in order to stay up to date.\n\nIf you have location services in the Revolut app switched on, we track your location using GPS technology and your IP address.\n\nWe collect information from third parties, such as credit-reference agencies, fraud-prevention agencies and partners who help us to provide our services.\nThis includes your credit record, information to help us check your identity, and information relating to your transactions.\n\nIf you allow us to, we will collect information such as friends lists from Facebook or similar information from other online accounts. If you've asked us to, we'll use your Facebook profile to confirm your identity as part of our know-your-client (KYC) process (the process of how we check who you are).\n\n"
+]
+
+[rubric.revision-notify]
+value = "no"
+notes = [
+  "There is no requirement to disclose policy changes per this policy."
+]

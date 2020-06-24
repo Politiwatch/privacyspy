@@ -1,0 +1,39 @@
+name = "Jetdrop"
+description = "Jetdrop is a file sharing service that allows you to share large files (no limit) for free. Their speeds are fast for uploading and downloading."
+slug = "jetdrop"
+hostnames = [ "jetdrop.net" ]
+sources = [ "https://www.jetdrop.net/legal/privacy-policy/" ]
+contributors = [ "101AustinTech" ]
+
+[rubric.behavioral-marketing]
+value = "yes"
+
+[rubric.third-party-collection]
+value = "critical-only"
+
+[rubric.history]
+value = "last-modified"
+
+[rubric.data-deletion]
+value = "yes-automated"
+citations = [
+  "We will delete your personal information when it is no longer required for these purposes. If there is any information that we are unable, for technical reasons, to delete entirely from our systems, we will put in place appropriate measures to prevent any further processing or use of the data."
+]
+notes = [
+  "If they cannot (for any reason) not manage to fully delete your data, they will \"we will put in place appropriate measures to prevent any further processing or use of the data\"."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "There is no mention of what would happen in a data breach as this is still a relatively new site and does not specify."
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified-critical"
+
+[rubric.data-collection-reasoning]
+value = "yes"
+notes = [
+  "They specify that they do collect anonymous personal data for the use of advertising and improving their service, showing that they are being transparent with the user."
+]

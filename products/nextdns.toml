@@ -1,0 +1,64 @@
+name = "NextDNS"
+description = "NextDNS Inc. is a DNS resolver based in California, USA that allows users to filter traffic using blacklists."
+slug = "nextdns"
+hostnames = [ "nextdns.io" ]
+sources = [ "https://nextdns.io/privacy" ]
+contributors = [ "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+citations = [
+  "1. We do not (and will never) sell, license, sub-license or share any of the data submitted directly or indirectly by our users with any person or entity."
+]
+
+[rubric.security]
+value = "na"
+citations = [
+  "3. If not specifically requested by the user, no data is logged."
+]
+
+[rubric.third-party-collection]
+value = "no"
+notes = [ "No data is collected from third-parties." ]
+
+[rubric.history]
+value = "no"
+notes = [ "No date or changelog is provided." ]
+
+[rubric.data-deletion]
+value = "na"
+notes = [ "You do not make an account for NextDNS." ]
+
+[rubric.data-breaches]
+value = "na"
+notes = [
+  "No contact information is collected enabling NextDNS to reach out to a user to disclose this info."
+]
+
+[rubric.third-party-access]
+value = "no"
+notes = [ "No data is collected from third-parties." ]
+
+[rubric.data-collection-reasoning]
+value = "na"
+citations = [
+  "2. When the service comes into contact with user data that shall not be logged, it is discarded as quickly as possible."
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-all"
+citations = [
+  "3. If not specifically requested by the user, no data is logged. Some features require some sort of data retention. In that case, our users are given the option, control, and full access on what is logged and for how long.\n( For example, if a user chooses to use the analytics feature, he or she can control granularity of the logged information and its retention period; The analytics will gracefully adapt. )"
+]
+
+[rubric.law-enforcement]
+value = "na"
+notes = [ "No data is available to share." ]
+
+[rubric.list-collected]
+value = "na"
+notes = [ "No personal information is collected." ]
+
+[rubric.revision-notify]
+value = "na"
+notes = [ "No contact information is collected to enable such." ]

@@ -1,0 +1,74 @@
+name = "MarkMonitor"
+description = "MarkMonitor Inc. is an American software company founded in 1999. "
+slug = "markmonitor"
+hostnames = [ "markmonitor.com" ]
+sources = [ "https://www.markmonitor.com/legal/privacy-policy" ]
+contributors = [ "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+citations = [
+  "We share personal data with our employees, third party service providers, partners and in accordance with law. Our third-party service providers are contractually required to protect personal data in a manner that is consistent with this Privacy Statement.\nWe share your information for the purposes set out in this Statement, with the following categories of recipients:\n• the account administrator, in the case of corporate or shared subscriptions.\n• service providers who process personal data on our behalf, such as cloud computing providers and web analytics services.\n• registry operators and data escrow agents where you purchase, transfer, or cancel a domain name\n• professional advisors such as legal counsel and information security professionals where reasonably required to protect our rights, users, systems and our Web Site\n• government agencies, law enforcement, courts and other public authorities where we have a duty to or are permitted to disclose your personal data by law\n• prospective buyers, sellers, advisers or partners in relation to any sale, merger, acquisition, restructure, joint venture, assignment, transfer or similar corporate event, in which case we may disclose your personal data to and your data may be a transferred asset in a business sale\nWe may also provide access to your personal data when legally required to do so, to cooperate with police investigations or other legal or enforcement proceedings, to protect against misuse or unauthorized use of our Web Site, to limit our legal liability and protect our rights, or to protect the rights and safety of visitors to this Web Site or the public. In those instances, the information is provided only for that limited purpose."
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "We take reasonable steps to maintain the security of the personal data that we collect, including limiting the number of people who have physical access to our database servers, as well as installing electronic security systems that guard against unauthorized access. However, no data transmission over the Internet can be guaranteed to be completely secure. Accordingly, we cannot ensure or warrant the security of any information that you transmit to us, so you do so at your own risk."
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "We also collect personal data about you from third parties such as:\n\nthe organisation(s) or person(s) who have arranged your access to our products and services (e.g. your employer may provide us with contact information so that we can set up your login)\nWHOIS registrars in order to enable us to carry out brand protection activities. For example, if a website registered in your name contains potentially infringing material, we look up your contact details so that we can ask you to remove that material [Hyperlink to “How Do We Treat WHOIS Domain Name Registration Information?”]\nclients who instruct us in connection with our brand enforcement services\nfrom internet searches. Where intellectual property infringement may be taking place, we collect personal data relating to web locations (such as IP addresses, social media content, and domain names)\nother public or paid-for sources in connection with brand protection investigations."
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [ "Effective May 25, 2018" ]
+
+[rubric.data-deletion]
+value = "no"
+notes = [
+  "There is no requirement for the service to let you delete your data."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "There is no requirement for the service to alert you in the event of a data breach"
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified-critical"
+citations = [
+  "We share personal data with our employees, third party service providers, partners and in accordance with law. Our third-party service providers are contractually required to protect personal data in a manner that is consistent with this Privacy Statement.\nWe share your information for the purposes set out in this Statement, with the following categories of recipients:\n• the account administrator, in the case of corporate or shared subscriptions.\n• service providers who process personal data on our behalf, such as cloud computing providers and web analytics services.\n• registry operators and data escrow agents where you purchase, transfer, or cancel a domain name\n• professional advisors such as legal counsel and information security professionals where reasonably required to protect our rights, users, systems and our Web Site\n• government agencies, law enforcement, courts and other public authorities where we have a duty to or are permitted to disclose your personal data by law\n• prospective buyers, sellers, advisers or partners in relation to any sale, merger, acquisition, restructure, joint venture, assignment, transfer or similar corporate event, in which case we may disclose your personal data to and your data may be a transferred asset in a business sale\nWe may also provide access to your personal data when legally required to do so, to cooperate with police investigations or other legal or enforcement proceedings, to protect against misuse or unauthorized use of our Web Site, to limit our legal liability and protect our rights, or to protect the rights and safety of visitors to this Web Site or the public. In those instances, the information is provided only for that limited purpose."
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "Our legitimate interests in processing personal data are mainly customer and product administration, provision and improvement of our services, domain name registration, protection of legal rights, and marketing. More detailed information about these legitimate interests is set out below for all information and, specifically for WHOIS data, in the WHOIS section above.\n\nCustomer and Product Administration: to create your account, provide you with the information, content, products or services that you have requested, provide user and technical support, enforce our terms of business, invoice, administer our relationship with you generally and communicate with you about your account and subscription\nDomain registration and transfers: to register or transfer domain names, on behalf of our clients, including as described here\nBrand Protection and Fraud Prevention: to prevent, detect and investigate fraud and intellectual property infringements on behalf of our clients\nProduct Development: to deliver personalized functionality in our services, such as your saved searches. We also analyze product usage information to understand which content and tools are most useful for users.\nWeb Site Analysis and Personalisation: We use information collected on our Web Site in aggregate to better understand your use of the Web Site and to enhance your enjoyment and experience. For example, we may use the information to improve the design and content of our Web Site and to analyse the programs and services that we offer.\nMarketing: to send you marketing communications about events, white papers, and information about our services which may interest you. Your choices in relation to marketing are explained here.\nSecurity and Crime Prevention: to prevent fraud or criminal activity, misuses of our Web Site as well as the security of our IT systems, architecture and networks\nLegal Rights: to exercise our rights, and to defend ourselves from claims and to comply with laws and regulations that apply to our group or third parties with whom we work\nWe balance our and third parties’ legitimate interests against your interests, fundamental rights and freedoms when processing personal data on the basis of legitimate interests. For more information about the balancing exercises we have carried out, please contact us data.privacy@clarivate.com."
+]
+
+[rubric.noncritical-purposes]
+value = "na"
+notes = [ "Data isn't used for non-critical purposes" ]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "We share your information for the purposes set out in this Statement, with the following categories of recipients:\n• government agencies, law enforcement, courts and other public authorities where we have a duty to or are permitted to disclose your personal data by law"
+]
+
+[rubric.list-collected]
+value = "generally"
+citations = [
+  "How you interact with us, and the different products and services you access or use or are identified in connection with, determines what personal data we collect about you. We generally process non-sensitive personal data. However, in the course of our brand protection activities, we may identify conduct that is a criminal offense in some jurisdictions. You can learn more about this in this section.\n\nThe personal data we collect consists of the following:\n-Name and contact details, e.g., name, e-mail address, postal address, telephone number\n- Login Credentials, e.g., security and credentialing information required to access our services\n- User inputted content, e.g. content you provide to us when you use our products and services (e.g. if you use notes areas of our products to record your findings or contact our customer service team)\n- Device information, e.g., information about your computer or other device, such as IP address, location or provider\n- Usage information, e.g., information about your use of our Web Site, such as date and time of visits, the pages viewed, time spent at our Web Site\n- Billing information, e.g. credit card number and payment details\n- Purchase history, e.g. purchases you have made, when your subscriptions expire or renew\n\nIn the course of identifying IP infringements or fraudulent activity and in pursuing related enforcement action, we also record data relating to alleged or actual criminal offenses."
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "This Statement may be updated from time to time. Any material future changes or additions to the processing of personal data as described in this Statement affecting you will be communicated to you through an appropriate channel. Generally, we will also place a prominent notice on our Web Site or contact to inform you of the material changes in the updated Statement."
+]

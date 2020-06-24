@@ -24,13 +24,13 @@ citations = [
 [rubric.history]
 value = "yes"
 citations = [
-  "Changes to the Privacy Policy\r\n\r\nIf we decide to change our privacy policy we will post the changes here. If the changes are significant, we may also choose to email all our registered users with the new details. If required by law, we will get your permission or give you the opportunity to opt out of any new uses of your data."
+  "Changes to the Privacy Policy\n\nIf we decide to change our privacy policy we will post the changes here. If the changes are significant, we may also choose to email all our registered users with the new details. If required by law, we will get your permission or give you the opportunity to opt out of any new uses of your data."
 ]
 
 [rubric.data-deletion]
 value = "yes-contact"
 citations = [
-  "You also have the right to ask us to delete your personal data or restrict how it is used. [...] If you want to make any of these requests, please contact dataprotection@theguardian.com.\r\n\r\n[...]\r\n\r\nThere may be exceptions to the right to erasure for specific legal reasons which, if applicable, we will set out for you in response to your request."
+  "You also have the right to ask us to delete your personal data or restrict how it is used. [...] If you want to make any of these requests, please contact dataprotection@theguardian.com.\n\n[...]\n\nThere may be exceptions to the right to erasure for specific legal reasons which, if applicable, we will set out for you in response to your request."
 ]
 
 [rubric.data-breaches]

@@ -1,0 +1,78 @@
+name = "Best Buy"
+description = "Best Buy Co., Inc. is an American multinational consumer electronics retailer headquartered in Richfield, Minnesota."
+slug = "best-buy"
+hostnames = [ "bestbuy.com" ]
+sources = [
+  "https://www.bestbuy.com/site/help-topics/privacy-policy/pcmcat204400050062.c?id=pcmcat204400050062"
+]
+contributors = [ "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "yes-opt-out"
+citations = [
+  "Interest-based advertising.\nYou can opt out of interest-based advertising from third-party providers who follow the Digital Advertising Alliance's Self-Regulatory Principles for Online Behavioral Advertising at www.aboutads.info/choices."
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "We use a variety of security measures designed, under a risk-based approach, to ensure the confidentiality of your information. However, as set forth in the applicable terms of use for each digital property, we cannot and do not guarantee the security of information transmitted to us.\n\nYou also can do your part to help protect the information you provide to us. Create a strong password. Use that password only on our digital properties. And do not share your password with anyone — especially anyone claiming to work with us. We would never contact you and ask for your password — ever."
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "We may receive information about you from other sources, including third parties that help us update, expand, and analyze our records and identify new customers, and provide products and services that may be of interest to you."
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [ "Last Updated: December 31, 2019" ]
+
+[rubric.data-deletion]
+value = "no"
+notes = [
+  "This policy doesn't require the service to allow a user to delete their account"
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "This policy doesn't require the service to disclose data breaches"
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = [
+  "Best Buy does not exchange your personal information for monetary consideration. We share your information only in the ways we describe below. We may combine or share information among current or future Best Buy companies, including affiliates and subsidiaries. \n\nWe may share your information with third parties to perform services on our behalf such as:\n\nFulfilling orders and delivering packages\nScheduling and performing product installations\nProviding customer care and technical support, including servicing products\nMaintaining our My Best Buy program\nSending Best Buy marketing communications and providing advertising services\nPersonalizing the customer experience on our digital properties\nFulfilling subscription services\nConducting research and analysis\nProcessing credit card payments\nDetecting fraud and other illegal activity\n \nWe also may share personal information in connection with co-branded product or service offerings (including sharing personal information with business partners to validate offers). Additionally, we may share personal information in connection with financial products or services related to our business, such as private label credit cards or the lease-to-own program.  For example, when you apply for a Best Buy Credit Card, and while you have a Best Buy Credit Card, we share your personal information with our banking partners that issue the card.\n\nSometimes we may be required to share personal information for legal reasons, for example, if we are required to do so by a regulation, court order, subpoena or other legal process. We may also share information when we believe it is necessary to comply with the law or to respond to a government request, or when we believe disclosure is necessary or appropriate to protect Best Buy, our customers, or others.\n\nWe may share personal information in the event of a corporate sale, merger, acquisition, joint venture, reorganization, divestiture, dissolution, liquidation, or similar event. "
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "How we use the information we collect:\nIdentifying you on our digital properties in order to customize your experience\nFulfilling orders and requests for products, services, or information\nProcessing refunds, returns, and exchanges\nTracking and confirming online orders\nDelivering and installing products\nManaging our My Best Buy program\nMarketing and advertising products and services\nConducting research and analysis\nManaging our My Best Buy Credit Card program, including taking applications and actions to enhance card usage and service\nPreventing and identifying fraud and other illegal activity\nEngaging in internal uses such as data analytics with the purpose of enhancing existing and creating new products and services\nComplying with and enforcing applicable legal requirements, contractual obligations (including our contractual obligations with you, such as through our My Best Buy program, if applicable, or digital properties’ terms of use), relevant industry standards, and our policies\nInterest-based advertising.\nYou can opt out of interest-based advertising from third-party providers who follow the Digital Advertising Alliance's Self-Regulatory Principles for Online Behavioral Advertising at www.aboutads.info/choices.\n\nLearn more about interest-based advertising ›"
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-some"
+citations = [
+  "You can opt out of interest-based advertising from third-party providers who follow the Digital Advertising Alliance's Self-Regulatory Principles for Online Behavioral Advertising at www.aboutads.info/choices."
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "Sometimes we may be required to share personal information for legal reasons, for example, if we are required to do so by a regulation, court order, subpoena or other legal process. We may also share information when we believe it is necessary to comply with the law or to respond to a government request, or when we believe disclosure is necessary or appropriate to protect Best Buy, our customers, or others."
+]
+
+[rubric.list-collected]
+value = "generally"
+citations = [
+  "Information you give us.    \n\nWe collect and store information you provide through our digital properties and in our stores.\n\nThe information we collect from you includes things such as:    \n\nName\nPostal address\nEmail address\nPhone number\nPayment card number and other payment information\nYour My Best Buy® member ID\n \nIn certain situations, we may also collect things like:\n\nDriver's license number (for example, if you return a product or apply for credit)\nSocial Security Number (for example, if you apply for credit)\nLocation information (such as when you ask us to tell you about nearby stores or use our digital properties)\nDemographic and lifestyle information (if you sign up for a registry or birthday list)\nMedical and health insurance information (for example, if you use offerings that collect medical information, such as Assured Living)\nFingerprints (as required by law for fraud detection in connection with Best Buy’s product trade-in program)\nSurvey responses \nInformation you give us about others.\nYou may give us information about other people, such as the name and address of a gift recipient, or the name and contact information of someone who will pick up items for you at a store. We will only use this information for the specific reason you provide it.\n\nInformation from other sources.\nWe may receive information about you from other sources, including third parties that help us update, expand, and analyze our records and identify new customers, and provide products and services that may be of interest to you.\n\nInformation collected automatically online.\nWe collect information about your interactions with us including, for example:\n\nThe type of device or browser you’re using\nYour IP address\nYour browsing behavior while on our website\nThe URLs of the websites you visited before visiting our site (these are called “referring URLs”)\nIMEI/UDID (a numeric identifier for your mobile device)\nMAC address (another kind of numeric identifier for your mobile device)\nIDFA (Apple’s ID for advertising), a randomly generated number)s.\nBest Buy and our partners use technologies such as cookies or similar technologies to analyze trends, administer the website, track users’ movements around the website, and to gather demographic information about our user base as a whole. Users can control the use of cookies at the individual browser level.\n\nManage Flash cookies ›\n\nLearn more about managing cookies, Flash cookies, and more ›\n\nWe may permit third-party service providers to collect and process some information from our digital properties. We may share personal information with those providers and may have similar arrangements with interest-based advertisers. We provide more information about interest-based ads below. Our digital properties are not designed to respond to “do not track” requests from browsers.\n\nLocation information. \nSome of our digital properties may collect your location to, for example, help you search for one of our stores, use special mobile features within some of our stores, or provide you with helpful messaging in our mobile app. We also may use this information to determine whether to provide you with content, information, and notices that may be required by law based on your location.\n\nMobile devices often provide users with the ability to adjust settings related to location. If you do not want us to collect specific location information, you may modify the location services on your mobile device’s settings. Best Buy has no control over your device’s settings. And adjusting these settings does not completely eliminate the ability of others to develop location information about your device.\n\nStore cameras.\nOur stores may use cameras for asset protection and other operational purposes, such as measuring traffic patterns and protecting and improving our business.\n\nReviews and other content you provide.\nOur websites offer publicly accessible blogs or community forums. Be aware that anyone who accesses these areas may read, collect, and use the information you provide."
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "We may need to update our Privacy Policy as we and our customers grow and evolve. If we make material changes, we will notify you by email (sent to the email address specified in your account) or by means of posting a notice on this website prior to the change becoming effective, as well as inform you of any choices you may have with respect to these changes."
+]

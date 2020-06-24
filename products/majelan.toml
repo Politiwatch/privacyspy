@@ -1,0 +1,73 @@
+name = "Majelan"
+description = "Majelan is a podcast service and podcast creator."
+slug = "majelan"
+hostnames = [ "majelan.com" ]
+sources = [ "https://www.majelan.com/en/privacy-policy" ]
+contributors = [ "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "yes-opt-out"
+citations = [
+  "Some partners, such as telecom operators, listening device manufacturers or marketing partners, may need to process Data in order to provide the service and implement common communication plans. \n[...]\nAt any time, and in accordance with the law in force in the EuropeanUnion, you have the right to access, rectify, limit, delete, oppose,carry and delete your data.\n\nYou can also file a complaint with the competent supervisoryauthority.\n\nTo exercise your rights, please send your request (indicating youre-mail address, surname, first name, address and copy of your identitydocument) by contacting MAJELAN at the following address: 7 rued'Argenteuil, 75001 Paris, registered at RCS 840 769 269 Paris,\nTelephone: +33 1 42 36 36 49 80\nEmail: privacy@majelan.com"
+]
+notes = [ "There are several grammar errors" ]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "We have adequate and appropriate measures in place to protect yourpersonal data from destruction, loss, alteration, disclosure orunauthorized access, in accordance with applicable law.\n\nHowever, we cannot guarantee that the data you provide to us and thatwe collect will not be disclosed or destroyed by a breach of ourtechnical protection measures.\n\nYou are also responsible for protecting and accessing your informationand we recommend that you have a strong password that you do not useto secure multiple accesses or accounts"
+]
+
+[rubric.third-party-collection]
+value = "no"
+notes = [ "Data is not collected from third-parties" ]
+
+[rubric.history]
+value = "no"
+notes = [ "No date or changelog provided" ]
+
+[rubric.data-deletion]
+value = "yes-contact"
+citations = [
+  "At any time, and in accordance with the law in force in the EuropeanUnion, you have the right to access, rectify, limit, delete, oppose,carry and delete your data.\n\nYou can also file a complaint with the competent supervisoryauthority.\n\nTo exercise your rights, please send your request (indicating youre-mail address, surname, first name, address and copy of your identitydocument) by contacting MAJELAN [...]"
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "There is no requirement to disclose data breaches from this policy"
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = [
+  "The Data processed during the use of MAJELAN by the User is intendedfor MAJELAN, for persons authorized and authorized by MAJELAN whosefunctions require them to be known for the purposes of the processingand:\n\nMAJELAN's service providers in order to ensure the perfect provision of the service. The technical subcontractors chosen by MAJELAN may, on behalf of and on instructions from MAJELAN, intervene to host and store User Data on their servers, and to ensure the security of MAJELAN's technical infrastructure. MAJELAN's partners. Some partners, such as telecom operators, listening device manufacturers or marketing partners, may need to process Data in order to provide the service and implement common communication plans. Similarly, MAJELAN communicates Data to social networks to promote the Services. Social networks in the event that the User has expressly consented to the association of his User account with his accounts using these social networks at the time of registration, and may be modified at any time. Third-party applications accessible from the Application, in the event that the User has given his express consent when using each application. Administrative or judicial authorities. MAJELAN may communicate information relating to its Users, including Data, to administrative or judicial authorities, in particular in the context of judicial requisitions."
+]
+
+[rubric.data-collection-reasoning]
+value = "mostly"
+citations = [
+  "We may process your personal data collected when creating an accountand/or using our services for the following purposes:\n\nManage the identity of the User and authenticate it (legal basis: execution of a contract, compliance with a legal obligation) Manage service subscriptions (legal basis: execution of a contract) Manage invoicing and payment operations (legal basis: execution of a contract, compliance with a legal obligation) Handling complaints and cancellations (legal basis: execution of a contract, compliance with a legal obligation) Provide customer support (legal basis: execution of a contract) Manage the characteristics and rights of the contract according to the commercial offer (legal basis: execution of a contract, compliance with a legal obligation) Measure the audience for the use of the Services (legal basis: legitimate interests) Improve Services to optimize or offer new functionalities (legal basis: legitimate interests) Inform the User of MAJELAN's offers and news (legal basis: consent) Carry out satisfaction surveys (legal basis: consent) Enable the User to exercise his rights described in Article 9 below (legal basis: legitimate interests, exercise of a legal obligation) Combating fraud and non-payment (legal basis: exercise of a legal obligation)"
+]
+
+[rubric.noncritical-purposes]
+value = "no"
+notes = [ "There is no way to opt-out of some data" ]
+
+[rubric.law-enforcement]
+value = "unspecified"
+notes = [
+  "There is no specification of data sharing with law enforcement in this policy"
+]
+
+[rubric.list-collected]
+value = "generally"
+citations = [
+  "When creating an account for you, the information you may provideto us and that we may process includes: Your contact details such as your first name, last name, e-mail address, date of birth, telephone number, postal address, title, marital status Your login details such as your username and password Your login details via third-party services (Facebook, Google+), You are informed in the Data Collection Forms whether the collectionof such Data is mandatory or optional. In the event of failure toprovide a mandatory data field, MAJELAN will not be able to take theregistration into account.\n\nWhen you use our services, we may process the following data: Device and connection information such as your IP address, operating system, connection dates and times Navigational data Data relating to the consultation of content Geolocation data We collect this information using cookies or similar technologies. Formore information, please refer to Article 10 hereof regarding ourcookie policy.\n\nAs part of the follow-up of our comme>rcial relationship, we arerequired to process in particular information relating to the type(s)of subscription(s) subscribed to, information relating to your paymentmethod, and details of the transaction carried out."
+]
+
+[rubric.revision-notify]
+value = "no"
+notes = [
+  "This service's policy doesn't require users to be notified of updates"
+]

@@ -1,0 +1,76 @@
+name = "Breaker"
+description = "Breaker is a free podcast service."
+slug = "breaker"
+hostnames = [ "breaker.audio" ]
+sources = [ "https://www.iubenda.com/privacy-policy/8066197" ]
+contributors = [ "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "yes-opt-out"
+citations = [
+  "Among the types of Personal Data that this Application collects, by itself or through third parties, there are: Cookies; Usage Data; unique device identifiers for advertising (Google Advertiser ID or IDFA, for example);\n[...]\nMixPanel is an analytics service provided by Mixpanel Inc.\nPlace of processing: United States – Privacy Policy – Opt Out. Privacy Shield participant.\n\nGoogle Analytics is a web analysis service provided by Google Inc. (“Google”). Google utilizes the Data collected to track and examine the use of this Application, to prepare reports on its activities and share them with other Google services.\nGoogle may use the Data collected to contextualize and personalize the ads of its own advertising network.\nPlace of processing: United States – Privacy Policy – Opt Out; Ireland – Privacy Policy. Privacy Shield participant.\n\nBranch Attribution is an analytics service provided by Branch Metrics, Inc.\nPlace of processing: United States – Privacy Policy – Opt Out ."
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "The Owner takes appropriate security measures to prevent unauthorized access, disclosure, modification, or unauthorized destruction of the Data."
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "Users are responsible for any third-party Personal Data obtained, published or shared through this Application and confirm that they have the third party's consent to provide the Data to the Owner."
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [ "Latest update: February 14, 2019" ]
+
+[rubric.data-deletion]
+value = "yes-contact"
+citations = [
+  "Personal Data shall be processed and stored for as long as required by the purpose they have been collected for.\n\nOnce the retention period expires, Personal Data shall be deleted. Therefore, the right to access, the right to erasure, the right to rectification and the right to data portability cannot be enforced after expiration of the retention period."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "The service's policy doesn't require users to be disclosed to breaches"
+]
+
+[rubric.third-party-access]
+value = "yes-specified-noncritical"
+citations = [
+  "Among the types of Personal Data that this Application collects, by itself or through third parties, there are: Cookies; Usage Data; unique device identifiers for advertising (Google Advertiser ID or IDFA, for example); geographic position; email address; various types of Data; first name; last name; gender; date of birth; phone number; address; country; profession.\n\n[...]\n\nThe services contained in this section enable the Owner to monitor and analyze web traffic and can be used to keep track of User behavior.\n\nMixPanel (MixPanel)\nMixPanel is an analytics service provided by Mixpanel Inc.\nPersonal Data collected: Cookies; Usage Data.\n\nPlace of processing: United States – Privacy Policy – Opt Out. Privacy Shield participant.\n\nGoogle Analytics\nGoogle Analytics is a web analysis service provided by Google Inc. (“Google”). Google utilizes the Data collected to track and examine the use of this Application, to prepare reports on its activities and share them with other Google services.\nGoogle may use the Data collected to contextualize and personalize the ads of its own advertising network.\nPersonal Data collected: Cookies; Usage Data.\n\nPlace of processing: United States – Privacy Policy – Opt Out; Ireland – Privacy Policy. Privacy Shield participant.\n\nBranch Attribution (Branch Metrics, Inc.)\nBranch Attribution is an analytics service provided by Branch Metrics, Inc.\nPersonal Data collected: Cookies; Usage Data; various types of Data as specified in the privacy policy of the service.\n\nPlace of processing: United States – Privacy Policy – Opt Out .\n\nPayment processing services enable this Application to process payments by credit card, bank transfer or other means. To ensure greater security, this Application shares only the information necessary to execute the transaction with the financial intermediaries handling the transaction.\nSome of these services may also enable the sending of timed messages to the User, such as emails containing invoices or notifications concerning the payment.\n\nStripe (Stripe Inc)\nStripe is a payment service provided by Stripe Inc.\nPersonal Data collected: various types of Data as specified in the privacy policy of the service.\n\nPlace of processing: United States – Privacy Policy. Privacy Shield participant.\n\nThis type of service allows this Application to monitor the use and behavior of its components so its performance, operation, maintenance and troubleshooting can be improved.\nWhich Personal Data are processed depends on the characteristics and mode of implementation of these services, whose function is to filter the activities of this Application.\n\nCrashlytics (Google Inc.)\nCrashlytics is a monitoring service provided by Google Inc.\nPersonal Data collected: geographic position; unique device identifiers for advertising (Google Advertiser ID or IDFA, for example); various types of Data as specified in the privacy policy of the service.\n\nPlace of processing: United States – Privacy Policy.\n\nThis type of service makes it possible to manage a database of email contacts, phone contacts or any other contact information to communicate with the User.\nThese services may also collect data concerning the date and time when the message was viewed by the User, as well as when the User interacted with it, such as by clicking on links included in the message.\n\nMailgun (Mailgun, Inc.)\nMailgun is an email address management and message sending service provided by Mailgun, Inc.\nPersonal Data collected: address; Cookies; country; date of birth; email address; first name; gender; last name; phone number; profession; Usage Data; various types of Data.\n\nPlace of processing: United States – Privacy Policy.\n\nBy registering or authenticating, Users allow this Application to identify them and give them access to dedicated services.\nDepending on what is described below, third parties may provide registration and authentication services. In this case, this Application will be able to access some Data, stored by these third party services, for registration or identification purposes.\n\nTwitter OAuth (Twitter, Inc.)\nTwitter Oauth is a registration and authentication service provided by Twitter, Inc. and is connected to the Twitter social network.\nPersonal Data collected: various types of Data as specified in the privacy policy of the service.\n\nPlace of processing: US – Privacy Policy.\n\nFacebook Authentication (Facebook, Inc.)\nFacebook Authentication is a registration and authentication service provided by Facebook, Inc. and is connected to the Facebook social network.\nPersonal Data collected: various types of Data as specified in the privacy policy of the service.\n\nPlace of processing: US – Privacy Policy.\n\nStripe OAuth (Stripe Inc)\nStripe OAuth is a registration and authentication service provided by Stripe, Inc. and is connected to the Stripe network.\nPersonal Data collected: various types of Data as specified in the privacy policy of the service.\n\nPlace of processing: United States – Privacy Policy. Privacy Shield participant."
+]
+
+[rubric.data-collection-reasoning]
+value = "somewhat"
+citations = [
+  "The Data concerning the User is collected to allow the Owner to provide its Services, as well as for the following purposes: Access to third party accounts, Registration and authentication, Analytics, Infrastructure monitoring, Managing contacts and sending messages and Handling payments.\n\nUsers can find further detailed information about such purposes of processing and about the specific Personal Data used for each purpose in the respective sections of this document."
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-all"
+citations = [
+  "MixPanel is an analytics service provided by Mixpanel Inc.\nPersonal Data collected: Cookies; Usage Data.\n\nPlace of processing: United States – Privacy Policy – Opt Out. Privacy Shield participant.\n\nGoogle Analytics is a web analysis service provided by Google Inc. (“Google”). Google utilizes the Data collected to track and examine the use of this Application, to prepare reports on its activities and share them with other Google services.\nGoogle may use the Data collected to contextualize and personalize the ads of its own advertising network.\nPersonal Data collected: Cookies; Usage Data.\n\nPlace of processing: United States – Privacy Policy – Opt Out; Ireland – Privacy Policy. Privacy Shield participant.\n\nBranch Attribution is an analytics service provided by Branch Metrics, Inc.\nPersonal Data collected: Cookies; Usage Data; various types of Data as specified in the privacy policy of the service.\n\nPlace of processing: United States – Privacy Policy – Opt Out .\n\nCrashlytics is a monitoring service provided by Google Inc.\nPersonal Data collected: geographic position; unique device identifiers for advertising (Google Advertiser ID or IDFA, for example); various types of Data as specified in the privacy policy of the service.\n\nPlace of processing: United States – Privacy Policy."
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "processing is necessary for compliance with a legal obligation to which the Owner is subject;"
+]
+
+[rubric.list-collected]
+value = "generally"
+citations = [
+  "Complete details on each type of Personal Data collected are provided in the dedicated sections of this privacy policy or by specific explanation texts displayed prior to the Data collection.\nPersonal Data may be freely provided by the User, or, in case of Usage Data, collected automatically when using this Application.\nUnless specified otherwise, all Data requested by this Application is mandatory and failure to provide this Data may make it impossible for this Application to provide its services. In cases where this Application specifically states that some Data is not mandatory, Users are free not to communicate this Data without consequences to the availability or the functioning of the Service.\nUsers who are uncertain about which Personal Data is mandatory are welcome to contact the Owner.\nAny use of Cookies – or of other tracking tools – by this Application or by the owners of third-party services used by this Application serves the purpose of providing the Service required by the User, in addition to any other purposes described in the present document and in the Cookie Policy, if available."
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "The Owner reserves the right to make changes to this privacy policy at any time by giving notice to its Users on this page and possibly within this Application and/or - as far as technically and legally feasible - sending a notice to Users via any contact information available to the Owner. It is strongly recommended to check this page often, referring to the date of the last modification listed at the bottom.\n\nShould the changes affect processing activities performed on the basis of the User’s consent, the Owner shall collect new consent from the User, where required."
+]

@@ -1,0 +1,73 @@
+name = "Carvana"
+description = "Carvana is an online used car retailer"
+slug = "carvana"
+hostnames = [ "carvana.com" ]
+sources = [ "https://www.carvana.com/privacy-policy" ]
+contributors = [ "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "yes-opt-out"
+citations = [
+  "Reasons we can share your personal information:\n- For our affiliates to market to you\n- For our nonaffiliates to market to you"
+]
+notes = [
+  "You can opt-out by ringing 844.732.2556 or emailing  \"privacypolicy@carvana.com\" with the subject and body of \"Opt Out.\" Check for the latest information before doing such."
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "How does Carvana protect my personal information?\nTo protect your personal information from unauthorized access and use, we use security measures that comply with federal law. These measures include computer safeguards and secured files and buildings."
+]
+
+[rubric.third-party-collection]
+value = "critical-only"
+citations = [
+  "- For our every day business purposes – such as to process your transactions, maintain your account(s), respond to court orders and legal investigations, or report to credit bureaus\n"
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [ "Rev May 2018" ]
+
+[rubric.data-deletion]
+value = "no"
+notes = [ "No information provided that supports such." ]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "There is no information mentioning the announcement of a breach."
+]
+
+[rubric.third-party-access]
+value = "yes-specified-noncritical"
+citations = [
+  "Reasons we can share your personal information:\n- For our every day business purposes – such as to process your transactions, maintain your account(s), respond to court orders and legal investigations, or report to credit bureaus\n- For our marketing purposes – to offer our products and services to you\n- For joint marketing with other financial companies\n- For our affiliates’ everyday business purposes – information about your transactions and experiences\n- For our affiliates’ everyday business purposes – information about your creditworthiness\n- For our affiliates to market to you\n- For nonaffiliates to market to you\n\n[...]\n\nAffiliates:\nCompanies related by common ownership or control. They can be financial and nonfinancial companies.\n\n- DriveTime Car Sales Company, LLC (“DriveTime”) and all institutions in the DriveTime family of companies; Bridgecrest Acceptance Corporation (“Bridgecrest Acceptance”); Bridgecrest Credit Company, LLC (“Bridgecrest Credit”); Driver’s Seat, LLC and DS Nominee Titleholder, LLC (together, “Driver’s Seat”), are affiliates. Our other affiliates include companies with the DriveTime or DT name; financial companies, such as GFC Lending, LLC d/b/a GO Financial; insurance companies such as SilverRock Group, Inc., SilverRock Insurance, LLC, Motion Telematics, LLC and nonfinancial companies, such as GO Auto Exh LLC.\n\nNonaffiliates:\nCompanies not related by common ownership or control. They can be financial and nonfinancial companies.\n\n- Nonaffiliates we share with could include insurance companies, mortgage companies, credit card companies and direct marketing companies.\n\nJoint Marketing:\n- A formal agreement between nonaffiliated financial companies that together market financial products or services to you.\n Our joint marketing partners could include insurance companies, automobile dealers and credit card companies."
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "Reasons we can share your personal information:\n- For our every day business purposes – such as to process your transactions, maintain your account(s), respond to court orders and legal investigations, or report to credit bureaus\n- For our marketing purposes – to offer our products and services to you\n- For joint marketing with other financial companies\n- For our affiliates’ everyday business purposes – information about your transactions and experiences\n- For our affiliates’ everyday business purposes – information about your creditworthiness\n- For our affiliates to market to you\n- For nonaffiliates to market to you"
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-some"
+citations = [
+  "[Cannot Limit]\n- For our every day business purposes – such as to process your transactions, maintain your account(s), respond to court orders and legal investigations, or report to credit bureaus\n- For our marketing purposes – to offer our products and services to you\n- For joint marketing with other financial companies\n- For our affiliates’ everyday business purposes – information about your transactions and experiences\n[Can Limit]\n- For our affiliates’ everyday business purposes – information about your creditworthiness\n- For our affiliates to market to you\n- For nonaffiliates to market to you"
+]
+
+[rubric.law-enforcement]
+value = "unspecified"
+notes = [ "No information is provided." ]
+
+[rubric.list-collected]
+value = "generally"
+citations = [
+  "The types of personal information we collect and share depend on the product or service you have with us. This information can include:\n- Social Security number and income\n- account balances and payment history\n- credit history and employment information\n\n[...]\n\nWe collect your personal information, for example, when you\n- visit our website\n- apply for financing or give us your income information\n- provide employment information or give us your contact information\n- pay your bills\n\nWe also collect your personal information from others, such as credit bureaus, affiliates or other companies."
+]
+
+[rubric.revision-notify]
+value = "no"
+notes = [ "No explicit notice shows this to happen." ]

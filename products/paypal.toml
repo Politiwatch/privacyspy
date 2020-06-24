@@ -1,0 +1,76 @@
+name = "Paypal"
+description = "Paypal is an American online payment company which works internationally and also serves as a substitution to traditional methods like money orders and checks"
+slug = "paypal"
+hostnames = [ "paypal.com" ]
+sources = [ "https://www.paypal.com/ua/webapps/mpp/ua/privacy-full" ]
+contributors = [ "kulchynska" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+citations = [
+  "Do Not Track (DNT) is an optional browser setting that allows you to express your preferences regarding tracking by advertisers and other third-parties.  We do not respond to DNT signals."
+]
+
+[rubric.security]
+value = "yes"
+citations = [
+  "We maintain technical, physical, and administrative security measures designed to provide reasonable protection for your Personal Data against loss, misuse, unauthorized access, disclosure, and alteration. The security measures include firewalls, data encryption, physical access controls to our data centers, and information access authorization controls."
+]
+
+[rubric.third-party-collection]
+value = "critical-only"
+citations = [
+  "Information about you from third-party sources – We obtain information from third-party sources such as merchants, data providers, and credit bureaus, where permitted by law.\n\nwe will receive Personal Data from the social media provider via the account connection.  If you connect your Account to other financial accounts, directly or through a third-party service provider, we may have access to your account balance and transactional information, such as purchases and funds transfers.  We will use all such information that we receive from a third-party via an account connection in a manner consistent with this Privacy Statement. "
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [ "Effective Date: March 28, 2019" ]
+
+[rubric.data-deletion]
+value = "yes-automated"
+citations = [
+  "If you have an Account, you generally may review and edit Personal Data by logging in and updating the information directly or by contacting us"
+]
+
+[rubric.data-breaches]
+value = "eventually"
+citations = [
+  "We will send communications to you that are required or necessary to send to Users of our Services, notifications that contain important information and other communications that you request from us. You may not opt out of receiving these communications.  However, you may be able to adjust the media and format through which you receive these notices."
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified-critical"
+citations = [
+  "We retain Personal Data to fulfill our legal or regulatory obligations and for our business purposes.  We may retain Personal Data for longer periods than required by law if it is in our legitimate business interests and not prohibited by law\n\n product, such as with Synchrony Bank in connection with the PayPal Extras credit card.  These financial institutions may only use this information to market and offer PayPal-related products, unless you have given consent for other uses. We may also share Personal Data to process transactions, provide you with benefits associated with your eligible cards, and keep your financial information up to date.\n\n"
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "We may Process your information for the following reasons: "
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-all"
+citations = [
+  "Personalized Services offered by PayPal on third-party websites and services. You may manage your preferences for other PayPal Services that are personalized and offered to you on third-party websites from your Account. We may also provide you with instructions and prompts on how to manage your preferences within the Service experience.\nFinding and connecting with others. If available, you may manage your preferences for finding and connecting with others from your account of the Service you use."
+]
+
+[rubric.law-enforcement]
+value = "strict"
+citations = [
+  "law enforcement, regulators, government officials, or other third parties (in Singapore or elsewhere) in relation to a subpoena, court order, or other legal process or requirement under Singapore law or regulation, or the laws and regulations of other jurisdictions that are applicable to PayPal or one of its affiliates; when we need to do so to comply with such law or credit card rules; or when we believe, in our sole discretion, that the disclosure of Personal Data is necessary or appropriate to prevent physical harm or financial loss; or to report suspected illegal activity or to investigate violations of a user agreement;"
+]
+
+[rubric.list-collected]
+value = "generally"
+citations = [
+  "Depending on the Services you choose, we may require you to provide us with your name, postal address, telephone number, email address and identification information to establish an Account.  We may require you to provide us with additional Personal Data as you use our Services.\n\n, we collect information about the transaction, as well as other information associated with the transaction such as amount sent or requested, amount paid for products or services, merchant information, including information about any funding instruments used to complete the transaction, Device Information, Technical Usage Data, and Geolocation Information.\n\nwe collect Personal Data you provide us about the other participants associated with the transaction.\n\nIf you establish an connection between your device or a social media platform and establish an account connection between your device or a social media platform and your Account, we will collect and use your contact list information (such as name, address, email address) to improve your experience when you use the Services.\n\nOther information we collect related to your use of our Sites or Services – We may collect additional information from or about you when you communicate with us, contact our customer support teams or respond to a survey.\n\nWe will collect Personal Data, information about any funding instrument used Device Information, Technical Usage Data, and Geolocation Information as necessary to complete the transaction. If you are an Account holder and choose to engage in a Checkout without a PayPal Account transaction, we will collect information about the transaction and may associate it with your Account.  If you are not an Account holder and choose to engage in a Checkout without a PayPal Account transaction, we will collect and store all information you provide and use and share such information in accordance with this Privacy Statement. \n\n"
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "If the revised version includes a substantial change, we will provide you with 30 days prior notice by posting notice of the change on the “Policy Update” page of our website.  We also may notify Users of the change using email or other means."
+]

@@ -1,0 +1,81 @@
+name = "Todoist"
+description = "TickTick is a cross-platform and collaborative to-do app"
+slug = "todoist"
+hostnames = [ "todoist.com" ]
+sources = [ "https://todoist.com/privacy?lang=en" ]
+contributors = [ "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+citations = [
+  "We do not partner with or have special relationships with any ad server companies."
+]
+
+[rubric.security]
+value = "yes"
+citations = [
+  "All data and information transmitted with Service is secured by SSL protocol."
+]
+notes = [
+  "A more in-depth whitepaper can be found at https://todoist.com/security"
+]
+
+[rubric.third-party-collection]
+value = "no"
+notes = [ "No data is collected from third parties." ]
+
+[rubric.history]
+value = "last-modified"
+citations = [ "Effective Date: May 15th, 2018" ]
+
+[rubric.data-deletion]
+value = "yes-automated"
+notes = [
+  "This policy does not guarantee the ability to be able to delete your data. However, it is mentioned that you can do so via an automated method on their help page at https://get.todoist.help/hc/en-us/articles/203799822"
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "The service is not required by this policy to notify users of data breaches."
+]
+
+[rubric.third-party-access]
+value = "yes-specified-critical"
+citations = [
+  "Q: How does Doist process data?\nA: Doist is considered a Data Processor which means that Doist controls how your user data is processed and is responsible for the data to be processed within GDPR regulations. Although Doist owns the code, databases, and all rights to the Todoist and Twist applications, you retain all rights to your data.\nWhen it’s absolutely necessary, we use GDPR-compliant third party services and hosting partners such as Stripe, AWS and Google G-Suite. In these cases, we take the necessary safeguards to ensure that we are GDPR compliant when sending and receiving data from the third party.\n\n[...]\n\nQ: Do you provide a list of relevant third party services?\nA: Yes. When necessary, we use the following GDPR-compliant third party services:\n\n- Amazon Web Services\n- Google Analytics\n- Zendesk\n- SendGrid\n- Mailgun\n- PayPal\n- Stripe\n- Microsoft Azure\n- Microsoft Visual Studio App Center\n- Firebase\n- Baremetrics\n- MailChimp\n- CloudBees Rollout"
+]
+notes = [
+  "On their security FAQ (https://get.todoist.help/hc/en-us/articles/360000814029), they mention the other critical service provider"
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "Todoist collects the email addresses of those who communicate with us via email, and information submitted through voluntary activities such as site registrations or participation in surveys. Todoist also collects aggregated, anonymous user data regarding app usage. The user data we collect is used to improve Todoist and the quality of our service. We only collect personal data that is required to provide our services, and we only store it insofar that it is necessary to deliver these services."
+]
+
+[rubric.noncritical-purposes]
+value = "na"
+notes = [ "Data is not used for non-critical purposes" ]
+
+[rubric.law-enforcement]
+value = "unspecified"
+notes = [
+  "There is no mention of how this service complies with legal orders"
+]
+
+[rubric.list-collected]
+value = "exhaustively"
+citations = [
+  "Q: What types of personal data does Doist collect?\nA: When registering for Todoist and Twist you voluntarily give us information such as your name and email address. You can access and update this information at any time in your personal Account Settings.\n\nIn addition, when you use our services, you give us the consent to use the following data:\n\nEmail\nIP address\nDevice ID\nName and surname (optional, not processed)\nJob (optional, not processed)\nPhone number (optional, not processed)\nVAT ID (optional)\nInvoice address (for Premium accounts)"
+]
+notes = [
+  "This is located on the privacy FAQ found at https://get.todoist.help/hc/en-us/articles/360000814029"
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "If our information practices change at some time in the future we will post the policy changes to our Web site to notify you of these changes and we will use for these new purposes only data collected from the time of the policy change forward. If you are concerned about how your information is used, you should check back at our Web site periodically."
+]

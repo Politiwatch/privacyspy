@@ -1,0 +1,73 @@
+name = "EteSync"
+description = "Secure, end-to-end encrypted, and privacy respecting sync for your contacts, calendars and tasks."
+slug = "etesync"
+hostnames = [ "https://www.etesync.com/" ]
+sources = [ "https://www.etesync.com/tos/#privacy" ]
+contributors = [ "Donno" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+citations = [
+  "We don't track our users and we don't provide information to 3rd parties\n(section 2.c). In addition we don't do any personal marketing (that is,\nemail you) at all, so definitely not targeted either."
+]
+
+[rubric.security]
+value = "na"
+citations = [ "No personal data is collected." ]
+notes = [
+  "The code is open source so it could be monitored by anyone."
+]
+
+[rubric.third-party-collection]
+value = "no"
+citations = [ "No personal data is collected." ]
+
+[rubric.history]
+value = "last-modified"
+citations = [ "Last modified: 27/03/2017 " ]
+notes = [
+  "The ToS is never changed in the past so all data is provided."
+]
+
+[rubric.data-deletion]
+value = "na"
+citations = [
+  "Yes, though we don't really have any personal data. The only details we\nhave are your email and encrypted data. Your card details (if you paid\nby card) are stored by our CC processor and can also be easily deleted."
+]
+
+[rubric.data-breaches]
+value = "yes-72"
+citations = [ "Legal requirement due to the GDPR." ]
+notes = [ "Not in the policy because it's a legal requirement" ]
+
+[rubric.third-party-access]
+value = "yes-specified-critical"
+citations = [
+  "We may provide information concerning your account and your use of the service to 3rd parties, at our sole discretion, if:\n\n- It is requested by law enforcement authorities.\n- We have reason to believe that it is in your interest that we provide such information.\n- It is necessary in order to keep the service running, or to diagnose or fix problems with the service or another network.\n"
+]
+
+[rubric.data-collection-reasoning]
+value = "na"
+citations = [
+  "It doesn't collect any data, so the terms don't address this."
+]
+
+[rubric.noncritical-purposes]
+value = "na"
+citations = [
+  "No personal data is collected for non-critical purposes. We don't have any tracking or analytics or anything like this.\n"
+]
+
+[rubric.law-enforcement]
+value = "na"
+citations = [ "No data to share due to encryption" ]
+
+[rubric.list-collected]
+value = "na"
+citations = [ "No personal data is collected." ]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "We may update these Terms and Conditions at any time, but you will not be bound by any updates until 30 days after we send you an email notifying you of the changes."
+]

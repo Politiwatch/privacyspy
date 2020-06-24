@@ -14,7 +14,7 @@ citations = [
 [rubric.security]
 value = "na"
 citations = [
-  "Startpage.com doesn’t log or share your personal information. \r\n"
+  "Startpage.com doesn’t log or share your personal information. \n"
 ]
 
 [rubric.third-party-collection]

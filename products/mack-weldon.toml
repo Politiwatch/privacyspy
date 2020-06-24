@@ -1,0 +1,70 @@
+name = "Mack Weldon"
+description = "Mack Weldon is an online clothing brand and store"
+slug = "mack-weldon"
+hostnames = [ "mackweldon.com" ]
+sources = [ "https://mackweldon.com/pages/privacy-policy" ]
+contributors = [ "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "yes-opt-out"
+citations = [
+  "By establishing an account with us, you agree that you are providing your consent that allows us to share your personal data with our third-party service providers that assist us with our marketing efforts and with other marketers whose products or services we feel may be of interest to you. Mack Weldon also participates in marketing cooperatives. As part of our participation in these marketing cooperatives, we may disclose your name and postal address (but not your email address or payment card information) so that other select reputable companies can mail you information about their products that may interest you. If you prefer that we do not share your name and address with other marketers, please opt-out by updating your “My Profile” preferences here: My Profile.\n\nMack Weldon (a) follows the principles and guidelines of the Digital Advertising Alliance (DAA) related to online and mobile advertising (including the DAA AppChoices Program) and (b) complies with the cross-industry enhanced notice standard as set forth in the Self-Regulatory Program for Online Behavioral Advertising.  Although we do not have a mobile app, on our mobile website we collect the information listed in Section 1 of this policy.  We may share that information with third-party service providers as described earlier in this section.  You may opt out of receiving targeted ads based on the information we collect from you.  If you do not want to receive such ads, you may opt-out by visiting either of the following sites:\n\nNAI – http://www.networkadvertising.org/choices/\nDAA – http://www.aboutads.info/choices/"
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "Our physical, electronic, and procedural safeguards meet or exceed current federal standards regarding the protection of customer information. We also require contractors and outside companies who work with us to adhere to strict privacy standards through their contracts with us. Unfortunately, no security system, or system of transmitting data over the Internet, can be guaranteed to be 100% secure. Consequently, while we use commercially reasonable efforts to protect your personal data, we cannot guarantee the security of our servers, the means by which information is transmitted between your computer and our servers, or any information provided to us or to any third party through or in connection with the website. Any information that you provide to us is done so entirely at your own risk."
+]
+
+[rubric.third-party-collection]
+value = "no"
+notes = [ "Data is not collected from third parties." ]
+
+[rubric.history]
+value = "last-modified"
+citations = [ "Effective September 9, 2019" ]
+
+[rubric.data-deletion]
+value = "no"
+notes = [ "There is no mention of allowing users to delete their data" ]
+
+[rubric.data-breaches]
+value = "no"
+notes = [ "The company is not required to disclose data breaches" ]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = [
+  "By establishing an account with us, you agree that you are providing your consent that allows us to share your personal data with our third-party service providers that assist us with our marketing efforts and with other marketers whose products or services we feel may be of interest to you. Mack Weldon also participates in marketing cooperatives. As part of our participation in these marketing cooperatives, we may disclose your name and postal address (but not your email address or payment card information) so that other select reputable companies can mail you information about their products that may interest you. If you prefer that we do not share your name and address with other marketers, please opt-out by updating your “My Profile” preferences here: My Profile."
+]
+
+[rubric.data-collection-reasoning]
+value = "mostly"
+citations = [
+  "We will only process your personal data in accordance with applicable data protection and privacy laws. We need certain personal data in order to provide you with access to our products and services.  With your consent via the establishment of an account, we may use your email address and any other personal data that you provide to us (such as demographic and transaction information) to respond to you and to send you marketing materials for our own products and services. You maintain the right to withdraw such consent at any time."
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-all"
+citations = [
+  "Mack Weldon (a) follows the principles and guidelines of the Digital Advertising Alliance (DAA) related to online and mobile advertising (including the DAA AppChoices Program) and (b) complies with the cross-industry enhanced notice standard as set forth in the Self-Regulatory Program for Online Behavioral Advertising.  Although we do not have a mobile app, on our mobile website we collect the information listed in Section 1 of this policy.  We may share that information with third-party service providers as described earlier in this section.  You may opt out of receiving targeted ads based on the information we collect from you. "
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "We also reserve the right to disclose any personal data that we collect to any third party if we believe that we are required to do so for any or all of the following reasons: (i) to comply with the law; (ii) to comply with legal processes or governmental requests; (iii) to prevent, investigate, detect, or prosecute criminal offenses or attacks on the technical integrity of our website or our network; and/or (iv) to protect the rights, property, safety and security of Mack Weldon and its employees, our website visitors, and/or the public."
+]
+
+[rubric.list-collected]
+value = "generally"
+citations = [
+  "We collect two types of information from visitors to our website: personal data and non-personal data.  Personal data includes any information which, either alone or in combination with other information we hold about you, identifies you as an individual, including, for example, your name, postal address, email address and telephone number.\n\nIf you purchase our products or services, we request certain personal data from you on our order form so that we can fulfill those purchases of products or services from our website. This includes information such as:\n\n- your name\n- email address\n- phone number\n- shipping address\n- financial information, such as a credit card number and its expiration date\n\nWe use the personal data that we collect for billing purposes and to fill your orders. If we have trouble processing an order, we also will use this information to contact you.  If you choose to establish an account and become a registered user of the Site, we may collect personal data about you including:\n\n- your name\n- email address\n- phone number\n- birth date\n- gender\n- shipping address\n- billing addresses\n- financial information, such as a credit card number and its expiration date, to facilitate future purchases you might make.\n\nIn addition, if you contact us by email through our website, we may keep a record of your contact information and correspondence.\n\nYou have a right to access information held about you, which can be exercised in accordance with various legal requirements, including those under PIPEDA. Any access request must be in writing, sent to our Vice President, Finance & Operations at privacy@mackweldon.com.  If at any time you would like to change your personal data, or if you no longer wish to receive materials from us or would like your personal information removed from our database, please contact us at privacy@mackweldon.com. Alternatively, if you receive materials from us by email you can make use of the \"unsubscribe\" provision in our communications so that we know that you no longer wish to receive any materials from us.\n\nLike most websites, our website may incorporate “pixel tags”, “web beacons”, or similar tracking technologies and “cookies” that allow us to track the actions of visitors of our website. Pixel tags and cookies are used to collect non-personal data, such as the name of your internet service provider, the IP address of the computer you are using, the type of browser software and operating system that you use, the date and time you access our website, the website address, if any, from which you linked directly to our website, the website address, if any, to which you travel from our website, your home page customization preferences, a general geographic location (such as country and city) from which you accessed our website, and other similar traffic-related information. We may aggregate your information with similar data collected from other visitors to help us improve our website and the products, services, applications, content and features that we provide through our website. This information may be combined with other information about you, including personal data."
+]
+
+[rubric.revision-notify]
+value = "no"
+citations = [
+  "From time to time we review this Privacy Policy to ensure that it complies with applicable law. Consequently, we reserve the right to update and revise this Privacy Policy at any time. You will know if this Privacy Policy has been revised since your last visit to the website by referring to the \"Effective Date of Current Policy\" date at the top of this page. Your use of our website constitutes your acceptance of the terms of the Privacy Policy as amended or revised by us from time to time, and you should, therefore, review this Privacy Policy regularly to ensure that you are aware of its terms."
+]

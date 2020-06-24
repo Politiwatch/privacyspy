@@ -1,0 +1,88 @@
+name = "Busuu"
+description = "Busuu is an AI-powered language learning platform on web, iOS and Android that allows users to interact with native speakers from around the world."
+slug = "busuu"
+hostnames = [ "busuu.com" ]
+sources = [ "https://www.busuu.com/privacy" ]
+contributors = [ "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "yes-opt-out"
+citations = [
+  "We may share your data including email addresses with other data processors such as Facebook, Google, Braze and Snapchat to provide targeted advertising. For users with a Premium membership sponsored through an organisation we will not share your data for advertising purposes. We also use analytical tools such as Intercom, Braze and Amplitude which in some cases may see your personal data such as IP addresses."
+]
+notes = [
+  "Premium users do not get ads or their data shared for advertising purposes. This could also result in \"No\" if you have a pro plan."
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "Your personal data is password protected and, other as set out in this Privacy Policy, can only be seen by you and us. You agree to keep your password(s) confidential and not to disclose them to anyone else, or allow them to be disclosed.\n\nBusuu limits access to personal information about you to employees who Busuu reasonably believes need to come into contact with that information, to provide products or the Service to you, or in order to do their jobs.\n\nBusuu has physical, electronic, and procedural safeguards that comply with regulations to protect personal information about you. However, data transmissions over the internet cannot be guaranteed to be 100% secure. Consequently, Busuu cannot ensure or warrant the security of information you transmit to Busuu."
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "Busuu also collects and generates a number of other areas of usage information automatically which includes; services metadata, log data, device information, IP addresses, third-party data and cookie information."
+]
+notes = [
+  "This is too vague to say for being explicitly \"critical data.\""
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [ "Last updated: August 2019" ]
+notes = [ "The date is very vague" ]
+
+[rubric.data-deletion]
+value = "yes-contact"
+citations = [
+  "You have the right to delete your personal data by sending an email requesting so to privacy@busuu.com. Please note in this case any financial information will be kept in accordance with local laws."
+]
+notes = [
+  "Some data is stored for an undefined time to comply with local laws."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [ "No clause shows that they would do such." ]
+
+[rubric.third-party-access]
+value = "no"
+citations = [
+  "We do not allow our third-party service providers to use your personal data for their own purposes and only permit them to process your personal data for specified purposes and in accordance with our instructions."
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "When you register for a Busuu account, Busuu collects personal data that you submit such as your username, email address, spoken and studied languages and any other personal or preference information that you optionally enter into the Service, as well as your profile picture.\n\nBusuu also collects and generates a number of other areas of usage information automatically which includes; services metadata, log data, device information, IP addresses, third-party data and cookie information.\n\nWe also collect, use and share Aggregated Data such as statistical or demographic data for any purpose. Aggregated Data may be derived from your personal data but is not considered personal data in law as this data does not directly or indirectly reveal your identity. For example, we may aggregate your Usage Data to calculate the percentage of users accessing a specific website feature. However, if we combine or connect Aggregated Data with your personal data so that it can directly or indirectly identify you, we treat the combined data as personal data which will be used in accordance with this privacy notice. "
+]
+notes = [
+  "Lots of fluff is in this paragraph such as things they don't collect, how they secure their data, and other information. "
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-all"
+citations = [
+  "If you decide to participate in any research, your participation is voluntary and you can withdraw at any time. If you’d like to withdraw, please send an email to research@busuu.com and your request will be processed on the following working day in the UK. "
+]
+notes = [ "Opt-out is required via email. " ]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "Busuu does not rent, sell, or share personal information about you with third parties except to provide products or services you've requested, when we have your permission, or in the following circumstances:\n\nwhere Busuu is responding to a subpoena, court order, or legal process, or to establish or exercise our legal rights or to defend ourselves against legal claims;\nwhere Busuu believes it is necessary to share information in order to investigate, prevent, or take action regarding illegal activities, suspected fraud, situations involving potential threats to the physical safety of any person, violations of Busuu's Terms of Service, or as otherwise required by law;\nwhere you are using a Paid Service (including a Premium membership) in your capacity as a student or an employee or other third party using the Paid Service, we may in such circumstances share your personal information with your educational establishment, your employer or any third party paying for the Service on your behalf (as the case may be) to allow them to monitor your use of the Paid Service;\nwhere Busuu transfers information about you if Busuu is acquired by or merged with another company. If this happens, Busuu will notify you before information about you is transferred and becomes subject to a different privacy policy."
+]
+
+[rubric.list-collected]
+value = "exhaustively"
+citations = [
+  "When you register for a Busuu account, Busuu collects personal data that you submit such as your username, email address, spoken and studied languages and any other personal or preference information that you optionally enter into the Service, as well as your profile picture.\n\nBusuu also collects and generates a number of other areas of usage information automatically which includes; services metadata, log data, device information, IP addresses, third-party data and cookie information.\n\nWe also collect, use and share Aggregated Data such as statistical or demographic data for any purpose. Aggregated Data may be derived from your personal data but is not considered personal data in law as this data does not directly or indirectly reveal your identity. For example, we may aggregate your Usage Data to calculate the percentage of users accessing a specific website feature. However, if we combine or connect Aggregated Data with your personal data so that it can directly or indirectly identify you, we treat the combined data as personal data which will be used in accordance with this privacy notice. We do not collect any Special Categories of Personal Data about you (this includes details about your race or ethnicity, religious or philosophical beliefs, sexual orientation, political opinions, trade union membership, information about your health and genetic and biometric data). Nor do we collect any information about criminal convictions and offences."
+]
+
+[rubric.revision-notify]
+value = "no"
+citations = [
+  "We may update this Privacy Policy from time to time. All changes will be posted on our website (the “Site”). "
+]

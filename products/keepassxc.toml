@@ -1,0 +1,75 @@
+name = "keepassxc"
+description = "Password Manager"
+slug = "keepassxc"
+hostnames = [ "keepassxc.org" ]
+sources = [ "https://keepassxc.org/privacy/" ]
+contributors = [ "newuser_frLoi" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+citations = [
+  "All collected data is used for statistical purposes only, does not allow personal identification and is not shared with any third parties. Statistics are generated using a self-hosted Piwik installation. "
+]
+
+[rubric.security]
+value = "yes-audits"
+citations = [
+  "Visitor logs are deleted after 90 days and detailed reports after 12 months. Only basic trend metrics are kept after this time. "
+]
+
+[rubric.third-party-collection]
+value = "no"
+notes = [ "No reference to any collection of data from 3rd parties." ]
+
+[rubric.history]
+value = "no"
+notes = [ "No policy's history available." ]
+
+[rubric.data-deletion]
+value = "na"
+citations = [
+  "When you visit our website, we collect the following data:\n\n    Your anonymized IP address (we store only the first 2 byte for IPv4 and the first 6 byte for IPv6)\n    Your browser user agent and plugin configuration\n    Your HTTP referrer if coming from another website\n    Your screen size configuration\n    Your geo location as far as we can determine it from the anonymized IP address \n\nThe browser user agent usually contains the following information:\n\n    Your browser name and version\n    Your operating system name and version\n    Your processor architecture "
+]
+notes = [ "No PII data captured or stored" ]
+
+[rubric.data-breaches]
+value = "na"
+notes = [
+  "No reference to customers being notified in case of a data breach"
+]
+
+[rubric.third-party-access]
+value = "yes-specified-critical"
+citations = [
+  "The website and all data related to it is hosted at uberspace.de, which is also where your email will be stored when you send us one. Uberspace.de are only responsible for providing the needed IT infrastructure and do not access or use your data directly. "
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "All collected data is used for statistical purposes only, does not allow personal identification and is not shared with any third parties. Statistics are generated using a self-hosted Piwik installation. "
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-all"
+citations = [
+  "You can opt out of browser data collection at any time by clicking this opt-out link and following the instructions. Alternatively, you can also configure your browser to send a Do Not Track header. "
+]
+
+[rubric.law-enforcement]
+value = "unspecified"
+notes = [
+  "No reference in regards to allowing law enforcement access to personal data."
+]
+
+[rubric.list-collected]
+value = "exhaustively"
+citations = [
+  "When you visit our website, we collect the following data:\n\n    Your anonymized IP address (we store only the first 2 byte for IPv4 and the first 6 byte for IPv6)\n    Your browser user agent and plugin configuration\n    Your HTTP referrer if coming from another website\n    Your screen size configuration\n    Your geo location as far as we can determine it from the anonymized IP address \n\nThe browser user agent usually contains the following information:\n\n    Your browser name and version\n    Your operating system name and version\n    Your processor architecture \n\nThe website and all data related to it is hosted at uberspace.de, which is also where your email will be stored "
+]
+
+[rubric.revision-notify]
+value = "no"
+notes = [
+  "No Citation or reference to notification of changes in the privacy policy."
+]

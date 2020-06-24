@@ -1,0 +1,77 @@
+name = "Tutanota"
+description = "Tutanota is a free and open-source end-to-end encrypted email software and freemium hosted secure email service."
+slug = "tutanota"
+hostnames = [ "tutanota.com", "tutao.de" ]
+sources = [ "https://tutanota.com/privacy/" ]
+contributors = [ "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+notes = [ "Tutanota does not use any analytical tools. " ]
+
+[rubric.security]
+value = "yes"
+notes = [
+  "This is not outlined in the privacy policy, rather on a separate page: https://tutanota.com/security"
+]
+
+[rubric.third-party-collection]
+value = "no"
+notes = [ "There's no examples of such in their privacy polic(ies)" ]
+
+[rubric.history]
+value = "last-modified"
+citations = [ "Status: May 25, 2018" ]
+
+[rubric.data-deletion]
+value = "yes-automated"
+citations = [
+  "When signing up for a Tutanota account, you give consent to the processing of this data according to Art. 6 DSGVO 1. a). All textual content is encrypted for the user and its communication partners in a way that even Tutao GmbH has no access to the data. This data can be deleted by the user."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "Although their imprint describes them being based in Germany, Tutanota does not comply with Article 33 of the GDPR."
+]
+
+[rubric.third-party-access]
+value = "yes-specified-critical"
+citations = [
+  "With the exception of payment data, we will not disclose your personal data including your email address to third parties."
+]
+notes = [ "Payment is handled by Braintree." ]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "For the initiation of a contractual relationship and for service provision we collect\n\nthe newly registered email address\nas inventory data.\n\nFor invoicing and determining the VAT we collect for paid product variants\n\nthe domicile of the customer (country)\nthe invoicing address (for private users optional)\nthe VAT identification number (only for business customers of some countries)\nas inventory data.\n\nFor the transaction of payments we collect depending on the chosen payment method the following payment data (inventory data):\n\nBanking details (account number and sort code and IBAN/BIC, if necessary bank name, account holder),\ncredit card data,\nPayPal user name.\nThis inventory data is processed for the performance of the contract with the customer according to Art. 6 GDPR 1. b). For the execution of direct debiting we will share your banking details with the authorized credit institution. For the execution of PayPal payments we will share your PayPal data with PayPal (Europe).\n\nAddress: PayPal (Europe) S.à r.l. et Cie, S.C.A.,22-24 Boulevard Royal, L-2449 Luxembourg\nPaypal privacy statement\nPaypal contact for questions about privacy\nFor the execution of credit card payments your credit card data will be shared with our payment service provider Braintree. This includes the transfer of personal data into a third country (USA). An agreement entered into with Braintree defines appropriate safeguards and demands that the data is only processed in compliance with the GDPR and only for the purpose of execution of payments.\n\nTutanota provides services for saving, editing, presentation and electronic transmission of data, such as email service, contact management and data storage. This content data is voluntarily entered into Tutanota by the customer. When signing up for a Tutanota account, you give consent to the processing of this data according to Art. 6 DSGVO 1. a). All textual content is encrypted for the user and its communication partners in a way that even Tutao GmbH has no access to the data. This data can be deleted by the user.\n\nIn order to maintain email server operations, for error diagnosis and for prevention of abuse, mail server logs are stored max. 7 days. These logs contain sender and recipient email addresses and time of connection but no customer IP addresses. Storage takes place for the purposes of the legitimate interests pursued by the controller according to Art. 6 DSGVO 1. f).\n\nIn order to maintain operations, for prevention of abuse and and for visitors analysis, IP addresses of users are processed. Storage only takes place for IP addresses made anonymous which are therefore not personal data any more. This processing takes place for the purposes of the legitimate interests pursued by the controller according to Art. 6 DSGVO 1. f)."
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-all"
+citations = [
+  "For invoicing and determining the VAT we collect for paid product variants\n[...]\nthe invoicing address (for private users optional)"
+]
+notes = [
+  "There are certain details that are optional for certain tiers. "
+]
+
+[rubric.law-enforcement]
+value = "strict"
+citations = [
+  "With the exception of payment data, we will not disclose your personal data including your email address to third parties. However, we can be legally bound to provide content data (in case of a valid German court order) and inventory data to prosecution services. There will be no sale of data."
+]
+notes = [
+  "They have a warrant canary at https://tutanota.com/blog/posts/transparency-report/"
+]
+
+[rubric.list-collected]
+value = "exhaustively"
+citations = [
+  "For the initiation of a contractual relationship and for service provision we collect\n\nthe newly registered email address\nas inventory data.\n\nFor invoicing and determining the VAT we collect for paid product variants\n\nthe domicile of the customer (country)\nthe invoicing address (for private users optional)\nthe VAT identification number (only for business customers of some countries)\nas inventory data.\n\nFor the transaction of payments we collect depending on the chosen payment method the following payment data (inventory data):\n\nBanking details (account number and sort code and IBAN/BIC, if necessary bank name, account holder),\ncredit card data,\nPayPal user name.\nThis inventory data is processed for the performance of the contract with the customer according to Art. 6 GDPR 1. b). For the execution of direct debiting we will share your banking details with the authorized credit institution. For the execution of PayPal payments we will share your PayPal data with PayPal (Europe).\n\nAddress: PayPal (Europe) S.à r.l. et Cie, S.C.A.,22-24 Boulevard Royal, L-2449 Luxembourg\nPaypal privacy statement\nPaypal contact for questions about privacy\nFor the execution of credit card payments your credit card data will be shared with our payment service provider Braintree. This includes the transfer of personal data into a third country (USA). An agreement entered into with Braintree defines appropriate safeguards and demands that the data is only processed in compliance with the GDPR and only for the purpose of execution of payments.\n\nTutanota provides services for saving, editing, presentation and electronic transmission of data, such as email service, contact management and data storage. This content data is voluntarily entered into Tutanota by the customer. When signing up for a Tutanota account, you give consent to the processing of this data according to Art. 6 DSGVO 1. a). All textual content is encrypted for the user and its communication partners in a way that even Tutao GmbH has no access to the data. This data can be deleted by the user.\n\nIn order to maintain email server operations, for error diagnosis and for prevention of abuse, mail server logs are stored max. 7 days. These logs contain sender and recipient email addresses and time of connection but no customer IP addresses. Storage takes place for the purposes of the legitimate interests pursued by the controller according to Art. 6 DSGVO 1. f).\n\nIn order to maintain operations, for prevention of abuse and and for visitors analysis, IP addresses of users are processed. Storage only takes place for IP addresses made anonymous which are therefore not personal data any more. This processing takes place for the purposes of the legitimate interests pursued by the controller according to Art. 6 DSGVO 1. f)."
+]
+
+[rubric.revision-notify]
+value = "no"
+notes = [ "There is no clause requiring such." ]

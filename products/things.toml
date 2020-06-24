@@ -1,0 +1,78 @@
+name = "Things"
+description = "Things is an iOS/macOS-exclusive to-do app developed by Cultured Code"
+slug = "things"
+hostnames = [ "culturedcode.com" ]
+sources = [ "https://culturedcode.com/privacy/" ]
+contributors = [ "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+citations = [
+  "We use these companies for the following services: hosting of our website and support portal, providing our help desk software, sending out newsletters, analyzing our website traffic, hosting our cloud services, manage our app beta testing, and processing our app crash reports."
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "We take appropriate security measures to protect against unauthorized access to or unauthorized alteration, disclosure or destruction of data. These include internal reviews of our data collection, storage and processing practices and security measures, including appropriate encryption and physical security measures to guard against unauthorized access to systems where we store personal data.\n\nInside Cultured Code, we restrict access to personal information to only those employees who need to know that information in order to deploy and maintain our services. These individuals are bound by confidentiality agreements and may be subject to discipline, including termination and criminal prosecution, if they fail to meet these obligations.\n\nWhenever you connect to our Things Cloud service, we use encryption such as Transport Layer Security (TLS) for all information that is being transmitted. However, no method of transmitting or storing data is 100% secure, so we cannot guarantee the security of information you transmit to us.\n\nSome parts of our website, such as our blog or forums, may allow you to post personal information, such as your name or email address. This information is publicly accessible and can be read, collected, and processed by anyone. So please take care when using these features."
+]
+
+[rubric.third-party-collection]
+value = "no"
+notes = [ "The service doesn't collect data from third parties." ]
+
+[rubric.history]
+value = "last-modified"
+citations = [ "Last modified: May 25, 2018" ]
+
+[rubric.data-deletion]
+value = "yes-automated"
+citations = [
+  "You are entitled to request information about the personal data stored by us, to have incorrect data corrected, or to request the freezing or deletion of your data. For example, you can request the deletion of your Things Cloud account and its associated email address and content by going into the settings in any of our applications. You are also entitled to the portability of your personal data. Further, you may object to the use of your data at any time with effect for the future.\n\nThere are, however, cases where we are not allowed to delete your data in its entirety as a result of legal retention periods. We may also decline requests if they risk the privacy of others, would be extremely impractical, or for which access is not required by law.\n\nYour personal information is retained for as long as it is necessary in order to fulfill the purposes outlined in this Privacy Policy, to enforce applicable Terms of Service, or to comply with our legal obligations."
+]
+notes = [
+  "You can learn more on how to use this automated system at https://culturedcode.com/things/support/articles/2803591/"
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "This policy doesn't require the service to notify you of data breaches"
+]
+
+[rubric.third-party-access]
+value = "yes-specified-critical"
+citations = [
+  "We don’t share personal information with anyone outside of Cultured Code, except for the few exceptions below.\n\nWe work together with other companies who provide information processing services. We only share personal information with these companies if you have agreed to the transfer, or if it is permitted by data protection law. The information we share is limited to the data necessary for the third parties to provide their services. We use these companies for the following services: hosting of our website and support portal, providing our help desk software, sending out newsletters, analyzing our website traffic, hosting our cloud services, manage our app beta testing, and processing our app crash reports. These companies are obligated to protect your information in accordance with data protection law and provide the necessary safeguards if they are outside of the EU. The companies are bound by our instructions, and are not allowed to use the shared data for any other purpose.\n\nWe also share personal information if disclosure of such information is reasonably necessary to satisfy any applicable law, regulation, legal process or enforceable governmental request; to enforce applicable Terms of Service, including investigation of potential violations thereof; to detect, prevent, or otherwise address fraud or security issues; and to protect against harm to the rights, property or safety of Cultured Code, its users or the public as required or permitted by law.\n\nIf Cultured Code is involved in a reorganization, merger, or sale, the information we collect may be transferred as part of that transaction."
+]
+notes = [
+  "You can see all the essential subcontractors the service uses at https://culturedcode.com/legal/subcontractors/"
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "We collect and process all your personal data in accordance with the relevant data protection regulations, in particular the General Data Protection Regulation (GDPR), the German Federal Data Protection Act (BDSG) and the German Telemedia Act (TMG). This means that we may process your personal information for the purposes described in this Privacy Policy with your consent, if it is necessary for the performance of a contract to which you are party or in order to take steps at your request prior to entering into a contract, if it is necessary for compliance with a legal obligation to which Cultured Code is subject, or when we have assessed it is necessary for the purposes of the legitimate interests pursued by Cultured Code or by a third party to whom it may be necessary to disclose information.\n\nThe personal information we collect allows us to keep you up to date on our latest product announcements, software updates, and services. You may at any time opt out of receiving such communications by contacting us. In particular, we only send you our newsletter with your prior consent, and you can opt out of receiving the newsletter anytime by clicking the unsubscribe link we include in each newsletter, or by contacting us.\nWe also use the personal information we collect to help us create, develop, deliver, protect, and improve our products, services, content, and customer communications.\nWe may use your personal information to send important notices, such as communications about changes to our terms, conditions, and policies. As this information is important to your interaction with Cultured Code, you may not opt out of receiving these communications.\nWe may also use personal information for internal purposes such as auditing, data analysis, and research to improve our products, services, and customer communications."
+]
+
+[rubric.noncritical-purposes]
+value = "na"
+notes = [ "Data isn't used for non-critical purposes" ]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "We also share personal information if disclosure of such information is reasonably necessary to satisfy any applicable law, regulation, legal process or enforceable governmental request; to enforce applicable Terms of Service, including investigation of potential violations thereof; to detect, prevent, or otherwise address fraud or security issues; and to protect against harm to the rights, property or safety of Cultured Code, its users or the public as required or permitted by law."
+]
+
+[rubric.list-collected]
+value = "generally"
+citations = [
+  "Here are examples of the types of personal information that we collect:\n\nWhen you visit our website, connect to our services, contact us, use our software, create a Things Cloud account, or subscribe to your newsletter, we collect a variety of information, including your email address, device information, IP address, and a record of your communication.\nWhen using our software, we collect additional information such as crash reports, information about the operating system, application version, user language, and whether or not you're logged in to Things Cloud.\nWhen using Things Cloud to update your to-dos, we collect the content you provided, as well as additional information such as access logs and device identifiers. If you enable the \"Mail to Things\" feature, we collect the content of the emails you forward to the provided email address."
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "Our Privacy Policy may change from time to time. When we change the policy, we will post the changes on this page. If the policy changes in a significant way, we will also provide a notice on our website."
+]

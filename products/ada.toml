@@ -1,0 +1,74 @@
+name = "Ada "
+description = "Ada Health GmbH is a company based in Berlin which produces Ada, a health symptom checker app."
+slug = "ada"
+hostnames = [ "ada.com" ]
+sources = [ "https://ada.com/privacy-policy/" ]
+contributors = [ "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+notes = [ "No information proving such." ]
+
+[rubric.security]
+value = "yes"
+citations = [
+  "he personal data that we collect from you is stored in the European Union on Cloud Servers of Amazon Web Services EMEA S.A.R.L. (“AWS”) with a business seat in Luxembourg and on the Cloud Servers of Google Commerce Limited (“GCL”), a company incorporated under the laws of Ireland, with offices at Gordon House, Barrow Street, Dublin 4, Ireland. This data may, however, be processed by sub-processors operating outside of the European Economic Area (“EEA”) based on a data processing agreement if the additional requirements of Art. 44 et seq. GDPR for processing in third countries are compliant with an appropriate level of protection in the third country and appropriate guarantees under Art. 46 GDPR (such as standard data protection clauses, or exceptional circumstances under Art. 49 GDPR).\n\nSensitive information between your browser and our Website is transferred in encrypted form using Transport Layer Security (“TLS”). When transmitting sensitive information, you should always make sure that your browser can validate our certificate.\n\nPlease contact us if you would like further details on the specific safeguards applied to the export of your personal data outside the EEA."
+]
+
+[rubric.third-party-collection]
+value = "critical-only"
+citations = [
+  "3.3 Facebook Login\nTypes of data: Facebook ID, email (if provided in Facebook account), and phone number (if provided in Facebook account) and time and date of the login."
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [ "Last modified: 29 April 2020" ]
+
+[rubric.data-deletion]
+value = "yes-automated"
+citations = [
+  "We will hold the above data for as long as it is necessary in order to provide you with the Services, deal with any specific issues that may arise or, otherwise, as it is required by law or by any relevant regulatory body. Specific storage periods for the respective processing activities are detailed in Section 3 above.\n\nOnce your account is terminated, we will delete the personal data relating to your account within 1 month. \n\nIf you were a user of the UK Doctor Chat services (which is no longer available since 23 March 2018), your consultation details may be retained by us for a period up to 10 years according to the UK Records Management Code of Practice Retention Schedule, or if otherwise required by Care Quality Commission (“CQC”).\n\nIf your personal data is used for two different purposes, we will retain it until the purpose with the longest period expires, but we will stop using it for the purpose with the shorter period as soon as the shorter period expires.\n\nWe restrict access to your personal data to the persons who need to use it for the relevant purpose(s). Our retention periods are based on reasonable business needs, and your personal data that is no longer needed is either irreversibly anonymized (and the anonymized data may be retained) or securely destroyed."
+]
+notes = [
+  "You can delete your account based on the information provided at https://help.ada.com/hc/en-us/articles/360000319269"
+]
+
+[rubric.third-party-access]
+value = "yes-specified-noncritical"
+citations = [
+  "6.1 We use technical service providers to operate and maintain our Services, who act as our processors based on a data processing agreement."
+]
+notes = [
+  "Companies who have access to your data are:\n- Amazon Web Services (Infrastructure)\n- Google Cloud Platform (Infrastructure)\n- Hetzner Online GmbH (Infrastructure)\n- MongoDB Cloud Services, Inc (Infrastructure)\n- Adjust (Tracking)\n- Amplitude (Tracking)\n- Customer.io (Tracking)\n- Facebook SDK (Tracking)\n- New Relic (Tracking and Monitoring)\n- Sentry (Tracking)\n- Formspree.io (Customer Support)\n- Zendesk (Customer Support)\n- IP Find (Country Information)\n- Contentful (Website Content Management)\n- Prismic (Website Content Management)"
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+notes = [
+  "Due to the girth of this section, you can read each use in section 3 under the \"Use justification\" clause."
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-all"
+citations = [
+  "3.12 Monitor usage to ensure proper use, functioning, maintenance and improvement of the medical reasoning system and related Services\n[...]\nUse justification: Legitimate interest (Article 6 (1) (f) GDPR). Our legitimate interest is based on the aforementioned use of that data purposes. Under no circumstances will we use the collected data to determine your identity. We may send you transactional emails (e.g. account creation verification email, reset password email, double opt-in email regarding the newsletter subscription, welcome email) and process the page interaction accordingly, to ensure proper reception and assess the service in order to improve it. \n"
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "6.4 If we are required on the basis of EU law or the law of a Member State to disclose or share your personal data.\n\nUse justification: Legal obligation, Article 6 (1) (c) GDPR."
+]
+
+[rubric.list-collected]
+value = "exhaustively"
+notes = [
+  "Due to the girth of this section, you can read each use in section 3 under the \"Types of data\" clause."
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "Any changes we make to our Privacy Policy in the future will be posted on this page, and where appropriate, notified to you by email or notifications via the App. We therefore encourage you to review it from time to time to stay informed of how we are processing your data."
+]

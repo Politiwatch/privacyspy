@@ -1,0 +1,76 @@
+name = "Mailbox.org"
+description = "Mailbox.org is a email service provider that is priding itself on privacy and being eco-friendly."
+slug = "mailbox-org"
+hostnames = [ "mailbox.org" ]
+sources = [ "https://mailbox.org/en/data-protection-privacy-policy" ]
+contributors = [ "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+citations = [
+  "The data stored by you is used exclusively for the aforesaid purposes. Your data will not be used for other purposes, evaluated or shared under any circumstances. We have no interest in using your data for marketing or market research purposes. A sharing of the data with third parties is excluded."
+]
+
+[rubric.security]
+value = "yes"
+notes = [
+  "A deeper page involving a lot more on how they protect your data is at https://mailbox.org/en/security"
+]
+
+[rubric.third-party-collection]
+value = "critical-only"
+citations = [
+  "In some places we link to our mailbox.org pin films, which we let Vimeo host. The Vimeo video player triggers an alarm on some anti-tracking systems because it can send video quality statistics to the manufacturer Conviva (Conviva’s data protection policy). Unfortunately, we do not know any way to get around this and at the same time we are sure that Vimeo is a substantially better video hoster than Youtube.\n\nIn addition, comments from users under posts or FAQ articles can lead to a loading of avatar images from Gravatar (Gravatar data protection policy).\n\nTo protect against misuse, we use the Google reCaptcha service in our registration form. Your IP address is transmitted to this service for verification. The Google data protection policy applies to this service. We have compiled more on this topic for you here: https://kb.mailbox.org/display/MBOKB/Google+Captchas+in+registration form"
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [ "As of: 30 September 2019" ]
+
+[rubric.data-deletion]
+value = "yes-contact"
+citations = [
+  "Every Data Subject affected by the processing of personal data shall have the right to require the controller to erase the personal data concerning him or her immediately, provided that one of the following reasons applies and insofar as the processing is not necessary:\n- The personal data has been collected or otherwise processed for purposes for which it is no longer necessary.\n- The Data Subject revokes his or her consent on which the processing was based in accordance with Article 6 (1) (a) GDPR or Article 9 (2) (a) GDPR, and there is no other legal basis for the processing.\n- The Data Subject objects to the processing in accordance with Article 21 (1) GDPR and there are no overriding legitimate grounds for processing, or the Data Subject objects to processing in accordance with Article 21 (2) GDPR.\n- The personal data has been processed unlawfully.\n- The erasure of personal data is necessary to fulfil a legal obligation under European Union law or the law of the Member State to which the controller is subject.\n- The personal data was collected in relation to the offered services of the information company in accordance with Article 8 (1) GDPR.\n\nIf one of the above-mentioned reasons applies and you wish to have personal data stored at Heinlein Support GmbH erased, please contact our customer support."
+]
+
+[rubric.data-breaches]
+value = "na"
+notes = [
+  "There is no direct way to alert users of data breaches except via the service."
+]
+
+[rubric.third-party-access]
+value = "no"
+citations = [
+  "The personal data collected will not be disclosed to third parties, unless such disclosure is required by law or serves the legal defence of the data processing controller."
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "Our web servers collect various kinds of general data and information each time you visit our website. This general data and information is stored in the log files of the server. The web servers may record (1) the browser types and versions used, (2) the operating system used by the accessing system, (3) the website from which an accessing system reaches our website (so-called referrer), (4) the sub-websites which are accessed via an accessing system on our website, (5) the date and time of access of the website, (6) an internet protocol address (IP address), (7) the internet service provider of the accessing system, and (8) other similar data and information used for security purposes in the event of attacks on our information technology systems.\n\nWhen using this general data and information, Heinlein Support GmbH does not draw any conclusions about the Data Subject. Rather, this information is required to (1) correctly deliver the contents of our website, (2) optimise the contents of our website, (3) ensure the long-term functionality of our information technology systems and the technology of our website and (4) provide law enforcement authorities with the information necessary for criminal prosecution in the event of a cyber attack. The anonymously collected data and information is therefore evaluated by us statistically and also with the aim of increasing data protection and data security in our company in order to ultimately ensure an optimum level of protection for the personal data processed by us. The anonymous data of the server log files is stored separately from all personal data provided by a Data Subject.\n\nYou have the option of registering on our websites by entering personal data. The respective input mask used for registration determines what personal data will be transmitted to us. The personal data entered by you will be collected and stored exclusively for internal use and for your own purposes.\n\nWhen you register on our internet pages, the IP address assigned by your internet service provider (ISP) as well as the date and time of the registration are stored. This data is stored because this is the only way to prevent misuse of our services and, if necessary, to enable us to investigate criminal offences committed. In this respect, the storage of this data is necessary to protect the data processing controller. This data will fundamentally not be shared with third parties unless required by law or for the purpose of criminal prosecution.\n\nYour registration with voluntary disclosure of personal data lets us offer your content or services that can only be offered to registered users due to the nature of the matter. Registered persons are free to modify the personal data provided during registration at any time or to have it completely erased from the database of the data processing controller.\n\nIf requested, we will inform you at any time about what personal data concerning you is stored by us. Furthermore, we will rectify or erase personal data if requested or instructed by the Data Subject if there are no legal duties to store such data. In this context, our customer support staff are available as contacts."
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-all"
+citations = [
+  "The comments made in our blog or user forum can fundamentally be subscribed to by third parties. In particular, it is possible for a commentator to subscribe to the comments that follow their comment on a particular blog post. If you choose to subscribe to comments, an automatic confirmation email will be sent to check whether the owner of the indicated email address has actually opted for this option using the double opt-in procedure. The subscription can be cancelled at any time."
+]
+
+[rubric.law-enforcement]
+value = "strict"
+citations = [
+  "We protect free communication against eavesdropping by means of minimal data storage and other technical measures, including systematic encryption. We teach and motivate people here to make use of the technical protection options.\n\nAccording to Section 113 of the German Telecommunications Act (Telekommunikationsgesetz, TKG), the public prosecutor’s office and the police have relatively easy access to the so-called database data of a telecommunications provider like us. In this case, simple requests for information are sufficient without the need for a judge’s decision. According to Section 113 of the Telecommunications Act, a telecommunications provider cannot legally defend itself against this request for information – it must be fulfilled. It should be noted that according to Section 113 (II) of the Telecommunications Act the provider must maintain silence about the request and may not inform the affected customer about the access.\n\nAccess to the log data of mail or web servers or the email content of a mailbox requires a judge’s decision to disclose/search, unless the investigating authorities can directly establish “imminent danger”. The telecommunications provider has no legal means at its disposal, even against the search order; it can no longer defend itself against the “confiscation” of the log data.\n\nWe have no choice but to disclose data to the investigating authorities under the conditions described here; otherwise, there is the threat that entire servers will be seized in the context of a company search or, where applicable, there will also be coercive detention of employees of the company.\n\nConversely, we will not disclose any data if the legal requirements for disclosure are not mandatory (so-called “anticipatory obedience”). Such requests for information from the police without a court order will definitely be rejected by us, as in these cases it would be illegal for us to disclose the data. We, or our lawyers, strictly and critically examine all disclosure requests.\n\nHowever, we cannot judge whether the database data you provided when you registered is correct and accurate. If you encrypt your email traffic with PGP, we are also not able to make the content of these emails readable either.\n\nYou will find further information in our annual Transparency Report on requests from the authorities."
+]
+
+[rubric.list-collected]
+value = "exhaustively"
+citations = [
+  "You have the option of registering on our websites by entering personal data. The respective input mask used for registration determines what personal data will be transmitted to us. The personal data entered by you will be collected and stored exclusively for internal use and for your own purposes.\n\nWhen you register on our internet pages, the IP address assigned by your internet service provider (ISP) as well as the date and time of the registration are stored. This data is stored because this is the only way to prevent misuse of our services and, if necessary, to enable us to investigate criminal offences committed. In this respect, the storage of this data is necessary to protect the data processing controller. This data will fundamentally not be shared with third parties unless required by law or for the purpose of criminal prosecution.\n\nYour registration with voluntary disclosure of personal data lets us offer your content or services that can only be offered to registered users due to the nature of the matter. Registered persons are free to modify the personal data provided during registration at any time or to have it completely erased from the database of the data processing controller.\n\nIf requested, we will inform you at any time about what personal data concerning you is stored by us. Furthermore, we will rectify or erase personal data if requested or instructed by the Data Subject if there are no legal duties to store such data. In this context, our customer support staff are available as contacts.\n\nDue to legal regulations, the websites of Heinlein Support GmbH contain information that enables rapid electronic contact with our company and direct communication with us, which also includes a general address for so-called electronic mail (email address). If you contact us by email or via a contact form, the personal data transmitted by you will be stored automatically. Such personal data transmitted by you to us on a voluntary basis will be stored for the purposes of processing or contacting you. This personal data will not be shared with third parties.\n\nWe offer you the opportunity to leave individual comments or individual contributions on our blog or in our user forum located on our websites. A blog or user forum is a portal on a website, usually open to the public, in which one or more people who are called bloggers or web bloggers can post articles or write down thoughts in so-called blog posts. Comments can usually be made by third parties at the blog posts.\n\nIf you leave a comment in our blog or user forum, not only the comments you leave will be saved and published, but also information about the time you made the comment and your chosen user name (pseudonym). The IP address assigned by your internet service provider (ISP) is also logged. This IP address is stored for security reasons and in case the Data Subject violates the rights of third parties or posts illegal content by submitting a comment. The storage of this personal data is therefore in our interest, so that we can clear ourselves of any liability in the event of a violation of the law. The personal data collected will not be disclosed to third parties, unless such disclosure is required by law or serves the legal defence of the data processing controller."
+]
+
+[rubric.revision-notify]
+value = "na"
+notes = [
+  "There is no direct way to alert users of policy changes except via the service."
+]

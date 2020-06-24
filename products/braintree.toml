@@ -1,0 +1,76 @@
+name = "Braintree"
+description = "Braintree, a division of PayPal, is a company based in Chicago that specializes in mobile and web payment systems for e-commerce companies."
+slug = "braintree"
+hostnames = [ "braintreepayments.com", "braintreegateway.com" ]
+sources = [
+  "https://www.braintreepayments.com/legal/braintree-privacy-policy"
+]
+contributors = [ "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+citations = [
+  "We share information with: [...] Businesses and members of the public, when data is aggregated and does not personally identify you; and"
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "We maintain technical, physical, and administrative security measures designed to provide reasonable protection for your information against loss, misuse, unauthorized access, disclosure, and alteration. The security measures include firewalls, data encryption, physical access controls to our data centers, and information access authorization controls."
+]
+
+[rubric.third-party-collection]
+value = "no"
+notes = [ "There is no mention of collecting data from third-parties." ]
+
+[rubric.history]
+value = "last-modified"
+citations = [ "Effective Date: December 27, 2019" ]
+
+[rubric.data-deletion]
+value = "no"
+citations = [
+  "Your Rights\nYou may review limited Personal Data after logging in to your Account. If you need to edit or update your information, please contact us. If you do not have an Account or if you have questions about your Account information or other Personal Data, please contact us."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "There is no mention of a disclosure of breaches being made."
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = [
+  "We share information with: Other members of the PayPal corporate family such as our affiliated entities; Other companies that we have hired to provide services on our behalf; Other third parties where necessary for our business purposes or as required by law; Businesses and members of the public, when data is aggregated and does not personally identify you; and Otherwise with your consent."
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "We may use information:\n- For our legitimate interests, namely:To operate the Braintree Services; To contact and communicate with you when you reach out to us to ask us about our Braintree Services; To manage everyday business needs; To analyze or improve the Braintree Services or additional products or services; and\nTo protect the Braintree Services and the rights of Users and others to enforce the terms of the Braintree Services;\n- To comply with our obligations, including to comply with all applicable laws and regulations; and\n- To send you promotional materials from us or on behalf of our affiliates and business partners."
+]
+
+[rubric.noncritical-purposes]
+value = "no"
+notes = [
+  "There is no mention of opt-out for data sharing that isn't required."
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "To comply with our obligations, including to comply with all applicable laws and regulations; and\n[...]\nOther third parties where necessary for our business purposes or as required by law;"
+]
+
+[rubric.list-collected]
+value = "generally"
+citations = [
+  "The Braintree Sites are where you can learn more about Braintree Services and how to become a User, sign up for more information about our Braintree Services, or access your Account if you are a User. We may collect Personal Data about you when you visit or access the Braintree Sites, including the following:\n\nPersonal Data You Provide to Us Voluntarily – We collect information about you that you voluntarily provide to us when you: (i) contact us to learn more about Braintree, the Braintree Services, or other opportunities you indicate are of interest at the time; (ii) access or use the Braintree Service; or (iii) contact customer service. This information may include, for example, your name, mailing address, business name, and any other information that you choose to provide to us when you comment on materials on our Braintree Services, in order to contact you as a potential customer, or respond to a support request. This also includes technical data, such as IP addresses and device identifiers that are commonly generated in establishing a connection with the Braintree Services.\n\nRetention – We collect and retain Personal Data submitted to the Braintree Services in an identifiable format for the amount of time necessary to meet your request or fulfill our legal or regulatory obligations, unless it is in our legitimate business interests and not prohibited by law to maintain the Personal Data for longer periods."
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "We may change this Privacy Policy from time to time to reflect changes to our privacy practices for our Braintree Services. The revised Privacy Policy will be effective as of the published Effective Date.\n\nIf we make a material change to the Privacy Policy, we will notify you in advance by posting notice of the change on the Braintree Services before the change becomes effective. We also may notify you of the change using email or other means."
+]

@@ -1,0 +1,80 @@
+name = "Tenable"
+description = "Tenable is a software company"
+slug = "tenable"
+hostnames = [ "tenable.com" ]
+sources = [ "https://www.tenable.com/privacy-policy" ]
+contributors = [ "newuser_CTscb" ]
+
+[rubric.behavioral-marketing]
+value = "yes-opt-out"
+citations = [
+  "Targeted and advertising cookies \t\n\nThese cookies track your browsing habits to enable us to show advertising which is more likely to be of interest to you. These cookies use information about your browsing history to group you with other users who have similar interests. Based on that information, and with our permission, third party advertisers can place cookies to enable them to show adverts which we think will be relevant to your interests while you are on third party websites.\n\nYou can disable cookies which remember your browsing habits and target advertising at you by visiting http://www.youronlinechoices.com/ or http://optout.aboutads.info/. If you choose to remove targeted or advertising cookies, you will still see advertisements, but they may not be relevant to you. Even if you do choose to remove cookies by the companies listed at the above link, not all companies that serve online behavioral advertising are included in this list, and so you may still receive some cookies and tailored advertisements from companies that are not listed."
+]
+notes = [
+  "Altough the opt-out is done with more cookies, either from http://www.youronlinechoices.com or http://optout.aboutads.info/.\n"
+]
+
+[rubric.security]
+value = "no"
+citations = [
+  "11. Security\n\nWe seek to use reasonable organizational, technical, and administrative measures to protect Personal Data within our organization. Unfortunately, no transmission or storage system can be guaranteed to be completely secure, and transmission of information via the internet is not completely secure. If you have reason to believe that your interaction with us is no longer secure (for example, if you feel that the security of any account you might have with us has been compromised), please immediately notify us of the problem by contacting us using the details in Section 17 below."
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "Targeted and advertising cookies \t\n\nThese cookies track your browsing habits to enable us to show advertising which is more likely to be of interest to you. These cookies use information about your browsing history to group you with other users who have similar interests. Based on that information, and with our permission, third party advertisers can place cookies to enable them to show adverts which we think will be relevant to your interests while you are on third party websites.\n"
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [ "Last Updated: January 6, 2020" ]
+
+[rubric.data-deletion]
+value = "yes-contact"
+citations = [
+  "15. Your California Privacy Rights\n\nThe California Consumer Privacy Act of 2018 (“CCPA”) gives California residents certain rights as described below. For this section, we use the terms “personal information” and “sale” as those are defined in the CCPA.\n\n    Request to know – You have the right to request a copy of the categories or specific pieces of personal information that Tenable collects, uses, shares or sells about you.\n    Request to delete - You have the right to request that Tenable delete the personal information we have collected from you.\n    You have the right to request to opt out from the sale of your personal information. Because Tenable does not sell your personal information, you do not need to exercise this right.\n\nYour right to know and right to delete are subject to certain exceptions under the CCPA, for example as necessary to perform or evidence a transaction or contract, comply with a legal obligation, or when a consumer’s identity cannot be reasonably verified.\nExercising your CCPA Rights\n\nTo make a CCPA request, you can:\n\n    Call us toll-free at 833-720-0398.\n    Email us at privacy@tenable.com using “CCPA Request” in the subject line.\n"
+]
+notes = [ "ONLY IN CALIFORNIA" ]
+
+[rubric.data-breaches]
+value = "no"
+citations = [
+  "5. Using Your Personal Data\nWe **may** use your Personal Data as follows:\nto send information including technical notices, updates, security alerts, and support and administrative messages regarding our Site or your evaluation license;"
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = [
+  "6. Sharing Your Personal Data\n\nWe may share your Personal Data as follows:\n\n    Third Parties Designated by You. We may share your Personal Data with third parties where you have provided your consent to do so.\n\n    Our Third Party Service Providers. We may share your Personal Data with our third-party service providers who provide services such as data analysis, distribution partners, resellers, information technology and related infrastructure provision (such as Amazon Web Services), email delivery, auditing, and other similar services. We may also give information to one of our partners, located here https://www.tenable.com/partners/channel-partner-directory. These third parties are only permitted to use your Personal Data to the extent necessary to enable them to provide their services to us. They are required to follow our express instructions and to comply with appropriate security measures to protect your Personal Data.\n\n    Third Party Advertisers. We may share Personal Data with advertisers and advertising networks that require the data to select and serve relevant advertisements to you and others.\n"
+]
+
+[rubric.data-collection-reasoning]
+value = "no"
+citations = [
+  "Why do we need your Personal Data?\n\nWe will only collect and/or process your Personal Data in compliance with applicable data protection and privacy laws and in accordance with this Policy. In order to provide you with access to the Site, we  may process your Personal Data in accordance with this Policy. If you create a profile or register with us, you will be asked to agree to provide certain information in order to access our services or view our content. By agreeing to do so you consent to your Personal Data being processed by us. This consent provides us with the legal basis to process your Personal Data.  If you change your mind and wish to withdraw your consent to us processing your Personal Data, you may withdraw your consent at any time.There may also be instances where you are required to provide your information to purchase products or access the Tenable Community and Tenable University. In such cases, Tenable has a legitimate business interest to process your Personal Data.  If you do not agree to our use of your Personal Data in line with this Policy, please do not use our Site."
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-all"
+citations = [
+  "14. Your Rights\n\nYou have certain rights relating to your Personal Data, subject to local data protection laws. Depending on the applicable laws, and, in particular, if you are located in the EEA, these rights may include:\n\n    Opt-out. You may contact us anytime to opt-out of: (i) direct marketing communications; (ii) automated decision-making and/or profiling; (iii) our collection of sensitive Personal Data; (iv) any new processing of your Personal Data that we may carry out beyond the original purpose; or (v) the transfer of your Personal Data outside the EEA. Please note that your use of some of the Site  may be ineffective upon opt-out."
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "Other Disclosures. We may share Personal Data as we believe necessary or appropriate: (a) to comply with applicable laws; (b) to comply with lawful requests and legal process, including to respond to requests from public and government authorities to meet national security or law enforcement requirements; (c) to enforce our Policy; and (d) to protect our rights, privacy, safety or property, and/or that of you or others."
+]
+
+[rubric.list-collected]
+value = "generally"
+citations = [
+  "2. Collecting Your Personal Data\n\nWe collect information about you in the following ways:\n\nInformation You Give Us. This may include:\n\n    any Personal Data you provide to us, including name, postal address, email address, telephone number, and a username;\n    any Personal Data that may be contained in any video, comment, or other submission you upload or post to the Site;\n    any Personal Data you provide when you report a problem with our Site or when we provide you with technical support for your evaluation license;\n    any Personal Data you provide when you make a purchase through our Site;\n    any Personal Data you provide when you use our Site’s live chat feature; and\n    any Personal Data you provide when you correspond with us by phone, email, or otherwise.\n\n Information from Social Networking Sites. Our Site includes interfaces that allow you to connect with social networking sites (each a “SNS”). If you connect to a SNS through our Site, you authorize us to access, use and store the information that you agreed the SNS could provide to us based on your settings on that SNS. We will access, use and store that information in accordance with this Policy. You can revoke our access to the information you provide in this way at any time by amending the appropriate settings from within your account settings on the applicable SNS.\n\nInformation We Get from Others. We may also get information about you from other sources, for example, if you have agreed to share information with one of our partners, listed here: https://www.tenable.com/partners/channel-partner-directory, or through our e-commerce provider,    content syndicators, or other associated business partners. \n\nInformation Automatically Collected. We automatically log information about you and your computer or mobile device when you access our Site. For example, when visiting our Site, we identify an initial public IP address to identify where you are located, we log your computer or mobile device operating system name and version, browser type, browser language, screen resolution, the website you visited before browsing to our Site, pages you viewed, how long you spent on a page, access times and information about your use of and actions on our Site. We collect this information about you by using cookies. Please refer to the sections on cookies, flash technology and pixel tags below.  \n\nAutomated Decision Making and Profiling.  We may use automated decision making and/or profiling in regard to your Personal Data for some services and products, for example, when logging into Tenable’s Community, Tenable will need to identify if you are a customer or not, or messaging may change depending on your prior visits to our site.  You can request a manual review of the accuracy of an automated decision that you are unhappy with or limit or object to such automated decision making and/or profiling by contacting us at privacy@tenable.com."
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "Changes to this Policy: We will post any modifications or changes to the Policy on our Site. We reserve the right to modify the Policy at any time, so we encourage you to review it frequently. The “Last Updated” legend above indicates when this Policy was last changed. If we make any material change(s) to the Policy, we will notify you via email and/or post a notice on our Site prior to such changes(s) taking effect. We encourage you to periodically review this Policy to stay informed about our collection, processing, and sharing of your Personal Data."
+]

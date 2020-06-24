@@ -1,0 +1,79 @@
+name = "StartMail"
+description = "StartMail is a paid email service made by the people behind Startpage.com."
+slug = "startmail"
+hostnames = [ "startmail.com" ]
+sources = [ "https://www.startmail.com/en/privacy/" ]
+contributors = [ "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+citations = [
+  "We therefore don’t track your behaviour online and we don’t build any personal profiles of you. The StartMail Service is strictly ad-free."
+]
+
+[rubric.security]
+value = "yes-independent-audits"
+citations = [
+  "On the Technical Side, we use state-of-the-art cryptography to protect your data. For example:\n\nTraffic between the User and our servers is encrypted with SSL, and perfect forward secrecy is applied.\nWe only store passwords in hashed form on our servers.\nYour StartMail inbox and its folders are stored in your own encrypted User Vault. Your User Vault is only opened when you login. When it is closed it is inaccessible to anyone.\nWhen you are logged out of StartMail, your entire inbox is encrypted. When you are logged in, your unencrypted emails are unencrypted, but all of your PGP-encrypted emails are still encrypted unless you open an encrypted email by submitting your PGP-passphrase.\nUsers can encrypt emails via OpenPGP.\nThe users’ key-pair is stored in the User Vault. Additionally, the private key is encrypted by means of the passphrase. Without the passphrase the private key it can’t be decrypted or used.\nWe only use validated encryption algorithms that are considered safe by respected cryptographers.\nFor more detailed information about our technical security measures, please read our Security White Paper.\n\nOn the Organizational Side we have strict protocols in place to ensure the safety of your data. For example:\n\nAt each level, access to our systems is restricted to authorized staff with a legitimate need to know. This access is tightly limited, and is only for the purpose of providing the StartMail Service to you.\nAny individual, who is given access to the StartMail system, is required to sign a confidentiality agreement.\nNo third party, contractor, or sub-contractor of StartMail is given access to the system, except for the purpose of enabling us to provide the StartMail Service to you. All such parties must sign a data processing agreement, containing confidentiality provisions and stringent security protocols."
+]
+notes = [
+  "Their security whitepaper (https://www.startmail.com/en/whitepaper/) describes how they hire independent third party auditors to review their service"
+]
+
+[rubric.third-party-collection]
+value = "no"
+notes = [
+  "There is no information of the service collecting personal data from third parties."
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [
+  "Last Modified: April 8th 2020\n\nEffective: April 15th 2020"
+]
+
+[rubric.data-deletion]
+value = "yes-contact"
+citations = [
+  "If you inform us that you withdraw your consent to process your information, we will delete your information, unless we are legally required to keep it (e.g. invoices, as explained below under retention periods)."
+]
+
+[rubric.data-breaches]
+value = "na"
+notes = [
+  "This service doesn't collect any contact information, thus it cannot reasonably contact a user in the event of a data breach except via its own service"
+]
+
+[rubric.third-party-access]
+value = "yes-specified-critical"
+citations = [
+  "Chargebee\n\nThe information that you provide through Chargebee is subject to the Chargebee Privacy Policy. In addition to the payment details, an e-mail address which functions as an alias which is generated when you register at StartMail will be shared with Chargebee to help you and StartMail manage your subscription for example: you can receive notification when a charge is about to be incurred or has failed.\n\nStripe\n\nThe information that you provide through Stripe such as your credit card number, credit card expiration date, card security code is subject to the Stripe Privacy Policy.\n\nPayPal\n\nStartMail supports PayPal as a payment processing provider. If you choose to pay with Paypal you agree with their privacy policy. You can find their privacy policy here: To make payments as easy and user-friendly as possible, StartMail sends your name and e-mail address to Paypal during a payment process. All this information would be requested by the provider anyway."
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "When signing up for the StartMail Service you are asked to provide:\n\nA name that you choose (optional and may be an alias or pseudonym, but see also our Terms of Service),\n→ to be able to address you when we communicate with you.\nVerification email address,\n→ This address is used to send you an activation link to activate your StartMail trial account. To maintain the integrity of the StartMail service, StartMail must take measures to avoid the automatic creation of accounts by spammers. This is because if spammers use StartMail to send messages, StartMail’s IP addresses can become blocked by major mail providers such as Gmail, Yahoo, Outlook, etc.\nYour desired email address (required),\n→ to provide you with your StartMail email address\nA password (required),\n→ to provide authentication for your Account.\nA Recovery Email Address (optional, see also our ToS),\n→ to communicate with you in the event that you need to recover access to your StartMail Account should you ever lose your password.\nAn invite code (optional, if you have one),\n→ to give you the benefit of a promotional offer.\nYour preference as to whether you would like to subscribe to our newsletter(s),\n→ to send you our newsletters only if you want to receive them.\nInformation collected as a result of you answering prompts, such as image labeling data, text converted from audio files played to you,\n→ in order for us to protect our website from spam and abuse, we use hCaptcha. Intuition Machines can deduce if we are dealing with a legitimate website visitor or a robot. We have a legitimate interest to know this. For more information, please read hCaptcha’s Privacy Statement."
+]
+
+[rubric.noncritical-purposes]
+value = "na"
+notes = [ "Data is only used for required purposes" ]
+
+[rubric.law-enforcement]
+value = "strict"
+citations = [
+  "While we respect and try to protect your privacy to the best of our abilities, your use of StartMail does not place you above the law. But neither do we place authorities above the law. ONLY if we receive a request from Dutch judicial authorities to hand over information about one of our Users, we will have our lawyers check the validity of the request and determine whether we are obliged to comply. We will NOT comply with such requests unless we are convinced that the request is legally valid and we believe that it is undeniably our legal obligation to comply.\n\nWe will NOT comply with requests from any authorities other than Dutch authorities. If we receive a request from any foreign government, we will refuse to comply and will instead instruct the requestor to place a formal request to the Dutch authorities for mutual assistance.\n\nStartMail will never cooperate with any voluntary surveillance programs. Under the strong laws that protect the right to privacy in Europe, European governments cannot legally force service providers like StartMail to implement a blanket-spying program on their users."
+]
+
+[rubric.list-collected]
+value = "generally"
+citations = [
+  "A name that you choose (optional and may be an alias or pseudonym, but see also our Terms of Service),\n→ to be able to address you when we communicate with you.\nVerification email address,\n→ This address is used to send you an activation link to activate your StartMail trial account. To maintain the integrity of the StartMail service, StartMail must take measures to avoid the automatic creation of accounts by spammers. This is because if spammers use StartMail to send messages, StartMail’s IP addresses can become blocked by major mail providers such as Gmail, Yahoo, Outlook, etc.\nYour desired email address (required),\n→ to provide you with your StartMail email address\nA password (required),\n→ to provide authentication for your Account.\nA Recovery Email Address (optional, see also our ToS),\n→ to communicate with you in the event that you need to recover access to your StartMail Account should you ever lose your password.\nAn invite code (optional, if you have one),\n→ to give you the benefit of a promotional offer.\nYour preference as to whether you would like to subscribe to our newsletter(s),\n→ to send you our newsletters only if you want to receive them.\nInformation collected as a result of you answering prompts, such as image labeling data, text converted from audio files played to you,\n→ in order for us to protect our website from spam and abuse, we use hCaptcha. Intuition Machines can deduce if we are dealing with a legitimate website visitor or a robot. We have a legitimate interest to know this. For more information, please read hCaptcha’s Privacy Statement.\n\n[...]\n\nYou may send us feedback or a support request. StartMail processes personal data to offer you support. For this purpose, we use the information provided by you, such as your email address and your feedback or request. We need this information for the performance of a contract: to respond to your feedback or support request.\n\nWe use Zendesk to process your feedback or support request. Zendesk is located in the US and has a Privacy Shield certificate. This means that appropriate safeguards have been taken to protect your privacy. Nevertheless, If you do not want that, then you can send an e-mail to support-alt@startmail.com. Note that it may take slightly longer for an agent to pick up your request. We store any communications up to a maximum of two years.\n\nNote: if your message is abusive in language or content, we may block further messages from you.\n\n[...]\n\nFor payment processing, StartMail relies on third parties such as Stripe and Paypal to process payment details such as credit card information to process your payments or refunding such payments. In accordance with Payment Card Industry Security Standards (PCI DSS), which our payment and subscriptions providers all adhere to, they are not permitted to use your information for anything other than processing your payment.\nFor subscription management, StartMail relies on Chargebee to manage customer lifecycle operations such as managing trials, assigning credits, issuing refunds and making mid-cycle subscription Our subscription management provider processes data only as our ‘processor’ (as intended in the GDPR). Through our data processing agreement, we have bound this provider to only process data in order to provide their services to us and not for other purposes. In addition, we pseudonymize your data before providing it to our subscription management provider."
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "We may change our Privacy Policy from time to time. Any changes to our Privacy Policy will be posted on this page, and we will provide a more prominent notice, such as an email message, if we believe a change significantly affects your privacy. You may also review older versions of our Privacy Policy through our Website."
+]

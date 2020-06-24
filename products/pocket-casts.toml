@@ -1,0 +1,70 @@
+name = "Pocket Casts"
+description = "Pocket Casts is a free podcast service made by Podcast Media"
+slug = "pocket-casts"
+hostnames = [ "pocketcasts.com", "pca.st" ]
+sources = [ "https://support.pocketcasts.com/article/privacy-policy/" ]
+contributors = [ "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+citations = [
+  "Will you share my information?\nNo.\n\nWe will only disclose your information if we have your consent to do so, we are compelled to do so by law, or we do so in connection with the sale or reorganisation of the Service."
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "The data collected pursuant to this Privacy Policy will be securely stored on our servers. We use a variety of technologies to encrypt and secure your information to prevent access by unauthorised parties."
+]
+
+[rubric.third-party-collection]
+value = "no"
+citations = [
+  "If you turn on push notifications in the app, we store the push token Apple provides us in order to deliver those push notifications to your device.\n\nIf you choose to purchase a subscription to Pocket Casts Plus, in addition to the information associated with your account, we store:\n\nA transaction id for your purchase (if purchased from our website);\nA purchase token (if purchased from the Google Play Store);\nA purchase receipt (if purchased from the iTunes Store)."
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [ "Effective Date: 18 September 2019" ]
+
+[rubric.data-deletion]
+value = "yes-contact"
+citations = [
+  "Yes.\n\nYou can delete your sync account by contacting us via support@pocketcasts.com\nAfter complying with your request all your data will be deleted and you will no longer be able to sign into your account. Any support requests will be retained for our records."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [ "No information is provided proving so." ]
+
+[rubric.third-party-access]
+value = "no"
+citations = [ "Will you share my information?\nNo." ]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "Why do you collect information about me?\nTo provide the Service to you;\n\nTo provide effective support to you during your use of the Service;\n\nTo secure your account against unauthorised access;\n\nTo aggregate subscription data to generate the charts displayed in the Discover section, for the benefit of the Pocket Casts community."
+]
+
+[rubric.noncritical-purposes]
+value = "na"
+notes = [ "There are no opt-in features (minus their newsletter)." ]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "We will only disclose your information if we have your consent to do so, we are compelled to do so by law, or we do so in connection with the sale or reorganisation of the Service."
+]
+
+[rubric.list-collected]
+value = "exhaustively"
+citations = [
+  "If you choose to create an account in our app, we store:\n\nYour username in the form of an email address, and password;\nYour podcast subscriptions, playlists, episode filters, episode data and settings configuration;\nYour device language;\nA count of failed sign in attempts for your account;\nThe date and time you last synced with our server.\nIf you turn on push notifications in the app, we store the push token Apple provides us in order to deliver those push notifications to your device.\n\nIf you choose to purchase a subscription to Pocket Casts Plus, in addition to the information associated with your account, we store:\n\nA transaction id for your purchase (if purchased from our website);\nA purchase token (if purchased from the Google Play Store);\nA purchase receipt (if purchased from the iTunes Store).\n\nIf you choose to subscribe to our newsletter, we store your choice and send your email address to MailChimp for processing. Learn more about Mailchimp’s privacy practices here.\n\nIf you choose not to create an account, and don’t use push notifications, no data is stored about you on our servers.\n\nPocket Casts web service also uses cookies and like technologies to keep you logged in.\n\nShould you choose to generate a support request from within the Service, we may generate an attachment containing additional data to assist in addressing your support request which you’re welcome to view prior to submission."
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "We may need to update this Policy to reflect changes in the Service, our business and applicable laws. We will, however, always maintain our commitment to respect your privacy. We will post any revisions to this Policy on our website. Your continuation of use of the Service after any change means that you agree with, and consent to be bound by, the new Privacy Policy."
+]

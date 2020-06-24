@@ -1,0 +1,71 @@
+name = "Firefox Send"
+description = "Firefox Send is a free-to-use, online file-sending service, able to handle files up to 2.5 GB."
+slug = "firefox-send"
+hostnames = [ "send.firefox.com" ]
+sources = [ "https://send.firefox.com/legal" ]
+contributors = [ "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+notes = [
+  "No data is collected that can identify a user. When logged in with a Firefox Account, no identifiable information will be shared with third parties."
+]
+
+[rubric.security]
+value = "yes"
+citations = [
+  "Mozilla receives an encrypted copy of the file you upload but we cannot access the content or name of your encrypted file."
+]
+notes = [
+  "Only a file is stored/collected by the service; there is not much they can do to protect said file"
+]
+
+[rubric.third-party-collection]
+value = "no"
+notes = [ "No third party data is collected" ]
+
+[rubric.history]
+value = "last-modified"
+citations = [ "Version 1.0, dated March 12, 2019" ]
+
+[rubric.data-deletion]
+value = "na"
+notes = [
+  "You cannot register for an account. If you have a Firefox Account, you are held by the separate respective clauses for this response."
+]
+
+[rubric.data-breaches]
+value = "na"
+notes = [
+  "Without an account, you cannot be contacted (you can use the service anonymously, essentially). With an account, you fall under the Mozilla Privacy Policy."
+]
+
+[rubric.third-party-access]
+value = "no"
+notes = [
+  "No excess data is collected that can be connected back to a user"
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "IP addresses: We receive IP addresses of downloaders and uploaders as part of our standard server logs. These are retained for 90 days, and for that period, may be connected to activity of a file’s download URL. Although we develop our services in ways that minimize identification, you should know that it may be possible to correlate the IP address of a Send user to the IP address of other Mozilla services with accounts; and if there is a match, this could identify the account email address.\nFirefox Account: This is required for authentication only if you wish to upload larger file sizes. Your Firefox Account record will retain aggregate data on your usage of Send: for example, if you created a Firefox Account in connection with Send, number of files sent and approximate file sizes, and how many times you’ve used the service."
+]
+
+[rubric.noncritical-purposes]
+value = "na"
+notes = [ "No non-essential data is collected." ]
+
+[rubric.law-enforcement]
+value = "na"
+notes = [ "No personal data is gathered that can be shared" ]
+
+[rubric.list-collected]
+value = "exhaustively"
+citations = [
+  "Personal data: The following is necessary to provide the service:\nIP addresses: We receive IP addresses of downloaders and uploaders as part of our standard server logs. These are retained for 90 days, and for that period, may be connected to activity of a file’s download URL. Although we develop our services in ways that minimize identification, you should know that it may be possible to correlate the IP address of a Send user to the IP address of other Mozilla services with accounts; and if there is a match, this could identify the account email address.\nFirefox Account: This is required for authentication only if you wish to upload larger file sizes. Your Firefox Account record will retain aggregate data on your usage of Send: for example, if you created a Firefox Account in connection with Send, number of files sent and approximate file sizes, and how many times you’ve used the service.\nNon-personal data: We receive the following to improve our service and performance:\nInteraction data: This includes information such as number of people sending and receiving files, number of files uploaded and approximate file sizes, percentage of file downloaders who become uploaders, how people engage with the website (time spent, clicks, referrer information, site exit path, use of passwords).\nTechnical data: This includes information such as operating system, browser, language preference, country, timestamps, duration for file transfer, reasons for errors, reasons for file expiration."
+]
+
+[rubric.revision-notify]
+value = "na"
+notes = [ "No contact information is collected" ]

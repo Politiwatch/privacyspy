@@ -1,0 +1,79 @@
+name = "Uniregistry"
+description = "Uniregistry is a large retail domain name registrar and web services provider; as well as a domain name registry that administers generic top-level domains."
+slug = "uniregistry"
+hostnames = [ "uniregistry.com" ]
+sources = [ "https://uniregistry.com/legal/privacy-policy" ]
+contributors = [ "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "yes-opt-out"
+citations = [
+  "If you wish to opt out of interest-based advertising click here [or if located in the European Union click here]. Please note you will continue to receive generic ads."
+]
+notes = [
+  "The link for outside the EU is http://preferences-mgr.truste.com/. In the EU, it is: https://www.youronlinechoices.com/"
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "We follow generally accepted standards to store and protect the personal information we collect, both during transmission and once received and stored, including utilization of encryption where appropriate.\n\nWe retain personal information only for as long as necessary to provide the Services you have requested and thereafter for a variety of legitimate legal or business purposes. These might include retention periods: mandated by law, contract or similar obligations applicable to our business operations; for preserving, resolving, defending or enforcing our legal/contractual rights; or needed to maintain adequate and accurate business and financial records.\nIf you have any questions about the security or retention of your personal information, you can contact us at privacy@uniregistry.com."
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "Supplemented Data may be received about you from other sources, including publicly available databases or third parties from whom we have purchased data, in which case we may combine this data with information we already have about you so that we can update, expand and analyze the accuracy of our records, assess the qualifications of a candidate for employment, identify new customers, and provide products and services that may be of interest to you. If you provide us personal information about others, or if others give us your information, we will only use that information for the specific reason for which it was provided to us."
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [ "Last modified: 27 March 2020" ]
+
+[rubric.data-deletion]
+value = "yes-contact"
+citations = [
+  "If you wish to delete or port your personal information, you may submit your request to privacy@uniregistry.com. If you make a request to delete your personal information and that data is necessary for the products or services you have purchased, the request will be honored only to the extent it is no longer necessary for any Services purchased or required for our legitimate business purposes or legal or contractual record keeping requirements."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "There is no requirement by this policy for this service to disclose data breaches."
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = [
+  "We may share your personal information with affiliated companies within our corporate family, with third parties with which we have partnered to allow you to integrate their services into our own Services, and with trusted third party service providers as necessary for them to perform services on our behalf, such as: Processing credit card payments; Serving advertisements; Conducting contests or surveys; Performing analysis of our Services and customers demographics; Communicating with you, such as by way email or survey delivery; Customer relationship management; Recruiting support and related services."
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "We strongly believe in both minimizing the data we collect and limiting its use and purpose to only that (1) for which we have been given permission, (2) as necessary to deliver the Services you purchase or interact with, or (3) as we might be required or permitted for legal compliance or other lawful purposes:\n- We collect various information relating to your purchase, use and/or interactions with our Services. We utilize this information to: Improve and optimize the operation and performance of our Services (again, including our websites and mobile applications); Diagnose problems with and identify any security risks, errors, or needed enhancements to the Services; Detect and prevent fraud and abuse of our Services and systems; Collecting aggregate statistics about use of the Services; Understand and analyze how you use our Services and what products and services are most relevant to you. Much of the data collected is aggregated or statistical data about how individuals use our Services, and is not linked to any personal information.\n- We may share your personal information with affiliated companies within our corporate family, with third parties with which we have partnered to allow you to integrate their services into our own Services, and with trusted third party service providers as necessary for them to perform services on our behalf, such as: Processing credit card payments; Serving advertisements; Conducting contests or surveys; Performing analysis of our Services and customers demographics; Communicating with you, such as by way email or survey delivery; Customer relationship management; Recruiting support and related services.\nWe only share your personal information as necessary for any third party to provide the services on our behalf, or when we have your express consent to do so. These third parties (and any subcontractors they may be permitted to use) are subject to strict data processing terms and conditions and are prohibited from utilizing, sharing or retaining your personal information for any purpose other than as they have been specifically contracted for. Under limited circumstances related to our Marketplace Services, we will only share your information with the domain seller when we have your express consent to do so.\n\nWe may also share your information with third parties for the purpose of facilitating / allowing a merger, acquisition or sale of all or substantially all of our assets, in which case the acquiring company may continue to utilize your data in the manner for which it was provided and intended.\n\nWe may contact you directly or through a third party service provider regarding products or services you have signed up or purchased from us, such as necessary to deliver transactional or service related communications. We may also contact you with offers for additional services we think you’ll find valuable if you give us consent, or where allowed based upon legitimate interests. You don’t need to provide consent as a condition to purchase our goods or services. These contacts may include: Email; Text (SMS) messages; Telephone calls; Messenger applications (e.g. WhatsApp, etc.); Automated phone calls or text messages.\n\nIf you are no longer interested in having us contact you, our communications to you include an \"opt out\" link to discontinue any further communications. If we collect information from you in connection with a co-branded offer, it will be clear at the point of collection who is collecting the information and whose privacy policy applies. In addition, it will describe any choice options you have in regards to the use and/or sharing of your personal information with a co-branded partner, as well as how to exercise those options. We are not responsible for the privacy practices or the content of third-party sites. Please read the privacy policy of any website you visit.\n\nIf you believe that anyone has provided us with your personal information and you would like to request that it be removed from our database, please contact us at privacy@uniregistry.com.\n\nIf you utilize our Services from a country other than the country where our servers are located, your personal information may be transferred across international borders. Also, when you call us or initiate a chat, we may provide you with support from one of our global locations outside your country of origin.\n\nWe cooperate with government and law enforcement officials and private parties to enforce and comply with the law. We will disclose any information about you to government or law enforcement officials or private parties as we, in our sole discretion, believe necessary or appropriate to respond to claims and legal process (such as subpoena requests), to protect our property and rights or the property and rights of a third party, to protect the safety of the public or any person, or to prevent or stop activity we consider to be illegal or unethical.\n\nTo the extent we are legally permitted to do so, we will take reasonable steps to notify you in the event that we are required to provide your personal information to third parties as part of legal process."
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-some"
+citations = [
+  "If you wish to opt out of interest-based advertising click here [or if located in the European Union click here]. Please note you will continue to receive generic ads.\n[...]\nIf you are no longer interested in having us contact you, our communications to you include an \"opt out\" link to discontinue any further communications. If we collect information from you in connection with a co-branded offer, it will be clear at the point of collection who is collecting the information and whose privacy policy applies. In addition, it will describe any choice options you have in regards to the use and/or sharing of your personal information with a co-branded partner, as well as how to exercise those options. We are not responsible for the privacy practices or the content of third-party sites. Please read the privacy policy of any website you visit."
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "We cooperate with government and law enforcement officials and private parties to enforce and comply with the law. We will disclose any information about you to government or law enforcement officials or private parties as we, in our sole discretion, believe necessary or appropriate to respond to claims and legal process (such as subpoena requests), to protect our property and rights or the property and rights of a third party, to protect the safety of the public or any person, or to prevent or stop activity we consider to be illegal or unethical."
+]
+
+[rubric.list-collected]
+value = "generally"
+citations = [
+  "Much of what you likely consider personal information is collected directly from you when you: create an account or purchase any of our Services (ex: billing information, including name, address, credit card number, government identification); request assistance from our award-winning customer support team (ex: phone number); complete contact forms or request newsletters or other information from us (ex: email); or participate in contests and surveys, apply for a job, or otherwise participate in activities we promote that might require information about you.However, we also collect additional information when delivering our Services to you to ensure necessary and optimal performance. These methods of collection may not be as obvious to you, so we thought we’d highlight and explain a bit more about what these might be (as they vary from time to time): \n\nCookies and similar technologies on our websites and our mobile applications allow us to track your browsing behavior, links clicked, items purchased, your device type, and to collect various data, including analytics, about how you use and interact with our Services. These technologies automatically collect data when you use and interact with our Services, including metadata, log files, cookie/device IDs, page load time, server response time, and approximate location information to measure website performance and improve our systems, including optimizing DNS resolution, network routing and server configurations. Specifically, interactions with the features, content and links (including those of third-parties, such as social media plugins) contained within the Services, Internet Protocol (IP) address, browser type and settings, the date and time the Services were used, information about browser configuration and plugins, language preferences and cookie data, information about devices accessing the Services, including type of device, what operating system is used, device settings, application IDs, unique device identifiers and error data is collected. All this allows us to provide you with more relevant product offerings, a better experience on our sites and mobile applications, and to collect, analyze and improve the performance of our Services. We may also collect your location (IP address) so that we can personalize our Services. For additional information, and to learn how to manage the technologies we utilize, please visit our Cookie Policy. If you wish to opt out of interest-based advertising click here [or if located in the European Union click here]. Please note you will continue to receive generic ads.\n\nSupplemented Data may be received about you from other sources, including publicly available databases or third parties from whom we have purchased data, in which case we may combine this data with information we already have about you so that we can update, expand and analyze the accuracy of our records, assess the qualifications of a candidate for employment, identify new customers, and provide products and services that may be of interest to you. If you provide us personal information about others, or if others give us your information, we will only use that information for the specific reason for which it was provided to us."
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "We reserve the right to modify this Privacy Policy at any time. If we decide to change our Privacy Policy, we will post those changes to this Privacy Policy and any other places we deem appropriate, so that you are aware of what information we collect, how we use it, and under what circumstances, if any, we disclose it. If we make material changes to this Privacy Policy, we will notify you here, by email, or by means of a notice on our home page, at least thirty (30) days prior to the implementation of the changes."
+]

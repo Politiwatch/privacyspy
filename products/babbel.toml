@@ -1,0 +1,78 @@
+name = "Babbel"
+description = "Babbel is a German subscription-based language learning app and e-learning platform, available in various languages since January 2008."
+slug = "babbel"
+hostnames = [ "babbel.com" ]
+sources = [ "https://about.babbel.com/privacy/" ]
+contributors = [ "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "yes-opt-out"
+citations = [
+  "We use further external service providers for the purpose of optimizing our services, carrying out advertising activities or for analyzing our website for errors and in terms of its performance. Such service providers may vary. For the sake of clarity, we have listed these service providers in tabular format at the end of this data protection notice under Clause 8, and in each case we have supplied further information on the processing of data and on any opt-outs."
+]
+notes = [
+  "Those services are New Relic, Visual Website Optimizer, Google AdWords, Google Tag Manager, and ShareThis. Clause 8 of the privacy policy also has the opt-out URLs for each of the services."
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "Lesson Nine employs safety precautions to guarantee that your data are protected against loss, modification or misuse. To this end, Lesson Nine works with constantly updated firewalls meeting the industry standard as well as other security systems. At the same time, the user should be aware of the fact that one hundred per cent protection against attacks cannot be guaranteed because of the continual appearance of new viruses and other means of attacking the protected data systems of Internet services. Lesson Nine will instigate civil and criminal proceedings against any attack by hackers and the like and will inform the users of any cases in which their data have been compromised."
+]
+
+[rubric.third-party-collection]
+value = "no"
+notes = [ "No mention of using these services." ]
+
+[rubric.history]
+value = "no"
+notes = [ "No date or history" ]
+
+[rubric.data-deletion]
+value = "yes-automated"
+citations = [
+  "Should the user demand any alteration, correction or deletion of his/her personal data, this may take place by email or letter. To ensure correct identification of the user, the request must at least contain the following details:\n\nUser name\nFirst name and surname\nEmail address\nPostal address\n\nPlease note that due to caching systems, search engines, the interposition of proxy servers and the like, deleted data may continue to remain accessible even though they are no longer present within our systems."
+]
+
+[rubric.data-breaches]
+value = "eventually"
+citations = [
+  "Lesson Nine will instigate civil and criminal proceedings against any attack by hackers and the like and will inform the users of any cases in which their data have been compromised."
+]
+
+[rubric.third-party-access]
+value = "yes-specified-noncritical"
+citations = [
+  "With reference to Clause 1.7, you will find a list here of further external suppliers:\n\nNew Relic (Optimization of the website [...])\nVisual Website Optimizer (Optimization of the website, A/B tests [...])\nGoogle AdWords (Marketing, campaign measurements [...])\nGoogle Tag Manager (Marketing [...])\nShareThis (Social Media Plugin [...])"
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+notes = [
+  "Due to girth of the article, an anchor link is provided:\n\nhttps://about.babbel.com/privacy#1-which-data-are-stored"
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-some"
+citations = [
+  "[...] you can prevent the data captured by the cookie and relating to your use of the website (incl. your IP address) from being captured and processed by Google by downloading and installing the browser plugin available at the following link : http://tools.google.com/dlpage/gaoptout?hl=en.\n\n[...]\n\nYou will find further information on the purpose and scope of the data capture and the further processing and use of the data by Facebook as well as optional settings for protecting your privacy in the Facebook data protection guidelines at: https://www.facebook.com/about/privacy/.\n\n[...]\n\nWith reference to Clause 1.7, you will find a list here of further external suppliers:\n\nNew Relic (Optimization of the website, https://newrelic.com/privacy)\nVisual Website Optimizer (Optimization of the website, A/B tests,https://vwo.com/opt-out/)\nGoogle AdWords (Marketing, campaign measurements, http://www.google.de/intl/de/policies/technologies/ads/)\nGoogle Tag Manager (Marketing, http://www.google.com/policies/privacy/)\nShareThis (Social Media Plugin, http://www.sharethis.com/legal/privacy)"
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "Lesson Nine does not forward the personal data of its users to third parties unless the user has given his/her explicit consent or there is a legal requirement to forward the data."
+]
+notes = [ "This is vague enough to be at their discretion." ]
+
+[rubric.list-collected]
+value = "exhaustively"
+notes = [
+  "Due to girth of the article, an anchor link is provided:\n\nhttps://about.babbel.com/privacy#1-which-data-are-stored"
+]
+
+[rubric.revision-notify]
+value = "no"
+notes = [
+  "There is no clause mentioning the notice of policy changes."
+]

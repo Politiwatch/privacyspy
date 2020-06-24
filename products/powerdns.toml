@@ -1,0 +1,62 @@
+name = "PowerDNS"
+description = "PowerDNS is an encrypted DNS provider"
+slug = "powerdns"
+hostnames = [ "powerdns.org" ]
+sources = [ "https://powerdns.org/doh/privacy.html" ]
+contributors = [ "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+citations = [
+  "The service:\n- Does not profile users, networks, clients, domains or browsers\n\nExcept during incidents, or when forced by applicable law, the PowerDNS DoH service:\n-Does not log queries, cookies, versions, headers, IP addresses or any other metadata\n-Does not analyse traffic\n-Does not share traffic with any third party"
+]
+
+[rubric.security]
+value = "na"
+notes = [ "No personal data is collected" ]
+
+[rubric.third-party-collection]
+value = "no"
+notes = [ "No personal data is collected" ]
+
+[rubric.history]
+value = "no"
+notes = [ "No date or changelog is presented." ]
+
+[rubric.data-deletion]
+value = "na"
+notes = [ "No personal data is collected" ]
+
+[rubric.data-breaches]
+value = "na"
+notes = [ "No contact information is collected" ]
+
+[rubric.third-party-access]
+value = "no"
+notes = [ "No personal data is collected" ]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "We do make graphs of the total number of queries, which TLS algorithms and HTTP versions are being used, millisecond response times and similar metrics, but all these counters are global and only measure aggregate traffic."
+]
+
+[rubric.noncritical-purposes]
+value = "na"
+notes = [ "No personal data is collected" ]
+
+[rubric.law-enforcement]
+value = "strict"
+citations = [
+  "Except during incidents, or when forced by applicable law, the PowerDNS DoH service:\n\nDoes not log queries, cookies, versions, headers, IP addresses or any other metadata\nDoes not analyse traffic\nDoes not share traffic with any third party"
+]
+
+[rubric.list-collected]
+value = "generally"
+citations = [
+  "We do make graphs of the total number of queries, which TLS algorithms and HTTP versions are being used, millisecond response times and similar metrics, but all these counters are global and only measure aggregate traffic."
+]
+
+[rubric.revision-notify]
+value = "na"
+notes = [ "No contact information is collected" ]

@@ -1,0 +1,86 @@
+name = "The Washington Post"
+description = "the Washington post is a major American newspaper with a particular emphasis on national politics and the federal government."
+slug = "the-washington-post"
+hostnames = [ "washingtonpost.com" ]
+sources = [
+  "https://www.washingtonpost.com/privacy-policy/2011/11/18/gIQASIiaiN_story.html"
+]
+contributors = [ "UnKnOwN" ]
+
+[rubric.behavioral-marketing]
+value = "yes-opt-out"
+citations = [
+  "We [The Washington Post] and third parties that provide content, advertising, or functionality or measure and analyze ad performance on our Services, may use cookies, web beacons, mobile ad identifiers, and similar technologies to facilitate administration and navigation on the Site, to better understand and improve our Services, to determine and/or improve the advertising shown to you here or elsewhere, and to provide you with a customized online experience."
+]
+notes = [
+  "The service does provide opting-out from personal advertisement options."
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "We have in place physical, electronic and managerial procedures to protect the information we collect online. However, as effective as these measures are, no security system is impenetrable. We cannot guarantee the security of our database, nor can we guarantee that the information you supply will not be intercepted while being transmitted to us over the Internet."
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "We may receive information about you from publicly and commercially available sources, as permitted by law, which we may combine with other information we receive from or about you. For example, we may receive information about you from a social media site if you connect to the Services through that site."
+]
+
+[rubric.history]
+value = "last-modified"
+notes = [
+  "The last modified date is available at the top of the policy."
+]
+
+[rubric.data-deletion]
+value = "no"
+notes = [
+  "Nothing is mentioned about data deletion in the privacy policy."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "Nothing is mentioned about data breaches in the privacy policy."
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+notes = [
+  "The Washington Post shares personal data with many third parties, but only groups of them are specified (affiliates; business partners; service providers; third parties that provide content, advertising, or functionality; other parties in connection with a corporate transaction)."
+]
+
+[rubric.data-collection-reasoning]
+value = "mostly"
+notes = [
+  "While the policy does a generally good job explaining how it uses the data, not all information is accompanied by a clear explanation and a number of \"including\" phrases is used."
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-some"
+notes = [
+  "You can opt-out from targeted advertisement, however, there is a big amount of data that still is going to be used for non-critical purposes (for example \"to better understand and serve our users, and to improve our products and services\").  "
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "We may share your personal information as we believe is necessary or appropriate to protect, enforce, or defend the legal rights, privacy, safety, or property of the Services, our employees or agents or users or to comply with applicable law or legal process, including responding to requests from public and government authorities."
+]
+
+[rubric.list-collected]
+value = "generally"
+notes = [
+  "The Washington Post lists all the data types it collects, however, the explanation of them is general and there are \"such as\" phrases which make the statements non-absolute."
+]
+
+[rubric.revision-notify]
+value = "no"
+citations = [
+  "We may modify this Privacy Policy from time to time. We will notify you of changes by posting changes here, or by other appropriate means. Any changes to the Privacy Policy will become effective when the updated policy is posted on the Services. Your use of the Services or your provision of personal information to use the Services following such changes indicates your acceptance of the revised Privacy Policy."
+]
+notes = [
+  "\"By any appropriate means\" phrase does not necessarily mean email notification. "
+]

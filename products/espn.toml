@@ -1,0 +1,66 @@
+name = "ESPN"
+description = "ESPN, Inc. is the leading multinational, multimedia sports entertainment entity featuring the broadest portfolio of multimedia sports assets with over 50 business entities."
+slug = "espn"
+hostnames = [ "espn.com" ]
+sources = [ "http://www.espn.com/adspecs/guidelines/en/data-policy.html" ]
+contributors = [ "UnKnOwN" ]
+
+[rubric.behavioral-marketing]
+value = "yes-opt-in"
+citations = [
+  "“Any campaign intended to capture information for the purpose of serving ads to, or otherwise targeting or actively engaging with, ESPN users outside of ESPN platforms, is prohibited (e.g., no database, network or exchange may be built and/or exploited as \"ESPN users\").”\n\n“In the event of a client request for ESPN tagging a client page to track attribution or enable targeting on ESPN, ESPN will provide an agreement outlining the terms of the data to be collected and how it may be used.”"
+]
+
+[rubric.security]
+value = "no"
+notes = [ "Nothing is mentioned about it in the privacy policy." ]
+
+[rubric.third-party-collection]
+value = "no"
+notes = [ "Nothing is mentioned about it in the privacy policy." ]
+
+[rubric.history]
+value = "no"
+notes = [ "Nothing is mentioned about it in the privacy policy." ]
+
+[rubric.data-deletion]
+value = "yes-automated"
+
+[rubric.data-breaches]
+value = "na"
+notes = [ "The site doesn’t collect users’ emails." ]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = [
+  "“ESPN must be notified of all data being collected in connection with a campaign by an advertiser, agency and/or third party vendors acting on their behalf for the purpose of verifying that such data collection activity is acceptable to ESPN. All data collected in connection with a campaign (including, without limitation, personally identifiable information) must be approved by ESPN in writing prior to the campaign start date.”"
+]
+
+[rubric.data-collection-reasoning]
+value = "mostly"
+citations = [
+  "“Ads may be tagged solely for the purpose of collecting data geared toward measuring performance of a campaign (e.g., ROI, attribution, impact, verification), in each case, as approved by ESPN. No browser-based cookies, Flash cookies, web beacons, pixels, tags or any other technology designed to track end-users' activity for any purpose (including, without limitation, to target or retarget ads) on any ESPN-branded, -owned, -licensed, -affiliated or –controlled website, application, or other online product or service distributed via any means or media may be included in ads without ESPN's prior written consent.”"
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-all"
+citations = [
+  "“In the event of a client request for ESPN tagging a client page to track attribution or enable targeting on ESPN, ESPN will provide an agreement outlining the terms of the data to be collected and how it may be used.”"
+]
+
+[rubric.law-enforcement]
+value = "unspecified"
+notes = [ "Nothing is mentioned about it in the privacy policy." ]
+
+[rubric.list-collected]
+value = "summarily"
+citations = [
+  "“Ads may be tagged solely for the purpose of collecting data geared toward measuring performance of a campaign (e.g., ROI, attribution, impact, verification), in each case, as approved by ESPN. No browser-based cookies, Flash cookies, web beacons, pixels, tags or any other technology designed to track end-users' activity for any purpose (including, without limitation, to target or retarget ads)“"
+]
+notes = [
+  "The site emphasizes on the personal data it doesn’t collect (like browser-based cookies), however doesn’t explicitly states the date the service on the contrary collects."
+]
+
+[rubric.revision-notify]
+value = "na"
+notes = [ "The site doesn’t collect users’ emails." ]

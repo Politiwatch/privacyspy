@@ -1,0 +1,24 @@
+name = "LastPass"
+description = "Lastpass is a password managment service developed by LogMeIn, Inc."
+slug = "lastpass"
+hostnames = [ "lastpass.com" ]
+sources = [ "https://www.logmeininc.com/legal/privacy" ]
+contributors = [ "AlexThurman" ]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "Third Party Data: We may receive information about you from other sources, including publicly available databases or third parties from whom we have purchased data, and combine this data with information we already have about you. We may also receive information from other affiliated companies that are a part of our corporate group. This helps us to update, expand and analyze our records, identify new prospects for marketing, and provide products and services that may be of interest to you. "
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [
+  "Last Updated on January 1, 2018\nReviewed on November 30, 2018"
+]
+
+[rubric.data-deletion]
+value = "yes-contact"
+citations = [
+  "We may also collect information on behalf of our customers, to provide the services, and we may not have a direct relationship with the individuals whose personal data is processed. If you are a customer or end-user of one of our customers, please contact them (as the data controller) directly if: (i) you would no longer like to be contacted by them; or (ii) to access, correct, amend, or delete inaccurate data.  If requested to remove data by our customer, we will respond within a reasonable timeframe."
+]

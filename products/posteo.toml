@@ -1,0 +1,129 @@
+name = "Posteo"
+description = "Posteo is an email service provider based in Berlin, Germany, offering paid email accounts for individuals and businesses."
+slug = "posteo"
+hostnames = [
+  "posteo.de",
+  "posteo.af",
+  "posteo.at",
+  "posteo.be",
+  "posteo.ch",
+  "posteo.cl",
+  "posteo.co",
+  "posteo.co.uk",
+  "posteo.com.br",
+  "posteo.cr",
+  "posteo.cz",
+  "posteo.dk",
+  "posteo.ee",
+  "posteo.es",
+  "posteo.eu",
+  "posteo.fi",
+  "posteo.gl",
+  "posteo.gr",
+  "posteo.hn",
+  "posteo.hr",
+  "posteo.ie",
+  "posteo.in",
+  "posteo.is",
+  "posteo.jp",
+  "posteo.la",
+  "posteo.li",
+  "posteo.lt",
+  "posteo.lu",
+  "posteo.me",
+  "posteo.mx",
+  "posteo.my",
+  "posteo.net",
+  "posteo.nl",
+  "posteo.no",
+  "posteo.nz",
+  "posteo.org",
+  "posteo.pe",
+  "posteo.pe",
+  "posteo.pl",
+  "posteo.pm",
+  "posteo.pt",
+  "posteo.ro",
+  "posteo.ru",
+  "posteo.se",
+  "posteo.sg",
+  "posteo.si",
+  "posteo.tn",
+  "posteo.uk",
+  "posteo.us"
+]
+sources = [ "https://posteo.de/en/site/privacy_policy" ]
+contributors = [ "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+citations = [
+  "At no point in time do we voluntarily give personal data to third party companies or service contractors. All data is exclusively stored on our servers in Germany. Posteo is financed by our customers: There are no advertising partners or investors."
+]
+
+[rubric.security]
+value = "yes-independent-audits"
+citations = [
+  " We always technically protect your content data with the latest security technologies (see our information page about encryption). In addition, content data is consistently saved on encrypted hard drives to protect them from physical access. We operate and maintain our own server infrastructure. All of our servers and stored data are located in Germany. We save all content data daily in a security backup and keep this data for a duration of 7 days. As a security precaution, please create an additional copy of your content data on a regular basis just in case you accidentally delete this data. Additionally, we offer the possibility to encrypt all emails, notes, contacts and calendar entries that are saved at Posteo individually with the password of the account (AES-encryption). You can do this in the settings of your mailbox at the touch of a button. Users of end-to-end encryption can add an additional level of encryption by applying inbound encryption to all incoming emails."
+]
+notes = [
+  "Additional information on how Posteo protects data at https://posteo.de/en/site/encryption. They were independently audited by Cure53 and other companies as noted on the aforementioned page."
+]
+
+[rubric.third-party-collection]
+value = "no"
+notes = [ "No information proving such" ]
+
+[rubric.history]
+value = "last-modified"
+citations = [
+  "This privacy policy is currently valid and is applicable as of July 2019."
+]
+
+[rubric.data-deletion]
+value = "yes-automated"
+citations = [
+  "When you delete content data, it's deleted immediately. If the data has been backed up in one of our daily security backups, it will remain there for an additional 7 days until it is completely deleted.\nIn general, Posteo does not delete content data from an account as long as the contractual relationship is standing and has not been terminated by you or through Posteo in accordance with our terms and conditions.\n[...]\nPayment data cannot be deleted upon your request as it would conflict with legal requirement of retaining this information for 10 years for tax authorities.\n"
+]
+
+[rubric.data-breaches]
+value = "na"
+notes = [
+  "There is no way to easily provide a user with notice of a data breach except via the service"
+]
+
+[rubric.third-party-access]
+value = "no"
+citations = [
+  "At no point in time do we voluntarily give personal data to third party companies or service contractors. All data is exclusively stored on our servers in Germany. Posteo is financed by our customers: There are no advertising partners or investors."
+]
+
+[rubric.data-collection-reasoning]
+value = "na"
+citations = [
+  "As a matter of principle, we do not collect and save any inventory data (such as names, addresses, etc.) from you. When registering, you do not enter any inventory data and we do not collect any other personally related data.\nWe effectively prevent data theft with this concept of data economy. The only data sets that cannot be stolen with 100 percent certainty are those that do not exist within a company. Futhermore, payment data is not connected to your account at Posteo. Because of this, in total, no inventory data exists for your account at Posteo. In other words, Posteo does not keep records with customer data or personally related data to your account.\n\nIn 2017, this was confirmed independently within an audit report by the German Federal Commissioner for Data Protection after an on-site inspection."
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-all"
+citations = [
+  "You can subscribe to Posteo's newsletter if you'd like by opting in within your account settings. You have the option to unsubscribe from the newsletter at any time."
+]
+
+[rubric.law-enforcement]
+value = "na"
+notes = [
+  "Posteo does not collect data that can be shared to law enforcement or connected to an individual."
+]
+
+[rubric.list-collected]
+value = "na"
+citations = [
+  "As a matter of principle, we do not collect and save any inventory data (such as names, addresses, etc.) from you. When registering, you do not enter any inventory data and we do not collect any other personally related data.\nWe effectively prevent data theft with this concept of data economy. The only data sets that cannot be stolen with 100 percent certainty are those that do not exist within a company. Futhermore, payment data is not connected to your account at Posteo. Because of this, in total, no inventory data exists for your account at Posteo. In other words, Posteo does not keep records with customer data or personally related data to your account."
+]
+
+[rubric.revision-notify]
+value = "na"
+notes = [
+  "There is no easy way to reach out to users' informing them of such an update (apart from through the service)"
+]

@@ -1,0 +1,66 @@
+name = "AdGuard DNS"
+description = "AdGuard DNS is an encrypted DNS provider by AdGuard Software Limited."
+slug = "adguard-dns"
+hostnames = [ "adguard.com" ]
+sources = [ "https://adguard.com/privacy/dns.html" ]
+contributors = [ "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+citations = [
+  "We do NOT collect anything about the user specifically. In other words, your IP address or any data about YOU is not logged."
+]
+
+[rubric.security]
+value = "na"
+citations = [
+  "We do NOT collect anything about the user specifically. In other words, your IP address or any data about YOU is not logged."
+]
+
+[rubric.third-party-collection]
+value = "no"
+citations = [
+  "We do NOT collect anything about the user specifically. In other words, your IP address or any data about YOU is not logged."
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [ "March 27, 2020" ]
+
+[rubric.data-deletion]
+value = "na"
+notes = [ "You do not make an account to use AdGuard DNS." ]
+
+[rubric.data-breaches]
+value = "na"
+notes = [
+  "No data is collected and therefore, you wouldn't be able to be contacted."
+]
+
+[rubric.third-party-access]
+value = "no"
+citations = [
+  "We do NOT collect anything about the user specifically. In other words, your IP address or any data about YOU is not logged."
+]
+
+[rubric.data-collection-reasoning]
+value = "na"
+notes = [ "No personal data is ever collected." ]
+
+[rubric.noncritical-purposes]
+value = "na"
+notes = [ "No personal data is ever collected." ]
+
+[rubric.law-enforcement]
+value = "na"
+notes = [ "No personal data is ever collected." ]
+
+[rubric.list-collected]
+value = "exhaustively"
+citations = [
+  "What we do collect:\n- We store aggregated performance metrics of our DNS server, namely the number of complete requests to a particular server, the number of blocked requests, the speed of processing requests.\n- We keep and store the database of domains requested in the last 24 hours. We need this information to identify and block new trackers and threats.\n- We also log how many times this or that tracker has been blocked. We need this information to remove outdated rules from our filters."
+]
+
+[rubric.revision-notify]
+value = "na"
+notes = [ "No personal data is ever collected." ]

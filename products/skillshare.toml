@@ -1,0 +1,83 @@
+name = "Skillshare"
+description = "Skillshare is a online learning website which hosts video lessons about various topics online"
+slug = "skillshare"
+hostnames = [ "skillshare.com" ]
+sources = [ "https://www.skillshare.com/privacy" ]
+contributors = [ "WatchfulFrog" ]
+
+[rubric.behavioral-marketing]
+value = "yes-opt-out"
+citations = [
+  "We use third party providers, including Facebook and Google AdWords, to advertise the Services across the internet. These providers may use cookies, web beacons, and other storage technologies to collect or receive information from the Services and elsewhere on the internet and use that information to provide measurement services and display targeted ads to you. \n\nIf you do not wish to see ads from us, you can opt out in several ways:\n\n1. Opt out of Google’s use of cookies by visiting Google’s Ads Settings.\n\n2.Opt out of a third-party vendor’s use of cookies by visiting the Network Advertising Initiative opt-out page.\n"
+]
+
+[rubric.security]
+value = "no"
+citations = [
+  "What Security Measures Do We Use? We seek to protect Personal Data using appropriate technical and organizational measures based on the type of Personal Data and applicable processing activity."
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "Information we receive from third party sources: Some third parties such as our business partners and service providers provide us with Personal Data about you, such as the following:\n\nAccount information for third party services: If you interact with a third party service when using our Services, such as if you use a third party service to log-in to our Services (e.g., Facebook Connect), or if you share content from our Services through a third party social media service, the third party service will send us information about you, such as information from your public profile, if the third party service and your account settings allow such sharing. The information we receive will depend on the policies and your account settings with the third party service.\n\nInformation from our advertising partners: We receive information about you from some of our service providers who assist us with marketing or promotional services related to how you interact with our websites, applications, products, services, advertisements or communications.\n\nInformation from third party service providers: Some of our third party service providers (such as Lever) collect Personal Data about our employees and job candidates and share that information with us."
+]
+notes = [ "This section is from the E.U. section of the policy" ]
+
+[rubric.history]
+value = "last-modified"
+citations = [
+  "This Privacy Policy was last modified as of April 25, 2019."
+]
+
+[rubric.data-deletion]
+value = "yes-contact"
+citations = [
+  "Erasure: You can request that we erase some or all of your Personal Data from our systems by emailing help@skillshare.com.\n"
+]
+notes = [ "This section is from the E.U. section of the policy" ]
+
+[rubric.data-breaches]
+value = "yes-72"
+citations = [
+  "If you are located in the European Union (“EU”), United Kingdom, Lichtenstein, Norway, or Iceland, you may have additional rights under the EU General Data Protection Regulation (the “GDPR”) with respect to your Personal Data, as outlined in the EU Privacy Notice below.\n\n"
+]
+notes = [
+  "This shows that skillshare is subject to the GDPR. Data breach is not otherwise mentioned "
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = [
+  "How and With Whom Do We Share Your Data? We share Personal Data with vendors, third party service providers and agents who work on our behalf and provide us with services related to the purposes described in this Privacy Policy or our Terms of Service. These parties include:\n\nPayment processors\nFraud prevention service providers\nThird party providers of advertising services\nAd networks and marketing tools\nAnalytics service providers\nEngineering and development tools\nStaff augmentation and contract personnel\nHosting service providers"
+]
+
+[rubric.data-collection-reasoning]
+value = "somewhat"
+citations = [
+  "How Do We Use Your Personal Data? We process Personal Data to operate, improve, understand and personalize our Services. For example, we use Personal Data to:\n\nCreate and manage user accounts and profiles\n\nPersonalize content on the Services. This includes showing users their saved classes and class watch history, and providing class recommendations.\nProvide users and Teachers with community features\n\nProvide Teachers with student lists and pay Teachers appropriately\n\nCommunicate with you about the Services\n\nContact you with announcements, updates or offers regarding the Services\nProcess orders\n\nProvide support and assistance for the Services\n\nAnalyze and improve the Services\n\nMeet contract or legal obligations\n\nRespond and fulfill user inquiries and requests\n\nResolve disputes\n\nProtect against or deter fraudulent, illegal or harmful actions\n\nEnforce our Terms of Service\n\nComplete corporate transactions (for more information, see our “Business Transfers” section above)"
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-some"
+citations = [
+  "If you do not wish to see ads from us, you can opt out in several ways:\n\n1. Opt out of Google’s use of cookies by visiting Google’s Ads Settings.\n\n2.Opt out of a third-party vendor’s use of cookies by visiting the Network Advertising Initiative opt-out page.\n"
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "Comply with applicable law or respond to valid legal process, including from law enforcement or other government agencies\n"
+]
+
+[rubric.list-collected]
+value = "generally"
+citations = [
+  "First and last name\n\nEmail address\n\nDate of birth\n\nGender\n\nBiographical information\n\nLocation information (limited to city, state, zip code, country, and time zone)\nEmployment history\n\nLinks to your social media accounts\n\nAny other information you choose to share publicly on the Services, for example, anything you post to a public part of your Profile or an online classroom on the Services\n\nInformation we receive from third party sources: Some third parties such as our business partners and service providers provide us with Personal Data about you, such as the following:\n\nAccount information for third party services: If you interact with a third party service when using our Services, such as if you use a third party service to log-in to our Services (e.g., Facebook Connect), or if you share content from our Services through a third party social media service, the third party service will send us information about you, such as information from your public profile, if the third party service and your account settings allow such sharing. The information we receive will depend on the policies and your account settings with the third party service.\n\nInformation from our advertising partners: We receive information about you from some of our service providers who assist us with marketing or promotional services related to how you interact with our websites, applications, products, services, advertisements or communications.\n\nInformation from third party service providers: Some of our third party service providers (such as Lever) collect Personal Data about our employees and job candidates and share that information with us.\n\nInformation we automatically collect when you use our Services: Some Personal Data is automatically collected when you use our Services, such as the following:\n\nIP address\n\nYour activity on the Services. This includes class usage information such as class enrollment and which classes you’ve watched. It also includes community interaction data, such as which members you’re following, your comments, your projects, or project likes.\n\nDevice identifiers\n\nWeb browser information\n\nPage view statistics\n\nBrowsing history\n\nTransaction information (e.g. transaction amount, date and time such \ntransaction occurred)\n\nCookies and other tracking technologies (e.g. web beacons, pixel tags, SDKs, etc.). For more information, please review the “Information About Cookies” section above.\n\nLocation information (e.g. IP address)\n\nLog data (e.g. access times, hardware and software information)"
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  " If we make material changes in the way we collect or use information, we will notify you by posting an announcement on the Services or sending you an email. "
+]

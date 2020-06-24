@@ -1,0 +1,79 @@
+name = "Canvas"
+description = "Canvas is an online platform that powers digital learning environments for schools and colleges."
+slug = "canvas"
+hostnames = [ "instructure.com" ]
+sources = [ "https://www.instructure.com/policies/privacy" ]
+contributors = [ "ibarakaiev" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+citations = [
+  "\"We may also use de-identified and/or aggregated data for our own use. We do not use information collected through the Products for advertising or marketing purposes.\""
+]
+notes = [
+  "The policy does not explicitly or indirectly allow personally-targeted or behavioral marketing."
+]
+
+[rubric.security]
+value = "yes"
+citations = [
+  "\"Instructure takes reasonable steps to help protect your personal information in an effort to prevent unauthorized access, use, or disclosure. Despite these measures, you should know that Instructure cannot fully eliminate security risks associated with personal information. No method of transmission over the Internet, or method of electronic storage, is 100% secure. Therefore, we cannot guarantee its absolute security. Any content you post while using the Services is at your own risk. If you have any questions about security on our Site or Apps, you can contact us at the contact information set forth below.\""
+]
+notes = [ "See https://www.instructure.com/canvas/security" ]
+
+[rubric.third-party-collection]
+value = "no"
+notes = [
+  "The service only mentions collecting third-party analytics information, but that information is stored as aggregate and is not tied to any user."
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [
+  "\"Instructure may change this Privacy Policy from time to time. If we make any changes to this Policy, we will change the “Last Updated” date above. If such changes are material, a notice of the changes will be posted along with the revised Privacy Policy. We encourage you to visit this page from time to time for the latest on our privacy practices.\""
+]
+
+[rubric.data-deletion]
+value = "yes-contact"
+citations = [
+  "\"You may change some of your personal information in your account by editing your profile within the Service. You may also request changes or deletions by e-mailing us at the e-mail address set forth below. We will respond to your request, when permitted by law, within 30 days. We may be unable to delete information that resides in our archives.\""
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "There is no mention of what happens in case of a data breach. Security practices, however, are listed in the \"SECURITY OF YOUR PERSONAL INFORMATION\" section."
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified-critical"
+citations = [
+  "\"We may share your personal information with third party service providers for the sole purpose of providing you with the Services that we offer you through our Site. For example, we may share data with service providers who host our websites or provide email services on our behalf.\"\n\n\"We may also share information about you in connection with or during negotiation of any merger, financing, acquisition, bankruptcy, dissolution, transaction or proceeding involving sale, transfer, divestiture or disclosure of all or a portion of our business or assets to another company. In the event that information is shared in this manner, notice will be posted on our Site.\""
+]
+
+[rubric.data-collection-reasoning]
+value = "mostly"
+citations = [
+  "\"In general, personal information you submit to us is used either to respond to requests that you make, or to aid us in serving you better. Instructure uses your personal information in the following ways: to create and maintain your account; to identify you as a user in our system; to operate, maintain, and improve our Site, Apps, and Services; to personalize and improve your experience; to send you administrative e-mail; to respond to your comments or inquiries; to protect, investigate, and deter against fraudulent, unauthorized, or illegal activity; and to make telephone calls to you, from time to time, as a part of secondary fraud protection or to solicit your feedback with your permission.\""
+]
+notes = [
+  "The reason why \"Mostly\" is selected is due to the following citation: \"We may also use de-identified and/or aggregated data for our own use.\" The policy does not describe what such \"own use\" might constitute."
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-all"
+notes = [
+  "There is no mention of data that could be treated as non-critical, except optional social networking features that are not enabled by default."
+]
+
+[rubric.list-collected]
+value = "exhaustively"
+notes = [
+  "The list of data that Instructure collects is listed in the \"DATA YOU PROVIDE TO US\" section. Refer to the original policy for the full list."
+]
+
+[rubric.revision-notify]
+value = "no"
+citations = [
+  "\"Instructure may change this Privacy Policy from time to time. If we make any changes to this Policy, we will change the “Last Updated” date above. If such changes are material, a notice of the changes will be posted along with the revised Privacy Policy. We encourage you to visit this page from time to time for the latest on our privacy practices.\""
+]

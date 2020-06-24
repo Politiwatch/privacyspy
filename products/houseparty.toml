@@ -47,7 +47,7 @@ citations = [
 [rubric.data-collection-reasoning]
 value = "no"
 citations = [
-  "Now that you know what we collect, we want to tell you why and what we do with that information. Below we explain how we use information:\r\n\r\n[...]\r\n\r\nWe also use information as otherwise permitted by law."
+  "Now that you know what we collect, we want to tell you why and what we do with that information. Below we explain how we use information:\n\n[...]\n\nWe also use information as otherwise permitted by law."
 ]
 notes = [
   "The policy does not provide a detailed list of reasons why it collects the information that it does. (Every reason uses non-explicit language like \"such as.\")"

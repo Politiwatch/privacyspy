@@ -1,0 +1,78 @@
+name = "Dropbox"
+description = "Dropbox is a cloud storage and collaborative workspace provider based in the United States."
+slug = "dropbox"
+hostnames = [ "dropbox.com" ]
+sources = [ "https://www.dropbox.com/privacy" ]
+contributors = [ "kulchynska" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+citations = [
+  "Marketing. We give users the option to use some of our Services free of charge. These free Services are made possible by the fact that some users upgrade to one of our paid Services. If you register for our Services, we will, from time to time, send you information about upgrades when permissible. Users who receive these marketing materials can opt out at any time. If you don’t want to receive a particular type of marketing materials from us, click the ‘Unsubscribe’ link in the corresponding emails, or update your preferences in the Notifications section of your personal account."
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "Security. We have a team dedicated to keeping your information secure and testing for vulnerabilities. We continue to work on features to keep your information safe in addition to things like two-factor authentication, encryption of files at rest, and alerts when new devices and apps are linked to your account. We deploy automated technologies to detect abusive behaviour and content that may harm our Services, you or other users."
+]
+
+[rubric.third-party-collection]
+value = "no"
+citations = [
+  "We collect and use the following information to provide, improve, protect and promote our Services:"
+]
+
+[rubric.history]
+value = "yes"
+citations = [
+  "Dropbox Privacy Policy\nPosted: 25 July 2019\n\nEffective: 24 September 2019\n\nYou can see our previous Privacy Policy here."
+]
+
+[rubric.data-deletion]
+value = "yes-automated"
+citations = [
+  "You have control over your personal data and how it’s collected, used and shared. For example, you can:\n\nDelete Your Stuff in your Dropbox account. You can learn more about how to delete files saved on Dropbox here."
+]
+
+[rubric.data-breaches]
+value = "yes-72"
+citations = [
+  " Dropbox complies with the EU-US and Swiss-US Privacy Shield Frameworks as set forth by the US Department of Commerce regarding the collection, use and retention of personal data transferred from the European Union, the European Economic Area, the United Kingdom and Switzerland to the United States. Dropbox has certified to the Department of Commerce that it adheres to the Privacy Shield Principles with respect to such data."
+]
+
+[rubric.third-party-access]
+value = "yes-specified-critical"
+citations = [
+  "Others working for and with Dropbox. Dropbox uses certain trusted third parties (such as providers of customer support and IT services) to help us provide, improve, protect and promote our Services. These third parties will access your information to perform tasks on our behalf, and we’ll remain responsible for their handling of your information per our instructions. For a list of trusted third parties that we use to process your personal data, please see our FAQ\n\n"
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "Bases for processing your data. We collect and use the personal data described above in order to provide you with the Services in a reliable and secure manner. We also collect and use personal data for our legitimate business needs. To the extent that we process your personal data for other purposes, we ask for your consent in advance or require our partners to obtain such consent. "
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-all"
+citations = [
+  "Object to the processing of your personal data. Depending on the processing activity, you can request that we stop or limit processing of your personal data. If you would like to submit an objection, please email us at privacy@dropbox.com."
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "Law & order and the public interest. We may disclose your information to third parties if we determine that such disclosure is reasonably necessary to: (a) comply with any applicable law, regulation, legal process or appropriate government request;\nWe publish a Transparency Report as part of our commitment to informing you about when and how governments ask us for information. This report details the types and numbers of requests we receive from law enforcement. We encourage you to review our Government Request Principles and Transparency Report for more detailed information about our approach and response to government requests. "
+]
+
+[rubric.list-collected]
+value = "generally"
+citations = [
+  "We collect and use the following information to provide, improve, protect and promote our Services:"
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "We may revise this Privacy Policy from time to time, and will post the most current version on our website. If a revision meaningfully reduces your rights, we will notify you."
+]

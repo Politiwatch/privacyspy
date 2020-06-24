@@ -1,0 +1,61 @@
+name = "Budget Bytes"
+description = "Recipes for people with a small budget."
+slug = "budget-bytes"
+hostnames = [ "budgetbytes.com" ]
+sources = [ "https://www.budgetbytes.com/privacy-policy/" ]
+contributors = [ "yaagesoft" ]
+
+[rubric.behavioral-marketing]
+value = "yes-opt-out"
+citations = [
+  "These companies may use information [...] about your visits to this and other websites in order to provide advertisements about goods and services of interest to you. "
+]
+notes = [
+  "You can opt-out, but only on the websites of the advertisers (e.g. Google Ads)."
+]
+
+[rubric.security]
+value = "na"
+notes = [
+  "They just use third-party ads and do not collect data themselves."
+]
+
+[rubric.third-party-collection]
+value = "no"
+notes = [ "They don't collect data themselves at all." ]
+
+[rubric.history]
+value = "no"
+notes = [ "No date or revision given." ]
+
+[rubric.data-deletion]
+value = "na"
+notes = [ "They don't collect data themselves." ]
+
+[rubric.data-breaches]
+value = "na"
+notes = [ "They don't collect data themselves." ]
+
+[rubric.third-party-access]
+value = "no"
+notes = [ "They don't collect data themselves." ]
+
+[rubric.data-collection-reasoning]
+value = "na"
+notes = [ "They don't collect data themselves." ]
+
+[rubric.noncritical-purposes]
+value = "na"
+notes = [ "They don't collect data themselves." ]
+
+[rubric.law-enforcement]
+value = "na"
+notes = [ "They don't collect data themselves." ]
+
+[rubric.list-collected]
+value = "na"
+notes = [ "They don't collect data themselves." ]
+
+[rubric.revision-notify]
+value = "na"
+notes = [ "You can't add any contact information." ]

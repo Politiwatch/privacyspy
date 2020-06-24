@@ -1,0 +1,76 @@
+name = "anonaddy.com"
+description = "Mail Forwarding Service"
+slug = "anonaddy-com"
+hostnames = [ "anonaddy.com" ]
+sources = [ "https://anonaddy.com/privacy/" ]
+contributors = [ "newuser_frLoi" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+citations = [
+  "We will never misuse, sell, rent, share or give away any personal information to any third parties."
+]
+
+[rubric.security]
+value = "yes"
+citations = [
+  "All information you provide to us is stored on our secure servers in the Netherlands (Greenhost.net). Sensitive data in our database such as your recipient email addresses are encrypted using OpenSSL and the AES-256-CBC cipher. Furthermore, all encrypted values are signed with a message authentication code (MAC) to detect any modifications to the encrypted string. Two Factor Authentication (2FA) is also available on our site and we encourage users to enable it.\n\nOpportunistic DANE TLS encryption with strong cipher preference is used for all emails sent through our service. Our mail server also utilises STARTTLS, PFS, DNSSEC, MTA-STS, TLS-RPT, DMARC, SPF and DKIM. These measures help to protect emails sent to/from our server against MiTM (Man in The Middle) downgrade attacks and also against the risk of email forgery.\n\nOur site also uses security features such as; HSTS (HTTP Strict Transport Security), a strict CSP (Content Security Policy), Subresource Integrity, Expect CT and XSS Protection.\n\nNo service can be 100% secure at all times so please do not use this service to forward emails containing highly sensitive information such as bank or cryptocurrency information.\n\nWe take all measures reasonably necessary to protect against unauthorised access, use, alteration or desctruction of data."
+]
+
+[rubric.third-party-collection]
+value = "no"
+citations = [
+  "We may collect the following data from you:\n\n    Information that you provide by filling in forms on our site. This includes information provided at the time of registering to use our site or subscribing to our service.\n    If you contact us, we may keep a record of that correspondence.\n    For keeping track of authenticated sessions we use a small number of cookies. This site does not provide any third party cookies and makes no effort to track you. You can delete stored cookies from your browser whenever you wish.\n    If you start a subscription we may ask you to provide us with information such as your name and payment information. Your name and card details will not be stored in our database.\n\nOur site does not store/save any emails that are forwarded or replied to through the service. You can check the source code to see what happens when an email is piped to our application by Postfix.\n\nOur server uses Postfix as the mail server software and Nginx as the web server. Nginx access and error logs are kept which do record IP addresses. Default log settings are used for Postfix. All log files are rotated daily and retained for 7 days, old log files are deleted.\n\nServer logs are only used to improve our service and prevent abuse or prohibited use. This information will not be provided under any circumstances to any parties other than when compelled by law."
+]
+notes = [
+  "Detailed outline on what data is gathered on users. Does not explicitly say data is not gathered from 3rd parties."
+]
+
+[rubric.history]
+value = "yes"
+citations = [
+  "Any changes we may make to our privacy policy in the future will be posted on this page and, where appropriate, notified to you by e-mail. However, we advise that you check this page regularly to keep up to date with any necessary changes."
+]
+
+[rubric.data-deletion]
+value = "yes-contact"
+citations = [
+  "You have the right to request access to personal data that we may process about you.\n\nYou have the right to require us to correct any inaccuracies in your data, free of charge. You can access, correct, update or request deletion of your personal information at any time, either through your online account or by contacting us."
+]
+
+[rubric.data-breaches]
+value = "yes-72"
+citations = [
+  "\n\nIn order to ensure confidentiality and lawful processing of its, Visitors personal data, AnonAddy in its capacity of a data controller and of a processor, conducts its activities in strict compliance with the requirements set in GDPR - Regulation (EU) 2016/679 of the European Parliament and of the Council on the protection of natural persons with regard to the processing of personal data and on the free movement of this data."
+]
+
+[rubric.third-party-access]
+value = "yes-specified-critical"
+citations = [
+  "The only third party service that we use is Stripe to process payments for subscriptions. Any payment transactions will be carried out by Stripe over encrypted connections hosted within an iframe served from Stripe’s domain. Your card information never touches our server."
+]
+
+[rubric.noncritical-purposes]
+value = "no"
+notes = [ "No option to opt out" ]
+
+[rubric.law-enforcement]
+value = "strict"
+citations = [
+  "This information will not be provided under any circumstances to any parties other than when compelled by law."
+]
+
+[rubric.list-collected]
+value = "exhaustively"
+citations = [
+  "We may collect the following data from you:\n\n    Information that you provide by filling in forms on our site. This includes information provided at the time of registering to use our site or subscribing to our service.\n    If you contact us, we may keep a record of that correspondence.\n    For keeping track of authenticated sessions we use a small number of cookies. This site does not provide any third party cookies and makes no effort to track you. You can delete stored cookies from your browser whenever you wish.\n    If you start a subscription we may ask you to provide us with information such as your name and payment information. Your name and card details will not be stored in our database.\n\nOur site does not store/save any emails that are forwarded or replied to through the service. You can check the source code to see what happens when an email is piped to our application by Postfix.\n\nOur server uses Postfix as the mail server software and Nginx as the web server. Nginx access and error logs are kept which do record IP addresses. Default log settings are used for Postfix. All log files are rotated daily and retained for 7 days, old log files are deleted."
+]
+
+[rubric.revision-notify]
+value = "no"
+citations = [
+  "Any changes we may make to our privacy policy in the future will be posted on this page and, where appropriate, notified to you by e-mail."
+]
+notes = [
+  "\"where appropriate\" - is not a commitment to notify customers "
+]

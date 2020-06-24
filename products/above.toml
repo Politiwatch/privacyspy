@@ -1,0 +1,42 @@
+name = "Above"
+description = "Above is a domain portfolio management tool."
+slug = "above"
+hostnames = [ "above.com" ]
+sources = [ "https://www.above.com/privacy-policy.html" ]
+contributors = [ "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+notes = [ "No data is used for targeted marketing" ]
+
+[rubric.security]
+value = "no"
+notes = [ "There is no mention as to how your data is secured" ]
+
+[rubric.history]
+value = "last-modified"
+citations = [ "This Privacy Statement was published May 21, 2018." ]
+
+[rubric.data-deletion]
+value = "yes-contact"
+citations = [
+  "You have the following rights with respect to your personal data:\n[...]\n- The right to request that your personal data is deleted when it is no longer necessary for Above.com to retain such data, except data required for legal or accounting purposes.\n[...]\nAny questions about your Privacy Rights should be sent to privacy@above.com"
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "This policy doesn't require the service to notify users in the event of a data breach"
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified-critical"
+citations = [
+  "We do not share, sell, rent, or trade your information with any third parties, except from what is described below:\n\nAbove does not sell or provide to third parties any data derived from this service, aggregated or not that can be tied or linked to you personally or your account.\n\nWe will disclose your personal information if required by law or if we, as a company, reasonably believe that disclosure is necessary to protect our company’s rights and/or to comply with a judicial proceeding, court order or legal process. However, we will do what we can to ensure that your privacy rights continue to be protected.\n"
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "We collect and use personal data mainly to perform customer service, direct sales, and direct marketing.\n\nWe may use your information for the following purposes: Send you marketing communications which you have requested. These may include information about our products and services, events, activities, and promotions. This communication is subscription based and requires your consent; Send you news and information about the products and services that you are using; Perform direct sales activities in cases where legitimate and mutual interest is established; Follow-up on incoming requests (customer support, emails, chats, or phone calls); Perform contractual obligations such as order confirmation, invoicing, payment reminders, and similar; Notify you about any disruptions to our services (system messages); Contact you to conduct surveys about your opinion on our products and services."
+]

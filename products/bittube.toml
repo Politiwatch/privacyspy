@@ -1,0 +1,75 @@
+name = "BitTube"
+description = "BitTube is a social media site designed to allow users to freely post videos and other content."
+slug = "bittube"
+hostnames = [ "bittubers.com" ]
+sources = [ "bittubers.com/about/policy" ]
+contributors = [ "TheDeafCreeper" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+notes = [ "BitTube does not serve advertisements." ]
+
+[rubric.security]
+value = "yes"
+citations = [
+  "7. Data security\nWe took measures to protect the security of your email from loss, misuse, unauthorized access or disclosure, alteration, or destruction.\n\nAll anonymous usage information that our services collects is stored in our databases and we takes reasonable steps to keep it secure. That said, no database or server is 100% secure and we cannot guarantee the absolute security of your data in our system or while being transmitted over the Internet. Our best effort is given, but you use our services at your own risk"
+]
+
+[rubric.third-party-collection]
+value = "no"
+citations = [
+  "5. Information we receive from other sources\nWe may receive none PII about you if you use any of the other websites we operate or the other services we provide."
+]
+
+[rubric.history]
+value = "no"
+citations = [
+  "8. Changes and updates to this policy\nWe reserves the right to change this policy for any reason, and may make small, inconsequential changes to this policy with or without notice. Each time this policy is changed we will revise the \"Effective Date\" at the top of this page. Your continued use of the our services constitutes your agreement to this Privacy Policy and any revisions or updates."
+]
+
+[rubric.data-deletion]
+value = "yes-automated"
+notes = [
+  "Data deletion is not mentioned in the Privacy Policy, however there is a button in the first settings menu."
+]
+
+[rubric.data-breaches]
+value = "no"
+citations = [
+  "7. Data security\nWe took measures to protect the security of your email from loss, misuse, unauthorized access or disclosure, alteration, or destruction.\n\nAll anonymous usage information that our services collects is stored in our databases and we takes reasonable steps to keep it secure. That said, no database or server is 100% secure and we cannot guarantee the absolute security of your data in our system or while being transmitted over the Internet. Our best effort is given, but you use our services at your own risk."
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = [
+  "6. How our services uses and discloses collected information\nWe use the collected usage and analytics information to maintain and improve our website and gain insight into how our services are being used. Our services sometimes share anonymized and aggregated information that cannot be associated with an individual with third parties or the public"
+]
+notes = [ "All data is anonymized before being shared." ]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "1. Information our services collect\nWe collect several types of information, such as:\n\n1.1. Anonymous information\n\nOur services captures anonymous usage information, including but not limited to: current browser version and operating system type.\n\n1.2 Personally identifiable information (PII)\n\nInformation that you provide.\n\nYou may provide us with a name and e-mail address.\n\nTo verify that you are human and change your account status as \"verified\" we ask you for a phone number and perform a check via SMS verification code submission.\n\n3. Cookies\nWe use cookies for the purpose of your connection and session on our Website's servers, distinguish you from other users of our Website, obtaining Website activity and in some cases for security and authentication purposes. For more information check our Cookies Policy."
+]
+
+[rubric.noncritical-purposes]
+value = "no"
+citations = [
+  "2. Website Activity\nCertain none PII Website activity information is automatically collected and logged by our servers. Such information includes IP address used to connect user's computer to the Internet, username (if applicable), date and time of visit, length of visits to certain pages.\n\n4. Analytics\nOur services uses various analytics services to aggregate information about traffic patterns and how our website is used."
+]
+
+[rubric.law-enforcement]
+value = "unspecified"
+notes = [ "Not Mentioned" ]
+
+[rubric.list-collected]
+value = "exhaustively"
+citations = [
+  "1. Information our services collect\nWe collect several types of information, such as:\n\n1.1. Anonymous information\n\nOur services captures anonymous usage information, including but not limited to: current browser version and operating system type.\n\n1.2 Personally identifiable information (PII)\n\nInformation that you provide.\n\nYou may provide us with a name and e-mail address.\n\nTo verify that you are human and change your account status as \"verified\" we ask you for a phone number and perform a check via SMS verification code submission."
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "8. Changes and updates to this policy\nWe reserves the right to change this policy for any reason, and may make small, inconsequential changes to this policy with or without notice. Each time this policy is changed we will revise the \"Effective Date\" at the top of this page. Your continued use of the our services constitutes your agreement to this Privacy Policy and any revisions or updates."
+]

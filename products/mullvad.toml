@@ -1,0 +1,77 @@
+name = "Mullvad"
+description = "Mullvad is a free and open-source commercial virtual private network service based in Sweden."
+slug = "mullvad"
+hostnames = [ "mullvad.net" ]
+sources = [ "https://mullvad.net/en/help/privacy-policy/" ]
+contributors = [ "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+citations = [
+  "Your personal data will only be shared with third party suppliers who are performing services on our behalf and for the purposes stated above. The categories of such recipients are e-mail service providers and payment solution suppliers (which are subject to confidentiality)."
+]
+
+[rubric.security]
+value = "na"
+notes = [
+  "Excluding payment data (which is deleted \"after six months\" at most), no personal data is collected nor stored to warrant the need to disclose security measures for data handling."
+]
+
+[rubric.third-party-collection]
+value = "no"
+notes = [ "No data is collected from third-parties." ]
+
+[rubric.history]
+value = "last-modified"
+citations = [ "Last updated: 30 January 2020" ]
+
+[rubric.data-deletion]
+value = "yes-contact"
+citations = [
+  "You have the right, in certain situations, to request us to correct or delete incorrect personal data regarding you and/or limit the processing. You also have the right to request for a copy of your personal data and a registry extract. However, we cannot give out payment data since the purpose of the processing of the payment data do not require identification of the data subject and would require disproportionate effort for us to further acquire or process additional information to identify the data subject (article 11 in the GDPR).\n\nThe registry extract and the copy of personal data will be provided to the data subject (if the personal data are not subject to article 11 in the GDPR) without undue delay and in any event within one month of receipt of the request. If the request is particularly complex or if we receive number of the requests, the period may be extended where necessary. In this event we will inform the data subject of any such extension within one month of receipt the request together with the reason for the delay.\n\nWhere the legal basis for the processing is based on a weighing of interests you are as a data subject entitled to object at any time to the processing of your data.\n\nIf you are displeased with our processing of your personal data, please contact us or submit a complaint to the supervisory authority (The Swedish Data Protection Authority, www.datainspektionen.se).\n\nIf you would like to exercise your rights, please contact support@mullvad.net for more information.\n\nPlease note that exercising some rights may limit our ability to provide support that requires such information, for example issuing a refund or finding a lost account. We are also unable to approve some request due to legal requirements or that the processing of personal data might be based on a legal basis to which the right do not apply."
+]
+
+[rubric.data-breaches]
+value = "na"
+notes = [
+  "They do not collect any contact information that could be used to alert you of a breach"
+]
+
+[rubric.third-party-access]
+value = "yes-specified-critical"
+citations = [
+  "For credit card, PayPal, Swish, and bank wire, we do use third parties: Stripe, PayPal, and our bank SEB (which handles both Swish and bank wire). "
+]
+notes = [
+  "This is in their \"No Logging Data Policy\" which is linked via their privacy policy (https://mullvad.net/help/no-logging-data-policy/#payments)"
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "Payments\nPayment information are processed for the purpose of providing you with the service we offer, to pay out refunds and for accounting purposes. The processing of payment data for the first two purposes are based on a legitimate interest where our rights to process the data for such interest overrides your rights to your personal data. Payment information processed for accounting purposes are necessary for the compliance of a legal obligation to which we are subject.\n\nSupport and problem report\nProcessing of e-mails and problem reports via our app/client are made for the purpose of answering questions, resolve problems, and provide general support to customers. The processing is necessary for the purpose of the legitimate interests where such interest overrides your rights to your personal data.\n\nCategories of personal data\nWe are processing the following categories of personal data. Mullvad can access the personal data below through our payment service providers but that does not necessarily mean that Mullvad are storing the data anywhere else than in the service. See our No-logging of user activity policy to see details about what data we store.\n\nPayments\n- Bank wire: sender name, address, bank account number and Mullvad account number\n- PayPal: transaction-ID, sender name, origin country and e-mail address\n- Swish: Swish-ID, name and phone number\n- Stripe: Stripe charge ID, expire date, last 4 digits of the card, card type and origin country\n\nPlease avoid making payments through bank wire if you do not want your Mullvad account to be traceable to you. When making such payments, the Mullvad account number will exist in the \"message\" field of the transaction.\n\nSupport and problem report\n- Support by e-mail: your e-mail address and other information which you have written in the e-mail.\n- Problem reported by the app/client: (program logs, email, IP-addresses and sensitive path are removed). Please refrain from entering any personal data when reporting a problem by the app/client."
+]
+
+[rubric.noncritical-purposes]
+value = "na"
+notes = [
+  "No data is used or collected for purposes that aren't for providing the service"
+]
+
+[rubric.law-enforcement]
+value = "na"
+citations = [
+  "The data must be kept for the statutory retention period described in applicable local laws such as the Swedish Accounting Act (some information must be stored for seven years from the end of the fiscal year). If not required by law, the data will be stored for no longer than necessary for the purpose. After the periods, the data will be permanently deleted."
+]
+
+[rubric.list-collected]
+value = "exhaustively"
+citations = [
+  "Payments\nPayment information are processed for the purpose of providing you with the service we offer, to pay out refunds and for accounting purposes. The processing of payment data for the first two purposes are based on a legitimate interest where our rights to process the data for such interest overrides your rights to your personal data. Payment information processed for accounting purposes are necessary for the compliance of a legal obligation to which we are subject.\n\nSupport and problem report\nProcessing of e-mails and problem reports via our app/client are made for the purpose of answering questions, resolve problems, and provide general support to customers. The processing is necessary for the purpose of the legitimate interests where such interest overrides your rights to your personal data.\n\nCategories of personal data\nWe are processing the following categories of personal data. Mullvad can access the personal data below through our payment service providers but that does not necessarily mean that Mullvad are storing the data anywhere else than in the service. See our No-logging of user activity policy to see details about what data we store.\n\nPayments\n- Bank wire: sender name, address, bank account number and Mullvad account number\n- PayPal: transaction-ID, sender name, origin country and e-mail address\n- Swish: Swish-ID, name and phone number\n- Stripe: Stripe charge ID, expire date, last 4 digits of the card, card type and origin country\n\nPlease avoid making payments through bank wire if you do not want your Mullvad account to be traceable to you. When making such payments, the Mullvad account number will exist in the \"message\" field of the transaction."
+]
+
+[rubric.revision-notify]
+value = "na"
+notes = [
+  "No contact information is collected that could be used to notify you"
+]

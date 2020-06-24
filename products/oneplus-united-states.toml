@@ -1,0 +1,101 @@
+name = "OnePlus (United States)"
+description = "A Chinese smartphone manufacturer."
+slug = "oneplus-united-states"
+hostnames = [ "https://www.oneplus.com/" ]
+sources = [ "https://www.oneplus.com/legal/privacy-policy" ]
+contributors = [ "Anonymous" ]
+
+[rubric.behavioral-marketing]
+value = "yes-opt-out"
+citations = [
+  "4.4 We partner with a third party to display advertising on our website or to manage our advertising on other sites. Our third party partner may use cookies or similar technologies in order to provide you advertising based upon your browsing activities and interests. If you wish to opt out of interest-based advertising click here [or if located in the European Union click here]. Please note you will continue to receive generic ads"
+]
+notes = [
+  "Only mentions the ads on their website, did not mention anything about ads in phone software"
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "7.1 OnePlus only retains your personal information for the time period necessary for the purposes described in this Privacy Policy and as required by applicable laws and regulations.\n\n7.2 OnePlus uses various management policies (such as establishing information security system; signing a confidentiality agreements with information management employees; allowing only work-related employees to access the information collected; and other similar policies) and security techniques and procedures (such as entering passwords before access, access control isolation, monitoring for computer use, etc.) to prevent the loss of information, improper use, and unauthorized reading or disclosure. For example, in some services, OnePlus uses encryption technology (such as TLS) to protect the personal information you provide."
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "2.2 Where permitted by law, OnePlus shall also obtain data about you from third-party sources [...]\n\n4.2 [...] [Cookies and similar technologies] help OnePlus and third party service providers to better understand user behavior, [...]"
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [ "Last updated date: November 25, 2018." ]
+notes = [ "The date modified is at the end of the privacy policy" ]
+
+[rubric.data-deletion]
+value = "no"
+citations = [
+  "6.1 [...] To request removal of your personal information from our blog or community forum, contact us at email. In some cases, we may not be able to remove your personal information, in which case we will let you know if we are unable to do so and why."
+]
+notes = [
+  "So far (May 22, 2020) you can \"Deactivate\" (not delete or erase) your OnePlus account used for purchase by a click of a button"
+]
+
+[rubric.data-breaches]
+value = "eventually"
+citations = [
+  "7.3 If OnePlus is informed that the security of data it has acquired and stored is compromised  [...] OnePlus will take legal and reasonable steps it may deem appropriate to notify the relevant users, informing them [...]."
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = [
+  "5.1 We will disclose your personal information between affiliates or subsidiaries [...]\n\n5.2 OnePlus will disclose your personal information to its service providers under certain circumstances. [...]\n\n5.3 In addition, OnePlus shall disclose your information to public authorities with jurisdiction over the territories in which we operate\n\n5.4 In any case of sharing your personal information with third parties, we endeavor to disclose it to such third parties only to the extent permitted by law [...]"
+]
+notes = [
+  "Did not mention any sharing for non-critical service.\n\nBut in \"5.2 OnePlus will disclose your personal information to its service providers\", it only mentions one example (purchase OnePlus phone), but not all the possible sharings. \n\nTherefore, it is not sure whether it includes \"non-critical service providers\""
+]
+
+[rubric.data-collection-reasoning]
+value = "somewhat"
+citations = [
+  "2.1 When you register for an account and purchase a OnePlus product, you shall provide relevant personal information, [...]\n\n3.1 Used for authentication, security, fraud monitoring, archiving and backup purposes to ensure the security of products and services provided to you by OnePlus.\n\n3.2 Provide you with services \n\n3.3 Contact you directly.\n\n3.4 Help OnePlus to improve products and services.\n\n3.5 OnePlus may know about the regional distribution of OnePlus products.\n\n3.6 With your consent, OnePlus may send you our latest product and service information,\n2.2 Where permitted by law, OnePlus shall also obtain data about you from third-party sources.  [...]\n\n2.3 When you activate and use a OnePlus product, we shall also collect information about your device or software [...]\n\n2.4 Network information [...]\n\n2.5 Location information [...]\n\n[...]"
+]
+notes = [
+  "in the \"2. Personal Information collected by OnePlus\" section and \"3. How OnePlus will use your Personal information\" section\n\nOnly a very general category is provided with several examples"
+]
+
+[rubric.noncritical-purposes]
+value = "no"
+citations = [
+  "3.4 Help OnePlus to improve products and services. For example, OnePlus will analyze and study the collected data to make user-friendly adjustments to its operating system and interface design in accordance with user characteristics. [...]"
+]
+notes = [
+  "Did not mention whether you need to opt-out for purpose of \"make user-friendly adjustments to its operating system and interface design in accordance with user characteristics\". \n\nIn reality these usage analytics cannot be opt-out: \"OxygenOS securely transmit analytics in two different streams, usage analytics and device information. [...] If you opt out of the user experience program, your usage analytics will not be tied to your device information.\" (but this information does not mention how to turn off usage analytics) from https://forums.oneplus.com/threads/lets-talk-about-oxygenos-analytics.654820/ "
+]
+
+[rubric.law-enforcement]
+value = "always"
+citations = [
+  "5.3 In addition, OnePlus shall disclose your information to public authorities with jurisdiction over the territories in which we operate to provide personal information of our users in compliance with the law or in the performance of legal procedure."
+]
+notes = [
+  "There is no mention of what is the requirement for such disclosure."
+]
+
+[rubric.list-collected]
+value = "generally"
+citations = [
+  "2.1 When you register for an account and purchase a OnePlus product, you shall provide relevant personal information, [...]\n\n2.2 Where permitted by law, OnePlus shall also obtain data about you from third-party sources.  [...]\n\n2.3 When you activate and use a OnePlus product, we shall also collect information about your device or software [...]\n\n2.4 Network information [...]\n\n2.5 Location information [...]\n\n[...]"
+]
+notes = [
+  "Contain examples of these data in \"2. Personal Information collected by OnePlus\""
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "10.1 [...] Please check the Privacy Policy from time to time to confirm whether we have made any changes with reference to use of personal information.\n\n10.2 If any changes to this Privacy Policy have a material impact on your rights, we will notify you by email (sent to the e-mail address specified in your account) or by means of a notice on this website prior to the change becoming effective."
+]
+notes = [
+  "You will only be notified if the change \"impact on your rights\""
+]

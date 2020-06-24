@@ -1,0 +1,65 @@
+name = "Soverin"
+description = "Soverin is a paid email service"
+slug = "soverin"
+hostnames = [ "soverin.net" ]
+sources = [ "https://soverin.net/legal" ]
+contributors = [ "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+citations = [
+  "Soverin will never share your data with third parties, unless we are obligated to do so by law. Since Soverin is a Dutch company, we will only comply with requests from Dutch authorities and only if such a request complies with all the requirements set by law."
+]
+
+[rubric.security]
+value = "yes"
+citations = [
+  "The security of your data is extremely important to Soverin. Therefore, we took extensive measures to prevent theft, loss or any other abuse of your data. We encrypt all data connections from and to our email servers. Additionally, we use a so-called ‘supercode’, which will be sent to you when you sign up for our service. This supercode can be used in case you forget your password and don’t have access to the phone you used when you signed up for Soverin. The supercode will enable you to sign in and subsequently alter your password and telephone number."
+]
+
+[rubric.third-party-collection]
+value = "no"
+notes = [ "Soverin doesn't fetch data from third parties" ]
+
+[rubric.history]
+value = "last-modified"
+citations = [ "This privacy statement was drafted in December 2014." ]
+
+[rubric.data-deletion]
+value = "yes-automated"
+citations = [
+  "From your dashboard you can change your information or, if you desire, delete your account. If you have any other questions concerning the processing of your personal data, feel free to contact us through support@soverin.net."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [ "There is no mention of alerting of breaches" ]
+
+[rubric.third-party-access]
+value = "no"
+citations = [
+  "Soverin will never share your data with third parties, unless we are obligated to do so by law. "
+]
+
+[rubric.noncritical-purposes]
+value = "na"
+notes = [ "Data is not used for non-essential purposes." ]
+
+[rubric.law-enforcement]
+value = "strict"
+citations = [
+  "Soverin will never share your data with third parties, unless we are obligated to do so by law. Since Soverin is a Dutch company, we will only comply with requests from Dutch authorities and only if such a request complies with all the requirements set by law."
+]
+notes = [ "Open to interpretition." ]
+
+[rubric.list-collected]
+value = "exhaustively"
+citations = [
+  "Mandatory data (this data is necessary in order to provide you with our service)\n- In order to provide the aforementioned services and to provide you with a Soverin account, we need your phone number.\n- Once we have your phone number you get to choose your own email address. Depending on the email address you choose, this could be considered personal data.\n- Soverin provides you with an email service. Therefore we manage your email. However, under no circumstances will we ever look into the content of your emails.\nOptional data\n- Soverin can supply you with a domain name, linked to your email address. Soverin will administer this domain name for you. Depending on the domain name you choose, this can be considered personal data, for example if you choose a domain name that consists of your name (should you wish to register a domain name with your own name in it)."
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "Should Soverin alter the way she processes your data, Soverin will change this policy and you will be notified by email."
+]
