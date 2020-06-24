@@ -4,10 +4,11 @@
             "owner": "automated-tests",
             "pattern": [
                 {
-                    "regexp": "(Error|Warning|Info)(\\s+)(file=(.+)(\\s+))?(message=(.+))",
+                    "regexp": "(Error|Warning|Info)(\\s+)(file=(\\S+)(\\s+))?(line=(\\d+)(\\s+))?(message=(.+))",
                     "file": 4,
                     "severity": 1,
-                    "message": 7
+                    "message": 10,
+                    "line": 7
                 }
             ]
         }
