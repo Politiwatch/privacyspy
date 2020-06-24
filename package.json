@@ -41,6 +41,7 @@
     "image-size": "^0.8.3",
     "jest": "^26.0.1",
     "jest-cli": "^26.0.1",
+    "jest-junit": "^11.0.1",
     "jssoup": "0.0.11",
     "postcss": "^7.0.30",
     "postcss-import": "^12.0.1",
