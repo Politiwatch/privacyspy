@@ -5,12 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Install Modules
-      run: npm i
-    - name: Run Tests
-      run: npm test
-    - name: Publish Test Report
-      uses: shyim/junit-report-annotations-action@0.1.5
-      if: always()
+    - uses: actions/setup-node@v1
       with:
-        access-token: ${{ secrets.GITHUB_TOKEN }}
+        node-version: '12'
+    - run: npm install
+    - run: npm test
