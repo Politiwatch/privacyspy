@@ -20,6 +20,12 @@ citations = [
   "We maintain administrative, technical and physical safeguards that are intended to appropriately protect Personal Information against accidental or unlawful destruction, accidental loss, unauthorized alteration, unauthorized disclosure or access, misuse, and any other unlawful form of processing of the Personal Information in our possession. Unfortunately, the Internet cannot be guaranteed to be 100% secure, and we cannot ensure or warrant the security of any Personal Information you provide to us."
 ]
 
+[rubric.data-collection-reasoning]
+value = "mostly"
+notes = [
+  "The policy provides a strong overview in the 'How TuneIn Uses Your Information' section, but it uses lots of ambiguous language (such as 'may' and 'might' to avoid concrete statements)."
+]
+
 [rubric.third-party-collection]
 value = "yes"
 citations = [
