@@ -1,0 +1,24 @@
+# Number of labels to fetch (optional). Defaults to 20.
+numLabels: 40
+
+# Determines if we search the title (optional). Defaults to true.
+matchTitle: true
+
+# Determines if we search the body (optional). Defaults to true.
+matchBody: false
+
+# Explicit keyword mappings to labels. Form of match:label. Required.
+labelMappings:
+    bug: bug
+    broken: bug
+    issue: bug
+    typo: bug
+    product: product
+    rubric: rubric
+    test: test
+    tests: test
+    community: process
+    process: process
+    add: enhancement
+    new: enhancement
+    implement: enhancement
