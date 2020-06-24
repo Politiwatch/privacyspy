@@ -1,5 +1,5 @@
 name = "V0LT"
-description = "V0LT produces free and open source software, services, and other content"
+description = "V0LT produces free and open source software, services, and other digital content."
 slug = "v0lt"
 hostnames = [ "v0lttech.com" ]
 sources = [ "https://v0lttech.com/privacy.php" ]
