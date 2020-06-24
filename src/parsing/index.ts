@@ -51,13 +51,21 @@ export function loadProducts(
   for (const file of files) {
     const rubric: RubricSelection[] = [];
 
-    const product: Product = toml.parse(
-      fs.readFileSync("products/" + file, {
-        encoding: "utf-8",
-      })
-    ) as any;
+    const product: Product = {
+      contributors: [],
+      updates: [],
+      hostnames: [],
+      sources: [],
+      ...(toml.parse(
+        fs.readFileSync("products/" + file, {
+          encoding: "utf-8",
+        })
+      ) as any),
+    };
 
-    product.icon = fs.readdirSync("icons/").find(filename => filename.split(".")[0] === product.slug);
+    product.icon = fs
+      .readdirSync("icons/")
+      .find((filename) => filename.split(".")[0] === product.slug);
 
     if (product.parent !== undefined) {
       parentMap[product.slug] = product.parent;
