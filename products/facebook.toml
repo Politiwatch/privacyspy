@@ -1,5 +1,5 @@
 name = "Facebook"
-description = "Facebook, Inc. is the world's largest online social network and has undergone several privacy scandals"
+description = "Facebook, Inc. is the world's largest online social network and has undergone several privacy scandalz"
 slug = "facebook"
 hostnames = [ "facebook.com" ]
 sources = [ "https://www.facebook.com/privacy/explanation" ]
