@@ -8,25 +8,25 @@ const products: Product[] = loadProducts(rubric, loadContributors());
 
 for (const product of products) {
   describe(`[product/${product.slug}.toml] Product '${product.name}'`, () => {
-    test(`has a unique slug`, () => {
+    test(`must have a unique slug`, () => {
       expect(products.filter((p) => p.slug === product.slug).length).toEqual(1);
     });
 
-    test(`has contributors listed`, () => {
+    test(`must have contributors listed`, () => {
       expect(product.contributors.length).toBeGreaterThan(0);
     });
 
-    describe(`has a valid description that is a full sentence`, () => {
+    describe(`must have a valid description that is a full sentence`, () => {
       isMinFullSentence(product.description);
     });
 
-    describe(`has hostname(s)`, () => {
-      test("at least one exists", () => {
+    describe(`must have hostname(s)`, () => {
+      test("that exist", () => {
         expect(product.hostnames.length).toBeGreaterThan(0);
       });
 
       test.each(product.hostnames)(
-        "%s is a valid hostname (doesn't specify protocol)",
+        "that are valid (don't specify protocol)",
         (hostname) => {
           expect(hostname.startsWith("http://")).toBeFalsy();
           expect(hostname.startsWith("https://")).toBeFalsy();
@@ -34,7 +34,7 @@ for (const product of products) {
       );
     });
 
-    describe(`has an icon in the 'icons/' directory`, () => {
+    describe(`must have an icon in the 'icons/' directory`, () => {
       test("that exists", () => {
         expect(product.icon).not.toBeUndefined();
         expect(fs.existsSync("icons/" + product.icon)).toBeTruthy();
@@ -46,18 +46,18 @@ for (const product of products) {
     });
     if (product.parent != null) {
       describe(`is a child product`, () => {
-        test(`has no link(s) to original policies`, () => {
+        test(`so it must not have any sources (use parent product instead)`, () => {
           expect(product.sources.length).toBe(0);
         });
-        test(`has no rubric assessments`, () => {
+        test(`so it must not be graded (use parent product instead)`, () => {
           expect(product.rubric.length).toBe(0);
         });
-        test(`has no updates`, () => {
+        test(`so it must not have any updates (use parent product instead)`, () => {
           expect(product.updates.length).toBe(0);
         });
       });
     } else {
-      test(`has link(s) to the original policy`, () => {
+      test(`must have link(s) to the original policy`, () => {
         expect(product.sources.length).toBeGreaterThan(0);
       });
 
@@ -67,11 +67,11 @@ for (const product of products) {
             (item) => item.question.slug === question.slug
           );
 
-          test("is scored", () => {
+          test("must be scored", () => {
             expect(selection).not.toBeUndefined();
           });
 
-          test("has either a note or a citation", () => {
+          test("must have either a note or a citation", () => {
             expect(
               selection.notes.length > 0 || selection.citations.length > 0
             ).toBeTruthy();
@@ -80,16 +80,16 @@ for (const product of products) {
       }
 
       for (const update of product.updates) {
-        describe(`update "${update.title}" is valid`, () => {
-          test("has a title", () => {
+        describe(`update '${update.title}'`, () => {
+          test("must have a title", () => {
             expect(update.title.length).toBeGreaterThan(0);
           });
 
-          describe("has a full-sentence description", () => {
+          describe("must have a full-sentence description", () => {
             isMinFullSentence(update.description);
           });
 
-          test("has sources", () => {
+          test("must have sources", () => {
             expect(update.sources.length).toBeGreaterThan(0);
           });
         });
