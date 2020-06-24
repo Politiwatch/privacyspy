@@ -18,15 +18,19 @@ files = files.concat(
     .map((file) => "products/" + file)
 );
 
-test.each(files)("%s is valid, readable TOML", (file) => {
-  expect(() => {
-    toml.parse(
-      fs.readFileSync(file, {
-        encoding: "utf-8",
-      })
-    );
-  }).not.toThrowError();
-});
+for(let file of files) {
+  describe(`[${file}]`, () => {
+    test("TOML successfully parses", () => {
+      expect(() => {
+        toml.parse(
+          fs.readFileSync(file, {
+            encoding: "utf-8",
+          })
+        );
+      }).not.toThrowError();
+    });
+  });
+}
 
 test("rubric parses correctly", () => {
   expect(() => {
