@@ -7,7 +7,7 @@ const rubric: RubricQuestion[] = loadRubric();
 const products: Product[] = loadProducts(rubric, loadContributors());
 
 for (const product of products) {
-  describe(`[product/${product.slug}.toml] Product '${product.name}'`, () => {
+  describe(`[products/${product.slug}.toml] Product '${product.name}'`, () => {
     test(`must have a unique slug`, () => {
       expect(products.filter((p) => p.slug === product.slug).length).toEqual(1);
     });
