@@ -3,3 +3,8 @@
   for = "/api/v2/*"
     [headers.values]
     Access-Control-Allow-Origin = "*"
+
+[[redirects]]
+  from = "/api/retrieve_database"
+  to = "/api/legacy/index.json"
+  status = 200
