@@ -1,6 +1,6 @@
 ---
 name: Problem (mistakes, typos, bugs, etc.)
-about: Suggest an addition to PrivacySpy
+about: For when something isn't quite right
 title: ''
 labels: problem
 assignees: ''
