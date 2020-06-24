@@ -1,64 +1,11 @@
-# linter:
-# # https://help.sider.review/getting-started/custom-configuration
+linter:
+# https://help.sider.review/getting-started/custom-configuration
 
-#   # https://help.sider.review/tools/javascript/eslint
-#   eslint:
-#     dir: frontend/app
-#     config: .my_eslintrc
-#     ext: ".js,.jsx,.es6"
-#     ignore-path: .my_eslintignore
-#     no-ignore: true
-#     ignore-pattern: "/src/vendor/*"
-#     global: "require,exports:true"
-#     quiet: true
-
-#   # https://help.sider.review/tools/javascript/tslint
-#   tslint:
-#     config: my_tslint.json
-#     exclude: "vendor/**"
-#     project: frontend/tsconfig.json
-#     rules-dir: your_custom_rules/
-#     glob: "path/to/**/*.ts"
-
-#   # https://help.sider.review/tools/others/misspell
-#   misspell:
-#     exclude:
-#       - vendor
-#       - "**/*.min.js"
-#       - exclude_file.rb
-#     targets:
-#       - target_directory
-#       - another_target_directory/foo.rb
-#       - bar.rb
-#     locale: UK
-#     ignore: center,behavior
-
-#   # https://help.sider.review/tools/javascript/tyscan
-#   tyscan:
-#     config: "lint_yml/tyscan.yml"
-#     tsconfig: "some/tsconfig.json"
-#     paths:
-#       - frontend
-
-#   # https://help.sider.review/tools/shellscript/shellcheck
-#   shellcheck:
-#     target: "src/**/*.{sh,bash}"
-#     include: "SC2104,SC2105"
-#     exclude: "SC1000,SC1118"
-#     enable: "all"
-#     shell: "bash"
-#     severity: "error"
-#     norc: true
-
-# # https://help.sider.review/getting-started/custom-configuration#ignore
-# ignore:
-#   - "*.pdf"
-#   - "*.mp4"
-#   - "images/**"
-
-# # https://help.sider.review/getting-started/custom-configuration#branchesexclude
-# branches:
-#   exclude:
-#     - master
-#     - development
-#     - /^release-.*$/
+  # https://help.sider.review/tools/javascript/eslint
+  eslint:
+    dir: "."
+    config: .my_eslintrc
+    ext: ".js,.jsx,.es6,.ts"
+    no-ignore: true
+    global: "require,exports:true"
+    quiet: true
