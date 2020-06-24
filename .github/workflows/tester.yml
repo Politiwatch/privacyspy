@@ -4,8 +4,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - name: Install modules
-      run: npm i
-    - name: Run tests
-      run: npm test
+    - uses: IgnusG/jest-report-action@v2
+      if: always()
+      with:
+        access-token: ${{ secrets.GITHUB_TOKEN }}
