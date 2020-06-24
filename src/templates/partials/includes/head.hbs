@@ -1,6 +1,4 @@
-<title>
-    {{title}} | PrivacySpy
-</title>
+<title>{{#if title}}{{title}} | PrivacySpy{{else}}PrivacySpy: We track online privacy{{/if}}</title>
 <link rel="stylesheet" href="/static/css/base.css" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta charset="utf-8" />
@@ -12,7 +10,7 @@
 <link href="https://chrome.google.com/webstore/detail/ppembnadnhiknioggbglgiciihgmkmnd" rel="chrome-webstore-item" />
 <meta name="description"
     content="{{default description "PrivacySpy is an open project to grade and monitor privacy policies for convenience and accountability. Let's make informed data privacy decisions." }}" />
-<meta property="og:title" content="{{title}} | PrivacySpy" />
+<meta property="og:title" content="{{#if title}}{{title}} | PrivacySpy{{else}}PrivacySpy: We track online privacy{{/if}}" />
 <meta property="og:description"
     content="{{default description "PrivacySpy is an open project to grade and monitor privacy policies for convenience and accountability. Let's make informed data privacy decisions." }}" />
 <meta property="og:image:secure_url" content="/static/img/graphic.png" />
@@ -24,7 +22,7 @@
 <meta property="og:url" content="https://privacyspy.org" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:domain" content="privacyspy.org" />
-<meta name="twitter:title" content="{{title}} | PrivacySpy" />
+<meta name="twitter:title" content="{{#if title}}{{title}} | PrivacySpy{{else}}PrivacySpy: We track online privacy{{/if}}" />
 <meta name="twitter:description"
     content="{{default description "PrivacySpy is an open project to grade and monitor privacy policies for convenience and accountability. Let's make informed data privacy decisions." }}" />
 <meta name="twitter:image:src" content="/static/img/graphic.png" />
