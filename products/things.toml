@@ -1,5 +1,5 @@
 name = "Things"
-description = "Things is an iOS/macOS-exclusive to-do app developed by Cultured Code"
+description = "Things is an Apple-exclusive todo list app and planner developed by Cultured Code."
 slug = "things"
 hostnames = [ "culturedcode.com" ]
 sources = [ "https://culturedcode.com/privacy/" ]
