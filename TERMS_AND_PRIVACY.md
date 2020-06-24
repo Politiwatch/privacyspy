@@ -23,7 +23,7 @@ By accessing the website at [https://privacyspy.org](https://privacyspy.org/), 
 1.  The materials on PrivacySpy (Politiwatch, Inc.)'s website are provided on an 'as is' basis. PrivacySpy (Politiwatch, Inc.) makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.
 2.  The materials on PrivacySpy (Politiwatch, Inc.)'s website are not legal advice. PrivacySpy does not provide legal advice in any capacity.
 3.  Further, PrivacySpy (Politiwatch, Inc.) does not warrant or make any representations concerning the accuracy, likely results, or reliability of the use of the materials on its website or otherwise relating to such materials or on any sites linked to this site.
-4.  Some of the content on PrivacySpy is user-generated. While PrivacySpy will make a good-faith effort to moderate its user generated content, it is not responsible for it. (If you find something that shouldn't be here, please [let us know](mailto:secure@politiwatch.org) immediately.)
+4.  Some of the content on PrivacySpy is user-generated. While PrivacySpy will make a good-faith effort to moderate its user-generated content, it is not responsible for it. (If you find something that shouldn't be here, please [let us know](mailto:secure@politiwatch.org) immediately.)
 
 ### 4\. Limitations
 
@@ -31,7 +31,7 @@ In no event shall PrivacySpy (Politiwatch, Inc.) or its suppliers be liable for 
 
 ### 5\. Accuracy of Materials
 
-The materials appearing on PrivacySpy (Politiwatch, Inc.)'s website could include technical, typographical, or photographic errors. PrivacySpy (Politiwatch, Inc.) does not warrant that any of the materials on its website are accurate, complete or current. PrivacySpy (Politiwatch, Inc.) may make changes to the materials contained on its website at any time without notice. However PrivacySpy (Politiwatch, Inc.) does not make any commitment to update the materials.
+The materials appearing on PrivacySpy (Politiwatch, Inc.)'s website could include technical, typographical, or photographic errors. PrivacySpy (Politiwatch, Inc.) does not warrant that any of the materials on its website are accurate, complete, or current. PrivacySpy (Politiwatch, Inc.) may make changes to the materials contained on its website at any time without notice. However, PrivacySpy (Politiwatch, Inc.) does not make any commitment to update the materials.
 
 ### 6\. Links
 
@@ -39,11 +39,11 @@ PrivacySpy (Politiwatch, Inc.) has not reviewed all of the sites linked to its w
 
 ### 7\. Modifications
 
-PrivacySpy (Politiwatch, Inc.) may revise these terms of service for its website at any time, though users will be notified of any substantial modifications. By using this website you are agreeing to be bound by the then current version of these terms of service.
+PrivacySpy (Politiwatch, Inc.) may revise these terms of service for its website at any time, though users will be notified of any substantial modifications. By using this website, you are agreeing to be bound by the then current version of these terms of service.
 
 ### 8\. Governing Law
 
-These terms and conditions are governed by and construed in accordance with the laws of New York and you irrevocably submit to the exclusive jurisdiction of the courts in that State or location.
+These terms and conditions are governed by and construed in accordance with the laws of New York, and you irrevocably submit to the exclusive jurisdiction of the courts in that State or location.
 
 ### 9\. Code of Conduct
 
@@ -63,13 +63,13 @@ We collect the following data:
 -   Your IP address and browser "user agent" (in logs and basic analytics, which are periodically rotated)
 -   Aggregate website usage statistics (page views, general geographic breakdowns, device types)
 
-We only retain collected information for as long as necessary to provide you with your requested service. What data we store, we'll protect within commercially acceptable means to prevent loss and theft, as well as unauthorised access, disclosure, copying, use or modification.
+We only retain collected information for as long as necessary to provide you with your requested service. What data we store, we'll protect within commercially acceptable means to prevent loss and theft, as well as unauthorized access, disclosure, copying, use or modification.
 
 We don't share any personally identifying information publicly or with third-parties, except when required to by a subpoena or valid court order, or when you explicitly publish that information yourself.
 
-We do not collect any personal information except that which you give yourself to the site, however we will nonetheless make a best-effort attempt to respect Do Not Track (DNT) browser requests.
+We do not collect any personal information except that which you give yourself to the site; however, we will nonetheless make a best-effort attempt to respect Do Not Track (DNT) browser requests.
 
-Our website may link to external sites that are not operated by us. Please be aware that we have no control over the content and practices of these sites, and cannot accept responsibility or liability for their respective privacy policies.
+Our website may link to external sites that are not operated by us. Please be aware that we have no control over the content and practices of these sites and cannot accept responsibility or liability for their respective privacy policies.
 
 You are free to refuse our request for your personal information, with the understanding that we may be unable to provide you with some of your desired services.
 
