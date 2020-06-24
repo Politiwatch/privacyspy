@@ -9,9 +9,8 @@ jobs:
       run: npm i
     - name: Run Tests
       run: npm test
-      continue-on-error: true
     - name: Publish Test Report
-      uses: IgnusG/jest-report-action@v2.3.3
+      uses: ashley-taylor/junit-report-annotations-action@1.1
       if: always()
       with:
         access-token: ${{ secrets.GITHUB_TOKEN }}
