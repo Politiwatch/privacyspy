@@ -34,13 +34,13 @@ for (const product of products) {
       );
     });
 
-    describe(`has a valid icon in the 'icons/' directory`, () => {
-      test("icon exists", () => {
+    describe(`has an icon in the 'icons/' directory`, () => {
+      test("that exists", () => {
         expect(product.icon).not.toBeUndefined();
         expect(fs.existsSync("icons/" + product.icon)).toBeTruthy();
       });
 
-      test(`${product.name} icon is smaller than 30kb`, () => {
+      test(`that is smaller than 30kb`, () => {
         expect(fs.statSync("icons/" + product.icon).size).toBeLessThan(30000);
       });
     });
