@@ -1,5 +1,5 @@
 name = "Facebook"
-description = "Facebook, Inc. is the world's largest online social network and has undergone several privacy scandals."
+description = "Facebook, Inc. is the world's largest online social network and has undergone several privacy scandals"
 slug = "facebook"
 hostnames = [ "facebook.com" ]
 sources = [ "https://www.facebook.com/privacy/explanation" ]
@@ -25,9 +25,9 @@ citations = [
 
 [rubric.history]
 value = "last-modified"
-notes = [
-  "The policy includes a 'date of last revision' on the bottom of the policy, but does not have a change-log or revision history."
-]
+# notes = [
+#   "The policy includes a 'date of last revision' on the bottom of the policy, but does not have a change-log or revision history."
+# ]
 
 [rubric.data-deletion]
 value = "yes-automated"
