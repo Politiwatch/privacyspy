@@ -1,5 +1,5 @@
 name = "4chan"
-description = "4chan is an anonymous imageboard where anyone can post comments and share images"
+description = "4chan is an anonymous imageboard where anyone can post comments and share images and forum content."
 slug = "4chan"
 hostnames = [ "4chan.org" ]
 sources = [ "https://www.4chan.org/faq#personalinfo" ]

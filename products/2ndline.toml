@@ -1,8 +1,8 @@
 name = "2ndLine"
-description = 'A "virtual phone" service that provides you with a second phone number for free.'
+description = '2ndLine is a "virtual phone" service that provides you with a second phone number for free.'
 slug = "2ndline"
 hostnames = [ "2ndline.co" ]
-sources = [ "2ndline.co/privacy" ]
+sources = [ "https://2ndline.co/privacy" ]
 contributors = [ "mrhedgehog0" ]
 
 [rubric.behavioral-marketing]
