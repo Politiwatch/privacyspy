@@ -1,5 +1,5 @@
 name = "TickTick"
-description = "TickTick is a cross-platform and collaborative to-do app"
+description = "TickTick is a cross-platform and collaborative todo list app with time-tracking capabilities."
 slug = "ticktick"
 hostnames = [ "ticktick.com" ]
 sources = [ "https://www.ticktick.com/about/privacy" ]
@@ -7,7 +7,7 @@ contributors = [ "doamatto" ]
 
 [rubric.behavioral-marketing]
 value = "no"
-notes = [ "This service doesn't allow targeted marketing" ]
+notes = [ "This service doesn't allow targeted marketing." ]
 
 [rubric.security]
 value = "yes"
