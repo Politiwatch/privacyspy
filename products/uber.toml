@@ -1,5 +1,5 @@
 name = "Uber"
-description = "Uber connects drivers with commuters and travellers"
+description = "Uber is an American ridesharing and delivery marketplace that operates worldwide."
 slug = "uber"
 hostnames = [ "uber.com" ]
 sources = [ "uber.com/privacy/notice" ]
