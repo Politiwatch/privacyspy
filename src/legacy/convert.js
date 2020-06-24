@@ -82,7 +82,6 @@ for (let entry of database) {
       let update_obj = {
         title: warning["title"],
         description: warning["description"],
-        // there are so few products that currently have warnings that it's easier to enter sources and fix dates ourselves
         date: new Date(warning["added"]),
         sources: [],
       };
@@ -103,7 +102,7 @@ for (let entry of database) {
     contributors.add(contributor);
   }
 
-  if (!need_revision.has(policy["name"])) {
+  if (true || !need_revision.has(policy["name"])) {
     fs.writeFileSync(
       "products/" + policy.slug + ".toml",
       toml.stringify(policy)
