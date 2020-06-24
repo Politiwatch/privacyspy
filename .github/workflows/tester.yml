@@ -10,7 +10,7 @@ jobs:
     - name: Run Tests
       run: npm test
     - name: Publish Test Report
-      uses: ashley-taylor/junit-report-annotations-action@v1.1
-      if: always()
+      uses: ashley-taylor/junit-report-annotations-action@69564f6 
+      if: ${{ always() }}
       with:
         access-token: ${{ secrets.GITHUB_TOKEN }}
