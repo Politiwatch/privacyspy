@@ -12,7 +12,7 @@ percent = 0
 [[options]]
 id = "eventually"
 text = "Yes, eventually"
-description = "Users will be notified in case of a data breach, but within an unspecified amount of time."
+description = "Users will be notified in case of a data breach but within an unspecified amount of time."
 percent = 70
 
 [[options]]

@@ -15,7 +15,7 @@ points = 10
 [[options]]
 id = "yes-unspecified"
 text = "Yes"
-description = "The policy allows sharing personal data with third-parties (not just critical service providers), and does not explicitly list the third-parties."
+description = "The policy allows sharing personal data with third parties (not just critical service providers), and does not explicitly list the third parties."
 percent = 0
 
 [[options]]
