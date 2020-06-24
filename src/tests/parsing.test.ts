@@ -20,7 +20,7 @@ files = files.concat(
 
 for(let file of files) {
   describe(`[${file}]`, () => {
-    test("TOML successfully parses", () => {
+    test("Must be valid TOML", () => {
       expect(() => {
         toml.parse(
           fs.readFileSync(file, {
@@ -32,19 +32,19 @@ for(let file of files) {
   });
 }
 
-test("rubric parses correctly", () => {
+test("Rubric must parse correctly", () => {
   expect(() => {
     loadRubric();
   }).not.toThrowError();
 });
 
-test("contributors parse correctly", () => {
+test("Contributors must parse correctly", () => {
   expect(() => {
     loadContributors();
   }).not.toThrowError();
 });
 
-test("products parse correctly", () => {
+test("Products must parse correctly", () => {
   expect(() => {
     loadProducts(loadRubric(), loadContributors());
   }).not.toThrowError();
