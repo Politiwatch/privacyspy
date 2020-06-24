@@ -1,5 +1,5 @@
 name = "TikTok"
-description = "TikTok is a mobile app in which users upload short videos, typically with music, owned by Chinese company ByteDance"
+description = "TikTok is a social media app where users upload short videos, typically with music, owned by Chinese company ByteDance."
 slug = "tiktok"
 hostnames = [ "tiktok.com" ]
 sources = [ "https://www.tiktok.com/legal/privacy-policy" ]
