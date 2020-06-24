@@ -14,7 +14,7 @@ class Reporter {
               fileName = fileName[1];
             }
             let error = test.fullName.replace(/\[(.+)\]/, "").replace(/^\s+/, "");
-            console.log(`::error ${fileName !== null ? "file=" + fileName : ""}::${error}`);
+            console.log(`Error file=${fileName || ""} message=${error}`);
           }
         }
       }

@@ -1,0 +1,15 @@
+{
+    "problemMatcher": [
+        {
+            "owner": "automated-tests",
+            "pattern": [
+                {
+                    "regexp": "^(Error|Warning|Info)(\\s+)(file=(.+)(\\s+))?(message=(.+))",
+                    "file": 4,
+                    "severity": 1,
+                    "message": 7
+                }
+            ]
+        }
+    ]
+}
