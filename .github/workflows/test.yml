@@ -9,6 +9,7 @@ jobs:
       with:
         node-version: '12'
     - run: npm install
+    - run: echo "::add-matcher::.github/problem_matcher.json"
     - run: npm test
       env:
         TEST_ENVIRONMENT: github
