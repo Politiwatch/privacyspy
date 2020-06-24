@@ -4,7 +4,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: IgnusG/jest-report-action@v2
+    - uses: IgnusG/jest-report-action@v2.3.3
       if: always()
       with:
         access-token: ${{ secrets.GITHUB_TOKEN }}
