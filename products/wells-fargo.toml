@@ -1,7 +1,7 @@
-name = "Wells Fargo "
-description = "Multinational financial service provider."
+name = "Wells Fargo"
+description = "Wells Fargo is an American bank that provides services worldwide."
 slug = "wells-fargo"
-hostnames = [ "https://www.wellsfargo.com/" ]
+hostnames = [ "wellsfargo.com" ]
 sources = [
   "https://www.wellsfargo.com/privacy-security/privacy/online/"
 ]
