@@ -25,7 +25,7 @@ citations = [
 
 [rubric.history]
 value = "last-modified"
-citations = [ "Effective January 1, 2020." ]
+notes = [ "The policy only lists the date it was last modified (in this case, January 1, 2020)." ]
 
 [rubric.data-deletion]
 value = "no"
