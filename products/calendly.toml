@@ -14,7 +14,7 @@ citations = [
 [rubric.security]
 value = "yes-audits"
 notes = [
-  "Please refer to [https://calendly.com/pages/security](https://calendly.com/pages/security)."
+  "Calendly describes its security practices on a dedicated [security page](https://calendly.com/pages/security)."
 ]
 
 [rubric.third-party-collection]
