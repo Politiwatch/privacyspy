@@ -1,6 +1,6 @@
 name = "The Washington Post"
 description = "the Washington post is a major American newspaper with a particular emphasis on national politics and the federal government."
-slug = "the-washington-post"
+slug = "washington-post"
 hostnames = [ "washingtonpost.com" ]
 sources = [
   "https://www.washingtonpost.com/privacy-policy/2011/11/18/gIQASIiaiN_story.html"
