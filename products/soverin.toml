@@ -1,5 +1,5 @@
 name = "Soverin"
-description = "Soverin is a paid email service"
+description = "Soverin is a paid email service emphasizing custom domains and privacy."
 slug = "soverin"
 hostnames = [ "soverin.net" ]
 sources = [ "https://soverin.net/legal" ]
@@ -62,4 +62,10 @@ citations = [
 value = "yes"
 citations = [
   "Should Soverin alter the way she processes your data, Soverin will change this policy and you will be notified by email."
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+notes = [
+  "The service collects very little personal data, and the data it does collect is justified and necessary (e.g., billing info)."
 ]
