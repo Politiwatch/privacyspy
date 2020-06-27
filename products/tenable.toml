@@ -1,5 +1,5 @@
 name = "Tenable"
-description = "Tenable is a software company"
+description = "Tenable is a cybersecurity company specializing in enterprise security and device management."
 slug = "tenable"
 hostnames = [ "tenable.com" ]
 sources = [ "https://www.tenable.com/privacy-policy" ]
