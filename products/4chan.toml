@@ -20,7 +20,7 @@ notes = [
 [rubric.third-party-collection]
 value = "no"
 notes = [
-  "No where in the policy are any third parties listed as data sources."
+  "Nowhere in the policy are any third parties listed as data sources."
 ]
 
 [rubric.history]
@@ -50,21 +50,17 @@ citations = [ "4chan collects and stores user information for postings. " ]
 [rubric.noncritical-purposes]
 value = "na"
 notes = [
-  "The policy states that only the data necessary for posting is collected"
+  "The policy states that only the data necessary for posting is collected."
 ]
 
 [rubric.law-enforcement]
 value = "reasonable"
 citations = [
-  "will not make private information such as IP addresses available to others, except to comply with court orders or to cooperate with law enforcement agencies when appropriate."
+  "We value the privacy of our users, and will not make private information such as IP addresses available to others, except to comply with court orders or to cooperate with law enforcement agencies when appropriate."
 ]
-notes = [
-  "\"to cooperate with law enforcement agencies\" is very vague"
-]
-
 [rubric.list-collected]
 value = "summarily"
-citations = [ "4chan collects and stores user information for postings. " ]
+citations = [ "4chan collects and stores user information for postings." ]
 
 [rubric.revision-notify]
 value = "na"
