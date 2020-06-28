@@ -14,7 +14,7 @@ citations = [
 [rubric.security]
 value = "yes-audits"
 notes = [
-  "Please refer to [https://calendly.com/pages/security](https://calendly.com/pages/security)."
+  "Calendly describes its security practices on a dedicated [security page](https://calendly.com/pages/security)."
 ]
 
 [rubric.third-party-collection]
@@ -25,7 +25,7 @@ citations = [
 
 [rubric.history]
 value = "last-modified"
-citations = [ "Effective January 1, 2020." ]
+notes = [ "The policy only lists the date it was last modified (in this case, January 1, 2020)." ]
 
 [rubric.data-deletion]
 value = "no"
