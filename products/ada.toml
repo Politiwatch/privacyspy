@@ -10,9 +10,9 @@ value = "no"
 notes = [ "No information proving such." ]
 
 [rubric.security]
-value = "yes"
+value = "somewhat"
 citations = [
-  "he personal data that we collect from you is stored in the European Union on Cloud Servers of Amazon Web Services EMEA S.A.R.L. (“AWS”) with a business seat in Luxembourg and on the Cloud Servers of Google Commerce Limited (“GCL”), a company incorporated under the laws of Ireland, with offices at Gordon House, Barrow Street, Dublin 4, Ireland. This data may, however, be processed by sub-processors operating outside of the European Economic Area (“EEA”) based on a data processing agreement if the additional requirements of Art. 44 et seq. GDPR for processing in third countries are compliant with an appropriate level of protection in the third country and appropriate guarantees under Art. 46 GDPR (such as standard data protection clauses, or exceptional circumstances under Art. 49 GDPR).\n\nSensitive information between your browser and our Website is transferred in encrypted form using Transport Layer Security (“TLS”). When transmitting sensitive information, you should always make sure that your browser can validate our certificate.\n\nPlease contact us if you would like further details on the specific safeguards applied to the export of your personal data outside the EEA."
+  "The personal data that we collect from you is stored in the European Union on Cloud Servers of Amazon Web Services EMEA S.A.R.L. (“AWS”) with a business seat in Luxembourg and on the Cloud Servers of Google Commerce Limited (“GCL”), a company incorporated under the laws of Ireland, with offices at Gordon House, Barrow Street, Dublin 4, Ireland. This data may, however, be processed by sub-processors operating outside of the European Economic Area (“EEA”) based on a data processing agreement if the additional requirements of Art. 44 et seq. GDPR for processing in third countries are compliant with an appropriate level of protection in the third country and appropriate guarantees under Art. 46 GDPR (such as standard data protection clauses, or exceptional circumstances under Art. 49 GDPR).\n\nSensitive information between your browser and our Website is transferred in encrypted form using Transport Layer Security (“TLS”). When transmitting sensitive information, you should always make sure that your browser can validate our certificate.\n\nPlease contact us if you would like further details on the specific safeguards applied to the export of your personal data outside the EEA."
 ]
 
 [rubric.third-party-collection]
@@ -34,6 +34,12 @@ notes = [
   "You can delete your account based on the information provided at https://help.ada.com/hc/en-us/articles/360000319269"
 ]
 
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "The policy does not require users to be notified in case of a data breach."
+]
+
 [rubric.third-party-access]
 value = "yes-specified-noncritical"
 citations = [
@@ -52,7 +58,8 @@ notes = [
 [rubric.noncritical-purposes]
 value = "opt-out-all"
 citations = [
-  "3.12 Monitor usage to ensure proper use, functioning, maintenance and improvement of the medical reasoning system and related Services\n[...]\nUse justification: Legitimate interest (Article 6 (1) (f) GDPR). Our legitimate interest is based on the aforementioned use of that data purposes. Under no circumstances will we use the collected data to determine your identity. We may send you transactional emails (e.g. account creation verification email, reset password email, double opt-in email regarding the newsletter subscription, welcome email) and process the page interaction accordingly, to ensure proper reception and assess the service in order to improve it. \n"
+  "3.12 Monitor usage to ensure proper use, functioning, maintenance and improvement of the medical reasoning system and related Services\n[...]\nUse justification: Legitimate interest (Article 6 (1) (f) GDPR). Our legitimate interest is based on the aforementioned use of that data purposes. Under no circumstances will we use the collected data to determine your identity. We may send you transactional emails (e.g. account creation verification email, reset password email, double opt-in email regarding the newsletter subscription, welcome email) and process the page interaction accordingly, to ensure proper reception and assess the service in order to improve it. \n",
+  "Right to object: You have a right to object under the conditions of Article 21 DSGVO. Below you will find more detailed information:\n— Right to object where the processing is based on legitimate interests: As a data subject, you have the right to object, on grounds relating to your particular situation, at any time to processing of your personal data which is based on Article 6 (1) (e) or (f) GDPR, including profiling based on those provisions. In the event of an objection relating to your particular situation, we will no longer process your personal data unless we can demonstrate compelling legitimate grounds for the processing which override your interests, rights and freedoms or for the establishment, exercise or defence of legal claims.\n— Right to object where we process your personal data for statistical purposes: If we process your personal data for statistical purposes pursuant to Article 9 (2) (j) DSGVO, Section 27 (1) BDSG, you have the right to object to such processing for reasons arising from your particular situation. In the event of such an objection, we will no longer process the personal data concerned for this purpose unless the processing is necessary to fulfil a task in the public interest, or the discontinuation of processing is likely to make it impossible or seriously impair the realization of statistical purposes and the continuation of processing is necessary for the fulfilment of statistical purposes."
 ]
 
 [rubric.law-enforcement]
