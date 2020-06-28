@@ -10,7 +10,7 @@ contributors = [ "4Iufy" ]
 [rubric.behavioral-marketing]
 value = "yes"
 citations = [
-  "We may share or sell AddThis Data with the following third parties for a commercial purpose:\n\nOracle Marketing & Data Cloud customers and partners, including digital marketers, ad agencies, web publishers, demand side platforms, data management platforms, supply-side platforms and social media networks. Oracle’s use of AddThis Data by our Oracle Marketing & Data Cloud customers and partners is described in the Oracle Marketing & Data Cloud Privacy Policy"
+  "We may associate personal information about you with interest segments or profiles as part of the provision of AddThis services to our customers and partners. “Interest segments” are a specific group of consumers that share a common behavior or preference used for marketing by our customers. “Profiles” are a set of attributes about a specific consumer or device, or a set of multiple consumers or devices sharing common attributes used for marketing by our customers."
 ]
 
 [rubric.security]
@@ -22,7 +22,8 @@ citations = [
 [rubric.third-party-collection]
 value = "yes"
 citations = [
-  "The AddThis Tools also incorporate Cookies and Pixels from Oracle partners to enable the synchronization of unique identifiers between Oracle and our third party partners to facilitate online behavioral advertising across the online advertising ecosystem. For a list of those third party partners, please visit: http://www.addthis.com/privacy/pixel-partners.\n\n[…]\n\nCookies and similar technologies (e.g., pixels tags and device identifiers) are used by Oracle and our advertising technology partners to recognize you and/or your device(s) on, off and across different services and devices for the purposes specified in Section 5 above."
+  "The AddThis Tools also incorporate Cookies and Pixels from Oracle partners to enable the synchronization of unique identifiers between Oracle and our third party partners to facilitate online behavioral advertising across the online advertising ecosystem. For a list of those third party partners, please visit: [http://www.addthis.com/privacy/pixel-partners](http://www.addthis.com/privacy/pixel-partners).",
+  "Cookies and similar technologies (e.g., pixels tags and device identifiers) are used by Oracle and our advertising technology partners to recognize you and/or your device(s) on, off and across different services and devices for the purposes specified in Section 5 above."
 ]
 
 [rubric.history]
@@ -34,29 +35,31 @@ citations = [
 [rubric.data-deletion]
 value = "yes-automated"
 citations = [
-  "You can erase or delete the AddThis Data Oracle is processing about your device or remove segments in the Registry by opting out of AddThis services using the opt-out tool.\n\n[…]\n\nIf you are a California resident, you may request that we […] delete personal information we collected from you"
+  "You can erase or delete the AddThis Data Oracle is processing about your device or remove segments in the Registry by opting out of AddThis services using the [opt-out tool](https://datacloudoptout.oracle.com/registry/).",
+  "If you are a California resident, you may request that we […] delete personal information we collected from you"
 ]
 
 [rubric.data-breaches]
-value = "eventually"
-citations = [
-  "In case there is an important change that we want to highlight to you, we will also inform you in another appropriate way (for example, via a pop-up notice or statement of changes on our website)."
+value = "no"
+notes = [
+  "The policy does not mention whether users are to be notified in case of a data breach."
 ]
 
 [rubric.third-party-access]
-value = "yes-specified-noncritical"
+value = "yes-unspecified"
 citations = [
-  "The AddThis Tools also incorporate Cookies and Pixels from Oracle partners to enable the synchronization of unique identifiers between Oracle and our third party partners to facilitate online behavioral advertising across the online advertising ecosystem. For a list of those third party partners, please visit: http://www.addthis.com/privacy/pixel-partners.\n\n[…]\n\nWe may share or sell AddThis Data with the following third parties for a commercial purpose:\n\n* Oracle Marketing & Data Cloud customers and partners, including digital marketers, ad agencies, web publishers, demand side platforms, data management platforms, supply-side platforms and social media networks. Oracle’s use of AddThis Data by our Oracle Marketing & Data Cloud customers and partners is described in the Oracle Marketing & Data Cloud Privacy Policy; and\n\n* third-party service providers as necessary to perform Oracle Marketing & Data Cloud services on behalf of Oracle.\n\nWe may share or sell AddThis Data with the following third parties for a business purpose:\n\n* relevant third parties in the event of a reorganization, merger, sale, joint venture, assignment, transfer or other disposition of all or any portion of our business, assets or stock, including in connection with any bankruptcy or similar proceedings; and\n\n* relevant third parties to protect our rights, protect your safety or the safety of others; investigate or prevent fraud or malicious activity; or respond to government requests, including public and government authorities outside your country of residence, for national security and/or law enforcement purposes."
+  "The AddThis Tools also incorporate Cookies and Pixels from Oracle partners to enable the synchronization of unique identifiers between Oracle and our third party partners to facilitate online behavioral advertising across the online advertising ecosystem. For a list of those third party partners, please visit: [http://www.addthis.com/privacy/pixel-partners](http://www.addthis.com/privacy/pixel-partners).",
+  "We may share or sell AddThis Data with the following third parties for a commercial purpose:\n\n* Oracle Marketing & Data Cloud customers and partners, including digital marketers, ad agencies, web publishers, demand side platforms, data management platforms, supply-side platforms and social media networks. Oracle’s use of AddThis Data by our Oracle Marketing & Data Cloud customers and partners is described in the Oracle Marketing & Data Cloud Privacy Policy; and\n\n* third-party service providers as necessary to perform Oracle Marketing & Data Cloud services on behalf of Oracle.\n\nWe may share or sell AddThis Data with the following third parties for a business purpose:\n\n* relevant third parties in the event of a reorganization, merger, sale, joint venture, assignment, transfer or other disposition of all or any portion of our business, assets or stock, including in connection with any bankruptcy or similar proceedings; and\n\n* relevant third parties to protect our rights, protect your safety or the safety of others; investigate or prevent fraud or malicious activity; or respond to government requests, including public and government authorities outside your country of residence, for national security and/or law enforcement purposes."
 ]
 
 [rubric.data-collection-reasoning]
-value = "yes"
+value = "mostly"
 citations = [
-  "\n    We use personal information about you to enable Oracle customers and partners to market products and services to you, to provide personalized recommendations and messages, to link browsers and apps across devices, to sync unique identifiers with our partners, to develop and improve Oracle products and services, and for security and compliance purposes."
+  "We use personal information about you to enable Oracle customers and partners to market products and services to you, to provide personalized recommendations and messages, to link browsers and apps across devices, to sync unique identifiers with our partners, to develop and improve Oracle products and services, and for security and compliance purposes."
 ]
 
 [rubric.noncritical-purposes]
-value = "opt-out-all"
+value = "opt-out-some"
 notes = [ "See “7. What Are Your Privacy Rights?” section." ]
 
 [rubric.law-enforcement]
@@ -66,7 +69,7 @@ citations = [
 ]
 
 [rubric.list-collected]
-value = "summarily"
+value = "generally"
 citations = [
   "AddThis Data is collected online and may indirectly identify you. It includes, for example:\n\n* unique IDs such as a cookie ID on your browser;\n\n* IP addresses and information derived from IP addresses, such as geographic location;\n\n* information about your device, such as browser, device type, operating system, the presence or use of ‘apps’, screen resolution, or the preferred language;\n\n* the date and time you visited a Publisher Site; and\n\n* the referring URL and the web search you used to locate and navigate to a Publisher Site."
 ]
