@@ -1,5 +1,5 @@
-name = "1&1 IONOS"
-description = "1&1 IONOS is a Web hosting company."
+name = "IONOS by 1&1"
+description = "IONOS by 1&1 is a web hosting company owned by United Internet."
 slug = "1-1-ionos"
 hostnames = [ "ionos.com" ]
 sources = [ "https://www.ionos.com/terms-gtc/terms-privacy/" ]
@@ -8,7 +8,7 @@ contributors = [ "doamatto" ]
 [rubric.behavioral-marketing]
 value = "no"
 citations = [
-  "We may also use this information and share it with trusted third parties for research purposes regarding the effectiveness of our website services, marketing, advertising and sales efforts, including, without limitation, for purposes of customer reviews (such as for the utilization of programs like Google Seller Ratings). "
+  "IONOS may also use the personally identifiable information collected by IONOS to contact customers regarding products and services offered by IONOS and, to the extent the user has agreed to it, by its trusted affiliates, independent contractors and business partners. We may also use this information and share it with trusted third parties for research purposes regarding the effectiveness of our website services, marketing, advertising and sales efforts, including, without limitation, for purposes of customer reviews (such as for the utilization of programs like Google Seller Ratings). IONOS will not sell or otherwise share this information with a third party for a third party's marketing purposes, unless you specifically authorize such information sharing."
 ]
 
 [rubric.security]
@@ -30,13 +30,13 @@ citations = [ "Revised: October 12, 2018" ]
 [rubric.data-deletion]
 value = "no"
 notes = [
-  "This policy doesn't have to require the service to allow you to delete your data"
+  "The policy doesn't require the service to allow you to delete your data"
 ]
 
 [rubric.data-breaches]
 value = "no"
 notes = [
-  "This policy doesn't have to require the service to notify you in the event of a data breach"
+  "The policy doesn't require the service to notify you in the event of a data breach"
 ]
 
 [rubric.third-party-access]
@@ -46,9 +46,12 @@ citations = [
 ]
 
 [rubric.data-collection-reasoning]
-value = "yes"
+value = "mostly"
 citations = [
   "IONOS may use and share your personal information in order to provide the services requested. For example, your information may be provided to the domain registrar in order to process domain registrations, or with the relevant certificate authority to order an SSL certificate on your behalf. We will also share your information to the extent necessary to comply with ICANN's rules, regulations, and policies, and if your domains are not set to private registration, the publicly available WHOIS registry will contain personal information, including but not limited to your title, first name, surname, domain name, e-mail address, country, and phone number.\n\n \n\nIONOS is required to supply some of your personal data in order to request an SSL certificate from the certificate authority. By submitting a request for an SSL certificate order or renewal through IONOS, you consent to IONOS releasing all required personal information to the certificate authority in order to fulfill the request and you acknowledge and understand that IONOS acts only as an intermediary between the customer and the certificate authority, in order to facilitate the order or renewal of the certificate. IONOS has no influence on the outcome of an SSL certificate request and cannot guarantee that any request for an SSL certificate order or renewal will be granted."
+]
+notes = [
+  "While it is mostly clear why IONOS collects personal data, the policy outlines cases where the intent is not clear (including in the answer to 'behavioral-marketing' question."
 ]
 
 [rubric.noncritical-purposes]
