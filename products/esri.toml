@@ -1,5 +1,5 @@
 name = "Esri"
-description = "Esri is a global  GIS mapping and spatial analysis provider."
+description = "Esri is a global GIS mapping and spatial analysis provider."
 slug = "esri"
 hostnames = [ "esri.com", "myesri.com" ]
 sources = ["https://www.esri.com/en-us/privacy/privacy-statements/privacy-statement", "https://www.esri.com/en-us/privacy/privacy-statements/privacy-supplement"]
