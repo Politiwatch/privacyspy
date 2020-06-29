@@ -1,7 +1,7 @@
 name = "The Guardian"
 description = "The Guardian is a leading British news organization with worldwide coverage."
 slug = "the-guardian"
-hostnames = [ "theguardian.com" ]
+hostnames = [ "theguardian.com", "theguardian.co.uk" ]
 sources = [ "https://www.theguardian.com/help/privacy-policy" ]
 contributors = [ "vutut" ]
 
