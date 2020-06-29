@@ -8,7 +8,7 @@ contributors = [ "vutut" ]
 [rubric.behavioral-marketing]
 value = "yes-opt-out"
 citations = [
-  "We partner with a third party to display advertising on our website or to manage our advertising on other sites. Our partner may use technologies such as cookies to gather information about your activities in order to provide you with advertising that is based on your browsing activities and interests."
+  "We partner with a third party to display advertising on our website or to manage our advertising on other sites. Our partner may use technologies such as cookies to gather information about your activities in order to provide you with advertising that is based on your browsing activities and interests.", "If you wish to not have this information used for the purpose of serving you with interest-based ads, you may opt out. If you are in the United States, go to https://preferences-mgr.truste.com/. If you are located in the European Union, go to https://www.youronlinechoices.eu."
 ]
 
 [rubric.security]
@@ -20,7 +20,7 @@ citations = [
 [rubric.third-party-collection]
 value = "yes"
 citations = [
-  "We, and our partners, use cookies and similar technologies to analyze trends, administer the website, track users' movements around the website, and gather demographic information about our user base as a whole. Users can control the use of cookies at the individual browser level.\r\n[...]\r\nWe, and our third-party tracking-utility partner, gather certain information automatically and store it in log files. This information includes the internet protocol (IP) address, browser type, internet service provider (ISP), and clickstream data. We do this to improve our services, marketing, analytics, or site functionality, and to authenticate users. "
+  "We, and our partners, use cookies and similar technologies to analyze trends, administer the website, track users' movements around the website, and gather demographic information about our user base as a whole. Users can control the use of cookies at the individual browser level.", "We, and our third-party tracking-utility partner, gather certain information automatically and store it in log files. This information includes the internet protocol (IP) address, browser type, internet service provider (ISP), and clickstream data. We do this to improve our services, marketing, analytics, or site functionality, and to authenticate users. "
 ]
 
 [rubric.history]
@@ -28,7 +28,7 @@ value = "last-modified"
 citations = [ "Revised May 27, 2020" ]
 
 [rubric.data-deletion]
-value = "yes-contact"
+value = "yes-automated"
 citations = [
   "Upon request Esri will provide you with information about whether we hold any of your personal information. Esri will permit you to access, correct, or delete your information in our database by contacting info@esri.com or by logging in to your account and making the appropriate changes. We will respond to all requests for access within a reasonable timeframe."
 ]
@@ -45,8 +45,11 @@ citations = [
 
 [rubric.data-collection-reasoning]
 value = "mostly"
-citations = [
+notes = [
   "The privacy policy lists the purposes for which data is collected, however it is unclear what data is used for what purpose and why."
+]
+citations = [
+  "The personal information we collect is used by Esri and its service providers to: ", "Complete transactions, ensure appropriate legal use of licensed Esri software and service", "Allow access to special services or other features", "Analyze and resolve website and application problems, conduct market research and implement marketing strategies", "Process orders and register software, data, or services", "Provide notification to licensees about updates to Esri's and our affiliates' software, data, and services", "Send marketing materials, Esri User Conference information, and newsletters", "Respond to customer service requests and help provide technical and product support."
 ]
 
 [rubric.noncritical-purposes]
@@ -65,6 +68,9 @@ citations = [
 value = "generally"
 notes = [
   "The policy lists most types and details of data collected but uses phrases like \"such as\", so the list is not exhaustive."
+]
+citations = [
+  "Personal information is information that can potentially identify you as a specific individual. It includes your name, company name, address, telephone number, email address, IP address, location, and billing information.", "We, and our partners, use cookies and similar technologies to analyze trends, administer the website, track users' movements around the website, and gather demographic information about our user base as a whole.", "We, and our third-party tracking-utility partner, gather certain information automatically and store it in log files. This information includes the internet protocol (IP) address, browser type, internet service provider (ISP), and clickstream data."
 ]
 
 [rubric.revision-notify]
