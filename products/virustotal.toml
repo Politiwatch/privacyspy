@@ -1,0 +1,86 @@
+name = "VirusTotal"
+description = "VirusTotal is a free service analyzing URLs and files for malicious content."
+slug = "virustotal"
+hostnames = [ "virustotal.com" ]
+sources = [
+  "https://support.virustotal.com/hc/en-us/articles/115002168385-Privacy-Policy"
+]
+contributors = [ "vutut" ]
+
+[rubric.behavioral-marketing]
+value = "yes-opt-in"
+citations = [
+  "With your permission and otherwise at your request, Chronicle may also contact you with marketing, promotional materials and other personalized information that may be of interest to you. Further information about how Chronicle uses your personal information for this purpose can be found in the Chronicle Privacy Policy."
+]
+
+[rubric.security]
+value = "yes"
+citations = [
+  "Where we have given you (or where you have chosen) a password which enables you to access certain parts of our website, you are responsible for keeping this password confidential. We ask you not to share a password with anyone.  We take steps to ensure that the personal information that you provide is retained by VirusTotal for only as long as it is necessary for the purpose for which it was collected.", "We use appropriate technical and organisational measures to protect the personal information that we collect and process about you. The measures we use are designed to provide a level of security appropriate to the risk of processing your personal information."
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "We and our partners use various technologies to collect and store information when you visit the website, and this may include sending one or more cookies or randomly generated identifiers to your device. A cookie is a small file containing a string of characters that is stored on your computer when you visit a website. Cookies may store user preferences and other information. We use cookies to remember user preferences, such as language, provide users with customized experiences based on account type, and to prevent abuse. We also use third-party analytics tools (including Google Analytics) to assist us with analysing and improving our services. "
+]
+
+[rubric.history]
+value = "yes"
+notes = [
+  "The policy includes both the last modified date and a link to a prior version archive."
+]
+
+[rubric.data-deletion]
+value = "yes-contact"
+citations = [
+  "You may have certain rights regarding your personal information, including the right to access, correct, update, restrict processing, and object to processing your personal information. You may also have a right to portability of your information and to have your information erased. These rights will vary depending on your locality, and we will handle any request in accordance with applicable law. To exercise any of these rights concerning your information, please contact us. In some cases we will need you to provide further details so that we can identify you."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "The policy does not mention any protocol for handling breaches."
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = [
+  "We may also share your information in the following circumstances:", "With the Community. If you register for an account and participate in the Community, your user profile, including name, nickname and any information you choose to add to your profile, such as profile picture, will be publicly available to the Community.", "With our affiliates. If you have requested information about our Services or the services and products offered by Chronicle or other affiliates or agreed to receive promotional material from Chronicle or its affiliates, we will share your personal information with those companies for that purpose.", "With third party processors. We may provide personal information to Chronicle and other affiliates or other trusted businesses or persons to process it for us, based on our instructions and in compliance with this Privacy Policy and any other appropriate confidentiality and security terms."
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "In order to comply with applicable data protection and privacy laws, we are required to set out the legal basis for the processing of your personal information. For the purposes set out above, the legal basis for processing of your personal information will typically be one of the following:", "With your consent, for example if you contact us and ask for more information about the Service, request a trial or indicate that you wish to receive marketing updates about the Service,  Chronicle or other Chronicle affiliates;", "To perform or take steps to enter into a contract, for example to evalute a potential customer for premium services;", "To comply with legal obligations applicable to us, Chronicle or other Chronicle affiliates, or Based on our legitimate interests, or the legitimate interests of our third parties, as outlined below."
+]
+notes = "The policy lists all purposes in detail including plain language explanations for the majority of use cases."
+
+[rubric.noncritical-purposes]
+value = "opt-out-some"
+citations = [
+  "We will let you know if we plan to process your personal information for marketing purposes when we collect it. You can change your mind at any time by contacting us, by opting out in the body of any marketing email you may have subscribed to, or by specifying your preferences in your account profile."
+]
+notes = [
+  "No information given on how to opt-out of non-critical analytics."
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "We will share personal information with affiliates and companies, organizations or individuals outside of VirusTotal if we believe that access, use, preservation or disclosure of the information is reasonably necessary to:", "meet any applicable law, regulation, legal process or enforceable governmental request;", "enforce applicable Terms of Service, including investigation of potential violations;", "detect, prevent, or otherwise address fraud, security or technical issues, or","protect against harm to the rights, property or safety of VirusTotal, our affiliates, users or the public as required or permitted by law."
+]
+
+[rubric.list-collected]
+value = "generally"
+citations = [
+  "We collect information, including personal information, from visitors to the Site, as well as our registered users, customers and partners. We also collect certain information when anyone uses the Site. We collect information about the use of the Site and interaction with the Service, and information extracted from any information, text, graphics, URLs, files, audio, video, photos or other materials uploaded, downloaded or appearing on the Service (\"Samples\") or submitted through the Service."
+]
+notes = "The policy includes a specific listing of data collected, but with use of language like \"such as\" which allows for collection of other data."
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "Any changes we may make to our Privacy Policy in the future will be posted on our Site. Where we make material changes to our Privacy Policy, we will take steps to notify the Community."
+]
+
