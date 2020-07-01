@@ -15,7 +15,7 @@ citations = [""]
 
 [rubric.data-collection-reasoning]
 value = "mostly"
-citations = "[We have to have a valid reason to use your personal information. It's called the 'lawful basis for processing'. Sometimes we might ask your permission to do things, like when you subscribe to an email. Other times, when you'd reasonably expect us to use your personal information, we don't ask your permission, but only when:
+citations = ["We have to have a valid reason to use your personal information. It's called the 'lawful basis for processing'. Sometimes we might ask your permission to do things, like when you subscribe to an email. Other times, when you'd reasonably expect us to use your personal information, we don't ask your permission, but only when:
 the law says it's fine to use it, and it fits with the rights you have."]
 notes = ["The full list of why the BBC collects personal information is in Section 6 of the Privacy Policy."]
 
