@@ -3,18 +3,21 @@ description = "VirusTotal is a free service analyzing URLs and files for malicio
 slug = "virustotal"
 hostnames = [ "virustotal.com" ]
 sources = [
-  "https://support.virustotal.com/hc/en-us/articles/115002168385-Privacy-Policy"
+  "https://support.virustotal.com/hc/en-us/articles/115002168385-Privacy-Policy", "https://chronicle.security/privacy/"
 ]
 contributors = [ "vutut" ]
 
 [rubric.behavioral-marketing]
 value = "yes-opt-in"
 citations = [
-  "With your permission and otherwise at your request, Chronicle may also contact you with marketing, promotional materials and other personalized information that may be of interest to you. Further information about how Chronicle uses your personal information for this purpose can be found in the Chronicle Privacy Policy."
+  "With your permission and otherwise at your request, Chronicle may also contact you with marketing, promotional materials and other personalized information that may be of interest to you. Further information about how Chronicle uses your personal information for this purpose can be found in the [Chronicle Privacy Policy](https://chronicle.security/privacy/).", "From the Chronicle LLC privacy policy:\"Our products have separate privacy terms and disclosures which are explained in our customer agreements.\""
 ]
+notes = [
+  "Chronicle LLC is the parent company behind VirusTotal, but their separate privacy policy only applies where a user opts-in to receive marketing comunnications from Chronicle and gives explicit consent for the data being shared with Chronicle."
+  ]
 
 [rubric.security]
-value = "yes"
+value = "somewhat"
 citations = [
   "Where we have given you (or where you have chosen) a password which enables you to access certain parts of our website, you are responsible for keeping this password confidential. We ask you not to share a password with anyone.  We take steps to ensure that the personal information that you provide is retained by VirusTotal for only as long as it is necessary for the purpose for which it was collected.", "We use appropriate technical and organisational measures to protect the personal information that we collect and process about you. The measures we use are designed to provide a level of security appropriate to the risk of processing your personal information."
 ]
@@ -68,7 +71,7 @@ notes = [
 [rubric.law-enforcement]
 value = "reasonable"
 citations = [
-  "We will share personal information with affiliates and companies, organizations or individuals outside of VirusTotal if we believe that access, use, preservation or disclosure of the information is reasonably necessary to:", "meet any applicable law, regulation, legal process or enforceable governmental request;", "enforce applicable Terms of Service, including investigation of potential violations;", "detect, prevent, or otherwise address fraud, security or technical issues, or","protect against harm to the rights, property or safety of VirusTotal, our affiliates, users or the public as required or permitted by law."
+  "We will share personal information with affiliates and companies, organizations or individuals outside of VirusTotal if we believe that access, use, preservation or disclosure of the information is reasonably necessary to: \n- meet any applicable law, regulation, legal process or enforceable governmental request; \n- enforce applicable Terms of Service, including investigation of potential violations; \n- detect, prevent, or otherwise address fraud, security or technical issues, or \n- protect against harm to the rights, property or safety of VirusTotal, our affiliates, users or the public as required or permitted by law."
 ]
 
 [rubric.list-collected]
@@ -81,6 +84,6 @@ notes = ["The policy includes a specific listing of data collected, but with use
 [rubric.revision-notify]
 value = "yes"
 citations = [
-  "Any changes we may make to our Privacy Policy in the future will be posted on our Site. Where we make material changes to our Privacy Policy, we will take steps to notify the Community."
+  "Any changes we may make to our Privacy Policy in the future will be posted on our Site. Where we make material changes to our Privacy Policy, we will take steps to notify the Community." 
 ]
 
