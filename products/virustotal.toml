@@ -13,7 +13,7 @@ citations = [
   "With your permission and otherwise at your request, Chronicle may also contact you with marketing, promotional materials and other personalized information that may be of interest to you. Further information about how Chronicle uses your personal information for this purpose can be found in the [Chronicle Privacy Policy](https://chronicle.security/privacy/).", "From the Chronicle LLC privacy policy:\"Our products have separate privacy terms and disclosures which are explained in our customer agreements.\""
 ]
 notes = [
-  "Chronicle LLC is the parent company behind VirusTotal, but their separate privacy policy only applies where a user opts-in to receive marketing comunnications from Chronicle and gives explicit consent for the data being shared with Chronicle."
+  "Chronicle LLC is the parent company behind VirusTotal, but their separate privacy policy only applies where a user opts-in to receive marketing communications from Chronicle and gives explicit consent for the data being shared with Chronicle."
   ]
 
 [rubric.security]
