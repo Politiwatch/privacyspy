@@ -52,9 +52,9 @@ notes = [""]
 
 [rubric.noncritical-purposes]
 value = "opt-out-all"
-citations = ["Some cookies are always on when you visit us, and you can’t turn them off unless you change your browser settings. We call these “strictly necessary cookies”. We use them to make sure our digital services work correctly and are meeting audience needs and interests.
+citations = ["Some cookies are always on when you visit us, and you can’t turn them off unless you change your browser settings. We call these 'strictly necessary cookies'. We use them to make sure our digital services work correctly and are meeting audience needs and interests.
 We also use functional, performance and advertising cookies to make your experience more enjoyable. You can switch these on or off at any time and you can always change your mind. We’ll only use them if you’ve agreed.
-Bear in mind there are some other cookies out there from other companies. These "third-party cookies" might track how you use different websites, including ours. For example, you might get a social media company’s cookie when you see the option to share something. You can turn them off, but not through us."]
+Bear in mind there are some other cookies out there from other companies. These 'third-party cookies' might track how you use different websites, including ours. For example, you might get a social media company’s cookie when you see the option to share something. You can turn them off, but not through us."]
 notes = [""]
 
 [rubric.revision-notify]
