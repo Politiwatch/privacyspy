@@ -26,7 +26,7 @@ value = "last-modified"
 notes = ["On the top of the page, there is a month/year where the policy was last updated, and a version number (currently 3.1)"]
 
 [rubric.law-enforcement]
-value = "not-specified"
+value = "unspecified"
 citations = ["Sometimes by law we have to pass on your information to other organisations. We might also share your information if we have to by law, or when we need to protect you or other people from harm."]
 
 [rubric.list-collected]
