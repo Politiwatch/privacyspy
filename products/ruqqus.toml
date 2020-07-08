@@ -1,0 +1,54 @@
+name = "Ruqqus"
+description = "Ruqqus is an open-source aggregation platform for online communities."
+slug = "ruqqus"
+hostnames = ["ruqqus.com"]
+sources = ["https://ruqqus.com/help/privacy"]
+contributors = ["Wingo5315"]
+
+[rubric.behavioral-marketing]
+value = "no"
+notes = ["The platform does not currently display advertisements. It relies on user donations."]
+
+[rubric.data-breaches]
+value = "no"
+notes = ["This policy does not say what will happen in the event of a data breach."]
+
+[rubric.data-collection-reasoning]
+value = "na"
+notes = ["The only personal information that it can collect is your email address, and giving this to them is optional."]
+
+[rubric.data-deletion]
+value = "yes-automated"
+notes = ["Ruqqus allows a user to permanently 'deactivate' their account."]
+
+[rubric.history]
+value = "no"
+notes = ["There is no privacy policy history, changelog or last modified date."]
+
+[rubric.law-enforcement]
+value = "strict"
+citations = ["Ruqqus will not release your information to third parties, except as required by United States law."]
+
+[rubric.list-collected]
+value = "no"
+notes = ["There is no list of personal information collected."]
+
+[rubric.noncritical-purposes]
+value = "na"
+notes = ["It seems any data currently collected is used to maintain the platform."]
+
+[rubric.revision-notify]
+value = "yes"
+notes = ["There is nothing in the privacy policy stating what will happen if the policy changes."]
+
+[rubric.third-party-access]
+value = " yes-specified-critical"
+citations = ["We will share your data with our own service providers which are necessary for ruqqus.com operations. The exact service providers are subject to change without notice, but will always be available here. (https://ruqqus.com/help/services)"]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = ["We will share your data with our own service providers which are necessary for ruqqus.com operations."]
+
+[rubric.security]
+value = "yes"
+citations = ["Ruqqus uses encrypted cookies to maintain secure authenticated sessions. These cookies are randomized with each new session. These cookies are used for authentication and abuse mitigation purposes only."]
