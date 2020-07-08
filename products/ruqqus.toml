@@ -42,7 +42,7 @@ value = "yes"
 notes = ["There is nothing in the privacy policy stating what will happen if the policy changes."]
 
 [rubric.third-party-access]
-value = " yes-specified-critical"
+value = "yes-specified-critical"
 citations = ["We will share your data with our own service providers which are necessary for ruqqus.com operations. The exact service providers are subject to change without notice, but will always be available here. (https://ruqqus.com/help/services)"]
 
 [rubric.third-party-collection]
