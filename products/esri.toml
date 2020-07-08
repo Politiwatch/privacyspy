@@ -1,0 +1,80 @@
+name = "Esri"
+description = "Esri is a global GIS mapping and spatial analysis provider."
+slug = "esri"
+hostnames = [ "esri.com", "myesri.com" ]
+sources = ["https://www.esri.com/en-us/privacy/privacy-statements/privacy-statement", "https://www.esri.com/en-us/privacy/privacy-statements/privacy-supplement"]
+contributors = [ "vutut" ]
+
+[rubric.behavioral-marketing]
+value = "yes-opt-out"
+citations = [
+  "We partner with a third party to display advertising on our website or to manage our advertising on other sites. Our partner may use technologies such as cookies to gather information about your activities in order to provide you with advertising that is based on your browsing activities and interests.", "If you wish to not have this information used for the purpose of serving you with interest-based ads, you may opt out. If you are in the United States, go to https://preferences-mgr.truste.com/. If you are located in the European Union, go to https://www.youronlinechoices.eu."
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "Esri maintains reasonable and appropriate security measures to protect EU, United Kingdom or Swiss Personal Data from loss, misuse, unauthorized access, disclosure, alteration, or destruction in accordance with the Privacy Shield. When you make a purchase through our website and sensitive information (such as login credentials or billing information) is entered, Esri encrypts the transmission of that information using transport layer security (TLS)."
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "We, and our partners, use cookies and similar technologies to analyze trends, administer the website, track users' movements around the website, and gather demographic information about our user base as a whole. Users can control the use of cookies at the individual browser level.", "We, and our third-party tracking-utility partner, gather certain information automatically and store it in log files. This information includes the internet protocol (IP) address, browser type, internet service provider (ISP), and clickstream data. We do this to improve our services, marketing, analytics, or site functionality, and to authenticate users. "
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [ "Revised May 27, 2020" ]
+
+[rubric.data-deletion]
+value = "yes-automated"
+citations = [
+  "Upon request Esri will provide you with information about whether we hold any of your personal information. Esri will permit you to access, correct, or delete your information in our database by contacting info@esri.com or by logging in to your account and making the appropriate changes. We will respond to all requests for access within a reasonable timeframe."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [ "The policy has no protocol for dealing with data breaches." ]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = [
+  "We use third parties such as a credit card processing company to bill customers for services, an email service provider to send out emails on our behalf, or technical service providers for customer support. When you sign up for our services, we will share your personal information only as necessary for the third party to provide that service. In addition, Esri may share your personal information within your organization, with third parties such as an Esri distributor, affiliate, or service provider within or outside the United States."
+]
+
+[rubric.data-collection-reasoning]
+value = "mostly"
+notes = [
+  "The privacy policy lists the purposes for which data is collected, however it is unclear what data is used for what purpose and why."
+]
+citations = [
+  "The personal information we collect is used by Esri and its service providers to: ", "Complete transactions, ensure appropriate legal use of licensed Esri software and service", "Allow access to special services or other features", "Analyze and resolve website and application problems, conduct market research and implement marketing strategies", "Process orders and register software, data, or services", "Provide notification to licensees about updates to Esri's and our affiliates' software, data, and services", "Send marketing materials, Esri User Conference information, and newsletters", "Respond to customer service requests and help provide technical and product support."
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-some"
+notes = [
+  "The policy provides instructions to control data collection for behavioral marketing, but not for other non-critical uses."
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "Esri will disclose your personal information when required to do so by law or in the good faith belief that such action is necessary to (1) conform to legal requirements, such as to comply with a subpoena or valid national security or law enforcement requests, or prevent fraud or imminent harm or, (2) protect and defend the rights or property of Esri."
+]
+
+[rubric.list-collected]
+value = "generally"
+notes = [
+  "The policy lists most types and details of data collected but uses phrases like \"such as\", so the list is not exhaustive."
+]
+citations = [
+  "Personal information is information that can potentially identify you as a specific individual. It includes your name, company name, address, telephone number, email address, IP address, location, and billing information.", "We, and our partners, use cookies and similar technologies to analyze trends, administer the website, track users' movements around the website, and gather demographic information about our user base as a whole.", "We, and our third-party tracking-utility partner, gather certain information automatically and store it in log files. This information includes the internet protocol (IP) address, browser type, internet service provider (ISP), and clickstream data."
+]
+
+[rubric.revision-notify]
+value = "no"
+citations = [
+  "We may change this Privacy Statement or related system specific addendums from time to time. If and/or when Esri makes changes to this Privacy Statement, the updated version will be posted in place of this statement."
+]
