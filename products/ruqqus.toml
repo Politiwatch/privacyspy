@@ -14,8 +14,8 @@ value = "no"
 notes = ["This policy does not say what will happen in the event of a data breach."]
 
 [rubric.data-collection-reasoning]
-value = "na"
-notes = ["The only personal information that it can collect is your email address, and giving this to them is optional."]
+value = "no"
+notes = ["The personal data collected is not specified in this policy."]
 
 [rubric.data-deletion]
 value = "yes-automated"
@@ -26,8 +26,8 @@ value = "no"
 notes = ["There is no privacy policy history, changelog or last modified date."]
 
 [rubric.law-enforcement]
-value = "strict"
-citations = ["Ruqqus will not release your information to third parties, except as required by United States law."]
+value = "reasonable"
+citations = ["At our discretion, Ruqqus may share your information with United States law enforcement in the event of an emergency, if we have good cause to believe that doing so would avert or mitigate the emergency."]
 
 [rubric.list-collected]
 value = "no"
@@ -38,7 +38,7 @@ value = "na"
 notes = ["It seems any data currently collected is used to maintain the platform."]
 
 [rubric.revision-notify]
-value = "yes"
+value = "no"
 notes = ["There is nothing in the privacy policy stating what will happen if the policy changes."]
 
 [rubric.third-party-access]
