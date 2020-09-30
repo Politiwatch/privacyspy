@@ -1,5 +1,5 @@
 name = "Opera"
-description = "Zoom is a popular video conferencing and telecommunication service."
+description = "Opera is a free, Chromium-based web browser for all platforms."
 slug = "opera"
 hostnames = [ "opera.com" ]
 sources = [ "https://www.opera.com/privacy" ]
