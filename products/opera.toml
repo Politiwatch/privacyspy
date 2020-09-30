@@ -16,6 +16,9 @@ notes = [
 
 [rubric.security]
 value = "no"
+notes = [
+  "Neither the Privacy Policy nor the Security Policy outlined any of their own practices regarding security of user data."
+]
 
 [rubric.third-party-collection]
 value = "no"
@@ -61,6 +64,9 @@ notes = [
 
 [rubric.law-enforcement]
 value = "unspecified"
+notes = [
+  "The policy makes no comment in regards to law enforcement."
+]
 
 [rubric.list-collected]
 value = "summarily"
