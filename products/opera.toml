@@ -1,7 +1,7 @@
 name = "Opera"
 description = "Zoom is a popular video conferencing and telecommunication service."
 slug = "opera"
-hostnames = [ "https://www.opera.com" ]
+hostnames = [ "opera.com" ]
 sources = [ "https://www.opera.com/privacy" ]
 contributors = [ "Q" ]
 
