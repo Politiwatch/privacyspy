@@ -8,37 +8,31 @@ contributors = [ "Q" ]
 [rubric.behavioral-marketing]
 value = "yes"
 citations = [
-  "Specific Requests. In addition to the uses described above, Zoom may also receive data from you for specific purposes. When you give it to us, we use the data for that specific purpose: [...] To personalize marketing communications and website content based on your preferences, such as in response to your request for specific information on products and services that may be of interest."
+  "Based on advertising IDs and your general location, some of our mobile applications may serve targeted ads. These ads are provided by our monetization partners. You can always adjust your personalized ad choices in the application’s “Settings” menu or through your operating system’s settings."
 ]
 notes = [
-  "The data used for this kind of targeting is only collected from the marketing site, not the services."
+  "You can adjust what types of ads you see, but you may not opt out of personalized ads."
 ]
 
 [rubric.security]
-value = "somewhat"
-citations = [
-  "Zoom is committed to protecting your personal data. We use a combination of industry-standard security technologies, procedures, and organizational controls and measures to protect your data from unauthorized access, use, or disclosure. \r\n\r\nWe recommend you take every precaution in protecting your data when you are on the Internet. For example, change your passwords often, use a combination of upper and lower-case letters, numbers, and symbols when creating passwords, and make sure you use a secure browser. If you have any questions about the security of your data, please contact  our security team at security@zoom.us"
-]
+value = "no"
 
 [rubric.third-party-collection]
-value = "yes"
-citations = [
-  "(In table \"Data we may obtain about you\")\r\n\r\nThird Parties --- Data Enrichment services, Mailing Lists, Public Sources --- Send you marketing communications, unless you tell us not to (or if you say it’s OK, i.e., opt-in); Provide tailored information based on your interests\r\n"
+value = "no"
+notes = [
+  "While they do not collect data from third parties, they often use thrid parties to interact with your data, such as personalized ads and news.\r\n\r\nA full list of third parties they use for this purpose is listed on their Privacy Statement"
 ]
 
 [rubric.history]
 value = "last-modified"
 citations = [
-  "If we make any material changes to the way we handle personal data as described here, we will notify you by posting an updated notice on our website. We encourage you to review this page regularly for the latest information on our privacy practices. The effective date at the top of this policy indicates when the policy was last revised."
+  "When we post changes to this privacy statement, we will include the date when the statement was last updated. If we significantly change this statement, we will notify you about the upcoming change via our website or using in-app notifications."
 ]
 
 [rubric.data-deletion]
-value = "yes-automated"
+value = "yes-contact"
 citations = [
-  "We will retain personal data collected for as long as required to do what we say we will in this policy, unless a longer retention period is required by law. Customers can delete their own content."
-]
-notes = [
-  "It is unclear whether this applies to data collected for marketing."
+  "You have the right to make a request to access or delete any of your personal data that we might possess."
 ]
 
 [rubric.data-breaches]
@@ -48,40 +42,37 @@ notes = [
 ]
 
 [rubric.third-party-access]
-value = "yes-unspecified"
+value = "yes-specified-noncritical"
 citations = [
-  "Data we may obtain about you: Data collected through the use of cookies and pixels (Data collected from tools such as Google Analytics and Google Ads)"
+  "Our applications and services include third-party technology or code, some of which may use your data in different ways. When such third-party technologies use previously collected data, they typically act as data processors for us. When they collect data on their own, they typically act as independent data controllers."
 ]
 
 [rubric.data-collection-reasoning]
-value = "yes"
+value = "somewhat"
 notes = [
-  "The privacy policy contains several tables that lay out the types of data collected and how it's used."
+  "They only mention why advertisement data is collected."
 ]
 
 [rubric.noncritical-purposes]
-value = "opt-out-some"
-citations = [
-  "[We send] you marketing communications, unless you tell us not to (or if you say it’s OK, i.e., opt-in)\r\n\r\nYou have choices about what cookies can be used. You can adjust cookie settings by turning off optional cookies in your browser’s setting or by using our Cookie Preferences link at the bottom of the Zoom homepage. To ensure that you do not receive Advertising Cookies, you can adjust the slider at the Cookie Preferences link to “Required Cookies/CCPA Opt-Out”.\r\n\r\nBecause of CCPA’s broad definition, as is the case with many providers since the CCPA became law, we provide a “Do Not Sell My Personal Information” link at the bottom of our marketing sites. You can use this link to change your Cookie Preferences and opt out of the use of these advertising tools. If you opt out, Personal Data that was used by these tools will no longer be shared with third parties in a way that constitutes a “sale” under CCPA."
+value = "no"
+notes = [
+  "Users cannot opt out of any non-critical data collection."
 ]
 
 [rubric.law-enforcement]
-value = "reasonable"
-citations = [
-  "In certain limited circumstances, courts, law enforcement agencies, regulatory agencies, or security authorities in those other countries may be entitled to access your personal data.\r\n\r\nIn certain situations, Zoom may be required to disclose personal data in response to valid and lawful requests by public authorities or pursuant to requests from law enforcement."
-]
+value = "unspecified"
 
 [rubric.list-collected]
-value = "generally"
+value = "summarily"
 notes = [
-  "While the policy is relatively clear about the data it collects, it uses ambiguous language like \"such as\" to avoid concrete statements."
+  "The policy makes very few mentions of the types of personal data that it collects, and uses vague terms such as \"generally\" and \"typically\" in order to avoid using concrete statements."
 ]
 
 [rubric.revision-notify]
-value = "no"
+value = "yes"
 citations = [
-  "If we make any material changes to the way we handle personal data as described here, we will notify you by posting an updated notice on our website."
+  "If we significantly change this statement, we will notify you about the upcoming change via our website or using in-app notifications."
 ]
 notes = [
-  "Users are not actively notified; changes are announced via a banner on their website. (Few users interact with Zoom via the site; most use a desktop/mobile app.)"
+  "Smaller policy revisions will be made without any notifcation to the user."
 ]
