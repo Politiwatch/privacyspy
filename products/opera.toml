@@ -23,7 +23,7 @@ notes = [
 [rubric.third-party-collection]
 value = "no"
 notes = [
-  "While they do not collect data from third parties, they often use thrid parties to interact with your data, such as personalized ads and news.\r\n\r\nA full list of third parties they use for this purpose is listed on their Privacy Statement"
+  "While they do not collect data from third parties, they often use thrid parties to interact with your data, such as personalized ads and news.\r\n\r\nA full list of third parties they use for this purpose is listed on their Privacy Statement."
 ]
 
 [rubric.history]
@@ -52,6 +52,9 @@ citations = [
 
 [rubric.data-collection-reasoning]
 value = "somewhat"
+citations = [
+  "We collect this data pursuant to our legitimate business interests. As noted in our End User License Agreements and Terms of Service, our applications are ad-supported. Collecting this information helps us offset the costs of our business and helps provide a more personalized experience for the user."
+]
 notes = [
   "They only mention why advertisement data is collected."
 ]
