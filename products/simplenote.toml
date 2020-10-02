@@ -1,5 +1,5 @@
 name = "Simplenote"
-description = "Minimalist encrypted note-taking"
+description = "Simplenote is a simple, minimalist note taking app owned by Automattic."
 slug = "simplenote"
 hostnames = [ "simplenote.com" ]
 sources = [ "https://automattic.com/privacy/" ]
