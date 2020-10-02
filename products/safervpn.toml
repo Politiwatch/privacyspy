@@ -1,5 +1,5 @@
 name = "SaferVPN"
-description = "SaferVPN is a Virtual Private Network utility developed by Safer Social, Ltd. "
+description = "SaferVPN is a VPN service operated by Safer Social, Ltd."
 slug = "safervpn"
 hostnames = [ "safervpn.com", "app.safervpn.com" ]
 sources = [ "https://www.safervpn.com/legal/privacy" ]
@@ -61,7 +61,7 @@ notes = [ "Data is never used in a non-critical purpose" ]
 [rubric.law-enforcement]
 value = "reasonable"
 citations = [
-  " believe that it is necessary to comply with a law, regulation, legal request or legal process; to protect the rights, property or personal safety of SaferVPN, its Users and any other person; to address fraud, security or technical issues; or to protect SaferVPN's rights (including investigation of potential violations thereof) or property;"
+  "...believe that it is necessary to comply with a law, regulation, legal request or legal process; to protect the rights, property or personal safety of SaferVPN, its Users and any other person; to address fraud, security or technical issues; or to protect SaferVPN's rights (including investigation of potential violations thereof) or property;"
 ]
 
 [rubric.list-collected]
