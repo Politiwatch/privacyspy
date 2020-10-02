@@ -1,5 +1,5 @@
 name = "Skillshare"
-description = "Skillshare is a online learning website which hosts video lessons about various topics online"
+description = "Skillshare is a online learning website which hosts video lessons about various topics online."
 slug = "skillshare"
 hostnames = [ "skillshare.com" ]
 sources = [ "https://www.skillshare.com/privacy" ]
