@@ -2,20 +2,20 @@ name = "Ruqqus"
 description = "Ruqqus is an open-source aggregation platform for online communities."
 slug = "ruqqus"
 hostnames = ["ruqqus.com"]
-sources = ["https://ruqqus.com/help/privacy"]
+sources = ["https://ruqqus.com/help/privacy", "https://ruqqus.com/help/terms", "https://github.com/ruqqus/ruqqus"]
 contributors = ["Wingo5315"]
 
 [rubric.behavioral-marketing]
 value = "no"
-notes = ["The platform does not currently display advertisements. It relies on user donations."]
+notes = ["There are no advertisements. Platform generates income from premium sales and donations."]
 
 [rubric.data-breaches]
 value = "no"
 notes = ["This policy does not say what will happen in the event of a data breach."]
 
 [rubric.data-collection-reasoning]
-value = "no"
-notes = ["The personal data collected is not specified in this policy."]
+value = "yes"
+notes = ["We collect basic information in order to operate the platform."]
 
 [rubric.data-deletion]
 value = "yes-automated"
@@ -23,15 +23,15 @@ notes = ["Ruqqus allows a user to permanently 'deactivate' their account."]
 
 [rubric.history]
 value = "no"
-notes = ["There is no privacy policy history, changelog or last modified date."]
+notes = ["Available on github"]
 
 [rubric.law-enforcement]
 value = "reasonable"
 citations = ["At our discretion, Ruqqus may share your information with United States law enforcement in the event of an emergency, if we have good cause to believe that doing so would avert or mitigate the emergency."]
 
 [rubric.list-collected]
-value = "no"
-notes = ["There is no list of personal information collected."]
+value = "exhaustively"
+citation = ["This includes: Your email address, if you choose to provide it. The IP address from which content is submitted."]
 
 [rubric.noncritical-purposes]
 value = "na"
@@ -42,12 +42,12 @@ value = "no"
 notes = ["There is nothing in the privacy policy stating what will happen if the policy changes."]
 
 [rubric.third-party-access]
-value = "yes-specified-critical"
-citations = ["We will share your data with our own service providers which are necessary for ruqqus.com operations. The exact service providers are subject to change without notice, but will always be available here. (https://ruqqus.com/help/services)"]
+value = "no"
+notes = ["Only as required by law or in the event of an emergency."]
 
 [rubric.third-party-collection]
-value = "yes"
-citations = ["We will share your data with our own service providers which are necessary for ruqqus.com operations."]
+value = "no"
+citations = ["We use - and then promptly forget - the following information about you from third parties: Verification from hCaptcha that you aren't a bot, during account registration. Verification of purchase approval from PayPal, during purchase of Coins."]
 
 [rubric.security]
 value = "yes"
