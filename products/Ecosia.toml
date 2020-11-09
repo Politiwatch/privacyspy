@@ -1,0 +1,80 @@
+name = "Ecosia"
+description = "Ecosia is a carbon-negative search engine, that donates 80% or more of its profits to nonprofit organisations planting Trees. It is based in based in Berlin, Germany and is B Lab-certified. "
+slug = "Ecosia"
+hostnames = [ "ecosia.org" ]
+sources = [ "https://info.ecosia.org/privacy" ]
+contributors = [ "SIVAH-AKASH" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+citations = [
+  "\"We don’t sell your data or your searches to advertising companies.\""
+]
+
+[rubric.security]
+value = "yes"
+citations = [
+  "\"We don’t create personal profiles of you based on your search history. We actually anonymize all searches within one week.\""
+]
+
+[rubric.third-party-collection]
+value = "no"
+citations = [
+  "\"For this we use a self-hosted, secure and encrypted in-house analytics system. This allows us to gather data about how our users interact with Ecosia products in a secure and anonymized way.\""
+]
+notes = ["This is only applicable to the search engine itself."]
+
+[rubric.history]
+value = "last-modified"
+notes = [
+  "\"Data protection declaration version date: ##/##/####\""
+]
+
+[rubric.data-deletion]
+value = "na"
+citations = [
+  "\"We don’t create personal profiles of you based on your search history. We actually anonymize all searches within one week.\""
+]
+
+[rubric.data-breaches]
+value = "na"
+citations = [
+  "\"We don’t create personal profiles of you based on your search history. We actually anonymize all searches within one week.\""
+]
+
+[rubric.third-party-access]
+value = "yes-specified-critical"
+citations = [
+  "\"For example, for our weather results we only send the location we are requesting weather information for. To other partners we have to forward more details in order to answer your search request.\" \r\n \"We work with ad networks, like Bing Ads, to show ads based on your search query. When you do a search and ads are displayed next to the search results no data is collected or shared with the advertiser.\""
+]
+notes = ["This is only applicable to the search engine itself."]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "\"For example, for our weather results we only send the location we are requesting weather information for. To other partners we have to forward more details in order to answer your search request.\" \r\n \"At Ecosia, we want to make sure our users have the best search experience possible. We collect data and do statistical analysis to understand user behavior and trends, how people use our services, and to monitor, troubleshoot, and improve Ecosia.\""
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-all"
+citations = [
+  "\"Additionally, by default Ecosia sets a Bing-specific “Client ID” parameter to improve the quality of your search results. If your browser has “Do Not Track” enabled, we disable the “Client ID” automatically. You can also choose to disable this feature by modifying your user settings.\""
+]
+
+[rubric.law-enforcement]
+value = "na"
+citations = [
+  "\"We don’t create personal profiles of you based on your search history. We actually anonymize all searches within one week.\""
+]
+
+[rubric.list-collected]
+value = "exhaustively"
+citations = [
+  "Present under \"Gathering of personal data while visiting our website\"."
+]
+
+[rubric.revision-notify]
+value = "na"
+citations = [
+  "\"We don’t create personal profiles of you based on your search history. We actually anonymize all searches within one week.\""
+]
