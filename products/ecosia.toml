@@ -1,4 +1,4 @@
-name = "Ecosia"
+name = "ecosia"
 description = "Ecosia is a carbon-negative search engine, that donates 80% or more of its profits to nonprofit organisations planting Trees. It is based in based in Berlin, Germany and is B Lab-certified."
 slug = "Ecosia"
 hostnames = [ "ecosia.org" ]
@@ -14,7 +14,7 @@ citations = [
 [rubric.security]
 value = "yes"
 citations = [
-  "\"We don’t create personal profiles of you based on your search history. We actually anonymize all searches within one week.\""
+  "\"We only collect the data we absolutely need and do so with a self-hosted, secure and encrypted in-house analytics system. We do not, and never will, share or sell any data we collect ourselves with any third party. Also, no third party that is not directly involved in answering your search request will ever have access to your search data.\""
 ]
 
 [rubric.third-party-collection]
@@ -37,22 +37,22 @@ citations = [
 ]
 
 [rubric.data-breaches]
-value = "na"
+value = "yes-72"
 citations = [
-  "\"We don’t create personal profiles of you based on your search history. We actually anonymize all searches within one week.\""
+  "\"We are aware of how important personal data is to our users and we uphold all German and European data protection provisions.\""
 ]
 
 [rubric.third-party-access]
 value = "yes-specified-critical"
 citations = [
-  "\"For example, for our weather results we only send the location we are requesting weather information for. To other partners we have to forward more details in order to answer your search request.\" \r\n \"We work with ad networks, like Bing Ads, to show ads based on your search query. When you do a search and ads are displayed next to the search results no data is collected or shared with the advertiser.\""
+  "\"For example, for our weather results we only send the location we are requesting weather information for. To other partners we have to forward more details in order to answer your search request.\"" "\"We work with ad networks, like Bing Ads, to show ads based on your search query. When you do a search and ads are displayed next to the search results no data is collected or shared with the advertiser.\""
 ]
 notes = ["This is only applicable to the search engine itself."]
 
 [rubric.data-collection-reasoning]
 value = "yes"
 citations = [
-  "\"For example, for our weather results we only send the location we are requesting weather information for. To other partners we have to forward more details in order to answer your search request.\" \r\n \"At Ecosia, we want to make sure our users have the best search experience possible. We collect data and do statistical analysis to understand user behavior and trends, how people use our services, and to monitor, troubleshoot, and improve Ecosia.\""
+  "\"For example, for our weather results we only send the location we are requesting weather information for. To other partners we have to forward more details in order to answer your search request.\"" "\"At Ecosia, we want to make sure our users have the best search experience possible. We collect data and do statistical analysis to understand user behavior and trends, how people use our services, and to monitor, troubleshoot, and improve Ecosia.\""
 ]
 
 [rubric.noncritical-purposes]
@@ -62,15 +62,15 @@ citations = [
 ]
 
 [rubric.law-enforcement]
-value = "na"
+value = "unspecified"
 citations = [
-  "\"We don’t create personal profiles of you based on your search history. We actually anonymize all searches within one week.\""
+  ""
 ]
 
 [rubric.list-collected]
 value = "exhaustively"
 citations = [
-  "Present under \"Gathering of personal data while visiting our website\"."
+  "\"Temporary storage of IP address, Date and time of enquiry, Difference between time zone and Greenwich Mean Time (GMT), Content of the request (specific webpage), Access status / HTTP status code, Respectively transferred data quantity, Website from which the request comes, Browser, Operating system and its surface, Language and version of the browser software, data in connection with program crashes."\""
 ]
 
 [rubric.revision-notify]
