@@ -27,6 +27,10 @@ for (const product of products) {
       isMinFullSentence(product.description);
     });
 
+    test(`slug must be fully lowercase {slug}`, () => {
+      expect(product.slug.toLowerCase()).toEqual(product.slug);
+    });
+
     describe(`must have hostname(s) {hostnames}`, () => {
       test("that exist", () => {
         expect(product.hostnames.length).toBeGreaterThan(0);
