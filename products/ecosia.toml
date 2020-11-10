@@ -45,14 +45,14 @@ citations = [
 [rubric.third-party-access]
 value = "yes-specified-critical"
 citations = [
-  "\"For example, for our weather results we only send the location we are requesting weather information for. To other partners we have to forward more details in order to answer your search request.\"" "\"We work with ad networks, like Bing Ads, to show ads based on your search query. When you do a search and ads are displayed next to the search results no data is collected or shared with the advertiser.\""
+  "\"For example, for our weather results we only send the location we are requesting weather information for. To other partners we have to forward more details in order to answer your search request.\", \"We work with ad networks, like Bing Ads, to show ads based on your search query. When you do a search and ads are displayed next to the search results no data is collected or shared with the advertiser.\""
 ]
 notes = ["This is only applicable to the search engine itself."]
 
 [rubric.data-collection-reasoning]
 value = "yes"
 citations = [
-  "\"For example, for our weather results we only send the location we are requesting weather information for. To other partners we have to forward more details in order to answer your search request.\"" "\"At Ecosia, we want to make sure our users have the best search experience possible. We collect data and do statistical analysis to understand user behavior and trends, how people use our services, and to monitor, troubleshoot, and improve Ecosia.\""
+  "\"For example, for our weather results we only send the location we are requesting weather information for. To other partners we have to forward more details in order to answer your search request.\", \"At Ecosia, we want to make sure our users have the best search experience possible. We collect data and do statistical analysis to understand user behavior and trends, how people use our services, and to monitor, troubleshoot, and improve Ecosia.\""
 ]
 
 [rubric.noncritical-purposes]
@@ -70,7 +70,7 @@ citations = [
 [rubric.list-collected]
 value = "exhaustively"
 citations = [
-  "\"Temporary storage of IP address, Date and time of enquiry, Difference between time zone and Greenwich Mean Time (GMT), Content of the request (specific webpage), Access status / HTTP status code, Respectively transferred data quantity, Website from which the request comes, Browser, Operating system and its surface, Language and version of the browser software, data in connection with program crashes."\""
+  "\"Temporary storage of IP address, Date and time of enquiry, Difference between time zone and Greenwich Mean Time (GMT), Content of the request (specific webpage), Access status or HTTP status code, Respectively transferred data quantity, Website from which the request comes, Browser, Operating system and its surface, Language and version of the browser software, data in connection with program crashes.\""
 ]
 
 [rubric.revision-notify]
