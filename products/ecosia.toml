@@ -1,4 +1,4 @@
-name = "ecosia"
+name = "Ecosia"
 description = "Ecosia is a carbon-negative search engine, that donates 80% or more of its profits to nonprofit organisations planting Trees. It is based in based in Berlin, Germany and is B Lab-certified."
 slug = "Ecosia"
 hostnames = [ "ecosia.org" ]
