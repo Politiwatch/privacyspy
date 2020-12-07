@@ -1,5 +1,5 @@
 name = "Quizlet"
-description = "Quizlet is a website proving learning services such as flashcards, games and tests. "
+description = "Quizlet is a website proving learning services such as flashcards, games and tests."
 slug = "quizlet"
 hostnames = [ "quizlet.com" ]
 sources = [ "https://quizlet.com/privacy" ]
