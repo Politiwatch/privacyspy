@@ -1,9 +1,9 @@
 name = "Quora"
-description = "Quora is an American Q&A website. "
+description = "Quora is an American question-and-answer forum."
 slug = "quora"
 hostnames = [ "quora.com" ]
 sources = [ "https://www.quora.com/about/privacy" ]
-contributors = [ "UnKnOwN" ]
+contributors = [ "UnKnOwN", "milesmcc" ]
 
 [rubric.behavioral-marketing]
 value = "yes-opt-out"
@@ -71,3 +71,8 @@ value = "yes"
 citations = [
   "If we change our privacy policies and procedures, we will post those changes on this page. If we make any changes to this Privacy Policy that materially change how we treat your personal information, we will endeavor to provide you with reasonable notice of such changes, such as via prominent notice in the Quora Platform or to your email address of record, and where required by law, we will obtain your consent or give you the opportunity to opt out of such changes."
 ]
+
+[rubric.data-deletion]
+value = "no"
+citations = ["Deleted or Deactivated Account. If you choose “Delete Account” in your profile’s “Privacy Settings,” then all of your content will be removed from public visibility on the Quora Platform, and it may not be restored by us, even if you change your mind. If you choose “Deactivate Account,” then you will no longer receive any communications from us, and users will not be able to interact with you; however your content will remain on the Quora Platform. Once you deactivate your account, you can reactivate it any time by choosing to log in."]
+notes = ["While it is possible to remove one's Quora activity from public view, they do not specify whether the data has been truly deleted."]
