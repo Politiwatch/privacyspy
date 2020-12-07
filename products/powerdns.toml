@@ -1,5 +1,5 @@
 name = "PowerDNS"
-description = "PowerDNS is an encrypted DNS provider"
+description = "PowerDNS is a security and performance oriented DNS provider."
 slug = "powerdns"
 hostnames = [ "powerdns.org" ]
 sources = [ "https://powerdns.org/doh/privacy.html" ]
