@@ -1,5 +1,5 @@
 name = "Pocket Casts"
-description = "Pocket Casts is a free podcast service made by Podcast Media"
+description = "Pocket Casts is a free podcast service made by Podcast Media."
 slug = "pocket-casts"
 hostnames = [ "pocketcasts.com", "pca.st" ]
 sources = [ "https://support.pocketcasts.com/article/privacy-policy/" ]
