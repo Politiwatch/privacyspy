@@ -1,5 +1,5 @@
 name = "Micro Center"
-description = "Micro Center is an American computer department store, which has its headquarters in Hilliard, Ohio"
+description = "Micro Center is an American computer department store."
 slug = "micro-center"
 hostnames = [ "microcenter.com" ]
 sources = [
