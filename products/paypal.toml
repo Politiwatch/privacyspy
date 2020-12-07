@@ -1,5 +1,5 @@
 name = "Paypal"
-description = "Paypal is an American online payment company which works internationally and also serves as a substitution to traditional methods like money orders and checks"
+description = "Paypal is an American online payment platform and financial service company."
 slug = "paypal"
 hostnames = [ "paypal.com" ]
 sources = [ "https://www.paypal.com/ua/webapps/mpp/ua/privacy-full" ]
