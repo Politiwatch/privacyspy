@@ -1,5 +1,5 @@
 name = "Porkbun"
-description = "Porkbun is an ICANN-accredited domain registrar"
+description = "Porkbun is an ICANN-accredited domain registrar."
 slug = "porkbun"
 hostnames = [ "porkbun.com" ]
 sources = [ "https://porkbun.com/legal/agreement/privacy_policy" ]
