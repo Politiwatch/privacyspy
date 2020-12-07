@@ -1,5 +1,5 @@
 name = "NameSilo"
-description = "NameSilo LLC is an American Internet domain registrar and web hosting company headquartered in Phoenix, Arizona."
+description = "NameSilo LLC is an American Internet domain registrar and web hosting company."
 slug = "namesilo"
 hostnames = [ "namesilo.com" ]
 sources = [ "https://www.namesilo.com/popups/privacy_policy.php" ]
