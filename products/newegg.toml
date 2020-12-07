@@ -1,5 +1,5 @@
 name = "Newegg"
-description = "Newegg is an online retailer of items including computer hardware and consumer electronics"
+description = "Newegg is an online computer hardware and consumer electronics retailer."
 slug = "newegg"
 hostnames = [ "newegg.com" ]
 sources = [ "https://kb.newegg.com/knowledge-base/privacy-policy-newegg" ]
