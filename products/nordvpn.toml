@@ -1,5 +1,5 @@
 name = "NordVPN"
-description = "NordVPN is one of the most famous VPN providers. It is based in Panama and has a no-log policy"
+description = "NordVPN is a Panama-based VPN provider."
 slug = "nordvpn"
 hostnames = [ "nordvpn.com" ]
 sources = [ "https://nordvpn.com/privacy-policy/" ]
@@ -23,7 +23,7 @@ notes = [
 [rubric.third-party-collection]
 value = "no"
 notes = [
-  "No where in the policy are any third parties listed as data sources."
+  "Nowhere in the policy are any third parties listed as data sources."
 ]
 
 [rubric.history]
