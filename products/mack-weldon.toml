@@ -1,5 +1,5 @@
 name = "Mack Weldon"
-description = "Mack Weldon is an online clothing brand and store"
+description = "Mack Weldon is an online clothing brand and store."
 slug = "mack-weldon"
 hostnames = [ "mackweldon.com" ]
 sources = [ "https://mackweldon.com/pages/privacy-policy" ]
