@@ -28,7 +28,7 @@ value = "last-modified"
 notes = [ "The policy only lists the date it was last modified (in this case, January 1, 2020)." ]
 
 [rubric.data-deletion]
-value = "no"
+value = "yes-contact"
 citations = [
   "If you would like to make a request, cancel your account or request we delete or no longer use your account information to provide you our Website, contact us at support@calendly.com or the address set forth at the end of this Notice. Subject to applicable law, we will retain and use your account information only as necessary to comply with our legal obligations, resolve disputes, and enforce our agreements. "
 ]
