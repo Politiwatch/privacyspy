@@ -3,7 +3,7 @@ description = "The British Broadcasting Corporation is a British public service 
 slug = "bbc"
 hostnames = ["bbc.co.uk", "bbc.com"]
 sources = ["https://www.bbc.co.uk/usingthebbc/privacy-policy"]
-contributors = ["Wingo5315"]
+contributors = ["Wingo5315", "doamatto"]
 
 [rubric.behavioral-marketing]
 value = "yes-opt-in"
