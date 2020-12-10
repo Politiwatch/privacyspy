@@ -1,0 +1,6 @@
+name = "Dark Sky"
+description = "Dark Sky is a hyperlocal weather service provided by Apple."
+hostnames = ["darksky.net"]
+slug = "darksky"
+parent = "apple"
+contributors = [ "YuriiStasiuk", "doamatto" ]
