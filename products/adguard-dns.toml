@@ -34,7 +34,7 @@ notes = [ "You do not make an account to use AdGuard DNS." ]
 [rubric.data-breaches]
 value = "na"
 notes = [
-  "No data is collected and therefore, you wouldn't be able to be contacted."
+  "No data is collected and, therefore, you wouldn't be able to be contacted."
 ]
 
 [rubric.third-party-access]
@@ -63,4 +63,4 @@ citations = [
 
 [rubric.revision-notify]
 value = "na"
-notes = [ "No personal data is ever collected." ]
+notes = [ "No personal data is ever collected, and therefore a notification would be impossible." ]
