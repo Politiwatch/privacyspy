@@ -1,6 +1,7 @@
 name = "Ruqqus"
 description = "Ruqqus is an open-source aggregation platform for online communities."
 slug = "ruqqus"
+hostnames = [ "ruqqus.com" ]
 sources = ["https://ruqqus.com/help/privacy"]
 contributors = ["Wingo5315", "captainmeta4", "doamatto"]
 
