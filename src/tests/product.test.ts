@@ -3,6 +3,8 @@ import { Product, RubricQuestion } from "../parsing/types";
 import { isMinFullSentence } from "./utils";
 import fs from "fs";
 
+const sizeOf = require("image-size");
+
 const rubric: RubricQuestion[] = loadRubric();
 const products: Product[] = loadProducts(rubric, loadContributors());
 
@@ -23,6 +25,10 @@ for (const product of products) {
 
     describe(`must have a valid description that is a full sentence {description}`, () => {
       isMinFullSentence(product.description);
+    });
+
+    test(`slug must be fully lowercase {slug}`, () => {
+      expect(product.slug.toLowerCase()).toEqual(product.slug);
     });
 
     describe(`must have hostname(s) {hostnames}`, () => {
@@ -48,6 +54,12 @@ for (const product of products) {
       test(`that is smaller than 30kb`, () => {
         expect(fs.statSync("icons/" + product.icon).size).toBeLessThan(30000);
       });
+
+      test(`that is mostly square`, () => {
+        let dimensions = sizeOf("icons/" + product.icon);
+        let aspectRatio = dimensions.width / dimensions.height;
+        expect(Math.abs(1 - aspectRatio)).toBeLessThanOrEqual(0.2);
+      })
     });
 
     if (product.parent != null) {

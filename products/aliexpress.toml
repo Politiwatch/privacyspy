@@ -5,12 +5,14 @@ hostnames = [ "aliexpress.com" ]
 sources = [
   "https://helppage.aliexpress.com/buyercenter/questionAnswer.htm?isRouter=0&viewKey=1&id=1000099018&categoryIds=9205401"
 ]
-contributors = [ "vutut" ]
+contributors = [ "vutut", "doamatto" ]
 
 [rubric.behavioral-marketing]
-value = "yes"
+value = "yes-opt-out"
 citations = [
-  "Cookies or other similar technologies may be used to provide you with advertising based upon your browsing activities and interests."
+  "Cookies or other similar technologies may be used to provide you with advertising based upon your browsing activities and interests.",
+  "In addition, most advertising networks offer you a way to opt out of targeted advertising.  If you would like to find out more information, please visit http://www.aboutads.info/choices/ or http://www.youronlinechoices.com.",
+  "The IP address that your browser will pass on to Google Analytics will not be associated with any other data stored by Google. Through your browser settings, you can block cookies; however, this can lead to problems with the use of some functionalities of the website. Through the add-on \"Google Analytics Opt-out\" you can through your current web browser opt-out to the use of Google Analytics from then on: http://tools.google.com/dlpage/gaoptout?hl=en."
 ]
 
 [rubric.security]
@@ -26,8 +28,8 @@ citations = [
 ]
 
 [rubric.history]
-value = "no"
-notes = [ "No previous version or list of changes is available." ]
+value = "last-modified"
+notes = [ "Mentions the effectivity date at the top of the page" ]
 
 [rubric.data-deletion]
 value = "no"

@@ -3,7 +3,7 @@ description = "Apple is a high-end American computer equipment, smartphone, and 
 slug = "apple"
 hostnames = [ "apple.com", "itunes.com" ]
 sources = [ "https://www.apple.com/legal/privacy/en-ww/" ]
-contributors = [ "YuriiStasiuk" ]
+contributors = [ "YuriiStasiuk", "doamatto" ]
 
 [rubric.behavioral-marketing]
 value = "yes-opt-out"
@@ -37,8 +37,11 @@ notes = [
 ]
 
 [rubric.data-breaches]
-value = "no"
-notes = [ "The policy does not specify a data breach protocol." ]
+value = "eventually"
+citations = [
+  "When Apple becomes aware that it may have experienced a data security incident that might impact our users’ personal information, [...] Apple ensures that it complies with all applicable laws that require notification about data security incidents without undue delay. We may make such notifications by way of a phone call or email."
+]
+notes = [ "This is mentioned on their privacy governance page found [here](https://www.apple.com/legal/privacy/en-ww/governance/)" ]
 
 [rubric.third-party-access]
 value = "yes-unspecified-critical"

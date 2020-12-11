@@ -1,9 +1,9 @@
 name = "Discord"
 description = 'Discord is a chatting service for gamers, featuring VoIP calling and chat communities divided into "servers".'
 slug = "discord"
-hostnames = [ "discordapp.com" ]
-sources = [ "https://discordapp.com/privacy" ]
-contributors = [ "nep" ]
+hostnames = [ "discordapp.com", "discord.gg", "discord.com" ]
+sources = [ "https://discord.com/privacy" ]
+contributors = [ "nep", "doamatto" ]
 
 [rubric.behavioral-marketing]
 value = "yes-opt-out"
@@ -12,7 +12,7 @@ citations = [
 ]
 
 [rubric.security]
-value = "no"
+value = "somewhat"
 citations = [
   "We take reasonable steps to protect the information provided via the Services from loss, misuse, and unauthorized access, disclosure, alteration, or destruction. However, no Internet or email transmission is ever fully secure or error free. In particular, email sent to or from the Services may not be secure. Therefore, you should take special care in deciding what information you send to us via email. Please keep this in mind when disclosing any information via the Internet."
 ]
@@ -34,7 +34,7 @@ notes = [
 ]
 
 [rubric.data-deletion]
-value = "yes-contact"
+value = "yes-automated"
 citations = [
   "In addition to the functionality available through the “Settings” of the Services, in which you can correct, update, amend, or delete certain personal data, you can also request other modifications from us directly.\n\n[...]\n\nPlease write us at privacy@discordapp.com with the words “Personal Data Request” in the subject or body of your message, along with an explanation of what data subject right you are seeking to exercise. For your protection, we may take steps to verify identity before responding to your request."
 ]

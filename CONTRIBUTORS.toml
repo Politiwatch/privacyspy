@@ -16,6 +16,7 @@ role = "founder"
 name = "Matt"
 website = "https://doamatto.xyz"
 github = "doamatto"
+email = "hello@doamatto.xyz"
 
 [kulchynska]
 
@@ -98,6 +99,8 @@ github = "doamatto"
 [notsonewuser]
 
 [vutut]
+github = "vutut"
+email = "vutut@posteo.net"
 
 [101AustinTech]
 
@@ -138,3 +141,16 @@ github = "doamatto"
 [justaprivacycom]
 
 [newuser_Qr8Dd]
+
+[mrhedgehog0]
+
+[Wingo5315]
+
+[Q]
+name = "Quintin Moss"
+email = "qmoss2021@gmail.com"
+
+[captainmeta4]
+name = "Adam LaDine"
+website = "https://adam.ladine.me/"
+github = "captainmeta4"

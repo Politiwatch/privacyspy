@@ -6,9 +6,12 @@ sources = [ "https://www.verizon.com/about/privacy/full-privacy-policy" ]
 contributors = [ "doamatto" ]
 
 [rubric.behavioral-marketing]
-value = "yes"
+value = "yes-opt-out"
 citations = [
   "We use information to:\n\n[...]\n\n* Better predict content and marketing offers that may interest you\n* Deliver personalized content and offers to you"
+]
+notes = [ 
+  "You can view opt-out methods in Verizon's \"What choices do I have about uses of my information?\" section or [here](https://www.verizon.com/about/privacy/full-privacy-policy#acc-item-34)"
 ]
 
 [rubric.security]

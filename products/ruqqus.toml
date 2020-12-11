@@ -1,0 +1,54 @@
+name = "Ruqqus"
+description = "Ruqqus is an open-source aggregation platform for online communities."
+slug = "ruqqus"
+hostnames = [ "ruqqus.com" ]
+sources = ["https://ruqqus.com/help/privacy"]
+contributors = ["Wingo5315", "captainmeta4", "doamatto"]
+
+[rubric.behavioral-marketing]
+value = "no"
+notes = ["There are no advertisements. Platform generates income from premium sales and donations."]
+
+[rubric.data-breaches]
+value = "no"
+notes = ["This policy does not say what will happen in the event of a data breach."]
+
+[rubric.data-collection-reasoning]
+value = "no"
+notes = ["The personal data collected is not specified in this policy."]
+
+[rubric.data-deletion]
+value = "yes-automated"
+notes = ["Ruqqus allows a user to permanently 'deactivate' their account."]
+
+[rubric.history]
+value = "yes"
+notes = ["The history is available on GitHub [here](https://github.com/ruqqus/ruqqus/blob/master/ruqqus/templates/help/privacy.html)"]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = ["At our discretion, Ruqqus may share your information with United States law enforcement in the event of an emergency, if we have good cause to believe that doing so would avert or mitigate the emergency."]
+
+[rubric.list-collected]
+value = "exhaustively"
+citations = ["This includes: Your email address, if you choose to provide it. The IP address from which content is submitted."]
+
+[rubric.noncritical-purposes]
+value = "na"
+notes = ["It seems any data currently collected is used to maintain the platform."]
+
+[rubric.revision-notify]
+value = "no"
+notes = ["There is nothing in the privacy policy stating what will happen if the policy changes."]
+
+[rubric.third-party-access]
+value = "yes-specified-critical"
+citations = [ "Ruqqus will not release your information to third parties, except: As required by United States law, [or] with United States law enforcement in the event of an emergency" ]
+
+[rubric.third-party-collection]
+value = "critical-only"
+citations = ["We use - and then promptly forget - the following information about you from third parties: Verification from hCaptcha that you aren't a bot, during account registration. Verification of purchase approval from PayPal, during purchase of Coins."]
+
+[rubric.security]
+value = "yes"
+citations = ["Ruqqus uses encrypted cookies to maintain secure authenticated sessions. These cookies are randomized with each new session. These cookies are used for authentication and abuse mitigation purposes only."]

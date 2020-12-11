@@ -74,7 +74,6 @@
           {{/forOwn}}
           {{/forOwn}}
         </div>
-
       </section>
       {{/if}}
     </section>
@@ -87,7 +86,7 @@
         <p class="text-sm text-gray-400">Sources</p>
         <p>
           {{#each product.sources}}
-          <a href="{{this}}" class="mt-1 text-sm hover:text-blue-500" target="_blank">Source
+          <a href="{{this}}" class="block mt-1 text-sm hover:text-blue-500" target="_blank">Source
             #{{add 1 @index}}&nbsp;&nearr;</a>
           {{/each}}
         </p>

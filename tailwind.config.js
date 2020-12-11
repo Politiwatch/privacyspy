@@ -60,4 +60,8 @@ module.exports = {
   variants: {
     textColor: ["hover"],
   },
+  future: {
+    purgeLayersByDefault: true,
+    removeDeprecatedGapUtilities: true,
+  },
 };

@@ -1,0 +1,6 @@
+name = "iCloud"
+description = "iCloud is a cloud storage and cloud computing service from Apple Inc."
+hostnames = ["icloud.com"]
+slug = "icloud"
+parent = "apple"
+contributors = [ "YuriiStasiuk", "doamatto" ]

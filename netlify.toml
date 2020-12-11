@@ -1,3 +1,10 @@
+[build]
+  publish = "dist"
+  command = "gulp"
+
+[context.production]
+  environment = { NODE_ENV = "production" }
+
 [[headers]]
   # Define which paths this specific [[headers]] block will cover.
   for = "/api/v2/*"

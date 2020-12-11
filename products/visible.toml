@@ -6,9 +6,10 @@ sources = [ "https://www.visible.com/legal/privacy.html" ]
 contributors = [ "doamatto" ]
 
 [rubric.behavioral-marketing]
-value = "yes"
+value = "yes-opt-out"
 citations = [
-  "We use the information we collect to deliver service, to market to you, and for other business purposes, including to: [...] Determine products and services that may interest you and market them to you, including on Visible sites and apps and on others’ sites, services, apps and devices as described in Section V below;"
+  "We use the information we collect to deliver service, to market to you, and for other business purposes, including to: [...] Determine products and services that may interest you and market them to you, including on Visible sites and apps and on others’ sites, services, apps and devices as described in Section V below;",
+  "In accordance with the Digital Advertising Alliance self-regulatory principles, we require that advertising companies disclose when they are using interest-based advertising techniques to deliver interest-based ads on our sites and apps as well as when they deliver Visible ads on other sites. We also require them to offer you an ability to opt out of this use of your information. You can visit the industry-wide Digital Advertising Alliance opt-out page to learn more and opt out. Additionally, you will see an icon  in or around online advertisements placed using interest-based advertising techniques. You can click on the icon to learn more and opt out. You can also opt out of the use of your device identifiers for interest-based advertising by selecting “Limit Ad Tracking” or “Opt out of Interest-Based Ads” in your device Settings."
 ]
 
 [rubric.security]

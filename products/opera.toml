@@ -1,0 +1,87 @@
+name = "Opera"
+description = "Opera is a free, Chromium-based web browser for all platforms."
+slug = "opera"
+hostnames = [ "opera.com" ]
+sources = [ "https://www.opera.com/privacy" ]
+contributors = [ "Q" ]
+
+[rubric.behavioral-marketing]
+value = "yes"
+citations = [
+  "Based on advertising IDs and your general location, some of our mobile applications may serve targeted ads. These ads are provided by our monetization partners. You can always adjust your personalized ad choices in the application’s “Settings” menu or through your operating system’s settings."
+]
+notes = [
+  "You can adjust what types of ads you see, but you may not opt out of personalized ads."
+]
+
+[rubric.security]
+value = "no"
+notes = [
+  "Neither the Privacy Policy nor the Security Policy outlined any of their own practices regarding security of user data."
+]
+
+[rubric.third-party-collection]
+value = "no"
+notes = [
+  "While they do not collect data from third parties, they often use thrid parties to interact with your data, such as personalized ads and news.\r\n\r\nA full list of third parties they use for this purpose is listed on their Privacy Statement."
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [
+  "When we post changes to this privacy statement, we will include the date when the statement was last updated. If we significantly change this statement, we will notify you about the upcoming change via our website or using in-app notifications."
+]
+
+[rubric.data-deletion]
+value = "yes-contact"
+citations = [
+  "You have the right to make a request to access or delete any of your personal data that we might possess."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "The policy has no mention of a data breach disclosure protocol."
+]
+
+[rubric.third-party-access]
+value = "yes-specified-noncritical"
+citations = [
+  "Our applications and services include third-party technology or code, some of which may use your data in different ways. When such third-party technologies use previously collected data, they typically act as data processors for us. When they collect data on their own, they typically act as independent data controllers."
+]
+
+[rubric.data-collection-reasoning]
+value = "somewhat"
+citations = [
+  "We collect this data pursuant to our legitimate business interests. As noted in our End User License Agreements and Terms of Service, our applications are ad-supported. Collecting this information helps us offset the costs of our business and helps provide a more personalized experience for the user."
+]
+notes = [
+  "They only mention why advertisement data is collected."
+]
+
+[rubric.noncritical-purposes]
+value = "no"
+notes = [
+  "Users cannot opt out of any non-critical data collection."
+]
+
+[rubric.law-enforcement]
+value = "unspecified"
+notes = [
+  "The policy makes no comment in regards to law enforcement."
+]
+
+[rubric.list-collected]
+value = "summarily"
+notes = [
+  "The policy makes very few mentions of the types of personal data that it collects, and uses vague terms such as \"generally\" and \"typically\" in order to avoid using concrete statements."
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "If we significantly change this statement, we will notify you about the upcoming change via our website or using in-app notifications."
+]
+notes = [
+  "Smaller policy revisions will be made without any notifcation to the user."
+]

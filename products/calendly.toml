@@ -3,7 +3,7 @@ description = "Calendly is a free online appointment scheduling service."
 slug = "calendly"
 hostnames = [ "calendly.com" ]
 sources = [ "https://calendly.com/pages/privacy" ]
-contributors = [ "ibarakaiev" ]
+contributors = [ "ibarakaiev", "doamatto" ]
 
 [rubric.behavioral-marketing]
 value = "yes-opt-out"
@@ -14,7 +14,7 @@ citations = [
 [rubric.security]
 value = "yes-audits"
 notes = [
-  "Please refer to [https://calendly.com/pages/security](https://calendly.com/pages/security)."
+  "Calendly describes its security practices on a dedicated [security page](https://calendly.com/pages/security)."
 ]
 
 [rubric.third-party-collection]
@@ -25,10 +25,10 @@ citations = [
 
 [rubric.history]
 value = "last-modified"
-citations = [ "Effective January 1, 2020." ]
+notes = [ "The policy only lists the date it was last modified (in this case, January 1, 2020)." ]
 
 [rubric.data-deletion]
-value = "no"
+value = "yes-contact"
 citations = [
   "If you would like to make a request, cancel your account or request we delete or no longer use your account information to provide you our Website, contact us at support@calendly.com or the address set forth at the end of this Notice. Subject to applicable law, we will retain and use your account information only as necessary to comply with our legal obligations, resolve disputes, and enforce our agreements. "
 ]
