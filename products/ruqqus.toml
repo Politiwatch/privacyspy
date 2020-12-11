@@ -1,7 +1,7 @@
 name = "Ruqqus"
 description = "Ruqqus is an open-source aggregation platform for online communities."
 slug = "ruqqus"
-sources = ["https://ruqqus.com/help/privacy", "https://ruqqus.com/help/terms", "https://github.com/ruqqus/ruqqus"]
+sources = ["https://ruqqus.com/help/privacy"]
 contributors = ["Wingo5315", "captainmeta4", "doamatto"]
 
 [rubric.behavioral-marketing]
