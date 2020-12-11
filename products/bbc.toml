@@ -74,7 +74,7 @@ We might also share your information if we have to by law, or when we need to pr
 
 [rubric.third-party-collection]
 value = "no"
-notes = "There is no mention of collecting data from third parties."
+notes = [ "There is no mention of collecting data from third parties." ]
 
 [rubric.security]
 value = "somewhat"
