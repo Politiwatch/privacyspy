@@ -10,8 +10,8 @@ value = "yes-opt-in"
 citations = ["We'll only send you marketing emails or contact you about BBC programmes, services and your views on issues about the BBC if you've agreed to this."]
 
 [rubric.data-breaches]
-value = "na"
-notes = ["If the user does not have account, this rule does not apply."]
+value = "no"
+notes = ["This policy does not say what will happen in the event of a data breach."]
 
 [rubric.data-collection-reasoning]
 value = "mostly"
