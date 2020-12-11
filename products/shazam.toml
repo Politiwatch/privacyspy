@@ -1,0 +1,6 @@
+name = "Shazam"
+description = "Shazam is a mobile app that can identify music, movies, advertising, and television shows, based on a short sample played and using the microphone on the device."
+hostnames = ["shazam.com"]
+slug = "shazam"
+parent = "apple"
+contributors = [ "YuriiStasiuk", "doamatto" ]

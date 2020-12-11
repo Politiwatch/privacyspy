@@ -3,12 +3,15 @@ description = 'A "virtual phone" service that provides you with a second phone n
 slug = "2ndline"
 hostnames = [ "2ndline.co" ]
 sources = [ "https://2ndline.co/privacy" ]
-contributors = [ "mrhedgehog0" ]
+contributors = [ "mrhedgehog0", "doamatto" ]
 
 [rubric.behavioral-marketing]
-value = "yes"
+value = "yes-opt-out"
 citations = [
-  "We may use automated systems to analyze your information to provide you with personalized services and personalized advertisements.\r\n\r\nTextNow provides “Free” Services as well as paid Services for users. In order to pay for the “Free” Service, personalized advertisements are placed before you. Your information is used to personalize the advertisements."
+  "We may use automated systems to analyze your information to provide you with personalized services and personalized advertisements.\r\n\r\nTextNow provides “Free” Services as well as paid Services for users. In order to pay for the “Free” Service, personalized advertisements are placed before you. Your information is used to personalize the advertisements.",
+  "We provide the information we collect to third parties, such as advertisers, in order to provide you with commercial advertisements. An anonymization or pseudonymization (such as hashing) of your email address may be provided to the third parties for these purposes. The provision of such information generate revenue to pay in part or in whole for the Services. We do not provide personal information to third parties except for billing purposes. If you would like more information about this practice and to know your choices about not having this information used by these companies, click here (http://www.networkadvertising.org/managing/opt_out.asp).",
+  "Our advertising partners may place or recognize a cookie on your computer or device, and may use a de-identified, non-human readable version of your email address for matching to other data collected from (or across) sites about you to improve the relevance of online advertising and personalization. Never is your actual email address shared with any company. To learn more about interest-based advertising in general and to opt out, please visit http://www.aboutads.info/choices.",
+  "You may opt-out of providing your location information to us when you are using mobile devices. If you do not want us to use your location information as described in this Privacy Policy, you should turn off the location services for the mobile application located in your mobile device settings. Please refer to instructions provided by your mobile service provider or the manufacturer of your device to learn how to adjust your mobile device and mobile browser settings."
 ]
 
 [rubric.security]
