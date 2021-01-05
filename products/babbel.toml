@@ -49,13 +49,13 @@ citations = [
 [rubric.data-collection-reasoning]
 value = "yes"
 notes = [
-  "Due to girth of the article, an anchor link is provided:\n\nhttps://about.babbel.com/privacy#1-which-data-are-stored"
+  "Due to girth of the article, an anchor link is provided:\n\n[https://about.babbel.com/privacy#1-which-data-are-stored](https://about.babbel.com/privacy#1-which-data-are-stored)"
 ]
 
 [rubric.noncritical-purposes]
 value = "opt-out-some"
 citations = [
-  "[...] you can prevent the data captured by the cookie and relating to your use of the website (incl. your IP address) from being captured and processed by Google by downloading and installing the browser plugin available at the following link : http://tools.google.com/dlpage/gaoptout?hl=en.\n\n[...]\n\nYou will find further information on the purpose and scope of the data capture and the further processing and use of the data by Facebook as well as optional settings for protecting your privacy in the Facebook data protection guidelines at: https://www.facebook.com/about/privacy/.\n\n[...]\n\nWith reference to Clause 1.7, you will find a list here of further external suppliers:\n\nNew Relic (Optimization of the website, https://newrelic.com/privacy)\nVisual Website Optimizer (Optimization of the website, A/B tests,https://vwo.com/opt-out/)\nGoogle AdWords (Marketing, campaign measurements, http://www.google.de/intl/de/policies/technologies/ads/)\nGoogle Tag Manager (Marketing, http://www.google.com/policies/privacy/)\nShareThis (Social Media Plugin, http://www.sharethis.com/legal/privacy)"
+  "[...] you can prevent the data captured by the cookie and relating to your use of the website (incl. your IP address) from being captured and processed by Google by downloading and installing the browser plugin available at the following link : [https://tools.google.com/dlpage/gaoptout?hl=en](https://tools.google.com/dlpage/gaoptout?hl=en).\n\n[...]\n\nYou will find further information on the purpose and scope of the data capture and the further processing and use of the data by Facebook as well as optional settings for protecting your privacy in the Facebook data protection guidelines at: [https://www.facebook.com/about/privacy/](https://www.facebook.com/about/privacy/).\n\n[...]\n\nWith reference to Clause 1.7, you will find a list here of further external suppliers:\n\nNew Relic (Optimization of the website, [https://newrelic.com/privacy](https://newrelic.com/privacy))\nVisual Website Optimizer (Optimization of the website, A/B tests,[https://vwo.com/opt-out/](https://vwo.com/opt-out/))\nGoogle AdWords (Marketing, campaign measurements, [https://www.google.de/intl/de/policies/technologies/ads/](http://www.google.de/intl/de/policies/technologies/ads/))\nGoogle Tag Manager (Marketing, [https://www.google.com/policies/privacy/](https://www.google.com/policies/privacy/))\nShareThis (Social Media Plugin, [https://www.sharethis.com/legal/privacy](https://www.sharethis.com/legal/privacy))"
 ]
 
 [rubric.law-enforcement]
