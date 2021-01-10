@@ -17,11 +17,13 @@ citations = [
 
 [rubric.third-party-collection]
 value = "no"
-citations = ["Telegram does not collect any data from third parties."]
+citations = [
+    "Telegram does not collect any data from third parties."]
 
 [rubric.history]
 value = "yes"
-notes = [ "Please check our website frequently to see any updates or changes to our [Privacy Policy](https://telegram.org/privacy#11-changes-to-this-privacy-policy), a summary of which we will set out below."]
+notes = [
+    "Please check our website frequently to see any updates or changes to our [Privacy Policy](https://telegram.org/privacy#11-changes-to-this-privacy-policy), a summary of which we will set out below."]
 
 [rubric.data-deletion]
 value = "yes-automated"
