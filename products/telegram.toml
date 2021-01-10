@@ -10,10 +10,6 @@ value = "no"
 citations = [
   "Unlike other services, we don't use your data for ad targeting or other commercial purposes. Telegram only stores the information it needs to function as a secure and feature-rich cloud service."]
 
-[rubric.security]
-value = "yes"
-citations = [
-  "We will process your data to deliver your cloud chat history, including messages, media and files, to any devices of your choosing without a need for you to use third-party backups or cloud storage. All data is stored heavily encrypted so that local Telegram engineers or physical intruders cannot get access. We employ all appropriate technical and organizational measures (including encryption of your personal data) to ensure a level of security for your personal data that is appropriate to the risk. \r\n\r\n Unless stated otherwise in this Privacy Policy, the personal data that you provide us will only be stored for as long as it is necessary for us to fulfill our obligations in respect of the provision of the Services. \r\n\r\n Your messages, media and files from [secret chats](https://telegram.org/privacy#3-3-2-secret-chats), as well as the contents of your calls and the data you store in your [Telegram Passport](https://telegram.org/blog/passport) are processed only on your device and on the device of your recipient. While Telegram servers will handle this end-to-end encrypted data to deliver it to the recipient – or store it in the case of Telegram Passport data, we have no ways of deciphering the actual information."]
 
 [rubric.third-party-collection]
 value = "no"
