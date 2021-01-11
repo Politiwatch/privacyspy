@@ -36,7 +36,7 @@ notes = [
     "The service collects so little personal data that notification would not be possible."]
 
 [rubric.third-party-access]
-value = "no"
+value = "yes-specified-critical"
 citations = [
   "\"Nightly, Dev, and Beta versions of the Brave Browser are experimental previews of new Brave Browser versions. These test versions of the Browser may automatically send crash reports to Brave so that we can identify and fix problems. You can switch off \"Automatically send usage statistics and crash reports to Brave Software\" in settings.\" Brave Browser acts on issues highlighted by crash reports from Beta and Dev versions of the Browser. Brave processes device model, iOS version, language, timezone, CPU architecture, carrier, connection status. Optional: Crash log (crash logs will also be sent if you opted-in when activating iOS). Optional: Comments and screenshots you share if you send feedback through TestFlight. The data is used to test the product and fix problems in a way that does not negatively affect your rights or interests. The data is retained by Apple for one year. Brave may retain some crash reports indefinitely, if useful for testing. \r\n\r\n With Brave Firewall + VPN on iOS, Brave provides customer support via Guardian. Brave processes personal data that a user may include in the text they write when communicating with Guardian for customer support. The data is used to deliver the service agreed between both the user and Brave. The data is retained by Guardian indefinitely."]
 
