@@ -1,1 +1,66 @@
+name = "Mozilla"
+description = "The Mozilla Foundation is a American not-for-profit organization that exists to support and collectively lead the open source Mozilla project."
+slug = "mozilla"
+hostnames = [ "mozilla.org"]
+sources = [ "https://www.mozilla.org/en-US/privacy/" ]
+contributors = [ "erotavlas" ]
 
+[rubric.behavioral-marketing]
+value = "no"
+citations = [
+  ""]
+
+[rubric.security]
+value = "yes"
+citations = [
+  ""]
+
+[rubric.third-party-collection]
+value = "no"
+citations = [
+    "."]
+
+[rubric.history]
+value = "last-modified"
+notes = [
+    ""]
+
+[rubric.data-deletion]
+value = "yes-automated"
+citations = [
+  ""]
+  
+[rubric.data-breaches]
+value = "na"
+notes = [
+    ""]
+
+[rubric.third-party-access]
+value = "no"
+citations = [
+  ""]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  ""]
+
+[rubric.noncritical-purposes]
+value = "na"
+citations = [
+  ""]
+
+[rubric.law-enforcement]
+value = "na"
+citations = [
+  ""]
+    
+[rubric.list-collected]
+value = "exhaustively"
+citations = [
+  ""]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  ""]
