@@ -1,1 +1,70 @@
+name = "WhatsApp"
+description = "WhatsApp is freeware, cross-platform messaging and Voice over IP (VoIP) service owned by Facebook, Inc."
+slug = "whatsapp"
+hostnames = [ "whatsapp.com"]
+sources = [ "https://www.whatsapp.com/legal/updates/privacy-policy" ]
+contributors = [ "erotavlas" ]
 
+[rubric.behavioral-marketing]
+value = "no"
+citations = [
+  ""]
+
+[rubric.security]
+value = "yes"
+citations = [
+  ""]
+
+[rubric.third-party-collection]
+value = "no"
+citations = [
+    ""]
+
+[rubric.history]
+value = "yes"
+notes = ["    "]
+
+[rubric.data-deletion]
+value = "yes-automated"
+citations = [
+  ""]
+  
+notes = [
+  ""]
+
+[rubric.data-breaches]
+value = "no"
+notes = [ ""]
+
+[rubric.third-party-access]
+value = "yes-specified-critical"
+citations = [
+  ""]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  ""]
+
+[rubric.noncritical-purposes]
+value = "na"
+citations = [
+  ""]
+
+[rubric.law-enforcement]
+value = "strict"
+citations = [
+  ""]
+
+[rubric.list-collected]
+value = "exhaustively"
+citations = [
+  ""]
+
+notes = [
+  ""]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  ""]
