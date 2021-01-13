@@ -18,7 +18,7 @@ citations = [
 
 [rubric.third-party-collection]
 value = "no"
-citations = ["\"Signal is designed to never collect or store any sensitive information. Signal messages and calls cannot be accessed by us or other third parties because they are always end-to-end encrypted, private, and secure.\""]
+citations = ["Signal does not collect any data from third parties."]
 
 [rubric.history]
 value = "last-modified"
