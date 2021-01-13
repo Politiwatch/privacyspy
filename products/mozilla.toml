@@ -2,7 +2,7 @@ name = "Mozilla"
 description = "The Mozilla Foundation is a American not-for-profit organization that exists to support and collectively lead the open source Mozilla project."
 slug = "mozilla"
 hostnames = [ "mozilla.org"]
-sources = [ "https://www.mozilla.org/en-US/privacy/", "https://www.mozilla.org/en-US/privacy/firefox/", "https://www.mozilla.org/en-US/privacy/thunderbird/" ]
+sources = [ "https://www.mozilla.org/en-US/privacy/, https://www.mozilla.org/en-US/privacy/firefox/, https://www.mozilla.org/en-US/privacy/thunderbird/" ]
 contributors = [ "erotavlas" ]
 
 [rubric.behavioral-marketing]
