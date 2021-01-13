@@ -2,65 +2,77 @@ name = "Mozilla"
 description = "The Mozilla Foundation is a American not-for-profit organization that exists to support and collectively lead the open source Mozilla project."
 slug = "mozilla"
 hostnames = [ "mozilla.org"]
-sources = [ "https://www.mozilla.org/en-US/privacy/" ]
+sources = [ "https://www.mozilla.org/en-US/privacy/", "https://www.mozilla.org/en-US/privacy/firefox/", "https://www.mozilla.org/en-US/privacy/thunderbird/" ]
 contributors = [ "erotavlas" ]
 
 [rubric.behavioral-marketing]
 value = "no"
 citations = [
-  ""]
+  "\"When you give us information, we will use it in the ways for which you've given us permission. Generally, we use your information to help us provide and improve our products and services for you.\""]
 
 [rubric.security]
-value = "yes"
+value = "somewhat"
 citations = [
-  ""]
+  "\"We are committed to protecting your personal information once we have it. We implement physical, business and technical security measures.\""]
+  
+notes=[
+    "\"If you enable Sync, Mozilla receives the information that you sync across devices in encrypted form. This may include Firefox tabs, add-ons, passwords, payment autofill information, bookmarks, history, and preferences.\""]
 
 [rubric.third-party-collection]
 value = "no"
 citations = [
-    "."]
+    "Mozilla does not collect any data from third parties."]
 
 [rubric.history]
 value = "last-modified"
 notes = [
-    ""]
+    "\"We may need to change this policy and our notices. The updates will be posted online. If the changes are substantive, we will announce the update through Mozilla's usual channels for such announcements such as blog posts and forums. Your continued use of the product or service after the effective date of such changes constitutes your acceptance of such changes. To make your review more convenient, we will post an effective date at the top of the page.\""]
 
 [rubric.data-deletion]
 value = "yes-automated"
 citations = [
-  ""]
+  "\"We also don't want your personal information for any longer than we need it, so we only keep it long enough to do what we collected it for. Once we don't need it, we take steps to destroy it unless we are required by law to keep it longer.\""]
+  
+notes = [
+    "\"Deleting your Firefox Account will delete related Firefox Sync content (this may include Firefox tabs, add-ons, passwords, payment autofill information, bookmarks, history, and preferences). You can also read the [documentation](https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/data/sync-ping.html). \r\n\r\n \"For some Firefox users in the United States, Firefox routes DNS requests to a resolver service that has agreed to Mozilla's strict privacy standards for resolvers. System logs of your DNS requests are deleted from the service within 24 hours and are only used for the purpose of DNS resolution.\""]
   
 [rubric.data-breaches]
-value = "na"
+value = "eventually"
 notes = [
-    ""]
+    "\"Despite our efforts, if we learn of a security breach, we'll notify you so that you can take appropriate protective steps.\""]
 
 [rubric.third-party-access]
-value = "no"
+value = "yes-specified-noncritical"
 citations = [
-  ""]
+  "\"When we have asked and received your permission to share it.\" \r\n\r\n \"For processing or providing products and services to you, but only if those entities receiving your information are contractually obligated to handle the data in ways that are approved by Mozilla.\" \r\n\r\n \"When we are fulfilling our mission of being open. We sometimes release information to make our products better and foster an open web, but when we do so, we will remove your personal information and try to disclose it in a way that minimizes the risk of you being re-identified.\" \r\n\r\n \"When we believe it is necessary to prevent harm to you or someone else. We will only share your information in this way if we have a good faith belief that it is reasonably necessary to protect the rights, property or safety of you, our other users, Mozilla or the public.\" \r\n\r\n \"If our organizational structure or status changes (if we undergo a restructuring, are acquired, or go bankrupt) we may pass your information to a successor or affiliate.\""]
+
+notes = ["\"Mozilla receives your email address and a hash of your password when you create a Firefox Account or sign-up to Join Firefox. You can choose to include a display name or profile image. Your email address is sent to our email vendor, SalesForce Marketing Cloud, which has its own privacy policy. Firefox by default sends search queries to your search provider to help you discover common phrases other people have searched for and improve your search experience. Firefox always asks before determining and sharing your location with a requesting website (for example, if a map website needs your location to provide directions). To determine location, Firefox may use your operating system's geolocation features, Wi-fi networks, cell phone towers, or IP address, and may send this data to Google's geolocation service, which has its own [privacy policy](https://www.google.com/privacy/lsf.html).\" \r\n\r\n \"On Android: Firefox by default sends mobile campaign data to Adjust, our analytics vendor, which has its own [privacy policy](https://www.adjust.com/terms/privacy-policy/). Mobile campaign data includes a Google advertising ID, IP address, timestamp, country, language/locale, operating system, and app version. Read the [documentation](https://firefox-source-docs.mozilla.org/mobile/android/adjust.html).\" \r\n\r\n \"On iOS and Android: Firefox by default sends data about what features you use in Firefox to Leanplum, our mobile marketing vendor, which has its own [privacy policy](https://www.leanplum.com/privacy/). This data allows us to test different features and experiences, as well as provide customized messages and recommendations for improving your experience with Firefox.\" \r\n\r\n \"Thunderbird is a project of MZLA Technologies Corporation, a subsidiary of Mozilla Foundation and as such, shares some of the same infrastructure. This means that, from time to time, your data (e.g., crash reports, and technical and interaction data) may be disclosed to Mozilla Corporation and Mozilla Foundation. If so, it will be maintained in accordance with the commitments we make in this Privacy Notice. To simplify the email set-up process, Thunderbird tries to determine the correct settings for your account by contacting Mozilla's configuration database as well as external servers. These include DNS servers and standard autoconfiguration URIs. During this process, your email domain may be sent to Mozilla's configuration database, and your email address may be disclosed to your network administrators. Thunderbird uses Amazon Web Services (AWS) to host its servers and as a content delivery network. Your device's IP address is collected as part of AWS's server logs. Thunderbird has partnered with Gandi.net to allow you to create a new email address through Thunderbird. If you choose to use this feature, your email address search terms are sent to Gandi.net to return available addresses. In addition, your country location is also shared with Gandi.net to provide the correct prices. You can learn more about Gandi.net's data practices by reading their [Privacy Policy](https://contract.gandi.net/v5/contracts/14420/Privacy_Policy_US_2.0_en.pdf).\""]
 
 [rubric.data-collection-reasoning]
 value = "yes"
 citations = [
-  ""]
+  "\"We'll always tell you what personal information we're collecting from you. When you give us information, we will use it in the ways for which you've given us permission. Generally, we use your information to help us provide and improve our products and services for you.\""]
+  
+notes = ["\"We strive to collect only what we need to improve Firefox for everyone. There are two types of telemetry data: interaction data and technical data. Read the telemetry documentation for [Desktop](https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/index.html), [Android](https://firefox-source-docs.mozilla.org/mobile/android/index.html), or [iOS](https://github.com/mozilla-mobile/firefox-ios/wiki/Telemetry) or learn how to opt-out of this data collection on [Desktop](https://support.mozilla.org/en-US/kb/share-data-mozilla-help-improve-firefox?redirectlocale=en-US&redirectslug=send-performance-data-improve-firefox) and [Mobile](https://support.mozilla.org/en-US/kb/send-usage-data-firefox-mobile-browsers).\" \r\n\r\n \"Thunderbird collects telemetry data by default to help improve the performance and stability of Thunderbird. There are two types of telemetry data: interaction data and technical data. Read the telemetry documentation and learn how to opt-out of this data collection [here](https://support.mozilla.org/kb/thunderbird-telemetry).\""]
 
 [rubric.noncritical-purposes]
 value = "na"
 citations = [
-  ""]
+  "\"We'll always tell you what personal information we're collecting from you. When you give us information, we will use it in the ways for which you've given us permission. Generally, we use your information to help us provide and improve our products and services for you.\""]
 
 [rubric.law-enforcement]
-value = "na"
+value = "yes"
 citations = [
-  ""]
+  "\"When the law requires it. We follow the law whenever we receive requests about you from a government or related to a lawsuit. We'll notify you when we're asked to hand over your personal information in this way unless we're legally prohibited from doing so. When we receive requests like this, we'll only release your personal information if we have a good faith belief that the law requires us to do so. Nothing in this policy is intended to limit any legal defenses or objections that you may have to a third party's request to disclose your information.\""]
     
 [rubric.list-collected]
 value = "exhaustively"
 citations = [
-  ""]
+  "\"We learn information about you when: you give it to us directly (e.g., when you choose to send us crash reports); we collect it automatically through our products and services (e.g., when your Firefox browser checks with us to see if is up to date); someone else tells us information about you (e.g., when Thunderbird works with your email providers to set up your account); or when we try and understand more about you based on information you've given to us (e.g., when we use your IP address to customize language for some of our services).\""]
+
+notes = ["\"When Firefox sends data to us, your IP address is temporarily collected as part of our server logs. When you first use Firefox, it uses your IP address to set your default search provider based on your country. We use this data to send you email alerts if we detect suspicious activity, such as account logins from other locations. Firefox uses your IP address to suggest relevant content based on your country and state. For some Firefox users in the United States, Firefox routes DNS requests to a resolver service that has agreed to Mozilla's strict privacy standards for resolvers. System logs of your DNS requests are deleted from the service within 24 hours and are only used for the purpose of DNS resolution. By default on desktop versions of Firefox, we will ask you to share a report with more detailed information about crashes with Mozilla, but you always have the choice to decline. Crash reports include a \"dump file\" of Firefox's memory contents at the time of the crash, which may contain data that identifies you or is otherwise sensitive to you. Mozilla receives your email address and a hash of your password when you create a Firefox Account or sign-up to Join Firefox. You can choose to include a display name or profile image. For security purposes, we store the IP addresses used to access your Firefox Account in order to approximate your city and country. If you enable Sync, Mozilla receives the information that you sync across devices in encrypted form. This may include Firefox tabs, add-ons, passwords, payment autofill information, bookmarks, history, and preferences. Firefox always asks before determining and sharing your location with a requesting website (for example, if a map website needs your location to provide directions). To determine location, Firefox may use your operating system's geolocation features, Wi-fi networks, cell phone towers, or IP address, and may send this data to Google's geolocation service, which has its own [privacy policy](https://www.google.com/privacy/lsf.html). If you allow a website to send you notifications, Firefox connects with Mozilla and uses your IP address to relay the message. Mozilla's pre-release versions of Firefox (which are distributed through channels such as Nightly, Beta, Developer Edition and TestFlight) are development platforms frequently updated with experimental features and studies. In addition to the data collection described in this Privacy Notice, these versions by default may send certain types of web activity and crash data to Mozilla and in some cases to our partners. Any data collection or sharing adheres to our [Firefox data collection policy](https://wiki.mozilla.org/Firefox/Data_Collection) and we will always be transparent and provide you with controls.\" \r\n\r\n \"Thunderbird receives your email address domain. Your full email address is never processed or stored on our servers (unless you choose to share it when you send a crash report). When Thunderbird sends technical data to us, your IP address is temporarily collected as part of our server logs. If Thunderbird crashes, we will ask you to share a report with more detailed information about the crash, but you always have the choice to decline. Crash reports include a \"dump file\" of Thunderbird's memory contents at the time of the crash, which may contain data that identifies you or is otherwise sensitive to you. When Thunderbird sends technical data to us, your IP address is temporarily collected as part of our server logs. If you choose, crash reports include your email address. Read the full documentation [here](https://support.mozilla.org/kb/mozilla-crash-reporter-tb). Thunderbird periodically connects to our server to install updates to add-ons. When Thunderbird sends technical data to us, your IP address is temporarily collected as part of our server logs.\" "]
 
 [rubric.revision-notify]
 value = "yes"
 citations = [
-  ""]
+  "\"We may need to change this policy and our notices. The updates will be posted online. If the changes are substantive, we will announce the update through Mozilla's usual channels for such announcements such as blog posts and forums. Your continued use of the product or service after the effective date of such changes constitutes your acceptance of such changes. To make your review more convenient, we will post an effective date at the top of the page.\""]
