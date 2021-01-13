@@ -35,7 +35,8 @@ notes = [
 
 [rubric.data-breaches]
 value = "no"
-notes = [ "The policy does not specify a data breach protocol."]
+notes = [
+   "The policy does not specify a data breach protocol."]
 
 [rubric.third-party-access]
 value = "yes-specified-critical"
