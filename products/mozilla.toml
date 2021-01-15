@@ -14,11 +14,7 @@ citations = [
 [rubric.security]
 value = "somewhat"
 citations = [
-  "\"We are committed to protecting your personal information once we have it. We implement physical, business and technical security measures.\""
-]
-  
-notes=[
-    "\"If you enable Sync, Mozilla receives the information that you sync across devices in encrypted form. This may include Firefox tabs, add-ons, passwords, payment autofill information, bookmarks, history, and preferences.\""]
+  "\"We are committed to protecting your personal information once we have it. We implement physical, business and technical security measures.\" \r\n\r\n \"If you enable Sync, Mozilla receives the information that you sync across devices in encrypted form. This may include Firefox tabs, add-ons, passwords, payment autofill information, bookmarks, history, and preferences.\""]
 
 [rubric.third-party-collection]
 value = "no"
@@ -27,7 +23,7 @@ notes = [
 
 [rubric.history]
 value = "last-modified"
-notes = [
+citations = [
     "\"We may need to change this policy and our notices. The updates will be posted online. If the changes are substantive, we will announce the update through Mozilla's usual channels for such announcements such as blog posts and forums. Your continued use of the product or service after the effective date of such changes constitutes your acceptance of such changes. To make your review more convenient, we will post an effective date at the top of the page.\""
 ]
 
@@ -38,7 +34,7 @@ citations = [
 ]
   
 notes = [
-    "\"Deleting your Firefox Account will delete related Firefox Sync content (this may include Firefox tabs, add-ons, passwords, payment autofill information, bookmarks, history, and preferences). You can also read the [documentation](https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/data/sync-ping.html). \r\n\r\n \"For some Firefox users in the United States, Firefox routes DNS requests to a resolver service that has agreed to Mozilla's strict privacy standards for resolvers. System logs of your DNS requests are deleted from the service within 24 hours and are only used for the purpose of DNS resolution.\""]
+    "\"Deleting your Firefox Account will delete related Firefox Sync content (this may include Firefox tabs, add-ons, passwords, payment autofill information, bookmarks, history, and preferences). You can also read the [documentation](https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/data/sync-ping.html).\" \r\n\r\n \"For some Firefox users in the United States, Firefox routes DNS requests to a resolver service that has agreed to Mozilla's strict privacy standards for resolvers. System logs of your DNS requests are deleted from the service within 24 hours and are only used for the purpose of DNS resolution.\""]
   
 [rubric.data-breaches]
 value = "eventually"
