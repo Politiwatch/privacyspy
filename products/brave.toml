@@ -19,36 +19,35 @@ citations = [
 
 [rubric.third-party-collection]
 value = "no"
-notes = ["Brave does not collect any data from third parties."
-]
+notes = [
+    "Brave does not collect any data from third parties."]
 
 [rubric.history]
 value = "last-modified"
-notes = [
+citations = [
     "\"We'll update this policy whenever we make material changes to our practices, and we'll announce it to let you know. We hope you'll find any changes agreeable, but if you're not comfortable with changes to the info we collect or how we use it, we understand your choice to stop using Brave.\""
 ]
 
 [rubric.data-deletion]
 value = "yes-automated"
-citations = [
+notes = [
   "In case of users feedback, Brave uses feedback sent by users to improve the product. Brave processes personal data that a user may include in the text they write when sending feedback through an app store or any other means. The data is used in order to deliver the service, and the risk of the processing of the data is minimal. The data is stored for 2 years. \r\n\r\n With Brave Rewards enabled, Brave uses data to make and verify (including anti-fraud) Basic Attention Token contributions. Brave processes IP address at time of claiming a monthly grant of BAT tokens, and Wallet ID (this ID is not tied to what you browse or do because your browsing is kept anonymous by Brave). The data is necessary for the performance of a [contract between us](https://basicattentiontoken.org/user-terms-of-service/). The data is stored for the duration of the user's account, plus 4 years in order to comply with US Internal Revenue Service requirements. \r\n\r\n With Brave Today, Brave collects content from the server in order to display it for the user. Brave processes IP addresses. The data is used in order to deliver the service, and the risk of the processing of the data is minimal. The data is stored for the duration of the request and response. \r\n\r\n With Brave Together, Brave provides video calling service at the request of the user. Brave processes IP address, chat text, video, and audio. The user requested the service, and the risk of the processing of the data is minimal. The data is stored for the duration of the call."
 ]
   
 [rubric.data-breaches]
 value = "na"
 notes = [
-   "The service collects so little personal data that notification would not be possible."
-]
+   "The service collects so little personal data that notification would not be possible."]
 
 [rubric.third-party-access]
 value = "yes-specified-critical"
 citations = [
-  "\"Nightly, Dev, and Beta versions of the Brave Browser are experimental previews of new Brave Browser versions. These test versions of the Browser may automatically send crash reports to Brave so that we can identify and fix problems. You can switch off \"Automatically send usage statistics and crash reports to Brave Software\" in settings.\" Brave Browser acts on issues highlighted by crash reports from Beta and Dev versions of the Browser. Brave processes device model, iOS version, language, timezone, CPU architecture, carrier, connection status. Optional: Crash log (crash logs will also be sent if you opted-in when activating iOS). Optional: Comments and screenshots you share if you send feedback through TestFlight. The data is used to test the product and fix problems in a way that does not negatively affect your rights or interests. The data is retained by Apple for one year. Brave may retain some crash reports indefinitely, if useful for testing. \r\n\r\n With Brave Firewall + VPN on iOS, Brave provides customer support via Guardian. Brave processes personal data that a user may include in the text they write when communicating with Guardian for customer support. The data is used to deliver the service agreed between both the user and Brave. The data is retained by Guardian indefinitely."
+  "\"Nightly, Dev, and Beta versions of the Brave Browser are experimental previews of new Brave Browser versions. These test versions of the Browser may automatically send crash reports to Brave so that we can identify and fix problems. You can switch off \"Automatically send usage statistics and crash reports to Brave Software\" in settings.\"Brave Browser acts on issues highlighted by crash reports from Beta and Dev versions of the Browser. Brave processes device model, iOS version, language, timezone, CPU architecture, carrier, connection status. Optional: Crash log (crash logs will also be sent if you opted-in when activating iOS). Optional: Comments and screenshots you share if you send feedback through TestFlight. The data is used to test the product and fix problems in a way that does not negatively affect your rights or interests. The data is retained by Apple for one year. Brave may retain some crash reports indefinitely, if useful for testing. \r\n\r\n With Brave Firewall + VPN on iOS, Brave provides customer support via Guardian. Brave processes personal data that a user may include in the text they write when communicating with Guardian for customer support. The data is used to deliver the service agreed between both the user and Brave. The data is retained by Guardian indefinitely."
 ]
 
 [rubric.data-collection-reasoning]
 value = "yes"
-citations = [
+notes = [
   "In case of users feedback, Brave uses feedback sent by users to improve the product. Brave processes personal data that a user may include in the text they write when sending feedback through an app store or any other means. The data is used in order to deliver the service, and the risk of the processing of the data is minimal. The data is stored for 2 years. \r\n\r\n With Brave Rewards enabled, Brave uses data to make and verify (including anti-fraud) Basic Attention Token contributions. Brave processes IP address at time of claiming a monthly grant of BAT tokens, and Wallet ID (this ID is not tied to what you browse or do because your browsing is kept anonymous by Brave). The data is necessary for the performance of a [contract between us](https://basicattentiontoken.org/user-terms-of-service/). The data is stored for the duration of the user's account, plus 4 years in order to comply with US Internal Revenue Service requirements. \r\n\r\n With Brave Today, Brave collects content from the server in order to display it for the user. Brave processes IP addresses. The data is used in order to deliver the service, and the risk of the processing of the data is minimal. The data is stored for the duration of the request and response. \r\n\r\n With Brave Together, Brave provides video calling service at the request of the user. Brave processes IP address, chat text, video, and audio. The user requested the service, and the risk of the processing of the data is minimal. The data is stored for the duration of the call."
 ]
 
@@ -61,7 +60,7 @@ citations = [
 [rubric.law-enforcement]
 value = "na"
 citations = [
-  "With Brave Rewards enabled, Brave uses data to make and verify (including anti-fraud) Basic Attention Token contributions. Brave processes IP address at time of claiming a monthly grant of BAT tokens, and Wallet ID (this ID is not tied to what you browse or do because your browsing is kept anonymous by Brave). The data is necessary for the performance of a [contract between us](https://basicattentiontoken.org/user-terms-of-service/). The data is stored for the duration of the user's account, plus 4 years in order to comply with US Internal Revenue Service requirements."
+  "\"With Brave Rewards enabled, Brave uses data to make and verify (including anti-fraud) Basic Attention Token contributions. Brave processes IP address at time of claiming a monthly grant of BAT tokens, and Wallet ID (this ID is not tied to what you browse or do because your browsing is kept anonymous by Brave). The data is necessary for the performance of a [contract between us](https://basicattentiontoken.org/user-terms-of-service/). The data is stored for the duration of the user's account, plus 4 years in order to comply with US Internal Revenue Service requirements.\""
 ]
     
 [rubric.list-collected]
