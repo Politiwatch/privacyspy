@@ -14,8 +14,10 @@ citations = [
 [rubric.security]
 value = "yes-independent-audits"
 citations = [
-  "\"All conversation content is encrypted with strong encryption on the sender's device and is only decrypted on the recipient's device (also known as end-to-end encryption). Wire doesn't hold the decryption keys, and our software contains no backdoor. Your conversations are yours - Wire has no access to them. In addition, Wire also uses transport encryption to encrypt metadata.\" \r\n\r\n \"Your privacy is very important to us. [Find out more](https://wire.com/en/security/). All communication through Wire is secured with end-to-end encryption — messages, conference calls, files. Wire is the most extensively publicly audited collaboration and communication software on the market.\""
+  "\"All conversation content is encrypted with strong encryption on the sender's device and is only decrypted on the recipient's device (also known as end-to-end encryption). Wire doesn't hold the decryption keys, and our software contains no backdoor. Your conversations are yours - Wire has no access to them. In addition, Wire also uses transport encryption to encrypt metadata.\""
 ]
+
+notes = ["\"Your privacy is very important to us. [Find out more](https://wire.com/en/security/). All communication through Wire is secured with end-to-end encryption — messages, conference calls, files. Wire is the most extensively publicly audited collaboration and communication software on the market.\""]
 
 [rubric.third-party-collection]
 value = "no"
