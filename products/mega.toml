@@ -35,7 +35,7 @@ notes = [
 ]
   
 [rubric.data-breaches]
-value = "Yes, eventually"
+value = "eventually"
 notes = [
    "\"From time to time we may need to communicate with each other directly. Examples of direct communications include copyright or other enforcement emails, notifications under our [Takedown Guidance Policy](https://mega.io/takedown), system update information, data breach notifications, notification of major changes to our [Terms](https://mega.nz/terms), our [Cookie Policy](https://mega.nz/cookie) or this Policy and billing information.\""]
 
