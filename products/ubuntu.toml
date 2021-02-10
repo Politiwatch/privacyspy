@@ -23,7 +23,7 @@ notes = [
     "Ubuntu does not collect any data from third parties."]
 
 [rubric.history]
-value = "Yes"
+value = "yes"
 notes = [
     "Ubuntu provides old versions of the privacy policy, but does not specify the date it was last modified. \r\n\r\n System information legal notice provides the date it was last modified."
 ]
@@ -54,7 +54,7 @@ notes = [
 [rubric.noncritical-purposes]
 value = "na"
 citations = [
-  "..
+  ".."
 ]
 
 [rubric.law-enforcement]
@@ -74,4 +74,3 @@ value = "yes"
 citations = [
     "\"Any changes we make to our privacy policy in the future will be posted on this page and, where appropriate, notified to you by email. Please check back frequently to see any updates or changes to our privacy policy.\""
 ]
-
