@@ -30,13 +30,13 @@ citations = [
 
 [rubric.data-deletion]
 value = "yes-automated"
-notes = [
+citations = [
   "\"When you delete one of Your Files it will be made inaccessible, marked for deletion and removed when the next appropriate file purging process is run, subject to any retention specifically allowed under this Policy or our [Terms](https://mega.nz/terms). After account termination, all Your Files will be marked for deletion and removed when the next appropriate file purging process is run, subject to any retention specifically allowed under this Policy or our [Terms](https://mega.nz/terms).\" \r\n\r\n \"For paid plans MEGA and its related or affiliated entities, payment processors and resellers that you use to make payments, retain account and payment information including a record of all transactions on your account.\" \r\n\r\n \"We may, but shall not be obliged to, keep Your Files after your account has been suspended or terminated. In particular, we may, but shall not be obliged to, keep Your Files where we consider it necessary for evidential purposes relating to a breach of our [Cookie Policy](https://mega.nz/cookie), [Terms](https://mega.nz/terms) or with respect to current or anticipated action by any competent enforcement authority or other third party.\" \r\n\r\n \"After account suspension or termination, including where the administrator of a business account, within which you have used the services, terminates that business account (see clause 13 below), we may, but shall not be obliged to, retain all Account Data if enforcement action is likely or commenced under our [Terms](https://mega.nz/terms), our [Cookie Policy](https://mega.nz/cookie), or [Takedown Guidance Policy](https://mega.io/takedown) or for 12 months, whichever is longer, or in the case of records of financial transactions relating to your account for such period of time as we are legally required to retain such information. Users sometimes request that an account be re-activated so we keep Account Data for 12 months for that purpose. Where there is no enforcement action likely or commenced and the 12 month period has expired, or after such longer period as is applicable in the case of records of financial transactions relating to your account that we are legally required to retain, Account Data that identifies you will be anonymised, but where you are a contact of, have had a folder shared with you by, or have chatted with, another MEGA user, those details will continue to be retained to allow services to continue for those other users.\""
 ]
   
 [rubric.data-breaches]
 value = "eventually"
-notes = [
+citations = [
    "\"From time to time we may need to communicate with each other directly. Examples of direct communications include copyright or other enforcement emails, notifications under our [Takedown Guidance Policy](https://mega.io/takedown), system update information, data breach notifications, notification of major changes to our [Terms](https://mega.nz/terms), our [Cookie Policy](https://mega.nz/cookie) or this Policy and billing information.\""]
 
 [rubric.third-party-access]
@@ -47,7 +47,7 @@ citations = [
 
 [rubric.data-collection-reasoning]
 value = "yes"
-notes = [
+citations = [
   "\"We will collect, store, use and otherwise process Account Data so that we can provide the services you have contracted to obtain from us under our [Terms](https://mega.nz/terms). We also have a legitimate interest in processing Account Data so that we can maintain and improve our systems and services and communicate with you as referenced in this Policy.\" \r\n\r\n \"As noted above, we process your personal information because we have contracted with you to do so under our [Terms](https://mega.nz/terms), this Policy, our [Cookie Policy](https://mega.nz/cookie) and our [Takedown Guidance Policy](https://mega.io/takedown). We cannot provide our services without that data.\""
 ]
 
@@ -76,4 +76,3 @@ value = "yes"
 citations = [
     "\"We may make changes to this Policy in the future. Any changes will be notified to all users.\""
 ]
-
