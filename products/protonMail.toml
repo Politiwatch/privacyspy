@@ -1,6 +1,6 @@
 name = "protonMail"
 description = "ProtonMail is an end-to-end encrypted email service founded in 2013 in Geneva, Switzerland by scientists who spent time at the CERN research facility."
-slug = "protonMail"
+slug = "protonmail"
 hostnames = [ "https://protonmail.com/"]
 sources = [ "https://protonmail.com/privacy-policy" ]
 contributors = [ "erotavlas" ]
