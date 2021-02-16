@@ -1,4 +1,4 @@
-name = "protonmail"
+name = "ProtonMail"
 description = "ProtonMail is an end-to-end encrypted email service founded in 2013 in Geneva, Switzerland by scientists who spent time at the CERN research facility."
 slug = "protonmail"
 hostnames = [ "protonmail.com"]
