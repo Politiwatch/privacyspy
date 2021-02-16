@@ -1,6 +1,6 @@
 name = "/e/"
 description = "/e/ is a free and open source Android based mobile operating system and associated online services."
-slug = "/e/"
+slug = "e"
 hostnames = [ "https://e.foundation/"]
 sources = [ "https://e.foundation/legal-notice-privacy/" ]
 contributors = [ "erotavlas" ]
