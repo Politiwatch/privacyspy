@@ -1,4 +1,4 @@
-name = "e-foundation"
+name = "e.foundation"
 description = "/e/ is a free and open source Android based mobile operating system and associated online services."
 slug = "e-foundation"
 hostnames = [ "e.foundation/"]
