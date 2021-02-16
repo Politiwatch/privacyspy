@@ -1,0 +1,76 @@
+name = "/e/"
+description = "/e/ is a free and open source Android based mobile operating system and associated online services."
+slug = "/e/"
+hostnames = [ "https://e.foundation/"]
+sources = [ "https://e.foundation/legal-notice-privacy/" ]
+contributors = [ "erotavlas" ]
+
+[rubric.behavioral-marketing]
+value = "yes-opt-out"
+citations = [
+  ""
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  ""
+]
+
+[rubric.third-party-collection]
+value = "critical-only"
+citations = [
+  ""]
+
+[rubric.history]
+value = "yes"
+notes = [
+    ""
+]
+
+[rubric.data-deletion]
+value = "no"
+citations = [
+  ""
+]
+  
+[rubric.data-breaches]
+value = "no"
+notes = [
+   ""]
+
+[rubric.third-party-access]
+value = "yes-unspecified-critical"
+citations = [
+  ".."
+]
+
+[rubric.data-collection-reasoning]
+value = "mostly"
+notes = [
+  ""
+]
+
+[rubric.noncritical-purposes]
+value = "na"
+citations = [
+  ".."
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "" 
+]
+    
+[rubric.list-collected]
+value = "exhaustively"
+citations = [
+  ""
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+    ""
+]
