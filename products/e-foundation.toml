@@ -1,7 +1,7 @@
 name = "e-foundation"
 description = "/e/ is a free and open source Android based mobile operating system and associated online services."
 slug = "e-foundation"
-hostnames = [ "https://e.foundation/"]
+hostnames = [ "e.foundation/"]
 sources = [ "https://e.foundation/legal-notice-privacy/" ]
 contributors = [ "erotavlas" ]
 
