@@ -1,4 +1,4 @@
-name = "protonVPN"
+name = "protonvpn"
 description = "ProtonVPN is a VPN service provider operated by the Swiss company Proton Technologies AG, the company behind the email service ProtonMail."
 slug = "protonvpn"
 hostnames = [ "protonvpn.com"]
