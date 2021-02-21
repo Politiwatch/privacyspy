@@ -48,7 +48,7 @@ citations = [
 notes = ["\"Mozilla receives publicly observable data about WiFi access points, Bluetooth beacons and cell towers around you, your estimated latitude and longitude, the date and information about your heading, speed and altitude. This information is stored locally on your device until an Internet connection is established. The data is then deleted from your device and sent to Mozilla.\""]
 
 [rubric.data-collection-reasoning]
-value = "Yes"
+value = "yes"
 citations = [
   "\"Our software does not send any of your user personal data to us.\" \r\n\r\n \"Power users or users concerned about their personal data being in remote servers can choose to self-host.\""
 ]
