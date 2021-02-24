@@ -35,9 +35,9 @@ notes = [
 ]
   
 [rubric.data-breaches]
-value = "na"
+value = "no"
 notes = [
-   "The service collects so little personal data that notification would not be possible."]
+   "The policy does not specify a data breach protocol."]
 
 [rubric.third-party-access]
 value = "yes-specified-critical"
