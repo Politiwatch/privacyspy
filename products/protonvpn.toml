@@ -12,7 +12,7 @@ citations = [
 ]
 
 [rubric.security]
-value = "yes"
+value = "yes-independent-audits"
 citations = [
   "\"We take data security very seriously. Access to our infrastructure and Secure Core servers is tightly controlled. All of the ProtonVPN servers are encrypted and we do not log VPN session data. Offline backups may be stored periodically, but these are also secured. For users with heightened security needs, it is possible to optionally i) enable 2FA on account access ii) enable login history so that suspicious login attempts can be tracked iii) remove the linked recovery email iv) pay anonymously with cash or bitcoin.\""
 ]
@@ -22,7 +22,7 @@ notes = ["[All ProtonVPN apps are now open source and audited](https://protonvpn
 [rubric.third-party-collection]
 value = "no"
 notes = [
-  "protonVPN does not collect any data from third parties."]
+  "ProtonVPN does not collect any data from third parties."]
 
 [rubric.history]
 value = "last-modified"
@@ -64,6 +64,8 @@ value = "strict"
 citations = [
   "\"We will only disclose the limited user data we possess when compelled by law for the purposes of the prevention, investigation, detection or prosecution of criminal offences or the execution of criminal penalties, including the safeguarding against and the prevention of threats to public security. Foreign authorities' data requests must be approved by competent Swiss authorities.\" \r\n\r\n \"Under Swiss law, it is obligatory to notify the target of a surveillance request, although such notification may come from the authorities and not from the Company.\"" 
 ]
+
+notes = ["ProtonVPN provides a [Transparency Report](https://protonvpn.com/blog/transparency-report/)."]
     
 [rubric.list-collected]
 value = "exhaustively"
