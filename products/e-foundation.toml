@@ -55,11 +55,7 @@ citations = [
 
 [rubric.noncritical-purposes]
 value = "na"
-citations = [
-  "\"We collect information from you when you subscribe to a newsletter, fill out a form, make a donation, interact with us by email, submit a job or an internship application, or enter information on our site.\""
-]
-
-notes = ["\"/e/ does not share, sell or trade any personal data or content.\""]
+notes = ["/e/ does not share, sell or trade any personal data or content."]
 
 [rubric.law-enforcement]
 value = "reasonable"
