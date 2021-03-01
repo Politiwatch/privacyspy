@@ -1,0 +1,83 @@
+name = "WhatsApp"
+description = "WhatsApp is a free cross-platform messaging app owned by Facebook."
+slug = "whatsapp"
+hostnames = [ "whatsapp.com"]
+sources = [ "https://www.whatsapp.com/legal/updates/privacy-policy" ]
+contributors = [ "erotavlas" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+citations = [
+  "\"We do not allow third-party banner ads on WhatsApp. We have no intention to introduce them, but if we ever do, we will update this policy.\" \r\n\r\n \"We may provide you marketing for our Services and those of the [Facebook family of companies](https://faq.whatsapp.com/general/security-and-privacy/the-facebook-companies), of which we are now a part.\" \r\n\r\n \"Messages you may receive containing marketing could include an offer for something that might interest you. We do not want you to have a spammy experience; as with all of your messages, you can manage these communications, and we will honor the choices you make.\""]
+
+[rubric.security]
+value = "yes"
+citations = [
+  "\"We've built privacy, end-to-end encryption, and other security features into WhatsApp. We don't store your messages once they've been delivered. When they are end-to-end encrypted, we and third parties can't read them.\" \r\n\r\n \"We do not retain your messages in the ordinary course of providing our Services to you. Once your messages (including your chats, photos, videos, voice messages, files, and share location information) are delivered, they are deleted from our servers. Your messages are stored on your own device. If a message cannot be delivered immediately (for example, if you are offline), we may keep it on our servers for up to 30 days as we try to deliver it. If a message is still undelivered after 30 days, we delete it. To improve performance and deliver media messages more efficiently, such as when many people are sharing a popular photo or video, we may retain that content on our servers for a longer period of time. We also offer end-to-end encryption for our Services, which is on by default, when you and the people with whom you message use a version of our app released after April 2, 2016.\""
+]
+
+note = ["\"When you use third-party services that are integrated with our Services, they may receive information about what you share with them. For example, if you use a data backup service integrated with our Services (such as iCloud or Google Drive), they will receive information about what you share with them. If you interact with a third-party service linked through our Services, you may be providing information directly to such third party. Please note that when you use third-party services, their own terms and privacy policies will govern your use of those services.\""]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+    "\"As part of the Facebook family of companies, WhatsApp receives information from, and shares information with, this family of companies. We may use the information we receive from them, and they may use the information we share with them, to help operate, provide, improve, understand, customize, support, and market our Services and their offerings.\" \n\r\n\r \"We allow you to use our Services in connection with third-party services. If you use our Services with such third-party services, we may receive information about you from them; for example, if you use the WhatsApp share button on a news service to share a news article with your WhatsApp contacts, groups, or broadcast lists on our Services, or if you choose to access our Services through a mobile carrier's or device provider's promotion of our Services. Please note that when you use third-party services, their own terms and privacy policies will govern your use of those services.\" \n\r\n\r \"If you pay for our Services, we may receive information and confirmations, such as payment receipts, including from app stores or other third parties processing your payment.\""
+]
+
+[rubric.history]
+value = "yes"
+notes = ["Whatsapp provides revisions of its [privacy policy](https://www.whatsapp.com/legal/privacy-policy/revisions)."]
+
+[rubric.data-deletion]
+value = "yes-automated"
+citations = [
+  "\"You may delete your WhatsApp account at any time (including if you want to revoke your consent to our use of your information) using our in-app delete my account feature. When you delete your WhatsApp account, your undelivered messages are deleted from our servers as well as any of your other information we no longer need to operate and provide our Services.\" \r\n\r\n \"Be mindful that if you only delete our Services from your device without using our in-app delete my account feature, your information may be stored with us for a longer period. Please remember that when you delete your account, it does not affect the information other users have relating to you, such as their copy of the messages you sent them.\""
+]
+  
+[rubric.data-breaches]
+value = "no"
+notes = [ 
+    "The policy does not specify a data breach protocol."]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = [
+  "\"You share your information as you use and communicate through our Services, and we share your information to help us operate, provide, improve, understand, customize, support, and market our Services.\" \n\r\n\r \"As part of the Facebook family of companies, WhatsApp receives information from, and shares information with, this family of companies. We may use the information we receive from them, and they may use the information we share with them, to help operate, provide, improve, understand, customize, support, and market our Services and their offerings.\" \n\r\n\r \"We work with third-party providers to help us operate, provide, improve, understand, customize, support, and market our Services. When we share information with third-party providers, we require them to use your information in accordance with our instructions and terms or with express permission from you.\" \n\r\n\r \"When you use third-party services that are integrated with our Services, they may receive information about what you share with them. For example, if you use a data backup service integrated with our Services (such as iCloud or Google Drive), they will receive information about what you share with them. If you interact with a third-party service linked through our Services, you may be providing information directly to such third party. Please note that when you use third-party services, their own terms and privacy policies will govern your use of those services.\" \n\r\n\r \"All of our rights and obligations under our Privacy Policy are freely assignable by us to any of our affiliates, in connection with a merger, acquisition, restructuring, or sale of assets, or by operation of law or otherwise, and we may transfer your information to any of our affiliates, successor entities, or new owner\"."
+]
+  
+notes = ["\"You agree to our information practices, including the collection, use, processing, and sharing of your information as described in this Privacy Policy, as well as the transfer and processing of your information to the United States and other countries globally where we have or use facilities, service providers, or partners, regardless of where you use our Services.\""]
+
+[rubric.data-collection-reasoning]
+value = "mostly"
+citations = [
+  "\"We use all the information we have to help us operate, provide, improve, understand, customize, support, and market our Services.\" \n\r\n\r \"We operate and provide our Services, including providing customer support, and improving, fixing, and customizing our Services. We understand how people use our Services, and analyze and use the information we have to evaluate and improve our Services, research, develop, and test new services and features, and conduct troubleshooting activities. We also use your information to respond to you when you contact us. We use cookies to operate, provide, improve, understand, and customize our Services.\" \n\r\n\r \"We communicate with you about our Services and features and let you know about our terms and policies and other important updates. We may provide you marketing for our Services and those of the Facebook family of companies, of which we are now a part.\" \n\r\n\r \"We will allow you and third parties, like businesses, to communicate with each other using WhatsApp, such as through order, transaction, and appointment information, delivery and shipping notifications, product and service updates, and marketing. For example, you may receive flight status information for upcoming travel, a receipt for something you purchased, or a notification when a delivery will be made. Messages you may receive containing marketing could include an offer for something that might interest you. We do not want you to have a spammy experience; as with all of your messages, you can manage these communications, and we will honor the choices you make.\""
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-some"
+citations = [
+  "\"We use all the information we have to help us operate, provide, improve, understand, customize, support, and market our Services.\" \n\r\n\r \"We may provide you marketing for our Services and those of the Facebook family of companies, of which we are now a part.\" \n\r\n\r \"We will allow you and third parties, like businesses, to communicate with each other using WhatsApp, such as through order, transaction, and appointment information, delivery and shipping notifications, product and service updates, and marketing.\" \n\r\n\r \"Messages you may receive containing marketing could include an offer for something that might interest you. We do not want you to have a spammy experience; as with all of your messages, you can manage these communications, and we will honor the choices you make.\""
+]
+
+notes = ["\"If you are an existing user, you can choose not to have your WhatsApp account information shared with Facebook to improve your Facebook ads and products experiences. Existing users who accept our updated Terms and Privacy Policy will have an additional 30 days to make this choice by going to Settings > Account\"."]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "\"We may collect, use, preserve, and share your information if we have a good-faith belief that it is reasonably necessary to: (a) respond pursuant to applicable law or regulations, to legal process, or to government requests; (b) enforce our Terms and any other applicable terms and policies, including for investigations of potential violations; (c) detect, investigate, prevent, and address fraud and other illegal activity, security, or technical issues; or (d) protect the rights, property, and safety of our users, WhatsApp, the Facebook family of companies, or others.\" \r\n\r\n \"We verify accounts and activity, and promote safety and security on and off our Services, such as by investigating suspicious activity or violations of our Terms, and to ensure our Services are being used legally.\" \r\n\r\n \"You agree to our information practices, including the collection, use, processing, and sharing of your information as described in this Privacy Policy, as well as the transfer and processing of your information to the United States and other countries globally where we have or use facilities, service providers, or partners, regardless of where you use our Services. You acknowledge that the laws, regulations, and standards of the country in which your information is stored or processed may be different from those of your own country.\""
+]
+
+[rubric.list-collected]
+value = "generally"
+citations = [
+  "\"WhatsApp receives or collects information when we operate and provide our Services, including when you install, access, or use our Services.\" \r\n\r\n \"You provide your mobile phone number to create a WhatsApp account. You provide us the phone numbers in your mobile address book on a regular basis, including those of both the users of our Services and your other contacts. You may also add other information to your account, such as a profile name, profile picture, and status message.\" \r\n\r\n \"To help you organize how you communicate with others, we may create a favorites list of your contacts for you, and you can create, join, or get added to groups and broadcast lists, and such groups and lists get associated with your account information.\" \r\n\r\n \"You may provide us with information related to your use of our Services, including copies of your messages, and how to contact you so we can provide you customer support. For example, you may send us an email with information relating to our app performance or other issues.\" \r\n\r\n \"If you pay for our Services, we may receive information and confirmations, such as payment receipts, including from app stores or other third parties processing your payment.\" \r\n\r\n \"We collect device-specific information when you install, access, or use our Services. This includes information such as hardware model, operating system information, browser information, IP address, mobile network information including phone number, and device identifiers. We collect device location information if you use our location features, such as when you choose to share your location with your contacts, view locations nearby or those others have shared with you, and the like, and for diagnostics and troubleshooting purposes such as if you are having trouble with our app's location features.\" \r\n\r\n \"We may also use cookies to understand which of our FAQs are most popular and to show you relevant content related to our Services.\""
+]
+
+notes = [
+  "\"We collect service-related, diagnostic, and performance information. This includes information about your activity (such as how you use our Services, how you interact with others using our Services, and the like), log files, and diagnostic, crash, website, and performance logs and reports.\" \r\n\r\n \"We collect information about your online and status message changes on our Services, such as whether you are online (your \"online status\"), when you last used our Services (your \"last seen status\"), and when you last updated your status message.\""]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "\"We may amend or update our Privacy Policy. We will provide you notice of amendments to this Privacy Policy, as appropriate, and update the \"Last modified\" date at the top of this Privacy Policy. Please review our Privacy Policy from time to time.\""
+]
