@@ -1,0 +1,83 @@
+name = "protonVPN"
+description = "ProtonVPN is a VPN service provider operated by the Swiss company Proton Technologies AG, the company behind the email service ProtonMail."
+slug = "protonvpn"
+hostnames = [ "protonvpn.com"]
+sources = [ "https://protonvpn.com/privacy-policy" ]
+contributors = [ "erotavlas" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+citations = [
+  "\"We do not do any targeted advertising or any profiling.\""
+]
+
+[rubric.security]
+value = "yes-independent-audits"
+citations = [
+  "\"We take data security very seriously. Access to our infrastructure and Secure Core servers is tightly controlled. All of the ProtonVPN servers are encrypted and we do not log VPN session data. Offline backups may be stored periodically, but these are also secured. For users with heightened security needs, it is possible to optionally i) enable 2FA on account access ii) enable login history so that suspicious login attempts can be tracked iii) remove the linked recovery email iv) pay anonymously with cash or bitcoin.\""
+]
+
+notes = ["[All ProtonVPN apps are now open source and audited](https://protonvpn.com/blog/open-source/)."]
+
+[rubric.third-party-collection]
+value = "no"
+notes = [
+  "ProtonVPN does not collect any data from third parties."]
+
+[rubric.history]
+value = "last-modified"
+citations = [
+    "\"The Company reserves the right to periodically review and change this Policy, and will notify users who have enabled the notification preference about any change. Continued use of the Service will be deemed as acceptance of such changes.\""
+]
+
+[rubric.data-deletion]
+value = "yes-automated"
+citations = [
+  "\"We retain essential data (such as username, email, billing information) on active accounts in order to provide services. This data is deleted when your account is deleted.\" \r\n\r\n \"Through the Service, you can directly access, edit, delete or export personal data processed by the Company in your use of the Service.\""
+]
+  
+[rubric.data-breaches]
+value = "no"
+notes = [
+   "The policy does not specify a data breach protocol."]
+
+[rubric.third-party-access]
+value = "yes-unspecified-critical"
+citations = [
+  "\"When you submit support requests or bug reports, we will collect the data that you choose to share with us about the issue being reported. Bug reports sometimes rely on third parties, such as Zendesk.\" \r\n\r\n \"We use third parties for secure credit card transaction processing, and we send billing information to those third parties to process your credit card payments.\" \r\n\r\n \"Proton's alternative routing technology allows Proton apps to bypass many censorship blocks, but your network traffic may go through third party networks which we do not control. This could enable a third party to record your IP address or see that you are using Proton apps (the same information that your Internet Service Provider is able to see). These third parties cannot see your actual data, which remains encrypted. By default, alternative routing is not used for Proton apps unless they detect that censorship measures are active on your network. Alternative routing can also be completely disabled in the Settings panel of all of our mobile and desktop applications.\""
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "\"Your email address is not shared with any third parties. We mainly use it for account-related questions, communication, and recovery. By signing up to our Service, you agree to receive communications from us, which may include promotional emails too. You can stop receiving emails from us by following the unsubscribe instructions included in every email we send.\" \r\n\r\n \"We might also use your data for payment-related matters. This includes sending you emails, invoices, receipts, notices of delinquency, and alerting you if you need to update payment details. We use third parties for secure credit card transaction processing, and we send billing information to those third parties to process your credit card payments.\" \r\n\r\n \"The information you provide when you contact our support team is processed for analytics purposes (such as to obtain aggregate statistics on the number of Android complaints), but they are not combined with any personal data.\""
+]
+
+[rubric.noncritical-purposes]
+value = "na"
+citations = [
+  "\"It is our overriding policy to collect as little user information as possible to ensure a private and anonymous user experience when using the Service.\" \r\n\r\n \"We do not do any targeted advertising or any profiling.\""
+]
+
+[rubric.law-enforcement]
+value = "strict"
+citations = [
+  "\"We will only disclose the limited user data we possess when compelled by law for the purposes of the prevention, investigation, detection or prosecution of criminal offences or the execution of criminal penalties, including the safeguarding against and the prevention of threats to public security. Foreign authorities' data requests must be approved by competent Swiss authorities.\" \r\n\r\n \"Under Swiss law, it is obligatory to notify the target of a surveillance request, although such notification may come from the authorities and not from the Company.\"" 
+]
+
+notes = ["ProtonVPN provides a [Transparency Report](https://protonvpn.com/blog/transparency-report/)."]
+    
+[rubric.list-collected]
+value = "exhaustively"
+citations = [
+  "\"It is our overriding policy to collect as little user information as possible to ensure a private and anonymous user experience when using the Service.\" \r\n\r\n \"Account creation: To create an account, in order to use our Service, we do not ask your name or surname. All you need to do is select your username, then provide the email address and choose your password. You can also register with your existing Proton account. We do store the email address (or Proton account) you have entered when creating an account for communication and anti-abuse purposes. If you are referred to the Service by a friend or some other third-party who is participating in our referral program, we may associate your account with the referrer to appropriately credit the referrer.\" \r\n\r\n \"Support: When you submit support requests or bug reports, we will collect the data that you choose to share with us about the issue being reported. Bug reports sometimes rely on third parties, such as Zendesk.\" \r\n\r\n \"Payment: The Company relies on third parties to process credit card and PayPal transactions, and we do not save your full credit card details. For example, if you make a payment with a credit card, your name and the last 4 digits of the credit card number will become part of the invoice and saved by us. Anonymous cash or Bitcoin payments and donations are also accepted.\""
+]
+
+notes = ["\"We may use mobile analytics software (Play/App Store app statistics or self-hosted/open-source Sentry crash reporting) to send crash information to our developers so that we can fix bugs rapidly. Some platforms (such as the Google Play Store or the Apple App Store) may also collect aggregate, anonymous statistics, such as which type of devices and operating systems are most commonly used (e.g. percentage of Android 6.x vs Android 7.x), the total number of installs, total number of uninstalls, and the total number of active users, and may be governed by the privacy policy and terms and conditions of Google Play Store or Apple App Store. None of the software on our apps will ever access or track any location-based information from your device at any time.\""]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+    "\"The Company reserves the right to periodically review and change this Policy, and will notify users who have enabled the notification preference about any change. Continued use of the Service will be deemed as acceptance of such changes.\""
+]
+
