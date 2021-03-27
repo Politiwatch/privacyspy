@@ -1,5 +1,5 @@
 name = "Brave Browser"
-description = "Browser with included tracking protection"
+description = "Browser with included tracking protection."
 slug = "brave-browser"
 hostnames = [ "brave.com" ]
 sources = [ "https://brave.com/privacy/" ]
@@ -42,7 +42,7 @@ notes = [
 [rubric.third-party-access]
 value = "yes-specified-critical"
 notes = [
-  "Data shared/use of third-party services for financial transactions, browser testing and feedback"
+  "Data shared/use of third-party services for financial transactions, browser testing and feedback."
 ]
 
 [rubric.data-collection-reasoning]
