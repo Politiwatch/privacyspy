@@ -1,5 +1,5 @@
 name = "Bumble"
-description = "Bumble is a location and interest based dating app to help users easily communicate"
+description = "Bumble is a location and interest based dating app to help users easily communicate."
 slug = "bumble"
 hostnames = [ "bumble.com" ]
 sources = [ "https://bumble.com/en/privacy" ]
@@ -8,7 +8,7 @@ contributors = [ "kulchynska" ]
 [rubric.behavioral-marketing]
 value = "yes"
 citations = [
-  "we may use your Registration and other information to:\noffer you our services and features;\npersonalise the App and the content we deliver to you;\nconduct research and analytics about how you use and interact with the App;"
+  "We may use your Registration and other information to:\noffer you our services and features;\npersonalise the App and the content we deliver to you;\nconduct research and analytics about how you use and interact with the App;"
 ]
 
 [rubric.security]
@@ -36,7 +36,7 @@ citations = [
 [rubric.data-breaches]
 value = "no"
 citations = [
-  "WE EXPRESSLY DISCLAIM ANY REPRESENTATION OR WARRANTY, WHETHER EXPRESS OR IMPLIED, WITH RESPECT TO ANY BREACHES OF SECURITY, DAMAGE TO YOUR DEVICE, OR ANY LOSS OR UNAUTHORISED USE OF YOUR REGISTRATION INFORMATION OR OTHER DATA"
+  "WE EXPRESSLY DISCLAIM ANY REPRESENTATION OR WARRANTY, WHETHER EXPRESS OR IMPLIED, WITH RESPECT TO ANY BREACHES OF SECURITY, DAMAGE TO YOUR DEVICE, OR ANY LOSS OR UNAUTHORISED USE OF YOUR REGISTRATION INFORMATION OR OTHER DATA."
 ]
 
 [rubric.third-party-access]
