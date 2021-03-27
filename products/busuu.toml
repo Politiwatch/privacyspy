@@ -32,7 +32,6 @@ notes = [
 [rubric.history]
 value = "last-modified"
 citations = [ "Last updated: August 2019" ]
-notes = [ "The date is very vague" ]
 
 [rubric.data-deletion]
 value = "yes-contact"
@@ -54,7 +53,7 @@ citations = [
 ]
 
 [rubric.data-collection-reasoning]
-value = "yes"
+value = "mostly"
 citations = [
   "When you register for a Busuu account, Busuu collects personal data that you submit such as your username, email address, spoken and studied languages and any other personal or preference information that you optionally enter into the Service, as well as your profile picture.\n\nBusuu also collects and generates a number of other areas of usage information automatically which includes; services metadata, log data, device information, IP addresses, third-party data and cookie information.\n\nWe also collect, use and share Aggregated Data such as statistical or demographic data for any purpose. Aggregated Data may be derived from your personal data but is not considered personal data in law as this data does not directly or indirectly reveal your identity. For example, we may aggregate your Usage Data to calculate the percentage of users accessing a specific website feature. However, if we combine or connect Aggregated Data with your personal data so that it can directly or indirectly identify you, we treat the combined data as personal data which will be used in accordance with this privacy notice. "
 ]
