@@ -66,5 +66,8 @@
   "bugs": {
     "url": "https://github.com/Politiwatch/privacyspy/issues"
   },
-  "homepage": "https://github.com/Politiwatch/privacyspy#readme"
+  "homepage": "https://github.com/Politiwatch/privacyspy#readme",
+  "devDependencies": {
+    "prettier": "^2.2.1"
+  }
 }
