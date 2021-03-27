@@ -8,18 +8,19 @@ contributors = [ "doamatto" ]
 [rubric.behavioral-marketing]
 value = "yes-opt-out"
 citations = [
-  "Among the types of Personal Data that this Application collects, by itself or through third parties, there are: Cookies; Usage Data; unique device identifiers for advertising (Google Advertiser ID or IDFA, for example);\n[...]\nMixPanel is an analytics service provided by Mixpanel Inc.\nPlace of processing: United States – Privacy Policy – Opt Out. Privacy Shield participant.\n\nGoogle Analytics is a web analysis service provided by Google Inc. (“Google”). Google utilizes the Data collected to track and examine the use of this Application, to prepare reports on its activities and share them with other Google services.\nGoogle may use the Data collected to contextualize and personalize the ads of its own advertising network.\nPlace of processing: United States – Privacy Policy – Opt Out; Ireland – Privacy Policy. Privacy Shield participant.\n\nBranch Attribution is an analytics service provided by Branch Metrics, Inc.\nPlace of processing: United States – Privacy Policy – Opt Out ."
+  "Users must know that, however, should their Personal Data be processed for direct marketing purposes, they can object to that processing at any time without providing any justification."
 ]
 
 [rubric.security]
 value = "somewhat"
 citations = [
-  "The Owner takes appropriate security measures to prevent unauthorized access, disclosure, modification, or unauthorized destruction of the Data."
+  "The Owner takes appropriate security measures to prevent unauthorized access, disclosure, modification, or unauthorized destruction of the Data.\nThe Data processing is carried out using computers and/or IT enabled tools, following organizational procedures and modes strictly related to the purposes indicated. In addition to the Owner, in some cases, the Data may be accessible to certain types of persons in charge, involved with the operation of this Application (administration, sales, marketing, legal, system administration) or external parties (such as third-party technical service providers, mail carriers, hosting providers, IT companies, communications agencies) appointed, if necessary, as Data Processors by the Owner. The updated list of these parties may be requested from the Owner at any time."
 ]
 
 [rubric.third-party-collection]
 value = "yes"
 citations = [
+  "Among the types of Personal Data that this Application collects, by itself or through third parties, there are: ...",
   "Users are responsible for any third-party Personal Data obtained, published or shared through this Application and confirm that they have the third party's consent to provide the Data to the Owner."
 ]
 
@@ -30,13 +31,13 @@ citations = [ "Latest update: February 14, 2019" ]
 [rubric.data-deletion]
 value = "yes-contact"
 citations = [
-  "Personal Data shall be processed and stored for as long as required by the purpose they have been collected for.\n\nOnce the retention period expires, Personal Data shall be deleted. Therefore, the right to access, the right to erasure, the right to rectification and the right to data portability cannot be enforced after expiration of the retention period."
+  "In particular, Users have the right to do the following:\n- **Have their Personal Data deleted or otherwise removed.** Users have the right, under certain circumstances, to obtain the erasure of their Data from the Owner."
 ]
 
 [rubric.data-breaches]
 value = "no"
 notes = [
-  "The service's policy doesn't require users to be disclosed to breaches"
+  "The service's policy doesn't require users to be disclosed to breaches."
 ]
 
 [rubric.third-party-access]
@@ -52,7 +53,7 @@ citations = [
 ]
 
 [rubric.noncritical-purposes]
-value = "opt-out-all"
+value = "opt-out-some"
 citations = [
   "MixPanel is an analytics service provided by Mixpanel Inc.\nPersonal Data collected: Cookies; Usage Data.\n\nPlace of processing: United States – Privacy Policy – Opt Out. Privacy Shield participant.\n\nGoogle Analytics is a web analysis service provided by Google Inc. (“Google”). Google utilizes the Data collected to track and examine the use of this Application, to prepare reports on its activities and share them with other Google services.\nGoogle may use the Data collected to contextualize and personalize the ads of its own advertising network.\nPersonal Data collected: Cookies; Usage Data.\n\nPlace of processing: United States – Privacy Policy – Opt Out; Ireland – Privacy Policy. Privacy Shield participant.\n\nBranch Attribution is an analytics service provided by Branch Metrics, Inc.\nPersonal Data collected: Cookies; Usage Data; various types of Data as specified in the privacy policy of the service.\n\nPlace of processing: United States – Privacy Policy – Opt Out .\n\nCrashlytics is a monitoring service provided by Google Inc.\nPersonal Data collected: geographic position; unique device identifiers for advertising (Google Advertiser ID or IDFA, for example); various types of Data as specified in the privacy policy of the service.\n\nPlace of processing: United States – Privacy Policy."
 ]
@@ -60,7 +61,7 @@ citations = [
 [rubric.law-enforcement]
 value = "reasonable"
 citations = [
-  "processing is necessary for compliance with a legal obligation to which the Owner is subject;"
+  "The User's Personal Data may be used for legal purposes by the Owner in Court or in the stages leading to possible legal action arising from improper use of this Application or the related Services.\nThe User declares to be aware that the Owner may be required to reveal personal data upon request of public authorities."
 ]
 
 [rubric.list-collected]
