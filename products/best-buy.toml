@@ -10,7 +10,7 @@ contributors = [ "doamatto" ]
 [rubric.behavioral-marketing]
 value = "yes-opt-out"
 citations = [
-  "Interest-based advertising.\nYou can opt out of interest-based advertising from third-party providers who follow the Digital Advertising Alliance's Self-Regulatory Principles for Online Behavioral Advertising at www.aboutads.info/choices."
+  "You can opt out of interest-based advertising from third-party providers who follow the Digital Advertising Alliance's Self-Regulatory Principles for Online Behavioral Advertising at www.aboutads.info/choices."
 ]
 
 [rubric.security]
@@ -48,7 +48,7 @@ citations = [
 ]
 
 [rubric.data-collection-reasoning]
-value = "yes"
+value = "mostly"
 citations = [
   "How we use the information we collect:\nIdentifying you on our digital properties in order to customize your experience\nFulfilling orders and requests for products, services, or information\nProcessing refunds, returns, and exchanges\nTracking and confirming online orders\nDelivering and installing products\nManaging our My Best Buy program\nMarketing and advertising products and services\nConducting research and analysis\nManaging our My Best Buy Credit Card program, including taking applications and actions to enhance card usage and service\nPreventing and identifying fraud and other illegal activity\nEngaging in internal uses such as data analytics with the purpose of enhancing existing and creating new products and services\nComplying with and enforcing applicable legal requirements, contractual obligations (including our contractual obligations with you, such as through our My Best Buy program, if applicable, or digital properties’ terms of use), relevant industry standards, and our policies\nInterest-based advertising.\nYou can opt out of interest-based advertising from third-party providers who follow the Digital Advertising Alliance's Self-Regulatory Principles for Online Behavioral Advertising at www.aboutads.info/choices.\n\nLearn more about interest-based advertising ›"
 ]
