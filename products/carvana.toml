@@ -1,5 +1,5 @@
 name = "Carvana"
-description = "Carvana is an online used car retailer"
+description = "Carvana is an online used car retailer."
 slug = "carvana"
 hostnames = [ "carvana.com" ]
 sources = [ "https://www.carvana.com/privacy-policy" ]
