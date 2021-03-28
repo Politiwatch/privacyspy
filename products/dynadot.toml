@@ -10,28 +10,28 @@ value = "yes"
 citations = [
   "If you purchase websites, website templates, site building software, web hosting, or other such website services, you should be aware that any personally identifiable information you submit on any such web pages can be read, collected, or used by third parties, and could be used to send you unsolicited messages. The Service is not responsible for the personally identifiable information you disclose using any of these services."
 ]
-notes = [ "Open to interpretation" ]
+notes = [ "Open to interpretation." ]
 
 [rubric.security]
 value = "no"
-notes = [ "No security information is mentioned in this policy" ]
+notes = [ "No security information is mentioned in this policy." ]
 
 [rubric.third-party-collection]
 value = "no"
-notes = [ "No data is collected from third parties" ]
+notes = [ "No data is collected from third parties." ]
 
 [rubric.history]
 value = "no"
-notes = [ "No date or changelog is provided" ]
+notes = [ "No date or changelog is provided." ]
 
 [rubric.data-deletion]
 value = "no"
-notes = [ "There is no information on deleting your account" ]
+notes = [ "There is no information on deleting your account." ]
 
 [rubric.data-breaches]
 value = "no"
 notes = [
-  "The policy doesn't require the service to notify you in the event of a data breach"
+  "The policy doesn't require the service to notify you in the event of a data breach."
 ]
 
 [rubric.third-party-access]
