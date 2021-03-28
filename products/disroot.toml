@@ -14,7 +14,7 @@ citations = [
 [rubric.security]
 value = "yes"
 citations = [
-  "\n\nWe use disk encryption on all data to prevent data leak in cases where servers are stolen, confiscated, or in any way physically tampered with.\nWe provide and require SSL/TLS encryption on all provided services"
+  "\n\nWe use disk encryption on all data to prevent data leak in cases where servers are stolen, confiscated, or in any way physically tampered with.\nWe provide and require SSL/TLS encryption on all provided services."
 ]
 
 [rubric.third-party-collection]
@@ -24,8 +24,8 @@ notes = [
 ]
 
 [rubric.history]
-value = "last-modified"
-citations = [ "v1.1 - May 2018" ]
+value = "yes"
+citations = [ "You can follow the history of changes on this document on our version control system (https://git.disroot.org/Disroot/Disroot-Privacy-Policy/commits/branch/master)[here]." ]
 
 [rubric.data-deletion]
 value = "yes-automated"
@@ -38,7 +38,7 @@ notes = [
 
 [rubric.data-breaches]
 value = "no"
-notes = [ "Not specified" ]
+notes = [ "Not specified." ]
 
 [rubric.third-party-access]
 value = "yes-unspecified-critical"
@@ -60,7 +60,7 @@ citations = [
 
 [rubric.law-enforcement]
 value = "unspecified"
-notes = [ "Not specified anywhere on the policy" ]
+notes = [ "Not specified anywhere on the policy." ]
 
 [rubric.list-collected]
 value = "exhaustively"
