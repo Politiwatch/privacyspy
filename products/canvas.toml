@@ -66,6 +66,12 @@ notes = [
   "There is no mention of data that could be treated as non-critical, except optional social networking features that are not enabled by default."
 ]
 
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "With respect to personal data received or transferred pursuant to the Privacy Shield Framework, Instructure is subject to the regulatory enforcement powers of the U.S. Federal Trade Commission. In certain situations, Instructure may be required to disclose personal data in response to lawful requests by public authorities, including to meet national security or law enforcement requirements."
+]
+
 [rubric.list-collected]
 value = "exhaustively"
 notes = [
