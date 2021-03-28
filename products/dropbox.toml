@@ -2,13 +2,13 @@ name = "Dropbox"
 description = "Dropbox is a cloud storage and collaborative workspace provider based in the United States."
 slug = "dropbox"
 hostnames = [ "dropbox.com" ]
-sources = [ "https://www.dropbox.com/privacy" ]
-contributors = [ "kulchynska" ]
+sources = [ "https://www.dropbox.com/privacy", "https://help.dropbox.com/accounts-billing/security/privacy-policy-faq" ]
+contributors = [ "kulchynska", "ibarakaiev" ]
 
 [rubric.behavioral-marketing]
 value = "no"
 citations = [
-  "Marketing. We give users the option to use some of our Services free of charge. These free Services are made possible by the fact that some users upgrade to one of our paid Services. If you register for our Services, we will, from time to time, send you information about upgrades when permissible. Users who receive these marketing materials can opt out at any time. If you don’t want to receive a particular type of marketing materials from us, click the ‘Unsubscribe’ link in the corresponding emails, or update your preferences in the Notifications section of your personal account."
+  "We may also use third-party service providers that set cookies and similar technologies to promote Dropbox services. You can learn more about how cookies and similar technologies work, as well as how to opt out of the use of them for advertising purposes, here. "
 ]
 
 [rubric.security]
@@ -19,9 +19,7 @@ citations = [
 
 [rubric.third-party-collection]
 value = "no"
-citations = [
-  "We collect and use the following information to provide, improve, protect and promote our Services:"
-]
+notes = [ "The policy does not mention collecting private personal data from third parties." ]
 
 [rubric.history]
 value = "yes"
@@ -32,7 +30,7 @@ citations = [
 [rubric.data-deletion]
 value = "yes-automated"
 citations = [
-  "You have control over your personal data and how it’s collected, used and shared. For example, you can:\n\nDelete Your Stuff in your Dropbox account. You can learn more about how to delete files saved on Dropbox here."
+  "You have control over your personal data and how it’s collected, used and shared. For example, you can:\n\nDelete Your Stuff in your Dropbox account. You can learn more about how to delete files saved on Dropbox [here](https://help.dropbox.com/files-folders/restore-delete/delete-files)."
 ]
 
 [rubric.data-breaches]
@@ -42,19 +40,18 @@ citations = [
 ]
 
 [rubric.third-party-access]
-value = "yes-specified-critical"
+value = "yes-specified-noncritical"
 citations = [
-  "Others working for and with Dropbox. Dropbox uses certain trusted third parties (such as providers of customer support and IT services) to help us provide, improve, protect and promote our Services. These third parties will access your information to perform tasks on our behalf, and we’ll remain responsible for their handling of your information per our instructions. For a list of trusted third parties that we use to process your personal data, please see our FAQ\n\n"
+  "Others working for and with Dropbox. Dropbox uses certain trusted third parties (such as providers of customer support and IT services) to help us provide, improve, protect and promote our Services. These third parties will access your information to perform tasks on our behalf, and we’ll remain responsible for their handling of your information per our instructions. For a list of trusted third parties that we use to process your personal data, please see our FAQ\n\n",
+  "Trusted third parties include:\n\n- Dropbox, Inc.\n- Amazon Web Services, Inc.\n- Teleperformance A.E.\n- Salesforce.com, LLC\n- Serenova, LLC (formerly LiveOps Cloud Platform, LLC)\n- Google LLC\n- Zendesk, Inc.\n- Oracle America, Inc."
 ]
 
 [rubric.data-collection-reasoning]
-value = "yes"
-citations = [
-  "Bases for processing your data. We collect and use the personal data described above in order to provide you with the Services in a reliable and secure manner. We also collect and use personal data for our legitimate business needs. To the extent that we process your personal data for other purposes, we ask for your consent in advance or require our partners to obtain such consent. "
-]
+value = "mostly"
+notes = [ "See the **What & Why** section in the privacy policy." ]
 
 [rubric.noncritical-purposes]
-value = "opt-out-all"
+value = "opt-out-some"
 citations = [
   "Object to the processing of your personal data. Depending on the processing activity, you can request that we stop or limit processing of your personal data. If you would like to submit an objection, please email us at privacy@dropbox.com."
 ]
@@ -67,9 +64,7 @@ citations = [
 
 [rubric.list-collected]
 value = "generally"
-citations = [
-  "We collect and use the following information to provide, improve, protect and promote our Services:"
-]
+notes = [ "See the **What & Why** section in the privacy policy." ]
 
 [rubric.revision-notify]
 value = "yes"
