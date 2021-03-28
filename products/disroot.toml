@@ -25,7 +25,7 @@ notes = [
 
 [rubric.history]
 value = "yes"
-citations = [ "You can follow the history of changes on this document on our version control system (https://git.disroot.org/Disroot/Disroot-Privacy-Policy/commits/branch/master)[here]." ]
+citations = [ "You can follow the history of changes on this document on our version control system [here](https://git.disroot.org/Disroot/Disroot-Privacy-Policy/commits/branch/master)." ]
 
 [rubric.data-deletion]
 value = "yes-automated"
