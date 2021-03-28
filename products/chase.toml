@@ -1,5 +1,5 @@
 name = "Chase"
-description = "Banking company in the United States"
+description = "Banking company in the United States."
 slug = "chase"
 hostnames = [ "chase.com" ]
 sources = [
@@ -17,7 +17,7 @@ notes = [
 ]
 
 [rubric.security]
-value = "yes"
+value = "somewhat"
 citations = [
   "We use 128-bit encryption technology to protect your username, password and other personal account information when you’re using our site or apps."
 ]
