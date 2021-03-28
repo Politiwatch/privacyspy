@@ -24,7 +24,7 @@ notes = [ "The policy does not mention collecting private personal data from thi
 [rubric.history]
 value = "yes"
 citations = [
-  "Dropbox Privacy Policy\nPosted: 25 July 2019\n\nEffective: 24 September 2019\n\nYou can see our previous Privacy Policy here."
+  "Dropbox Privacy Policy\nPosted: December 17, 2019\n\nEffective: January 1, 2020\n\nYou can see our previous Privacy Policy [here](https://www.dropbox.com/privacy2019)."
 ]
 
 [rubric.data-deletion]
