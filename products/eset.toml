@@ -6,10 +6,11 @@ sources = [ "https://www.eset.com/int/privacy/" ]
 contributors = [ "vutut" ]
 
 [rubric.behavioral-marketing]
-value = "yes"
+value = "no"
 citations = [
   "ESET may collect information about your computer, including your IP address where available, operating system and browser type, for system administration and to report aggregate information to our advertisers under the legitimate interest legal basis."
 ]
+notes = [ "While the privacy policy mentions reporting aggregate data to advertisers, there is no mention of personally-targeted marketing" ]
 
 [rubric.security]
 value = "somewhat"
