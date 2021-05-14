@@ -1,9 +1,9 @@
 name = "Invidious"
-description = "Invidious is an alternative front-end to YouTube https://invidio.us"
+description = "Invidious is an alternative front-end to YouTube."
 slug = "invidious"
 hostnames = [ "invidio.us" ]
 sources = [ "https://invidio.us/privacy" ]
-contributors = [ "Anonymous" ]
+contributors = [ "Anonymous", "doamatto" ]
 
 [rubric.behavioral-marketing]
 value = "no"

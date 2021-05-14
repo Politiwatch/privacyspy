@@ -1,9 +1,8 @@
 name = "IMDb"
-description = "An online database of information related to films, television programs, home videos, video games, and streaming content online"
+description = "An online database of information related to films, television programs, home videos, video games, and streaming content online."
 slug = "imdb"
 hostnames = [ "imdb.com" ]
-sources = [ "https://www.imdb.com/privacy?ref_=ft_pvc" ]
-contributors = [ "YuriiStasiuk" ]
+contributors = [ "YuriiStasiuk", "doamatto" ]
 
 [rubric.behavioral-marketing]
 value = "yes"

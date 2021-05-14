@@ -1,9 +1,9 @@
 name = "Imgur"
-description = "Imgur is an image sharing, storytelling and public chatting community "
+description = "Imgur is an image sharing, storytelling and public chatting community."
 slug = "imgur"
 hostnames = [ "imgur.com" ]
 sources = [ "https://imgur.com/privacy" ]
-contributors = [ "kulchynska" ]
+contributors = [ "kulchynska", "doamatto" ]
 
 [rubric.behavioral-marketing]
 value = "yes-opt-out"

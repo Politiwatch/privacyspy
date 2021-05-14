@@ -3,7 +3,7 @@ description = "V0LT produces free and open source software, services, and other 
 slug = "v0lt"
 hostnames = [ "v0lttech.com" ]
 sources = [ "https://v0lttech.com/privacy.php" ]
-contributors = [ "cvieira" ]
+contributors = [ "cvieira", "doamatto" ]
 
 [rubric.behavioral-marketing]
 value = "no"

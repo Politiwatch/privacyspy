@@ -1,5 +1,5 @@
 name = "Internet.bs"
-description = "Internet.bs is an ICANN-accredited domain name Registrar"
+description = "Internet.bs is an ICANN-accredited domain name registrar."
 slug = "internet-bs"
 hostnames = [ "internet.bs", "internetbs.net" ]
 sources = [
