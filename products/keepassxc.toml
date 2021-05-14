@@ -1,5 +1,5 @@
 name = "keepassxc"
-description = "Password Manager"
+description = "KeePassXC is a free and open-source password manager."
 slug = "keepassxc"
 hostnames = [ "keepassxc.org" ]
 sources = [ "https://keepassxc.org/privacy/" ]
