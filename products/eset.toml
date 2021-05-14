@@ -1,5 +1,5 @@
 name = "ESET"
-description = "ESET is a leading IT security provider for personal and business use"
+description = "ESET is a leading IT security provider for personal and business use."
 slug = "eset"
 hostnames = [ "eset.com" ]
 sources = [ "https://www.eset.com/int/privacy/" ]
