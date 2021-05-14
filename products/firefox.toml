@@ -2,8 +2,8 @@ name = "Firefox Browser"
 description = "Firefox is a popular open-source browser maintained by the non-profit technology organization Mozilla."
 slug = "firefox"
 hostnames = [ "mozilla.org" ]
-sources = [ "https://www.mozilla.org/en-US/privacy/firefox/" ]
-contributors = [ "milesmcc" ]
+sources = [ "https://www.mozilla.org/en-US/privacy/firefox/", "https://www.mozilla.org/en-US/privacy/" ]
+contributors = [ "milesmcc", "doamatto" ]
 
 [rubric.behavioral-marketing]
 value = "no"
@@ -28,9 +28,15 @@ notes = [
 
 [rubric.history]
 value = "last-modified"
+citations = [
+  "Effective March 1, 2021"
+]
 
 [rubric.data-deletion]
 value = "yes-automated"
+notes = [
+  "It is not governed under this privacy policy, however, information regarding such can be found at https://support.mozilla.org/en-US/kb/firefox-accounts-managing-account-data#w_how-do-i-delete-my-account-data"
+]
 
 [rubric.data-breaches]
 value = "eventually"
@@ -46,6 +52,9 @@ citations = [
 
 [rubric.data-collection-reasoning]
 value = "yes"
+notes = [
+  "The document outlines why each piece of data is collected under every tab (eg. reasoning for Location data is under the « Location » tab)"
+]
 
 [rubric.noncritical-purposes]
 value = "opt-out-all"
