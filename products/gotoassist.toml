@@ -1,0 +1,6 @@
+name = "GoToAssist"
+description = "GoToAssist is a cloud-based toolset for IT support teams and customer support organizations from LogMeIn, Inc."
+hostnames = ["gotoassist.com", "gotoassist.me"]
+slug = "gotoassist"
+parent = "logmein"
+contributors = [ "AlexThurman", "doamatto" ]
