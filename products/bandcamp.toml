@@ -1,5 +1,5 @@
 name = "Bandcamp"
-description = "Bandcamp is an American online music company"
+description = "Bandcamp is an American online music company."
 slug = "bandcamp"
 hostnames = [ "bandcamp.com" ]
 sources = [ "https://bandcamp.com/privacy" ]
