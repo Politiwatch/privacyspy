@@ -1,5 +1,5 @@
 name = "Avast"
-description = "Avast is a cybersecurity company that sell antivirus software on a freemium model"
+description = "Avast is a cybersecurity company that sell antivirus software on a freemium model."
 slug = "avast"
 hostnames = [ "avast.com" ]
 sources = [ "https://www.avast.com/privacy-policy" ]
