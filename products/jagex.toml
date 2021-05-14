@@ -3,16 +3,85 @@ description = "Jagex is the creator of the popular MMORPG RuneScape."
 slug = "jagex"
 hostnames = [ "jagex.com", "runescape.com" ]
 sources = [ "https://www.jagex.com/terms/privacy" ]
-contributors = [ "VukAnd12" ]
+contributors = [ "VukAnd12", "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "yes-opt-out"
+citations = [
+  "We will get your explicit opt-in consent before we share your personal data with any company outside Jagex for marketing purposes.",
+  "The Identifier For Advertising (IDFA) is a unique, user-resettable ID for advertising, provided by the mobile device’s operating system. We may use this ID to enhance serving and targeting capabilities, re-target specific campaigns, pass the ID to our partners. Advertising ID does not reveal any information about the user or the device.",
+  "If you do not want to receive tailored in-application advertisements from third parties that relate to your interests in our games on your mobile device, you may opt- out by: adjusting the ad tracking settings on your device",
+  "If you have previously allowed us to access your geolocation data, you can stop making geolocation available to us by visiting your mobile device's settings for the games or the “settings” page for the games."
+]
+
+[rubric.data-breaches]
+value = "eventually"
+citations = [
+  "We have put in place procedures to deal with any suspected personal data breach and will notify you and any applicable regulator of a breach where we are legally required to do so."
+]
+
+[ruric.data-collection-reasoning]
+value = "yes"
+notes = [
+  "See Section 4 (How we use your personal data) under the « Purposes for which we will use your personal data » for data is used."
+]
+
+[rubric.data-deletion]
+value = "yes-contact"
+citations = [
+  "This enables you to ask us to delete or remove personal data where there is no good reason for us continuing to process it. You also have the right to ask us to delete or remove your personal data where you have successfully exercised your right to object to processing (see below), where we may have processed your information unlawfully or where we are required to erase your personal data to comply with local law. Note, however, that we may not always be able to comply with your request of erasure for specific legal reasons which will be notified to you, if applicable, at the time of your request."
+]
+notes = [
+  "You can request erasure of your data at https://relentless-gdpr-247.relentlessdataprivacy.com/saq/698bf39f-5e25-4af7-aef9-06bf4b6bfcf4"
+]
+
+[rubric.history]
+value = "yes"
+citations = [
+  "This version was last updated on June 25, 2020 and historic versions can be obtained by contacting us."
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "(c) Necessary to comply with a legal obligation; (d) Necessary for our legitimate interests to detect or prevent unlawful acts"
+]
 
 [rubric.list-collected]
 value = "generally"
 citations = [
-  "Personal data, or personal information, means any information about an individual from which that person can be identified. It does not include data where the identity has been removed (anonymous data).\n\nWe may collect, use, store and transfer different kinds of personal data about you which we have grouped together as follows:\n\nIdentity Data includes first name, last name, username or similar identifier, title and date of birth.\n\nContact Data includes billing address, home address, email address and telephone numbers.\n\nTransaction Data includes details about payments to and from you and other details of products and services you have purchased from us.\n\nTechnical Data includes internet protocol (IP) address, unique mobile device identification numbers (such as your Media Access Control (MAC) address, Identifier For Advertising (IDFA), and/or International Mobile Equipment Identity (IMEI), type of device, your login data, browser type and version, time zone setting and location, browser plug-in types and versions, operating system and platform and other technology on the devices you use to access this website.\n\nProfile Data includes your login details, purchases or orders made by you, your interests, preferences, feedback and survey responses.\n\nUsage Data includes information about how you use our website, products and services.\n\nMarketing and Communications Data includes your preferences in receiving marketing from us and our third parties and your communication preferences.\n\nIf you decide to make a payment for any of our products and services, your Financial Data, which includes your bank account and payment card details, will be collected by our external payment service provider. We will not have access, collect, use, store or transfer your Financial Data.\n\nWe also collect, use and share Aggregated Data such as statistical or demographic data for any purpose. Aggregated Data may be derived from your personal data but is not considered personal data in law as this data does not directly or indirectly reveal your identity. For example, we may aggregate your Usage Data to calculate the percentage of users accessing a specific website feature. However, if we combine or connect Aggregated Data with your personal data so that it can directly or indirectly identify you, we treat the combined data as personal data which will be used in accordance with this privacy policy.\n\nWe do not collect any Special Categories of Personal Data about you (this includes details about your race or ethnicity, religious or philosophical beliefs, sex life, sexual orientation, political opinions, trade union membership, information about your health and genetic and biometric data). Nor do we collect any information about criminal convictions and offences.\n\nWe use mobile analytics software to allow us to better understand the functionality of our mobile software on your device. This software may record information such as how often you play our games, the events that occur within the games, aggregated usage, performance data, and where the games were downloaded from. We do not link the information we store within the analytics software to any personal information you submit within the games."
+  "Identity Data includes but not limited to first name, last name, username or similar identifier, title and date of birth. Contact Data includes billing address, residential address, email address and telephone numbers. Transaction Data includes details about payments to and from you and other details of products and services you have purchased from us. Technical Data Commonly known as online identifiers and includes internet protocol (IP) address, unique mobile device identification numbers (such as your Media Access Control (MAC) address, Identifier For Advertising (IDFA), and/or International Mobile Equipment Identity (IMEI), type of device, your login data, browser type and version, time zone setting and geo location, browser plug-in types and versions, operating system and platform and other technology on the devices you use to access this website. Profile Data includes your login details, purchases or orders made by you, your interests, preferences, feedback and survey responses. Usage Data includes information about how you use our website, products and services. Marketing and Communications Data includes your preferences in receiving marketing from us and our third parties, news about our products and your communication preferences."
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-all"
+citations = [
+  "We will get your explicit opt-in consent before we share your personal data with any company outside Jagex for marketing purposes.",
+  "The Identifier For Advertising (IDFA) is a unique, user-resettable ID for advertising, provided by the mobile device’s operating system. We may use this ID to enhance serving and targeting capabilities, re-target specific campaigns, pass the ID to our partners. Advertising ID does not reveal any information about the user or the device.",
+  "If you do not want to receive tailored in-application advertisements from third parties that relate to your interests in our games on your mobile device, you may opt- out by: adjusting the ad tracking settings on your device",
+  "If you have previously allowed us to access your geolocation data, you can stop making geolocation available to us by visiting your mobile device's settings for the games or the “settings” page for the games."
 ]
 
 [rubric.revision-notify]
 value = "no"
 citations = [
-  "We may update our Privacy Policy from time to time to reflect changes in technology, legislation, our operations, or as we otherwise determine is necessary or appropriate. Any such changes will become effective when we make the revised policy available on our website. We encourage you to review the date above frequently to ensure you are aware of when our policy was last revised, and to help you better understand the nature of your interactions with us."
+  "It is important that the personal data we hold about you is accurate and current. Please keep us informed if your personal data changes during your relationship with us."
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "We have put in place appropriate security measures to prevent your personal data from being accidentally lost, used or accessed in an unauthorised way, altered, disclosed or being unavailable. In addition, we limit access to your personal data to those employees, agents, contractors and other third parties who have a business need to know on the principle of least privilege (PoLP). They will only process your personal data on our instructions and they are subject to a duty of confidentiality. We periodically review all privacy and security policies and update when necessary in line with changes of the GDPR or when any new technologies are introduced into our business. Where the introduction of new technologies results in a high risk to your data we will perform a data protection impact assessment and will only proceed if meeting the required levels of security standards."
+]
+
+[rubric.third-party-access]
+value = "yes-specified-noncritical"
+notes = [
+  "You can see all marketing subprocessors at https://www.jagex.com/en-GB/terms/third-party-partners"
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "We may receive personal data about you from various third parties and public sources as set out below: Technical Data from the following parties: (a) analytics providers such as Google based inside AND outside the EU; (b) advertising networks such as Facebook based inside AND outside the EU; and (c) search information providers such as Google based inside AND outside the EU."
 ]
