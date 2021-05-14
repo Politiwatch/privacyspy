@@ -1,7 +1,7 @@
 name = "Invidious"
 description = "Invidious is an alternative front-end to YouTube https://invidio.us"
 slug = "invidious"
-hostnames = [ "https://invidio.us" ]
+hostnames = [ "invidio.us" ]
 sources = [ "https://invidio.us/privacy" ]
 contributors = [ "Anonymous" ]
 

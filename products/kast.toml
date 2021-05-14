@@ -1,7 +1,7 @@
 name = "Kast"
 description = "Kast is a live streaming platform for broadcasting content video and gaming content"
 slug = "kast"
-hostnames = [ "https://www.kastapp.co/" ]
+hostnames = [ "www.kastapp.co/" ]
 sources = [ "https://www.kastapp.co/legal/Kast_Privacy_Policy.htm" ]
 contributors = [ "JanaR" ]
 

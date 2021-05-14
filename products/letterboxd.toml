@@ -1,7 +1,7 @@
 name = "Letterboxd"
 description = "Letterboxd is an online social networking service."
 slug = "letterboxd"
-hostnames = [ "https://letterboxd.com/" ]
+hostnames = [ "letterboxd.com/" ]
 sources = [ "https://letterboxd.com/legal/privacy-policy/" ]
 contributors = [ "Donno" ]
 

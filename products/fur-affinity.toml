@@ -1,7 +1,7 @@
 name = "Fur Affinity"
 description = "The largest and most popular anthropomorphic art website on the net."
 slug = "fur-affinity"
-hostnames = [ "https://www.furaffinity.net" ]
+hostnames = [ "www.furaffinity.net" ]
 sources = [ "https://www.furaffinity.net/privacy" ]
 contributors = [ "Donno" ]
 

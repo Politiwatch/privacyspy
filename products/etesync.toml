@@ -1,7 +1,7 @@
 name = "EteSync"
 description = "Secure, end-to-end encrypted, and privacy respecting sync for your contacts, calendars and tasks."
 slug = "etesync"
-hostnames = [ "https://www.etesync.com/" ]
+hostnames = [ "www.etesync.com/" ]
 sources = [ "https://www.etesync.com/tos/#privacy" ]
 contributors = [ "Donno" ]
 
