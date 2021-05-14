@@ -33,6 +33,21 @@ citations = [
 value = "no"
 notes = [ "Not specified" ]
 
+[rubric.data-collection-reasoning]
+value ="mostly"
+citations = [
+  "We use your personal information to operate, provide, develop, and improve the products and services that we offer our customers. These purposes include: Provide, troubleshoot, and improve IMDb Services. We use your personal information to provide the IMDb Services, process payments, enhance functionality, analyze performance, fix errors, and improve the usability and effectiveness of the IMDb Services. Recommendations and personalization. We use 1your personal information to recommend features, content, products, and services that might be of interest to you, identify your preferences, and personalize your experience with IMDb Services. Comply with legal obligations. In certain cases, we collect and use your personal information to comply with laws. Communicate with you. We use your personal information to communicate with you in relation to IMDb Services via different channels (e.g., e-mail or on-site forums). Advertising. We use your personal information to display interest-based ads for features, products, and services that might be of interest to you. We do not use information that personally identifies you to display interest-based ads. To learn more, please see What About Advertising?. Fraud Prevention. We use personal information to prevent and detect fraud and abuse in order to protect the security of our customers, IMDb, and others."
+]
+notes = [
+  "Data may be collected for other reasons, hence the « These purposes include: »"
+]
+
+[rubric.data-deletion]
+value = "no"
+notes = [
+  "If you reside in California, you can request your data to be erased at https://help.imdb.com/article/issues/G73WRBWXE25UUTHP"
+]
+
 [rubric.third-party-access]
 value = "yes-unspecified"
 citations = [
@@ -56,4 +71,12 @@ value = "yes"
 citations = [
   "We may e-mail periodic reminders of our notices and conditions, unless you have instructed us not to, but you should check our Web site frequently to see recent changes."
 ]
-notes = [ "Not specified" ]
+
+[rubric.noncritical-purposes]
+value = "opt-out-all"
+citations = [
+  "You can learn more about how to opt-out of interest-based advertising by going to the Amazon Advertising Preferences page."
+]
+notes = [
+  "You can access the Amazon Advertising Preferences page at https://www.amazon.com/adprefs"
+]
