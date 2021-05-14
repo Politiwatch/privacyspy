@@ -12,6 +12,7 @@
         <div class="mt-4 text-sm text-center md:text-left">
           <span class="text-gray-400">This policy also applies to:</span>
           {{#each product.children}}
+          {{#if @index}}, {{/if}}
           <span>{{this.name}}</span>
           {{/each}}
         </div>
