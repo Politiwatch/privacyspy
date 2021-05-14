@@ -20,7 +20,7 @@ citations = [
   "We have put in place procedures to deal with any suspected personal data breach and will notify you and any applicable regulator of a breach where we are legally required to do so."
 ]
 
-[ruric.data-collection-reasoning]
+[rubric.data-collection-reasoning]
 value = "yes"
 notes = [
   "See Section 4 (How we use your personal data) under the « Purposes for which we will use your personal data » for data is used."
