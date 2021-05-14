@@ -1,5 +1,5 @@
 name = "Dynadot"
-description = "Dynadot is a privately held ICANN accredited domain name registrar and web hosting company founded by software engineer Todd Han in 2002. "
+description = "Dynadot is a privately held ICANN accredited domain name registrar and web hosting company founded by software engineer Todd Han in 2002."
 slug = "dynadot"
 hostnames = [ "dynadot.com" ]
 sources = [ "https://www.dynadot.com/privacy_policy.html" ]

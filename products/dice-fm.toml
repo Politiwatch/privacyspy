@@ -1,5 +1,5 @@
 name = "DICE FM"
-description = "DICE is a live music discovery and mobile ticketing platform"
+description = "DICE is a live music discovery and mobile ticketing platform."
 slug = "dice-fm"
 hostnames = [ "dice.fm" ]
 sources = [ "https://dice.fm/support?article=5da5ba542c7d3a7e9ae287ee" ]
