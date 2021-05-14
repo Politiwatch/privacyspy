@@ -1,5 +1,5 @@
 name = "CNN"
-description = "News, weather, sports, and services including e-mail news alerts and downloadable audio/video reports.  "
+description = "News, weather, sports, and services including e-mail news alerts and downloadable audio/video reports."
 slug = "cnn"
 hostnames = [ "cnn.com" ]
 sources = [ "https://www.cnn.com/privacy0?no-st=9999999999" ]
