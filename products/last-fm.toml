@@ -1,8 +1,8 @@
 name = "Last.fm"
 description = "Last.fm is a music website and makes a detailed profile of each user's musical taste by recording details of the tracks the user listens to, either from Internet radio stations, or the user's computer or many portable music devices."
 slug = "last-fm"
-hostnames = [ "https://www.last.fm/" ]
-sources = [ "https://privacy.cbs/" ]
+hostnames = [ "www.last.fm" ]
+sources = [ "https://www.viacomcbsprivacy.com/en/policy" ]
 contributors = [ "Donno" ]
 
 [rubric.behavioral-marketing]
