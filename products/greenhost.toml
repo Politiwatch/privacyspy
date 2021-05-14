@@ -1,5 +1,5 @@
 name = "Greenhost"
-description = "Greenhost is a domain provider and VPS provider"
+description = "Greenhost is a domain provider and VPS provider."
 slug = "greenhost"
 hostnames = [ "greenhost.net", "grenhost.nl", "service.greenhost.net" ]
 sources = [ "https://greenhost.net/legal/privacy-policy/" ]

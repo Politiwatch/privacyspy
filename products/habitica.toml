@@ -1,5 +1,5 @@
 name = "Habitica"
-description = "Habitica, formerly HabitRPG, is an online task management application run by HabitRPG, Inc. "
+description = "Habitica, formerly HabitRPG, is an online task management application run by HabitRPG, Inc."
 slug = "habitica"
 hostnames = [ "habitica.com" ]
 sources = [ "https://habitica.com/static/privacy" ]
