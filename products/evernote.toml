@@ -1,5 +1,5 @@
 name = "Evernote"
-description = "Evernote is an app designed for note taking, organizing, task management, and archiving. "
+description = "Evernote is an app designed for note taking, organizing, task management, and archiving."
 slug = "evernote"
 hostnames = [ "evernote.com" ]
 sources = [ "https://evernote.com/privacy" ]
