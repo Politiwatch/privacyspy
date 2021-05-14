@@ -66,6 +66,12 @@ citations = [
   "Though we make every effort to preserve your privacy, we may need to disclose personal information when required by law, or if IONOS believes that disclosure is necessary to protect IONOS's rights and/or to comply with a judicial proceeding, court order, subpoena or other legal process. IONOS may also disclose information about you if we determine that for national security, law enforcement, or other issues of public importance, disclosure is necessary. Please see our Subpoena Policy for more information."
 ]
 
+[rubric.list-collected]
+value = "summarily"
+citations = [
+  "\"IONOS may request or collect personal information from online users in a variety of ways, including through online forms for requesting information or ordering products and services, and other instances where users are invited to volunteer such information. Some of the data we collect is information that identifies you personally, and may include your name, e-mail address, postal address, telephone and telefax numbers, payment account information, and other information necessary to provide the services requested. IONOS also maintains a record of contacts for customer or technical support.\""
+]
+
 [rubric.revision-notify]
 value = "no"
 citations = [
