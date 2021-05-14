@@ -1,9 +1,9 @@
 name = "GearBest"
-description = "GearBest is an online marketplace with a focus on electronics"
+description = "GearBest is an online marketplace with a focus on electronics."
 slug = "gearbest"
 hostnames = [ "gearbest.com" ]
 sources = [ "https://www.gearbest.com/about/privacy-policy.html" ]
-contributors = [ "vutut" ]
+contributors = [ "vutut", "doamattto" ]
 
 [rubric.behavioral-marketing]
 value = "yes"
@@ -46,6 +46,12 @@ notes = [ "No provision for dealing with breaches in policy." ]
 value = "yes-unspecified"
 citations = [
   "We do not sell, trade, or otherwise transfer to outside parties your personal information. This does not include trusted third parties who assist us in operating our website, conducting our business, executing payments, delivering purchased products or services, sending you information or updates or otherwise servicing you, so long as those parties agree to keep this information confidential. "
+]
+
+[rubric.noncritical-purposes]
+value = "na"
+notes = [
+  "There is no mention of data usage for non-essential purposes"
 ]
 
 [rubric.data-collection-reasoning]
