@@ -37,6 +37,12 @@ notes = [
   "No personal data is collected that could be used to contact a user."
 ]
 
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "We aggregate and store the following non-sensitive operational performance metrics for one year for capacity planning and error detection"
+]
+
 [rubric.third-party-access]
 value = "no"
 citations = [
