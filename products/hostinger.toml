@@ -38,7 +38,8 @@ hostnames = [
   "hostinger.lt",
   "hostinger.ru",
   "hostinger.co.il",
-  "hostinger.co.id"
+  "hostinger.co.id",
+  "hostinger.xyz"
 ]
 sources = [ "https://www.hostinger.com/privacy" ]
 contributors = [ "doamatto" ]
@@ -59,6 +60,20 @@ citations = [
 value = "yes"
 citations = [
   "We collect and receive your Personal data from yourself (including your device) as well as from the following sources: Social network operators (such as Facebook, Google, etc.); Third-party service providers, suppliers and our partners; Other legal sources."
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "Personal identification information is collected and processed for the purposes of User identification as well use of services and domain name registration. Additionally, this information may be used to provide Users with support, letting them know about upcoming updates or improvements, providing information regarding changes of any Terms of Use (including changes to this Policy) as well as other important information.",
+  "We verify or authenticate information or identifications provided by you (such as ID number, email or phone numbers). We also use collected information to detect and prevent fraud, spam, abuse, security incidents, and other illegal and harmful activities.",
+  "To Create Aggregated Statistical Data, to Carry out Market Research and Analysis necessary for running out our business, to improve our services we use aggregated and/or inferred non-personal information enabling us to evaluate our customers’ needs, sales and other trends of our activities.",
+  "We use information about data usage, devices, operating systems to diagnose problems with our servers, to administer our Platform, adopt decision when to retire SDK's/OS versions, to identify characteristics of major users so that we may optimize our applications and services and make your browsing and purchasing experience more enjoyable.",
+  "To provide more customized offers to our Users, we may conduct data analysis based on information you provide to us, your interactions with the Hostinger Platform and its Users.",
+  "Hostinger may also contact you with important information regarding our Services, or your use thereof. For example, we may send you a notice (through any of the communication channels available to us) if a certain Service is temporarily suspended for maintenance; reply to your support ticket or e-mail; send you reminders or warnings regarding upcoming or late payments for your current or upcoming subscriptions; forward abuse complaints regarding your hosting plan; or notify you of material changes in our Services. Such kind of communication is essential, for this reason, no opt-out possibilities are given to avoid receiving such Service and Billing Messages unless you are no longer a Hostinger User (which can be done by deactivating your Account).",
+  "In certain jurisdictions or pursuant to the rules of the ICANN or certain registries, domain name registration information has to be made available and accessible to the public through a \"WHOIS\" search. The WHOIS database is a publicly accessible database that lists the domain name registration information for a particular domain name, the name server(s) to which the domain name points, and the domain name's creation and expiration date. The domain name registration information you provide is stored by Hostinger and is made available to the public through WHOIS searches. Hostinger may deposit your domain name registration information with a third-party escrow provider to comply with ICANN requirements.",
+  "In order to notify you regarding your Account, to troubleshoot problems with your Account, to resolve a dispute, to collect fees or monies owed, to poll your opinions through surveys or questionnaires, to send updates about our company, or as otherwise necessary to contact you to enforce our User Agreement, applicable national laws, and any agreement we may have with you. For these purposes, we may contact you via email, telephone, text messages, and portal.",
+  "To provide, operate and improve the Services. To enhance data security and to prevent fraud. To comply with applicable laws and regulations."
 ]
 
 [rubric.history]
