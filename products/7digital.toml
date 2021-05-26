@@ -1,5 +1,5 @@
-name = "7digital"
-description = "7digital Group is a publicly listed digital music and radio services platform."
+name = "7digital US"
+description = "7digital is a music downloading service."
 slug = "7digital"
 hostnames = [
   "7digital.com"

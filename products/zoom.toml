@@ -1,5 +1,5 @@
 name = "Zoom"
-description = "Zoom is a popular video conferencing and telecommunication service."
+description = "Zoom is a video conferencing and telecommunication service."
 slug = "zoom"
 hostnames = [ "zoom.us" ]
 sources = [ "https://zoom.us/privacy" ]

@@ -1,5 +1,5 @@
 name = "Twist"
-description = "Twist is a team communication app built by Doist, the company responsible for Todoist."
+description = "Twist is a team communication app built by Doist."
 slug = "twist"
 hostnames = [ "twist.com" ]
 sources = [ "https://twist.com/privacy" ]

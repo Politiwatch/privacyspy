@@ -1,5 +1,5 @@
 name = "MarkMonitor"
-description = "MarkMonitor Inc. is an American software company that manages domains."
+description = "MarkMonitor Inc. is an B2B software company focusing on Internet fraud, piracy, and cybersquatting."
 slug = "markmonitor"
 hostnames = [ "markmonitor.com" ]
 sources = [ "https://www.markmonitor.com/legal/privacy-policy" ]

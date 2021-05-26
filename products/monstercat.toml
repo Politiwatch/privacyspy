@@ -1,5 +1,5 @@
 name = "Monstercat"
-description = "Monstercat is a Canadian independent electronic music record label based in Vancouver, British Columbia."
+description = "Monstercat is a Canadian independent electronic music record label."
 slug = "monstercat"
 hostnames = [ "monstercat.com" ]
 sources = [ "https://www.monstercat.com/privacy-policy" ]

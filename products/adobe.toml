@@ -1,5 +1,5 @@
 name = "Adobe"
-description = "Adobe is changing the world through digital experiences. We help our customers create, deliver, and optimize content and applications."
+description = "Adobe is a software company known for tools to create graphics and prints, edit photography and videos, among a slew of other products."
 slug = "adobe"
 hostnames = [ "adobe.com" ]
 sources = [ "https://www.adobe.com/privacy/policy.html", "https://www.adobe.com/privacy/marketing.html" ]

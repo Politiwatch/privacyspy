@@ -1,5 +1,5 @@
 name = "NextDNS"
-description = "NextDNS Inc. is a DNS resolver based in California, USA that allows users to filter traffic using blacklists."
+description = "NextDNS Inc. is an American DNS resolver that allows users to filter traffic using blacklists."
 slug = "nextdns"
 hostnames = [ "nextdns.io" ]
 sources = [ "https://nextdns.io/privacy" ]

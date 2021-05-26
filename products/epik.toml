@@ -1,5 +1,5 @@
 name = "Epik"
-description = "Epik is an ICANN-accredited domain registrar and web hosting company that was founded in 2009 by Rob Monster."
+description = "Epik is an ICANN-accredited domain registrar and web hosting company."
 slug = "epik"
 hostnames = [ "epik.com" ]
 sources = [ "https://www.epik.com/privacy.php" ]

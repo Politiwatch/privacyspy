@@ -1,5 +1,5 @@
 name = "Braintree"
-description = "Braintree, a division of PayPal, is a company based in Chicago that specializes in mobile and web payment systems for e-commerce companies."
+description = "Braintree is B2B mobile and web payment systems owned by PayPal."
 slug = "braintree"
 hostnames = [ "braintreepayments.com", "braintreegateway.com" ]
 sources = [

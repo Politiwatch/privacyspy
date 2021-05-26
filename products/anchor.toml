@@ -1,5 +1,5 @@
 name = "Anchor"
-description = "The free and easy-to-use solution to podcast distribution."
+description = "Anchor is a free podcast creation platform owned by Spotify."
 slug = "anchor"
 hostnames = [ "anchor.fm" ]
 sources = [ "https://anchor.fm/privacy" ]

@@ -1,5 +1,5 @@
 name = "Ting"
-description = "Ting is an American mobile virtual network operator and internet service provider launched in February 2012 by Tucows Inc."
+description = "Ting is an American mobile virtual network operator and internet service provider owned by Tucows Inc."
 slug = "ting"
 hostnames = [ "ting.com" ]
 sources = [ "https://ting.com/privacy_policy" ]

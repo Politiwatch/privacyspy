@@ -1,5 +1,5 @@
 name = "GoDaddy"
-description = "GoDaddy Inc. is an American publicly traded Internet domain registrar and web hosting company."
+description = "GoDaddy is an American publicly traded Internet domain registrar and web hosting company."
 slug = "godaddy"
 hostnames = [ "godaddy.com" ]
 sources = [ "https://www.godaddy.com/legal/agreements/privacy-policy" ]

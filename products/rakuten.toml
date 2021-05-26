@@ -1,5 +1,5 @@
 name = "Rakuten"
-description = "Rakuten, Inc. is a Japanese electronic commerce and online retailing company based in Tokyo."
+description = "Rakuten, Inc. is a Japanese electronic commerce and online retailing company."
 slug = "rakuten"
 hostnames = [ "rakuten.com", "rakuten.ca", "rakuten.co.jp" ]
 sources = [

@@ -1,5 +1,5 @@
 name = "Plex"
-description = "Plex is a client–server media player system plus an ancillary software suite."
+description = "Plex ia global streaming service of free ad-supported TV shows and movies, as well as the developer of a client-server home media system under the same name."
 slug = "plex"
 hostnames = [ "plex.tv" ]
 sources = [ "https://www.plex.tv/about/privacy-legal/" ]

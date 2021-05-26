@@ -1,5 +1,5 @@
 name = "Weixin"
-description = "Weixin is the China version of WeChat, a multipurpose chat and messaging tool."
+description = "Weixin is the Chinese version of WeChat, a multipurpose chat and messaging tool."
 slug = "weixin"
 hostnames = [ "weixin.qq.com" ]
 sources = [

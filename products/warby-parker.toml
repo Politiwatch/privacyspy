@@ -1,5 +1,5 @@
 name = "Warby Parker"
-description = "JAND, Inc., doing business as Warby Parker, is an American online retailer of prescription glasses and sunglasses, based in New York City."
+description = "JAND, Inc., d.b.a. Warby Parker, is an American online retailer of prescription glasses and sunglasses."
 slug = "warby-parker"
 hostnames = [ "warbyparker.com" ]
 sources = [ "https://www.warbyparker.com/privacy-policy" ]

@@ -1,5 +1,5 @@
 name = "Uniregistry"
-description = "Uniregistry is a large retail domain name registrar and web services provider; as well as a domain name registry that administers generic top-level domains."
+description = "Uniregistry is a domain registrar and web services provider."
 slug = "uniregistry"
 hostnames = [ "uniregistry.com" ]
 sources = [ "https://uniregistry.com/legal/privacy-policy" ]

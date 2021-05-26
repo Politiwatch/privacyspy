@@ -1,5 +1,5 @@
 name = "Bing"
-description = "Search engine developed by Microsoft. Features web, image, video, local, news, and product search."
+description = "Bing is a search engine developed by Microsoft."
 slug = "bing"
 hostnames = [ "bing.com" ]
 sources = [ "https://privacy.microsoft.com/en-us/privacystatement" ]

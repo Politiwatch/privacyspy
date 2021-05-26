@@ -1,5 +1,5 @@
 name = "EteSync"
-description = "Secure, end-to-end encrypted, and privacy respecting sync for your contacts, calendars and tasks."
+description = "EteSync is an end-to-end encrypted hosting and sync provider for your contacts, calendars and tasks."
 slug = "etesync"
 hostnames = [ "www.etesync.com/" ]
 sources = [ "https://www.etesync.com/tos/#privacy" ]

@@ -1,5 +1,5 @@
 name = "fruux"
-description = "fruux is a cross-platform synchronization service operated by fruux, the company behind the popular open source project SabreDAV."
+description = "fruux is a cross-platform synchronization service."
 slug = "fruux"
 hostnames = [ "fruux.com" ]
 sources = [ "https://fruux.com/privacy/" ]

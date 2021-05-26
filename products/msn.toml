@@ -1,5 +1,5 @@
 name = "MSN"
-description = "Portal for shopping, news and money, e-mail, search, and chat."
+description = "MSN is a web portal for shopping, news, instant messaging, and web searches."
 slug = "msn"
 hostnames = [ "msn.com" ]
 contributors = [ "UnKnOwN" ]

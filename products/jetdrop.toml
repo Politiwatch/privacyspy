@@ -1,5 +1,5 @@
 name = "Jetdrop"
-description = "Jetdrop is a file sharing service that allows you to share large files (no limit) for free. Their speeds are fast for uploading and downloading."
+description = "Jetdrop is a file sharing service that allows you to share large files for free."
 slug = "jetdrop"
 hostnames = [ "jetdrop.net" ]
 sources = [ "https://www.jetdrop.net/legal/privacy-policy/" ]

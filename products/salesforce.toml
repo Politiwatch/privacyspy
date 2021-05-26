@@ -1,5 +1,5 @@
 name = "Salesforce"
-description = "Provides on-demand customer relationship management (CRM) software services to help companies with global customer communication."
+description = "Salesforce is an American cloud-based B2B software company with a focus on on-demand customer relationship management (CRM) software services."
 slug = "salesforce"
 hostnames = [ "salesforce.com" ]
 sources = [ "https://www.salesforce.com/company/privacy/full_privacy/" ]

@@ -1,5 +1,5 @@
 name = "Duolingo"
-description = "Duolingo is an American platform that includes a language-learning website and mobile app, as well as a digital language-proficiency assessment exam."
+description = "Duolingo is a language-learning platform, as well as a digital language-proficiency assessment exam from the United States."
 slug = "duolingo"
 hostnames = [ "duolingo.com" ]
 sources = [ "https://www.duolingo.com/privacy" ]

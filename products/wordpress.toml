@@ -1,5 +1,5 @@
 name = "WordPress"
-description = "WordPress is an accessible online tool for sites creation."
+description = "WordPress is an accessible online tool for sites creation owned by Automattic."
 slug = "wordpress"
 hostnames = [ "wordpress.com" ]
 sources = [ "https://automattic.com/privacy/" ]

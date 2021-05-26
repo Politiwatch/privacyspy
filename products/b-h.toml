@@ -1,5 +1,5 @@
 name = "B&H"
-description = "B&H Photo Video, founded in 1973 in New York City, is the largest non-chain photo and video equipment store in the United States."
+description = "B&H Photo Video is a non-chain photo and video equipment store in the United States."
 slug = "b-h"
 hostnames = [ "bhphotovideo.com" ]
 sources = [

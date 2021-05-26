@@ -1,5 +1,5 @@
 name = "hCaptcha"
-description = "hCaptcha is a captcha service that pays the site owners."
+description = "hCaptcha is a CAPTCHA service known for paying the site owners that use hCaptcha."
 slug = "hcaptcha"
 hostnames = [ "hcaptcha.com" ]
 sources = [ "https://www.hcaptcha.com/privacy" ]

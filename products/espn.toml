@@ -1,5 +1,5 @@
 name = "ESPN"
-description = "ESPN, Inc. is the leading multinational, multimedia sports entertainment entity featuring the broadest portfolio of multimedia sports assets with over 50 business entities."
+description = "ESPN is an American cable sports channel owned by The Walt Disney Company."
 slug = "espn"
 hostnames = [ "espn.com" ]
 sources = [ "https://privacy.thewaltdisneycompany.com/en/current-privacy-policy/" ]

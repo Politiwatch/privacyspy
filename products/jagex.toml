@@ -1,5 +1,5 @@
 name = "Jagex"
-description = "Jagex is the creator of the popular MMORPG RuneScape."
+description = "Jagex is the creator of the MMORPG, RuneScape."
 slug = "jagex"
 hostnames = [ "jagex.com", "runescape.com" ]
 sources = [ "https://www.jagex.com/terms/privacy" ]

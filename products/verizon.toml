@@ -1,5 +1,5 @@
 name = "Verizon"
-description = "Verizon is an American multinational telecommunications conglomerate."
+description = "Verizon is an American multinational telecommunications conglomerate that provides cellular and internet services to the United States for both businesses and consumers."
 slug = "verizon"
 hostnames = [ "verizon.com", "verizonwireless.com", "vzw.com" ]
 sources = [ "https://www.verizon.com/about/privacy/full-privacy-policy" ]

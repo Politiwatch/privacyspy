@@ -1,5 +1,5 @@
 name = "Epic Games"
-description = "Epic Games is an American game development company. It is behind the Unreal Engine and a number of popular video games."
+description = "Epic Games is an American game development company."
 slug = "epic-games"
 hostnames = [ "epicgames.com" ]
 sources = [ "https://www.epicgames.com/site/privacypolicy/" ]

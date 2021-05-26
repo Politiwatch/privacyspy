@@ -1,5 +1,5 @@
 name = "Mailbox.org"
-description = "Mailbox.org is a email service provider that emphasizes being privacy- and being eco-friendly."
+description = "Mailbox.org is a email service provider that emphasizes being privacy- and eco- friendly."
 slug = "mailbox-org"
 hostnames = [ "mailbox.org" ]
 sources = [ "https://mailbox.org/en/data-protection-privacy-policy" ]

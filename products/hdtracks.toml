@@ -1,5 +1,5 @@
 name = "HDtracks"
-description = "HDtracks is a high-resolution digital music store offering DRM-free music in multiple formats as well as cover art with Audio CD-quality and high definition audio master recording quality download selections."
+description = "HDtracks is an online DRM-free digital music store known for having lossless quality."
 slug = "hdtracks"
 hostnames = [ "hdtracks.com" ]
 sources = [ "https://www.hdtracks.com/#/privacy" ]

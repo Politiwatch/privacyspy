@@ -1,5 +1,5 @@
 name = "T-Mobile"
-description = "T-Mobile is an American mobile communications company founded in 1990."
+description = "T-Mobile is an American mobile communications company."
 slug = "t-mobile"
 hostnames = [ "t-mobile.com" ]
 sources = [

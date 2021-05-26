@@ -1,5 +1,5 @@
 name = "Brave Browser"
-description = "Browser with included tracking protection."
+description = "Brave is a web browser with included tracking protection."
 slug = "brave-browser"
 hostnames = [ "brave.com" ]
 sources = [ "https://brave.com/privacy/" ]

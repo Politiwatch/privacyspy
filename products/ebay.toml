@@ -1,5 +1,5 @@
 name = "eBay"
-description = "Founded in 1995, eBay is an online retailer and auction site where users both buy and sell products."
+description = "eBay is an online retailer and auction site where users both buy and sell products."
 slug = "ebay"
 hostnames = [ "ebay.com" ]
 sources = [

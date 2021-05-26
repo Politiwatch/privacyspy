@@ -1,5 +1,5 @@
 name = "The New York Times"
-description = 'The New York Times is a New York newspaper and widely considered the "paper of record" in the United States.'
+description = 'The New York Times is a daily American newspaper and has since been nicknamed the "newspaper of record".'
 slug = "nytimes"
 hostnames = [ "nytimes.com" ]
 sources = [

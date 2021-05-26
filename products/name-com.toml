@@ -1,5 +1,5 @@
 name = "Name.com"
-description = "Name.com is an ICANN accredited domain name registrar and web hosting company based in Denver, Colorado."
+description = "Name.com is an ICANN-accredited domain name registrar and web hosting company."
 slug = "name-com"
 hostnames = [ "name.com" ]
 sources = [ "https://www.name.com/privacy-policy" ]

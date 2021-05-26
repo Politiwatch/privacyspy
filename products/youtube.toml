@@ -1,5 +1,5 @@
 name = "YouTube"
-description = "YouTube is a popular video sharing platform owned by Google."
+description = "YouTube is a video sharing platform owned by Google."
 hostnames = ["youtube.com"]
 slug = "youtube"
 parent = "google"

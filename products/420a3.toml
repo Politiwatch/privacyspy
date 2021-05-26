@@ -1,5 +1,5 @@
 name = "420A3"
-description = "420a3 is an online directory of businesses and information related to cannabis (420)."
+description = "420a3 is an online directory of businesses and information related to cannabis."
 slug = "420a3"
 hostnames = [ "420a3.com" ]
 sources = [ "https://www.420a3.com/privacy-policy" ]

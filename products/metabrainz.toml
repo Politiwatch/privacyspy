@@ -1,5 +1,5 @@
 name = "MetaBrainz"
-description = "The MetaBrainz Foundation is a 501 tax-exempt non-profit based in San Luis Obispo, California that operates the MusicBrainz project and several other related projects."
+description = "The MetaBrainz Foundation is a non-profit that operates the MusicBrainz project and several other related projects."
 slug = "metabrainz"
 hostnames = [
   "metabrainz.org",

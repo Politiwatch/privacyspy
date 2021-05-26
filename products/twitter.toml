@@ -1,5 +1,5 @@
 name = "Twitter"
-description = "Twitter is a microblogging social network and is popular among American public figures."
+description = "Twitter is a microblogging social network popular among the masses."
 slug = "twitter"
 hostnames = [ "twitter.com" ]
 sources = [ "https://twitter.com/en/privacy" ]

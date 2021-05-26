@@ -1,5 +1,5 @@
 name = "Instructure"
-description = "Instructure is an educational technology company based in Salt Lake City, Utah that developed the Canvas learning management system, which is a comprehensive cloud-native software package."
+description = "Instructure is an educational technology company known for creating the Canvas LMS."
 slug = "instructure"
 hostnames = [ "instructure.com" ]
 sources = [ "https://www.instructure.com/policies/marketing-privacy" ]

@@ -1,5 +1,5 @@
 name = "Hulu"
-description = "Hulu is an American subscription video on-demand service."
+description = "Hulu (stylised as hulu) is an American subscription video on-demand service owned by The Walt Disney Company."
 slug = "hulu"
 hostnames = [ "hulu.com" ]
 sources = [ "https://www.hulu.com/privacy" ]

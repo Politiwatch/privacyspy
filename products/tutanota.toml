@@ -1,5 +1,5 @@
 name = "Tutanota"
-description = "Tutanota is a free and open-source end-to-end encrypted email software and freemium hosted secure email service."
+description = "Tutanota is a free and open-source end-to-end encrypted email software and freemium secure email provider."
 slug = "tutanota"
 hostnames = [ "tutanota.com", "tutao.de" ]
 sources = [ "https://tutanota.com/privacy/" ]

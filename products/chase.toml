@@ -1,5 +1,5 @@
 name = "Chase"
-description = "Banking company in the United States."
+description = "JPMorgan Chase is a banking company in the United States."
 slug = "chase"
 hostnames = [ "chase.com" ]
 sources = [

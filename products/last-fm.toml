@@ -1,5 +1,5 @@
 name = "Last.fm"
-description = "Last.fm is a music website and makes a detailed profile of each user's musical taste by recording details of the tracks the user listens to, either from Internet radio stations, or the user's computer or many portable music devices."
+description = "Last.fm is a social media and music catalogue website that allows users to profile their tastes in music."
 slug = "last-fm"
 hostnames = [ "www.last.fm" ]
 sources = [ "https://www.viacomcbsprivacy.com/en/policy" ]

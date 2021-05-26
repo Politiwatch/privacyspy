@@ -1,5 +1,5 @@
 name = "Busuu"
-description = "Busuu is an AI-powered language learning platform on web, iOS and Android that allows users to interact with native speakers from around the world."
+description = "Busuu is a language learning platform that allows communication with native speakers."
 slug = "busuu"
 hostnames = [ "busuu.com" ]
 sources = [ "https://www.busuu.com/privacy" ]

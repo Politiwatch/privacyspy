@@ -1,5 +1,5 @@
 name = "Babbel"
-description = "Babbel is a German subscription-based language learning app and e-learning platform, available in various languages since January 2008."
+description = "Babbel is a German subscription-based language learning app and e-learning platform."
 slug = "babbel"
 hostnames = [ "babbel.com" ]
 sources = [ "https://about.babbel.com/privacy/" ]

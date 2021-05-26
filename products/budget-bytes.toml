@@ -1,5 +1,5 @@
 name = "Budget Bytes"
-description = "Recipes for people with a small budget."
+description = "Budget Bytes is a collection of recipes for people with a small budget."
 slug = "budget-bytes"
 hostnames = [ "budgetbytes.com" ]
 sources = [ "https://www.budgetbytes.com/privacy-policy/" ]

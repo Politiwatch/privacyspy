@@ -1,5 +1,5 @@
 name = "OneSearch"
-description = "OneSearch is a free privacy-oriented search engine."
+description = "OneSearch is a free privacy-focused search engine from Verizon Media."
 slug = "onesearch"
 hostnames = [ "onesearch.com" ]
 sources = [

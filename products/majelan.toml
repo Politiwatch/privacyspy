@@ -1,5 +1,5 @@
 name = "Majelan"
-description = "Majelan is a podcast service and podcast creator."
+description = "Majelan is a French podcast service and podcast creator."
 slug = "majelan"
 hostnames = [ "majelan.com" ]
 sources = [ "https://www.majelan.com/en/privacy-policy" ]

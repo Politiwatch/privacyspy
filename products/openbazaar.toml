@@ -1,5 +1,5 @@
 name = "OpenBazaar"
-description = "OpenBazaar is an open source project developing a protocol for e-commerce transactions in a fully decentralized marketplace."
+description = "OpenBazaar is an open-source project developing a protocol for e-commerce transactions in a fully decentralized marketplace."
 slug = "openbazaar"
 hostnames = [ "openbazaar.com", "openbazaar.org" ]
 sources = [ "https://openbazaar.org/privacy/" ]

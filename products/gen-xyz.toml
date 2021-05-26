@@ -1,5 +1,5 @@
 name = "Gen.xyz"
-description = "Gen.xyz is a domain registry."
+description = "Gen.xyz is a domain registry focusing on the .XYZ top-level domain."
 slug = "gen-xyz"
 hostnames = [ "gen.xyz" ]
 sources = [ "https://gen.xyz/privacy" ]

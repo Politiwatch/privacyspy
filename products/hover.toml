@@ -1,5 +1,5 @@
 name = "Hover"
-description = "Hover is a domain name registrar."
+description = "Hover is a domain name registrar owned by Tucows Inc."
 slug = "hover"
 hostnames = [ "hover.com" ]
 sources = [ "https://www.hover.com/privacy" ]

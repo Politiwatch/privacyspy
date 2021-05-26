@@ -1,5 +1,5 @@
 name = "Ada "
-description = "Ada Health GmbH is a company based in Berlin which produces Ada, a health symptom checker app."
+description = "Ada is a health symptom checker app made by Ada Health GmbH."
 slug = "ada"
 hostnames = [ "ada.com" ]
 sources = [ "https://ada.com/privacy-policy/" ]

@@ -1,5 +1,5 @@
 name = "Invaluable"
-description = "Invaluable is an online auctioning site."
+description = "Invaluable is an online auctioning site that specialises in selling antiques, collectibles, and fine arts."
 slug = "invaluable"
 hostnames = [ "invaluable.com" ]
 sources = [ "https://www.invaluable.com/agreements/privacy.cfm" ]

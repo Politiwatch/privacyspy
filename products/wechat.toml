@@ -1,5 +1,5 @@
 name = "WeChat"
-description = "WeChat is a popular Chinese multipurpose messaging application. It has over a billion active users."
+description = "WeChat is a popular multipurpose messaging application owned by Chinese conglomerate Tencent."
 slug = "wechat"
 hostnames = [ "wechat.com" ]
 sources = [ "https://www.wechat.com/en/privacy_policy.html" ]

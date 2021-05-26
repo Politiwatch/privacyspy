@@ -1,5 +1,5 @@
-name = "OnePlus (United States)"
-description = "OnePlus is a Chinese smartphone manufacturer."
+name = "OnePlus US"
+description = "OnePlus is a Chinese consumer electronics manufacturer known for their smartphone lineup."
 slug = "oneplus-united-states"
 hostnames = [ "oneplus.com" ]
 sources = [ "https://www.oneplus.com/legal/privacy-policy" ]

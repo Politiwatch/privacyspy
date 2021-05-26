@@ -1,5 +1,5 @@
 name = "Visible"
-description = "Visible is an all-digital wireless carrier owned by Verizon."
+description = "Visible is an all-digital wireless carrier in the United States owned by Verizon."
 slug = "visible"
 hostnames = [ "visible.com" ]
 sources = [ "https://www.visible.com/legal/privacy.html" ]

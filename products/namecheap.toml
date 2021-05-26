@@ -1,5 +1,5 @@
 name = "Namecheap"
-description = "Namecheap, Inc. is an ICANN-accredited domain name registrar, which provides domain name registration and web hosting, based in Phoenix, Arizona."
+description = "Namecheap, Inc. is an ICANN-accredited domain name registrar, which provides domain name registration and web hosting."
 slug = "namecheap"
 hostnames = [ "namecheap.com" ]
 sources = [ "https://www.namecheap.com/legal/general/privacy-policy/" ]

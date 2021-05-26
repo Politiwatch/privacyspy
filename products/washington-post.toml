@@ -1,5 +1,5 @@
 name = "The Washington Post"
-description = "the Washington post is a major American newspaper with a particular emphasis on national politics and the federal government."
+description = "The Washington Post is an American newspaper with a particular emphasis on national politics and the federal government."
 slug = "washington-post"
 hostnames = [ "washingtonpost.com" ]
 sources = [
