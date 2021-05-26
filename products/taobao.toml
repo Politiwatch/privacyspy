@@ -1,7 +1,7 @@
 name = "Taobao"
-description = "aobao Marketplace (www.taobao.com) is the online shopping destination of choice for Chinese consumers looking for wide selection, value and convenience."
+description = "Taobao Marketplace is the online shopping destination of choice for Chinese consumers looking for wide selection, value and convenience."
 slug = "taobao"
-hostnames = [ "Taobao.com" ]
+hostnames = [ "taobaonline.com" ]
 sources = [ "https://www.taobaonline.com/privacy-policy/" ]
 contributors = [ "UnKnOwN" ]
 
