@@ -49,6 +49,7 @@ citations = ["ProtonMail reserves the right to periodically review and change th
 [rubric.security]
 value = "yes"
 citations = ["All servers used in connection with the provisioning of the Service are located in Switzerland and wholly owned and operated by the Company. Only employees of the Company have physical or other access to the servers. Data is ALWAYS stored in encrypted format on our servers. Offline backups may be stored periodically, but these are also encrypted. We do not possess the ability to access any user encrypted message content on either the production servers or in the backups."]
+notes = ["ProtonMail has once received, what seems to be, an \"organized\" independent audit, though these are not mentioned in the policy as their official security measure."]
 
 [rubric.third-party-access]
 value = "yes-unspecified-critical"
