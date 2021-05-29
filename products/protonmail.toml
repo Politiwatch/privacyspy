@@ -39,8 +39,12 @@ value = "exhaustively"
 notes = ["ProtonMail includes an extensive list of data that it collects, and the reasons why."]
 
 [rubric.noncritical-purposes]
-value = "na"
-notes = ["ProtonMail does not collect any non-critical personal data."]
+value = "no"
+citations = [
+  "We employ a local installation of Matomo, an open source analytics tool. Analytics are anonymized whenever possible and stored locally (and not on the cloud).",
+  "When you use our native applications, we (or the mobile app platform providers) may collect certain information in addition to the information mentioned elsewhere in this Policy. We may use mobile analytics software (such as fabric.io app statistics and crash reporting, Play Store app statistics, App Store app statistics, or self-hosted Sentry crash reporting) to send crash information to our developers so that we can fix bugs rapidly.",
+  "Any personal data acquired during this process is anonymized."
+]
 
 [rubric.revision-notify]
 value = "yes"
