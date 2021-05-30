@@ -1,0 +1,92 @@
+name = "LogMeIn"
+description = "LogMeIn, Inc. is a software as a service provider best known for LastPass and Citrix."
+slug = "logmein"
+hostnames = [ "logmein.com", "logmeinrescue.com" ]
+sources = [ "https://www.logmeininc.com/legal/privacy/international" ]
+contributors = [ "AlexThurman", "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "yes-opt-out"
+citations = [
+  "\"If you grant consent to our placement of cookies or for us to contact you for marketing purposes, we may also use your personal data for marketing purposes and the legal basis for such processing is your consent.\"",
+  "\"If you wish to not have the information these technologies collect used for the purpose of serving you targeted ads, you may opt-out here.\""
+]
+notes = [
+  "Opt-out is handled via https://www.youronlinechoices.com/"
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "\"There is no mention if users will be notified about data breaches.\""
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "\"We use the data we collect from visitors to our websites to: (a) provide and operate our Services; (b) address and respond to service, security, and customer support needs; (c) detect, prevent, or otherwise address fraud, security, unlawful, or technical issues; (d) comply with applicable laws and administrative requests, protect our rights, assert and defend against claims; (e) fulfill contracts; (f) maintain and improve our Services; (g) provide analysis or valuable data back to our customers and users; (h) assess the needs of your business to determine and promote other LogMeIn products which we believe may be helpful to you; (i) provide product updates, marketing communications, and service data; (j) conduct research and analysis for business planning and product development; (k) display content based upon your interests; and (l) to the extent permitted by law, we may combine, correct and enrich personal data that we receive from you with data about you from other sources, including publicly available databases or from third parties to update, expand and analyze our records, identify new prospects for marketing, and provide products and Services that may be of interest to you.\""
+]
+
+[rubric.data-deletion]
+value = "yes-contact"
+citations = [
+  "\" If you have questions or requests relating to our privacy practices and this Privacy Policy or would like to exercise the above mentioned rights of access, rectification, erasure, restriction, objection and data portability, you may contact us at https://support.logmeininc.com/contactus, which allows you to make a request online or through a phone call and/or via e-mail at privacy@logmein.com. We will respond to your request as required by applicable law, but in any regard within (30) days.\""
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [
+  "\"Last Updated on May 6, 2021\""
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "\"(e) as required by law or administrative order, to assert claims or rights, or to defend against legal claims.\""
+]
+
+[rubric.list-collected]
+value = "generally"
+citations = [
+  "\"Customer Account and Registration Data is data you provide when you create your account with us, request support or technical assistance, or register for events, webinars, whitepapers and surveys, which typically includes first and last name, billing data, and a valid email address. We need this data to provide the Services to you, to maintain and support your account, as well as to collect payment. Legal basis for the processing of this data is our legitimate interest to do business with you, your employer or business and perform our contractual obligations under the applicable Services agreement.\"",
+  "\"Service Data (including Session, Location and Usage data): When you visit our websites and use our Services, we receive data that you or others voluntarily enter, including on schedules and attendee lists, as well as data automatically logged by the website or Service, for example, duration of session, connections made, hardware, equipment and devices used, IP addresses, location, language settings, operating system used, unique device identifiers and other diagnostic data. We need this information to provide, operate, and improve our Services. We collect location-based data for the purpose of providing, operating, and supporting the service and for fraud prevention and security monitoring; you can disable location data transmission on mobile devices at any time by disabling location services from the settings menu on your device. Legal basis for the processing of this data is our legitimate interest to do business with you, your employer or business, or customers that use our Services to communicate with you and your business and perform our contractual obligations under the applicable Services agreement.\""
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-all"
+citations = [
+  "\"We strive to limit the types and categories of personal data that is collected from, and processed on behalf of, our users to include only information which is necessary to achieve the purpose(s) for which it was collected and we do not use personal data for additional purpose(s) which are incompatible with their initial collection. In other words, we have measures and policies in place designed to ensure that we only collect and process information from our users that we believe is necessary to operate and provide them with a world-class Service.\""
+]
+notes = [
+  "See \"Analytics, Cookies, and Other Web Site Technologies\" for opt-out-able non-critical usage. Quoted content is for all other content."
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "\"However, if we make any material changes that have a substantive and adverse impact on your privacy, we will provide notice on this website and additionally notify you by email (sent to the e-mail address specified in your account) for your approval prior to the change becoming effective. \""
+]
+
+[rubric.security]
+value = "yes-audits"
+citations = [
+  "\"LogMeIn has implemented a comprehensive data privacy and security program which includes appropriate technical and organizational measures designed to safeguard and protect the personal, identifiable, and/or confidential information we collect or you share with us. LogMeIn’s operations, on a product and/or suite-specific basis, have been assessed by independent third-party auditors against recognized security standards and controls, including SOC2 Type II, BSI C5, SOC3, and ISO 27001. To learn about LogMeIn’s Service-specific security and privacy measures and certifications, please visit the Trust & Privacy Center (see the “Product Resources” section).\""
+]
+notes = [
+  "You can access the LogMeIn Trust & Privacy Centre at https://www.logmein.com/trust"
+]
+
+[rubric.third-party-access]
+value = "yes-specified-noncritical"
+citations = [
+  "We share your personal data: (a) with our affiliated companies and subsidiaries which are directly or indirectly owned by our parent entity, LogMeIn, Inc.; (b) at your direction, with separate, specific notice to you, or with your consent; (c) with third-party service providers under appropriate confidentiality and data privacy obligations (only for the purposes identified in Section 3, “How We Use Your Data”); (d) in connection with a merger, divestiture, acquisition, reorganization, restructuring, financing transaction or sale of assets pertaining to a business line; and (e) as required by law or administrative order, to assert claims or rights, or to defend against legal claims."
+]
+notes = [
+  "You can see all subprocessors for a respective service at their trust & privacy centre at https://www.logmein.com/trust"
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "\"(l) to the extent permitted by law, we may combine, correct and enrich personal data that we receive from you with data about you from other sources, including publicly available databases or from third parties to update, expand and analyze our records, identify new prospects for marketing, and provide products and Services that may be of interest to you.\""
+]

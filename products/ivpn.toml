@@ -1,0 +1,76 @@
+name = "IVPN"
+description = "IVPN is a virtual private network service offered by the Gibraltar-based company Privatus Limited."
+slug = "ivpn"
+hostnames = [ "ivpn.net" ]
+sources = [ "https://www.ivpn.net/privacy" ]
+contributors = [ "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+notes = [ "No information mentioning such" ]
+
+[rubric.security]
+value = "yes"
+citations = [
+  "IVPN is subject to EU law and is in compliance with the EU Data Protection Directive (Directive 95/46/EC), which prohibits companies transferring data to overseas jurisdictions with weaker privacy laws. IVPN will not locate servers in countries where it's forced to break this compliance. Due to the nature of our logging practices VPN servers do not contain any personally identifiable information and thus, if seized, could not be used to identify users.\n\nNo 3rd parties have access to any of your data. We always use 1st or 3rd party tools we can host on our own servers in a protected and secure environment."
+]
+notes = [
+  "An audit by Cure53 happened 2020-01-23 (https://www.ivpn.net/blog/independent-security-audit-concluded/)"
+]
+
+[rubric.third-party-collection]
+value = "no"
+notes = [ "No data is fetched from third parties." ]
+
+[rubric.history]
+value = "no"
+notes = [ "No date or changelog" ]
+
+[rubric.data-deletion]
+value = "yes-contact"
+citations = [
+  "When a VPN account is terminated on our network due to the subscription ending, non-payment or for any other reason, all data associated with that VPN account including the account itself is deleted from all systems.\n\nWe do not delete our customer's client area account which includes the email address and password which they use to sign up for their account.\n\nHowever if you wish you can simply request deletion of your client area account by submitting a ticket to our billing department."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [ "There is no mention of alerting a user due to breach" ]
+
+[rubric.third-party-access]
+value = "yes-specified-critical"
+citations = [
+  "Some payment information may be related to your account, for example, if PayPal is used a PayPal transaction ID with be associated with your account, as well as a subscription ID should you set up a PayPal subscription.\n[...]\nFor credit card payments, we use Braintree as our payment processor, and store a Braintree transaction ID against your account. If you elect to enable auto-renew for card payments, a subscription ID will also be stored.\n[...]\nIVPN have selected Piwik as their web analytics platform.\n[...] \nPiwik is open source software that is hosted on our own server infrastructure to ensure your privacy[...].\n"
+]
+notes = [
+  "Piwik is, presumably, hosted under https://stats.ivpn.net (according to NoScript logging)"
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "To create an IVPN account you need only provide an email address. That address is used to facilitate password resets and to send important security updates relating to our service. Should you wish to opt out of email communication please contact out support team to be removed from our mailing list. You're free to use any email address, disposable or permanent. Your email address will be associated with an IVPN ID, an internal ID used to manage your account.\n\nWe don't require any other personally identifiable information should you use more anonymous payment methods such as cash or cryptocurrency.\n\nEach account also carries a subscription expiry date so we can manage both trial period expiry and re-subscription.\n\n[...]\n\nSome payment information may be related to your account, for example, if PayPal is used a PayPal transaction ID with be associated with your account, as well as a subscription ID should you set up a PayPal subscription.\n\nFor credit card payments, we use Braintree as our payment processor, and store a Braintree transaction ID against your account. If you elect to enable auto-renew for card payments, a subscription ID will also be stored.\n\nIn order to process your payment Braintree and PayPal will request additional information. Braintree requires collection of your card details to process your payment, and PayPal will require name, email and address information to create a new PayPal account as well as agreement to their terms of service. These additional datapoints are not stored by IVPN, though Braintree and PayPal are required to retain them for many years. In addition, no 3rd party payment provider has access to your IVPN ID.\n\nIn short, where we can offer anonymous payment methods we will, and we collect as little information as possible to process them. However centralised or 3rd party payment systems and their data processing and storage are out of our control.\n\nPlease select cash or cryptocurrency payments should this be of concern."
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-all"
+citations = [
+  "Should you wish to opt out of email communication please contact out support team to be removed from our mailing list.\n\nOn our mobile apps, you can opt-out of crash log reporting by disabling it in user preferences."
+]
+
+[rubric.law-enforcement]
+value = "strict"
+citations = [
+  "The company is incorporated in Gibraltar. If a court order is received from a recognised legal authority with jurisdiction over IVPN then the company will comply with that order. However, the company cannot be compelled to hand over information which it does not have. When a customer signs up we request the minimum information possible, a valid email address. If it ever becomes required by law for us to keep a persistent log of our customers connections or any personal data relating to their network activity, we will immediately notify our customers and do everything in our power to move jurisdictions or close the service to protect those who entrust their privacy to us."
+]
+
+[rubric.list-collected]
+value = "exhaustively"
+citations = [
+  "o create an IVPN account you need only provide an email address. That address is used to facilitate password resets and to send important security updates relating to our service. Should you wish to opt out of email communication please contact out support team to be removed from our mailing list. You're free to use any email address, disposable or permanent. Your email address will be associated with an IVPN ID, an internal ID used to manage your account.\n\nWe don't require any other personally identifiable information should you use more anonymous payment methods such as cash or cryptocurrency.\n\nEach account also carries a subscription expiry date so we can manage both trial period expiry and re-subscription.\n\nSome payment information may be related to your account, for example, if PayPal is used a PayPal transaction ID with be associated with your account, as well as a subscription ID should you set up a PayPal subscription.\n\nFor credit card payments, we use Braintree as our payment processor, and store a Braintree transaction ID against your account. If you elect to enable auto-renew for card payments, a subscription ID will also be stored.\n\nIn order to process your payment Braintree and PayPal will request additional information. Braintree requires collection of your card details to process your payment, and PayPal will require name, email and address information to create a new PayPal account as well as agreement to their terms of service. These additional datapoints are not stored by IVPN, though Braintree and PayPal are required to retain them for many years. In addition, no 3rd party payment provider has access to your IVPN ID.\n\nIn short, where we can offer anonymous payment methods we will, and we collect as little information as possible to process them. However centralised or 3rd party payment systems and their data processing and storage are out of our control."
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "IVPN reserves the right to change this privacy policy at any time. In such cases, we will take every reasonable step to ensure that these changes are brought to your attention by posting all changes prominently on the IVPN web site for a reasonable period of time, before the new policy becomes effective as well as emailing our existing customers."
+]

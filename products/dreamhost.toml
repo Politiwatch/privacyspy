@@ -1,0 +1,74 @@
+name = "Dreamhost"
+description = "DreamHost is a Los Angeles-based web hosting provider and domain name registrar."
+slug = "dreamhost"
+hostnames = [ "dreamhost.com" ]
+sources = [ "https://www.dreamhost.com/legal/privacy-policy/" ]
+contributors = [ "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "yes-opt-out"
+citations = [
+  "5.1 To the extent that we are a data controller, we use the information collected through your use of our Services for the following purposes:\n[...]\n(d) for research regarding the effectiveness of our Services, the Website and related marketing, advertising and sales efforts;\n[...]\n9.2 Web-based advertisements: DreamHost and its advertising partners comply with “opt out” signals provided either by a user's web browser automatically, by a user manually opting-out of web-based advertisements at http://www.networkadvertising.org/choices/."
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "We use appropriate technical and organizational measures to protect the personal information that we collect and process about you. The measures we use are designed to provide a level of security appropriate to the risk of processing your personal information. Specific measures we use include reducing log retention where possible to the minimum level required to enable our systems administration and security staff to ensure services are running smoothly."
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "2.4.1 In our capacity as a data controller, we may collect information from third parties. This may include information from partners in order to maintain functionality of your Services (such as domain name registrations and third-party email suites). We may combine this data with information we already have so that we can properly update, analyze, and expand our Services. This information will only be used for the specific reason for which it was provided to us."
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [ "Last Updated:\nJanuary 1, 2020" ]
+
+[rubric.data-deletion]
+value = "yes-automated"
+citations = [
+  "We retain personal information we collect from you where we have an ongoing legitimate business need to do so (for example, to comply with applicable legal, tax or accounting requirements, to enforce our agreements or comply with our legal obligations). When we have no ongoing legitimate business need to process your personal information, we will either delete or anonymize it or, if this is not possible (for example, because your personal information has been stored in backup archives), then we will securely store your personal information and isolate it from any further processing, until deletion is possible."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [ "There is no notice of breach required per the policy" ]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = [
+  "7.1 With the exception of trusted business affiliates and/or associates who work on behalf of or in connection with us, we will not provide to or sell to any third party your personal information and will keep all such data confidential. For example, we share information with third parties where the functionality and maintenance of our Services depends on it (such as sharing data with domain registries in order to maintain your Services or domain registrations).\n\nThird parties and trusted affiliates or associates\n\n7.2 We may contract with third parties to assist us in optimizing our Services, including assistance related to the authorization and processing of payments, fulfilment of service requests, and requests for assistance.\n\n7.3 We may utilize third-party platforms to provide web-based and email-based advertisements for our Services after you have visited and left our Website.\n\n7.4 We also use web analytics services to improve the usability of our customer experience. These services may record anonymous data such as mouse clicks, movement, and scrolling activity, but we'll never use them to collect personal data from you. We only use this data internally to help us understand and enhance your DreamHost experience.\n\nLaw enforcement\n\n7.5 DreamHost's primary business operations are located in California in the United States and we are subject to the laws and regulations in that jurisdiction. We may be called upon by various law enforcement agencies to comply with ongoing investigations. Compliance may include the secure handover of client data to a legally-authorized government agency.\n\n7.6 Outside the United States, DreamHost may also be required to disclose personal information to other law enforcement bodies, regulatory, government agency, court or other third party in compliance with applicable laws or regulation to which DreamHost may be subject.\n\n7.7 We will only disclose this information where we believe disclosure is necessary (i) as a matter if applicable law or regulation (ii) to exercise or defend our legal rights or (iii) to protect your vital interests or those of any other person."
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "5.1 To the extent that we are a data controller, we use the information collected through your use of our Services for the following purposes:\n\n(a) to improve and optimize the operation and performance of our Services to you, and for the Website;\n(b) to carry out obligations arising under agreements entered into between you and DreamHost;\n(c) to diagnose problems and identify security risks, errors or needed enhancements to the Services;\n(d) for research regarding the effectiveness of our Services, the Website and related marketing, advertising and sales efforts;\n(e) to respond to your support requests, and to communicate with you though email, via the website and livechat, text messages, telephone calls or automated phone calls or text messages;\n(f) to provide you with information about our products and services; and\n(g) to investigate, prevent or act regarding illegal activities, suspected fraud or otherwise as required by law.\n5.2 Often, much of the data is aggregated or statistical data about how people use our Services or Website and is not linked to any personal data. To the extent that this data is itself personal data, or is linked to personal data, we treat it accordingly."
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-some"
+citations = [
+  "9.2 Web-based advertisements: DreamHost and its advertising partners comply with “opt out” signals provided either by a user's web browser automatically, by a user manually opting-out of web-based advertisements at http://www.networkadvertising.org/choices/."
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "Law enforcement\n\n7.5 DreamHost's primary business operations are located in California in the United States and we are subject to the laws and regulations in that jurisdiction. We may be called upon by various law enforcement agencies to comply with ongoing investigations. Compliance may include the secure handover of client data to a legally-authorized government agency.\n\n7.6 Outside the United States, DreamHost may also be required to disclose personal information to other law enforcement bodies, regulatory, government agency, court or other third party in compliance with applicable laws or regulation to which DreamHost may be subject.\n\n7.7 We will only disclose this information where we believe disclosure is necessary (i) as a matter if applicable law or regulation (ii) to exercise or defend our legal rights or (iii) to protect your vital interests or those of any other person."
+]
+
+[rubric.list-collected]
+value = "generally"
+citations = [
+  "2.2.1 The personal information we collect from you when we provide you with Services will depend on the type of service or support you require.\n\n2.2.2 Some personal information is collected directly from you when you:\n\n(a) create an account or purchase any of our Services (for example, billing information, contact information, credit card number and in certain circumstances, government identification);\n(b) request assistance from our technical support team (for example, your phone number or email address);\n(c) log in to your account, such as your log-in credentials (for example, your username and password);\n(d) complete contact forms or request newsletters or other information from us (for example, your email address); or\n(e) participate in surveys or contests or participate in activities we promote which might require information from you.\n2.2.3 We will also collect and process other data that might be less obvious to you. For example, account-related information is collected in association with your use of the Services (like the types of services you have used, your payment history, the amount of your payments, your domain name, information about when products renew or expire, customer service requests, information requests, etc.).\n\n2.2.4 Some of this data may be personal data. We may use this information to contact you from time to time about our products, promotions and other services that relate to your account. You can manage and choose the information you want to receive. Please see Section 11 for more information.\n\n2.2.5 Most of the personal information that we collect is necessary to keep all of our Services functional and accessible by you. If we’re asking for personal information beyond this scope, we’ll make sure to clearly let you know why we need it (and what the effects of not providing it may be).\n\n2.3 Information we collect automatically\n\n2.3.1 When you use our Hosting Services, we may collect certain information automatically from your device. This may include information like your IP address, your device type, any unique device identification numbers, browser types, information about your broad geographic location (for example, country or city level location) and other technical information that may identify you.\n\n2.3.2 By way of example, data about usage of services is automatically collected when you use and interact with our Services, including metadata, log files and cookie/device IDs. This information includes specific data about your interactions with the features, content and links (including those of third parties, such as social media plugins) contained within the Services as well as the information listed in the previous paragraph.\n[...]\n2.4.1 In our capacity as a data controller, we may collect information from third parties. This may include information from partners in order to maintain functionality of your Services (such as domain name registrations and third-party email suites). We may combine this data with information we already have so that we can properly update, analyze, and expand our Services. This information will only be used for the specific reason for which it was provided to us."
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "We may change this Privacy Policy from time to time to reflect changes in our practices or in the applicable law. You will be able to tell when the policy was last updated as we will revise the date at the top of the Policy. In some cases, we may provide you with additional notice (such as adding a statement to the website, via the newsletter, or sending you a notification). By continuing to access or use the Services after changes become effective, you agree to be bound by the revised Privacy Policy."
+]

@@ -1,0 +1,90 @@
+name = "ESPN"
+description = "ESPN is an American cable sports channel owned by The Walt Disney Company."
+slug = "espn"
+hostnames = [ "espn.com" ]
+sources = [ "https://privacy.thewaltdisneycompany.com/en/current-privacy-policy/" ]
+contributors = [ "UnKnOwN", "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "yes-opt-out"
+citations = [
+  "Consistent with applicable law and choices and controls that may be available to you, we may use information collected from you, or from devices associated with you, to: [...] Provide you with targeted advertising based on your activity on our sites and applications and on third-party sites and applications;"
+]
+notes = [
+  "You can find more information about their personalisation and tracking, as well as opt-out, at https://privacy.thewaltdisneycompany.com/en/privacy-controls/online-tracking-and-advertising/"
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "The security, integrity, and confidentiality of your information are extremely important to us. We have implemented technical, administrative, and physical security measures that are designed to protect guest information from unauthorized access, disclosure, use, and modification. We regularly review our security procedures to consider appropriate new technology and methods. Please be aware that, despite our best efforts, no security measures are perfect or impenetrable."
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "We acquire information from other trusted sources to update or supplement the information you provided or we collected automatically, such as when we validate postal address information using third party services. Applicable law may require that you authorize the third party to share your information with us before we can acquire it."
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [
+  "Last Modified: 01/13/2021"
+]
+
+[rubric.data-deletion]
+value = "yes-automated"
+citations = [
+  "Correcting, updating, and deleting your registration account;",
+  "You may exercise these controls and choices in various ways, including by visiting Communication Choices (under the Privacy Controls tab), contacting Guest Services, following instructions provided in communications sent to you, or by using your device or other available settings (for example, by re-setting your device’s advertising identifier and/or opting out of interest based ads). You can opt out of interest based ads by visiting the Digital Advertising Alliance or European Interactive Digital Advertising Alliance or using the opt-out mechanism in the “Interest Based Ads” link in the footer of the site you are visiting."
+]
+notes = [
+  "You acn access the « Communication Choices » centre section at https://privacy.thewaltdisneycompany.com/en/privacy-controls/communication-choices/"
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [ "There is no mention of a data breach policy." ]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = [
+  "We will not share your personal information with a third party outside The Walt Disney Family of Companies except in limited circumstances, [...]"
+]
+notes = [
+  "You can see all of the reasons in the « Sharing your information with other entites » section of the privacy policy."
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "Consistent with applicable law and choices and controls that may be available to you, we may use information collected from you, or from devices associated with you, to: Provide you with the experiences, products, and services you request, view, engage with, or purchase; Communicate with you about your account or transactions with us and send you information or request feedback about features on our sites and applications or changes to our policies; Send you offers and promotions for our products and services or third-party products and services; Personalize content and experiences; Provide you with targeted advertising based on your activity on our sites and applications and on third-party sites and applications; to learn more about how we use your information for personalization and tracking, please visit Online Tracking Technologies and Advertising. Operate, understand, optimize, develop, or improve our sites, applications, products, services and operations, including by using guest survey research and analytics tools; and Detect, investigate and prevent activities that may violate our policies, pose safety issues, or be fraudulent or illegal; and Notify you of product recalls or safety issues."
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-all"
+citations = [
+  "We provide you the ability to exercise certain controls and choices regarding our collection, use and sharing of your information. In accordance with applicable law, your controls and choices may include: Choosing whether to receive from us offers and promotions for our products and services, or products and services that we think may be of interest to you; Choosing whether we share your personal information with other companies so they can send you offers and promotions about their products and services; Controlling targeted advertising from many ad networks and partners; data exchanges; and marketing analytics and digital advertising and marketing service providers (by visiting the Digital Advertising Alliance); Choosing to control targeted advertising you receive within applications by using the settings and choices made available to you through your device(s), for example, by re-setting your device’s advertising identifier and/or opting out of interest based ads; Choosing to limit participation in Nielsen digital measurement research (for non-Panelists);",
+  "You may exercise these controls and choices in various ways, including by visiting Communication Choices (under the Privacy Controls tab), contacting Guest Services, following instructions provided in communications sent to you, or by using your device or other available settings (for example, by re-setting your device’s advertising identifier and/or opting out of interest based ads)."
+]
+notes = [
+  "You can access the Communication Choices centre at https://privacy.thewaltdisneycompany.com/en/privacy-controls/communication-choices/"
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "When we share your personal information with third parties in connection with the sale of a business, to enforce our Terms of Use or rules, to ensure the safety and security of our guests and third parties, to protect our rights and property and the rights and property of our guests and third parties, to comply with legal process, or in other cases if we believe in good faith that disclosure is required by law."
+]
+
+[rubric.list-collected]
+value = "generally"
+citations = [
+  "In particular, we collect: Registration information you provide when you create an account, enter a promotion, or link your profile on a third-party site or platform with your registration account, such as your first name and surname, country of residence, gender, date of birth, email address, username, and password; Transaction information you provide when you request information, contact Guest Services, or purchase, return, request, or exchange a product or service from us, such as your postal address, telephone number, and payment information; Information you provide in public forums on our sites and applications, such as your public posts; Information sent either one-to-one or within a limited group using our message, chat, post, or similar functionality, where we are permitted by applicable law to collect this information; Information we obtain from a third party, such as a site or platform provider, about use of our applications on third-party platforms or devices; Location information, including location information provided by a mobile or other device interacting with one of our sites, applications, or physical properties (including through beacon technologies), or associated with your IP address or other online or device identifier, where we are permitted by law to process this information; Activity information about your use, and the use by any person(s) you authorize through your account, of our sites and applications, such as the content you view or post, how often you use our services, and your preferences; Usage, viewing, technical, and device data when you visit our sites, use our applications on third-party sites or platforms, or open emails we send, or connect with our wireless Internet access services and other similar technologies, including your browser or device type, unique device identifier, and IP address; Still or video images captured by cameras or readers on or around our physical properties; and Call recordings when you call our reservation centers or other guest services phone numbers."
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "We will provide notice to you if these changes are material and, where required by applicable law, we will obtain your consent. Notice may be by email to you at the last email address you provided us, by posting notice of such changes on our sites and applications, or by other means, consistent with applicable law."
+]

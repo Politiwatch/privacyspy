@@ -1,0 +1,91 @@
+name = "OVH"
+description = "OVH is a French cloud computing company that offers VPS, dedicated servers and other web services."
+slug = "ovh"
+hostnames = [
+  "ovh.com",
+  "us.ovhcloud.com",
+  "ovh.cz",
+  "ovh.de",
+  "ovh.es",
+  "ovh.ie",
+  "ovh.it",
+  "ovh.lt",
+  "ovh.nl",
+  "ovh.pl",
+  "ovh.pt",
+  "ovh-hosting.fi",
+  "ovh.co.uk",
+  "ovh.sn",
+  "ovh.com.au",
+  ""
+]
+sources = [ "https://us.ovhcloud.com/legal/privacy-policy" ]
+contributors = [ "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+notes = [ "Your data is used for targeted marketing" ]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "We maintain reasonable and appropriate security measures to protect Personal Data from loss, misuse, unauthorized access, disclosure, alteration, or destruction in light of the risks inherent in processing this information. However, the Internet cannot be guaranteed to be fully secure and we cannot ensure or warrant the security of any information you provide to us. Please keep this in mind when providing us with your Personal Data."
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "We also collect Personal Data from third parties, such as social media platforms, marketing vendors, data analytics companies, data suppliers, or our affiliates or partners. The categories of Personal Data that we obtain from such sources may include: Identifiers, such as name, physical address, email address, and phone number; Internet or other electronic network activity information; Geolocation data; Education information; and Inferences regarding preferences or other characteristics."
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [ "Last Updated: May 15, 2020" ]
+
+[rubric.data-deletion]
+value = "yes-contact"
+citations = [
+  "You may ask us to delete or remove your Personal Data and we will do so in some circumstances, such as where we no longer need it (we may not delete your data when other interests outweigh your right to deletion). If we have shared your data with others, we will tell them about the erasure where possible. If you ask us, where possible and lawful to do so, we will also tell you with whom we shared your Personal Data so that you can contact them directly."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "This policy doesn't enforce the service to disclose data breaches"
+]
+
+[rubric.third-party-access]
+value = "yes-specified-critical"
+citations = [
+  "We may share your Personal Data with certain third parties to the extent permitted by applicable law:\n\n- Vendors and Service Providers: To assist us in meeting business operations needs and to perform certain services and functions on our behalf: providers of payment processing and fraud prevention, marketing, web analytics, hosting, email communication and customer support services, and recruiting services. Pursuant to our instructions, these parties may access, process or store Personal Data in the course of performing their duties to us.\n- OVH SAS and its affiliate companies: In order to provide the OVHcloud Services you request from us, our parent company, OVH SAS, may provide us with technical support which may entail processing of Personal Data to the extent necessary to provide you with the OVHcloud Services. For EU data subjects, such processing is in our legitimate interest in ensuring that you may receive the OVHcloud Services you request from us.\n- Business Transfers: If we are involved in a merger, acquisition, financing due diligence, reorganization, bankruptcy, receivership, sale of company assets, or transition of service to another provider, your Personal Data and other information may be transferred to a successor or affiliate as part of that transaction along with other assets.\n- Legal Requirements: If required to do so by law or in the good faith belief that such action is necessary to (i) comply with a legal obligation or lawful requests by public authorities, including meeting national security or law enforcement requirements and applicable law, rule, order, or regulation, (ii) protect and defend the rights or property of OVHcloud, (iii) act in urgent circumstances to protect the personal safety of users of the Site or the public, or (iv) protect against legal liability."
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "We use account-related data provided by Customers to us in connection with the purchase, sign-up, use or support of Customer account (such as usernames, email address and billing information) to provide you with access to the OVHcloud Services and/or the Site, contact you regarding your use of the OVHcloud Services and/or the Site or to notify you of important changes to the OVHcloud Services and/or the Site. For EU data subjects, such use is necessary for the performance of the contract between you and us.\n\nWhen you ask for information about the OVHcloud Services (for example, when you ask us to send you offers or price information), we will use your contact information to respond to your requests. For EU data subjects, such use is necessary to respond to or implement your request prior to entering into a contract with us.\n\nWe process Service Data on behalf of Customers for the purpose of providing the OVHcloud Services to Customers in accordance with our Terms of Service or other applicable contract.\n\nWe will use your Personal Data to send you information by email on our new products or services or other promotions. Where required by the applicable law (for example, if you are an EU data subject), we will send you such information only with your consent, which was given at the time you provided us with the Personal Data. In such case, if you do not provide us with your consent to the processing of your Personal Data for this purpose, we will not send you this information.\n\nYou have the right to withdraw your consent at any time, including by following the instructions contained in each promotional communication we send you permitting you to \"opt-out\" of receiving future promotional information. In addition, if at any time you wish not to receive any future communications or you wish to have your name deleted from our mailing lists, please contact us\n\nWe use data relating to your use of the Site and/or the OVHcloud Services to analyze, administer, support and improve your access to and use of the Site and the OVHcloud Services, including fraud prevention. We may also compile, anonymize and/or aggregate your Personal Data and other data and use such anonymized and/or aggregated data for our business purposes, including sharing such data with affiliates and business partners. This aggregate information does not identify you. For EU data subjects, this use of your Personal Data is necessary for our legitimate interests in understanding how the Site and the OVHcloud Services are being used by you and to improve your experience on it.\n\nWhen you apply for employment through our Site, your contact details and data about your employment history and education may be collected by our provider of recruiting services and we will use such data to evaluate your job application, to conduct job interviews, and as is otherwise needed for recruitment. For EU data subjects, processing of this data is necessary to respond to your request to process your application for employment. If you do not provide this data, we will not be able to process the application that you send through our Site.\n\nWe also may use your Personal Data in other ways for which we provide specific notice at the time of collection and obtain your consent if required by applicable law. Additionally, we may de-identify or aggregate your information and use it for other purposes as permitted by applicable law.\n\nIf you are an EU data subject, please see the \"EU Data Subjects\" section below for information on your rights in relation to your Personal Data."
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-all"
+citations = [
+  "You have the right to withdraw your consent at any time, including by following the instructions contained in each promotional communication we send you permitting you to \"opt-out\" of receiving future promotional information. In addition, if at any time you wish not to receive any future communications or you wish to have your name deleted from our mailing lists, please contact us at: opt-out@corp.ovh.us [or write to OVH US LLC dba Ovhcloud \\n Attention: Opt-Out \\n 11480 Commerce Park Drive \\n Suite 500 \\n Reston, VA 20191]"
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "If required to do so by law or in the good faith belief that such action is necessary to (i) comply with a legal obligation or lawful requests by public authorities, including meeting national security or law enforcement requirements and applicable law, rule, order, or regulation, (ii) protect and defend the rights or property of OVHcloud, (iii) act in urgent circumstances to protect the personal safety of users of the Site or the public, or (iv) protect against legal liability."
+]
+
+[rubric.list-collected]
+value = "generally"
+citations = [
+  "We obtain information about you that identifies, relates to, describes, is capable of being associated with, or could reasonably be linked, directly or indirectly, with you or, if you reside in California, your household (\"Personal Data\"). We obtain Personal Data directly from you, by way of automatic collection, or from third parties.\n\nWhen you interact with OVHcloud, the Site, or the OVHcloud Services, we may obtain Personal Data when you create an account using the OVHcloud Manager Portal, order the OVHcloud Services, communicate with us, subscribe to our email lists, or apply for employment. In providing the OVHcloud Services to Customers, we process on behalf of Customers such Personal Data that they upload or otherwise submit to our OVHcloud Services (\"Service Data\"). While our Customers decide what data to submit, Service Data typically includes information about their customers, prospects, employees, consultants or independent contractors, suppliers and other individuals or third parties (\"End Users\").\n\nWe may obtain the following categories of Personal Data directly from you: Identifiers, such as name, physical address, email address, account username and password, phone number, fax number, social media handle, government-issued identification information, and date of birth; Sensory data, such as an image on an identity document or a photo; Commercial information, such as information about the OVHcloud Services you subscribe to and payment information you provide in connection with these transactions (including billing address and payment card data); Professional information, such as your current or former employer and job title and other historical employment data; Education information, as provided in connection with your application for employment; Protected characteristics, such as military service, gender, age, marital status, ethnicity, disability or medical condition, race, and other demographic information you share with us; and, Preferences, such as how you prefer to communicate with us, OVHcloud Service that you are interested in, or other preferences you communicate to us.\n\nWhen you visit the Site, we may automatically collect information about you through cookies and similar technologies. This may include: Identifiers, such as your browser or operating system, IP address and other identifiers associated with your applications and devices; Geolocation data; and, Internet or other electronic network activity information, such as clickstream data, interactions with the Site content and features, and data and times that you visit the Site.\n\nWe also collect Personal Data from third parties, such as social media platforms, marketing vendors, data analytics companies, data suppliers, or our affiliates or partners. The categories of Personal Data that we obtain from such sources may include: Identifiers, such as name, physical address, email address, and phone number; Internet or other electronic network activity information; Geolocation data; Education information; and Inferences regarding preferences or other characteristics.\n"
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "We reserve the right to amend this Privacy Notice at our discretion and at any time. When we make changes to this privacy notice, we will notify you by email, through a notice on our Site, or any other method required by applicable law."
+]

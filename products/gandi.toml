@@ -1,0 +1,78 @@
+name = "Gandi"
+description = "Gandi is a French company providing domain name registration, web hosting, and related services."
+slug = "gandi"
+hostnames = [ "gandi.net" ]
+sources = [
+  "https://contract.gandi.net/v5/contracts/14420/Privacy_Policy_US_2.0_en.pdf"
+]
+contributors = [ "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+citations = [
+  "We are not in the business of selling Personal Information. We consider this information to be a vital part of Our relationship with You.\nWe do not share with others, or sell or rent to others, any Personal Information provided to us through the Sites or through Our\nCustomer Service Department, except with Your consent or as described in this Privacy Policy"
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "We have implemented information security measures that contain administrative, technical and physical controls that are designed to\nreasonably safeguard Personal and Non-Personal Information. Even though We have taken and will continue to take significant steps\nto protect this information, no company, including us, can fully eliminate all security risks associated with Personal Information. We use\nvarious security measures, including Secure Socket Layer (SSL) encryption technology, to protect information collected, transferred\nand retained. If You elect to set up an account on the Sites, You will be asked to provide an email address and password. You must\nprovide a valid email address and password in order to create and maintain an account, as well as to access account information. We\nrecommend You select a password with at least 8 characters and consider adding numbers or special characters to further strengthen\nYour password. In order to help protect Your personal information, You should be careful about providing Your password to others and\nchange it periodically. If You wish to update a password, or if You become aware of any loss, theft or unauthorized use of a password,\nplease contact us at us-privacy@gandi.net.\nMoreover, we strongly recommend You to active Our two-factor auth feature to enhance Your security. Please be aware that We may\nstore Personal Information or such information may be included in databases owned and maintained by Our affiliates, agents or third\nparty service providers. We take all commercially reasonable steps to protect the security and confidentiality of all Personal Information\nprovided via the Sites from loss, misuse, unauthorized access, inadvertent disclosure, alteration and/or destruction. However, no\nInternet or email transmission is ever fully secure or error free. In particular, email sent to or from the Sites may not always be secure.\nPlease keep this in mind when disclosing any Personal Information via the Internet or by email.\nWe do not and will not, at any time, ask You to provide Your Personal Information in a non-secure or unsolicited email or telephone\ncommunication. Identity theft and the practice currently known as \"phishing\" are of great concern to us. Safeguarding information to\nhelp protect You from identity theft is one of Our priorities. If You receive such an email, please contact us to bring it to our attention.\nFor more information about phishing, visit the Federal Trade Commission at http://www.consumer.ftc.gov/articles/0003-phishing. "
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  " We also may receive certain Non-Personal Information (including, without limitation, of the types set forth above) from various\nthird parties.  The Non-Personal Information We receive from third parties may be combined with the information We collect as specified\nherein, including Personal Information. If Non-Personal Information is combined with Personal Information, it may be viewed as\nPersonal Information."
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [ "Last Update September 1, 2016 - Version 2.0" ]
+
+[rubric.data-deletion]
+value = "no"
+notes = [
+  "No information is provided stating that you can do such, nor in their documentation (docs.gandi.net)"
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "No information is provided stating that they do alert users"
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = [
+  "Agents, Consultants and Related Third Parties: As noted above, We, like many businesses, sometimes engage other companies to\nperform certain business-related functions on Our behalf so that We can focus on Our core business. Examples of these services\ninclude, but are not limited to, payment processing and authorization, fraud protection and credit risk reduction, product customization,\norder fulfillment and shipping, marketing and promotional material distribution, website evaluation, data analysis and, where applicable,\ndata cleansing. "
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "We may use Personal Information as necessary and to fulfill Your requests, including in the following ways:\nAccess and Use: If You provide Personal Information in order to obtain access to or use of the Sites or any functionality thereof, We will\nuse Your Personal Information to provide You with access to or use of the Sites or functionality and to monitor Your use of the Sites or\nspecific functionalities.\nInternal Business Purposes: We may use Your Personal Information for internal business purposes including, without limitation, to help\nUs improve the content and functionality of the Sites, to better understand Our users, to improve the Sites (including their bêta\nversions), to protect against, identify or address fraudulent activities, to manage Your account and to provide You with customer service\nand to generally manage the Sites and Our business.\nMarketing: We may use Your Personal Information to contact You for certain marketing and advertising purposes, including, without\nlimitation, to inform You about offers, contests or surveys which may be of interest to You and to display content and advertising on or\noff the Sites which may be of relevance to You. If You wish to change or update Your Personal Information or to change Your\nsubscription preferences, You may do so as provided herein.\nSpecific Reason: If You provide Personal Information for a certain reason, We may use the Personal Information in connection with the\nreason for which it was provided. For instance, if You contact Us by email, We will use the Personal Information You provide to answer\nYour question or to attempt to resolve Your issue and will respond to the email address from which the contact came.\nAggregated Personal Information: In an ongoing effort to better understand and to serve the users of the Sites, we (either directly or\nworking in concert with our marketing services providers) may conduct research on our customer demographics, interests and behavior\nbased on Personal Information and other information that has been provided or received by Us. For example, we may combine\ninformation about visitors to the Sites to determine how best to target our marketing and the products and services that we offer in\ncertain areas of the country. This research may be compiled and analyzed on an aggregate basis and this aggregate information does\nnot identify You personally and is classified and treated as Non-Personal Information under this Privacy Policy"
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-some"
+citations = [
+  "Third Party Advertisers: We may use advertisers, third party ad networks, and other advertising companies, to serve advertisements on\nOur Sites and on third-party websites. Please be advised that such advertising companies may gather information about Your visit to\nOur Sites (such as through cookies, web beacons and other technologies) to enable such advertising companies to market products or\nservices to You, to monitor which ads have been served to Your browser and which web pages You were viewing when such ads were\ndelivered. If You would like more information about this practice and to know Your choices please visit:\nhttp://www.networkadvertising.org/managing/opt_out.asp or http://preferences.truste.com/truste/. PLEASE NOTE THAT THIS POLICY\nDOES NOT COVER THE COLLECTION AND USE OF INFORMATION BY SUCH ADVERTISING COMPANIES.\n"
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "Legal Requirements: We may disclose Your Personal Information if required to do so by law (including, without limitation responding to\na subpoena or request from law enforcement, court or government agency) or in the good faith belief that such action is necessary (i) to\ncomply with a legal obligation, (ii) to protect or defend Our rights, interests or property or that of other customers or users, (iii) to act in\nurgent circumstances to protect the personal safety of users of the Sites or the public, or (iv) to protect against legal liability or potential\nfraud, as determined in Our sole discretion."
+]
+
+[rubric.list-collected]
+value = "generally"
+citations = [
+  "1. Personal Information\nWe may collect Personal Information from users of the Sites in several instances. Some examples are as follows:\n• We may collect Your name, billing address, shipping address, email address, telephone number. This information is used to provide\nthe products and services that You have ordered or requested and order confirmations (or other transactional information) and/or to\nprovide customer service.\n• We may collect information regarding the domain names that You own or have owned. This information is used to provide the\nservices that You have requested and to suggest additional services that We believe You may be interested in via Domain Suggest\nfor example.\n• We may collect Your name, email address, mailing address, zip code, and date of birth if You create a User Account and a Personal\nOrganization and Legal Contacts. This information will be used to help You keep track of Your orders, to keep You updated about\nspecial offers, updates related to the Sites and any of the Gandi Contracts or other agreements which are applicable to the products\nor services You have purchased or to which You have subscribed, and to facilitate checkout during purchases.\n• We may collect Your IP address, Your status (natural person, legal person, association, public organization,...), the language of Your\nweb browser and the keyword queried to suggest You additional domain names during the purchase, to propose alternatives if the\ndomain queried is no longer available.\n• We may collect Your email address if You sign up to receive promotional emails from Us. This information may be used to contact\nYou about sales, special offers and new features available through the Sites.\n• We may collect Your name, telephone number, mailing address, zip code, and email address if You contact Us with a question or\nrequest customer support from Us. This information may be used so that we can respond to Your question or contact You regarding\nYour request.\n1/5\n• We may collect Your name, email address, and other contact information if You participate in a promotion (e.g., contest,\nsweepstakes) that We sponsor. This information will be used to fulfill the terms of the promotion and to contact You regarding\npromotional and special offers, sales, and new features available through the Sites. It will also be subject to the terms accompanying\nsuch promotion.\n• We may collect Your name, age, zip code, purchasing habits, email address and/or mailing address if You choose to participate in\none of our on-line surveys. This information will be used to help provide Us with relevant information about Our customers.\n• We may collect and maintain more extensive PII (including driver’s license numbers, passport numbers, identity card, etc.) if You are\npurchasing a Gandi SSL Certificate, as We are required to review proof of identification and related documentation to verify Your\nidentity in order to issue You the Gandi SSL Certificate for which You are applying.\n• We may collect and maintain more extensive PII (including driver’s license numbers, passport numbers, etc.) if You are purchasing\nsome extensions (domain names) which require supporting documentation.\nOf course, You can update Your information or change Your preferences regarding receiving announcements and other information\nfrom Us at any time by accessing Your account via the Sites. (For more information, see below section entitled How Can I Access,\nCorrect and Update My Personal Information?). The above section provides examples of the Personal Information that We may collect\nthrough the Sites (including the bêta version of Our Sites) and the manners in which We may use such Personal Information. If You do\nnot want Us to collect Your Personal Information, please do not provide it to Us."
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "The Sites and our business may change from time to time. As a result (and for other business and/or technological reasons), it may be\nnecessary for us to make changes to this Privacy Policy. We reserve the right to update, change, amend or modify this Privacy Policy\nat any time and from time to time without prior notice. Please review this policy periodically, and especially before You provide any\nPersonal Information. If we make any material changes to this Privacy Policy (as determined by us), we will post a notice on the Sites\nnotifying users of the changes and providing an opportunity for You to take action relative to those changes prior to their\nimplementation. In some cases, we also may send a notice via the Gandi Account or by email notifying registered users of upcoming\nchanges. This Privacy Policy was last updated on the date indicated above. Your continued use of the Sites after any changes or\nrevisions to this Privacy Policy become effective shall indicate Your agreement with the terms of such revised and then-current Privacy\nPolicy."
+]

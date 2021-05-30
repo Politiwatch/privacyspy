@@ -1,0 +1,87 @@
+name = "TikTok"
+description = "TikTok is a social media app where users upload short videos, typically with music, owned by Chinese company ByteDance."
+slug = "tiktok"
+hostnames = [ "tiktok.com" ]
+sources = [ "https://www.tiktok.com/legal/privacy-policy" ]
+contributors = [ "bumbleben" ]
+
+[rubric.behavioral-marketing]
+value = "yes"
+citations = [
+  "As explained below, we use your information to fulfill and enforce our Terms of Service, to improve and administer the Platform, and to allow you to use its functionalities. We may also use your information to, among other things, show you suggestions, promote the Platform, and customize your ad experience.\n\nWe generally use the information we collect: ...\n\n... to customize the content you see when you use the Platform. For example, we may provide you with services based on the country settings you have chosen or show you content that is similar to content that you liked or interacted with ...\n\n... to make suggestions and provide a customized ad experience."
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "We use reasonable measures to help protect information from loss, theft, misuse and unauthorized access, disclosure, alteration, and destruction. You should understand that no data storage system or transmission of data over the Internet or any other public network can be guaranteed to be 100 percent secure. Please note that information collected by third parties may not have the same security protections as information you submit to us, and we are not responsible for protecting the security of such information."
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "We may receive the information described in this Privacy Policy from other sources, such as:\n\nSocial Media. if you choose to link or sign up using your social network (such as Facebook, Twitter, Instagram, or Google), we may collect information from these social media services, including your contact lists for these services and information relating to your use of the Platform in relation to these services.\n\nThird-Party Services. We may collect information about you from third-party services, such as advertising partners and analytics providers.\n\nOthers Users of the Platform. Sometimes other users of the Platform may provide us information about you, including through customer service inquiries. \n\nOther Sources. We may collect information about you from other publicly available sources. "
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [
+  "(If you are a US resident)\nLast update: January 1, 2020.\n\n(If you are a user having your usual residence in the EU)\nLast updated: October 2019\n\n(If your residence is in another country, and not the US or EU)\nLast updated: February 2019"
+]
+
+[rubric.data-deletion]
+value = "yes-contact"
+citations = [
+  "You may submit a request to access or delete the information we have collected about you by sending your request to us at the email or physical address provided in the Contact section at the bottom of this policy. We will respond to your request consistent with applicable law and subject to proper verification. And we do not discriminate based on the exercise of any privacy rights that you might have."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "Neither the Privacy Policy nor Terms of Service specify a data breach protocol."
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = [
+  "We are committed to maintaining your trust, and while TikTok does not sell personal information to third parties, we want you to understand when and with whom we may share the information we collect for business purposes. \n\nService Providers and Business Partners\nWe share the categories of personal information listed above with service providers and business partners to help us perform business operations and for business purposes, including research, payment processing and transaction fulfillment, database maintenance, administering contests and special offers, technology services, deliveries, email deployment, advertising, analytics, measurement, data storage and hosting, disaster recovery, search engine optimization, marketing, and data processing. \n\nWithin Our Corporate Group\nWe may share your information with a parent, subsidiary, or other affiliate of our corporate group.\n\nIn Connection with a Sale, Merger, or Other Business Transfer\nWe may share your information in connection with a substantial corporate transaction, such as the sale of a website, a merger, consolidation, asset sale, or in the unlikely event of bankruptcy.\n\nFor Legal Reasons\nWe may disclose your information to respond to subpoenas, court orders, legal process, law enforcement requests, legal claims, or government inquiries, and to protect and defend the rights, interests, safety, and security of TikTok Inc., the Platform, our affiliates, users, or the public. We may also share your information to enforce any terms applicable to the Platform, to exercise or defend any legal claims, and comply with any applicable law. \n\nWith Your Consent\nWe may share information for other purposes pursuant to your consent or with your further direction.\n\nIf you access third-party services, such as Facebook, Google, or Twitter, to login to the Platform or to share information about your usage on the Platform with others, these third-party services may be able to collect information about you, including information about your activity on the Platform, and they may notify your connections on the third-party services about your use of the Platform, in accordance with their privacy policies.\n\nIf you choose to engage in public activities on the Platform, you should be aware that any information you share may be read, collected, or used by other users. You should use caution in disclosing personal information while engaging. We are not responsible for the information you choose to submit."
+]
+notes = [
+  "ByteDance, which owns TikTok, allegedly works closely with the Communist Party of China to monitor and censor the content on its platforms, including TikTok."
+]
+
+[rubric.data-collection-reasoning]
+value = "mostly"
+citations = [
+  "We generally use the information we collect:\n\nto fulfill requests for products, services, Platform functionality, support and information for internal operations, including troubleshooting, data analysis, testing, research, statistical, and survey purposes and to solicit your feedback\n\nto customize the content you see when you use the Platform. For example, we may provide you with services based on the country settings you have chosen or show you content that is similar to content that you liked or interacted with\n\nto send promotional materials from us or on behalf of our affiliates and trusted third parties\n\nto improve and develop our Platform and conduct product development\n\nto measure and understand the effectiveness of the advertising we serve to you and others and to deliver targeted advertising\n\nto make suggestions and provide a customized ad experience\n\nto support the social functions of the Platform, including to permit you and other users to connect with each other through the Platform and for you and other users to share, download, and otherwise interact with User Content posted through the Platform\n\nto use User Content as part of our advertising and marketing campaigns to promote the Platform\n\nto understand how you use the Platform, including across your devices\n\nto infer additional information about you, such as your age, gender, and interests\n\nto help us detect abuse, fraud, and illegal activity on the Platform\n\nto ensure that you are old enough to use the Platform (as required by law)\n\nto communicate with you, including to notify you about changes in our services\n\nto announce you as a winner of our contest, sweepstakes, or promotions if permitted by the promotion rule, and to send you any applicable prizes\n\nto enforce our terms, conditions, and policies\n\nconsistent with your permissions, to provide you with location-based services, such as advertising and other personalized content\n\nto inform our algorithms\n\nto combine all the information we collect or receive about you for any of the foregoing purposes\n\nfor any other purposes disclosed to you at the time we collect your information or pursuant to your consent."
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-some"
+citations = [
+  "You may be able to refuse or disable Cookies by adjusting your browser settings. Because each browser is different, please consult the instructions provided by your browser. Please note that you may need to take additional steps to refuse or disable certain types of Cookies. For example, due to differences in how browsers and mobile apps function, you may need to take different steps to disable Cookies used for targeted advertising in a browser and to disable targeted advertising for a mobile application, which you may control through your device settings or mobile app permissions. In addition, your choice to disable cookies is specific to the particular browser or device that you are using when you disable cookies, so you may need to separately disable cookies for each type of browser or device. If you choose to refuse, disable, or delete Cookies, some of the functionality of the Platform may no longer be available to you.  Without this information, we are not able to provide you with all the requested services, and any differences in services are related to your information.\n\nYou can manage third-party advertising preferences for some of the third parties we work with to serve advertising across the Internet by clicking here and by utilizing the choices available at www.networkadvertising.org/managing/opt_out.asp and www.aboutads.info/choices.\n\nYour mobile device may include a feature that allows you to opt out of some types of targeted advertising (\"Limit Ad Tracking\" on iOS and \"Opt out of Interest-Based Ads\" on Android).\n\nYou can opt out of marketing or advertising emails by utilizing the “unsubscribe” link or mechanism noted in marketing or advertising emails.\n\nYou can switch off GPS location information functionality on your mobile device if you do not wish to share GPS information.\n\nIf you have registered for an account you may access, review, and update certain personal information that you have provided to us by logging into your account and using available features and functionalities.\n\nSome browsers transmit \"do-not-track\" signals to websites. Because of differences in how browsers incorporate and activate this feature, it is not always clear whether users intend for these signals to be transmitted, or whether they even are aware of them. We currently do not take action in response to these signals."
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "TikTok is committed to assisting law enforcement while respecting the privacy and rights of its users. To obtain non-public user information, law enforcement must provide the appropriate legal documents required for the type of information being sought, such as a subpoena, court order, or warrant, or submit an emergency request."
+]
+notes = [
+  "ByteDance, which owns TikTok, is legally required to provide any data requested by the Communist Party of China under Chinese internet laws. "
+]
+
+[rubric.list-collected]
+value = "generally"
+citations = [
+  "We collect information when you create an account and use the Platform. We also collect information you share with us from third-party social network providers, and technical and behavioral information about your use of the Platform. We also collect information contained in the messages you send through our Platform and information from your phone book, if you grant us access to your phone book on your mobile device.  More information about the categories and sources of information is provided below. "
+]
+notes = [
+  "TikTok uses vague language in a long bulleted list of information that users may voluntarily provide, may unintentionally provide, may be automatically collected, or may be collected from third parties."
+]
+
+[rubric.revision-notify]
+value = "no"
+citations = [
+  "We may update this Privacy Policy from time to time. When we update the Privacy Policy, we will notify you by updating the “Last Updated” date at the top of this policy and posting the new Privacy Policy and providing any other notice required by applicable law. We recommend that you review the Privacy Policy each time you visit the Platform to stay informed of our privacy practices."
+]

@@ -1,0 +1,75 @@
+name = "OpenBazaar"
+description = "OpenBazaar is an open-source project developing a protocol for e-commerce transactions in a fully decentralized marketplace."
+slug = "openbazaar"
+hostnames = [ "openbazaar.com", "openbazaar.org" ]
+sources = [ "https://openbazaar.org/privacy/" ]
+contributors = [ "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "yes"
+citations = [
+  "We may share aggregated demographic information with our partners and advertisers. This is not linked to any personal information that can identify any individual person."
+]
+notes = [ "There is no clear way to opt-out" ]
+
+[rubric.security]
+value = "yes"
+citations = [
+  "We take precautions to protect your information. When you submit sensitive information via the website, your information is protected both online and offline.\n\nWherever we collect sensitive information (such as credit card data), that information is encrypted and transmitted to us in a secure way. You can verify this by looking for a closed lock icon at the bottom of your web browser, or looking for “https” at the beginning of the address of the web page.\n\nWhile we use encryption to protect sensitive information transmitted online, we also protect your information offline. Only employees who need the information to perform a specific job (for example, billing or customer service) are granted access to personally identifiable information. The computers/servers in which we store personally identifiable information are kept in a secure environment."
+]
+
+[rubric.third-party-collection]
+value = "no"
+citations = [
+  "We only have access to/collect information that you voluntarily give us via email or other direct contact from you."
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [ "LAST UPDATED: APR 28, 2016" ]
+
+[rubric.data-deletion]
+value = "yes-contact"
+citations = [
+  "You may opt out of any future contacts from us at any time. You can do the following at any time by contacting us via the email address given on our website:\n\n- See what data we have about you, if any.\n- Change/correct any data we have about you.\n- Have us delete any data we have about you.\n- Express any concern you have about our use of your data."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [ "There is no disclosure of such occuring" ]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = [
+  "We may share aggregated demographic information with our partners and advertisers. This is not linked to any personal information that can identify any individual person.\n\nAnd/or:\n\nWe partner with another party to provide specific services. When the user signs up for these services, we will share names, or other contact information that is necessary for the third party to provide these services. These parties are not allowed to use personally identifiable information except for the purpose of providing these services."
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "We are the sole owners of the information collected on this site. We only have access to/collect information that you voluntarily give us via email or other direct contact from you. We will not sell or rent this information to anyone.\n\nWe will use your information to respond to you, regarding the reason you contacted us. We will not share your information with any third party outside of our organization, other than as necessary to fulfill your request, e.g. signing up for our newsletter.\n\nUnless you ask us not to, we may contact you via email in the future to tell you about specials, new products or services, or changes to this privacy policy."
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-all"
+citations = [
+  "Unless you ask us not to, we may contact you via email in the future to tell you about specials, new products or services, or changes to this privacy policy."
+]
+
+[rubric.law-enforcement]
+value = "unspecified"
+notes = [
+  "There is no mention of how, if at all, they disclose data to law enforcements."
+]
+
+[rubric.list-collected]
+value = "no"
+citations = [
+  "We are the sole owners of the information collected on this site. We only have access to/collect information that you voluntarily give us via email or other direct contact from you."
+]
+
+[rubric.revision-notify]
+value = "no"
+citations = [
+  "Our Privacy Policy may change from time to time and all updates will be posted on this page. If you feel that we are not abiding by this privacy policy, you should contact us immediately via email."
+]

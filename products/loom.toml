@@ -14,7 +14,7 @@ citations = [
 [rubric.security]
 value = "somewhat"
 citations = [
-  "Loom takes appropriate security measures to protect against unauthorized access, alteration, disclosure or destruction of Personal Information. These include, but are not limited to, internal reviews of: (a) Loom's data collection; (b) storage and processing practices; (c) electronic security measures; and (d) physical security measures to guard against unauthorized access to systems where Loom stores Personal Information.\r\n\r\nUnfortunately, no data transmission over the internet can be guaranteed to be 100% secure. As a result, while we are committed to protecting your Personal Information, we cannot ensure or warrant the security of any information you provide to us.\r\n\r\nAll Loom employees, contractors and agents who access Personal Information are bound by confidentiality obligations and may be subject to discipline, including termination and criminal prosecution or unauthorized use or disclosure of Personal Information."
+  "Loom takes appropriate security measures to protect against unauthorized access, alteration, disclosure or destruction of Personal Information. These include, but are not limited to, internal reviews of: (a) Loom's data collection; (b) storage and processing practices; (c) electronic security measures; and (d) physical security measures to guard against unauthorized access to systems where Loom stores Personal Information.\n\nUnfortunately, no data transmission over the internet can be guaranteed to be 100% secure. As a result, while we are committed to protecting your Personal Information, we cannot ensure or warrant the security of any information you provide to us.\n\nAll Loom employees, contractors and agents who access Personal Information are bound by confidentiality obligations and may be subject to discipline, including termination and criminal prosecution or unauthorized use or disclosure of Personal Information."
 ]
 
 [rubric.third-party-collection]
@@ -32,7 +32,7 @@ citations = [
 [rubric.data-deletion]
 value = "yes-contact"
 citations = [
-  "Loom retains the Personal Information that we collect about you for as long as reasonably necessary for the purposes set out in this Privacy Policy. We also may retain your Personal Information for a longer period of time on the basis of our legitimate interests in providing or marketing our services to you or as necessary to comply with our legal obligations, to resolve disputes, and to enforce our agreements. Even if we delete some or all of your Personal Information, we may continue to retain and use information that has been aggregated or anonymized so that it can no longer be used for personal identification.\r\n\r\nUpon request, Loom will allow Users to update or correct Personal Information previously submitted, but only to the extent such activities will not compromise privacy or security interests. Additionally, upon request, Loom will delete Personal Information from the database where such information is stored; however, it may be impossible to entirely delete a User’s entry without some residual information being retained due to the manner in which data backups are maintained. Requests to delete Personal Information may be submitted to support@loom.com."
+  "Loom retains the Personal Information that we collect about you for as long as reasonably necessary for the purposes set out in this Privacy Policy. We also may retain your Personal Information for a longer period of time on the basis of our legitimate interests in providing or marketing our services to you or as necessary to comply with our legal obligations, to resolve disputes, and to enforce our agreements. Even if we delete some or all of your Personal Information, we may continue to retain and use information that has been aggregated or anonymized so that it can no longer be used for personal identification.\n\nUpon request, Loom will allow Users to update or correct Personal Information previously submitted, but only to the extent such activities will not compromise privacy or security interests. Additionally, upon request, Loom will delete Personal Information from the database where such information is stored; however, it may be impossible to entirely delete a User’s entry without some residual information being retained due to the manner in which data backups are maintained. Requests to delete Personal Information may be submitted to support@loom.com."
 ]
 
 [rubric.data-breaches]
@@ -69,7 +69,7 @@ citations = [
 [rubric.list-collected]
 value = "generally"
 citations = [
-  "Loom collects only the information required to provide products and services to you. The amount of information provided by you and collected by Loom depends on the circumstances. Loom may collect two (2) types of information about you: Personal and Non-Personal.\r\n\r\n[...]"
+  "Loom collects only the information required to provide products and services to you. The amount of information provided by you and collected by Loom depends on the circumstances. Loom may collect two (2) types of information about you: Personal and Non-Personal.\n\n[...]"
 ]
 
 [rubric.revision-notify]

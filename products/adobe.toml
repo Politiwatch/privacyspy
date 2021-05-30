@@ -1,0 +1,80 @@
+name = "Adobe"
+description = "Adobe is a software company known for tools to create graphics and prints, edit photography and videos, among a slew of other products."
+slug = "adobe"
+hostnames = [ "adobe.com" ]
+sources = [ "https://www.adobe.com/privacy/policy.html", "https://www.adobe.com/privacy/marketing.html" ]
+contributors = [ "UnKnOwN", "ibarakaiev" ]
+
+[rubric.behavioral-marketing]
+value = "yes-opt-out"
+citations = [
+  """Adobe advertises online in a variety of ways, including displaying Adobe ads to you on other companies' websites and apps and on social media platforms, such as Facebook and LinkedIn. Adobe websites use cookies and similar technologies provided by our own company (Adobe Experience Cloud) and other companies that allow us to gather additional information to measure and improve the effectiveness of our advertising. We collect information such as:\n- Which ads are displayed;\n- Which ads are clicked on; and \n\n- Where the ad was displayed.\n\nLearn more about [Adobe’s advertising practices](https://www.adobe.com/privacy/marketing.html).""",
+  """If you prefer that we do not deliver web ads to you based on how you use Adobe apps and websites, please tell us not to deliver Adobe interest-based ads to you.\n\nIf you prefer that we not deliver ads to you in non-Adobe apps based on how you use Adobe apps and websites, please set the preference on your mobile device to limit ad tracking.\n\nPlease note that if you do set your preferences as described above, you may still see Adobe ads on other companies' websites or apps, but they will not be based on your activity on our websites and apps."""
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "We work hard to protect your personal information. We employ administrative, technical, and physical security controls where appropriate, such as encryption, 2-step verification, and strict contractual confidentiality obligations for employees and contractors."
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "To help keep our databases current and to provide you the most relevant content and experiences, we may combine information provided by you with information from third party sources, in accordance with applicable law. For example, the size, industry, and other information about the company you work for (where you have provided company name) will be obtained from sources including, professional networking sites and information service providers."
+]
+
+[rubric.history]
+value = "last-modified"
+notes = [
+  "The last modified date is available at the top of the privacy policy."
+]
+
+[rubric.data-deletion]
+value = "yes-automated"
+citations = [
+  "Under the law of some countries, you may have the right to ask us for a copy of your personal information; to correct, delete or restrict (stop any active) processing of your personal information; and to obtain the personal information you provide to us for a contract or with your consent in a structured, machine readable format, and to ask us to share (port) this information to another controller.",
+  "To exercise any of these rights (including deactivating your Adobe ID account), you can get in touch with us – or our data protection officer – using the details set out below. Additionally, many of our websites and apps allow you to edit your personal information by accessing the \"[my account](https://accounts.adobe.com/),\" \"my profile,\" or a similar feature of the app or website you are using. Likewise, you can delete files or photos you have stored in our websites and apps by logging in and using the deletion functions that are available."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "Nothing is mentioned about data breaches in the privacy policy. "
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = [
+  "The types of third parties your information may be shared with include, our resellers and other sales and advertising partners, retailers, research organizations, advertisers, ad agencies, advertising networks and platforms, information service providers, publishers, and non-profit organizations (with your consent, if required).\n\nWe will share personal information with companies, organizations or individuals outside of Adobe if we have a good-faith belief that access, use, preservation or disclosure of the information is reasonably necessary to detect, prevent, or otherwise address fraud, security or technical issues, as well as to protect against harm to the rights, property or safety of Adobe, our users, or the public as required or permitted by law."
+]
+
+[rubric.data-collection-reasoning]
+value = "mostly"
+notes = [
+  "The service does a good job in explaining the purposes for data collection, however, not all data types are accompanied by a clear explanation (see **How does Adobe use the information it collects about me, and what are the legal bases for these uses?** for a full breakdown)."
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-some"
+citations = [
+  "You can opt-out from sharing the information about Desktop/Mobile Applications, participation in the Adobe Experience Cloud Device Co-op and also stop the Machine learning analysis on your content. However, your data can still be used for other non-critical purposes (for example for diagnosing problems in apps and websites)."
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "Adobe may also share your personal information: [...]\nWhen we are required to provide information in response to a subpoena, court order, or other applicable law or legal process."
+]
+
+[rubric.list-collected]
+value = "generally"
+notes = [
+  "The privacy policy lists the data it collects very specifically, though there are few \"such as\" phrases (see **What information does Adobe collect about me?** for a full breakdown)."
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "Occasionally, we may change this privacy policy (or other documents in the Adobe Privacy Center) to allow Adobe to accommodate new technologies, industry practices, regulatory requirements or for other purposes. If we do, we will change the \"last updated\" date at the top of this policy and the revised policy will be posted to this page so that you are aware of the information we collect, how we use it, and under what circumstances we may disclose it. We encourage you to periodically review the [Adobe Privacy Center](https://www.adobe.com/privacy.html) for the latest information on our privacy practices. Under certain circumstances (for example with certain material changes) we will provide notice to you of these changes and, where required by applicable law, we will obtain your consent. Notice may be by email to you, by posting a notice of such changes on our apps and websites, or by other means consistent with applicable law. "
+]

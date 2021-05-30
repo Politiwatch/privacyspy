@@ -16,20 +16,20 @@
 
 <div class="flex flex-row justify-center w-auto mx-auto mt-12 text-center text-md">
   {{#each pages as |page|}}
-  {{#if (shouldIncludePage page ../currentPage (length ../pages))}}
-  {{#if (eq page ../currentPage)}}
-  <span class="mr-3 font-bold text-blue-500 rounded-full ">{{add 1 ../currentPage}}</span>
-  {{else}}
-  {{#if (eq page "0") }}
-  <a href="/directory" class="mr-3 hover:text-blue-500">{{add 1 page}}</a>
-  {{else}}
-  <a href="/directory/{{add 1 page}}" class="mr-3 hover:text-blue-500">{{add 1 page}}</a>
-  {{/if}}
-  {{/if}}
-  {{/if}}
-  {{#if (shouldIncludeEllipsis page ../currentPage (length ../pages))}}
-  <span class="mr-3">&#8230;</span>
-  {{/if}}
+    {{#if (shouldIncludePage page ../currentPage (length ../pages))}}
+      {{#if (eq page ../currentPage)}}
+        <span class="mr-3 font-bold text-blue-500 rounded-full ">{{add 1 ../currentPage}}</span>
+      {{else}}
+        {{#if (eq page "0") }}
+          <a href="/directory" class="mr-3 hover:text-blue-500">{{add 1 page}}</a>
+        {{else}}
+          <a href="/directory/{{add 1 page}}" class="mr-3 hover:text-blue-500">{{add 1 page}}</a>
+        {{/if}}
+      {{/if}}
+    {{/if}}
+    {{#if (shouldIncludeEllipsis page ../currentPage (length ../pages))}}
+      <span class="mr-3">&#8230;</span>
+    {{/if}}
   {{/each}}
 </div>
 {{/inline}}

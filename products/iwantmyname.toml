@@ -1,0 +1,70 @@
+name = "iwantmyname"
+description = "IWantMyName is a service provider based in New Zealand that focuses solely on domain name management."
+slug = "iwantmyname"
+hostnames = [ "iwantmyname.com" ]
+sources = [ "https://iwantmyname.com/privacy" ]
+contributors = [ "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+notes = [ "No data is used for targeted marketing" ]
+
+[rubric.security]
+value = "yes"
+citations = [
+  "We’re a global company, and we use third party service providers to store our data and provide us with services. We also need to share personal information with registries, registrars, and regulators all over the world. This means that we may transfer personal information, or access it from, countries other than the country where you live.\n\nWe recognise that we’re accountable for your personal information wherever it is in the world. Where we can, we will send personal information only to countries that have adequate privacy laws in place (such as NZ, Australia, or the EU). However, where we cannot do this, we take reasonable steps to ensure that any third party service providers we use can meet our privacy and security expectations.\n\nWe retain personal information only for as long as we have a lawful purpose to use it. Generally, this is the duration of your registration plus a further two years to ensure that any disputes or queries about that registration can be managed. We retain identity documents for only two weeks.\n\nWherever your personal information is stored, we take reasonable steps to ensure that it is protected against unauthorised access, modification, use, or disclosure. We take our information security obligations very seriously, and have a security action plan in place to make sure our data protection policies, processes, and controls are continuously improved.\n\nWe also back up your personal information with our data escrow agent so that your domain registration can continue in the event that we can no longer host or manage it. This is an important part of maintaining a stable domain ecosystem."
+]
+
+[rubric.third-party-collection]
+value = "no"
+notes = [ "No data is collected from third parties" ]
+
+[rubric.history]
+value = "last-modified"
+citations = [ "This one was updated on May 23, 2018." ]
+
+[rubric.data-deletion]
+value = "yes-contact"
+citations = [
+  "If you think any of the personal information we hold about you is wrong, you can ask us to correct it. Where we’ve retained your personal information for purposes that are not directly related to the performance of a contract or to our legitimate interests, you can ask us to delete it.\n\nIf we can’t correct or delete your information (for example, where we don’t agree that it’s wrong, or we need the information for a lawful purpose), we’ll tell you why. You can ask us to attach your correction request to the information as a statement of correction."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "This policy doesn't require the service to disclose data breaches."
+]
+
+[rubric.third-party-access]
+value = "yes-specified-critical"
+citations = [
+  "As part of our delivery of products and services you have requested, or in order to meet our legitimate business interests, we may share your personal information with:\n\n- our trusted information service providers, including cloud storage providers (which may be located in NZ or overseas)\n- our trusted providers of other services, including analytical, research or fraud prevention services, where these services require the processing of personal information (which may be located in NZ or overseas)\n- our data escrow agent (an agency that retains a backup of your registration data to ensure that your domain registration can continue in the event that we can no longer host or manage it)\n- government agencies, regulators, or law enforcement agencies, where required or permitted by law\n\nWe are also required to:\n- share your personal information with domain industry regulators to assist them to keep the domain ecosystem transparent\n- make sure that the registrars and registries which manage particular domains have a record of domain registrants\n- facilitate the maintenance of the public WHOIS database, which provides Internet users with information about domain name holders\n\nWe’re an accredited registrar for the .nz domain, which means we can issue .nz domain licenses directly to our customers. In this case, we may share your personal information with the:\n\n- registry for the .nz domain, Internet NZ\n- agency that regulates the .nz domain, Domain Name Commission Ltd\n- public via the WHOIS database (where you have opted into this)\n\nWe also sell domain licenses on behalf of other registries and registrars, including our partner registrar Hexonet. This includes generic domains, such as .com, and some country domains, such as .de. In these cases, we may share your personal information with:\n\n- Hexonet, our partner registrar\n- any other registrars which issue domain licenses for domains we resell\n- the registries which create the domain extensions for the licenses we resell (sometimes the registrars will share this data, not us)\n- the agency that regulates generic domains, Internet Corporation for Assigned Names and Numbers (“ICANN”)\n- the public via the WHOIS database (where you have opted into this)"
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "o meet our core purposes – making it easy to register and manage domains and complying with our regulatory obligations – we need to use your personal information to:\n\n- identify you\n- associate your domain name with your computer\nmanage and deliver any products or services you request from us\n- personalise your experience, for example, by ensuring that you are invoiced in the right currency\n- contact you if required for the purposes of managing your account\n- keep your account secure\n- investigate and resolve any queries or concerns you raise with us\n- detect and prevent fraudulent activity\n- continuously improve our products and services\n- comply with our contractual obligations to domain registries and registrars we resell for\n- permit others operating or using the Internet to easily contact you to resolve any issue with your domain name\n- comply with our legal and regulatory obligations and any lawful requests from government agencies or regulators"
+]
+
+[rubric.noncritical-purposes]
+value = "na"
+notes = [ "Data is not used for non-critical purposes" ]
+
+[rubric.law-enforcement]
+value = "strict"
+citations = [
+  "government agencies, regulators, or law enforcement agencies, where required or permitted by law"
+]
+
+[rubric.list-collected]
+value = "exhaustively"
+citations = [
+  "We collect the following information about you:\n\n- full name\n- physical address\n- phone number\n- email address\n- IP address\n- cookies (see below)\n- payment information, including credit card details\n- identity verification documents\n- emails or other correspondence relating to the services you receive from us\n- internal notes about the services you receive from us\n\nCookies are small data files that our website sends to your browser, which are then stored on your system for later retrieval. We only use cookies to give you a simpler and easier login experience — not to track your website use. Remember, you can always clear cookies locally in your browser."
+]
+
+[rubric.revision-notify]
+value = "no"
+notes = [
+  "This policy doesn't require the service to notify users of policy changes"
+]

@@ -1,0 +1,75 @@
+name = "Network for Good"
+description = "Network for Good is a donations processor and service provider for non-profit organizations."
+slug = "network-for-good"
+hostnames = [ "networkforgood.com" ]
+sources = [ "https://www.networkforgood.com/about/privacy/" ]
+contributors = [ "4Iufy" ]
+
+[rubric.behavioral-marketing]
+value = "yes"
+citations = [
+  "We use cookies in order to bring you more relevant messaging with Google Display and Search Advertising (e.g., Remarketing or Google Display Network Impression Reporting).\n\nWe use third-party vendors, including Google, Facebook, Linkedin, and Bing, in order to show ads on third-party sites across the Internet.\n\nNetwork for Good along with third-party vendors, including Google, use first-party cookies (such as the Google Analytics cookie) and third-party cookies (such as the DoubleClick cookie) together to inform, optimize, and serve ads based on past visits to our Websites and to report how ad impressions, other uses of ad services, and interactions with these ad impressions and ad services are related to visits to the Websites."
+]
+notes = [
+  "See [Google](/product/google/), [Facebook](/product/facebook/), [LinkedIn](/product/linkedin/), and [Microsoft](/product/microsoft/) (owner of Bing) for their respective privacy policies."
+]
+
+[rubric.security]
+value = "yes"
+citations = [
+  "We take reasonable security precautions to protect the personal information that we collect and you provide to us. We meet commercially reasonable standards for online payment protection. We use up-to-date industry-accepted tools and technology protocols, including but not limited to, firewalls and encryption, to protect against the loss, misuse and unauthorized alteration of the information we collect. Network for Good helps to protect your information by working with our service providers who provide a secure and safe environment for credit card donations. Please remember that the safety and security of your information also depends on you. Where we have given you (or you have chosen) a logon ID or password to access certain services or areas of the Websites, you are responsible for keeping this ID and/or password confidential. We ask that you not share such information with anyone or allow anyone to sign-in using your credentials.\n\nUnfortunately, the transmission of information via the internet is not completely secure. Although we do our best to protect your personal information, we cannot guarantee the security of your personal information transmitted to us. Any transmission of personal information is at your own risk. We are not responsible for circumvention of any privacy settings or security measures we put in place for your protection.\n\n[…]\n\nWe will protect the privacy and security of personal information according to this Privacy Policy regardless of where it is processed or stored."
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "We may also receive personal information from other sources, including from our service providers (e.g., see information below regarding Plaid), any of the other websites we operate or the other services we provide (if you use any of them); information we obtain from publicly available sources such as Facebook or LinkedIn; information from public records in order to conduct due diligence or for conducting fraud prevention checks or to supplement your profile (i.e., zip code); information from your employer if you are using our Services through an employer-run program; information from corporate partners if you are using our Services through a corporate partner program."
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [ "This Privacy Policy was last updated on April 20, 2020." ]
+
+[rubric.data-deletion]
+value = "yes-contact"
+citations = [
+  "If you would like to access, modify, correct, or delete your personal information, please contact us via the methods listed in the “Contact Us” section below. When you contact us, you may be required to provide us some details to verify your identity in this case. We may not accommodate a request to change or delete information if we believe the change would violate any law or legal requirement, cause the information to be incorrect, or we are unable to verify your identity.  In addition, if you have provided your information to the charity or charities you supported through Network for Good in accordance with this Privacy Policy, you may need to contact that charity instead, if the relevant personal information is only accessible by that charity.  If we have received your information from a third party, we may not be able to modify, correct or delete your information."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "The policy does not mention any actions to be taken following a data breach."
+]
+
+[rubric.third-party-access]
+value = "yes-specified-noncritical"
+notes = [
+  "See section on “How We Share Your Information”.\n\nFor advertising and/or analytics, Network for Good shares personal data with Bing ([Microsoft](/product/microsoft/)), [Crazy Egg](/product/crazy-egg/), [Facebook](/product/facebook/), [FullStory](/product/fullstory/), [Google](/product/google/) Analytics, [Linkedin](/product/linkedin/)."
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+notes = [ "See section on “How We Use Your Information”." ]
+
+[rubric.noncritical-purposes]
+value = "opt-out-all"
+citations = [
+  "Visitors can opt-out of Google Analytics for Display Advertising, customize Google Display Network ads using Google’s Ads Settings page.\n\n[…]\n\nVisitors can customize their Linkedin advertising settings using Linkedin’s Ads Settings page.\n\nVisitors can customize their Facebook advertising settings using Facebook’s Ads Settings page.\n\nVisitors can customize their Bing advertising settings using Bing’s Ads Settings page.\n\n[…]\n\nWhen you, if a nonprofit, submit your organization’s contact information to sign up for an account with Network for Good, you agree and consent that Network for Good may send your organization communication relating to our products, events, or other business information.  Please contact us via the methods listed in the “Contact Us” section below to opt out of receiving such communication or you may opt out by clicking on the “unsubscribe” link at the bottom of our emails."
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "We also may disclose your personal information to third parties if we have reason to believe that disclosing such information is necessary to conduct investigations of possible breaches of law, to cooperate in any legal investigation, or to identify, contact, or bring legal action against someone who may be violating any agreement with us, including our Terms & Conditions."
+]
+
+[rubric.list-collected]
+value = "generally"
+notes = [ "See section on “What Information Do We Collect?”" ]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "Network for Good periodically reviews and updates this Privacy Policy. If we decide to change this Privacy Policy, we will post those changes to our Websites so our donors and customers are always aware of what information we collect, how we use it, and under what circumstances, if any, we disclose it.  We may also, in our sole discretion, notify you of such changes via our e-Newsletter or email to your email address that we have in our records.  Any updates or changes to this Privacy Policy will become effective upon posting.  By continuing to access or use any of our Websites after those changes become effective, you agree to be bound by the revised Privacy Policy."
+]

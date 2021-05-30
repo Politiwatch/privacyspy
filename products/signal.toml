@@ -1,0 +1,73 @@
+name = "Signal"
+description = "Signal is an open-source messaging app made Signal Messenger, LLC."
+slug = "signal"
+hostnames = [ "signal.org" ]
+sources = [ "https://signal.org/legal/#privacy-policy" ]
+contributors = [ "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+notes = [ "No information proving such." ]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "Signal utilizes state-of-the-art security and end-to-end encryption to provide private messaging and Internet calling services to users worldwide (“Services”). Your calls and messages are always encrypted, so they can never be shared or viewed by anyone but yourself and the intended recipients."
+]
+
+[rubric.third-party-collection]
+value = "no"
+notes = [ "Signal doesn't collect data from third parties." ]
+
+[rubric.history]
+value = "last-modified"
+citations = [ "Effective as of May 25, 2018\n\nUpdated May 25, 2018" ]
+
+[rubric.data-deletion]
+value = "yes-automated"
+notes = [
+  "According to their support documentation (https://support.signal.org/hc/en-us/articles/360007061192), you can delete your account"
+]
+
+[rubric.data-breaches]
+value = "na"
+notes = [
+  "Notification is possible through SMS or the Signal protocol, however not enough data is stored by Signal to warrant an alert due to a data breach"
+]
+
+[rubric.third-party-access]
+value = "yes-specified-critical"
+citations = [
+  "We work with third parties to provide some of our Services. For example, our Third-Party Providers send a verification code to your phone number when you register for our Services. These providers are bound by their Privacy Policies to safeguard that information. If you use other Third-Party Services like YouTube, Spotify, Giphy, etc. in connection with our Services, their Terms and Privacy Policies govern your use of those services."
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "Account Information. You register a phone number when you create a Signal account. Phone numbers are used to provide our Services to you and other Signal users. You may optionally add other information to your account, such as a profile name and profile picture. This information is end-to-end encrypted.\n\nMessages. Signal cannot decrypt or otherwise access the content of your messages or calls. Signal queues end-to-end encrypted messages on its servers for delivery to devices that are temporarily offline (e.g. a phone whose battery has died). Your message history is stored on your own devices.\n\nAdditional technical information is stored on our servers, including randomly generated authentication tokens, keys, push tokens, and other material that is necessary to establish calls and transmit messages. Signal limits this additional technical information to the minimum required to operate the Services.\n\nContacts. Signal can optionally discover which contacts in your address book are Signal users, using a service designed to protect the privacy of your contacts. Information from the contacts on your device may be cryptographically hashed and transmitted to the server in order to determine which of your contacts are registered.\n\nUser Support. If you contact Signal User Support, any personal data you may share with us is kept only for the purposes of researching the issue and contacting you about your case.\n\nManaging your information. You can manage your personal information in Signal’s application Settings. For example, you can update your profile information or choose to enable additional privacy features like a Registration Lock PIN."
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-all"
+citations = [
+  "Account Information. You register a phone number when you create a Signal account. Phone numbers are used to provide our Services to you and other Signal users. You may optionally add other information to your account, such as a profile name and profile picture. This information is end-to-end encrypted.\n[...]\nContacts. Signal can optionally discover which contacts in your address book are Signal users, using a service designed to protect the privacy of your contacts. Information from the contacts on your device may be cryptographically hashed and transmitted to the server in order to determine which of your contacts are registered."
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "Other instances where Signal may need to share your data\n\n-To meet any applicable law, regulation, legal process or enforceable governmental request.\n- To enforce applicable Terms, including investigation of potential violations.\n- To detect, prevent, or otherwise address fraud, security, or technical issues.\n- To protect against harm to the rights, property, or safety of Signal, our users, or the public as required or permitted by law."
+]
+notes = [ "Open to interpretation." ]
+
+[rubric.list-collected]
+value = "exhaustively"
+citations = [
+  "Account Information. You register a phone number when you create a Signal account. Phone numbers are used to provide our Services to you and other Signal users. You may optionally add other information to your account, such as a profile name and profile picture. This information is end-to-end encrypted.\n\nMessages. Signal cannot decrypt or otherwise access the content of your messages or calls. Signal queues end-to-end encrypted messages on its servers for delivery to devices that are temporarily offline (e.g. a phone whose battery has died). Your message history is stored on your own devices.\n\nAdditional technical information is stored on our servers, including randomly generated authentication tokens, keys, push tokens, and other material that is necessary to establish calls and transmit messages. Signal limits this additional technical information to the minimum required to operate the Services.\n\nContacts. Signal can optionally discover which contacts in your address book are Signal users, using a service designed to protect the privacy of your contacts. Information from the contacts on your device may be cryptographically hashed and transmitted to the server in order to determine which of your contacts are registered.\n\nUser Support. If you contact Signal User Support, any personal data you may share with us is kept only for the purposes of researching the issue and contacting you about your case.\n\nManaging your information. You can manage your personal information in Signal’s application Settings. For example, you can update your profile information or choose to enable additional privacy features like a Registration Lock PIN."
+]
+
+[rubric.revision-notify]
+value = "no"
+citations = [
+  "We will update this privacy policy as needed so that it is current, accurate, and as clear as possible. Your continued use of our Services confirms your acceptance of our updated Privacy Policy."
+]

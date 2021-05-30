@@ -1,0 +1,6 @@
+name = "Join.me"
+description = "Join.me is a meeting service from LogMeIn, Inc."
+hostnames = ["join.me"]
+slug = "join-me"
+parent = "logmein"
+contributors = [ "AlexThurman", "doamatto" ]

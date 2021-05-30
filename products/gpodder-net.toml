@@ -1,0 +1,68 @@
+name = "gpodder.net"
+description = "gPodder is a libre service, allowing the playback of a set of audio and video podcast streams."
+slug = "gpodder-net"
+hostnames = [ "gpodder.net" ]
+sources = [ "https://gpodder.net/privacy/" ]
+contributors = [ "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+notes = [ "gPodder doesn't share data for marketing purposes" ]
+
+[rubric.security]
+value = "yes"
+citations = [
+  "We try to protect this data as much as possible by utilizing secure coding practices, and by making sure that updates to vital system packages are always applied from the operating system vendor that we happen to use.\n\nPasswords are stored in hashed format, which means that we cannot retrieve your plaintext password from the database. Instead, when you enter your password, we compare its hash with the stored hash to check its validity. When you forget your password, we cannot tell you old your password, but you can set a new one.\n\nConnections to the web site and API parts are protected via SSL (Secure Socket Layer) HTTP connection (\"HTTPS\"), so that the data is not sent in plain text over the network.\n\nThe code running this web service is open source, and can be audited by independent third parties. We are grateful for any improvement suggestions, and will try to integrate improvement suggestions as quickly as possible."
+]
+
+[rubric.third-party-collection]
+value = "no"
+notes = [ "This service doesn't collect data from third-parties." ]
+
+[rubric.history]
+value = "no"
+notes = [ "There is no date or change-log provided" ]
+
+[rubric.data-deletion]
+value = "no"
+notes = [ "There is no notice on allowing users to delete accounts." ]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "This policy doesn't require the service to alert users in the event of a data breach"
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+notes = [
+  "According to NoScript logs, Ads by Google and Google Analytics is used (and blocked)"
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "We need to store your e-mail address so that we can inform you about news regarding the gpodder.net service. The e-mail address is also used to check your identity to change the password in case of a forgotten password.\n\nYour e-mail address is solely used for the purposes of contacting you in case we upgrade our service, and to reset a forgotten password. We will never sell your e-mail address or give it to third parties.\n\nThe application-specific data is collected as part of the gpodder.net service. Without collection application-specific data, the web service can not be used."
+]
+
+[rubric.noncritical-purposes]
+value = "na"
+notes = [ "Data isn't used for non-critical purposes" ]
+
+[rubric.law-enforcement]
+value = "unspecified"
+notes = [
+  "It's not specified if the service shares data with law enforcement"
+]
+
+[rubric.list-collected]
+value = "exhaustively"
+citations = [
+  "When registering an account on gpodder.net, we store the following information about you:\n\n- E-Mail address\n\nWhen using a client application with gpodder.net, we might store the following application-specific data:\n\n- User-supplied device name and type\n- Per-device subscription list of podcasts\n- Episode actions (e.g. play, download, delete) as sent by the client\n- User-generated content when created inside the client application\n\nDepending on the client application you use, we might only store a subset of this data."
+]
+
+[rubric.revision-notify]
+value = "no"
+notes = [
+  "The policy doesn't require the service to notify users of policy changes"
+]

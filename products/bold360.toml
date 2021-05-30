@@ -1,0 +1,6 @@
+name = "Bold360"
+description = "Bold360 is a live chat and customer engagement service solution from LogMeIn, Inc."
+hostnames = ["bold360.com"]
+slug = "bold360"
+parent = "logmein"
+contributors = [ "AlexThurman", "doamatto" ]

@@ -1,0 +1,70 @@
+name = "Foundation for Applied Privacy DNS"
+description = "Applied Privacy is an encrypted DNS provider by the Foundation for Applied Privacy."
+slug = "foundation-for-applied-privacy-dns"
+hostnames = [ "applied-privacy.net" ]
+sources = [ "https://applied-privacy.net/privacy-policy/" ]
+contributors = [ "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+citations = [
+  "We do NOT share query data with third parties that are not directly involved with resolving the query (i.e. sending queries to authoritative nameservers for resolution)."
+]
+
+[rubric.security]
+value = "na"
+notes = [ "No personal data is collected." ]
+
+[rubric.third-party-collection]
+value = "no"
+notes = [ "No personal data is collected." ]
+
+[rubric.history]
+value = "yes"
+citations = [
+  "Changes\n- 2019-05-31: added: DoH error logging to understand and solve software bugs\n- 2019-12-23: Update DNS domains from appliedprivacy.net -> applied-privacy.net\n- 2020-02-11: added: IP-version logging to better understand the impact of IPv6 issues."
+]
+
+[rubric.data-deletion]
+value = "na"
+citations = [
+  "Since you can use our services anonymously (without registration) we do not have to store any personal information persistently by design."
+]
+
+[rubric.data-breaches]
+value = "na"
+notes = [
+  "No personal data is collected that could be used to contact a user."
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "We aggregate and store the following non-sensitive operational performance metrics for one year for capacity planning and error detection"
+]
+
+[rubric.third-party-access]
+value = "no"
+citations = [
+  "We do NOT share query data with third parties that are not directly involved with resolving the query (i.e. sending queries to authoritative nameservers for resolution)."
+]
+
+[rubric.noncritical-purposes]
+value = "na"
+citations = [
+  "Since you can use our services anonymously (without registration) we do not have to store any personal information persistently by design."
+]
+
+[rubric.law-enforcement]
+value = "na"
+notes = [ "No personal data is collected that could be shared." ]
+
+[rubric.list-collected]
+value = "exhaustively"
+citations = [
+  "We aggregate and store the following metrics for one year for capacity planning and error detection:\n\n- how many queries per second we get on each server (via DNS-over-TLS and DNS-over-HTTPS)\n- how fast we answer queries (in ranges: 0-66ms, 66-131ms, 131-262ms, 262-524ms, ...)\n- how many queries we answer directly from the cache (cache hits)\n- how many queries we get via IPv6\namount of queries by DNS flag (DNSSEC OK, EDNS OPT present, recursion desired, auth. answer, ...)\namount of queries by type (A, AAAA, PTR, ...)\n- amount of DNS answers by return code (NOERROR, FORMERR, SERVFAIL, NXDOMAIN, REFUSED, ...)\n- amount of concurrently open HTTP connections (DoH)\n- HTTP requests per second (DoH)\n\nWhen you make use of our DNS-over-HTTPS service we log the following information on the webserver-level and store it for 14 days:\n- timestamp\n- HTTP response code (200, 404, ...)\n- country from which the query is coming according to geoIP data (AT, DE, ...)\n- The IP-version (\"4\" or \"6\") used to connect to us."
+]
+
+[rubric.revision-notify]
+value = "na"
+notes = [ "No contact information is collected ever." ]

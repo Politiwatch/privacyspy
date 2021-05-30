@@ -1,5 +1,5 @@
 name = "VirusTotal"
-description = "VirusTotal is a free service analyzing URLs and files for malicious content."
+description = "VirusTotal is a free service analyzing URLs and files for malicious content owned by Chronicle, a subsidary of Alphabet."
 slug = "virustotal"
 hostnames = [ "virustotal.com" ]
 sources = [

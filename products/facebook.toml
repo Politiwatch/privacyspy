@@ -1,5 +1,5 @@
 name = "Facebook"
-description = "Facebook, Inc. is the world's largest online social network and has undergone several privacy scandals."
+description = "Facebook is a social media and social networking service."
 slug = "facebook"
 hostnames = [ "facebook.com" ]
 sources = [ "https://www.facebook.com/privacy/explanation" ]
@@ -64,7 +64,7 @@ citations = [
 [rubric.list-collected]
 value = "generally"
 citations = [
-  "\"Device operations: information about operations and behaviors performed on the device, such as whether a window is foregrounded or backgrounded, or mouse movements (which can help distinguish humans from bots).\"\r\n\r\n\"Identifiers: unique identifiers, device IDs, and other identifiers, such as from games, apps or accounts you use, and Family Device IDs (or other identifiers unique to Facebook Company Products associated with the same device or account).\""
+  "\"Device operations: information about operations and behaviors performed on the device, such as whether a window is foregrounded or backgrounded, or mouse movements (which can help distinguish humans from bots).\"\n\n\"Identifiers: unique identifiers, device IDs, and other identifiers, such as from games, apps or accounts you use, and Family Device IDs (or other identifiers unique to Facebook Company Products associated with the same device or account).\""
 ]
 
 [rubric.revision-notify]
@@ -83,4 +83,4 @@ sources = [ "https://techcrunch.com/2019/09/04/facebook-phone-numbers-exposed/" 
 title = "Data Breach"
 description = "More than 540 million records about Facebook users were [publicly exposed](https://www.cbsnews.com/news/millions-facebook-user-records-exposed-amazon-cloud-server/) on Amazon's cloud computing service, according to a cybersecurity research firm."
 date = 2019-08-28T13:35:35.375Z
-sources = [ "https://www.cbsnews.com/news/millions-facebook-user-records-exposed-amazon-cloud-server/" ]
+sources = [ "https://www.cbsnews.com/news/millions-facebook-user-records-exposed-amazon-cloud-server/"]

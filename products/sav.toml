@@ -1,0 +1,75 @@
+name = "Sav"
+description = "Sav (formerly known as NameKing) is a domain registrar."
+slug = "sav"
+hostnames = [ "sav.com", "nameking.com" ]
+sources = [ "https://www.sav.com/pages/privacy" ]
+contributors = [ "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "yes"
+citations = [
+  "Advertisers: We may share aggregated demographic information with our partners and advertisers. This is not linked to any personal information that can identify any individual person."
+]
+notes = [ "There is no explicit opt-out of advertising" ]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "We work to protect the security of your information during transmission by using Secure Sockets Layer (SSL) software, which encrypts information you input and the information we may send to our agents.\n\nIt is important for you to protect against unauthorized access to your password and to your computer. Be sure to sign off when finished using a shared computer."
+]
+
+[rubric.third-party-collection]
+value = "no"
+notes = [ "They do not collect data from third parties" ]
+
+[rubric.history]
+value = "no"
+notes = [ "There is no date or changelog." ]
+
+[rubric.data-deletion]
+value = "no"
+notes = [
+  "There is no notice to allow you to delete your account and data"
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "There is no requirement for the service to alert you of breaches"
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = [
+  "Yes, we do share information; but only as previously mentioned above and described below. Otherwise we will not provide your personal information without your consent.\n\nWHOIS: We are required by ICANN to collect information about you during the domain name registration process. This information is then required by ICANN to be made available to the public via an interactive web page and a \"port 43\" WHOIS service. Please note that we are not able to control how members of the public use the WHOIS information.\n\nAdvertisers: We may share aggregated demographic information with our partners and advertisers. This is not linked to any personal information that can identify any individual person.\n\nPartners: We may partner with other parties to provide specific services. When the user signs up for these services, we may share names or other contact information that is necessary for the third party to provide these services.\n\nAgents: We may engage other companies and individuals to perform functions on our behalf. Examples include processing credit card payments, providing marketing assistance, providing customer services, sending postal mail and email to you, removing repetitive information from customer lists, and analyzing data. These persons have access to personal information needed to perform their functions. These companies do not retain, share, store or use personally identifiable information that you provide to Sav.com for any secondary purposes.\n\nService Providers: We may engage other companies and individuals to perform enhanced services on our behalf. Our service providers may have access to personal information needed to perform their services. These parties are not allowed to use personally identifiable information except for the purpose of providing these services.\n\nBusiness Transfer: As we continue to develop our business, we might sell or buy businesses or their assets. In such transactions, customer information generally is one of the transferred business assets. Also, if Sav.com, or all or substantially all of its assets, were ever to be acquired, customer information will most likely be one of the transferred assets.\n\nCompliance: We release account and other personal information when we believe release is appropriate to comply with law; enforce or apply our agreements; or protect the rights, property, or safety of Sav.com, our users, or others. This includes exchanging information with other companies and organizations for fraud protection and credit risk reduction."
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "The information you provide when registering a domain name (or correcting or updating registration information) is required to allow the Internet to associate the domain name with your computer, to allow us to properly handle your account (including notifying you at renewal time), and to permit others operating or using the Internet to easily contact you to resolve issues that arise in connection with the domain name. It will also be stored under a data escrow program to keep the domain name operating in the event we leave the domain name registration business. When you submit a question to our site, contact information is needed so that we can respond."
+]
+
+[rubric.noncritical-purposes]
+value = "no"
+notes = [
+  "There isn't an option to opt out of non-critical uses of your data"
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "We release account and other personal information when we believe release is appropriate to comply with law; enforce or apply our agreements; or protect the rights, property, or safety of Sav.com, our users, or others. This includes exchanging information with other companies and organizations for fraud protection and credit risk reduction."
+]
+
+[rubric.list-collected]
+value = "generally"
+citations = [
+  "nformation You Give Us: We receive and store any information you enter on our site or give us in any other way. We use the information that you provide for such purposes as responding to your requests, providing our services, and communicating with you.\n\nDomain Name Registration Information: You are required to provide information (a) to register a domain name, (b) to update information about a domain name previously registered, or (c) to submit questions about our service. To register a domain name, you are required to provide the name you are registering; your name and postal address (or those of the person for whom you are registering the name); technical information about the computer with which the domain name will be associated; and the name, postal address, e-mail address, and voice and (where available) fax telephone numbers for the technical, administrative, billing, and zone contacts for the domain name. Once the domain name has been registered, your registration agreement requires you to correct and update this data promptly. If you submit a question about our services, you will be asked to provide your name and e-mail address.\n\n[...]\n\nAutomatic Information: We receive and store certain types of information whenever you interact with us. For example, like many sites, we use \"cookies,\" and we obtain certain types of information when your web browser accesses our site. Examples of the information we collect and analyze include the Internet Protocol (IP) address used to connect your computer to the Internet; computer and connection information such as browser type and version, operating system, and platform; the full Uniform Resource Locators (URL) click stream to, through, and from our site, including date and time. We use IP addresses to analyze trends, administer the site, track user's movement, and gather broad demographic information for aggregate use."
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "If you choose to visit Sav.com sites, your visit and any dispute over privacy is subject to this Policy. If you have any concern about privacy at Sav.com, please send us a thorough description to support@sav.com, and we will try to resolve it. Our business changes constantly. This Policy may change also, and use of information that we gather now is subject to the Policy in effect at the time of use. We may e-mail periodic reminders of our notices and conditions, unless you have instructed us not to, but you should check our site frequently to see recent changes. "
+]

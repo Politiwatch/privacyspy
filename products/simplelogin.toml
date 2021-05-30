@@ -1,0 +1,81 @@
+name = "SimpleLogin"
+description = "SimpleLogin is an open-source email alias solution."
+slug = "simplelogin"
+hostnames = [ "simplelogin.io" ]
+sources = [ "https://simplelogin.io/privacy/" ]
+contributors = [ "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+notes = [ "No data is used for marketing purposes" ]
+
+[rubric.security]
+value = "yes"
+citations = [
+  "All data is encrypted via SSL/TLS when transmitted from our servers to your browser. The database backups are also encrypted. Most data are not encrypted while they live in our database (since it needs to be ready to send to you when you need it), but we go to great lengths to secure your data at rest.\n\nOur servers are provided by UpCloud and AWS. We are using datacenters that are located in Germany, Netherlands and France.\n\nFor more information on our server security, you can consult our security page."
+]
+notes = [
+  "Their security page (https://simplelogin.io/security/) outlines more in-depth info on all of their security practices and measures."
+]
+
+[rubric.third-party-collection]
+value = "no"
+notes = [ "Data is not collected from third-parties." ]
+
+[rubric.history]
+value = "yes"
+citations = [
+  "Last updated: April 22, 2020\n\n[...]\n\nYou can see a history of the changes to our policies on Github."
+]
+notes = [
+  "The GitHub repo is at https://github.com/simple-login/website"
+]
+
+[rubric.data-deletion]
+value = "yes-automated"
+citations = [
+  "In SimpleLogin, you have the option to delete your account. Your account along with all your information are deleted immediately in the running database. All your information will be purged from our system in 7 days, including: - our database backups that are kept up to 7 days - our logs that are deleted after 7 days"
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "There is no information provided that they would notify users of such breaches."
+]
+
+[rubric.third-party-access]
+value = "yes-specified-critical"
+citations = [
+  "When you pay for a SimpleLogin product, we ask for your credit card or PayPal and billing address. That’s so we can charge you for service, calculate taxes due, and send you invoices. Your credit card is passed directly to our payment processor and doesn’t ever go through our servers.\n\nCurrently we rely on Paddle to process credit card and PayPal transactions. Payments via our iOS app are processed by Apple. Anonymous cash, cryptocurrency payments and donations are accepted however."
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "Identity & access\nIn order to create an account, we require your email address. We also give you the option to add a name and profile picture that displays in our products, but we do not normally look at or access these information. We’ll never sell your personal info to third parties, and we won’t use your name in marketing statements without your permission either.\n\nBilling information\nWhen you pay for a SimpleLogin product, we ask for your credit card or PayPal and billing address. That’s so we can charge you for service, calculate taxes due, and send you invoices. Your credit card is passed directly to our payment processor and doesn’t ever go through our servers.\n\nCurrently we rely on Paddle to process credit card and PayPal transactions. Payments via our iOS app are processed by Apple. Anonymous cash, cryptocurrency payments and donations are accepted however.\n\nVoluntary correspondence\nWhen you write to us with a question or to ask for help, we keep that correspondence, including the email address, so that we have a history of past correspondences to reference if you reach out in the future."
+]
+
+[rubric.noncritical-purposes]
+value = "na"
+citations = [
+  "Right to Restrict Processing. This is your right to request restriction of how and why your personal information is used or processed, including opting out of sale of personal information. (Again: we never have and never will sell your personal data)."
+]
+notes = [ "No data is processed for non-critical purposes." ]
+
+[rubric.law-enforcement]
+value = "strict"
+citations = [
+  "When required under applicable law. If the appropriate law enforcement authorities have the necessary warrant, criminal subpoena, or court order requiring we share data, we have to comply. And unless we’re legally prevented from it, we’ll always inform you when such requests are made. We have never received a such request from the government."
+]
+
+[rubric.list-collected]
+value = "exhaustively"
+citations = [
+  "Identity & access\nIn order to create an account, we require your email address. We also give you the option to add a name and profile picture that displays in our products, but we do not normally look at or access these information. We’ll never sell your personal info to third parties, and we won’t use your name in marketing statements without your permission either.\n\nBilling information\nWhen you pay for a SimpleLogin product, we ask for your credit card or PayPal and billing address. That’s so we can charge you for service, calculate taxes due, and send you invoices. Your credit card is passed directly to our payment processor and doesn’t ever go through our servers.\n\nCurrently we rely on Paddle to process credit card and PayPal transactions. Payments via our iOS app are processed by Apple. Anonymous cash, cryptocurrency payments and donations are accepted however.\n\nVoluntary correspondence\nWhen you write to us with a question or to ask for help, we keep that correspondence, including the email address, so that we have a history of past correspondences to reference if you reach out in the future."
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "We may update this policy as needed to comply with relevant regulations and reflect any new practices. You can see a history of the changes to our policies on Github. Whenever we make a significant change to our policies, we will also announce them on our company blog."
+]
