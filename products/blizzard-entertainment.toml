@@ -71,6 +71,6 @@ notes = ["They also use third-party analytical trackers on their websites, which
 [rubric.third-party-collection]
 value = "yes"
 citations = [
-  "Blizzard may enhance or merge the personal information collected at a Blizzard website with data from third parties in order to update your contact information, perform market analysis, or improve our products, services, or systems.".
+  "Blizzard may enhance or merge the personal information collected at a Blizzard website with data from third parties in order to update your contact information, perform market analysis, or improve our products, services, or systems.",
   "Occasionally, Blizzard may use third party contractors to collect and process personal information on its behalf (for product and prize fulfillment, etc.). In these instances, Blizzard controls the use of your data via written contracts which conform to this Privacy Policy."
 ]
