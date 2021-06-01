@@ -1,0 +1,76 @@
+name = "Blizzard Entertainment"
+description = "American video game developer and publisher based in Irvine, California."
+slug = "blizzard-entertainment"
+hostnames = [
+  "blizzard.com",
+  "battle.net",
+  "starcraft.com",
+  "starcraft2.com",
+  "diablo3.com",
+  "worldofwarcraft.com",
+  "playwarcraft3.com",
+  "playoverwatch.com",
+  "diabloimmortal.com",
+  "heroesofthestorm.com"
+]
+sources = ["https://www.blizzard.com/en-us/legal/a4380ee5-5c8d-4e3b-83b7-ea26d01a9918/blizzard-entertainment-online-privacy-policy"]
+contributors = ["Deivedux"]
+
+[rubric.behavioral-marketing]
+value = "yes-opt-out"
+citations = [
+  "Our ad network partners may use tracking technologies to collect information about your activities on this and other websites to provide you targeted advertising based upon your interests.",
+  "You can exercise choices over how Blizzard uses your personal information and update your preferences at any time:\r\n- to remove yourself from receiving targeted email marketing or newsletters from Blizzard, simply click the unsubscribe link in the email or access your Battle.net account and edit your email communication preferences."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = ["The policy does not specify a data breach protocol."]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+notes = ["The policy contains a lengthy \"How we use your information\" paragraph in the first section."]
+
+[rubric.data-deletion]
+value = "no"
+citations = [
+  "You may also submit a verifiable request for us to delete either: (1) your marketing information; or (2) your Battle.net account and your marketing information.",
+  "We may retain personal information to: (a) protect our business, systems, and users from fraudulent activity, (b) to address technical issues that impair existing functionality, (c) necessary for us, or others, to exercise their free speech or other rights, (d) comply with law enforcement requests pursuant to lawful process, (e) for scientific or historical research, (f) for our own internal purposes reasonably related to your relationship with us, or to comply with legal obligations."
+]
+
+[rubric.history]
+value = "no"
+notes = ["The policy's history is not made available."]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = ["We reserve the right to disclose your Information if we are required to do so by law. We may also disclose your information to law enforcement or in civil litigation in connection with the enforcement of our rights or your legal obligations (e.g., bringing legal action against you if you are violating the EULA)."]
+
+[rubric.list-collected]
+value = "generally"
+notes = ["The policy contains a lengthy \"Information collected from you\" paragraph in the first section, though it uses an ambiguous language to avoid concrete statements."]
+
+[rubric.noncritical-purposes]
+value = "no"
+notes = ["Who and what information is being collected is mentioned in various places in the policy, though not a single one about users controlling that behavior, or is otherwise ambiguous to comprehend as one."]
+
+[rubric.revision-notify]
+value = "no"
+citations = ["This Privacy Policy may change from time to time, so please check back periodically to ensure that you are aware of any changes. If we make a material change to this Privacy Policy, we will notify you by posting the change on our websites or in this Privacy Policy and, if necessary, give you additional choices regarding such change before the change becoming effective."]
+notes = ["The users are not independantly notified of the policy changes unless they visit the website."]
+
+[rubric.security]
+value = "somewhat"
+citations = ["Blizzard takes a range of security measures designed to protect your personal information and keep it confidential (unless it is non-confidential by nature, for example, publicly-available information like user generated content, leaderboard rankings, forum posts and scores, etc.). We also take steps to ensure that the personal information collected is protected from misuse and alteration. In addition, we request vendors who process personal information on our behalf to themselves take a range of security measures designed to help protect your personal information."]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = ["Data within each of the categories of data above may be shared with third parties for the following purposes:\r\n- With partners and service providers to operate our systems, deliver goods or services you have requested, or to assist us with marketing"]
+notes = ["They also use third-party analytical trackers on their websites, which are not mentioned in the policy."]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "Blizzard may enhance or merge the personal information collected at a Blizzard website with data from third parties in order to update your contact information, perform market analysis, or improve our products, services, or systems.".
+  "Occasionally, Blizzard may use third party contractors to collect and process personal information on its behalf (for product and prize fulfillment, etc.). In these instances, Blizzard controls the use of your data via written contracts which conform to this Privacy Policy."
+]
