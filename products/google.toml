@@ -1,7 +1,7 @@
 name = "Google"
-description = "Google is an American technology and advertising giant known for its search engine and cloud services."
+description = "Google is an American technology and advertising company known for its search engine and cloud services."
 slug = "google"
-hostnames = [ "google.com", "google" ]
+hostnames = [ "google.com", "youtube.com", "google" ]
 sources = [ "https://policies.google.com/privacy" ]
 contributors = [ "ibarakaiev" ]
 
@@ -14,13 +14,13 @@ citations = [
 [rubric.security]
 value = "yes-audits"
 citations = [
-  "\"We work hard to protect you and Google from unauthorized access, alteration, disclosure, or destruction of information we hold, including:\r\n\r\n- We use encryption to keep your data private while in transit\r\n- We offer a range of security features, like Safe Browsing, Security Checkup, and 2 Step Verification to help you protect your account\r\n- We review our information collection, storage, and processing practices, including physical security measures, to prevent unauthorized access to our systems\r\n- We restrict access to personal information to Google employees, contractors, and agents who need that information in order to process it. Anyone with this access is subject to strict contractual confidentiality obligations and may be disciplined or terminated if they fail to meet these obligations.\""
+  "\"We work hard to protect you and Google from unauthorized access, alteration, disclosure, or destruction of information we hold, including:\n\n- We use encryption to keep your data private while in transit\n- We offer a range of security features, like Safe Browsing, Security Checkup, and 2 Step Verification to help you protect your account\n- We review our information collection, storage, and processing practices, including physical security measures, to prevent unauthorized access to our systems\n- We restrict access to personal information to Google employees, contractors, and agents who need that information in order to process it. Anyone with this access is subject to strict contractual confidentiality obligations and may be disciplined or terminated if they fail to meet these obligations.\""
 ]
 
 [rubric.third-party-collection]
 value = "yes"
 citations = [
-  "\"In some circumstances, Google also collects information about you from publicly accessible sources. For example, if your name appears in your local newspaper, Google’s Search engine may index that article and display it to other people if they search for your name. We may also collect information about you from trusted partners, including marketing partners who provide us with information about potential customers of our business services, and security partners who provide us with information to protect against abuse. We also receive information from advertisers to provide advertising and research services on their behalf.\r\n\r\nWe use various technologies to collect and store information, including cookies, pixel tags, local storage, such as browser web storage or application data caches, databases, and server logs.\""
+  "\"In some circumstances, Google also collects information about you from publicly accessible sources. For example, if your name appears in your local newspaper, Google’s Search engine may index that article and display it to other people if they search for your name. We may also collect information about you from trusted partners, including marketing partners who provide us with information about potential customers of our business services, and security partners who provide us with information to protect against abuse. We also receive information from advertisers to provide advertising and research services on their behalf.\n\nWe use various technologies to collect and store information, including cookies, pixel tags, local storage, such as browser web storage or application data caches, databases, and server logs.\""
 ]
 
 [rubric.history]
@@ -32,7 +32,7 @@ citations = [
 [rubric.data-deletion]
 value = "yes-automated"
 citations = [
-  "\"You can export a copy of content in your Google Account if you want to back it up or use it with a service outside of Google.\"\r\n\r\n\"To delete your information, you can:\r\n- Delete your content from specific Google services\r\n- Search for and then delete specific items from your account using My Activity\r\n- Delete specific Google products, including your information associated with those products\r\n- Delete your entire Google Account\""
+  "\"You can export a copy of content in your Google Account if you want to back it up or use it with a service outside of Google.\"\n\n\"To delete your information, you can:\n- Delete your content from specific Google services\n- Search for and then delete specific items from your account using My Activity\n- Delete specific Google products, including your information associated with those products\n- Delete your entire Google Account\""
 ]
 
 [rubric.data-breaches]
@@ -62,13 +62,13 @@ citations = [
 [rubric.law-enforcement]
 value = "reasonable"
 citations = [
-  "\"We will share personal information outside of Google if we have a good-faith belief that access, use, preservation, or disclosure of the information is reasonably necessary to:\r\n\r\n...\r\n- Meet any applicable law, regulation, legal process, or enforceable governmental request. We share information about the number and type of requests we receive from governments in our Transparency Report.\""
+  "\"We will share personal information outside of Google if we have a good-faith belief that access, use, preservation, or disclosure of the information is reasonably necessary to:\n\n...\n- Meet any applicable law, regulation, legal process, or enforceable governmental request. We share information about the number and type of requests we receive from governments in our Transparency Report.\""
 ]
 
 [rubric.list-collected]
 value = "generally"
 citations = [
-  "\"The activity information we collect may **include**: ...\"\r\n\r\n\"The information we collect **includes**: ...\"\r\n\r\n\"If you’re using an Android device with Google apps, your device periodically contacts Google servers to provide information about your device and connection to our services. This information **includes** things like your device type, carrier name, crash reports, and which apps you've installed.\""
+  "\"The activity information we collect may **include**: ...\"\n\n\"The information we collect **includes**: ...\"\n\n\"If you’re using an Android device with Google apps, your device periodically contacts Google servers to provide information about your device and connection to our services. This information **includes** things like your device type, carrier name, crash reports, and which apps you've installed.\""
 ]
 
 [rubric.revision-notify]

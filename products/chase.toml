@@ -1,0 +1,92 @@
+name = "Chase"
+description = "JPMorgan Chase is a banking company in the United States."
+slug = "chase"
+hostnames = [ "chase.com" ]
+sources = [
+  "https://www.chase.com/digital/resources/privacy-security/privacy/online-privacy-policy.html"
+]
+contributors = [ "UnKnOwN" ]
+
+[rubric.behavioral-marketing]
+value = "yes-opt-out"
+citations = [
+  "We, or our service providers, and other companies we work with may deploy and use cookies, web beacons, local shared objects and other tracking technologies for various purposes, such as fraud prevention and monitoring our advertising and marketing campaign performance.\n"
+]
+notes = [
+  "If you do not want your information collected and used by the companies we work with for OBA purposes, you can opt out of this form of OBA."
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "We use 128-bit encryption technology to protect your username, password and other personal account information when you’re using our site or apps."
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "We may also collect information about you from additional online and offline sources including from co-branded partner sites or commercially available third-party sources, such as credit reporting agencies.  We may combine this information with the personal and other information we have collected about you under this Online Privacy Policy."
+]
+
+[rubric.history]
+value = "last-modified"
+notes = [
+  "The last modified date is available at the top of the policy."
+]
+
+[rubric.data-deletion]
+value = "no"
+notes = [
+  "Nothing is mentioned about data deletion in the privacy policy."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "Nothing is mentioned about data breaches in the privacy policy."
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = [
+  "For example, we may share your information with:\n\nChase third-party service providers;\n\nChase affiliated websites and businesses in an effort to bring you improved service across our family of products and services, when permissible under relevant laws and regulations;\n\nOther companies to bring you co-branded services, products or programs;   \n\nThird parties or affiliates in connection with a corporate transaction, such as a sale, consolidation or merger of Chase businesses; \n\nOther third parties to comply with legal requirements such as the demands of applicable subpoenas and court orders; to verify or enforce our terms of use, our other rights, or other applicable policies; to address fraud, security or technical issues; to respond to an emergency; or otherwise to protect the rights, property or security of our customers or third parties."
+]
+
+[rubric.data-collection-reasoning]
+value = "mostly"
+citations = [
+  "We use the information discussed above in a number of ways, such as:\n\nProcessing applications and transactions;\n\nVerifying your identity (such as when you access your account information);\n\nPreventing fraud and enhancing the security of your account or our online services;\n\nResponding to your requests and communicating with you;\n\nManaging your preferences;\n\nPerforming analytics concerning your use of our online services, including your responses to our emails and the pages and advertisements you view;\n\nProviding you tailored content and marketing messages;\n\nOperating, evaluating and improving our business (including developing new products and services; improving existing products and services; performing data analytics; and performing accounting, auditing and other internal functions);\n\nComplying with and enforcing applicable legal requirements, relevant industry standards, contractual obligations and our policies; and\n\nFor any other purposes that we may specifically disclose at the time you provide or we collect your information.\n\nWe may also use data that we collect on an aggregate or anonymous basis (such that it does not identify any individual customers) for various business purposes, where permissible under applicable laws and regulations."
+]
+notes = [
+  "While the policy does a generally good job explaining how it uses the data, not all information is accompanied by a clear explanation."
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-some"
+notes = [
+  "You can opt-out of online behavioral advertising, however, your personal data can still be used for non-critical purposes (for example for analytics)."
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "For example, we may share your information with: [...] Other third parties to comply with legal requirements such as the demands of applicable subpoenas and court orders. "
+]
+notes = [
+  "As \"such as\" phrase is used, it can't be stated that the company shares the data only(!) when required by a court order or subpoena."
+]
+
+[rubric.list-collected]
+value = "generally"
+notes = [
+  "The groups of information are stated, however, their explanation is not absolute as many \"for example\" phrases are used."
+]
+
+[rubric.revision-notify]
+value = "no"
+citations = [
+  "We may change this Online Privacy Policy from time to time.  When we do, we will let you know by appropriate means such as by posting the revised policy on this page with a new “Last Updated” date.  Any changes to this Online Privacy Policy will become effective when posted unless indicated otherwise."
+]
+notes = [
+  "It's not said that you will be notified when the privacy policy is changed."
+]

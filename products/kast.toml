@@ -1,0 +1,80 @@
+name = "Kast"
+description = "Kast is a live streaming platform for broadcasting content video and gaming content."
+slug = "kast"
+hostnames = [ "www.kastapp.co/" ]
+sources = [ "https://www.kastapp.co/legal/Kast_Privacy_Policy.htm" ]
+contributors = [ "JanaR", "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "yes"
+citations = [
+  "Information We Collect Through Automatic Data Collection Technologies [...] Details of your visits to our Website, Apps and our Services, including traffic data, access times, accessed pages, location data, logs, and other communication data and the resources that you access and use on the Website or Apps.\n[...] \nMixpanel ( https://mixpanel.com/legal/privacy-policy/ ). We use Mixpanel for behavioural analytics."
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "We have implemented measures designed to secure your Personal Information from accidental loss and from unauthorized access, use, alteration, and disclosure. We encrypt all information during transmission. All information you provide to us is stored on our secure servers behind firewalls, and we implement the services of a third party hosting company to provide backup services."
+]
+notes = [
+  "Not mentioned, which third party service provider specifically or what kinds of security services they provide."
+]
+
+[rubric.third-party-collection]
+value = "critical-only"
+citations = [
+  "When you subscribe to the Services or make other purchases, you must provide information to Our third party payment processor supporting a valid payment method, including credit card information. This information will include accurate and complete billing information including your full name, address, state, zip code, telephone number, and valid payment method information. By submitting such payment information, you authorize Us to charge all purchases and Subscription Services’ fees incurred through your account to your credit card. You also agree to be bound by our third-party payment processor’s terms of use and privacy policy. You understand and agree to not hold Us liable for any adverse effects that actions (whether intentional or unintentional) on the part of our third-party payment processing service may cause."
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [ "Last updated: February 19, 2020" ]
+
+[rubric.data-deletion]
+value = "yes-contact"
+citations = [
+  "You have rights to your data, and you can request to delete or transfer your data upon cancelling any account that you may have with us in accordance with this Policy. You can review and change your some of your Personal Information by emailing support@kastapp.co ."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [ "No information given" ]
+
+[rubric.third-party-access]
+value = "yes-specified-noncritical"
+citations = [
+  "All Personal Information remains private with us and is not distributed, rented, shared or sold to any outside organizations without your consent except as described in this Policy. We may disclose aggregated information about our users, and information that does not identify any individual, without restriction.\n\nWe may disclose or share information, including Personal Information, that we collect or you provide as described in this Policy:\n\nTo contractors, service providers, and other third parties we use to support our business and who are bound by contractual obligations to keep Personal Information confidential and use it only for the purposes for which we disclose it to them.\nTo a buyer or other successor in the event of a merger, divestiture, restructuring, reorganization, dissolution, or other sale or transfer of some or all of the assets of the Company, whether as a going concern or as part of bankruptcy, assignment for the benefit of creditors, liquidation, or similar proceeding, or the application of laws or equitable principles affecting creditors’ rights generally, in which information, including Personal Information, held by the Company about our Website and Apps’ users is among the assets transferred.\nTo fulfill the purpose for which you provide it.\nTo our third party e-mail mailing list provider, (e.g., MailChimp).\nFor any other purpose disclosed by us when you provide the information.\nWith your consent.\nWe may also disclose your information, including Personal Information:\n\nTo cooperate with government and law enforcement officials and private parties to enforce and comply with the law, including to comply with any court order, law, or legal process (including responses to subpoenas), including to respond to any government or regulatory request.\nTo enforce or apply any terms of service we may have and other agreements.\nTo prevent or to stop activity that we believe is illegal or unethical.\nIf we believe disclosure is necessary or appropriate to protect the rights, property, or safety of the Company, our customers, or others. This includes exchanging information with other companies and organizations for the purposes of fraud protection, credit risk reduction, and resolving disputes.\n\n[...]\n\nBugsnag (https://docs.bugsnag.com/legal/privacy-policy/). We use Bugsnag to track errors that may occur in our desktop and mobile applications.\nGoogle, Inc. (https://policies.google.com/privacy ). We use Google for analytics for usage statistics and analytics.\nMixpanel ( https://mixpanel.com/legal/privacy-policy/ ). We use Mixpanel for behavioural analytics.\nDashbird (https://dashbird.io). We use Dashbird to analyze server logs.\nCodeship: (https://codeship.com/privacy). We use CodeShip for continuous integration and deployment services.\nAmazon Web Services (https://aws.amazon.com/privacy/). We use Amazon Web Services for server, storage, and network infrastructure.\nBacktrace (https://backtrace.io/privacy-policy/). We use Backtrace to capture, report and analyze client crash dumps.\nMailchimp (https://mailchimp.com/legal/privacy/). We use Mailchimp to send and track the deliverability of transactional, marketing and promotional emails.\nBranch (https://branch.io/policies/#privacy). We use Branch to learn how our applications are being used and target our messages accordingly."
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "The information we collect automatically may include Personal Information, or and we may maintain it or associate it with Personal Information we collect in other ways or receive from third parties. It Such collection and association helps us to improve our Website, Apps and the Services offered and to deliver a better and more personalized service, including by enabling us to:\n\nEstimate our audience size and usage patterns.\nStore information about your preferences, allowing us to customize our Website, and Apps and Service according to your individual interests.\nSpeed up your searches.\nRecognize you when you return to our Website.\nIdentify you and ensure the security of our Website, the Apps and the Services and the transmission and storage of data between you and us.\nControl unauthorized use or abuse of our Website, the Apps and our Services.\n\n[...]\n\nWe use the information that we collect about you or that you provide to us, including any Personal Information:\n\nTo present our Website and its contents to you;\nTo provide the Apps and their contents to you;\nTo personalize and improve your experience with the Website and the Apps;\nTo provide you with information, products, or services that you request from us;\nTo fulfill any other purpose for which you provide it;\nTo provide you with notices about your account;\nTo carry out our obligations and enforce our rights arising from any contracts entered into between you and us;\nTo notify you about changes to our Website or Apps and any products or services we offer or provide though them;\nTo allow you to participate in interactive features on our Website and Apps;\nTo enable you to communicate with other users;\nTo contact you and provide you with help if you have a customer service issue;\nTo identify and protect you and maintain your account;\nTo notify you of new products or services we think you might be interested in;\nIn any other way we may describe when you provide the information; and\nFor any other purpose with your consent."
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-some"
+citations = [
+  "We do not control third parties’ collection or use of your information to serve interest-based advertising. However these third parties may provide you with ways to choose not to have your information collected or used in this way. You can opt out of receiving targeted ads from members of the Network Advertising Initiative (“ NAI ”) on NAI’s website https://optout.networkadvertising.org/?c=1#!/ .\n\n"
+]
+
+[rubric.law-enforcement]
+value = "always"
+citations = [
+  "We may also disclose your information, including Personal Information:\n\nTo cooperate with government and law enforcement officials and private parties to enforce and comply with the law, including to comply with any court order, law, or legal process (including responses to subpoenas), including to respond to any government or regulatory request.\nTo enforce or apply any terms of service we may have and other agreements.\nTo prevent or to stop activity that we believe is illegal or unethical.\nIf we believe disclosure is necessary or appropriate to protect the rights, property, or safety of the Company, our customers, or others. This includes exchanging information with other companies and organizations for the purposes of fraud protection, credit risk reduction, and resolving disputes."
+]
+notes = [
+  "No backdoor known, but a cooperation policy that may suggest disclosure of information at requests that are not even 'reasonable'."
+]
+
+[rubric.list-collected]
+value = "generally"
+citations = [
+  "Information We Collect About You and How We Collect It\nWe generally collect several types of information from and about users of our Website and Apps and users who communicate with us, including information:\n\nBy which you may be personally identified, such as your vanity user name, e-mail address, profile pictures, or any other information that we collect through the Website or Services that is defined as personal or personally identifiable information under any applicable law (“ Personal Information ”);”).\nRequired for us to identify and authenticate you and secure your interactions with the Website and the Apps.\nThat is about you but individually does not identify you. For instance, we collect information about your self-reported interests.\nAbout your internet connection, the equipment you use to access our Website and Services and usage details.\n\nWe collect this information:\n\nDirectly from you when you provide it to us.\nAutomatically as you navigate through the Website, Apps or use our Services. Information collected automatically may include, including information on your usage details of the Website, Apps or Service, your computer or digital device’s ID or IP addresses address(that is, a unique string of numbers that identifies each device using the Internet Protocol to communicate over the internet), and information collected through cookies, pixels and web beacons (we describe what these are in the section of this Privacy Policy captioned “Information We Collect Through Automatic Data Collection Technologies.”).\n\n[...]\n\nInformation We Collect Through Automatic Data Collection Technologies. As you navigate through and interact with our Website, our Apps or use our Services we may also use automatic data collection technologies to collect certain information about your equipment, browsing actions, and patterns, including:\n\nDetails of your visits to our Website, Apps and our Services, including traffic data, access times, accessed pages, location data, logs, and other communication data and the resources that you access and use on the Website or Apps.\nDetails of whether or not our users have opened our emails, although we only use this data to know track the aggregate number of users who have opened our emails, not whether any particular user opened a specific email.\nInformation about your computer and internet connection, including your IP address, domain name, device ID, operating system, browser type and language, and other unique identifying information, including information of machines that have our software downloaded and installed on them.\nThe information we collect automatically may include Personal Information, or and we may maintain it or associate it with Personal Information we collect in other ways or receive from third parties. It Such collection and association helps us to improve our Website, Apps and the Services offered and to deliver a better and more personalized service, including by enabling us to:\n\nEstimate our audience size and usage patterns.\nStore information about your preferences, allowing us to customize our Website, and Apps and Service according to your individual interests.\nSpeed up your searches.\nRecognize you when you return to our Website.\nIdentify you and ensure the security of our Website, the Apps and the Services and the transmission and storage of data between you and us.\nControl unauthorized use or abuse of our Website, the Apps and our Services.\nThe technologies we use for this automatic data collection may include:\n\nCookies (or browser cookies). A cookie is a small file placed on the hard drive of your computer. You can use your browser settings to instruct your browser to stop accepting cookies or to prompt you before accepting a cookie from the websites you visit. However, if you select this setting you may be unable to access certain parts of our Website, the Apps or use certain Services. Unless you have adjusted your browser setting so that it will refuse cookies, our system will issue cookies when you direct your browser to our Website. You can still review the Website if you choose to set your browser to refuse all cookies; however, session cookies must be enabled to establish an account and to download and install any of our software.\nWeb Beacons. Pages of our the Website, the Apps and our emails may contain small electronic files known as web beacons (also referred to as clear gifs, pixel tags, and single-pixel gifs) that permit the Company, for example, to count users who have visited those pages or opened an email and for other related website statistics (for example, recording the popularity of certain website content and verifying system and server integrity).\nPersonal Information is not collected by us via cookies and other tracking technologies. If you have previously provided Personal Information to us, however, cookies may be tied, linked or associated to such information. We do not collect real-time information through the Website, any App or the Services about the location of your device.\n\n"
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "Changes to Our Privacy Policy\nIt is our policy to post any changes we make to our Policy on this page with a notice that the Policy has been updated on the Website home page. If we make material changes to how we treat our users’ Personal Information, we will notify you by email to the email address specified in your account or through a notice on the Website home page or through notice posted in the Apps. The date the Policy was last revised is identified at the top of the page. You are responsible for ensuring we have an up-to-date active and deliverable email address for you, and for periodically visiting our Website and this Policy to check for any changes."
+]

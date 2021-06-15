@@ -1,0 +1,86 @@
+name = "Invidious"
+description = "Invidious is an alternative front-end to YouTube."
+slug = "invidious"
+hostnames = [ "invidio.us" ]
+sources = [ "https://invidio.us/privacy" ]
+contributors = [ "Anonymous", "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+citations = [
+  "> Data that you provide to the website for the purpose of the site's operation (for example: an account name, account password, or channel subscription) will be stored in the website's database until the user decides to remove it. This data will not be intentionally shared with anyone or anything.\n\nand\n\n> This website does not store the visitor's user-agent or IP address and does not use fingerprinting, advertisements, or tracking of any form."
+]
+notes = [ "Only the data used for site operation is stored." ]
+
+[rubric.security]
+value = "na"
+citations = [
+  "Information about a request is limited to:\n\n- the time the request was made\n- the status code of the response\n- the method of the request\n- the requested URL\n- how long it took to complete the request.\n\nNo identifying information is logged, such as the visitor's cookie, user-agent, or IP address."
+]
+notes = [
+  "But notice that if you log in, the website will store your watch history, subscription data, and user preference, which can potentially be personally identifiable."
+]
+
+[rubric.third-party-collection]
+value = "no"
+citations = [
+  "> If a user is logged in with a Google account, no password will ever be stored. This website uses the session token provided by Google to identify a user, but does not store the information required to make requests on a user's behalf without their knowledge or consent.\n\nand \n\n> This website provides links to googlevideo.com to provide audio and video playback. googlevideo.com is owned by Google and is subject to their privacy policy."
+]
+notes = [
+  "All the data provided is for the function of the site.\n\nOnly third party data mentioned in the privacy policy is to \n- use google login token (if login through google)\n- request the video/audio data from YouTube"
+]
+
+[rubric.history]
+value = "yes"
+citations = [
+  "https://github.com/omarroth/invidious/blob/master/src/invidious/views/privacy.ecr"
+]
+notes = [ "Trackable through github repo" ]
+
+[rubric.data-deletion]
+value = "yes-automated"
+citations = [
+  "To remove data stored in your browser, you can log out of the website, or you can use your browser's cookie-related controls to delete the data.\n\nTo remove data that has been stored in the website's database, you can use the delete my account page."
+]
+
+[rubric.data-breaches]
+value = "na"
+notes = [
+  "The service never need the user to provide any contact information, therefore cannot contact the user."
+]
+
+[rubric.third-party-access]
+value = "no"
+citations = [
+  "This website does not store the visitor's user-agent or IP address and does not use fingerprinting, advertisements, or tracking of any form."
+]
+notes = [ "They don't even store user identifiable data. " ]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "Data you directly provide: \n    a list of session tokens for remaining logged in across devices\n    the last time an account was updated (to provide accurate notifications)\n    a list of video IDs identifying notifications from a user's subscriptions\n    a list of channel UCIDs the user is subscribed to\n    a user ID (for persistent storage of subscriptions and preferences)\n    a json object containing user preferences\n    a hashed password if applicable (not present on google accounts)\n    a randomly generated token for providing an RSS feed of a user's subscriptions\n    a list of video IDs identifying watched videos\n\nData you passively provide:\n    the time the request was made\n    the status code of the response\n    the method of the request\n    the requested URL\n    how long it took to complete the request.\n\nData stored in your browser:\n    An account token to keep you logged into the website between visits, which is sent when any page is loaded while you are logged in\n"
+]
+
+[rubric.noncritical-purposes]
+value = "na"
+notes = [ "No personal data is stored" ]
+
+[rubric.law-enforcement]
+value = "na"
+citations = [
+  "This website does not store the visitor's user-agent or IP address and does not use fingerprinting, advertisements, or tracking of any form."
+]
+
+[rubric.list-collected]
+value = "na"
+citations = [
+  "This website does not store the visitor's user-agent or IP address and does not use fingerprinting, advertisements, or tracking of any form."
+]
+
+[rubric.revision-notify]
+value = "na"
+citations = [
+  "This website does not store the visitor's user-agent or IP address and does not use fingerprinting, advertisements, or tracking of any form."
+]
+notes = [ "You don't need contact-information to create an account." ]

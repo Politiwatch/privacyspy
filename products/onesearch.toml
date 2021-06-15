@@ -1,0 +1,75 @@
+name = "OneSearch"
+description = "OneSearch is a free privacy-focused search engine from Verizon Media."
+slug = "onesearch"
+hostnames = [ "onesearch.com" ]
+sources = [
+  "https://www.onesearch.com/privacy-policy?hspart=ono&hsimp=yhs-df"
+]
+contributors = [ "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+citations = [
+  "As part of the process of selecting what advertising to provide you we do not consider any of your previous search history or any other Personal Data that identifies you. Rather, we only provide these contextual advertisement and/or search results based on each individual search that you perform. For example, if you search for “flower shops” we may display an advertisement/search result for one or more flower shops. We will sometimes provide your Search Query and/or your general location to advertising partners in order to provide you with advertisements/search results but the information they receive is never identifiable to you as we do not provide your IP Address to any advertising partners."
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "We take appropriate technical and organizational measures to ensure a level of security in relation to your Personal Data that is appropriate to any risk associated with it.\n\nYour Personal Data is processed and stored in servers that are located in the USA or another country where we have engaged Search Providers or from which we operate the Service."
+]
+
+[rubric.third-party-collection]
+value = "critical-only"
+citations = [
+  "The way in which we use this data to fulfill your Search Query is that your IP Address, Search Query, UA and Location Data will be transferred by us to our Search Provider, so that the actual search request can be made through their search engine. The Search Provider will then provide our service with results for your Search Query.\n\nAfter the Search Provider has provided us with search results we may also undertake a Search Optimization process, including input by Search Partners. We then provide search results to your browser so that you can see them."
+]
+
+[rubric.history]
+value = "no"
+notes = [ "No date or changelog" ]
+
+[rubric.data-deletion]
+value = "yes-automated"
+citations = [
+  "You have the right to request deletion of the personal information we have collected about you. We will need to verify your identity before we can fulfill your request to delete. The verification process may vary depending on the nature of the request. However, as described in the main OneSearch Privacy Notice, the Service is designed to delete or Obfuscate personal information it receives within 4 days of collection, without the need for you to request this.\n\nWe will retain certain personal information in accordance with our records retention program and securely delete it at the end of the retention period, in order to detect security incidents, perform fraud monitoring, or comply with the California Electronic Communications Privacy Act or another legal obligation."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [ "This service isn't required to disclose data breaches" ]
+
+[rubric.third-party-access]
+value = "yes-unspecified-critical"
+citations = [
+  "General information: Except as necessary to provide the Search engine, we never share Personal Data we receive from you unless: (a) we have your separate and explicit permission to share that information or (b) we have given you prior notice that the information will be shared, and with whom (such as in this Privacy Notice).\n\nAs further detailed under Section 3.7, full IP Addresses are stored for 4 days by the Search Provider solely for Network Traffic Protection.\n\nLegal Obligations and Terms of Service Enforcement. We reserve the right to access, preserve and disclose any Personal Data to investigate, prevent, or take action in connection with legal process and legal requests, and for enforcement of the Terms of Service."
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "Below we will describe the Personal Data collection and processing that takes place when you use this Service. Please note you may need to refer to section 2 (\"Definitions\") for more detailed information.\n\nWhen you input a Search Query your IP Address, the Search Query and UA will be securely transferred, using HTTPS Encryption, from your browser to our Search Stack.\n\nWe process your IP Address, UA and Search Query together to fulfill your search. We derive Location Data from your IP Address so that we can provide useful location specific search results (e.g. if you search \"flower shops\" then flower shops in your city area should be provided in the results).\n\nThe way in which we use this data to fulfill your Search Query is that your IP Address, Search Query, UA and Location Data will be transferred by us to our Search Provider, so that the actual search request can be made through their search engine. The Search Provider will then provide our service with results for your Search Query.\n\nAfter the Search Provider has provided us with search results we may also undertake a Search Optimization process, including input by Search Partners. We then provide search results to your browser so that you can see them.\n\nA very short time (i.e. within seconds) after your Search Query has been completed we then store your IP Address, Search Query and UA in different servers in such a way that they are not able to be connected (i.e. we are not able to tell what IP Address any Search Query has come from and so from this point the only Personal Data which we hold about you is your IP Address).\n\nWhen you make a search we also process your IP Address for the purpose of Network Traffic Protection. We continue to store and process your IP Address for this purpose for four days. After which we permanently delete your IP Address.\n\nThe Search Provider continues to store your IP Address, Search Query and UA for the purpose of Network Traffic Protection. After four days the Search Provider Obfuscates the IP Address."
+]
+
+[rubric.noncritical-purposes]
+value = "na"
+notes = [ "Data isn't used for non-essential purposes" ]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "Legal Obligations and Terms of Service Enforcement. We reserve the right to access, preserve and disclose any Personal Data to investigate, prevent, or take action in connection with legal process and legal requests, and for enforcement of the Terms of Service."
+]
+
+[rubric.list-collected]
+value = "generally"
+citations = [
+  "Below we will describe the Personal Data collection and processing that takes place when you use this Service. Please note you may need to refer to section 2 (\"Definitions\") for more detailed information.\n\nWhen you input a Search Query your IP Address, the Search Query and UA will be securely transferred, using HTTPS Encryption, from your browser to our Search Stack.\n\nWe process your IP Address, UA and Search Query together to fulfill your search. We derive Location Data from your IP Address so that we can provide useful location specific search results (e.g. if you search \"flower shops\" then flower shops in your city area should be provided in the results).\n\nThe way in which we use this data to fulfill your Search Query is that your IP Address, Search Query, UA and Location Data will be transferred by us to our Search Provider, so that the actual search request can be made through their search engine. The Search Provider will then provide our service with results for your Search Query.\n\nAfter the Search Provider has provided us with search results we may also undertake a Search Optimization process, including input by Search Partners. We then provide search results to your browser so that you can see them.\n\nA very short time (i.e. within seconds) after your Search Query has been completed we then store your IP Address, Search Query and UA in different servers in such a way that they are not able to be connected (i.e. we are not able to tell what IP Address any Search Query has come from and so from this point the only Personal Data which we hold about you is your IP Address).\n\nWhen you make a search we also process your IP Address for the purpose of Network Traffic Protection. We continue to store and process your IP Address for this purpose for four days. After which we permanently delete your IP Address.\n\nThe Search Provider continues to store your IP Address, Search Query and UA for the purpose of Network Traffic Protection. After four days the Search Provider Obfuscates the IP Address."
+]
+
+[rubric.revision-notify]
+value = "na"
+citations = [
+  "We may amend this Privacy Notice from time to time, using the process for modifications set forth in our Terms of Service. Use of any information we collect is subject to the Privacy Notice in effect at the time such information is collected."
+]
+notes = [ "No contact info is collected" ]

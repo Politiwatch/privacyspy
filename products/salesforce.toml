@@ -1,0 +1,84 @@
+name = "Salesforce"
+description = "Salesforce is an American cloud-based B2B software company with a focus on on-demand customer relationship management (CRM) software services."
+slug = "salesforce"
+hostnames = [ "salesforce.com" ]
+sources = [ "https://www.salesforce.com/company/privacy/full_privacy/" ]
+contributors = [ "UnKnOwN" ]
+
+[rubric.behavioral-marketing]
+value = "yes"
+citations = [
+  "Targeting or advertising cookies track activity across websites in order to understand a viewer’s interests, and to direct specific marketing to them.\n\nSalesforce also contracts with third-party advertising networks that collect IP addresses and other information from web beacons on our websites, from emails and on third-party websites. "
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "We take precautions including organizational, technical and physical measures to help safeguard against the accidental or unlawful destruction, loss, alteration and unauthorized disclosure of, or access to, the Personal Data we process or use."
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "In particular, we collect Personal Data from the following sources:\n\nThird party providers of business contact information, including mailing addresses, job titles, email addresses, phone numbers, intent data (or user behavior data), IP addresses, social media profiles, LinkedIn URLs and custom profiles, for purposes of targeted advertising, delivering relevant email content, event promotion and profiling; and Platforms such as GitHub, to manage code check-ins and pull requests. If you participate in an open source or community development project, we may associate your code repository username with your community account so we can inform you of program changes that are important to your participation or relating to additional security requirements. "
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [
+  "The last modified date is available at the top of the policy."
+]
+
+[rubric.data-deletion]
+value = "yes-contact"
+citations = [
+  "To [...], discontinue your account and/or request return or deletion of your Personal Data and other information associated with your account, please contact us by using the information in the “Contacting us” section, below."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "Nothing mentioned about data breaches in the privacy policy. "
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = [
+  "We may share your Personal Data as follows: [...] \nWith third-party social media networks, advertising networks and websites, which usually act as separate controllers, so that Salesforce can market and advertise on third party platforms and websites;"
+]
+
+[rubric.data-collection-reasoning]
+value = "mostly"
+notes = [
+  "The explanation of the reasons for data collection is generally reasonable, however not all data types collected are accompanied by a clear explanation."
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-all"
+notes = [
+  "You can choose to opt-out of targeting, advertising cookies and marketing communication, however, your information can still be used for non-critical purposes (like analysing your data for site improvement). "
+]
+
+[rubric.law-enforcement]
+value = "unspecified"
+citations = [
+  "We process your Personal Data when cooperating with public and government authorities, courts or regulators in accordance with our legal obligations under applicable laws to the extent this requires the processing or disclosure of Personal Data to protect our rights or is necessary for our legitimate interest in protecting against misuse or abuse of our websites, protecting personal property or safety, pursuing remedies available to us and limiting our damages, complying with judicial proceedings, court orders or legal processes or to respond to lawful requests."
+]
+notes = [
+  "It's not clear, that the data has to be reasonably requested, the explanation uses \"including\" words and it can't be inferred that there are rejections to requests."
+]
+
+[rubric.list-collected]
+value = "generally"
+citations = [
+  "The Personal Data that we collect directly from you includes the following:\n\nIf you express an interest in obtaining additional information about our services, request customer support (including accessing the Help & Training Portal), use our \"Contact Us\" or similar features, register to use our websites, sign up for an event, webinar or contest, or download certain content, we may require that you provide to us your contact information, such as your name, job title, company name, address, phone number, email address or username and password;\n\nIf you make purchases via our websites or register for an event or webinar, we may require that you provide to us your financial and billing information, such as billing name and address, credit card number or bank account information;\n\nIf you attend an event, we may with your further consent scan your attendee badge, which will provide to us your information, such as name, title, company name, address, country, phone number and email address;\n\nIf you register for an online community that we host, we may ask you to provide a username, photo and/or biographical information, such as your occupation, social media profiles, company name and areas of expertise;\n\nIf you use and interact with our websites or emails, we automatically collect information about your device and your usage of our websites or emails through cookies, web beacons or similar technologies, such as Internet Protocol (IP) addresses or other identifiers, which may qualify as Personal Data (please see the \"What device and usage data we process\" section, below);\n\nIf you use and interact with our services, we automatically collect information about your device and your usage of our services, through log files and other technologies, some of which may qualify as Personal Data (please see the \"What device and usage data we process\" section, below);\n\nIf you voluntarily submit certain information to our services, such as filling out a survey about your user experience, we collect the information you have provided as part of that request; and\nIf you visit our offices, you may be required to register as a visitor and to provide your name, email address, phone number, company name and time and date of arrival."
+]
+notes = [
+  "The policy generally lists the data it collects but uses \"such as\" phrases."
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "If we make a material update, we may provide you with notice prior to the update taking effect, such as by posting a conspicuous notice on our website or by contacting you using the email address you provided."
+]

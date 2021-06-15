@@ -1,5 +1,5 @@
 name = "eBay"
-description = "Founded in 1995, eBay is an online retailer and auction site where users both buy and sell products."
+description = "eBay is an online retailer and auction site where users both buy and sell products."
 slug = "ebay"
 hostnames = [ "ebay.com" ]
 sources = [
@@ -10,7 +10,7 @@ contributors = [ "milesmcc" ]
 [rubric.behavioral-marketing]
 value = "yes-opt-out"
 citations = [
-  "\"If you decide not to have your personal data processed by us for advertising purposes via cookies (and similar technologies), this does not mean that we will not show you advertisements. It simply means that these advertisements will not be personalized for you using first-party or third-party cookies, web beacons, or similar technologies.\"\r\n\r\n\"We process your personal data for various purposes and pursuant to various legal bases. We process your personal data primarily to provide and improve our Services, to provide you with a personalized user experience on this website, to contact you about your eBay account and our Services, to provide customer service, **to provide you with personalized advertising and marketing communications,** and to detect, prevent, mitigate and investigate fraudulent or illegal activity. We also share your information with third parties for these purposes.\""
+  "\"If you decide not to have your personal data processed by us for advertising purposes via cookies (and similar technologies), this does not mean that we will not show you advertisements. It simply means that these advertisements will not be personalized for you using first-party or third-party cookies, web beacons, or similar technologies.\"\n\n\"We process your personal data for various purposes and pursuant to various legal bases. We process your personal data primarily to provide and improve our Services, to provide you with a personalized user experience on this website, to contact you about your eBay account and our Services, to provide customer service, **to provide you with personalized advertising and marketing communications,** and to detect, prevent, mitigate and investigate fraudulent or illegal activity. We also share your information with third parties for these purposes.\""
 ]
 
 [rubric.security]

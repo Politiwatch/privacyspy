@@ -1,0 +1,72 @@
+name = "Brave Browser"
+description = "Brave is a web browser with included tracking protection."
+slug = "brave-browser"
+hostnames = [ "brave.com" ]
+sources = [ "https://brave.com/privacy/" ]
+contributors = [ "vutut" ]
+
+[rubric.behavioral-marketing]
+value = "yes-opt-in"
+citations = [
+  "If you switch on Brave Rewards and switch on ads (in Rewards settings) you will see ad notifications, and will receive BAT to reward you for viewing these ads. While the ads you see are based on your interests, which are inferred from your browsing, Brave Ads is private and anonymous."
+]
+
+[rubric.security]
+value = "somewhat"
+notes = [
+  "Provides description of how data is stored with limited details on security."
+]
+
+[rubric.third-party-collection]
+value = "critical-only"
+citations = [
+  "If you switch on Brave Rewards you are assigned a “wallet” identifier by Uphold, our payments partner. We record this identifier on servers operated by Amazon and Heroku (a Salesforce company) in the United States."
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [ "LAST UPDATED: MAY 21, 2020" ]
+
+[rubric.data-deletion]
+value = "yes-contact"
+citations = [
+  "You can ask to know what information we have about you, update incorrect information, delete it, object to our use of it, or get a copy of it."
+]
+
+[rubric.data-breaches]
+value = "na"
+notes = [
+  "No contact information is collected, making any direct notification impossible."
+]
+
+[rubric.third-party-access]
+value = "yes-specified-critical"
+notes = [
+  "Data shared/use of third-party services for financial transactions, browser testing and feedback."
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "Our company does not store any record of people’s browsing history. We don’t write any personal data to the blockchain. The only way a user’s data is stored by Brave is if the user has switched on Rewards or Sync."
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-all"
+citations = [
+  "Our company does not store any record of people’s browsing history. We don’t write any personal data to the blockchain. The only way a user’s data is stored by Brave is if the user has switched on Rewards or Sync."
+]
+
+[rubric.law-enforcement]
+value = "unspecified"
+notes = [ "No mention of handling law enforcement requests." ]
+
+[rubric.list-collected]
+value = "exhaustively"
+citations = [
+  "Location\nCategories of personal data processed\nIP address, and information about nearby WiFi access points (MAC address, signal strength, and SSID).\n\nBrave Rewards\n\nIP address at time of claiming a monthly grant of BAT tokens, and Wallet ID (this ID is not tied to what you browse or do because your browsing is kept anonymous by Brave).\n\nBrave Together\n\nIP address, chat text, video, and audio\nThe user’s device stores the data.\n\nYour feedback\n\nPersonal data that a user may include in the text they write when sending feedback through an app store or any other means.\n\nBrowser testing and research (Nightly, Dev, and Beta versions only)\n\nDevice model, iOS version, language, timezone, CPU architecture, carrier, connection status. Optional: Crash log (crash logs will also be sent if you opted-in when activating iOS) Optional: Comments and screenshots you share if you send feedback through TestFlight."
+]
+
+[rubric.revision-notify]
+value = "na"
+notes = [ "No contact information collected." ]

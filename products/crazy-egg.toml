@@ -1,0 +1,82 @@
+name = "Crazy Egg"
+description = "Crazy Egg is a website analytics service."
+slug = "crazy-egg"
+hostnames = [ "crazyegg.com" ]
+sources = [ "https://www.crazyegg.com/privacy" ]
+contributors = [ "4Iufy" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+citations = [
+  "In particular, Crazy Egg does not attempt to identify, decipher, access, or associate Personally Identifying Information regarding a Client Site Visitor from any Recorded Interactions or Device Information, provided that Crazy Egg may receive Referral Information, as noted above. Crazy Egg includes tools to enable Clients to preempt the collection of or remove sensitive data from the Crazy Egg Service, to be set by the applicable Clients as the Data Controllers.\n\nCrazy Egg does not collect or aggregate information about visitor behavior on multiple, different websites."
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  " Crazy Egg implements security mechanisms to protect Visitor Information and Client Information from loss, misuse and unauthorized access, disclosure, alteration and destruction. Examples of these security mechanisms include limited and password-protected access, firewalls, and SSL encryption to protect transmission of data, as further described above and in our Terms of Use. For additional questions or information regarding our security standards, please contact us at privacy@crazyegg.com."
+]
+
+[rubric.third-party-collection]
+value = "no"
+notes = [
+  "The policy does not mention collecting personal data from third-parties on Crazy Egg’s customers nor the website visitors of Crazy Egg customers."
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [ "Last Updated: May 24, 2018" ]
+
+[rubric.data-deletion]
+value = "yes-contact"
+citations = [
+  "Access to Personally Identifiable Information or other Information Stored at Crazy Egg at any time, a Crazy Egg Client or Crazy Egg Visitor may access and/or modify their Personally Identifiable Information or other Information stored by Crazy Egg on their behalf, to enable them to access, rectify and restrict processing of their respective Information, and allow them to export their Information, by accessing their Crazy Egg account and contacting us at privacy@crazyegg.com. "
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "The policy does not require any action to be taken following a data breach."
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified-critical"
+citations = [
+  "If [Client] Information is aggregated or de-identified so it is no longer reasonably associated with an identified or identifiable natural person, Crazy Egg may use it for any business purpose.\n\n[…]\n\nWith the exception of the limited circumstances discussed elsewhere in this Privacy Policy, Crazy Egg does not provide Clients' Personally Identifiable Information to third parties for any purpose.\n\n[…]\n\nCrazy Egg relies on third-party payment processors to process financial payments. When you make payments to Crazy Egg to obtain or use Crazy Egg's products or services, Crazy Egg may share Personally Identifiable Information, such as your name, address, and credit card information, with qualified third parties in order to process your order."
+]
+notes = [
+  "Crazy Egg claims to not “attempt to identify, decipher, access, or associate Personally Identifying Information” about the website visitors of Crazy Egg’s customers."
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+notes = [
+  "See sections on “Crazy Egg’s Use of Crazy Egg Visitor Information” and “Information Collected by or on Behalf of Our Clients via the Service”."
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-all"
+citations = [
+  "Some web browsers may transmit “do-not-track” signals to the websites with which the user communicates. Because of differences in how web browsers incorporate and activate this feature, it is not always clear whether users intend for these signals to be transmitted, or whether they even are aware of them. Our practices with respect to such signals are set forth in https://www.crazyegg.com/opt-out."
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "Law Enforcement/Legal Process. Crazy Egg reserves the right to disclose any Information (including Personally Identifiable Information): (1) to comply with any law, regulation, or legal request, if and to the extent that we reasonably believe disclosure is in accordance with or required by any applicable law, regulation or legal process; (2) to enforce, apply, or investigate breaches of the Terms or other agreements; or (3) protect the rights, property, user experience, or safety of Crazy Egg, our employees, our users, our Clients, or others."
+]
+
+[rubric.list-collected]
+value = "generally"
+notes = [
+  "See sections on “Information Collected from Crazy Egg Visitors” and “Information Collected by or on Behalf of Our Clients via the Service”."
+]
+
+[rubric.revision-notify]
+value = "no"
+citations = [
+  "If we make material changes in the way we use or disclose Personally Identifiable Information, we will notify you through one or more of the following means: a direct communication to your Crazy Egg account, a communication to the e-mail address associated with your account, or a clear and prominent announcement on the Crazy Egg Website. Your continued access to or use of Crazy Egg or websites that use Crazy Egg following notice of material changes to this Privacy Policy shall constitute consent to any amendments and/or modifications. "
+]
+notes = [
+  "Only Crazy Egg’s customers will be notified, but not the website visitors of Crazy Egg’s customers."
+]

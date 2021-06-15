@@ -1,0 +1,78 @@
+name = "System76"
+description = "System76 builds premium custom computers that come installed with Linux by default."
+slug = "system76"
+hostnames = [ "system76.com" ]
+sources = [ "https://system76.com/privacy" ]
+contributors = [ "cvieira" ]
+
+[rubric.behavioral-marketing]
+value = "yes-opt-out"
+citations = [
+  "\"Third party vendors, including Google and Quantcast, use cookies to serve ads based on a user’s prior visits to our website or other websites. Google’s and Quantcast’s use of advertising cookies enable them and their partners to serve ads to users based on their visit to our site and/or other sites on the Internet.\""
+]
+
+[rubric.security]
+value = "no"
+citations = [
+  "\"Stripe may use cookies and similar technologies, i.e. for fraud detection and prevention.\""
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "\"Our website uses third-party analytics tools Google Analytics and Quantcast to help us better understand our customers.\n\n    Google Analytics Privacy Policy, Safeguarding Your Data, and Ads Settings\n    Quantcast Privacy Policy and Opt Out\""
+]
+
+[rubric.history]
+value = "no"
+notes = [ "No history is made available anywhere on the site" ]
+
+[rubric.data-deletion]
+value = "yes-automated"
+citations = [
+  "\"Our website uses cookies to store session information, such as whether or not you are logged in. You can choose to disable or selectively turn off cookies or third-party cookies in your browser settings, but this may affect how you are able to interact with our site and others.\""
+]
+notes = [
+  "The only information collected directly by System76 is in the form of cookies. Everything else is dependent on Google Analytics and Quantcast which have their own systems for removing personal information."
+]
+
+[rubric.data-breaches]
+value = "na"
+citations = [
+  "\"Our website uses cookies to store session information, such as whether or not you are logged in.\""
+]
+notes = [ "System76 only uses cookies" ]
+
+[rubric.third-party-access]
+value = "yes-specified-noncritical"
+citations = [
+  "\"Our website uses third-party analytics tools Google Analytics and Quantcast to help us better understand our customers.\""
+]
+
+[rubric.data-collection-reasoning]
+value = "somewhat"
+citations = [
+  "\"Our website uses cookies to store session information, such as whether or not you are logged in.\""
+]
+
+[rubric.noncritical-purposes]
+value = "na"
+notes = [
+  "The only tracking done by System76 is through cookies, all of which appear to be critical"
+]
+
+[rubric.law-enforcement]
+value = "unspecified"
+notes = [ "Nothing about law enforcement is ever mentioned" ]
+
+[rubric.list-collected]
+value = "no"
+notes = [
+  "The service only claims to use cookies, but doesn't explain in what ways."
+]
+
+[rubric.revision-notify]
+value = "no"
+notes = [
+  "There is no notice indicating that users will be notified of a change"
+]

@@ -1,0 +1,6 @@
+name = "Digital Photography Review"
+description = "Digital Photography Review, also known as DPReview, is a website about digital cameras and digital photography."
+hostnames = ["dpreview.com"]
+slug = "dpreview"
+parent = "imdb"
+contributors = [ "YuriiStasiuk", "doamatto" ]

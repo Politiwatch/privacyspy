@@ -1,0 +1,73 @@
+name = "Ting"
+description = "Ting is an American mobile virtual network operator and internet service provider owned by Tucows Inc."
+slug = "ting"
+hostnames = [ "ting.com" ]
+sources = [ "https://ting.com/privacy_policy" ]
+contributors = [ "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+citations = [
+  "We do not sell or share your information with any third-parties so they can market to you."
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "The security of your personal information is important to us. When you provide sensitive information (such as a credit card number) to us, we encrypt the transmission of that information using secure socket layer technology (SSL). We also follow generally-accepted industry standards to protect the personal information submitted to us, both during transmission and once we receive it.\n\nIf you have any questions about security on our Web site, you can contact us at help@ting.com"
+]
+
+[rubric.third-party-collection]
+value = "critical-only"
+citations = [
+  "We obtain address information about you from third party sources, such as the US Postal Service, to verify your address so we can properly ship your order to you and to prevent fraud."
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [ "Effective on June 1, 2018" ]
+
+[rubric.data-deletion]
+value = "yes-contact"
+citations = [
+  "We will retain your information for as long as your account is active or as needed to provide you services. If you wish to cancel your account or request that we no longer use your information to provide you services contact us at help@ting.com. We will retain and use your information as necessary to comply with our legal obligations, resolve disputes, and enforce our agreements."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [ "No notice of if you will be contacted because of a breach" ]
+
+[rubric.third-party-access]
+value = "yes-unspecified-critical"
+citations = [
+  "We provide your personal information to the shipping company when you purchase a device from us. We also use certain software vendors to manage our customer support, credit card processing, and fraud detection. Our contracts with each of these companies requires them to keep your information safe and secure and not to share the information with anyone other than Ting. We do not sell or share your information with any third-parties so they can market to you."
+]
+notes = [
+  "The specific shipping company/companies is/are not disclosed"
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "We use this information to: Fulfill your order; Send you an order confirmation; Respond to customer service requests; Administer your account, including allowing you to (a) login to, navigate, and use our website; (b) view and adjust the services you have purchased from us inside your account; and (c) pay your bill or update your billing information; Send you communications about how to use our services, including your phone(s); Send you communications about new service offerings; Solicit your feedback on the quality of our customer service; and Respond to your questions and concerns."
+]
+
+[rubric.noncritical-purposes]
+value = "na"
+notes = [ "No data is used for non-essential purposes" ]
+
+[rubric.law-enforcement]
+value = "unspecified"
+notes = [ "Disclosure to law enforcement is not defined" ]
+
+[rubric.list-collected]
+value = "generally"
+citations = [
+  "We collect the following personal information from you: Contact Information such as name, email address, mailing address, phone number; Billing Information such as credit card number, and billing address; Unique Identifiers such as user name, account number, and password; Usage activity about how you interact with us such as purchase history, what content you viewed, and which areas of our site you visited; and Information about your computer such as your IP address, browser type, referring/exit pages, and operating system."
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "We may update this privacy statement to reflect changes to our information practices. If we make any material changes we will notify you by email (sent to the email address specified in your account) or by means of a notice on this Site prior to the change becoming effective. We encourage you to periodically review this page for the latest information on our privacy practices."
+]

@@ -1,0 +1,93 @@
+name = "Charity Navigator"
+description = "Charity Navigator is a charity evaluation and donations platform."
+slug = "charity-navigator"
+hostnames = [ "charitynavigator.org" ]
+sources = [
+  "https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=2030"
+]
+contributors = [ "4Iufy" ]
+
+[rubric.behavioral-marketing]
+value = "yes-opt-out"
+citations = [
+  "c.         Interest Based Advertising.   Charity Navigator incorporates remarketing by utilizing third party vendors (such as Google) to display content specific advertisements to visitors who have previously visited the Charity Navigator site and/or expressed interest in the Charity Navigator products when such visitors go to other websites that also incorporate similar remarketing tools. Charity Navigator and other third-party vendors, including Google, use first-party cookies and third-party cookies together to inform, optimize and serve ads based on a User’s past visits to the Charity Navigator site.\n\n[…]\n\nCalifornia Civil Code Section 1798.83 requires that all California residents be afforded the option to exercise your choice of whether your personal information may be shared with third parties for direct marketing purposes or not, as well as to receive information specified in the statute if your personal information is disclosed to third parties for direct marketing purposes. Accordingly, if you are a California resident and you wish to inform Charity Navigator whether you permit or refuse the sharing of your personal information with third parties for direct marketing purposes, or if you wish to request certain information if your personal information were to be disclosed to third parties for direct marketing purposes, please contact us as described in the “How to Contact Us” section below."
+]
+notes = [
+  "To process donations, Charity Navigator’s uses third-party services [Classy](/product/classy/) and [Network for Good](/product/network-for-good/).\n\nFor California residents, Charity Navigator acknowledges that they may explictly opt-out of personal information sharing with third-parties for marketing purposes, per the state’s 2003 Shine the Light law."
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "To help prevent unauthorized access, maintain data accuracy, and ensure the correct use of information, we have put in place appropriate physical, electronic, and managerial procedures to safeguard and secure the information we collect. Our website uses a Transport Layer Security, the standard security technology for establishing an encrypted link between a web server and a browser. This link ensures that all data passed between the web server and browsers remain private. All online donation transactions are handled by Payment Card Industry (PCI)-compliant vendors. PCI refers to the technical and operational standards that businesses must follow to ensure that credit card data provided by cardholders is protected."
+]
+
+[rubric.third-party-collection]
+value = "critical-only"
+citations = [
+  "Donations made directly to Charity Navigator and to Charity Navigator made through resources including Classy Inc. from which we collect Personal Information such as your name, billing address, and e-mail address, if you have not already provided these details. We collect information about your donation, including the amount of your donation. The Classy Inc. privacy policy can be reviewed here: https://www.classy.org/terms/privacy\n\nDonations made through Charity Navigator using Network for Good, from which we collect Personal Information such as your name, billing address, and e-mail address, if you have not already provided these details. We collect information about your donation, including the charity you are donating to and the amount of your donation. Please note that any donations made through Network For Good, Inc. — including any donations made to charities other than Charity Navigator — are also subject to Network For Good’s privacy policy, which states in part: “Network for Good respects and protects your privacy and will never sell, trade or rent your personal information to other individuals or companies. The information that you provide is used only to complete your donation.” Network for Good’s complete privacy policy is accessible at http://www.networkforgood.com/about/privacy/). We also collect (but do not retain) credit card numbers which are processed by a third-party payment vendor subject to the Payment Card Industry Data Security Standards. By using a third-party vendor, your information is subject to use based on the vendor’s terms of service and policies. Charity Navigator encourages you to review these policies carefully"
+]
+notes = [
+  "To process donations, Charity Navigator’s uses third-party services [Classy](/product/classy/) and [Network for Good](/product/network-for-good/)."
+]
+
+[rubric.history]
+value = "last-modified"
+notes = [ "Only a date is provided." ]
+
+[rubric.data-deletion]
+value = "no"
+citations = [
+  "If you have reason to believe that a child under the age of 13 has provided Personal Information to us, please contact us, and we will endeavor to delete that information from our databases."
+]
+notes = [
+  "Only personal information of minors under the age of 13 can be requested for deletion."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "The policy does not mention any actions to be taken by Charity Navigator following a data breach."
+]
+
+[rubric.third-party-access]
+value = "yes-specified-noncritical"
+citations = [
+  "a.         Google Analytics.  Charity Navigator uses Google Analytics, a web analytics service provided by Google, Inc. (“Google”). Google Analytics uses Cookies to help the website analyze how users interact with the Platform. Other Information generated by the Cookie about your use of the website (including your IP address) will be transmitted to and stored by Google on servers in the United States. Google will use this information for the purpose of evaluating your use of the website, compiling reports on website activity for website operators and providing other services relating to website activity and internet usage. Google may also transfer this information to third parties where required to do so by law, or where such third parties process the information on Google’s behalf. Google will not associate your IP address with any other data held by Google. You may refuse the use of Cookies by selecting the appropriate settings on your browser; however, please note that if you do this you may not be able to use the full functionality of this website. By using this website, you consent to the processing of data about you by Google in the manner and for the purposes set out above.\n\nGoogle Analytics collects information anonymously. It reports website trends without identifying individual visitors. You can opt out of Google Analytics without affecting how you visit our site. For more information on opting out of being tracked by Google Analytics across all websites you use, visit Google Ad Settings. Google’s ability to use and share information collected by Google Analytics about your visits to this site is restricted by the Google Analytics Terms of Use and the Google Privacy Policy.\n\nb.         AddThis.  Charity Navigator uses AddThis, a web analytics and sharing service provided by Oracle Corporation. AddThis uses Cookies to help the website analyze how users visit the site and to provide a suite of tools for users to share, follow, view, recommend, and interact with content provided by Charity Navigator. Other Information generated by the Cookie about your use of the website (including your IP address) will be transmitted to and stored by AddThis. To opt-out of data collection from AddThis, please visit AddThis’ Privacy Policy page and follow instructions to “Opt Out.”"
+]
+notes = [
+  "[Google](/product/google/) Analytics and [AddThis](/product/addthis/) are used to track user behavior and collect personal information including IP addresses.\n\nThird-party advertisers on Charity Navigator will track past visits to the website."
+]
+
+[rubric.data-collection-reasoning]
+value = "mostly"
+notes = [
+  "See the policy’s sections on “The Information We Collect,” “Partners,” and “How We Use and Share the Information.”"
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-some"
+citations = [
+  "We may from time to time share Charity Representative Users’ (“Charity Representative User” is the charity’s designated official representative to manage its Charity Navigator profile, ) Personal Information and Other Information with other companies who may provide such users information about the products and services they offer. However, to the extent required by law, such users will be given the opportunity to opt-out of such sharing by contacting us as described in the “How to Contact Us” section below."
+]
+notes = [
+  "Charity Navigator also collects personal data through [AddThis](/product/addthis/), [Classy](/product/classy/), [Google](/product/google/) Analytics, and [Network for Good](/product/network-for-good/)."
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "To the extent permitted by law, we may also disclose the Personal Information and the Other Information: (i) when required by law, court order, or other government or law enforcement authority or regulatory agency; or (ii) whenever we believe that disclosing such information is necessary or advisable, for example, to protect the rights, property, or safety of Charity Navigator or others.    "
+]
+
+[rubric.list-collected]
+value = "exhaustively"
+citations = [
+  "Charity Navigator collects information when you visit our website, create an account, edit your account information, or use features on the platform to donate to a charity. Some of this information is technical information automatically logged by our servers. Outlined below are the types of information, both directly from you and indirectly through the collection of information by third-party service providers (together, “Partners”) that we specifically collect."
+]
+
+[rubric.revision-notify]
+value = "no"
+citations = [
+  "We may change this Privacy Policy from time to time. Please be aware that, to the extent permitted by applicable law, our use of the Personal Information and Other Information is governed by the Privacy Policy in effect at the time we collect the information. Please refer back to this Privacy Policy on a regular basis."
+]

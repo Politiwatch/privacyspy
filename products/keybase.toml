@@ -1,0 +1,83 @@
+name = "Keybase"
+description = "Keybase is a key directory that maps social media identities to encryption keys in a publicly auditable manner."
+slug = "keybase"
+hostnames = [ "keybase.io" ]
+sources = [ "https://keybase.io/docs/privacypolicy" ]
+contributors = [ "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+citations = [
+  "Keybase and third parties do not have access to this information.\n\nWe do not share or sell your personal information with third parties for their marketing purposes."
+]
+
+[rubric.security]
+value = "yes-independent-audits"
+citations = [
+  "Keybase takes reasonable security measures such as password protection, two-factor authentication for internal logins, client-side encryption, and a whitelist of employees who can deploy changes to the server, as we deem appropriate to protect the information we collect from misuse, unauthorized access, disclosure, alteration and destruction. Some hosting details for the technically-minded:\n\nThe Services are currently hosted on Amazon’s AWS;\nAll data is transferred with industry standard TLS during transmission; and\nKeybase’s website does not serve any 3rd party hosted JavaScript.\nWhile we do use care to protect your information, no data transmission over the Internet or other network can be guaranteed to be 100% secure. As a result, we cannot and do not guarantee the security of any information you transmit on or through the Services, and you do so at your own risk."
+]
+notes = [
+  "They have been independently audited once by the NCC in March 2019 (which you can read here: https://keybase.io/docs-assets/blog/NCC_Group_Keybase_KB2018_Public_Report_2019-02-27_v1.3.pdf)"
+]
+
+[rubric.third-party-collection]
+value = "no"
+notes = [ "No information proving so." ]
+
+[rubric.history]
+value = "last-modified"
+citations = [ "Effective: January 9, 2020 (Posted December 9, 2019)." ]
+
+[rubric.data-deletion]
+value = "yes-automated"
+citations = [
+  "You have control over your personal information and how it is collected, used, and shared. For example, you have a right to:\n\n- Delete your account and all your associated data. You can do this through your Keybase client.\n- Erase or delete particular files and data. You can do this through your Keybase client. You can also set messages to delete automatically."
+]
+notes = [
+  "It is incredibly important to note that although you can delete your data, as described by Keybase as well, not possible to delete data from your sigchain. This is to ensure everyone is properly audited and is required due to the blockchain nature of Keybase."
+]
+
+[rubric.data-breaches]
+value = "na"
+citations = [
+  "Note: Keybase never requires a phone number and no longer requires an email address in order to open and maintain an account."
+]
+notes = [
+  "The service does not require contact information to be provided, nullifying their ability to alert users of data breaches outside of via the service."
+]
+
+[rubric.third-party-access]
+value = "yes-specified-critical"
+citations = [
+  "We use the following service providers to process your personal information:\n\n- Amazon Web Services for content storage;\n- Kraken.io for resizing unencrypted images such as user profile pictures;\n- Note: Users can also opt in, via the chat interface, to Google location services (with the /location command) and Giphy (with the /giphy command) but those services don’t receive personal information about you."
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "Here’s how we use your information:\n\n- To provide the Services to you on all the devices you add.\n- To protect our Services and users. For example, we will use it to investigate suspicious activity and attacks.\n- To improve Keybase for all our users. For example, we will make development decisions based on what features our users are using.\n- To communicate with you about Keybase. You can unsubscribe from those messages (unless they are specifically about your account, and then we have to send them to you)."
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-all"
+citations = [
+  "Users can also opt in, via the chat interface, to Google location services (with the /location command) and Giphy (with the /giphy command) but those services don’t receive personal information about you."
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "We may disclose your information to third parties if we determine that such disclosure is reasonably necessary to: (a) comply with a valid legal process; (b) protect any person from death or serious bodily injury; (c) prevent fraud or abuse; or (d) protect our rights, property, safety, or interest."
+]
+
+[rubric.list-collected]
+value = "exhaustively"
+citations = [
+  "What personal information do we collect?\n\nContact and account information: We collect the information you provide to us, such as your name, avatar picture, email address, and social media handles. Note: Keybase never requires a phone number and no longer requires an email address in order to open and maintain an account.\n\nTeam names and membership: If you create or join a team on Keybase, we collect and store the names of the teams and subteams, their membership, and when they were formed.\n\nHashed password: We collect and store information about your Keybase password that allows you to prove you know your password; that “stretched” password is sent to Keybase’s servers. See here for more information.\n\nAccount activity: We collect information about your activity while using the Services, such as proving you control a certain Twitter username, announcing your public key, editing your biographical information, or editing any of your social media usernames. Some of this information is aggregated, summarized, and published into the Bitcoin blockchain in order to detect and guard against certain vulnerabilities. See “Disclosures to your signature chain, the Merkle tree, and the Bitcoin blockchain” below for information on how we treat this data.\n\nFiles and Data. We collect and store files and information that you transmit to other parties using Keybase or that you elect to store on the Services. This data is always encrypted on our servers, except for documents in your public folder and your public chats. Those are not encrypted because you choose to make those publicly accessible.\n\nDo Not Track. Keybase does not collect personally identifiable information from you to track you across third-party websites. As a result, Keybase does not specifically respond to web browser Do Not Track signals.\n\nUnique personal identifiers. We collect and store information to identify you, such as your Keybase user ID and your IP address (which is stored only temporarily).\n\nNetwork usage and activity. We collect certain technical and analytics data, for example the type of device you’re using to access our Services or the operating system you’re running. Keybase is designed to store the minimum amount of technical data for the shortest time necessary in order for you to have the Services across all the devices you add.\n\nInteractions with us: If you email us, we may keep the content of your message, your email address, and your contact information to respond to the request and otherwise follow up as necessary."
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "We will update this Privacy Policy from time to time. If we make any changes that reduce or negatively affect your privacy rights, you will be notified either through email or the Services. If we only make minor changes that don’t reduce your rights (like changing an email address or rewording paragraphs to make them clearer), we will just post the revised policy here. Those changes will go into effect on the “Effective Date” shown at the top of the updated Privacy Policy. Your continued use of the Services after the Effective Date means you agree to the new Privacy Policy."
+]

@@ -1,0 +1,73 @@
+name = "ESET"
+description = "ESET is a leading IT security provider for personal and business use."
+slug = "eset"
+hostnames = [ "eset.com" ]
+sources = [ "https://www.eset.com/int/privacy/" ]
+contributors = [ "vutut" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+citations = [
+  "ESET may collect information about your computer, including your IP address where available, operating system and browser type, for system administration and to report aggregate information to our advertisers under the legitimate interest legal basis."
+]
+notes = [ "While the privacy policy mentions reporting aggregate data to advertisers, there is no mention of personally-targeted marketing" ]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "ESET implements appropriate technical and organizational measures to ensure a level of security which is appropriate to potential risks. We are doing our best to ensure the ongoing confidentiality, integrity, availability and resilience of processing systems and services."
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "Information processed by ESET may be transferred to and from local ESET Partners."
+]
+
+[rubric.history]
+value = "no"
+notes = [ "No mention on the policy page." ]
+
+[rubric.data-deletion]
+value = "yes-contact"
+citations = [
+  "If You would like to exercise your right as a data subject or You have a question concerning personal data protection or protection of privacy, send us a message at:\n\nESET, spol. s r.o.  \n\nData Protection Officer  \nEinsteinova 24  \n85101 Bratislava  \nSlovak Republic  \ndpo@eset.sk  "
+]
+
+[rubric.data-breaches]
+value = "eventually"
+citations = [
+  "However, in case of data breach resulting in a risk to your rights and freedoms, We are ready to notify the supervisory authority as well as the data subjects."
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = [
+  "ESET is a company operating worldwide via its subsidiaries or other local ESET Partners as part of our distribution, service and support network. Information processed by ESET may be transferred to and from local ESET Partners. "
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "On the other hand, some of our services need to collect more information:\n\n- ESET may collect personal information for the purposes of direct communication with You in order to respond to your questions, and fulfill your requests. If You send us product orders, service requirements, other requests or if you upload any materials to our website, we may have to contact you in order to gain additional information necessary for processing or in order to fulfill your order, request or requirement. For this purpose, as well as for the purpose of requested performance of services, we need to process your details provided via web forms, email or applications.  \n\n- If You are an End User of our products or services, the processing of your data is covered by the specific End User License Agreement or Terms of Use and Privacy Policy related to that product or service. For more information concerning data processing, please visit our online help documentation dedicated to our products and services. You can access it directly from the graphic user interface of your product by clicking on the “?” symbol. The maximum storage period for invoicing data is determined by law and We are legally required to keep the data for a period of 10 years. Unlike the invoicing data, we only store licensing data for the period which does not exceed 12 months from the expiration date of your license, and statistics without the requirement of End User’s identification are processed for the period of 4 years.  \n\n- If You already are our customer or if You agree with processing of your data for the purposes of marketing communication, We may use your details to administer marketing communication until You unsubscribe or send us a withdrawal of your consent.  \n\n- Contact information and data contained in your support requests are required for service of technical or other support nature provided by ESET. Based on the channel You choose to contact us, We may collect your email address, phone number, license information, product details and description of your support case. You may be asked to provide us with other information to facilitate service of support such as generated log files or dumps. The data from support may only be used for the provision of support service and for enhancing customer experience while providing support. The maximum storage period is limited by the time necessary for support provisioning and reviewing, and even in a pseudonymized form it cannot exceed the period of 10 years.   \n\n- Customer feedback, answer or request, may be provided by You via our web forms. For the purpose of follow-up, your contact details including email address or other data may be requested based on the nature or purpose of our communication. Data storage periods may differ based on the nature or purpose of communication explicitly in compliance with this Privacy Policy.\nESET may collect information about your computer, including your IP address where available, operating system and browser type, for system administration and to report aggregate information to our advertisers under the legitimate interest legal basis. This is statistical data about our users' browsing actions and patterns, and does not identify any individual. For the same reason, we may obtain information about your general internet usage by using a cookie file which is stored on the hard drive of your computer. Cookies contain information that is transferred to your computer's hard drive. They help us to improve our site and to deliver a better and more personalized service. You may refuse to accept cookies by activating the setting on your browser which allows you to refuse the setting of cookies. However, if you select this setting you may be unable to access certain parts of the Website. Unless you have adjusted your browser setting so that it will refuse cookies, our system will issue cookies when you log on to our site.   \n\n- We are doing our best while helping you to enjoy safer technology. Your input is very valuable for us and there are various channels available to provide us with samples of malicious or suspicious software. Samples and its metadata will be processed and stored based on public interest as well as legitimate interest of ESET, which is cybersecurity."
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-all"
+notes = [
+  "Opt-out possible for certain data via disabling cookies and right to object to any processing by contacting the company data protection officer."
+]
+
+[rubric.law-enforcement]
+value = "unspecified"
+notes = [ "No mention in the privacy policy." ]
+
+[rubric.list-collected]
+value = "generally"
+notes = [
+  "Clearly listed categories of data collected for the majority of data uses, however, not all types of data collected specified."
+]
+
+[rubric.revision-notify]
+value = "no"
+notes = [ "No mention in policy." ]

@@ -8,7 +8,7 @@ contributors = [ "Anastasia" ]
 [rubric.behavioral-marketing]
 value = "yes"
 citations = [
-  "We target (and measure the performance of) ads to Members, Visitors and others both on and off our Services directly or through a variety of partners.\r\n"
+  "We target (and measure the performance of) ads to Members, Visitors and others both on and off our Services directly or through a variety of partners.\n"
 ]
 
 [rubric.security]
@@ -20,7 +20,7 @@ citations = [
 [rubric.third-party-collection]
 value = "yes"
 citations = [
-  "We receive personal data about you when you use the services of our customers and partners, such as employers, prospective employers and applicant tracking systems providing us job application data.\r\nWe receive data about you when you use some of the other services provided by us or our affiliates, including Microsoft. For example, you may choose to send information about your contacts in Microsoft apps and services, such as Outlook, to us for improved professional networking activities on our Services."
+  "We receive personal data about you when you use the services of our customers and partners, such as employers, prospective employers and applicant tracking systems providing us job application data.\nWe receive data about you when you use some of the other services provided by us or our affiliates, including Microsoft. For example, you may choose to send information about your contacts in Microsoft apps and services, such as Outlook, to us for improved professional networking activities on our Services."
 ]
 
 [rubric.history]
@@ -32,7 +32,7 @@ citations = [
 [rubric.data-deletion]
 value = "yes-automated"
 citations = [
-  "Delete Data: You can ask us to erase or delete all or some of your personal data (e.g., if it is no longer necessary to provide Services to you).\r\nIf you choose to close your Linkedin (or SlideShare) account, your personal data will generally stop being visible to others on our Services within 24 hours. We generally delete closed account information within 30 days of account closure, except as noted below."
+  "Delete Data: You can ask us to erase or delete all or some of your personal data (e.g., if it is no longer necessary to provide Services to you).\nIf you choose to close your Linkedin (or SlideShare) account, your personal data will generally stop being visible to others on our Services within 24 hours. We generally delete closed account information within 30 days of account closure, except as noted below."
 ]
 
 [rubric.data-breaches]
@@ -56,7 +56,7 @@ citations = [
 [rubric.noncritical-purposes]
 value = "opt-out-some"
 citations = [
-  " You can also opt-out specifically from our uses of certain categories of data to show you more relevant ads.\r\n You can also opt-out from our use of cookies and similar technologies that track your behavior on the sites of others for third party advertising"
+  " You can also opt-out specifically from our uses of certain categories of data to show you more relevant ads.\n You can also opt-out from our use of cookies and similar technologies that track your behavior on the sites of others for third party advertising"
 ]
 
 [rubric.law-enforcement]
@@ -74,5 +74,5 @@ notes = [
 [rubric.revision-notify]
 value = "yes"
 citations = [
-  "LinkedIn (“we” or “us”) can modify this Privacy Policy, and if we make material changes to it, we will provide notice through our Services, or by other means, to provide you the opportunity to review the changes before they become effective. If you object to any changes, you may close your account.\r\n\r\n"
+  "LinkedIn (“we” or “us”) can modify this Privacy Policy, and if we make material changes to it, we will provide notice through our Services, or by other means, to provide you the opportunity to review the changes before they become effective. If you object to any changes, you may close your account.\n\n"
 ]

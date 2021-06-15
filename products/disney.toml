@@ -1,0 +1,79 @@
+name = "Disney+"
+description = "Disney+ is a subscription video on-demand streaming service."
+slug = "disney"
+hostnames = [ "disneyplus.com" ]
+sources = [ "https://www.disneyplus.com/legal/privacy-policy" ]
+contributors = [ "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "yes-opt-out"
+citations = [
+  "- Controlling targeted advertising from many ad networks and partners; data exchanges; and marketing analytics and digital advertising and marketing service providers (by visiting the Digital Advertising Alliance [http://www.aboutads.info/choices]);"
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "The security, integrity, and confidentiality of your information are extremely important to us. We have implemented technical, administrative, and physical security measures that are designed to protect guest information from unauthorized access, disclosure, use, and modification. We regularly review our security procedures to consider appropriate new technology and methods. Please be aware that, despite our best efforts, no security measures are perfect or impenetrable. We will retain your personal information for the length of time needed to fulfill the purposes outlined in this privacy policy unless a longer retention period is required or permitted by law."
+]
+
+[rubric.third-party-collection]
+value = "critical-only"
+citations = [
+  "- We acquire information from other trusted sources to update or supplement the information you provided or we collected automatically, such as when we validate postal address information using third party services. Applicable law may require that you authorize the third party to share your information with us before we can acquire it."
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [ "Last Modified: 12/19/2019" ]
+
+[rubric.data-deletion]
+value = "yes-automated"
+citations = [
+  "- Requesting access to the personal information we hold about you and that we amend or delete it."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "This policy doesn't require the service to disclose data breaches with the user"
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = [
+  "SHARING YOUR INFORMATION WITH OTHER ENTITIES\n\n- We will not share your personal information with a third party outside The Walt Disney Family of Companies except in limited circumstances, including:\n- When you allow us to share your personal information with another company, such as:\n- Electing to share your personal information with carefully selected companies so that they can send you offers and promotions about their products and services; and\n- Directing us to share your personal information with third-party sites or platforms, such as social networking sites.\n- Please note that once we share your personal information with another company, the information received by the other company is controlled by that company and becomes subject to the other company’s privacy practices.\n- When we cooperate with financial institutions to offer co-branded products or services to you, such as our co-branded Disney Rewards Visa Card; however, we will do so only if permitted by applicable law and, in these cases, the financial institutions are prohibited from using your personal information for purposes other than those related to the co-branded products or services;\n- When companies perform services on our behalf, like package delivery, marketing and advertising, and customer service; however, these companies are prohibited from using your personal information for purposes other than those requested by us or required by law; and\n- When we share your personal information with third parties in connection with the sale of a business, to enforce our Terms of Use or rules, to ensure the safety and security of our guests and third parties, to protect our rights and property and the rights and property of our guests and third parties, to comply with legal process, or in other cases if we believe in good faith that disclosure is required by law."
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "The member of The Walt Disney Family of Companies that is the data controller for your information is responsible for and may use your information for the purposes described in this policy. Other members of The Walt Disney Family of Companies may have access to your information where they perform services on behalf of the data controller(s) (as a data processor) and, unless prohibited under applicable law, for use on their own behalf (as a data controller) for the purposes described in this policy. Consistent with applicable law and choices and controls that may be available to you, we may use information collected from you, or from devices associated with you, to:\n- Provide you with the experiences, products, and services you request, view, engage with, or purchase;\n- Communicate with you about your account or transactions with us and send you information or request feedback about features on our sites and applications or changes to our policies;\n- Send you offers and promotions for our products and services or third-party products and services;\n- Personalize content and experiences;\n- Provide you with targeted advertising based on your activity on our sites and applications and on third-party sites and applications;\n- To learn more about how we use your information for personalization and tracking, please visit Online Tracking Technologies and Advertising.\n- Operate, understand, optimize, develop, or improve our sites, applications, products, services and operations, including by using guest survey research and analytics tools; and\n- Detect, investigate and prevent activities that may violate our policies or be illegal."
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-all"
+citations = [
+  "- Choosing to control targeted advertising you receive within applications by using the settings and choices made available to you through your device(s), for example, by re-setting your device’s advertising identifier and/or opting out of interest based ads;\n\n[...]\n\nYou may exercise these controls and choices in various ways, including by visiting Communication Choices (under the Privacy Controls tab), contacting Guest Services, following instructions provided in communications sent to you, or by using your device or other available settings (for example, by re-setting your device’s advertising identifier and/or opting out of interest based ads). You can opt out of interest based ads by visiting the Digital Advertising Alliance or European Interactive Digital Advertising Alliance or using the opt-out mechanism in the “Interest Based Ads” link in the footer of the site you are visiting."
+]
+
+[rubric.law-enforcement]
+value = "unspecified"
+notes = [
+  "It's not mentioned of how this service operates with law enforcement"
+]
+
+[rubric.list-collected]
+value = "generally"
+citations = [
+  "We collect two basic types of information – personal information (as defined in this policy) and anonymous information (as defined in this policy) – and we may use personal and anonymous information to create a third type of information, aggregate information (also defined in this policy). For example, we collect:\n- Registration information you provide when you create an account, enter a promotion, or link your profile on a third-party site or platform with your registration account, such as your first name and surname, country of residence, gender, date of birth, email address, username, and password;\n- Transaction information you provide when you request information, contact Guest Services, or purchase a product or service from us, such as your postal address, telephone number, and payment information;\n- Information you provide in public forums on our sites and applications, such as your public posts;\n- Information sent either one-to-one or within a limited group using our message, chat, post, or similar functionality, where we are permitted by applicable law to collect this information;\n- Information we obtain from a third party, such as a site or platform provider, about use of our applications on third-party platforms or devices;\n- Location information, including location information provided by a mobile or other device interacting with one of our sites or applications (including through beacon technologies), or associated with your IP address, where we are permitted by law to process this information;\n- Activity information about your use, and the use by any person(s) you authorize through your account, of our sites and applications, such as the content you view or post, how often you use our services, and your preferences; and\n- Usage, viewing, technical, and device data when you visit our sites, use our applications on third-party sites or platforms, or open emails we send, including your browser or device type, unique device identifier, and IP address."
+]
+notes = [
+  "The phrase \"For example\" results in a general coverage of data collection"
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "From time to time, we may change this privacy policy to accommodate new technologies, industry practices, regulatory requirements or for other purposes. We will provide notice to you if these changes are material and, where required by applicable law, we will obtain your consent. Notice may be by email to you at the last email address you provided us, by posting notice of such changes on our sites and applications, or by other means, consistent with applicable law."
+]

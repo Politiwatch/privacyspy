@@ -15,10 +15,14 @@ const DEBUG = true;
 for (let entry of database) {
   console.log("Processing " + entry["name"]);
 
+  if(fs.existsSync(`product/${entry["slug"]}.toml`)) {
+    console.log("Already exists, skipping...");
+    continue;
+  }
+
   if (DEBUG) {
     if (entry["slug"] == "stilt" || !entry["published"]) {
       need_revision.add(entry["name"]);
-      continue;
     }
   }
 
@@ -29,13 +33,6 @@ for (let entry of database) {
   policy["slug"] = entry["slug"];
   policy["hostnames"] = entry["hostnames"];
   policy["sources"] = entry["sources"];
-
-  existingIcon = fs.readdirSync("icons/").find(f => f.startsWith(entry["slug"]));
-  if (existingIcon != null) {
-    policy["icon"] = existingIcon;
-  } else {
-    policy["icon"] = entry["slug"] + ".png";
-  }
 
   policy["rubric"] = {};
   for (let rubric_entry of entry["rubric"]) {
@@ -69,9 +66,6 @@ for (let entry of database) {
       !("note" in rubric_entry["answer"] && rubric_entry["answer"]["note"])
     ) {
       need_revision.add(policy["name"]);
-      if (DEBUG) {
-        continue;
-      }
     }
     policy["rubric"][question_slug] = rubric_obj;
   }
@@ -82,7 +76,6 @@ for (let entry of database) {
       let update_obj = {
         title: warning["title"],
         description: warning["description"],
-        // there are so few products that currently have warnings that it's easier to enter sources and fix dates ourselves
         date: new Date(warning["added"]),
         sources: [],
       };
@@ -103,7 +96,7 @@ for (let entry of database) {
     contributors.add(contributor);
   }
 
-  if (!need_revision.has(policy["name"])) {
+  if (true || !need_revision.has(policy["name"])) {
     fs.writeFileSync(
       "products/" + policy.slug + ".toml",
       toml.stringify(policy)

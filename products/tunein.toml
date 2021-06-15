@@ -1,0 +1,79 @@
+name = "TuneIn"
+description = "TuneIn is an American audio streaming service delivering live news, radio, sports, music, and podcasts."
+slug = "tunein"
+hostnames = [ "tunein.com" ]
+sources = [ "https://tunein.com/policies/privacy/" ]
+contributors = [ "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "yes-opt-out"
+citations = [
+  "We may use your Personal Information to provide you with personalized services, content, offers and recommendations. For example, we may analyze your listening history to recommend similar content that we think would be of particular interest to you, send you tailored recommendations based on your location or send you personalized marketing communications based on Personal Information we have collected about you.\n\n[...]\n\nWe may share your Personal Information with our third party advertising partners to provide ads that we think may interest you. For more information about our advertising and marketing practices and those of the third party advertising partners, please see our Cookie Policy"
+]
+notes = [
+  "TuneIn's cookie policy is at https://tunein.com/policies/cookie/. You can learn about optting-out in article 3"
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "We maintain administrative, technical and physical safeguards that are intended to appropriately protect Personal Information against accidental or unlawful destruction, accidental loss, unauthorized alteration, unauthorized disclosure or access, misuse, and any other unlawful form of processing of the Personal Information in our possession. Unfortunately, the Internet cannot be guaranteed to be 100% secure, and we cannot ensure or warrant the security of any Personal Information you provide to us."
+]
+
+[rubric.data-collection-reasoning]
+value = "mostly"
+notes = [
+  "The policy provides a strong overview in the 'How TuneIn Uses Your Information' section, but it uses lots of ambiguous language (such as 'may' and 'might' to avoid concrete statements)."
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "We collect information from social media services when you use your credentials for these services to log into the Service. For example, when you log in with your Facebook credentials, we collect the information you have authorized Facebook to share with us, such as your name, email address, gender, date of birth, and profile picture. We may also obtain other non-public information with your permission.\n\nWe may collect information about you from other third parties, such as other users or our marketing partners. For example, we may receive information about you when another user allows us to upload your contact information to the Service. We may combine this information with the other information we collect about you."
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [ "Last Updated Date: January 1, 2020" ]
+
+[rubric.data-deletion]
+value = "yes-contact"
+citations = [
+  "We take measures to delete your Personal Information or keep it in a form that does not permit identifying you when this information is no longer necessary for the purposes for which we process it, unless we are required by law to keep this information for a longer period. When determining the retention period, we take into account various criteria, such as the type of products and services requested by or provided to you, the nature and length of our relationship with you, possible re-enrollment with our products or services, the impact on the services we provide to you if we delete some information from or about you and mandatory retention periods provided by law and the statute of limitations."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "The service is not required to disclose data breaches by this policy"
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = [
+  "We may share any Personal Information we receive with vendors and service providers retained in connection with the provision of the Service. For example, we may use service providers to measure app usage and user engagement, serve advertising on our Services or provide DDoS mitigation services.\n\nWe may share your Personal Information with our third party advertising partners to provide ads that we think may interest you. For more information about our advertising and marketing practices and those of the third party advertising partners, please see our Cookie Policy.\n\nWe may share certain types of Personal Information with Publishers who provide the content you listen to on our Service. This may include information such as your device or cookie identifiers, device type, user agent, IP address, and zip code.\n\nWe do not rent, sell, or share Personal Information (as defined by California Civil Code §1798.83) about you with other people or nonaffiliated companies for their direct marketing purposes, unless we have your permission. If we receive your permission, nonaffiliated companies may use your Personal Information to send you offers or other information that you may find of interest. Notwithstanding the foregoing, if you are located outside of the EEA we may share Personal Information (as defined by California Civil Code §1798.83) about you with the National Football League (“NFL”) for their direct marketing purposes. If you wish to opt out of such information sharing with the NFL, please contact us at support@tunein.com.\n\nThe Service may allow you to share Personal Information with social networking services, such as Facebook. We do not share your Personal Information with them unless you direct the Service to share it. Their use of your Personal Information is governed by their privacy policies, and you may be able to modify your privacy settings on their services.\n\nYour Public Information, which includes your Follow Lists, is viewable by other Users. However, if you registered for the Service prior to May 7, 2014, then your Follow Lists will be private unless you change your profile settings to make them publicly accessible. Your profile information, such as any photographs, your username, and any content that you post in your account, is also viewable by other Users. We are not responsible for the privacy practices of other Users. Accordingly, we recommend that you carefully consider what you post to the Service before doing so.\n\nYour Public Information may also be accessible through search engines, such as Google or Yahoo, just like with many common social media services.\n\nWe may also share Personal Information about you with other third parties in the following circumstances:\n- We may disclose your Personal Information with your permission. We may seek your permission in various ways. For example, we may present you with an “opt-in” prompt when you register to use the Service or access certain content\n- We may access, preserve, and disclose your Personal Information or other account information if we believe doing so is required or appropriate to (i) comply with laws, law enforcement requests, and legal process, such as a court order or subpoena; (ii) respond to your requests; or (iii) protect your, our or others’ rights, property, or safety.\n- If we are involved in a merger, acquisition, financing due diligence, reorganization, bankruptcy or liquidation where the business will not continue as a going concern, receivership, sale of TuneIn assets, or transition of the Service to another provider, then your information may be sold or transferred as part of such a transaction as permitted by law and/or contract. The use of your information following any of these events should be governed by the provisions of this Privacy Policy in effect at the time the applicable information was collected.\n"
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-some"
+citations = [
+  "If you wish to opt out of such information sharing with the NFL, please contact us at support@tunein.com.\n\nEach marketing email communication we send you will contain instructions permitting you to “opt-out” of receiving future marketing communications. You may also contact us as indicated below to have your name deleted from our email mailing lists, or you may update your communication preferences in your account settings on our Website. Please note, however, that certain communications, such as push notifications, require you to change the settings on your device if you wish not to receive any future communications. In addition, on occasion we may send service-related announcements, such as disruption notifications, via email and you may not be able to opt-out of these communications.\n\nWhen you use our app, The Nielsen Company (US), LLC and Comscore, Inc. collect information on behalf of TuneIn about your use of the Service. If you wish to opt out of Nielsen’s digital measurement research, please visit the links to the Nielsen measurements in the app settings."
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "We may access, preserve, and disclose your Personal Information or other account information if we believe doing so is required or appropriate to (i) comply with laws, law enforcement requests, and legal process, such as a court order or subpoena; (ii) respond to your requests; or (iii) protect your, our or others’ rights, property, or safety."
+]
+
+[rubric.list-collected]
+value = "generally"
+citations = [
+  "If you register to use the Service, then you must provide us with your name, date of birth, a password and email address in order to create an account and user profile. You may also optionally add to your profile certain demographic information, such as your country, zip code and gender, as well as your photo. If you are a broadcaster, we ask you for information about your station and broadcast(s) when you register on our Service, including your name, email address, phone number, website, content streaming URL, as well as background information on the station and broadcast(s).\n\nIf you obtain a Subscription to the Service, then we will ask you to provide your payment information, such as your credit card number, so our service providers can process your payments for the Service.\n\nWe will collect any information which you provide to us through your communications with our customer-support team. If you subscribe to our newsletter, then we will collect certain information from you, such as your email address.\n\nWe may receive contact details of business partners’ and vendors’ employees as provided by business partners or vendors in furtherance of the relevant partner or vendor relationship.\n\nWe will collect any information which you provide to us when you apply for a job with TuneIn, including your curriculum vitae and references.\n\nWe collect information from social media services when you use your credentials for these services to log into the Service. For example, when you log in with your Facebook credentials, we collect the information you have authorized Facebook to share with us, such as your name, email address, gender, date of birth, and profile picture. We may also obtain other non-public information with your permission.\n\nWe may collect information about you from other third parties, such as other users or our marketing partners. For example, we may receive information about you when another user allows us to upload your contact information to the Service. We may combine this information with the other information we collect about you.\n\nWhen you use the Service, we collect information about your activities, such as the stations, artists or channels that you listen to, the User profiles that you view, your searches for friends or stations and your other actions and interactions with other Users or content on the Service, the stations, content and people that you follow (“Follow Lists”), your comments, any content that you post on the Service, and any other information resulting from your use of the Service that is publicly accessible by other Users (“Public Information”).\n\nIf you give us permission to import to the Service the contacts from any email account associated with your account, then we may collect information about your contacts. We may also collect your contacts if you share information or content with them from the Service or invite them to use the Service.\n\nWith your consent, we may obtain information about your physical location at regular intervals when you use the Service, such as by use of geolocation features in the device(s) through which you access the Service. In addition, we may infer your location from other information we collect (for example, your IP address indicates the general geographic region from which you are connecting to the Internet). We use location information to comply with radio stations’ content licenses (which are location-specific), and to provide you with features, notifications, advertising, or other content that is influenced by your location (such as showing you your local radio station).\n\nWe receive information from Users’ devices through which a User accesses the Service, such as IP address, web browser type, mobile operating system version, and unique device identifiers.\n\nOther websites may integrate TuneIn widgets (such as the TuneIn Player or TuneIn Follow Button). When you visit a site with a TuneIn widget embedded, we may receive certain information, including information about the web page you visited, your IP address, and other information about your device. TuneIn and the widget can recognize you across websites containing TuneIn widgets, and the widget may be used to show personalized content or advertising. We know when you interact with a widget, and websites containing the widgets may receive this information.\n\nWhen you visit the Service, we and our third party service providers receive and record information from your browser and from cookies and similar technologies. Learn more about how we use cookies and related technologies in our Cookie Policy."
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "We will post any adjustments to the Privacy Policy on this web page, and the revised version will be effective when it is posted. If you are concerned about how your information is used, then bookmark this page and read this Privacy Policy periodically.\n\nFrom time to time, we may desire to use or disclose Personal Information for uses not previously disclosed in our Privacy Policy. If our practices change regarding previously collected information in a way that would be materially less restrictive than stated in the version of this Privacy Policy in effect at the time we collected the information, then we will make reasonable efforts to provide notice and obtain consent prior to any such uses as may be required by law."
+]

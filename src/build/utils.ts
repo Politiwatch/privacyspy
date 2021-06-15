@@ -11,7 +11,7 @@ const rename = require("gulp-rename");
 const hb = require("gulp-hb");
 const hbHelpers = require("handlebars-helpers");
 
-const PAGE_NUMBER_PADDING = 3;
+const PAGE_NUMBER_PADDING = 3; // i.e.: *1* 2 3 ... 8
 
 export function hbsFactory(data: object = {}) {
   return hb()
@@ -220,19 +220,16 @@ function shouldIncludePage(
   currentPage: string,
   totalCount: number
 ): boolean {
-  let page_i = parseInt(page);
-  let currentPage_i = parseInt(currentPage);
+  const page_i = parseInt(page);
+  const currentPage_i = parseInt(currentPage);
 
   if (
     currentPage_i === page_i ||
     Math.abs(page_i - currentPage_i) < PAGE_NUMBER_PADDING ||
     page_i === 0 ||
     page_i === totalCount - 1 ||
-    (page_i === totalCount - 2 &&
-      currentPage_i === totalCount - 2 - PAGE_NUMBER_PADDING) ||
-    (page_i === 1 && currentPage_i === PAGE_NUMBER_PADDING + 1) ||
-    (page_i === 3 && currentPage_i === 0) ||
-    (page_i === totalCount - 4 && currentPage_i === totalCount - 1)
+    currentPage_i + PAGE_NUMBER_PADDING == totalCount - 2 ||
+    currentPage_i - PAGE_NUMBER_PADDING === 1
   ) {
     return true;
   }
@@ -245,13 +242,13 @@ function shouldIncludeEllipsis(
   currentPage: string,
   totalCount: number
 ): boolean {
-  let page_i = parseInt(page);
-  let currentPage_i = parseInt(currentPage);
+  const page_i = parseInt(page);
+  const currentPage_i = parseInt(currentPage);
 
   if (
-    Math.abs(page_i - currentPage_i) === PAGE_NUMBER_PADDING &&
-    page_i < totalCount - 2 &&
-    page_i > 1
+    (page_i === 1 && currentPage_i > PAGE_NUMBER_PADDING + 1) ||
+    (page_i === totalCount - 2 &&
+      currentPage_i < totalCount - PAGE_NUMBER_PADDING - 2)
   ) {
     return true;
   }
