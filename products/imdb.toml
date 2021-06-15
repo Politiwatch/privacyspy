@@ -1,0 +1,82 @@
+name = "IMDb"
+description = "IMDb is an online database of information related to films, television programs, home videos, video games, and streaming content online."
+slug = "imdb"
+hostnames = [ "imdb.com" ]
+sources = [ "https://www.imdb.com/privacy" ]
+contributors = [ "YuriiStasiuk", "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "yes"
+citations = [
+  "We use web beacons (also known as “action tags” or “single-pixel gifs”) and other technologies to measure the effectiveness of certain site features and to conduct research and analysis. We also allow third parties to place web beacons and other technologies on our site to conduct research and analysis, but we do not provide personal information to such third parties."
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "If you use our subscription service, we work to protect the security of your subscription information during transmission by using Secure Sockets Layer (SSL) software, which encrypts information you input."
+]
+
+[rubric.third-party-collection]
+value = "critical-only"
+citations = [
+  "We might receive information about you from other sources and add it to our account information. Click here to see examples of the information we receive.\nExamples of information we receive from other sources include updated delivery and address information so that we can correct our records and deliver your next communication more easily.\n\n"
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [
+  "Last Updated, February 8, 2018. To see what has changed click here."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [ "Not specified" ]
+
+[rubric.data-collection-reasoning]
+value ="mostly"
+citations = [
+  "We use your personal information to operate, provide, develop, and improve the products and services that we offer our customers. These purposes include: Provide, troubleshoot, and improve IMDb Services. We use your personal information to provide the IMDb Services, process payments, enhance functionality, analyze performance, fix errors, and improve the usability and effectiveness of the IMDb Services. Recommendations and personalization. We use 1your personal information to recommend features, content, products, and services that might be of interest to you, identify your preferences, and personalize your experience with IMDb Services. Comply with legal obligations. In certain cases, we collect and use your personal information to comply with laws. Communicate with you. We use your personal information to communicate with you in relation to IMDb Services via different channels (e.g., e-mail or on-site forums). Advertising. We use your personal information to display interest-based ads for features, products, and services that might be of interest to you. We do not use information that personally identifies you to display interest-based ads. To learn more, please see What About Advertising?. Fraud Prevention. We use personal information to prevent and detect fraud and abuse in order to protect the security of our customers, IMDb, and others."
+]
+notes = [
+  "Data may be collected for other reasons, hence the « These purposes include: »"
+]
+
+[rubric.data-deletion]
+value = "no"
+notes = [
+  "If you reside in California, you can request your data to be erased at https://help.imdb.com/article/issues/G73WRBWXE25UUTHP"
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = [
+  "Affiliated Businesses We Do Not Control: We work closely with our affiliated businesses. In some cases, we will include offerings from these businesses on IMDb. In other cases, we may include joint offerings from IMDb and these businesses on IMDb. You can tell when another business is involved in the offering, and we share user information related to those offerings with that business.\nAgents: We employ other companies and individuals to perform functions on our behalf. Examples include sending e-mail, removing repetitive information from user lists, analyzing data, and providing marketing assistance. They have access to personal information needed to perform their functions, but may not use it for other purposes.\nPromotional Offers: Sometimes we send offers to selected groups of IMDb users on behalf of other businesses. When we do this, we do not give that business your name and e-mail address. If you do not want to receive such offers, please use our User Administration pages to adjust your preferences.\n"
+]
+
+[rubric.law-enforcement]
+value = "always"
+citations = [
+  "We release account and other personal information when we believe release is appropriate to comply with law"
+]
+
+[rubric.list-collected]
+value = "exhaustively"
+citations = [
+  "You provide most such information when you register, search, post, participate in a contest or questionnaire, or communicate with us. For example, you provide information when you search for a movie, actor or director; provide information in our registration form; communicate with us by phone, e-mail, or otherwise; complete a questionnaire or a contest entry form; vote in a poll; provide movie reviews or information related to movies; participate in a discussion board; and employ our notification services. As a result of those actions, you might supply us with such information as your name, e-mail address, physical address, zip code, and phone number; your age and gender; the movies and actors you like or dislike; and your general movie preferences.\nExamples of the information we collect and analyze include the Internet protocol (IP) address used to connect your computer to the Internet; login; password; computer and connection information such as browser type and version, operating system, and platform; purchase history; the full Uniform Resource Locators (URL) clickstream to, through, and from our Web site, including date and time; cookie number; and pages you viewed or searched for. We may also use browser data such as cookies, Flash cookies (also known as Flash Local Shared Objects), or similar data on certain parts of our Web site for fraud prevention and other purposes. During some visits we may use software tools such as JavaScript to measure and collect session information, including page response times, download errors, length of visits to certain pages, page interaction information (such as scrolling, clicks, and mouse-overs), and methods used to browse away from the page."
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "We may e-mail periodic reminders of our notices and conditions, unless you have instructed us not to, but you should check our Web site frequently to see recent changes."
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-all"
+citations = [
+  "You can learn more about how to opt-out of interest-based advertising by going to the Amazon Advertising Preferences page."
+]
+notes = [
+  "You can access the Amazon Advertising Preferences page at https://www.amazon.com/adprefs"
+]

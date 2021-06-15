@@ -1,0 +1,79 @@
+name = "MetaBrainz"
+description = "The MetaBrainz Foundation is a non-profit that operates the MusicBrainz project and several other related projects."
+slug = "metabrainz"
+hostnames = [
+  "metabrainz.org",
+  "musicbrainz.org",
+  "picard.musicbrainz.org",
+  "coverartarchive.org",
+  "critiquebrainz.org",
+  "acousticbrainz.org",
+  "bookbrainz.org",
+  "listenbrainz.org",
+  "messybrainz.org"
+]
+sources = [ "https://metabrainz.org/privacy" ]
+contributors = [ "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+notes = [ "Data isn't used for targeted marketing" ]
+
+[rubric.security]
+value = "no"
+notes = [ "This policy doesn't detail how data is secured" ]
+
+[rubric.third-party-collection]
+value = "critical-only"
+citations = [
+  "Our projects' web pages may load some third-party content. Some, but possibly not all sites are listed below:\n\nCover art and other images: These are provided by the various cover art sites that have given MusicBrainz permission to do so and our own Cover Art Archive. This means that the relevant site will know (if they want to) your IP address, User-Agent string, etc., and which MusicBrainz web page you were visiting (the one which included the cover art image).\nAcoustID: Our fingerprints tab loads fingerprint information from acoustid.org.\nreCAPTCHA: Our account creation page loads third party content in order to prevent spammers from creating accounts.\nThe above information assumes that you are using \"normal\" web browser settings, whereby images are always loaded and HTTP referrer information is always sent.\n\nIt is impractical to constantly modify this privacy policy when MusicBrainz changes which third party content it utilizes. We will aim to use common sense, respect to our community and community review when adding more content from third party sites. We will also periodically review our policy to ensure that it remains current."
+]
+
+[rubric.history]
+value = "no"
+notes = [ "There is no changelog or date" ]
+
+[rubric.data-deletion]
+value = "yes-contact"
+citations = [
+  "Our process of automatically deleting your accounts across the MetaBrainz ecosystem is not complete yet (see below for a set of tickets where you can track our progress). If you would like to delete your accounts in the MetaBrainz ecosystem or mark a donation that is currently public as a private donation, please contact us and we will address your request as soon as possible."
+]
+notes = [
+  "Quoted from their GDPR statement at https://metabrainz.org/gdpr. More info on how to delete your data."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "This policy doesn't require the service to disclose data breaches"
+]
+
+[rubric.third-party-access]
+value = "no"
+notes = [ "Data isn't shared with third parties" ]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "As a logged-in user you can subscribe to one or more artists, labels, collections or other editors. The act of subscribing causes any edits made to (or by in the case of another editor) those entities to be emailed to you. By default, other users can see your list of subscriptions, however, you can opt out of this by editing the appropriate preference.\n\nThis does not provide \"perfect\" privacy though, in some cases it will be possible to infer information about the contents of your subscription list even though you have disallowed others from viewing that list directly. This imperfection arises because various parts of the system behave differently depending on whether or not an entity has any subscribers; also, the number of users subscribed to each artist is available via the artist pages. In the most extreme (possibly contrived) example, imagine that all users have their subscriptions set to \"public\", except for exactly one user whose list is \"private\". In that case, any discrepancy for a given artist between the shown list of subscribers and the total number of subscribers must be down to that one user. Thus, you can infer what artists are on that user's list."
+]
+
+[rubric.noncritical-purposes]
+value = "na"
+notes = [ "Data isn't used for non-essential purposes" ]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "Please note: Reasonable exceptions may apply to the above policy, for example to comply with applicable laws. "
+]
+
+[rubric.list-collected]
+value = "exhaustively"
+citations = [
+  "When creating an account with a MetaBrainz project you need to pick a unique username and choose a password, the username you pick is the only name associated with your account and will be what other MetaBrainz users know you as. You may optionally also tell us other information about yourself that will be displayed to other MetaBrainz users and the public.\n\nAdditionally, in order to edit the databases you will need to provide a confirmed email address. This email address will be held in confidence, the only method of revealing your email address to another user is if you choose to send a message to another user and enable the option to \"reveal my email address\". Changing the email address stored with your account will require you to verify the new address.\n\nIf you make any changes to a MetaBrainz project database, such as adding any data, the details of those changes will be visible to other logged-in users and the change will be associated with your username."
+]
+
+[rubric.revision-notify]
+value = "no"
+notes = [ "Users aren't notified of policy changes" ]

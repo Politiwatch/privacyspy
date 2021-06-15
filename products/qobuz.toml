@@ -1,0 +1,77 @@
+name = "Qobuz"
+description = "Qobuz is a French commercial music streaming and downloading service."
+slug = "qobuz"
+hostnames = [ "qobuz.com" ]
+sources = [ "https://www.qobuz.com/us-en/discover/legals/privacy" ]
+contributors = [ "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "yes"
+citations = [
+  "Xandrie analyses data related to the subscriber's use of the service in order to tailor the service to the subscriber (modification of the layout or appearance of the pages on which he or she navigates)."
+]
+notes = [
+  "It is not used outside of the service, according to the policy"
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "With regards to the risks that data processing presents, Xandrie takes appropriate measures to maintain security and confidentiality of your personal data, in particular to prevent data from being destroyed, distorted or accessed by unauthorised third parties.\n\nXandrie chooses subcontractors and service providers with high security standards."
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "The following categories of personal data are mainly collected in the context of your contractual or commercial relation to Xandrie: personal data provided by a third party (provided that the third party has obtained your prior consent to share your data with Xandrie)"
+]
+
+[rubric.history]
+value = "no"
+notes = [ "There is no date or changelog." ]
+
+[rubric.data-deletion]
+value = "yes-contact"
+citations = [
+  "You hold the following rights over your personal data:a right of access, a right of rectification, a right of deletion, a right of data portability, a right of opposition for reasons relating to your particular situation, a right of opposition to prospecting at any time, a right to withdraw your consent, a right to limitation, a right to complain to the CNIL (Commision Nationale de l’Informatique et des Libertés) if Xandrie's response to your request for the exercise of your right has not been satisfactory, a right to define guidelines for storage, erasure and communication of your data after you have died to a trusted third party designated by decree."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "The policy doesn't require the service to disclose data breaches"
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = [
+  "Any collected personal, as well as personal data which is later obtained by Xandrie, is used only by Xandrie. As such, only authorised personnel have access to this data.\nThe external recipients of your data are:\n\n- Xandrie's subcontractors (technical service providers in charge of data hosting or IT developments, payment service providers, etc.);\n- Partners and third parties with whom you have authorized data sharing\n"
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "Personal data collected by Xandrie is used determinately, explicitly and legitimately.\n\nOn the basis of a contract signed with you or with pre-contractual measures taken at your request, Xandrie carries out the following processing operations:\n- Subscriptions to Xandrie products and services;\n- Management of your commercial and contractual relations with Xandrie in the context of your subscriptions\n- Invoices and payments\n\nOn the basis of a legitimate interest pursued by Xandrie, the following processing operations will be carried out so as to:\n- improve our products and services according to problems reported by you;\n- tailor the service towards your tastes as part of your subscription, according to your preferences;\n- manage any complaints\n\nOn the basis of a legitimate interest pursued by Xandrie, or your consent where it is required, Xandrie uses processing for the following:\n- Commercial development\n- Information on the products and services offered by Xandrie\n- Audience analytics (statistics and audience analysis)"
+]
+
+[rubric.noncritical-purposes]
+value = "no"
+notes = [ "There is no mention of opting out of non-critical usage" ]
+
+[rubric.law-enforcement]
+value = "unspecified"
+notes = [
+  "It was not mentioned if the service was disclosing data to law enforcement"
+]
+
+[rubric.list-collected]
+value = "summarily"
+citations = [
+  "The following categories of personal data are mainly collected in the context of your contractual or commercial relation to Xandrie:\n\n- declarative personal data (data actively given by you, for example while filling in a subscription form for one of our services)\n- personal data related to your use of Xandrie’s products and services (such as data collected by cookies on our websites)\n- personal data provided by a third party (provided that the third party has obtained your prior consent to share your data with Xandrie)\npersonal data inferred or calculated by Xandrie\n\nConditions relating to cookies or connection tracers can be found in our cookies policy"
+]
+
+[rubric.revision-notify]
+value = "no"
+notes = [
+  "There isn't a requirement to disclose changes to the policy."
+]

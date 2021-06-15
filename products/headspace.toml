@@ -1,0 +1,83 @@
+name = "Headspace"
+description = "Headspace is an English-American online healthcare company, specializing in meditation."
+slug = "headspace"
+hostnames = [ "headspace.com" ]
+sources = [ "https://www.headspace.com/privacy-policy" ]
+contributors = [ "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "yes-opt-out"
+citations = [
+  "Like most companies, we partner with third parties, such as Facebook and Google, to manage our marketing of Headspace on other platforms, where such advertising is based on your past visits to our Products. These third party partners may use technologies, such as cookies, to gather information about your activities on the Products to deliver such advertising to you when you visit their platforms. For instance, if you visit www.headspace.com, a cookie may be attached to your browser in the form of the Facebook Pixel that allows Headspace to deliver advertising to you on the Facebook platform.\n\nYou can opt-out of the above-referenced cookie-based retargeting by visiting the Headspace Cookie Policy and clicking “opt-out of marketing / analytics cookies” at the bottom of the page. Doing so will erase all current marketing cookies and disable the placement of future marketing cookies.\n\nWe do NOT use cookies so that third parties can serve ads to you about their own products or services.\n\nWe do NOT sell or rent your personal information to any third parties for their own advertising or marketing purposes."
+]
+notes = [
+  "The Headspace cookie policy is at https://www.headspace.com/cookie-policy"
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "The security of your personal data is important to us. We follow generally accepted standards to protect the personal data submitted to us, both during transmission and once it is received. If you have any questions about the security of your personal data, you can contact us at help@headspace.com. Except as described under the “Disclosure of Your Data” section below, we do not provide your personal data to any third party without your specific consent, as defined by applicable law."
+]
+
+[rubric.third-party-collection]
+value = "no"
+notes = [ "The service doesn't collect data from third-parties." ]
+
+[rubric.history]
+value = "last-modified"
+citations = [ "Last update: 05/08/2020" ]
+
+[rubric.data-deletion]
+value = "yes-contact"
+citations = [
+  "The retention periods applied by Headspace comply with applicable legislation in effect on the date hereof, namely:\n\nFor data relating to your account: such data will not be retained beyond your request that your account be deleted.\n\nFor transactional data relating to your purchases: such data is kept for the entire period of the contractual relationship, then in accordance with legal obligations and applicable statute of limitation periods. Please note that this data does not include Payment Card information, which is processed by our third-party payment processors, and not Headspace.\n\nFor data collected based on your consent to receive our marketing communications: we will use such data until you withdraw consent or applicable law requires that such data is no longer used.\n\nWhen your data are collected in the context of requests/queries: such data are kept for the period necessary to process and reply to such requests or queries.\n\nWhen cookies or other trackers are placed on your terminal, they are kept for a period of 12 months.\n\nOther data will be kept as long as necessary for the purposes pursued and in compliance with our legal obligations, including the applicable statute of limitations."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "The service is not required by its policy to alert users in case of a breach"
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = [
+  "We use information held about you in the following ways:\n[...]\n- To serve our advertisements to you through third party platforms, such as Facebook or Google, on other sites and apps or across your devices, to the extent that you have provided consent for such uses under applicable law.\n- To provide you with the SMS Service to the extent that you have provided consent for such practices under applicable law."
+]
+notes = [
+  "There is a partial inclusion of what services are used, but the term \"such as\" is used. NoScript detected the following trackers as well: Google Tag Manager, Optimizely, Branch, and \"cdn-akami.mookie1.com\""
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "We use information held about you in the following ways:\n\n- To provide you with the Products.\n- To answer your questions or requests for information or handle your complaints.\n- To ensure that content provided by the Products is presented in the most effective manner for you and for your computer or other device.\n- To provide you with promotional communications, such as email, to the extent that you have provided consent to receive such communications under applicable law.\n- To carry out our obligations arising from any agreements entered into between you and us.\n- To allow you to participate in interactive features of the Products, when you choose to do so.\n- To notify you about updates or changes to Product features and content.\n- To understand your broad, non-specific geographic location to help us identify groups of users by general geographic market (such as zip code, state or country).\n- To account for applicable sales taxes based on zip codes provided to our payment processors for purchases made through the Website.\nTo inform your Community about your registration and use of the Products as described under Corporate and Other Community Sharing in section 6 above.\n- To serve our advertisements to you through third party platforms, such as Facebook or Google, on other sites and apps or across your devices, to the extent that you have provided consent for such uses under applicable law.\n- To provide you with the SMS Service to the extent that you have provided consent for such practices under applicable law.\n- We may also ask you to complete surveys that we use for research purposes, although you do not have to respond to them.\n- To manage your payments and orders.\n- If you are an existing customer, we will only contact you by electronic means (e-mail or in-Product communication) with information about products and services similar to those which were the subject of a previous sale to you, except if you opt-out to such communications.\n- If you choose to become a primary account holder of a Headspace Family plan, we may cross reference the address you’ve provided with that of any subsidiary account holder seeking to join your Headspace Family plan in order to verify the validity of the subsidiary account holder.\n- If you choose to become a subsidiary account holder of a Headspace Family plan, we may cross reference the address you’ve provided with that of any primary account holder administering your Headspace Family plan in order to verify the validity of your subsidiary account"
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-all"
+citations = [
+  " If your Buddy would like us to delete his or her data, they can do so by opting-out as described in each invitation or by contacting us at help@headspace.com.\n[...]\nFor more data about interest-based ads, including how to opt-out of having your web-browsing data used for behavioral advertising purposes, please visit www.aboutads.info/choices. \n[...]\nIf you are an existing customer, we will only contact you by electronic means (e-mail or in-Product communication) with information about products and services similar to those which were the subject of a previous sale to you, except if you opt-out to such communications.\n[...]\nApple iOS users may opt-in to allow the Products to provide data regarding the amount of minutes meditated to the Apple iOS “Health” application for display. This data will not be shared with third parties or used for marketing purposes.\n[...]\nFor personal data covered by Privacy Shield, you have the ability to opt-out of whether such personal data is disclosed to a third-party (apart from service providers) or is to be used for a purpose that is materially different for the purpose for which it was originally collected or subsequently authorized. You can contact Headspace at help@headspace.com in order to make such choices."
+]
+
+[rubric.law-enforcement]
+value = "strict"
+citations = [
+  "If we are under a duty to disclose or share your personal data in order to comply with any legal obligation such as to comply with a subpoena, bankruptcy proceedings, similar legal process, or in order to enforce or apply our agreements with you; or to protect the rights, property, or safety of Headspace, our customers, or others. This includes exchanging data with other companies and organizations for the purposes of fraud protection and credit risk reduction."
+]
+
+[rubric.list-collected]
+value = "generally"
+citations = [
+  "We may collect and process the following data about you: • Personal data including, for example, your name, e-mail address, password, and in certain instances, telephone number, data about your usage of the Products and data collected by tracking technologies as further described in section 4 below that may identify you as an individual or allow online contact with you as an individual.\n\n• For individuals who participate in a Headspace Family plan, we may collect additional personal data, for example, home address in order to verify family member status.\n\n• If, as a primary account holder of a Headspace Family plan, you choose to invite additional family members to become subsidiary account holders, we will ask you for their name and email address. We will use this data to invite him or her to join the Products. We store this data for the sole purpose of sending invitations and confirming family member status. If your subsidiary account holder(s) would like us to delete their data, they can do so by contacting the primary account holder of their family plan to be removed.\n\n• Headspace does not collect or process credit or debit card (“Payment Card”) data. Apple and Google collect Payment Card data with respect to in-app purchases made through the Apps, and our payment processor collects Payment Card data with respect to purchases made through the Websites. Such payment processors generally provide us with some limited data related to you, such as a unique, anonymous token that enables you to make additional purchases using the data they’ve stored, and your card’s type, expiration date, billing address, and the last four digits of your card number.\n\n• For individuals using the Products in connection with a Community client account as described in section 6, business data such as your company name, and company email address to the extent that you or your Community provides such data.\n\n• Facebook profile information, such as name, email address, and Facebook ID, if you choose to log in to the Products through Facebook.\n\n• Device information such as operating system version, device type, and system performance data.\n\n• Data collected via tracking technologies, as fully described in section 4.\n\n• If you choose to invite a “Buddy” to use the Products using our Buddy system, we will ask you for their name and email address. We will use this data to invite him or her to join the Products. We store this data for the sole purpose of sending invitations and tracking the success of our Buddy program. If your Buddy would like us to delete his or her data, they can do so by opting-out as described in each invitation or by contacting us at help@headspace.com.\n\n• If you choose to have your account verified to confirm your status as a student, we may allow a third party platform to access the specific personal data you provide in order to perform the verification. All the information you need to fill in the open text fields during account registration is mandatory. Any failure to complete that information or any response Headspace considers abnormal may result in Headspace refusing (or being unable) to process your request. You agree that the personal data you provide about yourself or subsidiary account holders or “Buddies” to Headspace will be current, accurate, complete and unequivocal.\n\n• If you chose to have your account verified to confirm your status as a US-based healthcare provider, we may collect your National Provider Identifier (“NPI”) in connection with your email address in order to perform the verification."
+]
+notes = [
+  "It's important to note the frequent use of \"may\" and \"such as\""
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "We may update this Privacy Policy to reflect changes to our data practices. If we make any material changes we will notify you by in-Product message, email (sent to the e-mail address specified in your account) or by means of a notice in the Products prior to the change becoming effective. We encourage you to periodically review this page for the latest data on our privacy practices."
+]

@@ -51,7 +51,7 @@ citations = [
 [rubric.data-collection-reasoning]
 value = "somewhat"
 citations = [
-  "2. HOW DO WE USE PERSONAL INFORMATION?\r\n\r\nTo fulfill your requests and provide our Services to you.\r\n\r\nFor marketing purposes.\r\n\r\nTo communicate with you.\r\n\r\nTo monitor, improve and develop our products and services\r\n\r\nTo protect the security and integrity of our business, comply with legal requirements and obligations, or as otherwise permitted by law. "
+  "2. HOW DO WE USE PERSONAL INFORMATION?\n\nTo fulfill your requests and provide our Services to you.\n\nFor marketing purposes.\n\nTo communicate with you.\n\nTo monitor, improve and develop our products and services\n\nTo protect the security and integrity of our business, comply with legal requirements and obligations, or as otherwise permitted by law. "
 ]
 
 [rubric.noncritical-purposes]
@@ -69,7 +69,7 @@ citations = [
 [rubric.list-collected]
 value = "generally"
 citations = [
-  "The categories of information we collect **may include**:\r\n\r\nContact and profile information.\r\n\r\nPayment and transaction information. \r\n\r\nComments, chat and opinions. \r\n\r\n[...]"
+  "The categories of information we collect **may include**:\n\nContact and profile information.\n\nPayment and transaction information. \n\nComments, chat and opinions. \n\n[...]"
 ]
 
 [rubric.revision-notify]

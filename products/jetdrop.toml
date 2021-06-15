@@ -1,0 +1,86 @@
+name = "Jetdrop"
+description = "Jetdrop is a file sharing service that allows you to share large files for free."
+slug = "jetdrop"
+hostnames = [ "jetdrop.net" ]
+sources = [ "https://www.jetdrop.net/legal/privacy-policy/" ]
+contributors = [ "101AustinTech", "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "yes"
+citations = [
+  "customise the Platform to your preferences and to show you advertising and information that is most relevant to you and your interests based on the information you have provided to us or we have otherwise collected;"
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "If you set up your account on our Platform using an API with a third-party social media platform, you also consent to us obtaining and using your information from such platform."
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [
+  "Policy Document Version: February 25, 2019"
+]
+
+[rubric.data-deletion]
+value = "yes-automated"
+citations = [
+  "We will delete your personal information when it is no longer required for these purposes. If there is any information that we are unable, for technical reasons, to delete entirely from our systems, we will put in place appropriate measures to prevent any further processing or use of the data."
+]
+notes = [
+  "If they cannot (for any reason) not manage to fully delete your data, they will \"we will put in place appropriate measures to prevent any further processing or use of the data\"."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "There is no mention of what would happen in a data breach as this is still a relatively new site and does not specify."
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified-critical"
+citations = [
+  "b) having obtained your consent to collect and use certain types of personal information (for example, in relation to any direct marketing activities, cookies and tracking technologies)."
+]
+
+[rubric.list-collected]
+value = "summarily"
+citations = [
+  "Information collected through the Platform may include personal information about you. We require your personal information only in limited circumstances when you: a) create an account on the Platform (including email, first name, last name, phone number, billing address and optional profile picture); b) pay for a feature on the Platform; and c) share a file on the Platform.",
+  "When you visit, navigate through and interact with the Platform, we may use automated data collection technology to collect and store certain information about your visit. The technologies we use for this automatic data collection may include log files, usage monitoring software and cookies.",
+  "To understand how our advertising campaigns are performing, and better understand the visitors to our Platform, we may collect certain information via our Platform through our advertising service providers. This includes data to help us understand how users interact with the services, serving advertising on our behalf across the internet, and measuring the performance of these advertisements."
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "b) if we believe that the use or disclosure is reasonably necessary to assist a law enforcement agency or an agency responsible for national security in the performance of their functions; c) if we believe that the use or disclosure is reasonably necessary to enforce any legal rights we may have, or is reasonably necessary to protect the rights, property and safety of us, our customers, or others; or d) if we are authorised, required or permitted by law to disclose the information."
+]
+
+[rubric.revision-notify]
+value = "no"
+citations = [
+  "We reserve the right, at our discretion, to update or revise this privacy policy at any time. Changes to this privacy policy will take effect immediately once published on the Platform. Please check this privacy policy regularly for modifications and updates."
+]
+
+[rubric.security]
+value = "yes"
+citations = [
+  "Personal information collected on this Platform is collected and held by Jetdrop. Please refer to the end of this privacy policy for our contact details. We will take reasonable efforts to protect personal information that is held by us from loss, misuse, unauthorised access, disclosure, alteration, or destruction."
+]
+notes = [
+  "There is a security outline at https://www.jetdrop.net/features/security/"
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+notes = [
+  "They specify that they do collect anonymous personal data for the use of advertising and improving their service, showing that they are being transparent with the user."
+]
+
+[rubric.noncritical-purposes]
+value = "no"
+notes = [
+  "Data is used for marketing, but there is no mention of the ability to opt out of this non-critical usage."
+]

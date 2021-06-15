@@ -1,0 +1,85 @@
+name = "CNN"
+description = "The Cable News Network, or CNN, is an international news network based in the United States."
+slug = "cnn"
+hostnames = [ "cnn.com" ]
+sources = [ "https://www.cnn.com/privacy0?no-st=9999999999" ]
+contributors = [ "UnKnOwN" ]
+
+[rubric.behavioral-marketing]
+value = "yes-opt-out"
+citations = [
+  "We use cookies and other technologies both to provide our Services to you and to advertise to you. We also may work with Partners to help them advertise to you when you visit other websites or mobile applications, and to help them perform user analytics. These technologies may also be used to analyze how our Users interact with advertising on our Services and elsewhere, and more generally, to learn more about our Users and what services or offers you might prefer to receive. "
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "We have put in place physical, electronic, and managerial procedures designed to help prevent unauthorized access, to maintain data security, and to use correctly the Information we collect online. These safeguards vary based on the sensitivity of the Information that we collect and store."
+]
+notes = [ "The statement is very vague." ]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "\"... may sometimes enhance the Information with other information that we obtain from third party sources.\""
+]
+
+[rubric.history]
+value = "last-modified"
+notes = [
+  "The last modified date is available at the bottom of the policy."
+]
+
+[rubric.data-deletion]
+value = "no"
+notes = [
+  "Nothing is mentioned about data deletion in the privacy policy."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "Nothing mentioned about data breaches in the privacy policy."
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = [
+  "We may share the Information with unaffiliated Partners and third parties (e.g., our third party service providers, advertisers, advertising networks and platforms, agencies, other marketers, magazine publishers, retailers, participatory databases, and non-profit organizations) that wish to market products or services to you.\n"
+]
+
+[rubric.data-collection-reasoning]
+value = "mostly"
+citations = [
+  "We, along with our Partners, may use the Information to:\n\n1. provide and communicate with you about the Services or your account with us,\n2. fulfill your requests regarding the Services, including without limitation requests for newsletters and notifications,\n3. respond to your inquiries, and notify you if you have won a contest,\n4. communicate with you about other products, programs or services that we believe may be of interest to you,\n5. enforce the legal terms (including without limitation our policies and terms of service) that govern your use of our Services, and/or for the purposes for which you provided the Information,\n6. provide technical support for the Services,\n7. prevent fraud or potentially illegal activities (including, without limitation, copyright infringement) on or through the Services,\n8. protect the safety of our Users,\n9. customize or personalize ads, offers and content made available to you based on your visits to and/or usage of the Services or other online or mobile websites, applications, platforms or services, and analyze the performance of those ads, offers and content, as well as your interaction with them,\n10. perform analysis regarding how you use the Services or any part thereof,\n11. send gifts, cards, invitations or emails if you use these services, to your designated recipients.\""
+]
+notes = [
+  "The explanation of the reasons for data collection is generally reasonable. "
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-all"
+citations = [
+  "[...] if you would like to opt out from our sharing of your personal Information with unaffiliated third parties for the third parties' direct marketing purposes you may contact our Privacy Policy Coordinator at the above address and request that we opt you out of such sharing."
+]
+notes = [
+  "Despite you can opt-out of targeted advertisement, your information can still be used for non-critical purposes (like site using analysis) in the CNN."
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "The service can disclose the information \"in response to legal process, for example, in response to a court order or a subpoena, a law enforcement or government agency's request or similar request.\""
+]
+
+[rubric.list-collected]
+value = "generally"
+notes = [
+  "The policy lists the data it collects only generally (data-types are listed) and uses many \"such as\" phrases, which make statements non-absolute. "
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "From time to time, we may update this Privacy Policy. We will notify you about material changes by either sending an email message to the email address you most recently provided to us or by prominently posting a notice on our Service. "
+]

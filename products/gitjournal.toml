@@ -1,0 +1,72 @@
+name = "GitJournal"
+description = "GitJournal is a note taking app focused on privacy and data portability."
+slug = "gitjournal"
+hostnames = [ "gitjournal.io" ]
+sources = [ "https://gitjournal.io/privacy/" ]
+contributors = [ "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+citations = [
+  "We try not to collect any advertising IDs.\n[...]\nWe don’t like [advertising], and therefore do not show any ads. Nor do we ever plan to."
+]
+
+[rubric.security]
+value = "no"
+notes = [ "There is no outline of security practices of this service" ]
+
+[rubric.third-party-collection]
+value = "no"
+notes = [ "This service doesn't collect data from third-parties." ]
+
+[rubric.history]
+value = "last-modified"
+citations = [ "Effective date: April 05, 2019" ]
+
+[rubric.data-deletion]
+value = "no"
+notes = [
+  "There is no requirement per this policy to allow you to delete your data"
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "This policy doesn't require the service to disclose data breaches"
+]
+
+[rubric.third-party-access]
+value = "yes-specified-noncritical"
+citations = [
+  "Your data can be synchronized with other Git Hosting providers. We have no control over these 3rd party GitHosting providers. We do not collect any information about your notes.\n[...]\nWe use the following 3rd party services to enhance GitJournal -\n\nFirebase Analytics.\nCrashlytics.\nThese both can be opted-out in the Settings of GitJournal."
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "If you request information or technical support, your personal data (such as your email address) is used only to respond to specific inquiry. The other information such as application version, device and OS version is required only for improving the application.\n[...]\nGitJournal also collects aggregated, anonymous user data regarding app usage. The user data we collect is used to improve GitJournal and the quality of our service. This may include the device’s Internet Protocol (IP) address, locale preferences, identification numbers associated with your devices, your mobile carrier, date and time stamps, system configuration information, and other interactions with the application. We try not to collect any advertising IDs."
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-all"
+citations = [
+  "We use the following 3rd party services to enhance GitJournal -\n\nFirebase Analytics.\nCrashlytics.\n\nThese both can be opted-out in the Settings of GitJournal."
+]
+
+[rubric.law-enforcement]
+value = "unspecified"
+notes = [
+  "It is not mentioned when law enforcement has access to your data"
+]
+
+[rubric.list-collected]
+value = "generally"
+citations = [
+  "If you request information or technical support, your personal data (such as your email address) is used only to respond to specific inquiry. The other information such as application version, device and OS version is required only for improving the application.\n[...]\nGitJournal also collects aggregated, anonymous user data regarding app usage. The user data we collect is used to improve GitJournal and the quality of our service. This may include the device’s Internet Protocol (IP) address, locale preferences, identification numbers associated with your devices, your mobile carrier, date and time stamps, system configuration information, and other interactions with the application. We try not to collect any advertising IDs."
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "This privacy policy may be updated from time to time for any reason. We will notify you of any changes to GitJournal Privacy Policy by posting the new Privacy Policy. If you have any questions about GitJournal’s Privacy Policy please contact us via email at support@gitjournal.io"
+]

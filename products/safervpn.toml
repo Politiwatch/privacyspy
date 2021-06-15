@@ -1,0 +1,77 @@
+name = "SaferVPN"
+description = "SaferVPN is a VPN service operated by Safer Social, Ltd."
+slug = "safervpn"
+hostnames = [ "safervpn.com", "app.safervpn.com" ]
+sources = [ "https://www.safervpn.com/legal/privacy" ]
+contributors = [ "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+notes = [
+  "There is no mention of this policy using your data for targeted marketing."
+]
+
+[rubric.security]
+value = "no"
+notes = [
+  "There is no mention of such in the policy. There are some separate pages for marketing that its a \"no-log VPN\" or that it has \"smart Wi-Fi protection.\""
+]
+
+[rubric.third-party-collection]
+value = "critical-only"
+citations = [
+  "The Third-Party Payment Processor of your choosing will provide us with, and we shall then store, the date on which you made the payment and the date that your Subscription Plan will expire, along with a generic number (the \"Order ID Number\")."
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [ "Last updated: December 11, 2019" ]
+
+[rubric.data-deletion]
+value = "no"
+citations = [
+  "12.California Consumer Privacy Act Addendum\n[...]\n(2) Right to Request Deletion of Personal Information\n\nYou have the right to request deletion of Personal Information collected or maintained by us. To do so, please submit a request by emailing privacy@safervpn.com, by calling (800) 532-1709, or by visiting https://dsar.safervpn.com."
+]
+notes = [
+  "If you are in California, consider this as a \"Yes, using an automated mechanism,\" as the CCPA gives you the right to the deletion of your personal information."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "This policy doesn't require the service to notify you of data breaches"
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified-critical"
+citations = [
+  "We may use Information we collect in order to: facilitate the provision of the Service to you, maintain and improve SaferVPN's site and services, send notices to you, and to protect the rights of SaferVPN, of its Users and of other third-parties (e.g., in order to prevent and detect (i) fraud against our Service (such as credit card fraud (and (ii) abuse of our network (such as spamming other illicit activity)).\n\nWe do not disclose personally identifying Information to third-parties, except if we - believe that it is necessary to comply with a law, regulation, legal request or legal process; to protect the rights, property or personal safety of SaferVPN, its Users and any other person; to address fraud, security or technical issues; or to protect SaferVPN's rights (including investigation of potential violations thereof) or property; are involved in a bankruptcy, merger, acquisition, reorganization or sale of assets, where your Information may be sold or transferred as part of that transaction. In any such transfer of Information, we will ensure the confidentiality of any personal Information involved in such transactions and provide notice before personal Information is transferred and becomes subject to a different privacy policy; believe that it is necessary for the provision of the Service, such as responding to your requests for customer services or disclosure to third-parties who host the Service at a co-location facility for servers; or have obtained your consent, as provided, for example, under Section 2 above."
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "When a User creates or reconfigures a User Account, the User provides his/her e-mail address, and any other personal or preference information that you elect to provide to us.\n\nSaferVPN only uses your email address to alert you to payment transactions, password changes, updates and announcements and opportunities from our Marketing Department.\n\nWe collect minimal usage statistics to maintain our quality of service. Our VPN servers log the following information each time a User activates and uses the Service (\"Session\"): date and time on which the Session began, date and time on which the Session ended, the amount of data transmitted during each Session, to which location (eg. USA East) (We do not hold servers’ IP addresses), and from which country you connected from (We do not hold IP addresses).\nWe collect the data mentioned above solely for the purposes set forth in Section 5 below.\n\nAt SaferVPN we do not log your browsing activity, data or IP addresses including: Any of the websites you visited in the past or plan on visiting in the future. Any data you may have downloaded, shared, or viewed. Any of your IP address or DNS queries.\n\nWe closely review any requests we receive for customer information by a third party. We cannot provide information that we do not have, and we do not provide information that we do have unless we are legally required to\n\nOur website servers automatically record information created by Users’ use of our website. Such data is collected by web server logs and cookies (see explanation in Section 4 below) and may include information such as: the date and time of visits to SaferVPN’s website, the pages viewed, time spent on our Site, and the Internet sites visited just before and just after our Site.\n"
+]
+
+[rubric.noncritical-purposes]
+value = "na"
+notes = [ "Data is never used in a non-critical purpose" ]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "...believe that it is necessary to comply with a law, regulation, legal request or legal process; to protect the rights, property or personal safety of SaferVPN, its Users and any other person; to address fraud, security or technical issues; or to protect SaferVPN's rights (including investigation of potential violations thereof) or property;"
+]
+
+[rubric.list-collected]
+value = "generally"
+citations = [
+  "When a User creates or reconfigures a User Account, the User provides his/her e-mail address, and any other personal or preference information that you elect to provide to us.\n\nSaferVPN only uses your email address to alert you to payment transactions, password changes, updates and announcements and opportunities from our Marketing Department.\n\nWe collect minimal usage statistics to maintain our quality of service. Our VPN servers log the following information each time a User activates and uses the Service (\"Session\"): date and time on which the Session began, date and time on which the Session ended, the amount of data transmitted during each Session, to which location (eg. USA East) (We do not hold servers’ IP addresses), and from which country you connected from (We do not hold IP addresses).\nWe collect the data mentioned above solely for the purposes set forth in Section 5 below.\n\nAt SaferVPN we do not log your browsing activity, data or IP addresses including: Any of the websites you visited in the past or plan on visiting in the future. Any data you may have downloaded, shared, or viewed. Any of your IP address or DNS queries. \nWe closely review any requests we receive for customer information by a third party. We cannot provide information that we do not have, and we do not provide information that we do have unless we are legally required to\n\nOur website servers automatically record information created by Users’ use of our website. Such data is collected by web server logs and cookies (see explanation in Section 4 below) and may include information such as: the date and time of visits to SaferVPN’s website, the pages viewed, time spent on our Site, and the Internet sites visited just before and just after our Site.\n\nIn order to pay for the use of our Service, we will direct you to perform payment through one of the Third-Party Payment Processors we work with.\n\nThe Third-Party Payment Processor of your choosing will provide us with, and we shall then store, the date on which you made the payment and the date that your Subscription Plan will expire, along with a generic number (the \"Order ID Number\").\n\nWe need your Order ID Number in order to link your order to your User Account.In addition, in case you selected to pay through a credit card we will also store the last four (4) digits of your credit card number.\n\nWe also store your name and address, and this data may also be independently stored by the Third-Party Payment Processor handling the transaction. We store this information as it enables us to know when your Subscription Plan will expire and to prevent and detect fraud.\n\nYou may contact us, as specified in Section 11 below, in order to request the deletion of your home address from our servers.\n\nWe are not responsible for any Third-Party Payment Processor handling your transaction and you should refer to the Third-Party Payment Processor's privacy policy to see how they use your data since it is subject to their rules and policies.\n\nIf you are concerned about revealing your identity through your Payment Data, we recommend using Bitcoin to protect your Personal Data and anonymity.\n\nAs a User you may post Comments on the Site.\n\nAny personal information you elect to post on the Site as part of such Comments, and the sharing of such personal information, is done at your own risk.\n\nAny Personal Information post by you on the Site may be saved, copied, resent or otherwise used by other Users, and we cannot control the use of such personal information by any such recipients.\n\nWe cannot and do not guarantee that personal information posted by you will not be used by unauthorized persons.\n\nYou understand and acknowledge that, even after personal information, that was posted by you, was removed from the Site, such personal information may be collected, used and redistributed if stored by other Users.\n\nWe collect only the usage statistics needed to retain or improve the quality of our service.\n\nIf user Sally signs up for a SaferVPN Plan or Free Trial, she will then be asked to provide an email address and password. That information will only be used to contact Sally regarding her service, or to help her reset her password. These details will not be given to third-parties.\n\nIf Sally is traveling in the UK, and logs onto US Streaming, we will not know, nor log which IP address was her original address, but we do know which of our servers was accessed by an anonymous SaferVPN customer, what time that server was accessed, how long that server was used and how much aggregate data was transferred during this time.\n\nWe may know that a SaferVPN customer accessed one of our servers, but we do not know how and who accessed our service.\n\nAt SaferVPN, we remain committed to the right to privacy online for all.\n\nYou may contact us at privacy@safervpn.com to obtain additional information about retention of your Personal Data."
+]
+
+[rubric.revision-notify]
+value = "no"
+citations = [
+  "We may revise this Privacy Policy from time to time. Your continued use of the Site and/or Service will be deemed to constitute your acceptance of any and all such changes."
+]

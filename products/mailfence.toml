@@ -1,0 +1,76 @@
+name = "Mailfence"
+description = "Mailfence is an encrypted email service that offers OpenPGP based end-to-end encryption and digital signatures."
+slug = "mailfence"
+hostnames = [ "mailfence.com" ]
+sources = [ "https://mailfence.com/en/privacy.jsp" ]
+contributors = [ "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+notes = [ "Data is not used for targeted advertising" ]
+
+[rubric.security]
+value = "yes"
+notes = [
+  "There are seperate white papers for this:\nhttps://mailfence.com/en/secure-email.jsp\nhttps://mailfence.com/en/end-to-end-encryption.jsp\nhttps://mailfence.com/en/two-factor-authentication.jsp"
+]
+
+[rubric.third-party-collection]
+value = "no"
+notes = [ "No data is collected from third parties" ]
+
+[rubric.history]
+value = "last-modified"
+citations = [ "Last updated on June 21, 2017." ]
+
+[rubric.data-deletion]
+value = "yes-automated"
+citations = [
+  "Should you close your account, all data will be permanently deleted 30 days after the legal expiration date (i.e. the Belgian law imposes 365 days after account closing). This means that your data will be PERMANENTLY deleted, as opposed to the practice of some major cloud companies which are unable to delete data. We do not delete your account before the legal expiration date because users often ask to reopen their account after having closed it themselves."
+]
+notes = [
+  "A separate tutorial on how is on their support page: https://kb.mailfence.com/kb/how-can-i-delete-my-account/"
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "This policy doesn't require the service to disclose data breaches to users"
+]
+
+[rubric.third-party-access]
+value = "no"
+citations = [
+  "We do not sell, trade or otherwise transfer to outside parties your personally identifiable information except when forced by Belgian law [...]."
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "The information we collect from you may be used in any of the following ways :\nTo perform technical checks;\nTo fulfill legal requests;\nTo deliver customer service\nTo process payment transactions."
+]
+
+[rubric.noncritical-purposes]
+value = "na"
+notes = [ "Data isn't used for non-essential purposes" ]
+
+[rubric.law-enforcement]
+value = "unspecified"
+citations = [
+  "We do not participate nor co-operate with any kind of private or government surveillance or monitoring service. Note that Belgium does not have any equivalent to the US NSL (National Security Letter) and gag order, so we cannot be forced to do something without being allowed to disclose it.\nWe do not co-operate with the NSA, we do not offer any authority shadow access to our Service.\nWe also do not directly disclose any information about our users to law enforcement agencies from outside Belgium and it would be illegal for us to do so.\nCheck our transparency report along with an up-to-date warrant canary."
+]
+notes = [
+  "The service discloses who they won't share data to, but doesn't mention if and when they will to other parties."
+]
+
+[rubric.list-collected]
+value = "exhaustively"
+citations = [
+  "We collect IP addresses, message-ID's, sender and recipient addresses, subjects, browser versions, countries and timestamps.\nWhen registering, you will be asked to enter an external email address. We send your activation code to this address and use it to communicate with you in case you are unable to access your account.\nIncoming and outgoing messages are automatically analysed by our anti-spam, anti-virus and anti-abuse checking routines.\nWe implement a local instance of Matomo, an open source analytics tool, on the commercial website only (home, registration and subscription pages included) and not within the application itself.\nWhen you pay by credit card we store some of its details.\nTeam members have signed a confidentiality agreement to protect collected data."
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "If we decide to change our privacy policy, we will notify you of the changes."
+]

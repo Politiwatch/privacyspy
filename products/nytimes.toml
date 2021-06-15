@@ -1,5 +1,5 @@
 name = "The New York Times"
-description = 'The New York Times is a New York newspaper and widely considered the "paper of record" in the United States.'
+description = 'The New York Times is a daily American newspaper and has since been nicknamed the "newspaper of record".'
 slug = "nytimes"
 hostnames = [ "nytimes.com" ]
 sources = [
@@ -49,7 +49,7 @@ notes = [
 [rubric.third-party-access]
 value = "yes-unspecified"
 citations = [
-  "\"We may also share personal information to third-party sponsors of sweepstakes, contests, and similar promotions and will let you know at the point of collection of your information if we do.\"\r\n\r\n\"One of the analytics service providers we use is Google Analytics.\"\r\n\r\n\"If you are a U.S. print subscriber, we may exchange or rent your name and postal mailing address (but not your email address) and certain other information, such as when you first subscribed to The New York Times with other reputable companies that offer marketing information or products through direct mail.\""
+  "\"We may also share personal information to third-party sponsors of sweepstakes, contests, and similar promotions and will let you know at the point of collection of your information if we do.\"\n\n\"One of the analytics service providers we use is Google Analytics.\"\n\n\"If you are a U.S. print subscriber, we may exchange or rent your name and postal mailing address (but not your email address) and certain other information, such as when you first subscribed to The New York Times with other reputable companies that offer marketing information or products through direct mail.\""
 ]
 
 [rubric.data-collection-reasoning]
@@ -61,7 +61,7 @@ notes = [
 [rubric.noncritical-purposes]
 value = "opt-out-some"
 citations = [
-  "“For opt-out options specific to Google Analytics, please visit https://tools.google.com/dlpage/gaoptout”\r\n\r\n“You may opt out of the use of the Google Doubleclick cookie by visiting the Google ad and content network privacy policy. ”"
+  "“For opt-out options specific to Google Analytics, please visit https://tools.google.com/dlpage/gaoptout”\n\n“You may opt out of the use of the Google Doubleclick cookie by visiting the Google ad and content network privacy policy. ”"
 ]
 notes = [
   "The policy does provide a number of opt-out links, but their data can still be used for non-critical purposes internally within the New York Times (for example, for marketing)."

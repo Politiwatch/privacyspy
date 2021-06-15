@@ -1,0 +1,75 @@
+name = "Thexyz"
+description = "Thexyz is a domain, email, and website hosting provider."
+slug = "thexyz"
+hostnames = [ "thexyz.com" ]
+sources = [ "https://www.thexyz.com/about/privacy-policy" ]
+contributors = [ "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+citations = [
+  "We will not employ technology to read your email messages in order to target, display or send marketing ads based on the content of those email messages."
+]
+
+[rubric.security]
+value = "yes"
+citations = [
+  "We take appropriate security measures to protect against unauthorized access to or unauthorized alteration, disclosure or destruction of data. These include internal reviews of our data collection, storage and processing practices and security measures, as well as physical security measures to guard against unauthorized access to systems where we store personal data.\n\nWe restrict access to personal information to our employees, contractors and agents who need to know that information in order to operate, develop or improve our services. These individuals are bound by confidentiality obligations and may be subject to discipline, including termination and criminal prosecution, if they fail to meet these obligations."
+]
+notes = [
+  "There's a separate \"whitepaper\" esque page at https://www.thexyz.com/about/privacy-and-security"
+]
+
+[rubric.third-party-collection]
+value = "no"
+notes = [ "This service doesn't collect data from third parties" ]
+
+[rubric.history]
+value = "no"
+notes = [ "No date or changelog is provided" ]
+
+[rubric.data-deletion]
+value = "yes-contact"
+citations = [
+  "If you have a customer account with us, you can review and change your personal information by logging into the website and visiting your account profile page. You may also send us an email at support@thexyz.com to request access to, correct or delete any personal information that you have provided to us. We cannot delete your personal information except by also deleting your user account. We may not accommodate a request to change information if we believe the change would violate any law or legal requirement or cause the information to be incorrect."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "This policy doesn't require the service to notify you in the event of a data breach"
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = [
+  "In most circumstances, we will not disclose personal data without consent. However, when we investigate a complaint, for example, we will need to share personal information with the organization concerned and with other relevant bodies.\n\nYou can also get further information on:\nAgreements we have with other organizations for sharing information\nCircumstances where we can pass on personal data without consent for example, to prevent and detect crime, conduct research and to produce anonymized statistics\nHow we check that the information we hold is accurate and up to date"
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "We collect various information when you register with Thexyz, during your usage of our products and services, when you visit pages of our partners. We may combine information about you that we have with information we obtain from other partners or other companies in order to provide you a better experience or to improve the quality of our services. When you sign in to our services, you are not anonymous to us. We automatically receive and record information from your computer and browser, including your IP address, our cookie information, software and hardware attributes, the page you request and other standard browser parameters.\n\nWhen you use our services, we send one or more cookies - a small file containing a string of characters - to your device that uniquely identifies your browser. We use cookies to improve the quality of our service, including for storing user preferences, tracking user trends, and providing you with a better experience. We may set one or more cookies in your browser when you use our services or one of our partner's services. When you send messages, publish content, post material, transmit information or email through our services, we may retain the same in order to process your inquiries, respond to your requests and improve our services.\n\nOur infrastructure consists of servers deployed at multiple datacenters that are owned and operated by us or our partners. All information collected within our services resides on this network of servers.\n\nWe will continue to store anonymous or anonymized information, such as website visits, without identifiers, in order to improve our Services."
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-some"
+citations = [
+  "By default, customers do receive any system updates, such as the newsletters, invoices and service email notifications. Customers cannot opt out of possibly receiving important system notifications, since the latter are deemed necessary for the performance of our contractual obligations to you."
+]
+
+[rubric.law-enforcement]
+value = "unspecified"
+notes = [
+  "This policy doesn't describe when law enforcement can get access to data"
+]
+
+[rubric.list-collected]
+value = "summarily"
+citations = [
+  "We collect various information when you register with Thexyz, during your usage of our products and services, when you visit pages of our partners. We may combine information about you that we have with information we obtain from other partners or other companies in order to provide you a better experience or to improve the quality of our services. When you sign in to our services, you are not anonymous to us. We automatically receive and record information from your computer and browser, including your IP address, our cookie information, software and hardware attributes, the page you request and other standard browser parameters.\n\nWhen you use our services, we send one or more cookies - a small file containing a string of characters - to your device that uniquely identifies your browser. We use cookies to improve the quality of our service, including for storing user preferences, tracking user trends, and providing you with a better experience. We may set one or more cookies in your browser when you use our services or one of our partner's services. When you send messages, publish content, post material, transmit information or email through our services, we may retain the same in order to process your inquiries, respond to your requests and improve our services.\n\nOur infrastructure consists of servers deployed at multiple datacenters that are owned and operated by us or our partners. All information collected within our services resides on this network of servers.\n\nWe will continue to store anonymous or anonymized information, such as website visits, without identifiers, in order to improve our Services."
+]
+
+[rubric.revision-notify]
+value = "no"
+notes = [ "The service does not notify users of policy changes." ]

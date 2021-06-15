@@ -33,10 +33,10 @@ citations = [
 [rubric.data-deletion]
 value = "yes-automated"
 citations = [
-  "Stack Overflow will delete personal information stored on you, which we are not required by necessity to maintain.\r\n\r\n"
+  "Stack Overflow will delete personal information stored on you, which we are not required by necessity to maintain.\n\n"
 ]
 notes = [
-  "Note that on the profile management page, there is an option to delete your account. It has the following warning text:\r\n\r\n\"User deletion is irreversible! By sending this request, your votes will be revoked, and all of your content will be made anonymous.\""
+  "Note that on the profile management page, there is an option to delete your account. It has the following warning text:\n\n\"User deletion is irreversible! By sending this request, your votes will be revoked, and all of your content will be made anonymous.\""
 ]
 
 [rubric.data-breaches]
@@ -70,7 +70,7 @@ citations = [
 [rubric.list-collected]
 value = "generally"
 citations = [
-  "We collect information such as your username, password, email address, IP address (collected at each site visit).\r\n...\r\n...we collect a record of your communications with us and other third parties that are accessible to chat participants and certain authorized third parties. Other account information and usage information including your IP address and browser data...\r\n...\r\nwe collect certain personal information on you the account holder (or account unregistered job seeker)\r\n...\r\nData from advertising technologies like cookies, web beacons, pixels, ad tags, and browser/device identifiers\r\nInformation you have provided to us directly including profile information, your Developer Story, and in limited instances your job history\r\nUsage analytics including your visits to the Network, browsing and search history\r\nInformation from our advertising partners (e.g., device type and location)\r\n...\r\nOn behalf of the Entity, we collect Company or Entity name, Team Representative name, the names of authorized users, and you may elect to provide a Company or Team logo, trademark, or photo for account association purposes.\r\n...\r\nStack Overflow collects certain application metadata\r\n"
+  "We collect information such as your username, password, email address, IP address (collected at each site visit).\n...\n...we collect a record of your communications with us and other third parties that are accessible to chat participants and certain authorized third parties. Other account information and usage information including your IP address and browser data...\n...\nwe collect certain personal information on you the account holder (or account unregistered job seeker)\n...\nData from advertising technologies like cookies, web beacons, pixels, ad tags, and browser/device identifiers\nInformation you have provided to us directly including profile information, your Developer Story, and in limited instances your job history\nUsage analytics including your visits to the Network, browsing and search history\nInformation from our advertising partners (e.g., device type and location)\n...\nOn behalf of the Entity, we collect Company or Entity name, Team Representative name, the names of authorized users, and you may elect to provide a Company or Team logo, trademark, or photo for account association purposes.\n...\nStack Overflow collects certain application metadata\n"
 ]
 
 [rubric.revision-notify]

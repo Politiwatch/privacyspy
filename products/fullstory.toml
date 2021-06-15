@@ -1,0 +1,84 @@
+name = "Fullstory"
+description = "Fullstory is a web analytics service, used to track behavior of website visitors."
+slug = "fullstory"
+hostnames = [ "fullstory.com" ]
+sources = [ "https://www.fullstory.com/legal/privacy" ]
+contributors = [ "4Iufy" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+notes = [
+  "The policy does not mention allowing personally-targeted or behavioral marketing to FullStory customers nor the website users of FullStory customers."
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "We take measures to enhance the security of our site and the FullStory service. These measures include maintaining a robust information security program, instituting security controls within the FullStory Services such as TLS certificates and strong authentication options, and giving our Customers facilities to exercise good security practices. As a FullStory Customer, it is important for you to protect against unauthorized access to your password and to your computer. No security measures are perfect and we cannot promise to be able to withstand security threats in all circumstances."
+]
+
+[rubric.third-party-collection]
+value = "critical-only"
+citations = [
+  "We use publicly available sources to approximate [a Visitor’s] geographic region and Internet Service Provider based on your IP address."
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [
+  "The date on the bottom will always indicate when we last made changes.\n\n[…]\n\nThis Privacy Policy became effective on: December 20, 2019."
+]
+
+[rubric.data-deletion]
+value = "no"
+citations = [
+  "[FullStory Customers] can contact us at any time regarding your right to access, update, edit, correct, request deletion of your Personal Information, as well as making changes to your marketing preferences us by emailing us at privacy@fullstory.com. We will consider any requests in accordance with applicable laws and our potential legitimate interests. If we are unable to accommodate your request, we will let you know why we are unable to do so.\n\n[…]\n\nIf you are a User of a Fullstory Customer’s website and you would like to access, updated, edit, correct, or request deletion of your Personal Information, you should direct your inquiry to the FullStory Customer. If you direct your inquiry to us when it should be directed to a FullStory Customer, we will redirect your inquiry to the FullStory Customer."
+]
+notes = [
+  "Website users of a FullStory customer are unable to directly request FullStory to delete personal data."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "The policy does not mention a requirement to notify users following a data breach."
+]
+
+[rubric.third-party-access]
+value = "yes-specified-critical"
+citations = [
+  "We will never sell your data to third parties or otherwise share it with non-agent third parties. If this practice should change in the future we will update this policy to identify those parties and illustrate how individuals can exercise their right to opt out of such usage. However, in the course of business, we may hire third party individuals and organizations to help us make the FullStory Services better. These third parties include our web host provider, SaaS providers such as email hosting services, payment processors, or outside contractors we hire to perform marketing, maintenance, or assist us in securing our website. We may also hire third parties to operate, maintain, repair, or otherwise improve or preserve our website or its underlying files or systems.\n\n[…]\n\nWe disclose your Personal Information for a business purpose to the following categories of third parties:\n\nService providers and other third parties we use to support our business, including without limitation those performing core services (such as billing, credit card processing, customer support services, customer relationship management, accounting, auditing, surveys, advertising and marketing, analytics, email and mailing services, data storage, and security) related to the operation of our business and/or the Services, and making certain functionalities available to our users"
+]
+notes = [
+  "FullStory customers can access the browsing behavior of their website users.\n\nThe term “agent” refers to someone authorized by a FullStory customer to access the customer’s personal information."
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "In this regard, we use a separate instance of the FullStory Services to monitor the instance of FullStory Services that our customers use. This includes using first-party cookies to maintain a coherent scope for a customer user session across the customer-facing FullStory Services. In addition, the customer-facing FullStory Services may use third-party cookies to aid in payment processing.\n\nIf you are a Customer of FullStory, when you signed up for the Services, you entered into an agreement with FullStory to accept FullStory’s terms of use for the Services, which includes the obligations in this Privacy Policy and our Acceptable Use Policy (the “Agreement”). As part of your use of the Services, we collect the same information as that of a Visitor (see above) through your interaction with the Site, and we may ask you for additional information, such as payment information, Usage Data in relation to the Services, and other information we deem relevant for the purpose of providing the Services.\n\nFullStory may use Customers’ Personal Information as agreed to in the Agreement and:\n\n* To complete transactions between you and FullStory,\n\n* To send e-mail, chat, or in-app messaging about the Site or respond to inquiries,\n\n* To provide support for the FullStory Services,\n\n* To enhance or improve user experience, the Site, or FullStory Services,\n\n* In a support context, to view details of your account and ensure that it complies with your contractual obligations to us,\n\n* To perform any other function that we believe in good faith is necessary to protect the security or proper functioning of the FullStory website or the FullStory Services,\n\n* We may post your testimonials along with those of other satisfied customers on our Site, in addition to other endorsements.\n\n[…]\n\nFullStory Services use first-party cookies and local storage to maintain a coherent scope for a user session across multiple pages on a single website.\n\nFullStory Services use first-party cookies and local storage to maintain a coherent scope for a user session across multiple pages on a single website.\n\nFullStory Services do not and will not ever attempt to identify the same person across disparate, unrelated domains. FullStory takes pains in its engineering choices to differentiate itself from ad-tracking software. It is a violation of our Acceptable Use Policy for our customers to attempt to build multi-site user profiles for the intent of selling or exchanging lists of users or demographic information."
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-all"
+citations = [
+  "If you wish to prevent all websites using the FullStory Services to be able to record activity, you can opt-out of the FullStory Services. Opting out will create a cookie that tells FullStory to turn off recording on any site which uses the FullStory Services. The presence of this cookie is required to continue opting out. That means if you clear your browser cookies, you will have to opt-out again. Unfortunately, this is the most permanent and least intrusive solution FullStory can offer because of how browser technology works. You may wish to employ a third party browser extension to block scripts like FullStory instead of using our Opt Out cookie, but know that using any third party extension may pose additional risk.\n\nIf you are considering opting-out, it's probably a good time to make sure you really understand that the purpose of the FullStory Services is to help well-intentioned companies make their website better for you. It is emphatically not one of those we-track-you-around-the-web kind of deals. We think that's creepy, too.\n\nMost people who make websites are just like you: nice people who want to do a good job and make something awesome. And you wouldn't believe how much time and energy product teams spend trying to make their websites great for you. Without the FullStory Services, though, they simply do not have enough information to understand when they get it wrong. If they can see how you actually experience their website, like an ongoing usability study, they'll actually know what to improve! They don't need to record anything sensitive in order to do that, and we have a strict Acceptable Use Policy where you can see for yourself the high standards we expect of FullStory customers with respect to your privacy."
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "We may access or release Personal Information about you when required to do so in order to comply with any applicable, laws, regulations, subpoenas, or enforceable governmental or public authority requests, including, to meet national security or law enforcement requirements.\n\n[…]\n\nThe Privacy Shield Frameworks require us to inform EU and Swiss individuals that we may be required to release their data in response to lawful requests by public authorities including to meet national security or law enforcement requirements.\n\n[…]\n\nWe attempt to notify Users about legal demands for their personal data when appropriate in our judgment, unless prohibited by law or court order or when the request is an emergency. We may dispute such demands when we believe, in our discretion, that the requests are overbroad, vague or lack proper authority, but we do not promise to challenge every demand."
+]
+
+[rubric.list-collected]
+value = "summarily"
+citations = [
+  "FullStory collects information that may be personally identifiable, such as IP addresses. Also, you may choose to interact with the Site in a way that results in your providing Personal Information to FullStory, such as giving us your name, email address, and user name when signing up for a free trial of the Services or creating an account to license the Services or to post comments to the FullStory blog or social media sites, etc. Any information you provide in the FullStory blog or social media areas may be read, collected, and used by others who access them.\n\nAny Personal Information provided by you as a Visitor to the Site will be used only as described in this Privacy Policy and in FullStory’s Acceptable Use Policy located at https://www.fullstory.com/legal/acceptable-use/.\n\n[…]\n\nWe use FullStory on FullStory. In this regard, we use a separate instance of the FullStory Services to monitor the instance of FullStory Services that our customers use. This includes using first-party cookies to maintain a coherent scope for a customer user session across the customer-facing FullStory Services. In addition, the customer-facing FullStory Services may use third-party cookies to aid in payment processing.\n\nIf you are a Customer of FullStory, when you signed up for the Services, you entered into an agreement with FullStory to accept FullStory’s terms of use for the Services, which includes the obligations in this Privacy Policy and our Acceptable Use Policy (the “Agreement”). As part of your use of the Services, we collect the same information as that of a Visitor (see above) through your interaction with the Site, and we may ask you for additional information, such as payment information, Usage Data in relation to the Services, and other information we deem relevant for the purpose of providing the Services.\n\n[…]\n\nFullStory collects information on a User under the direction of its Customer, and has no direct relationship with the User whose information it processes. It is important to understand that when a User visits other websites that use the FullStory Services, the FullStory Customer’s privacy policy applies to that information collected instead of this Privacy Policy."
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "We may amend this Privacy Policy from time to time. When there are changes to this Privacy Policy, we will update this page. When there are significant changes to this Privacy Policy, we will also endeavor to notify FullStory Customers via email. The date on the bottom will always indicate when we last made changes. If you are a Visitor to this site and disagree with this Privacy Policy, you should leave the site and/or cancel your agreement with FullStory."
+]

@@ -1,0 +1,90 @@
+name = "Micro Center"
+description = "Micro Center is an American computer department store."
+slug = "micro-center"
+hostnames = [ "microcenter.com" ]
+sources = [
+  "https://www.microcenter.com/site/customer-support/privacy_policy.aspx"
+]
+contributors = [ "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "yes-opt-out"
+citations = [
+  "We use outside advertising companies (\"Advertisers\") to serve advertisements on the Site. Please be advised that such Advertisers may place or recognize a unique cookie on your browser (including through use of pixel tags). If you would like more information about this practice and to learn about your choices in connection with these practices, please visit http://www.networkadvertising.org/managing/opt_out.asp and http://www.aboutads.info.\n\nYou can visit the Network Advertising Initiative website to opt out of third-party cookies."
+]
+notes = [
+  "You can opt-out via the NAI at http://optout.networkadvertising.org/"
+]
+
+[rubric.security]
+value = "yes"
+citations = [
+  "Micro Electronics, Inc. and Micro Center Online are concerned about your privacy and the security of your important personal information. We always use industry standard encryption technologies when transferring and receiving any data that you exchange with our site. We employ the same industry-standard Secure Sockets Layer (SSL) technology that is used by major banks and stock brokerage firms to conduct business via the Internet. This encryption procedure \"scrambles\" the information you send us and makes online transactions extremely safe.\n\nSensitive information, such as financial information, will only be collected through secure web pages. Most browsers will display a green \"padlock\" icon indicating you are browsing on a secure page.\n\nWe have appropriate security measures in place in our physical facilities to protect against the loss, misuse, or alteration of information that we have collected from you via this site.\n\nFor complete details, please see our Safe Shopping Promise."
+]
+notes = [
+  "Their \"Safe Shopping Promise\" page gives more details on how they secure data."
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "We may also obtain personal and non-personal information from third-party providers."
+]
+notes = [
+  "It's unknown for what purpose, therefore it can be inferred for any purpose."
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [
+  "The effective date of this Privacy Policy is November 10, 2017."
+]
+
+[rubric.data-deletion]
+value = "no"
+notes = [
+  "This policy doesn't require the service to allow users to delete their data"
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "This policy doesn't require the service to notify users of data breaches"
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = [
+  "Third party service providers:\nMicro Center retail stores and Micro Center Online may provide your name, address and email address to reputable organizations that help us to fulfill services to you on our behalf. For example, we may use such third party service providers to authorize credit card transactions, ship packages, activate gift cards and warranties, schedule and perform product installations, administer service programs, help us maintain records and analyze sales data, augment and improve the accuracy of our customer records, and distribute print and digital communications to you with our offers or important information on our behalf. None of these third party service providers are authorized to use your information for any purpose other than to provide the above stated services for which they contract with us to perform.\n\nLinks to Third Party Sites:\nMicro Center Online contains certain links and ads to third party websites, such as our vendors’ websites and links to other websites intended to facilitate our customers’ shopping experience. We are not responsible or liable for the privacy practices or content found on these websites. We recommend that you check the privacy notice of each website you visit. Links to third party websites are provided solely for your convenience and any submission of data to such websites shall be at your sole risk.\n\nOther Partner Companies\nWe may occasionally share your name, mailing address and purchase information on a limited basis with select companies that offer products and services that may be of interest to you. We never share email addresses or telephone numbers with any of these third-party companies. If you prefer that we do not share your information with outside partner companies, you may so indicate as noted in the unsubscribe section below."
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "Micro Center retail stores and Micro Center Online use your personally identifiable information to provide superior service in the following areas: to process, fulfill and track online orders and in-store pickup reservations; bill your credit card for purchases; respond to your customer service inquiries or requests; provide requested services such as rebate redemption and warranty coverage; offer information regarding products and services based on your interests or past purchases; hold contests, giveaways, drawings and promotions; administer shopping or reward club accounts; conduct and administer surveys; communicate targeted marketing/sales material via print and digital means; set up commercial accounts; sign up for new credit card promotions; or use it for other general business purposes to further enhance our business relationship with you."
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-some"
+citations = [
+  "Google Analytics\nOur Site uses Google Analytics, a web analytics service provided by Google, Inc. (“Google”). This analytical tool uses cookies and similar technologies to help analyze how users use the Site. The information generated about Site usage, including visitor IP address, is transmitted to Google. This information is then used to evaluate visitors’ use of the Site, compile statistical reports on website activity, and provide other services relating to website activity and internet usage. Google may also collect information about Site visitors’ use of other websites. Google offers the ability to opt out from tracking through Google Analytics cookies; for more information, visit http://tools.google.com/dlpage/gaoptout.\n\nAdvertisers\nWe use outside advertising companies (\"Advertisers\") to serve advertisements on the Site. Please be advised that such Advertisers may place or recognize a unique cookie on your browser (including through use of pixel tags). If you would like more information about this practice and to learn about your choices in connection with these practices, please visit http://www.networkadvertising.org/managing/opt_out.asp and http://www.aboutads.info.\n\nYou can visit the Network Advertising Initiative website to opt out of third-party cookies."
+]
+notes = [ "NAI opt-out is at http://optout.networkadvertising.org/" ]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "Notwithstanding the above policies, we reserve the right to disclose your personal information to appropriate third parties if we are required to do so by law or we believe that such action is necessary: to comply with legal process such as a search warrant, subpoena or court order; to protect against misuse or unauthorized use of our website and/or Micro Center Online; to protect Micro Electronics, Inc.'s rights and property; or during emergencies, such as when we believe someone's physical safety is at risk."
+]
+
+[rubric.list-collected]
+value = "generally"
+citations = [
+  "In order to provide you superior service, communicate marketing promotions which we believe will be of interest to you, and to administer our business, Micro Center retail stores and Micro Center Online may gather the following personal information (except where prohibited by law): salutation, name (first/middle/last), billing and shipping addresses, company name (if applicable), email address, phone/fax number (if applicable), transactional information, payment type (VISA, Check, Cash, etc.), and other information you have provided or may provide in the future, or that we have received from 3rd parties.\n\nTo enhance your Micro Center Online experience, we also collect information as to which pages you visit, search terms used, etc. - in order to measure the effectiveness of our website and identify areas for improvement (product selection, site performance and/or to streamline the purchasing processes). We also collect this information to create a more personalized online shopping experience and personalized marketing campaigns based on your preferences."
+]
+
+[rubric.revision-notify]
+value = "no"
+citations = [
+  "As we continue to grow our businesses and improve our services, we reserve the right to change or modify this Privacy Policy at any time. If there are changes or additions, we will post them. If you disagree with any of those changes or additions, you may exercise the opportunity to opt out of receiving postal and/or digital promotion from us by using the procedures described below. If you are concerned about how your information is used, please check back at this site periodically."
+]

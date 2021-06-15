@@ -1,0 +1,80 @@
+name = "Telegram"
+description = "Telegram is a cloud-based instant messaging and voice over IP service."
+slug = "telegram"
+hostnames = [
+  "telegram.org",
+  "web.telegram.org",
+  "desktop.telegram.org",
+  "telegram.me"
+]
+sources = [ "https://telegram.org/privacy" ]
+contributors = [ "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+notes = [ "No data is shared for marketing purposes" ]
+
+[rubric.security]
+value = "yes"
+notes = [
+  "They have a full FAQ for \"technically inclined\" stating all of their security practices and measures at: https://core.telegram.org/techfaq"
+]
+
+[rubric.third-party-collection]
+value = "no"
+notes = [ "Telegram doesn't collect data from third-parties" ]
+
+[rubric.history]
+value = "yes"
+citations = [
+  "March 25, 2019: Expanded [10.2. Deleting Messages] with data on the new features in version 5.5, which allow both participants to remove any messages from one-on-one chats for both sides without a time limit.\nImportant changes made to this Privacy Policy will be notified to you via Telegram.\n\n[...]\n\nThis policy has been expanded on August 14, 2018 to add information required by the EU data protection law."
+]
+
+[rubric.data-deletion]
+value = "yes-automated"
+citations = [
+  "If you would like to delete your account, you can do this on the deactivation page. Deleting your account removes all messages, media, contacts and every other piece of data you store in the Telegram cloud. This action must be confirmed via your Telegram account and cannot be undone."
+]
+notes = [
+  "The deactivation page is at https://telegram.org/deactivate"
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "The service is not required to disclose data breaches per its privacy policy"
+]
+
+[rubric.third-party-access]
+value = "yes-specified-critical"
+citations = [
+  "Other users of our Services with whom you choose to communicate with and share certain information, who may be located outside the EEA. Note that by entering into the Terms of Service and choosing to communicate with such other users of Telegram, you are instructing us to transfer your personal data, on your behalf, to those users in accordance with this Privacy Policy. We employ all appropriate technical and organizational measures (including encryption of your personal data) to ensure a level of security for your personal data that is appropriate to the risk.\n\nWe may share your personal data with: (1) our parent company, Telegram Group Inc, located in the British Virgin Islands; and (2) Telegram FZ-LLC, a group member located in Dubai, to help provide, improve and support our Services. We will implement appropriate safeguards to protect the security and integrity of that personal data. This will take the form of standard contract clauses approved by the European Commission in an agreement between us and our relevant group companies. If you would like more information regarding these clauses, please contact us using the details in section 12 below.\n\nIf Telegram receives a court order that confirms you're a terror suspect, we may disclose your IP address and phone number to the relevant authorities. So far, this has never happened. When it does, we will include it in a semiannual transparency report published at: https://t.me/transparency."
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "5.1. Our Services\nTelegram is a cloud service. We will process your data to deliver your cloud chat history, including messages, media and files, to any devices of your choosing without a need for you to use third-party backups or cloud storage.\n\n5.2. Safety and Security\nTelegram supports massive communities which we have to police against abuse and Terms of Service violations. Telegram also has more than 200 million users which makes it a lucrative target for spammers. To improve the security of your account, as well as to prevent spam, abuse, and other violations of our Terms of Service, we may collect metadata such as your IP address, devices and Telegram apps you've used, history of username changes, etc. If collected, this metadata can be kept for 12 months maximum.\n\n5.3. Spam and Abuse\nTo prevent phishing, spam and other kinds of abuse and violations of Telegram’s Terms of Service, our moderators may check messages that were reported to them by their recipients. If a spam report on a message you sent is confirmed by our moderators, your account may be limited from contacting strangers – temporarily or permanently. You can send an appeal using @Spambot. In case of more serious violations, your account may be banned. We may also use automated algorithms to analyze messages in cloud chats to stop spam and phishing.\n\n5.4. Cross-Device Functionality\nWe may also store some aggregated metadata to create Telegram features (see section 5.5 below) that work across all your devices.\n\n5.5. Advanced features\nWe may use some aggregated data about how you use Telegram to build useful features. For example, when you open the Search menu, Telegram displays the people you are more likely to message in a box at the top of the screen. To do this, we calculate a rating that shows which people you message frequently. A similar rating is calculated for inline bots so that the app can suggest the bots you are most likely to use in the attachment menu (or when you start a new message with “@”). To turn this feature off and delete the relevant data, go to Settings > Privacy & Security > Data Settings and disable “Suggest Frequent Contacts”.\n\n5.6. No Ads\nUnlike other services, we don't use your data for ad targeting or other commercial purposes. Telegram only stores the information it needs to function as a secure and feature-rich cloud service."
+]
+
+[rubric.noncritical-purposes]
+value = "na"
+notes = [ "Data is not used for non-critical purposes" ]
+
+[rubric.law-enforcement]
+value = "strict"
+notes = [
+  "If Telegram receives a court order that confirms you're a terror suspect, we may disclose your IP address and phone number to the relevant authorities. So far, this has never happened. When it does, we will include it in a semiannual transparency report published at: https://t.me/transparency."
+]
+
+[rubric.list-collected]
+value = "exhaustively"
+citations = [
+  "Telegram is a communication service. You provide your mobile number and basic account data (which may include profile name, profile picture and about information) to create a Telegram account.\n\nTo make it easier for your contacts and other people to reach you and recognize who you are, the screen name you choose, your profile pictures, and your username (should you choose to set one) on Telegram are always public. We don't want to know your real name, gender, age or what you like.\n\nWe do not require your screen name to be your real name. Note that users who have you in their contacts will see you by the name they saved and not by your screen name. This way your mother can have the public name ‘Johnny Depp’ while appearing as ‘Mom’ to you and as ‘Boss’ to her underlings at work (or the other way around, depending on how these relationships are structured).\n\nWhen you enable 2-step-verification for your account or store documents using the Telegram Passport feature, you can opt to set up a password recovery email. This address will only be used to send you a password recovery code if you forget it. That's right: no marketing or “we miss you” bullshit.\n\nTelegram is a cloud service. We store messages, photos, videos and documents from your cloud chats on our servers so that you can access your data from any of your devices anytime without having to rely on third-party backups. All data is stored heavily encrypted and the encryption keys in each case are stored in several other data centers in different jurisdictions. This way local engineers or physical intruders cannot get access to user data.\n\nSecret chats use end-to-end encryption. This means that all data is encrypted with a key that only you and the recipient know. There is no way for us or anybody else without direct access to your device to learn what content is being sent in those messages. We do not store your secret chats on our servers. We also do not keep any logs for messages in secret chats, so after a short period of time we no longer know who or when you messaged via secret chats. For the same reasons secret chats are not available in the cloud — you can only access those messages from the device they were sent to or from.\n\nWhen you send photos, videos or files via secret chats, before being uploaded, each item is encrypted with a separate key, not known to the server. This key and the file’s location are then encrypted again, this time with the secret chat’s key — and sent to your recipient. They can then download and decipher the file. This means that the file is technically on one of Telegram’s servers, but it looks like a piece of random indecipherable garbage to everyone except for you and the recipient. We don’t know what this random data stands for and we have no idea which particular chat it belongs to. We periodically purge this random data from our servers to save disk space.\n\nIn addition to private messages, Telegram also supports public channels and public groups. All public chats are cloud chats (see section 3.3.1 above). Like everything on Telegram, the data you post in public communities is encrypted, both in storage and in transit — but everything you post in public will be accessible to everyone.\n\nTelegram uses phone numbers as unique identifiers so that it is easy for you to switch from SMS and other messaging apps and retain your social graph. We ask your permission before syncing your contacts.\n\nWe store your up-to-date contacts in order to notify you as soon as one of your contacts signs up for Telegram and to properly display names in notifications. We only need the number and name (first and last) for this to work and store no other data about your contacts.\n\nOur automatic algorithms can also use anonymized sets of phone numbers to calculate the average number of potential contacts an unregistered phone number may have on Telegram. When you open the ‘Invite friends’ interface, we display the resulting statistics next to your contacts to give you an idea of who could benefit most from joining Telegram.\n\nYou can always stop syncing contacts or delete them from our servers in Settings > Privacy & Security > Data Settings.\n\nIf you are using Android, Telegram will ask you for permission to access your phone call logs (READ_CALL_LOG). If you grant this permission, Telegram will be able verify your account by transmitting a phone call instead of asking you to enter a code. Telegram uses this permission only to confirm receipt of the confirmation call by verifying the number in the call log.\n\nThe only cookies we use are those to operate and provide our Services on the web. We do not use cookies for profiling or advertising. The cookies we use are small text files that allow us to provide and customize our Services, and in doing so provide you with an enhanced user experience. Your browser should allow you to control these cookies, including whether or not to accept them and how to remove them. You may choose to block cookies with your web browser, however, if you do disable these cookies you will not be able to log in to Telegram Web."
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "We will review and may update this Privacy Policy from time to time. Any changes to this Privacy Policy will become effective when we post the revised Privacy Policy on this page www.telegram.org/privacy. Please check our website frequently to see any updates or changes to our Privacy Policy, a summary of which we will set out below.\n[...]\nImportant changes made to this Privacy Policy will be notified to you via Telegram."
+]

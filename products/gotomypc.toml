@@ -1,0 +1,6 @@
+name = "GoToMyPC"
+description = "GoToMyPC is a remote desktop tool from LogMeIn, Inc."
+hostnames = ["gotomypc.com"]
+slug = "gotomypc"
+parent = "logmein"
+contributors = [ "AlexThurman", "doamatto" ]

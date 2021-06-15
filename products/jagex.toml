@@ -1,0 +1,87 @@
+name = "Jagex"
+description = "Jagex is the creator of the MMORPG, RuneScape."
+slug = "jagex"
+hostnames = [ "jagex.com", "runescape.com" ]
+sources = [ "https://www.jagex.com/terms/privacy" ]
+contributors = [ "VukAnd12", "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "yes-opt-out"
+citations = [
+  "We will get your explicit opt-in consent before we share your personal data with any company outside Jagex for marketing purposes.",
+  "The Identifier For Advertising (IDFA) is a unique, user-resettable ID for advertising, provided by the mobile device’s operating system. We may use this ID to enhance serving and targeting capabilities, re-target specific campaigns, pass the ID to our partners. Advertising ID does not reveal any information about the user or the device.",
+  "If you do not want to receive tailored in-application advertisements from third parties that relate to your interests in our games on your mobile device, you may opt- out by: adjusting the ad tracking settings on your device",
+  "If you have previously allowed us to access your geolocation data, you can stop making geolocation available to us by visiting your mobile device's settings for the games or the “settings” page for the games."
+]
+
+[rubric.data-breaches]
+value = "eventually"
+citations = [
+  "We have put in place procedures to deal with any suspected personal data breach and will notify you and any applicable regulator of a breach where we are legally required to do so."
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+notes = [
+  "See Section 4 (How we use your personal data) under the « Purposes for which we will use your personal data » for data is used."
+]
+
+[rubric.data-deletion]
+value = "yes-contact"
+citations = [
+  "This enables you to ask us to delete or remove personal data where there is no good reason for us continuing to process it. You also have the right to ask us to delete or remove your personal data where you have successfully exercised your right to object to processing (see below), where we may have processed your information unlawfully or where we are required to erase your personal data to comply with local law. Note, however, that we may not always be able to comply with your request of erasure for specific legal reasons which will be notified to you, if applicable, at the time of your request."
+]
+notes = [
+  "You can request erasure of your data at https://relentless-gdpr-247.relentlessdataprivacy.com/saq/698bf39f-5e25-4af7-aef9-06bf4b6bfcf4"
+]
+
+[rubric.history]
+value = "yes"
+citations = [
+  "This version was last updated on June 25, 2020 and historic versions can be obtained by contacting us."
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "(c) Necessary to comply with a legal obligation; (d) Necessary for our legitimate interests to detect or prevent unlawful acts"
+]
+
+[rubric.list-collected]
+value = "generally"
+citations = [
+  "Identity Data includes but not limited to first name, last name, username or similar identifier, title and date of birth. Contact Data includes billing address, residential address, email address and telephone numbers. Transaction Data includes details about payments to and from you and other details of products and services you have purchased from us. Technical Data Commonly known as online identifiers and includes internet protocol (IP) address, unique mobile device identification numbers (such as your Media Access Control (MAC) address, Identifier For Advertising (IDFA), and/or International Mobile Equipment Identity (IMEI), type of device, your login data, browser type and version, time zone setting and geo location, browser plug-in types and versions, operating system and platform and other technology on the devices you use to access this website. Profile Data includes your login details, purchases or orders made by you, your interests, preferences, feedback and survey responses. Usage Data includes information about how you use our website, products and services. Marketing and Communications Data includes your preferences in receiving marketing from us and our third parties, news about our products and your communication preferences."
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-all"
+citations = [
+  "We will get your explicit opt-in consent before we share your personal data with any company outside Jagex for marketing purposes.",
+  "The Identifier For Advertising (IDFA) is a unique, user-resettable ID for advertising, provided by the mobile device’s operating system. We may use this ID to enhance serving and targeting capabilities, re-target specific campaigns, pass the ID to our partners. Advertising ID does not reveal any information about the user or the device.",
+  "If you do not want to receive tailored in-application advertisements from third parties that relate to your interests in our games on your mobile device, you may opt- out by: adjusting the ad tracking settings on your device",
+  "If you have previously allowed us to access your geolocation data, you can stop making geolocation available to us by visiting your mobile device's settings for the games or the “settings” page for the games."
+]
+
+[rubric.revision-notify]
+value = "no"
+citations = [
+  "It is important that the personal data we hold about you is accurate and current. Please keep us informed if your personal data changes during your relationship with us."
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "We have put in place appropriate security measures to prevent your personal data from being accidentally lost, used or accessed in an unauthorised way, altered, disclosed or being unavailable. In addition, we limit access to your personal data to those employees, agents, contractors and other third parties who have a business need to know on the principle of least privilege (PoLP). They will only process your personal data on our instructions and they are subject to a duty of confidentiality. We periodically review all privacy and security policies and update when necessary in line with changes of the GDPR or when any new technologies are introduced into our business. Where the introduction of new technologies results in a high risk to your data we will perform a data protection impact assessment and will only proceed if meeting the required levels of security standards."
+]
+
+[rubric.third-party-access]
+value = "yes-specified-noncritical"
+notes = [
+  "You can see all marketing subprocessors at https://www.jagex.com/en-GB/terms/third-party-partners"
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "We may receive personal data about you from various third parties and public sources as set out below: Technical Data from the following parties: (a) analytics providers such as Google based inside AND outside the EU; (b) advertising networks such as Facebook based inside AND outside the EU; and (c) search information providers such as Google based inside AND outside the EU."
+]
