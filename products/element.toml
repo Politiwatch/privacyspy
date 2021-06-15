@@ -1,0 +1,81 @@
+name = "Element"
+description = "Element (formerly Riot) is a free and open-source software instant messaging client implementing the Matrix protocol."
+slug = "element"
+hostnames = [ "element.io"]
+sources = [ "https://element.io/privacy" ]
+contributors = [ "erotavlas" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+notes = [
+   "Element does not share, sell or trade any personal data or content."
+]
+
+[rubric.security]
+value = "yes"
+citations = [
+   "\"We never store password data in plain text; instead they are stored hashed (with at least 12 rounds of bcrypt, including both a salt and a server-side pepper secret). Passwords sent to the server are encrypted using SSL.\" \r\n\r\n \"Data stored in Element is accessible by the Customer's account and by Element engineers (employees and contractors) under the conditions outlined below.\" \r\n\r\n \"We restrict who at Element (employees and contractors) can access Element data to roles which require access in order to maintain the health of the Element apps and services. We never share what we see with other users or the general public.\" \r\n\r\n \"We host the Element Matrix Services on Amazon Web Services (AWS), specifically: Our admin server is hosted in an AWS data centre in Amsterdam; Our deployment server is hosted in an AWS data centre in London; Customer deployments have the option to select the geographical location which is the most convenient for them; We also host the Gitter.im app on AWS, in a datacenter based in the East of the US. Amazon employees may have access to this data. Here's [Amazon's privacy policy](https://aws.amazon.com/privacy/). Amazon controls physical access to their locations. We use Cloudflare to mitigate the risk of DDoS attacks. Here's [CloudFlare's privacy policy](https://www.cloudflare.com/privacypolicy/). Physical access to our offices and locations use typical physical access restrictions. We use secure private keys when accessing servers via SSH, and protect our AWS console passwords locally with a password management tool.\" \r\n\r\n \"We make the invoice links purposefully long and hard to guess for added security, and we prevent search engines from indexing them.\" \r\n\r\n \"All of the Element user data resides within the same dedicated cluster. We use software best practices to guarantee that only the Customer can access it. In other words, we segment User data via software. We do our best and are very confident we're doing a good job at it, but, like every other service that hosts User data on the same database, we cannot guarantee that it is immune to a sophisticated attack.\""
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+   "\"We might collect information about you through adverts placed in third-party platforms such as [LinkedIn](https://www.linkedin.com/), [Twitter](https://twitter.com/) or [Google](https://www.google.com/). Whenever you click an advert on these platforms you may be asked to provide details such as: Email address, Organisation of employment, Job title. Within each of these adverts you will be notified of the legal basis under which your data will be processed. This information will be stored on our marketing automation platform [Force24](https://www.force24.co.uk/) and our CRM system [Pipedrive](https://www.pipedrive.com/), and will be processed in accordance with this policy."]
+
+[rubric.history]
+value = "yes"
+notes = [
+   "Element provides a history of the privacy policy with a changelog."
+]
+
+[rubric.data-deletion]
+value = "yes-contact"
+citations = [
+  "\"You have rights in relation to the personal data we hold about you. Some of these only apply in certain circumstances. Some of these rights are explored in more detail elsewhere in this document. For completeness, your rights under GDPR are: The right to erasure.\" \r\n\r\n \"For more information about these rights, please see [the guidance provided by the ICO](https://ico.org.uk/for-organisations/guide-to-the-general-data-protection-regulation-gdpr/individual-rights/). If you have any questions or are unsure how to exercise your rights, please contact us at dpo@element.io.\""]
+  
+notes = ["\"If you are a customer of Element Matrix Services (EMS) you can access all personal information that we collect by using the account management interface at https://element.io. You can download a copy of all your data as per section 2.1.3.\" \r\n\r\n \"If you are a user of the Element chat app you can request a copy of your data by emailing dpo@element.io. We are working on a solution which will allow you to download the data automatically.\""]  
+  
+[rubric.data-breaches]
+value = "no"
+notes = [
+   "The policy does not specify a data breach protocol."]
+
+[rubric.third-party-access]
+value = "yes-unspecified-critical"
+citations = [
+  "\"In exceptional circumstances, we may share information about you with a third party if we believe that sharing is reasonably necessary to (b) protect the security or integrity of our products and services (e.g. for a security audit)\" \r\n\r\n \"Our analytics are powered by the Free and Open Source analytics platform [Matomo](https://matomo.org/), hosted entirely within our network. The servers which host this data are located in the EEA, specifically in London, United Kingdom. We don't share any analytics data with third parties.\" \r\n\r\n \"Paying for hosted homeserver services via EMS is handled entirely by our payment processor, [Stripe](https://stripe.com/en-gb/privacy). The processor stores your credit card information as well as your billing contact information in order to process your monthly or annual automatic renewals, or to allow you to upgrade or downgrade your subscription without re-entering a credit card number.\" \r\n\r\n \"The data we collect in our transaction database, including Personal Data, is not shared with third parties, except for the purposes of determining the validity of a payment. We use a third-party, [Quaderno](https://quaderno.io/policies/privacy/), to help us with tax automation within our billing system.\" \r\n\r\n \"In the event that we sell or buy any business or assets, we may disclose your personal data to the prospective seller or buyer of such business or assets. If we or substantially all of our assets are acquired by a third party, personal data held by us about our users will be one of the transferred assets.\""
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "\"The information we collect is for the purpose of supporting your management of hosted homeservers through Element Matrix Services, or to support operational maintenance of the Element Matrix client. We do not profile homeserver Users or their data, but we might profile metadata pertaining to the configuration and management of hosted homeservers so that we can improve our products and services.\""
+]
+
+[rubric.noncritical-purposes]
+value = "na"
+citations = [
+  "\"The information we collect is for the purpose of supporting your management of hosted homeservers through Element Matrix Services, or to support operational maintenance of the Element Matrix client. We do not profile homeserver Users or their data, but we might profile metadata pertaining to the configuration and management of hosted homeservers so that we can improve our products and services.\""
+]
+
+notes=["\"We track usage data for Element hosting services. When you are signed in to your account we may track your usage of the site and associate that information with your account details. Our analytics are powered by the Free and Open Source analytics platform [Matomo](https://matomo.org/), hosted entirely within our network. We don't share any analytics data with third parties. If you are using the Element chat app, you will be asked to opt-in to this anonymised data collection. Your use of the Service does not rely on your opt-in to this. When using any of the Element chat clients your visit to the service will be logged, alongside your device ID and agent. The mapping of this data is logged for 28 days - from this point on only aggregated data is kept, for operational and statistical purposes.\""]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "\"In exceptional circumstances, we may share information about you with a third party if we believe that sharing is reasonably necessary to (a) comply with any applicable law, regulation, legal process or governmental request, (c) protect Element and our users from harm or illegal activities, or (d) respond to an emergency which we believe in good faith requires us to disclose information to assist in preventing the serious bodily harm of any person.\""
+]
+
+[rubric.list-collected]
+value = "exhaustively"
+citations = [
+  "\"We collect information about you when you input it to the Element or Element Matrix Services apps or otherwise provide it directly to us.\" \r\n\r\n \"We collect information when you register for an account. This information is kept to a minimum on purpose, and is restricted to: Email address, Authentication Identifier; one of: Email address and password, Twitter id, Google id. Your authentication identifier is used to authenticate your access to Element Matrix Services at https://ems.host and to uniquely identify you.\" \r\n\r\n \"Paying for hosted homeserver services via EMS is handled entirely by our payment processor, [Stripe](https://stripe.com/en-gb/privacy). The processor stores your credit card information as well as your billing contact information in order to process your monthly or annual automatic renewals, or to allow you to upgrade or downgrade your subscription without re-entering a credit card number. We never have access to, nor store your full credit card information.\" \r\n\r\n \"The payment processor code we use also sets a cookie in your browser, to remember your info for future purchases. You can [delete or block that cookie](https://privacypolicies.com/blog/how-to-delete-cookies/) if you wish; our website will continue to work.\" \r\n\r\n \"We require you to enter your billing information. This data, as well as the last four digits of your credit card which is sent to us by our payment processor, is stored in our transaction database in order to maintain our financial records. This information appears on your invoice, which can be accessed by anyone who has been sent the url link to your invoice. We make the invoice links purposefully long and hard to guess for added security, and we prevent search engines from indexing them. The history of changes to the billing contact information on the invoice made by you or our team are logged and stored in our transaction database.\" \r\n\r\n \"The data we collect in our transaction database, including Personal Data, is not shared with third parties, except for the purposes of determining the validity of a payment. In this case we may share the name and email address associated with the purchase with the credit card holder, your company's accounting department, or with our payment processor when responding to a chargeback. We use a third-party, [Quaderno](https://quaderno.io/policies/privacy/), to help us with tax automation within our billing system.\""
+]
+
+notes = ["\"The Customer can use Element Matrix Services to provision and manage hosted Matrix homeservers. The Customer owns and controls all messages and files submitted to their homeserver by User accounts registered natively on their homeserver. This ownership does not extend to messages and files submitted over federation or bridging. This means that, in addition to the usual data access controls defined by the Matrix protocol, all unencrypted messages and files can be accessed by the Customer, and that access is retained even if no User account within the system retains access to the data.\""]
+  
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "\"Over time we may make changes to this document. If we make a material change we will provide the Customer with reasonable notice prior to the change. We will set forth the date upon which the changes will become effective; any use of Element by the Customer, or any use of a hosted homeserver from EMS by a User will constitute the Customer's acceptance of these changes. Your access and use of Element is always subject to the most current version of this document.\""
+]
