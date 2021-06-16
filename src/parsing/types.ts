@@ -49,6 +49,6 @@ export interface Product {
   children: Product[];
   rubric: RubricSelection[];
   updates: Update[];
-  lastUpdated: Date;
+  lastUpdated: Promise<Date>;
   contributors: Contributor[];
 }

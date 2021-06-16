@@ -31,6 +31,11 @@ for (const product of products) {
       expect(product.slug.toLowerCase()).toEqual(product.slug);
     });
 
+    // The following isn't a particularly useful test, but it ensures that Jest waits for all handles to close.
+    test(`last updated must load`, async () => {
+      expect(await product.lastUpdated).toBeDefined();
+    });
+
     describe(`must have hostname(s) {hostnames}`, () => {
       test("that exist", () => {
         expect(product.hostnames.length).toBeGreaterThan(0);
