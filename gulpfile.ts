@@ -21,20 +21,20 @@ const del = require("del");
 
 const rubric: RubricQuestion[] = loadRubric();
 const contributors: Contributor[] = loadContributors();
-const products: Promise<Product[]> = loadProducts(rubric, contributors);
+const products: Product[] = loadProducts(rubric, contributors);
 
 gulp.task("clean", () => {
   return del("./dist/**/*");
 });
 
-gulp.task("build api", async () => {
+gulp.task("build api", () => {
   return gulp
     .src(["./src/templates/pages/api/**/*.json"])
-    .pipe(hbsFactory({ rubric, contributors, products: await products }))
+    .pipe(hbsFactory({ rubric, contributors, products }))
     .pipe(gulp.dest("./dist/api/"));
 });
 
-gulp.task("build general pages", async () => {
+gulp.task("build general pages", () => {
   return gulp
     .src(["./src/templates/pages/**/*.hbs", "./src/templates/pages/*.hbs"], {
       ignore: [
@@ -43,24 +43,18 @@ gulp.task("build general pages", async () => {
       ],
     })
     .pipe(rename({ extname: ".html" }))
-    .pipe(hbsFactory({ rubric, contributors, products: await products }))
+    .pipe(hbsFactory({ rubric, contributors, products }))
     .pipe(gulp.dest("./dist/"));
 });
 
 gulp.task(
   "build pages",
-  async () => {
-    const tasks = [
-      ...getProductPageBuildTasks(await products),
-      ...getDirectoryPagesTasks(await products),
+  gulp.parallel(
+      ...getProductPageBuildTasks(products),
+      ...getDirectoryPagesTasks(products),
       "build general pages",
       "build api"
-    ];
-
-    return gulp.parallel(...tasks, (seriesDone) => {
-      seriesDone();
-    })(); 
-  }
+  )
 );
 
 gulp.task("collect dependencies", () => {

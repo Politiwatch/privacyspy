@@ -40,10 +40,10 @@ export function loadRubric(): RubricQuestion[] {
   return entries;
 }
 
-export async function loadProducts(
+export function loadProducts(
   questions: RubricQuestion[],
   contributors: Contributor[]
-): Promise<Product[]> {
+): Product[] {
   const files = fs
     .readdirSync("products/")
     .filter((file) => file.endsWith(".toml"));
@@ -54,7 +54,7 @@ export async function loadProducts(
   for (const file of files) {
     const rubric: RubricSelection[] = [];
 
-    const lastUpdated = new Date((await git.log({file: "products/" + file})).latest.date).toDateString();
+    const lastUpdated = git.log({file: "products/" + file}).then(x => x.latest ? new Date(x.latest.date).toDateString() : "Unknown");
 
     const product: Product = {
       contributors: [],
