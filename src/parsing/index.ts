@@ -2,6 +2,9 @@ import fs from "fs";
 import toml from "@iarna/toml";
 import { RubricQuestion, RubricSelection, Product, Contributor } from "./types";
 import { getQuestionBySlug, getOptionBySlug } from "./utils";
+import simpleGit, {SimpleGit} from 'simple-git';
+
+const git: SimpleGit = simpleGit();
 
 export function loadContributors(): Contributor[] {
   const data: object = toml.parse(
@@ -37,10 +40,10 @@ export function loadRubric(): RubricQuestion[] {
   return entries;
 }
 
-export function loadProducts(
+export async function loadProducts(
   questions: RubricQuestion[],
   contributors: Contributor[]
-): Product[] {
+): Promise<Product[]> {
   const files = fs
     .readdirSync("products/")
     .filter((file) => file.endsWith(".toml"));
@@ -51,11 +54,14 @@ export function loadProducts(
   for (const file of files) {
     const rubric: RubricSelection[] = [];
 
+    const lastUpdated = new Date((await git.log({file: "products/" + file})).latest.date).toDateString();
+
     const product: Product = {
       contributors: [],
       updates: [],
       hostnames: [],
       sources: [],
+      lastUpdated,
       ...(toml.parse(
         fs.readFileSync("products/" + file, {
           encoding: "utf-8",
