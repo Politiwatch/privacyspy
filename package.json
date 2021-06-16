@@ -53,6 +53,7 @@
     "queue-microtask": "^1.2.3",
     "run-sequence": "^2.2.1",
     "sharp": "^0.25.4",
+    "simple-git": "^2.40.0",
     "tailwindcss": "^2.1.2",
     "toml": "^3.0.0",
     "ts-node": "^8.10.2",
