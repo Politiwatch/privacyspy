@@ -53,7 +53,7 @@ citations = ["ProtonMail reserves the right to periodically review and change th
 [rubric.security]
 value = "yes-independent-audits"
 citations = ["All servers used in connection with the provisioning of the Service are located in Switzerland and wholly owned and operated by the Company. Only employees of the Company have physical or other access to the servers. Data is ALWAYS stored in encrypted format on our servers. Offline backups may be stored periodically, but these are also encrypted. We do not possess the ability to access any user encrypted message content on either the production servers or in the backups."]
-notes = ["[All ProtonMail apps are now open source and audited. [openPGP library](https://protonmail.com/blog/openpgpjs-protonmail-security-audit/) [Android](https://protonmail.com/blog/android-open-source/), [iOS](https://protonmail.com/blog/ios-open-source/), [bridge](https://protonmail.com/blog/bridge-open-source/)."]
+notes = ["[All ProtonMail apps are now open source and audited. See: [openPGP library](https://protonmail.com/blog/openpgpjs-protonmail-security-audit/) [Android](https://protonmail.com/blog/android-open-source/), [iOS](https://protonmail.com/blog/ios-open-source/), [bridge](https://protonmail.com/blog/bridge-open-source/)."]
 
 [rubric.third-party-access]
 value = "yes-unspecified-critical"
