@@ -1,0 +1,86 @@
+name = "Ubuntu"
+description = "Ubuntu is a GNU/Linux distribution based on Debian and composed mostly of free and open source software."
+slug = "ubuntu"
+hostnames = [ "ubuntu.com"]
+sources = [ "https://ubuntu.com/legal/data-privacy, https://ubuntu.com/legal/systems-information-notice" ]
+contributors = [ "erotavlas" ]
+
+[rubric.behavioral-marketing]
+value = "yes-opt-out"
+citations = [
+  "\"You have the right to consent to our processing of personal data for marketing purposes and to ask us not to process your personal data for marketing purposes. We will usually inform you (before collecting your data) if we intend to use your data for such purposes or if we intend to disclose your information to any third party for such purposes. You can exercise your right to prevent such processing by checking certain boxes on the forms we use to collect your data.\""
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "\"We have security measures, including administrative, physical and electronic measures, to protect against the loss, exposure, misuse or alteration of information that we have collected from you in the use of the services. These measures include SSL data encryption to transmit your personal information as well as technical architectures and systems to prevent unauthorised third parties from accessing your personal information.\" \r\n\r\n \"Unfortunately, the transmission of information via the internet is not completely secure. Although we will do our best to protect your personal data, we cannot guarantee the security of your data transmitted to our site; any transmission is at your own risk. Once we have received your information, we will use strict procedures and security features to try to prevent unauthorised access.\""
+]
+
+[rubric.third-party-collection]
+value = "critical-only"
+citations = [
+  "\"This is information we receive about you if you use any of the other websites we operate or the other services we provide. In this case we will have informed you when we collected that data (through a Privacy notice) if we intend to share those data internally and combine it with data collected on this site. We will also have told you for what purpose we will share and combine your data. We are working closely with third parties (including, for example, business partners, sub-contractors in technical, payment and delivery services, advertising networks, analytics providers, search information providers, credit reference agencies). We may notify you when we receive information about you from them and the purposes for which we intend to use that information.\""]
+
+[rubric.history]
+value = "yes"
+notes = [
+    "Ubuntu provides old versions of the privacy policy, but does not specify the date it was last modified. \r\n\r\n System information legal notice provides the date it was last modified."
+]
+
+[rubric.data-deletion]
+value = "yes-contact"
+citations = [
+  "\"We keep your order information for so long as reasonably required in accordance with our record retention policy. Your personal information associated with the order will then be removed.\" \r\n\r\n \"You can also exercise the right at any time by contacting us at dataprotection@canonical.com or by using the relevant [contact us](https://ubuntu.com/contact-us) form. These timescales are shown in Table 1. The right to erasure: Without undue delay.\""
+]
+notes = ["Ubuntu OS: \"If you do share the system information with Canonical we are unable to identify you against your system information, so we are unable to provide you with a copy of the system information or to delete the system information on request.\""]
+  
+[rubric.data-breaches]
+value = "no"
+notes = [
+   "The policy does not specify a data breach protocol."]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = [
+  "\"Targeting cookies. We may also share this information with third parties for this purpose.\" \r\n\r\n \"We use information held about you in the following ways: To provide you, or permit selected third parties to provide you, with information about goods or services we feel may interest you in accordance with your consent and our Privacy notices.\" \r\n\r\n \"We will also disclose your information to third parties: In accordance with Privacy notices made known at the time of collection. In the event that we sell or buy any business or assets, in which case we will disclose your personal data to the prospective seller or buyer of such business or assets. If Canonical or substantially all of its assets are acquired by a third party, in which case personal data held by it about its customers will be one of the transferred assets.\""
+]
+
+notes = ["Ubuntu OS: \"Your system information is stored in our systems and may be processed by Canonical globally. Aggregated system information for Ubuntu may be made publicly available.\""]
+
+[rubric.data-collection-reasoning]
+value = "mostly"
+citations = [
+  "\"We don't ask you for personal information unless we truly need it.\" \r\n\r\n \"We use information held about you in the following ways: To provide you with the services you require at the time and for the reasons you provide the information, e.g. newsletters and webinars. To carry out our obligations arising from any contracts entered into between you and us and to provide you with the information, products and services that you request from us. To provide you with information about other goods and services we offer that are similar to those that you have already purchased or enquired about. To provide you, or permit selected third parties to provide you, with information about goods or services we feel may interest you in accordance with your consent and our Privacy notices. To make suggestions and recommendations to you and other users of our site about goods or services that may interest you or them. We will combine this information with information you give to us and information we collect about you. We will use this information and the combined information for the purposes set out above (depending on the types of information we receive).\""
+]
+
+notes = ["Ubuntu OS: \"Your system information will be used by Canonical and selected third parties for engineering purposes and to make improvements to Ubuntu by allowing us to focus more specifically on typical user hardware setup and selected features and for other related services.\""]
+
+[rubric.noncritical-purposes]
+value = "opt-out-all"
+citations = [
+  "\"You have the right to consent to our processing of personal data for marketing purposes and to ask us not to process your personal data for marketing purposes. We will usually inform you (before collecting your data) if we intend to use your data for such purposes or if we intend to disclose your information to any third party for such purposes. You can exercise your right to prevent such processing by checking certain boxes on the forms we use to collect your data.\""
+]
+
+notes = ["Ubuntu OS: \"During installation of Ubuntu, non-personally-identifiable system information may be shared with Canonical.\""]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "\"We don't share your personal information with anyone except to provide you with services, products, to comply with the law, or to protect our rights.\" \r\n\r\n \"We don't store personal information unless required for the on-going operation of services to you, to provide you with products, to comply with law or to protect our rights.\" \r\n\r\n \"If we are under a duty to disclose or share your personal data in order to comply with any legal obligation, or in order to enforce or apply our terms of use and other agreements; or to protect the rights, property, or safety of Canonical, our customers, or others.\" \r\n\r\n \"These cookies record your visit to our website, the pages you have visited and the links you have followed. We will use this information to make our website and the advertising displayed on it more relevant to your interests.\"" 
+]
+    
+[rubric.list-collected]
+value = "exhaustively"
+citations = [
+  "\"We don't ask you for personal information unless we truly need it.\" \r\n\r\n \"Information you give us. This is information about you that you give us by filling in forms on a Canonical website or by corresponding with us by phone, e-mail or otherwise. It includes information you provide when you register to use our site, your login information where provided on a site or make a purchase on our site. It may include the following: first name, last name; company name; company size; industry; job title; level; phone number; email address; state or province and country.\" \r\n\r\n \"When you register for services or purchase any product from Canonical, we may ask for information such as your email address, billing address, and credit card information. Credit card information is only used in processing your transaction. Please note that we may use a third party payment processing merchant to process your payments. Please see the terms and conditions of purchase and/or relevant Privacy notice for further information.\" \r\n\r\n \"When you chose to send an error report, it includes a unique identifier for your computer. This identifier does not identify you, unless you (or someone acting on your behalf) discloses it separately. An error report may include personal information such as the state of programs that were running at the time.\" \r\n\r\n \"When you use Ubuntu online accounts, your personal information is stored on your PC and it can be accessed by some applications. Further information can be found in a [Legal Notice](https://ubuntu.com/legal/online-account-terms).\""
+]
+
+notes = ["Ubuntu OS: \"During installation of Ubuntu, non-personally-identifiable system information may be shared with Canonical.\" \r\n\r\n \"You can decide whether to share the system information with Canonical or not.\""]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+    "\"Any changes we make to our privacy policy in the future will be posted on this page and, where appropriate, notified to you by email. Please check back frequently to see any updates or changes to our privacy policy.\""
+]
+

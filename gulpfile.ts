@@ -50,10 +50,10 @@ gulp.task("build general pages", () => {
 gulp.task(
   "build pages",
   gulp.parallel(
-    ...getProductPageBuildTasks(products),
-    ...getDirectoryPagesTasks(products),
-    "build general pages",
-    "build api"
+      ...getProductPageBuildTasks(products),
+      ...getDirectoryPagesTasks(products),
+      "build general pages",
+      "build api"
   )
 );
 

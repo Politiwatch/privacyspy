@@ -42,9 +42,9 @@ citations = [
 ]
 
 [rubric.data-breaches]
-value = "yes-72"
+value = "no"
 notes = [
-  "Does not specify, but operates in the EU and is subject to the GDPR in other ways which are specified.\n"
+  "The policy does not specify a data breach protocol."
 ]
 
 [rubric.third-party-access]

@@ -51,9 +51,9 @@ value = "yes"
 citations = ["ProtonMail reserves the right to periodically review and change this policy from time to time and we will notify users who have enabled the notification preference about changes to our Privacy Policy."]
 
 [rubric.security]
-value = "yes"
+value = "yes-independent-audits"
 citations = ["All servers used in connection with the provisioning of the Service are located in Switzerland and wholly owned and operated by the Company. Only employees of the Company have physical or other access to the servers. Data is ALWAYS stored in encrypted format on our servers. Offline backups may be stored periodically, but these are also encrypted. We do not possess the ability to access any user encrypted message content on either the production servers or in the backups."]
-notes = ["ProtonMail has once received an independent audit, though these are not mentioned in the policy as their official security measure."]
+notes = ["[All ProtonMail apps are now open source and audited. See: [openPGP library](https://protonmail.com/blog/openpgpjs-protonmail-security-audit/) [Android](https://protonmail.com/blog/android-open-source/), [iOS](https://protonmail.com/blog/ios-open-source/), [bridge](https://protonmail.com/blog/bridge-open-source/)."]
 
 [rubric.third-party-access]
 value = "yes-unspecified-critical"

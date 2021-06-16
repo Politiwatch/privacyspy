@@ -43,12 +43,14 @@ export function getProductPageBuildTasks(products: Product[]) {
   const productPageBuildTasks = [];
   for (const product of products) {
     const taskName = `build ${product.slug}`;
-    gulp.task(taskName, () => {
+
+    gulp.task(taskName, async () => {
       return gulp
         .src("./src/templates/pages/product.hbs")
         .pipe(
           hbsFactory({
             product: product,
+            lastUpdated: await product.lastUpdated,
             description: `${product.name} has a score of ${product.score}/10 on PrivacySpy, an open project to rate and annotate privacy policies.`,
           })
         )
