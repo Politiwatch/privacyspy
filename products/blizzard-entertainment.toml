@@ -1,4 +1,4 @@
-name = "Blizzard Entertainment"
+name = "Blizzard Entertainment (US)"
 description = "American video game developer and publisher based in Irvine, California."
 slug = "blizzard-entertainment"
 hostnames = [
@@ -36,15 +36,15 @@ value = "yes"
 notes = ["The policy contains a lengthy \"How we use your information\" paragraph in the first section."]
 
 [rubric.data-deletion]
-value = "no"
+value = "yes-automated"
 citations = [
   "You may also submit a verifiable request for us to delete either: (1) your marketing information; or (2) your Battle.net account and your marketing information.",
   "We may retain personal information to: (a) protect our business, systems, and users from fraudulent activity, (b) to address technical issues that impair existing functionality, (c) necessary for us, or others, to exercise their free speech or other rights, (d) comply with law enforcement requests pursuant to lawful process, (e) for scientific or historical research, (f) for our own internal purposes reasonably related to your relationship with us, or to comply with legal obligations."
 ]
 
 [rubric.history]
-value = "no"
-notes = ["The policy's history is not made available."]
+value = "last-modified"
+citations = ["This Privacy Policy was last updated on October 22, 2020"]
 
 [rubric.law-enforcement]
 value = "reasonable"
@@ -59,7 +59,7 @@ value = "no"
 notes = ["Who and what information is being collected is mentioned in various places in the policy, though not a single one about users controlling that behavior, or is otherwise ambiguous to comprehend as one."]
 
 [rubric.revision-notify]
-value = "no"
+value = "yes"
 citations = ["This Privacy Policy may change from time to time, so please check back periodically to ensure that you are aware of any changes. If we make a material change to this Privacy Policy, we will notify you by posting the change on our websites or in this Privacy Policy and, if necessary, give you additional choices regarding such change before the change becoming effective."]
 notes = ["The users are not independantly notified of the policy changes unless they visit the website."]
 
