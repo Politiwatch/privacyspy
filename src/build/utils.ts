@@ -20,7 +20,6 @@ export function hbsFactory(data: object = {}) {
       categorizedRubricQuestions: getGeneralRubricCategories(loadRubric()),
       ...(data["products"] && {
         // landing page, API endpoint
-        // api: getExtensionAPI(data["products"]),
         featured: getFeaturedPolicies(data["products"]),
       }),
       ...(data["product"] && {
