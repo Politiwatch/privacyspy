@@ -20,7 +20,6 @@ export function hbsFactory(data: object = {}) {
       categorizedRubricQuestions: getGeneralRubricCategories(loadRubric()),
       ...(data["products"] && {
         // landing page, API endpoint
-        api: getExtensionAPI(data["products"]),
         featured: getFeaturedPolicies(data["products"]),
       }),
       ...(data["product"] && {
@@ -109,7 +108,7 @@ function getFeaturedPolicies(products: Product[]): Product[] {
   });
 }
 
-function getExtensionAPI(products: Product[]) {
+export function getExtensionAPI(products: any) {
   return products.map((product) => {
     return {
       name: product.name,

@@ -2,7 +2,7 @@ import fs from "fs";
 import toml from "@iarna/toml";
 import { RubricQuestion, RubricSelection, Product, Contributor } from "./types";
 import { getQuestionBySlug, getOptionBySlug } from "./utils";
-import simpleGit, {SimpleGit} from 'simple-git';
+import simpleGit, { SimpleGit } from "simple-git";
 
 const git: SimpleGit = simpleGit();
 
@@ -54,7 +54,15 @@ export function loadProducts(
   for (const file of files) {
     const rubric: RubricSelection[] = [];
 
-    const lastUpdated = git.log({file: "products/" + file}).then(x => x.latest ? new Date(x.latest.date).toDateString() : "Unknown");
+    const lastUpdated = git.log({ file: "products/" + file }).then((x) =>
+      x.latest
+        ? new Date(x.latest.date).toLocaleDateString("en-US", {
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+          })
+        : "Unknown"
+    );
 
     const product: Product = {
       contributors: [],
