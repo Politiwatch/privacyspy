@@ -8,7 +8,7 @@ contributors = [ "doamatto" ]
 [rubric.behavioral-marketing]
 value = "no"
 citations = [
-  "IONOS may also use the personally identifiable information collected by IONOS to contact customers regarding products and services offered by IONOS and, to the extent the user has agreed to it, by its trusted affiliates, independent contractors and business partners. We may also use this information and share it with trusted third parties for research purposes regarding the effectiveness of our website services, marketing, advertising and sales efforts, including, without limitation, for purposes of customer reviews (such as for the utilization of programs like Google Seller Ratings). IONOS will not sell or otherwise share this information with a third party for a third party\x92s marketing purposes, unless you specifically authorize such information sharing."
+  "IONOS may also use the personally identifiable information collected by IONOS to contact customers regarding products and services offered by IONOS and, to the extent the user has agreed to it, by its trusted affiliates, independent contractors and business partners. We may also use this information and share it with trusted third parties for research purposes regarding the effectiveness of our website services, marketing, advertising and sales efforts, including, without limitation, for purposes of customer reviews (such as for the utilization of programs like Google Seller Ratings). IONOS will not sell or otherwise share this information with a third party for a third party\\x92s marketing purposes, unless you specifically authorize such information sharing."
 ]
 
 [rubric.security]
