@@ -2,8 +2,8 @@ name = "PrivacySpy"
 description = "PrivacySpy is an initiative that strives to establish transparency in privacy policies."
 slug = "privacyspy"
 hostnames = [ "privacyspy.org" ]
-sources = [ "http://beta.privacyspy.org/terms-and-privacy/" ]
-contributors = [ "ibarakaiev", "milesmcc" ]
+sources = [ "https://privacyspy.org/terms-and-privacy/" ]
+contributors = [ "ibarakaiev", "milesmcc", "doamatto" ]
 
 [rubric.behavioral-marketing]
 value = "no"
