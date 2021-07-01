@@ -51,7 +51,7 @@ notes = [ "No listing was found for this section." ]
 value = "yes-specified-noncritical"
 citations = [
   "Cookies and Analytical Tracking: Sometimes we use cookie technology, web beacons and other similar devices on our Websites and our software to enhance functionality and navigation, and portions of our Websites and our software may use statistical tools that may be operated by third party providers (collectively, the “Analytical Tools”). The third party providers of Analytical Tools may also transfer this information to other third parties where they are required to do so by law, or where such third parties process the information on their behalf. You consent to the processing of data about you by third party providers of Analytical Tools in the manner and for the purposes set out herein.",
-  "We provide the information we collect to third parties, such as advertisers, in order to provide you with commercial advertisements. An anonymization or pseudonymization (such as hashing) of your email address may be provided to the third parties for these purposes. The provision of such information generate revenue to pay in part or in whole for the Services. We do not provide personal information to third parties except for billing purposes. \n"
+  "We provide the information we collect to third parties, such as advertisers, in order to provide you with commercial advertisements. An anonymization or pseudonymization (such as hashing) of your email address may be provided to the third parties for these purposes. The provision of such information generate revenue to pay in part or in whole for the Services. We do not provide personal information to third parties except for billing purposes."
 ]
 
 [rubric.data-collection-reasoning]
