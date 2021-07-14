@@ -7,8 +7,8 @@ contributors = [ "cvieira", "tpdcl" ]
 
 [rubric.behavioral-marketing]
 value = "no"
-citations = [
-  "\"System76 does not sell any information collected from users.\""
+notes = [
+  "\"There is no mention of behavioral marketing.\""
 ]
 
 [rubric.security]
@@ -20,7 +20,7 @@ citations = [
 [rubric.third-party-collection]
 value = "yes"
 citations = [
-  "\"Our website uses Plausible Analytics to help us understand visitor trends and the effectiveness of our marketing outreach.\""
+  "\"Our website uses Plausible Analytics to help us understand visitor trends and the effectiveness of our marketing outreach.\nOur website uses Stripe to process payments. Stripe may use cookies and similar technologies, i.e. for fraud detection and prevention.\""
 ]
 
 [rubric.history]
@@ -33,7 +33,7 @@ citations = [
   "\"Our website uses cookies to store session information, such as whether or not you are logged in. You can choose to disable or selectively turn off cookies or third-party cookies in your browser settings, but this may affect how you are able to interact with our site and others.\""
 ]
 notes = [
-  "The only information collected directly by System76 is in the form of cookies. Everything else is dependent on Plausible Analytics which have their own systems for removing personal information."
+  "The only information collected directly by System76 is in the form of cookies. Everything else is dependent on Plausible Analytics and Stripe which have their own systems for removing personal information."
 ]
 
 [rubric.data-breaches]
