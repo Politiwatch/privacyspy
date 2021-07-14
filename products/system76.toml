@@ -3,12 +3,12 @@ description = "System76 builds premium custom computers that come installed with
 slug = "system76"
 hostnames = [ "system76.com" ]
 sources = [ "https://system76.com/privacy" ]
-contributors = [ "cvieira" ]
+contributors = [ "cvieira", "tpdcl" ]
 
 [rubric.behavioral-marketing]
-value = "yes-opt-out"
-citations = [
-  "\"Third party vendors, including Google and Quantcast, use cookies to serve ads based on a user’s prior visits to our website or other websites. Google’s and Quantcast’s use of advertising cookies enable them and their partners to serve ads to users based on their visit to our site and/or other sites on the Internet.\""
+value = "no"
+notes = [
+  "\"There is no mention of behavioral marketing.\""
 ]
 
 [rubric.security]
@@ -20,7 +20,7 @@ citations = [
 [rubric.third-party-collection]
 value = "yes"
 citations = [
-  "\"Our website uses third-party analytics tools Google Analytics and Quantcast to help us better understand our customers.\n\n    Google Analytics Privacy Policy, Safeguarding Your Data, and Ads Settings\n    Quantcast Privacy Policy and Opt Out\""
+  "\"Our website uses Plausible Analytics to help us understand visitor trends and the effectiveness of our marketing outreach.\nOur website uses Stripe to process payments. Stripe may use cookies and similar technologies, i.e. for fraud detection and prevention.\""
 ]
 
 [rubric.history]
@@ -33,7 +33,7 @@ citations = [
   "\"Our website uses cookies to store session information, such as whether or not you are logged in. You can choose to disable or selectively turn off cookies or third-party cookies in your browser settings, but this may affect how you are able to interact with our site and others.\""
 ]
 notes = [
-  "The only information collected directly by System76 is in the form of cookies. Everything else is dependent on Google Analytics and Quantcast which have their own systems for removing personal information."
+  "The only information collected directly by System76 is in the form of cookies. Everything else is dependent on Plausible Analytics and Stripe which have their own systems for removing personal information."
 ]
 
 [rubric.data-breaches]
@@ -46,7 +46,7 @@ notes = [ "System76 only uses cookies" ]
 [rubric.third-party-access]
 value = "yes-specified-noncritical"
 citations = [
-  "\"Our website uses third-party analytics tools Google Analytics and Quantcast to help us better understand our customers.\""
+  "\"Our website uses Plausible Analytics to help us understand visitor trends and the effectiveness of our marketing outreach.\""
 ]
 
 [rubric.data-collection-reasoning]
