@@ -1,0 +1,59 @@
+name = "Poof Links"
+description = "Self-destructing urls for sending sensitive information."
+slug = "pooflinks"
+hostnames = [ "pooflinks.com" ]
+sources = [ "https://www.pooflinks.com/privacy-policy" ]
+contributors = [ "sjoseph7" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+notes = ["The policy does not mention behavioral marketing."]
+
+[rubric.data-breaches]
+value = "na"
+citations = ["\"Unsurprisingly, we collect the secret messages you submit to us. While we don't use cookies, we do log IP addresses to monitor usage and prevent abuse.\""]
+notes = ["The service collects so little personal data that notification would not be possible."]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = ["\"Unsurprisingly, we collect the secret messages you submit to us. While we don't use cookies, we do log IP addresses to monitor usage and prevent abuse.\""]
+
+[rubric.data-deletion]
+value = "yes-automated"
+citations = ["\"A secret message can only be retrieved within the window of time specified by the submitting party, up to a maximum of 7 days, and secrets that have not been retrieved within the designated window are considered 'expired'. Secrets are wiped from our servers once viewed, and secrets that expire are immediately inaccessible and are permanently removed from our database within two (2) minutes of their expiration.\""]
+
+[rubric.history]
+value = "last-modified"
+notes = ["A \"Last modified\" date is present at the start of the policy."]
+
+[rubric.law-enforcement]
+value = "unspecified"
+notes = ["There is no mention of law enforcement anywhere in the policy."]
+
+[rubric.list-collected]
+value = "exhaustively"
+citations = ["\"Unsurprisingly, we collect the secret messages you submit to us. While we don't use cookies, we do log IP addresses to monitor usage and prevent abuse.\""]
+
+[rubric.noncritical-purposes]
+value = "na"
+notes = ["The policy states that only the data necessary for submitting a message is collected."]
+
+[rubric.revision-notify]
+value = "na"
+notes = ["The service only collects IP addresses, so notification would be impossible."]
+
+[rubric.security]
+value = "yes"
+citations = [
+  "\"When we receive a message submission, we immediately secure it with AES-256 (a.k.a. 'military-grade') encryption using a randomly generated symmetric key and initialization vector for each message. Your secret message is never written into our server logs, and we never write unencrypted messages to our databases. We embed the key in the provided url and don't store keys in our databases for www.pooflinks.com and any of our browser extensions.\"",
+  "\"If you lose your URL, we cannot retrieve your secret for you.\""
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = ["\"Your data stays on our servers - we don't sell or lease your data to any third party.\""]
+notes = ["The policy indicates that the data is not sold or leased to third parties, but does not mention if it is (or is not) shared."]
+
+[rubric.third-party-collection]
+value = "no"
+notes = ["The service doesn't have enough information to identify users."]
