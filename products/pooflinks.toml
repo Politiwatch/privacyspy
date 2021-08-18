@@ -24,6 +24,7 @@ citations = ["\"A secret message can only be retrieved within the window of time
 
 [rubric.history]
 value = "last-modified"
+citations = ["Effective: November 18, 2020"]
 notes = ["A \"Last modified\" date is present at the start of the policy."]
 
 [rubric.law-enforcement]
