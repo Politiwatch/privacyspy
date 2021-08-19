@@ -44,10 +44,12 @@ value = "na"
 notes = ["The service only collects IP addresses, so notification would be impossible."]
 
 [rubric.security]
-value = "yes"
+value = "somewhat"
 citations = [
-  "\"When we receive a message submission, we immediately secure it with AES-256 (a.k.a. 'military-grade') encryption using a randomly generated symmetric key and initialization vector for each message. Your secret message is never written into our server logs, and we never write unencrypted messages to our databases. We embed the key in the provided url and don't store keys in our databases for www.pooflinks.com and any of our browser extensions.\"",
-  "\"If you lose your URL, we cannot retrieve your secret for you.\""
+  "\"Your secret message is never written into our server logs, and we never write unencrypted messages to our databases.\"",
+]
+notes = [
+  "The policy provides information regarding keeping messages obscured from system operators, but nothing specific about the security practices surrounding the collected IP addresses."
 ]
 
 [rubric.third-party-access]
