@@ -6,9 +6,9 @@ sources = [ "https://grammarly.com/privacy-policy" ]
 contributors = [ "elijahpepe" ]
 
 [rubric.behavioral-marketing]
-value = "yes"
+value = "no"
 citations = [
-  "When you interact with our Site, Software, and/or Services, we collect information that could be used to identify you (“Personal Data”). Some of the information we collect is stored in a manner that cannot be linked back to you (“Non-Personal Data”). [...] Grammarly does not share your Personal Data with third parties for the purpose of enabling them to deliver their advertisements to you."
+  "Grammarly does not share your Personal Data with third parties for the purpose of enabling them to deliver their advertisements to you."
 ]
 
 [rubric.security]
@@ -71,7 +71,7 @@ citations = [
 [rubric.list-collected]
 value = "generally"
 notes = [
-  "Grammarly explains automatically collected information, as well as provided information well, but uses may when describing log data."
+  "Grammarly explains automatically collected information, as well as provided information well, but uses may when describing log data. Data collected includes location information, names of user contacts while using Grammarly Keyboard, user content, usage information, device information, log data containing browser information, and cookies."
 ]
 
 [rubric.revision-notify]
