@@ -7,8 +7,8 @@ contributors = [ "elijahpepe" ]
 
 [rubric.behavioral-marketing]
 value = "no"
-notes = [
-  "Khan Academy does not run advertisements at all."
+citations = [
+  "Khan Academy does not share your information with third-party organizations for their marketing or promotional use without your consent."
 ]
 
 [rubric.security]
@@ -26,7 +26,7 @@ citations = [
 [rubric.history]
 value = "last-modified"
 notes = [
-  "Khan Academy does not have a button to view previous versions of its privacy policy."
+  "Khan Academy does not have a button to view previous versions of its privacy policy, but does have a label showing the last modified date (June 17th, 2021)."
 ]
 
 [rubric.data-deletion]
@@ -42,9 +42,9 @@ citations = [
 ]
 
 [rubric.third-party-access]
-value = "yes-unspecified"
+value = "yes-unspecified-critical"
 citations = [
-  "We may share personal information: with other users of our Service, if you use features that enable you to share your information with (or make it accessible to) others, with Vendors, consultants and other service providers working on our behalf, with other users that are associated with your account, such as a parent, teacher or coach, with your school, if you are using our Service for school purposes, with your consent (including third party applications that you choose to use, such as complementary services or an Authentication Service)."
+  "In order to provide our Service, Khan Academy may share information with our employees and trusted vendors, third party service providers or other individuals, such as entities providing billing, customer support, analytics, hosting, marketing and similar services. When we share information with third party service providers or vendors, these third parties are contractually obligated to maintain the security and confidentiality of that information."
 ]
 
 [rubric.data-collection-reasoning]
