@@ -16,8 +16,7 @@ hostnames = [
   "ovh-hosting.fi",
   "ovh.co.uk",
   "ovh.sn",
-  "ovh.com.au",
-  ""
+  "ovh.com.au"
 ]
 sources = [ "https://us.ovhcloud.com/legal/privacy-policy" ]
 contributors = [ "doamatto" ]
