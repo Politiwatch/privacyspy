@@ -42,7 +42,7 @@ function search(query) {
   let results = [];
   let foundProducts = [];
   for (let doc of [...index.search(query + "*"), ...index.search(query)]) {
-    if (!foundProducts.includes(doc.ref)) {
+    if (!foundProducts.includes(doc.ref)){
       results.push(products[doc.ref]);
       foundProducts.push(doc.ref);
     }

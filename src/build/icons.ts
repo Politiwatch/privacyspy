@@ -10,10 +10,8 @@ const fs = require("fs");
 let products = loadProducts(loadRubric(), loadContributors());
 
 if (process.argv.length > 2) {
-  products = products.filter((prod) => process.argv.includes(prod.slug));
-  console.log(
-    "Only looking for icons for: " + products.map((prod) => prod.slug)
-  );
+  products = products.filter(prod => process.argv.includes(prod.slug));
+  console.log("Only looking for icons for: " + (products.map(prod => prod.slug)))
 }
 
 (async () => {

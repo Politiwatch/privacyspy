@@ -61,10 +61,10 @@ for (const product of products) {
       });
 
       test(`that is mostly square`, () => {
-        const dimensions = sizeOf("icons/" + product.icon);
-        const aspectRatio = dimensions.width / dimensions.height;
+        let dimensions = sizeOf("icons/" + product.icon);
+        let aspectRatio = dimensions.width / dimensions.height;
         expect(Math.abs(1 - aspectRatio)).toBeLessThanOrEqual(0.2);
-      });
+      })
     });
 
     if (product.parent != null) {

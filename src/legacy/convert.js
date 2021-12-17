@@ -15,7 +15,7 @@ const DEBUG = true;
 for (let entry of database) {
   console.log("Processing " + entry["name"]);
 
-  if (fs.existsSync(`product/${entry["slug"]}.toml`)) {
+  if(fs.existsSync(`product/${entry["slug"]}.toml`)) {
     console.log("Already exists, skipping...");
     continue;
   }
