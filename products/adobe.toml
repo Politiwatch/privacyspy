@@ -1,7 +1,7 @@
 name = "Adobe"
 description = "Adobe is a software company known for tools to create graphics and prints, edit photography and videos, among a slew of other products."
 slug = "adobe"
-hostnames = [ "adobe.com" ]
+hostnames = [ "adobe.com", "adobetm.com", "omtrdc.net", "2o7.net", "demdex.net", "everestjs.net", "everesttech.net", "tubemogul.com" ]
 sources = [ "https://www.adobe.com/privacy/policy.html", "https://www.adobe.com/privacy/marketing.html" ]
 contributors = [ "UnKnOwN", "ibarakaiev" ]
 

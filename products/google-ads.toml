@@ -1,0 +1,6 @@
+name = "Google Ads"
+description = "Google Ads is an online advertising platform developed by Google."
+hostnames = [ "ads.google.com", "adsbygoogle" ]
+slug = "google-ads"
+parent = "google"
+contributors = [ "ibarakaiev" ]

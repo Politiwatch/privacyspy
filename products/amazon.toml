@@ -1,7 +1,7 @@
 name = "Amazon US"
 description = "Amazon is an American technology giant that specializes in e-commerce and cloud computing."
 slug = "amazon"
-hostnames = [ "amazon.com" ]
+hostnames = [ "amazon.com", "amazon-adsystem.com" ]
 sources = [
   "https://www.amazon.com/gp/help/customer/display.html?ie=UTF8&nodeId=468496"
 ]
