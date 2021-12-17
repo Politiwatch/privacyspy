@@ -1,6 +1,6 @@
 name = "DoubleClick"
 description = "DoubleClick Digital Marketing is an integrated ad technology platform owned by Google."
-hostnames = ["doubleclick.net"]
+hostnames = [ "doubleclick.net", "2mdn.net" ]
 slug = "doubleclick"
 parent = "google"
-contributors = ["ibarakaiev"]
+contributors = [ "ibarakaiev" ]
