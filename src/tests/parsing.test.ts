@@ -18,7 +18,7 @@ files = files.concat(
     .map((file) => "products/" + file)
 );
 
-for(let file of files) {
+for (const file of files) {
   describe(`[${file}]`, () => {
     test("Must be valid TOML", () => {
       expect(() => {
