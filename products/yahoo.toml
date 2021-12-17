@@ -1,7 +1,7 @@
 name = "Yahoo!"
 description = "Yahoo! is an American technology company owned by Verizon that provides a search engine and email."
 slug = "yahoo"
-hostnames = [ "yahoo.com" ]
+hostnames = [ "yahoo.com", "yahooapis.com", "btrll.com" ]
 sources = [ "https://policies.yahoo.com/xa/en/yahoo/privacy/index.htm" ]
 contributors = [ "ibarakaiev" ]
 

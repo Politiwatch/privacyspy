@@ -1,7 +1,7 @@
 name = "Instagram"
 description = "Instagram is a photo sharing social network owned and operated by Facebook."
 slug = "instagram"
-hostnames = [ "instagram.com" ]
+hostnames = [ "instagram.com", "instawidget.net" ]
 sources = [ "https://help.instagram.com/519522125107875" ]
 contributors = [ "milesmcc" ]
 

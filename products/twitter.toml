@@ -1,7 +1,7 @@
 name = "Twitter"
 description = "Twitter is a microblogging social network popular among the masses."
 slug = "twitter"
-hostnames = [ "twitter.com" ]
+hostnames = [ "twitter.com", "ads-twitter.com" ]
 sources = [ "https://twitter.com/en/privacy" ]
 contributors = [ "milesmcc" ]
 

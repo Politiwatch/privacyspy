@@ -1,0 +1,6 @@
+name = "Google Tag Manager"
+description = "Google Tag Manager is a tag management system for marketing purposes."
+hostnames = [ "googletagmanager.com", "tagmanager.google.com" ]
+slug = "google-tag-manager"
+parent = "google"
+contributors = [ "ibarakaiev" ]
