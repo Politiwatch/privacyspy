@@ -36,7 +36,8 @@ citations = ["No data is logged except account information (username, password [
 value = "na" 
 
 [rubric.revision-notify]
-value = "na" 
+value = "no" 
+notes = ["The privacy policy does not mention whether users will be notified when the policy is meaningfully changed."]
 
 [rubric.security]
 value = "yes" 
