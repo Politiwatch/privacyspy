@@ -11,7 +11,7 @@ citations = ["We strictly do not use any 3rd party analytics / tracking software
 
 [rubric.data-breaches]
 value = "no" 
-notes = ["he policy does not mention requirement for users to be notified in case of a data breach"]
+notes = ["The policy does not mention requirement for users to be notified in case of a data breach"]
 
 [rubric.data-collection-reasoning]
 value = "yes" 
