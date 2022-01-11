@@ -2,7 +2,7 @@ name = "Filen"
 description = "Filen is an end-to-end encrypted cloud storage provider based in Germany."
 slug = "filen"
 hostnames = [ "filen.io" ]
-sources = [ "https://filen.io/privacy" ]
+sources = [ "https://filen.io/privacy", "https://filen.io/assets/FilenSecurityWhitepaper.pdf" ]
 contributors = [ "aarontorres0" ]
 
 [rubric.behavioral-marketing]
@@ -42,7 +42,7 @@ notes = ["The privacy policy does not mention whether users will be notified whe
 [rubric.security]
 value = "yes" 
 citations = ["password [passwords are hashed and salted]"]
-notes = ["More security practices can be found on the homepage."]
+notes = ["More security practices can be found in the Filen Security Whitepaper."]
 
 [rubric.third-party-access]
 value = "no" 
