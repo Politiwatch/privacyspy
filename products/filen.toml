@@ -25,7 +25,7 @@ citations = ["Our users can ask us to delete their information from our database
 value = "no"
 
 [rubric.law-enforcement]
-value = "na"
+value = "unspecified"
 notes = ["The privacy policy does not mention allowing law enforcement access to personal data."]
 
 [rubric.list-collected]
