@@ -18,7 +18,7 @@ value = "yes"
 citations = ["We may collect data about visits to our website to measure the number of visitors to different parts of the website, to assess user access patterns, to make the website load faster and otherwise to operate the website. We may use cookies or other similar technology for these purposes.", "We may collect data about our client's (web/mobile/desktop) performance and errors to increase performance and fix bugs as fast as possible."]
 
 [rubric.data-deletion]
-value = "yes-automated"
+value = "yes-contact"
 citations = ["Our users can ask us to delete their information from our database at any time. "]
 
 [rubric.history]
