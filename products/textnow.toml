@@ -3,7 +3,7 @@ description = "TextNow is a virtual phone service that provides free calling and
 slug = "textnow"
 hostnames = [ "textnow.com" ]
 sources = [ "https://www.textnow.com/privacy/" ]
-contributors = [ "kelplover" ]
+contributors = [ "kelplover", "doamatto" ]
 
 [rubric.behavioral-marketing]
 value = "yes-opt-out"
