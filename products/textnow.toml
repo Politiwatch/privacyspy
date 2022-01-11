@@ -1,0 +1,87 @@
+name = "TextNow"
+description = "TextNow is a virtual phone service that provides free calling and texting over WiFi"
+slug = "textnow"
+hostnames = [ "textnow.com" ]
+sources = [ "https://www.textnow.com/privacy/" ]
+contributors = [ "kelplover" ]
+
+[rubric.behavioral-marketing]
+value = "yes-opt-out"
+citations = [
+  "TextNow provides “Free” Services as well as paid Services for users. In order to pay for the “Free” Service, personalized advertisements are placed before you."
+  "To learn more about interest-based advertising in general and to opt-out, please visit http://www.aboutads.info/choices. To opt-out of the use of your mobile device ID for targeted advertising, please see http://www.aboutads.info/appchoices.",
+  "You may opt-out of providing your location information to us when you are using mobile devices."
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "We safeguard your information in accordance with industry procedures and security standards."
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "Name, User ID (alias), email address, Phone Number, IP address, device ID, advertiser ID, device type, settings and operating system."
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [
+  "First Effective: May 25, 2018. Last Updated: Dec 1, 2021"
+]
+
+[rubric.data-deletion]
+value = "yes-automated"
+citations = [
+  "You may update your personal information (including flagging your messages for deletion) by accessing your account from our website"
+]
+
+[rubric.data-breaches]
+value = "no"
+
+[rubric.third-party-access]
+value = "yes-specified-noncritical"
+citations = [
+  "Latitude/longitude coordinates and general physical location or movements from IP address and Wi-Fi access.",
+  "Our partners may link the hashed or obfuscated personal information we share with them to the cookie stored on your browser or device, and they may collect information such as your IP address, browser or operating system type and version, and demographic or inferred-interest information.",
+  "Your payment information may be share with such third parties as needed for billing purposes and to prevent fraud."
+  "Name, User ID (alias), email address, Phone Number, IP address, device ID, advertiser ID, device type, settings and operating system."
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "The table below sets forth the types of data we collect. We use this data for one or more of the following purposes as indicated in such table:"
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-some"
+citations = [
+  "We “do not track” you across third party websites. However, we do track you as per this Privacy Policy, and further some of our third party advertisers may also track you across other websites or online services."
+  "To learn more about interest-based advertising in general and to opt-out, please visit http://www.aboutads.info/choices. To opt-out of the use of your mobile device ID for targeted advertising, please see http://www.aboutads.info/appchoices.",
+  "You may opt-out of providing your location information to us when you are using mobile devices. If you do not want us to use your location information as described in this Privacy Policy, you should turn off the location services for the mobile application located in your mobile device settings."
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "The governments, courts, law enforcement, and regulatory agencies of which are able to obtain disclosure of your information through the laws of the United States or the laws of Canada."
+]
+
+[rubric.list-collected]
+value = "exhaustively"
+citations = [
+  "Name, User ID (alias), email address, Phone Number, IP address, device ID, advertiser ID, device type, settings and operating system.",
+  "Telephony log information (telephone log records) (e.g.calling-party number, receiving party number, forwarding numbers, time and date of calls and messages, duration of calls, routing information and types of calls).",
+  "Messages (including voice, text, audio, video, pictures and videos) and contacts.",
+  "Credit card number",
+  "Records of purchases of our Services.",
+  "Information about your interaction with the TextNow application and advertisements.",
+  "Latitude/longitude coordinates and general physical location or movements from IP address and Wi-Fi access."
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "Notification of any major changes may be sent to you by email or a system message to your account."
+]
