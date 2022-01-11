@@ -10,7 +10,7 @@ value = "no"
 citations = ["We strictly do not use any 3rd party analytics / tracking software (Such as Google Analytics), which can be used to track your browsing habits for advertising purposes. We use a self hosted privacy friendly Matomo instance for internal analytics."]
 
 [rubric.data-breaches]
-value = "na" 
+value = "no" 
 notes = ["he policy does not mention requirement for users to be notified in case of a data breach"]
 
 [rubric.data-collection-reasoning]
