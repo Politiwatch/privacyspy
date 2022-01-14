@@ -33,7 +33,7 @@ value = "exhaustively"
 citations = ["No data is logged except account information (username, password [passwords are hashed and salted], email address and last IP used to log in) for those who use the account feature. We also log IP addresses and user agents for certain events, such as uploading or editing files/folders. All of this data is available to the user. Our users can ask us to delete their information from our database at any time. We also provide a full list in JSON format of logged data to every user which can be downloaded on demand."]
 
 [rubric.noncritical-purposes]
-value = "no" 
+value = "na" 
 notes = ["The privacy policy does not mention allowing users to opt out of data collection meant to improve performance or fix bugs."]
 
 [rubric.revision-notify]
