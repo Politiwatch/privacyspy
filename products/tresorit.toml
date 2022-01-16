@@ -2,13 +2,14 @@ name = "Tresorit"
 description = "Tresorit is an online cloud storage service based in Switzerland and Hungary."
 slug = "tresorit"
 hostnames = [ "tresorit.com" ]
-sources = [ "https://tresorit.com/legal/privacy-policy", "https://tresorit.com/security", "https://tresorit.com/gdpr"]
+sources = [ "https://tresorit.com/legal/privacy-policy", "https://tresorit.com/security", "https://tresorit.com/gdpr", "https://support.tresorit.com/hc/en-us/articles/360008033453-How-to-delete-your-account" ]
 contributors = [ "DimitriDR" ]
 
 [rubric.behavioral-marketing]
 value = "yes-opt-out"
 citations = [
-    "[...] we may use your email address and phone number provided to us to send you marketing communications, [...], **unless you have opted-out**."
+    "[...] we may use your email address and phone number provided to us to send you marketing communications, [...], **unless you have opted-out**.",
+    "We may also use information about you, including web statistics and logs, to personalize the content and experience you receive on our websites or in our marketing communications, as well as by displaying Tresorit ads on other companies' websites and applications, such as on platforms like Facebook and Google. Where legally required, also seek your consent for sending marketing communications."
 ]
 
 [rubric.data-breaches]
@@ -25,18 +26,21 @@ notes = [
 
 [rubric.data-deletion]
 value = "yes-automated"
+citations = [
+    "You can request this by send an email to support@tresorit.com. We will respond to your request within thirty days."
+]
 notes = [
-    "Option is easily available in account settings."
+    "Also, you can easily delete your account in settings."
 ]
 
 [rubric.history]
 value = "yes"
 notes = [
-    "At the bottom of the privacy policy, you can observe the archives."
+    "Archives are available at the bottom of the privacy policy."
 ]
 
 [rubric.law-enforcement]
-value = "always"
+value = "reasonable"
 citations = [
     "Tresorit may transmit personal data if the applicable legal provisions so require, or when such action is necessary to comply with any laws, including to meet national security or law enforcement requirements."
 ]
@@ -65,7 +69,7 @@ citations = [
     "We take appropriate technical and organizational measures to protect your personal data against loss or other forms of unlawful processing. Tresorit is ISO 27001:2013 certified."
 ]
 notes = [
-    "ISO controls annually"
+    "TÜV Rheinland Group has made the ISO certification."
 ]
 
 [rubric.third-party-access]
@@ -78,4 +82,7 @@ citations = [
 value = "yes"
 citations = [
     "We receive information about you and your activities on our website from third-party partners, such as advertising partners."
+]
+notes = [
+    "Full list of third providers can be found here: https://support.tresorit.com/hc/en-us/articles/216114397-Third-party-services"
 ]
