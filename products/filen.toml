@@ -23,6 +23,7 @@ citations = ["Our users can ask us to delete their information from our database
 
 [rubric.history]
 value = "no"
+notes = ["No link to previous version of privacy policy."]
 
 [rubric.law-enforcement]
 value = "unspecified"
