@@ -52,4 +52,4 @@ citations = ["Filen does not sell, license, sub-license or share any of the data
 
 [rubric.third-party-collection]
 value = "no" 
-
+notes = ["No mention of third party collection. Only mentions they collect data themselves for their own purposes."]
