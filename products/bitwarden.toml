@@ -1,0 +1,70 @@
+name = "Bitwarden"
+description = "Bitwarden is an open source password manager."
+slug = "bitwarden"
+hostnames = [ "bitwarden.com" ]
+sources = [ "https://bitwarden.com/privacy/", "https://bitwarden.com/blog/bitwarden-network-security-assessment-2020/", "https://bitwarden.com/blog/vault-security-bitwarden-password-manager/" ]
+contributors = [ "aarontorres0" ]
+
+[rubric.behavioral-marketing]
+value = "yes-opt-in"
+citations = ["Send marketing, advertising, training, certification or event materials to which you've agreed, requested or subscribed or to otherwise inform you about our products and services"]
+
+[rubric.data-breaches]
+value = "no"
+notes = ["No mention of notification in case of a data breach."]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = ["Bitwarden may use the Personal Information collected by the Site to provide you with services, to accomplish our business purposes and to fulfill other legal obligations"]
+notes = ["Privacy Policy further outlines how Bitwarden will use Personal Data under 'Use and Retention.'"]
+
+[rubric.data-deletion]
+value = "yes-contact" 
+citations = ["If you would like to request assistance with accessing, correcting, or deleting your Personal Information, please submit your request to us by email at privacypolicy@bitwarden.com."]
+
+[rubric.history]
+value = "last-modified"
+citations = ["Last revised 10-JUN-2021"]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = ["We believe that disclosure is reasonably necessary to comply with any applicable law, regulation, legal process, or lawful government request, including in connection with national security or law enforcement requirements. This may include disclosures: to respond to subpoenas or court orders; to establish or exercise our legal rights or defend against legal claims; or to investigate, prevent, or take action regarding illegal activities, suspected fraud, situations involving potential threats to the physical safety of any person, violations of our Service Agreement, or as otherwise required by law. In each case, we will make reasonable efforts to verify the validity of the request before disclosing your Personal Information."]
+
+[rubric.list-collected]
+value = "generally"
+notes = ["To find examples of personal data they might collect go to the 'The Bitwarden Website' section in the privacy policy."]
+
+[rubric.noncritical-purposes]
+value = "no" 
+citations = ["Subject to certain restrictions, as a California resident, you have the right to request that we disclose what Personal Information we collect about you, to delete any Personal Information that we collected from or maintain about you, and to opt-out of the sale of Personal Information about you."]
+notes = ["No opt-out choice for personal data collection, except for California residents."]
+
+[rubric.revision-notify]
+value = "yes"
+citations = ["If we make any material changes, we will notify you by email (sent to the email address specified in your account registered with the Site or Bitwarden Service) or by means of a notice on the Site or Service."]
+
+[rubric.security]
+value = "yes-independent-audits"
+notes = ["The policy does not outline Bitwardn's security practices in great detail, but there website and blog goes into great detail on their security and an audit done by Cure53."]
+
+[rubric.third-party-access]
+value = "yes-unspecified-critical"
+notes = ["Depending on how Bitwarden is deployed by the customer, Bitwarden may share Personal Information with third-party service providers that need your information to provide the following operational or other support services to Bitwarden, the Site or Service:
+
+    • Data management.
+    • Database hosting.
+    • Integration services.
+    • Professional services.
+    • Information security, integrity, and identity and authentication services.
+    • Email communications (e.g. operational, marketing, events, training, certifications).
+    • Financial operations (e.g. licensing, billing).
+    • Payments and payment card processing.
+    • Shipping services.
+    • Communication services (e.g enabling collaboration, conferencing or messaging).
+    • Support services (e.g. providing customer service and support).
+    • Cloud services (e.g. functioning of the Site or Bitwarden Service).
+"]
+
+[rubric.third-party-collection]
+value = "no" 
+notes = ["The privacy policy has no mention of collecting personal data from third parties."]
