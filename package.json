@@ -52,7 +52,7 @@
     "postcss-scss": "^3.0.5",
     "queue-microtask": "^1.2.3",
     "run-sequence": "^2.2.1",
-    "simple-git": "^3.3.0",
+    "simple-git": "^3.5.0",
     "tailwindcss": "^2.1.2",
     "toml": "^3.0.0",
     "ts-node": "^8.10.2",
