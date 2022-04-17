@@ -1,0 +1,55 @@
+name = "Filen"
+description = "Filen is an end-to-end encrypted cloud storage provider based in Germany."
+slug = "filen"
+hostnames = [ "filen.io" ]
+sources = [ "https://filen.io/privacy", "https://filen.io/assets/FilenSecurityWhitepaper.pdf" ]
+contributors = [ "aarontorres0" ]
+
+[rubric.behavioral-marketing]
+value = "no" 
+citations = ["We strictly do not use any 3rd party analytics / tracking software (Such as Google Analytics), which can be used to track your browsing habits for advertising purposes. We use a self hosted privacy friendly Matomo instance for internal analytics."]
+
+[rubric.data-breaches]
+value = "no" 
+notes = ["The policy does not mention requirement for users to be notified in case of a data breach"]
+
+[rubric.data-collection-reasoning]
+value = "yes" 
+citations = ["We may collect data about visits to our website to measure the number of visitors to different parts of the website, to assess user access patterns, to make the website load faster and otherwise to operate the website. We may use cookies or other similar technology for these purposes.", "We may collect data about our client's (web/mobile/desktop) performance and errors to increase performance and fix bugs as fast as possible."]
+
+[rubric.data-deletion]
+value = "yes-contact"
+citations = ["Our users can ask us to delete their information from our database at any time. "]
+
+[rubric.history]
+value = "no"
+notes = ["No link to previous version of privacy policy."]
+
+[rubric.law-enforcement]
+value = "unspecified"
+notes = ["The privacy policy does not mention allowing law enforcement access to personal data."]
+
+[rubric.list-collected]
+value = "exhaustively"
+citations = ["No data is logged except account information (username, password [passwords are hashed and salted], email address and last IP used to log in) for those who use the account feature. We also log IP addresses and user agents for certain events, such as uploading or editing files/folders. All of this data is available to the user. Our users can ask us to delete their information from our database at any time. We also provide a full list in JSON format of logged data to every user which can be downloaded on demand."]
+
+[rubric.noncritical-purposes]
+value = "na" 
+notes = ["The privacy policy does not mention allowing users to opt out of data collection meant to improve performance or fix bugs."]
+
+[rubric.revision-notify]
+value = "no" 
+notes = ["The privacy policy does not mention whether users will be notified when the policy is meaningfully changed."]
+
+[rubric.security]
+value = "yes" 
+citations = ["password [passwords are hashed and salted]"]
+notes = ["More security practices can be found in the Filen Security Whitepaper."]
+
+[rubric.third-party-access]
+value = "no" 
+citations = ["Filen does not sell, license, sub-license or share any of the data submitted directly or indirectly by our users with any person or entity."]
+
+[rubric.third-party-collection]
+value = "no" 
+notes = ["No mention of third party collection. Only mentions they collect data themselves for their own purposes."]
