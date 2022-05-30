@@ -12,7 +12,7 @@ notes = [ "Tutanota does not use any analytical tools. " ]
 [rubric.security]
 value = "yes"
 notes = [
-  "This is not outlined in the privacy policy, rather on a separate page: https://tutanota.com/security"
+  "This is not outlined in the privacy policy, but on a separate page: https://tutanota.com/security"
 ]
 
 [rubric.third-party-collection]
@@ -30,9 +30,9 @@ citations = [
 ]
 
 [rubric.data-breaches]
-value = "no"
+value = "yes-72"
 notes = [
-  "Although their imprint describes them being based in Germany, Tutanota does not comply with Article 33 of the GDPR."
+  "Tutanota is based in Germany so it is legally obliged to notify users of data breaches, even if not listed in the privacy policy."
 ]
 
 [rubric.third-party-access]
@@ -73,5 +73,5 @@ citations = [
 ]
 
 [rubric.revision-notify]
-value = "no"
-notes = [ "There is no clause requiring such." ]
+value = "yes"
+notes = [ "German laws require users to be notified four weeks prior to a policy change. Tutanota always sends out such notices." ]
