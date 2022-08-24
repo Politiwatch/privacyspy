@@ -16,7 +16,7 @@ notes = ["Note that all companies operating in the EU are subject to Art. 33 of 
 value = "mostly"
 
 [rubric.data-deletion]
-value = ""yes-automated"
+value = "yes-automated"
 
 [rubric.history]
 value = "no"
