@@ -1,0 +1,46 @@
+name = "Guilded"
+description = "Guilded is a gaming-focused chat app."
+slug = "guilded"
+hostnames = [ "guilded.gg" ]
+sources = [ "https://support.guilded.gg/hc/en-us/articles/360039235054-Privacy" ]
+contributors = [ "davidbernau" ]
+
+[rubric.behavioral-marketing]
+value = "no" 
+
+[rubric.data-breaches]
+value = "no"
+notes = ["Note that all companies operating in the EU are subject to Art. 33 of the GDPR, which requires companies to notify their data protection authority of a data breach within 72 hours of discovering it."]
+
+[rubric.data-collection-reasoning]
+value = "mostly"
+
+[rubric.data-deletion]
+value = ""yes-automated"
+
+[rubric.history]
+value = "no"
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = ["We may also share Personal Data when we believe it is necessary to: Comply with applicable law or respond to valid legal process, including from law enforcement or other government agencies"]
+
+[rubric.list-collected]
+value = "generally"
+
+[rubric.noncritical-purposes]
+value = "opt-out-all"
+
+[rubric.revision-notify]
+value = "yes"
+citations = ["we may need to change this Privacy Policy from time to time as well, but we will alert you to changes by placing a notice on the Services, by sending you an email, and/or by some other means. Please note that if you’ve opted not to receive legal notice emails from us (or you haven’t provided us with your email address), those legal notices will still govern your use of the Services, and you are still responsible for reading and understanding them."]
+
+[rubric.security]
+value = "somewhat"
+citations = ["We endeavor to protect the privacy of your account and other Personal Information we hold in our records, but unfortunately, we cannot guarantee complete security. Unauthorized entry or use, hardware or software failure, and other factors, may compromise the security of user information at any time."]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+
+[rubric.third-party-collection]
+value = "critical-only"
