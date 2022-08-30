@@ -6,7 +6,8 @@ sources = [ "https://support.guilded.gg/hc/en-us/articles/360039235054-Privacy" 
 contributors = [ "davidbernau" ]
 
 [rubric.behavioral-marketing]
-value = "no" 
+value = "no"
+citations = ["Legitimate Interest: We process the following categories of Personal Data when we believe it furthers the legitimate interest of us or third parties. IP address chat logs Examples of these legitimate interests include: Operation and improvement of our business, products and services Marketing of our products and services"]
 
 [rubric.data-breaches]
 value = "no"
@@ -17,7 +18,8 @@ value = "mostly"
 citations = ["We may use this data to customize content for you that we think you might like, based on your usage patterns. We may also use it to improve the Services - for example, this data can tell us how often users use a particular feature of the Services, and we can use that knowledge to make the Services interesting to as many users as possible."]
 
 [rubric.data-deletion]
-value = "yes-automated"
+value = "yes-contact"
+citations = ["You have certain rights with respect to your Personal Data, including those set forth below. For more information about these rights, or to submit a request, please email support@guilded.gg."]
 
 [rubric.history]
 value = "last-modified"
@@ -49,3 +51,4 @@ citations = ["We do not rent or sell your Personal Information in personally ide
 
 [rubric.third-party-collection]
 value = "critical-only"
+citations = ["Through cookies we place on your browser or device, we may collect information about your online activity after you leave our Services. Just like any other usage information we collect, this information allows us to improve the Services and customize your online experience, and otherwise as described in this Privacy Policy. Your browser may offer you a “Do Not Track” option, which allows you to signal to operators of websites and web applications and services (including behavioral advertising services) that you do not wish such operators to track certain of your online activities over time and across different websites. When you turn on the Do Not Track function in your browser, we stop collecting the information from your browser that allows us to tailor advertisements and other content specifically to you that is based on your visits to our advertising partners’ websites. Specifically, we stop collecting information from the unique browser cookie that links your browser to visits to third party sites."]
