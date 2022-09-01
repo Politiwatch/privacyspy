@@ -1,0 +1,55 @@
+name = "Nebula"
+description = "Nebula is a creator-focused video streaming platform owned by Standard.tv."
+slug = "nebula"
+hostnames = [ "nebula.app" ]
+sources = [ "https://nebula.app/privacy", "https://standard.tv/privacy/" ]
+contributors = [ "davidbernau" ]
+
+[rubric.behavioral-marketing]
+value = "yes"
+citations = ["Standard’s primary purpose in collecting personal information is to provide the Services and Content that you request on the Website. Standard may also use personal information for various purposes, including without limitation: Fulfilling your requests for selecting and purchasing products. Establish and maintain your account on the Website. Understanding and analyzing the usage trends and preferences of our Users to make our Website better, diagnose technical issues, prevent fraud, and develop new features and functionality. To personalize your experience on the Website and to deliver information about offers relevant to your interests. To verify your identity or determine your eligibility for offers and promotions. To communicate with you, including responding to any of your requests or questions. To provide Users with maintenance and support including responding requests for customer support or responding to your feedback. To send you materials, updates, information, special offers, and promotional material from us and from other Users and our business partners using direct marketing or behavioral-based advertising."]
+
+[rubric.data-breaches]
+value = "eventually"
+citations = ["In the event that we are required by law to inform you of any unauthorized access or acquisition of your personal information we may notify you electronically, in writing, or by telephone, if permitted to do so by law."]
+notes = ["Note that all companies operating in the EU are subject to Art. 33 of the GDPR, which requires companies to notify their data protection authority of a data breach within 72 hours of discovering it."]
+
+[rubric.data-collection-reasoning]
+value = "mostly"
+citations = ["Standard’s primary purpose in collecting personal information is to provide the Services and Content that you request on the Website. Standard may also use personal information for various purposes, including without limitation: Fulfilling your requests for selecting and purchasing products. Establish and maintain your account on the Website. Understanding and analyzing the usage trends and preferences of our Users to make our Website better, diagnose technical issues, prevent fraud, and develop new features and functionality. To personalize your experience on the Website and to deliver information about offers relevant to your interests. To verify your identity or determine your eligibility for offers and promotions. To communicate with you, including responding to any of your requests or questions. To provide Users with maintenance and support including responding requests for customer support or responding to your feedback. To send you materials, updates, information, special offers, and promotional material from us and from other Users and our business partners using direct marketing or behavioral-based advertising. To generate web analytics and compile User information for conducting market analysis and to promote your account for greater discoverability. To respond to requests from law enforcement and as required by applicable law, court order, or government investigation."]
+
+[rubric.data-deletion]
+value = "yes-contact"
+citations = ["European data protection laws give you certain rights regarding your personal information. You may ask us to take the following actions in relation to your personal information that we hold: Access. Provide you with information about our processing of your personal information and give you access to your personal information. Transfer. Transfer a machine-readable copy of your personal information to you or a third party of your choice. Correct. Update or correct inaccuracies in your personal information. Restrict. Restrict the processing of your personal information. Object. Object to our reliance on our lawful basis as the basis of our processing of your personal information that impacts your rights. Delete. Delete your personal information."]
+notes = ["Unclear if Nebula/Standard offer this right to citizens outside of the EU"]
+
+[rubric.history]
+value = "no"
+
+[rubric.law-enforcement]
+value = "strict"
+citations = ["We won’t share any data with government or law enforcement unless required to by law."]
+
+[rubric.list-collected]
+value = "exhaustively"
+citations = ["Personal information you may provide to us through the Website or otherwise includes: Contact details, such as your first and last name, email and mailing addresses, and phone number. Registration information, such as your username and password that you set to establish an online account with us. Communications that we exchange, including when you contact us with questions, feedback, or otherwise. Payment and transactional data, such as the information needed to complete your orders and registrations on or through the Service (which does not include credit card information, which is provided by you directly to our processing service provider), and information about products you have purchased from us. Cookies and internet activity, such as text files that websites store on a visitor‘s device to uniquely identify the visitor’s browser or to store information or settings in the browser for the purpose of helping you navigate between pages efficiently, remembering your preferences, enabling functionality, helping us understand user activity and patterns. Marketing data, such as your preferences for receiving communications about our products, services, activities, events, and publications, and details about how you engage with our communications. User Content, such as audio, visual and other materials related to the User. Analytical Information, such as data and information related to a User, for example, subscriber counts, view, like, and comment counts, and inferences drawn from such information and data. Other information that we may collect which is not specifically listed here, which we will use as described in this Privacy Policy or as otherwise disclosed on the Website at the time of collection."]
+
+[rubric.noncritical-purposes]
+value = "opt-out-some"
+citations = ["You may choose to prevent this website from anonymously aggregating and analyzing the actions you take here."]
+
+[rubric.revision-notify]
+value = "yes"
+citations = ["We may occasionally need to change this policy. We’ll be sure to let you know. This might require us sending you an annoying email."]
+
+[rubric.security]
+value = "somewhat"
+citations = ["CNo method of transmission over the Internet, or method of electronic storage, is fully secure. While we use reasonable efforts to protect your personal information from the risks presented by unauthorized access or acquisition, we cannot guarantee the security of your personal information."]
+
+[rubric.third-party-access]
+value = "yes-unspecified-critical"
+citations = ["Whatever information we collect, we won’t share with third parties beyond the technical requirements of third-party services."]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = ["Standard may receive personal information about you from other third party sources, including from business partners, data providers, and third party API’s."]
