@@ -1,5 +1,5 @@
 name = "TextNow"
-description = "TextNow is a virtual phone service that provides free calling and texting over WiFi"
+description = "TextNow is a virtual phone service that provides free calling and texting over WiFi."
 slug = "textnow"
 hostnames = [ "textnow.com" ]
 sources = [ "https://www.textnow.com/privacy/", "https://www.textnow.com/legal/california-privacy" ]
