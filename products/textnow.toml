@@ -22,7 +22,8 @@ citations = [
 [rubric.third-party-collection]
 value = "yes"
 citations = [
-  "\"Name, User ID (alias), email address, Phone Number, IP address, device ID, advertiser ID, device type, settings and operating system.\""
+  "We partner with third parties that collect information across various channels, including offline and online, for purposes of delivering more relevant advertising to you or your business. Our partners may place or recognize cookies, pixels, and other tracking technologies on your computer, device, or directly in our emails/communications, and we may share personal information with them if you have submitted such information to us, such as your email address or device ID.",
+  ""
 ]
 
 [rubric.history]
