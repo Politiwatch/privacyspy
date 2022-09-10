@@ -25,7 +25,7 @@ notes = ["Unclear if Nebula/Standard offer this right to citizens outside of the
 
 [rubric.history]
 value = "no"
-note = ["No previous versions or last modified date found"]
+notes = ["No previous versions or last modified date found"]
 
 [rubric.law-enforcement]
 value = "strict"
