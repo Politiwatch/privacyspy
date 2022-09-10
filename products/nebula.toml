@@ -25,13 +25,14 @@ notes = ["Unclear if Nebula/Standard offer this right to citizens outside of the
 
 [rubric.history]
 value = "no"
+note = "No previous versions or last modified date found"
 
 [rubric.law-enforcement]
 value = "strict"
 citations = ["We won’t share any data with government or law enforcement unless required to by law."]
 
 [rubric.list-collected]
-value = "exhaustively"
+value = "generally"
 citations = ["Personal information you may provide to us through the Website or otherwise includes: Contact details, such as your first and last name, email and mailing addresses, and phone number. Registration information, such as your username and password that you set to establish an online account with us. Communications that we exchange, including when you contact us with questions, feedback, or otherwise. Payment and transactional data, such as the information needed to complete your orders and registrations on or through the Service (which does not include credit card information, which is provided by you directly to our processing service provider), and information about products you have purchased from us. Cookies and internet activity, such as text files that websites store on a visitor‘s device to uniquely identify the visitor’s browser or to store information or settings in the browser for the purpose of helping you navigate between pages efficiently, remembering your preferences, enabling functionality, helping us understand user activity and patterns. Marketing data, such as your preferences for receiving communications about our products, services, activities, events, and publications, and details about how you engage with our communications. User Content, such as audio, visual and other materials related to the User. Analytical Information, such as data and information related to a User, for example, subscriber counts, view, like, and comment counts, and inferences drawn from such information and data. Other information that we may collect which is not specifically listed here, which we will use as described in this Privacy Policy or as otherwise disclosed on the Website at the time of collection."]
 
 [rubric.noncritical-purposes]
@@ -44,7 +45,7 @@ citations = ["We may occasionally need to change this policy. We’ll be sure to
 
 [rubric.security]
 value = "somewhat"
-citations = ["CNo method of transmission over the Internet, or method of electronic storage, is fully secure. While we use reasonable efforts to protect your personal information from the risks presented by unauthorized access or acquisition, we cannot guarantee the security of your personal information."]
+citations = ["No method of transmission over the Internet, or method of electronic storage, is fully secure. While we use reasonable efforts to protect your personal information from the risks presented by unauthorized access or acquisition, we cannot guarantee the security of your personal information."]
 
 [rubric.third-party-access]
 value = "yes-unspecified-critical"
