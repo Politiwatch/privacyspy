@@ -12,7 +12,8 @@ citations = [
 ]
 
 [rubric.security]
-value = "yes-audits"
+value = "yes-independent-audits"
+citations = ["I study in the cybersecurity field, and often interact with security-focused professors and peers. I regularly allow people to run penetration tests on the V0LT website."]
 
 [rubric.third-party-collection]
 value = "no"
@@ -42,9 +43,7 @@ notes = [
 
 [rubric.third-party-access]
 value = "no"
-citations = [
-  "V0LT never uses closed-source third party services by default. While I do use third party tools to develop and produce content, I only ever use open source software that I can verify isn\'t putting any back-doors or tracking software into V0LT content."
-]
+citations = ["V0LT never uses closed-source third party services by default. While I do use third party tools to develop and produce content, I only ever use open source software that I can verify isn't putting any back-doors or tracking software into V0LT content."]
 
 [rubric.data-collection-reasoning]
 value = "yes"
