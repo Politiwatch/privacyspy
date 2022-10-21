@@ -3,7 +3,7 @@ description = "V0LT produces free and open source software, services, and other 
 slug = "v0lt"
 hostnames = [ "v0lttech.com" ]
 sources = [ "https://v0lttech.com/privacy.php" ]
-contributors = [ "cvieira", "doamatto" ]
+contributors = [ "connervieira", "doamatto" ]
 
 [rubric.behavioral-marketing]
 value = "no"
@@ -12,10 +12,7 @@ citations = [
 ]
 
 [rubric.security]
-value = "yes"
-citations = [
-  "\"Your password, on the other hand, is 'hashed', which means it is unreversably scrambled.\""
-]
+value = "yes-audits"
 
 [rubric.third-party-collection]
 value = "no"
@@ -24,19 +21,20 @@ citations = [
 ]
 
 [rubric.history]
-value = "last-modified"
+value = "yes"
 citations = [ "\"Last modified: Friday, May 22nd, 2020\"" ]
+notes = ["The complete version history of the privacy policy is listed at the top of the main policy."]
 
 [rubric.data-deletion]
 value = "yes-automated"
-notes = [
-  "Information can be manually deleted by the user. The account itself can't, but the only information directly associated with the account that can't be deleted is the username."
+citations = [
+  "To delete your V0LT account and it's associated information, visit your account settings, then press 'Delete Account'. You'll be prompted to confirm the deletion. After confirmation, your personal information will be erased in a matter of seconds. Please note that this process is irreversable."
 ]
 
 [rubric.data-breaches]
 value = "na"
 citations = [
-  "\"In the event that there is a successful attack on the V0LT server, I will do my best to notify everyone as soon as possible using ChatJet.\""
+  "In the event that there is a successful attack on the V0LT server a prominent notice will be placed on the main landing page of the V0LT website. This notice will link to a PGP signed text document explaining the breach and any other relevant information."
 ]
 notes = [
   "Contact information for users isn't recorded, but breaches are publicly announced on the site."
@@ -45,7 +43,7 @@ notes = [
 [rubric.third-party-access]
 value = "no"
 citations = [
-  "\"V0LT never uses closed-source third party services by default. While I do use third party tools to develop and produce content, I only ever use open source software that I can verify isn't putting any back-doors or tracking software into V0LT content. The one exception to this rule is Itch.io. I use Itch to distribute most of my software. However, Itch is only loaded if you specifically set it in your account preferences. By default, only a link to the page is loaded, which doesn't allow for cross site tracking.\""
+  "V0LT never uses closed-source third party services by default. While I do use third party tools to develop and produce content, I only ever use open source software that I can verify isn\'t putting any back-doors or tracking software into V0LT content."
 ]
 
 [rubric.data-collection-reasoning]
@@ -64,9 +62,9 @@ citations = [
 ]
 
 [rubric.law-enforcement]
-value = "reasonable"
+value = "strict"
 citations = [
-  "\"When it's shared: Never, unless in the event of criminal activity\""
+  "\"When it's shared: Never, unless subpoenaed.\""
 ]
 notes = [
   "This quote is associated with multiple forms of personal information."
