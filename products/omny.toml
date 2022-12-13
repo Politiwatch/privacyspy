@@ -39,7 +39,7 @@ notes = ["A full list of data collected is available."]
 
 [rubric.noncritical-purposes]
 value = "opt-out-some"
-citations = ["Certain OMNY Services, such as the Website and OMNY App, may request your current location, which, if selected, could determine your geographic location. We will only collect and process such information if you have consented and opted-in to this feature. You may also always opt out or withdraw your permission by changing your permissions or settings on your browser or on the OMNY App.", "If we choose to send to you, or you have elected to receive, bulletins, updates, questionnaires, surveys, or other marketing-related materials, we will provide you with the ability to decline – or "opt out" – of receiving such communications."]
+citations = ["Certain OMNY Services, such as the Website and OMNY App, may request your current location, which, if selected, could determine your geographic location. We will only collect and process such information if you have consented and opted-in to this feature. You may also always opt out or withdraw your permission by changing your permissions or settings on your browser or on the OMNY App.", "If we choose to send to you, or you have elected to receive, bulletins, updates, questionnaires, surveys, or other marketing-related materials, we will provide you with the ability to decline – or 'opt out' – of receiving such communications."]
 notes = ["Opt-out methods are only specified for location and email marketing."]
 
 [rubric.revision-notify]
