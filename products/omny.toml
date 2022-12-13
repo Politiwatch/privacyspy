@@ -1,0 +1,62 @@
+name = "OMNY"
+description = "OMNY is a public transit payment system in the New York City area"
+slug = "omny"
+hostnames = [ "omny.info" ]
+sources = [ "https://omny.info/privacy-policy/420" ]
+contributors = [ "ausernameisnotavailable" ]
+
+[rubric.behavioral-marketing]
+value = "no" 
+notes = ["No mentioning of any behavioural marketing could be found. Users may recieve non-personalised emails, but may opt-out."]
+
+[rubric.data-breaches]
+value = "no"
+citations = ["By using the OMNY Services, you acknowledge and agree that there is a risk that unauthorized third parties may engage in illegal activity, such as hacking or intercepting transmissions of Personal Information. You agree that the MTA is not responsible for any data or Personal Information obtained"]
+notes = ["OMNY does not accept responsibility in the event of a data breach, meaning they are unlikely to notify their users."]
+
+[rubric.data-collection-reasoning]
+value = "mostly"
+citations = ["We use information that we collect or process, including Personal Information, Online Activity Information, and Anonymous Information, as permitted under applicable law and consistent with this OMNY Privacy Policy and the OMNY Terms of Service. More specifically, we use the information we collect for the following purposes:"]
+notes = ["They list what the data is used for, although there is no reason that they should need to be collecting 'Online Activity Information'"]
+
+[rubric.data-deletion]
+value = "yes-contact"
+citations = ["An OMNY Account may be closed at any time by contacting OMNY Customer Service at (877) 789-OMNY (6669) or https://www.omny.info/Contact."]
+
+[rubric.history]
+value = "last-modified"
+citations = ["OMNY Privacy Policy Revised June 7, 2022"]
+notes = ["The date of latest modification is stated at the top of the page. The previous version(s) are not available."]
+
+[rubric.law-enforcement]
+value = "always"
+citations = ["We may be required to share your Personal Information pursuant to a court order or other legal or regulatory obligation or process."]
+
+[rubric.list-collected]
+value = "exhaustively"
+citations = ["We collect a few categories of information via our OMNY Services:"]
+notes = ["A full list of data collected is available."]
+
+[rubric.noncritical-purposes]
+value = "opt-out-some"
+citations = ["Certain OMNY Services, such as the Website and OMNY App, may request your current location, which, if selected, could determine your geographic location. We will only collect and process such information if you have consented and opted-in to this feature. You may also always opt out or withdraw your permission by changing your permissions or settings on your browser or on the OMNY App.", "If we choose to send to you, or you have elected to receive, bulletins, updates, questionnaires, surveys, or other marketing-related materials, we will provide you with the ability to decline – or "opt out" – of receiving such communications."]
+notes = ["Opt-out methods are only specified for location and email marketing."]
+
+[rubric.revision-notify]
+value = "no"
+citations = ["We may update this OMNY Privacy Policy from time to time. If we make changes to this OMNY Privacy Policy, then we will post them on the Website and indicate the Effective Date. Your continued use of the OMNY Services constitutes your agreement with this OMNY Privacy Policy and any updates to it."]
+notes = ["You would need to check the website to find if the privacy policy had been modified."]
+
+[rubric.security]
+value = "somewhat"
+citations = ["We have implemented physical, technical, and administrative security measures and controls designed to prevent unauthorized access to, or disclosure of, Personal Information that you provide to us. Additionally, we require our third party providers to implement security measures and to otherwise handle Personal Information consistent with this OMNY Privacy Policy and applicable law. Our security measures and other safeguards are intended to deter and prevent hackers and others from unauthorized access to information that you provide to us."]
+notes = ["Very vague."]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = ["We may share your Personal Information among our affiliates and subsidiaries for purposes consistent with this OMNY Privacy Policy."]
+
+[rubric.third-party-collection]
+value = "no" 
+citations = ["If we collect other information about you using a method that is not specifically listed here, then we will use it in accordance with this OMNY Privacy Policy."]
+notes = ["No specific mentioning of third-party data collection, although they do state they they may collect data from other methods that have not been listed."]
