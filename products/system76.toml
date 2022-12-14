@@ -3,7 +3,7 @@ description = "System76 builds premium custom computers that come installed with
 slug = "system76"
 hostnames = [ "system76.com" ]
 sources = [ "https://system76.com/privacy" ]
-contributors = [ "cvieira", "tpdcl" ]
+contributors = [ "connervieira", "tpdcl" ]
 
 [rubric.behavioral-marketing]
 value = "no"
