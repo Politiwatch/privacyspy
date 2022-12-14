@@ -2,12 +2,12 @@ name = "OMNY"
 description = "OMNY is a public transit payment system in the New York City area"
 slug = "omny"
 hostnames = [ "omny.info" ]
-sources = [ "https://omny.info/privacy-policy/420" ]
+sources = [ "https://omny.info/privacy-policy" ]
 contributors = [ "ausernameisnotavailable" ]
 
 [rubric.behavioral-marketing]
-value = "no" 
-notes = ["No mentioning of any behavioural marketing could be found. Users may recieve non-personalised emails, but may opt-out."]
+value = "yes"
+citations = ["We use information that we collect or process, including Personal Information, Online Activity Information, and Anonymous Information, as permitted under applicable law and consistent with this OMNY Privacy Policy and the OMNY Terms of Service. More specifically, we use the information we collect for the following purposes:...to perform analytics, quality control, market research, and to determine the effectiveness of our OMNY Services, promotional campaigns, to improve our current products, OMNY Services, and develop new products and services;...In addition to the uses specifically identified above, there may be instances where you request information and OMNY Services from us that are not described in this OMNY Privacy Policy."]
 
 [rubric.data-breaches]
 value = "no"
@@ -17,7 +17,7 @@ notes = ["OMNY does not accept responsibility in the event of a data breach, mea
 [rubric.data-collection-reasoning]
 value = "mostly"
 citations = ["We use information that we collect or process, including Personal Information, Online Activity Information, and Anonymous Information, as permitted under applicable law and consistent with this OMNY Privacy Policy and the OMNY Terms of Service. More specifically, we use the information we collect for the following purposes:"]
-notes = ["They list what the data is used for, although there is no reason that they should need to be collecting 'Online Activity Information'"]
+notes = ["They list what the data is used for, although there is no reason that they should need to be collecting Online Activity Information, which is defined as device-related information, such as cookies and IP addresses."]
 
 [rubric.data-deletion]
 value = "yes-contact"
@@ -29,7 +29,7 @@ citations = ["OMNY Privacy Policy Revised June 7, 2022"]
 notes = ["The date of latest modification is stated at the top of the page. The previous version(s) are not available."]
 
 [rubric.law-enforcement]
-value = "always"
+value = "strict"
 citations = ["We may be required to share your Personal Information pursuant to a court order or other legal or regulatory obligation or process."]
 
 [rubric.list-collected]
