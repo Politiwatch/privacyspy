@@ -2,13 +2,12 @@ name = "Nebula"
 description = "Nebula is a creator-owned video streaming platform"
 slug = "nebula"
 hostnames = [ "nebula.tv" ]
-sources = [ "https://nebula.tv/privacy", "https://nebula.tv" ]
+sources = [ "https://nebula.tv/privacy" ]
 contributors = [ "ausernameisnotavailable" ]
 
 [rubric.behavioral-marketing]
 value = "no"
-citations = ["and no ads in sight."]
-notes = ["They do not mention behavioral marketing in their privacy-policy, although on their homepage, they state that they do not have any adverts."]
+citations = ["Whatever information we collect, we won’t share with third parties beyond the technical requirements of third-party services."]
 
 [rubric.data-breaches]
 value = "no"
