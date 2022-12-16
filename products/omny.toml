@@ -1,5 +1,5 @@
 name = "OMNY"
-description = "OMNY is a public transit payment system in the New York City area"
+description = "OMNY is a public transit payment system in the New York City area."
 slug = "omny"
 hostnames = [ "omny.info" ]
 sources = [ "https://omny.info/privacy-policy" ]
@@ -12,7 +12,6 @@ citations = ["We use information that we collect or process, including Personal 
 [rubric.data-breaches]
 value = "no"
 citations = ["By using the OMNY Services, you acknowledge and agree that there is a risk that unauthorized third parties may engage in illegal activity, such as hacking or intercepting transmissions of Personal Information. You agree that the MTA is not responsible for any data or Personal Information obtained"]
-notes = ["OMNY does not accept responsibility in the event of a data breach, meaning they are unlikely to notify their users."]
 
 [rubric.data-collection-reasoning]
 value = "mostly"
@@ -45,12 +44,10 @@ notes = ["Opt-out methods are only specified for location and email marketing."]
 [rubric.revision-notify]
 value = "no"
 citations = ["We may update this OMNY Privacy Policy from time to time. If we make changes to this OMNY Privacy Policy, then we will post them on the Website and indicate the Effective Date. Your continued use of the OMNY Services constitutes your agreement with this OMNY Privacy Policy and any updates to it."]
-notes = ["You would need to check the website to find if the privacy policy had been modified."]
 
 [rubric.security]
 value = "somewhat"
 citations = ["We have implemented physical, technical, and administrative security measures and controls designed to prevent unauthorized access to, or disclosure of, Personal Information that you provide to us. Additionally, we require our third party providers to implement security measures and to otherwise handle Personal Information consistent with this OMNY Privacy Policy and applicable law. Our security measures and other safeguards are intended to deter and prevent hackers and others from unauthorized access to information that you provide to us."]
-notes = ["Very vague."]
 
 [rubric.third-party-access]
 value = "yes-unspecified"
