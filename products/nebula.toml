@@ -37,7 +37,7 @@ citations = ["We will not collect any more information than needed to provide yo
 notes = ["This is the only mentioning of what data is collected."]
 
 [rubric.noncritical-purposes]
-value = "na" 
+value = "no" 
 citations = ["We will not collect any more information than needed to provide you with a great experience."]
 notes = ["Data is only collected to provide what is described as a great experience. It is unclear what this means."]
 
