@@ -1,5 +1,5 @@
 name = "Nebula"
-description = "Nebula is a creator-owned video streaming platform"
+description = "Nebula is a creator-owned video streaming platform."
 slug = "nebula"
 hostnames = [ "nebula.tv" ]
 sources = [ "https://nebula.tv/privacy" ]
