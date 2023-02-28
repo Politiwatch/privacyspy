@@ -1,0 +1,90 @@
+name = "Wise"
+description = "Wise (formerly TransferWise) is a UK-based foreign exchange financial technology company founded by Estonian businessmen Kristo Käärmann and Taavet Hinrikus in January 2011."
+slug = "wise"
+hostnames = [ "transferwise.com", "wise.com", "transferwise.tech", "tw.com", "tw.ee" ]
+sources = [ "https://wise.com/gb/legal/global-privacy-policy-en" ]
+contributors = [ "ItsIgnacioPortal" ]
+
+[rubric.behavioral-marketing]
+value = "yes"
+citations = [
+  "We will use your personal data ... to measure or understand the effectiveness of advertising we serve and to deliver relevant advertising to you"
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "The policy does not specify a data breach protocol."
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "For example: \"We will use your personal data ... to prevent and detect crimes, including fraud and financial crime. Lawful basis for processing, including basis of legitimate interest: \"Legal obligation\". Legitimate interest (to detect and prevent criminal activity in connection with our Services and improve how we manage instances of suspected financial crime). Credit protection, including the provisions of the relevant legislation*"
+]
+
+[rubric.data-deletion]
+value = "yes-automated"
+citations = [
+  "11.2 We will always delete data that is no longer required by a relevant law or jurisdiction in which we operate. We do this automatically, so you don’t need to contact us to ask us to delete your data. Deletion methods include shredding, destruction and secure disposal of hardware and hard-copy records, and deletion or over-writing of digital data."
+]
+notes = [
+  "https://transferwise.com/help/23/data-and-security/2932638/how-long-do-you-store-my-data"
+]
+
+[rubric.history]
+value = "yes"
+notes = [
+  "The date the policy was last modified is listed. The previous policy is also listed for 60 days."
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "We may share your personal data ... in response to a subpoena, warrant, court order, properly constituted police request or as otherwise required by law;"
+]
+
+[rubric.list-collected]
+value = "exhaustively"
+citations = [
+  "2. Data we collect about you", "Personal data, or personal information, means any information about an identified or identifiable individual. It does not include anonymous data, which cannot be linked back to the individual. We will collect and process personal data about you as follows:", "2.1 Information you give us.", "    You may give us information about yourself when you sign up to use our Services, e.g. when you provide us with personal details including your name and email address. This also includes information you provide through your continued use of our Services, your participation in discussion boards or other social media functions on our Website or App, through entering a competition, promotion or survey, and by reporting problems with our Services. Additional information you give us for security, identification and verification purposes may include your address, phone number, financial information (including credit card, debit card, or bank account information), payment reason, geographical location, social security/insurance number, national identification number, personal description, photograph, passport and/or National ID. If you fail to provide any of this information, it might affect our ability to provide our Services to you.", "        For Brazil: This also includes the registry number of Cadastro de Pessoas Físicas do Ministério da Economia – CPF/ME.", "    The content of your communications with us, which we collect via telephone call recordings, online chat, emails, direct messaging and other means.", "    In some cases, including when you send or receive high value or high volume transactions, or where we need to comply with anti-money laundering regulations, we may also need more identification information from you, including a copy of your bank account statements.", "    For New Zealand:", "        Where we request further information from you to comply with our anti-money laundering obligations, we are doing so under the Anti-Money Laundering and Countering Financing of Terrorism Act 2009. Providing such information to us is mandatory.", "        You have the right to request access to and correction of personal information that we hold about you. If you would like to make a request, please submit it in writing to privacy@wise.com.", "    In providing the personal data of any individuals other than yourself, including connected persons, you confirm that you have obtained consent from such individuals to disclose their personal data to us or are otherwise entitled to provide this information to us. You also confirm that you have brought this Policy to their attention if legally necessary, and have received their consent to our collection, use and disclosure of such personal data for the purposes set out in this Policy. The term ‘connected person’ means an individual connected to Wise through the use of our Services and could be an account holder, payment beneficiary, recipient of a designated payment, guarantor, director, shareholder, partners or members of a partnership, trustee, authorised signatory of a designated account, a friend you have recommended, individuals in your contact list or any other person who has a relevant relationship with Wise.", "    If you enable your discoverability feature for some of our Services we will generate a link and a nickname on your behalf to be shared. Such a link may include your name, business name, account details, nickname and, at your option, your avatar or photograph.", "    Please ensure that your personal data is current, complete and accurate by logging onto your account and updating it whenever necessary.", "2.2 Information we collect about you. When you use our Services, we may collect the following information:", "    details of the transactions you carry out when using our Services, including the geographic location from which the transaction originates;", "    technical information, including the internet protocol (IP) address used to connect your device to the internet, your login information, browser type and version, time zone setting, browser plug-in types and versions, operating system and platform;", "    information about your visit, including the full Uniform Resource Locators (URL) clickstream to, through and from our Website or App (including date and time), products you viewed or searched for, page response times, download errors, length of visits to certain pages, page interaction information (including scrolling, clicks, and mouse-overs), and methods used to browse away from the page and any phone number used to call our Customer Support service;", "    information about your marketing and communication preferences.", "2.3 Information we receive from other sources. We may receive information about you if you use any of the other websites we operate or the other services we provide. We also work closely with third parties and may receive information about you from them. This may include:", "    the payment service providers you use to transfer money to us will provide us with your personal information, including your name and address, as well as your financial information, including your bank account details;", "    the bank whose account you link to your Wise account for the purpose of satisfying regulatory verification may provide us with your name, address and financial information, including source of funds and bank statement information;", "    if you are a ‘connected person’ for a Wise customer, then that Wise customer may provide your personal information to us:", "        Payment beneficiaries: name, account details, email, and additional verification information if requested by the recipient bank.", "        Directors and ultimate beneficial owners: name, date of birth and country of residence.", "    business partners may provide us with your name and address, as well as financial information, including card payment information;", "    advertising networks, analytics providers and search information providers may provide us with pseudonymised information about you, including confirmation of how you found our website;", "    in some jurisdictions, we may check the information you have provided to us with governmental or private identity record databases or with credit reference agencies to confirm your identity and to combat fraud.", "2.4 Information from social networks.", "    If you log into our Services using your social network account (including Apple ID, Facebook or Google) we will receive relevant information that is necessary for us to enable our Services to authenticate your access. The social network will provide us with access to certain information that you have provided to them, including your name, profile image and email address, in accordance with the social network service provider’s privacy policy. We use such information, together with any other information you directly provide to us when registering or using our Services, to create your account and to communicate with you about the information, products and services that you request from us. You may also be able to specifically request that we have access to the contacts in your social network account.", "2.5 Sensitive data.", "    As part of our identity verification process we collect, use and store biometric data, namely:", "        We extract face scan information from photos and videos to compare pictures of you on identity documents with each other and with a selfie that you provide to verify your identity and for anti-fraud checks, and to improve these processes. We may ask you to specifically consent to the collection, use and storage of your biometric data during the verification process, where privacy regulations require it in your jurisdiction. If you do not consent, we offer alternate methods to verify your identity which may take longer. We will not disclose or disseminate any biometric data to anyone other than our identity verification providers, or when required by applicable laws and regulations, or pursuant to a valid order from a court. We never sell, lease, trade or otherwise benefit from your biometric data. We will retain biometric data for the period necessary to complete the identity verification process, and in any case no longer than 1 year after collection, unless required by law or legal process to keep it longer.", "            For USA: See our US Facial Scan Privacy Notice for more information on how we process this data;", "        We monitor the way you login and interact with our website or app in order to validate your identity and support the detection of fraudulent and suspicious attempts to access your Wise Account;", "        If you consent to linking your bank account to your Wise account for the purpose of satisfying regulatory verification, we may also process a limited amount of sensitive data when we carry out verification of your financial documents.", "    Your jurisdiction may have rules that classify other information described in section 2 as sensitive. All sensitive information is subject to appropriate levels of protection;", "    For India: We may collect your Aadhaar-related data, including your demographic details for the purposes of verifying your identity to use our Services. We collect your Aadhaar data based on your voluntary and informed consent. Please note that the provision of your Aadhaar related data is voluntary, and you may choose to provide us with other officially valid documents notified by financial regulators such as passport, voter identification document and driving licence for such purposes. You will not be denied the Services in the event you choose not to provide us with your Aadhaar related data.", "2.6 Children’s data. Our products and services are directed at adults, and are not intended for children. We therefore do not knowingly collect data from children. Any data collected from a child before their age is determined will be deleted."
+]
+
+[rubric.noncritical-purposes]
+value = "no"
+notes = [
+  "There is no mention of an opt-out method in the privacy policy. There also aren't any privacy settings in the account settings page."
+]
+
+[rubric.revision-notify]
+value = "no"
+citations = [
+  "17. Changes to our Privacy Policy: To keep up with changing legislation, best practice and changes in how we process personal information, we may revise this Policy at any time by posting a revised version on this website. To stay up to date on any changes, check back periodically."
+]
+
+[rubric.security]
+value = "yes-audits"
+citations = [
+  "3.2 We are regularly audited to confirm we remain compliant with our security certifications, including SOC 2 and PCI-DSS. As part of these audits, our security is validated by external auditors.",
+  "https://wise.com/gb/about/security",
+  "We are regulated by the FCA, registered with regulators in different countries around the world and have state licenses in the US. We are constantly audited by independent finance and IT auditors. We are SOC 1 type 2, SOC 2 type 2, PCI DSS and ISO 27001 certified, as well as GDPR compliant. As a service provider we are responsible for the security of the cardholder data that we possess or otherwise store, process and transmit on behalf of the customer. You can view our certificates here.",
+  "https://wise.com/gateway/v1/iso-report",
+  "http://wise.com/security/reports"
+]
+notes = [
+  "You can download the \"SOC 1 Type 2\" and the \"SOC 2 Type 2\" reports, but you need an account, and you have to agree to an NDA before downloading."
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = [
+  "5.1 We may share your personal data with the following third parties:  advertisers and advertising networks to select and serve relevant adverts to you and others; analytics and search engine providers that assist us in the improvement and optimisation of our site; our group entities and subsidiaries, which can be found by clicking here;",
+  "https://wise.com/help/articles/2974131?origin=search-entities"
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "2.3 Information we receive from other sources. We may receive information about you if you use any of the other websites we operate or the other services we provide. We also work closely with third parties and may receive information about you from them. This may include: ... advertising networks, analytics providers and search information providers may provide us with pseudonymised information about you, including confirmation of how you found our website;"
+]
+
