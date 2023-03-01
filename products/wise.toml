@@ -20,7 +20,12 @@ notes = [
 [rubric.data-collection-reasoning]
 value = "yes"
 citations = [
-  "For example: \"We will use your personal data ... to prevent and detect crimes, including fraud and financial crime. Lawful basis for processing, including basis of legitimate interest: \"Legal obligation\". Legitimate interest (to detect and prevent criminal activity in connection with our Services and improve how we manage instances of suspected financial crime). Credit protection, including the provisions of the relevant legislation*"
+  "For example: \"4.2 Purposes for which we will use your personal data: the ways we plan to use your personal data are described below, including which of the legal bases we rely on to do so in the UK, the EU, Türkiye and Brazil (*only included as a lawful basis under the LGPD). We have also identified what our legitimate interests are where appropriate.\"", 
+  "- to prevent and detect crimes, including fraud and financial crime.",
+  "Lawful basis for processing, including basis of legitimate interest: ",
+  "Legal obligation ",
+  "Legitimate interest (to detect and prevent criminal activity in connection with our Services and improve how we manage instances of suspected financial crime) ",
+  "Credit protection, including the provisions of the relevant legislation*"
 ]
 
 [rubric.data-deletion]
