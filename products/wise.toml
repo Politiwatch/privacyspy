@@ -38,9 +38,9 @@ notes = [
 ]
 
 [rubric.history]
-value = "yes"
+value = "last-modified"
 notes = [
-  "The date the policy was last modified is listed. The previous policy is also listed for 60 days."
+  "The date the policy was last modified is listed. The previous policy is also listed, but only for 60 days following the latest policy change."
 ]
 
 [rubric.law-enforcement]
