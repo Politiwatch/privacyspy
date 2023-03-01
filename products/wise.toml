@@ -113,6 +113,13 @@ notes = [
 value = "yes"
 citations = [
   "2.3 Information we receive from other sources. We may receive information about you if you use any of the other websites we operate or the other services we provide. We also work closely with third parties and may receive information about you from them. This may include:",
-  "- advertising networks, analytics providers and search information providers may provide us with pseudonymised information about you, including confirmation of how you found our website;"
+  " - the payment service providers you use to transfer money to us will provide us with your personal information, including your name and address, as well as your financial information, including your bank account details;", 
+  " - the bank whose account you link to your Wise account for the purpose of satisfying regulatory verification may provide us with your name, address and financial information, including source of funds and bank statement information;", 
+  " - if you are a ‘connected person’ for a Wise customer, then that Wise customer may provide your personal information to us:", 
+  "    - Payment beneficiaries: name, account details, email, and additional verification information if requested by the recipient bank.", 
+  "    - Directors and ultimate beneficial owners: name, date of birth and country of residence.", 
+  " - business partners may provide us with your name and address, as well as financial information, including card payment information;", 
+  " - advertising networks, analytics providers and search information providers may provide us with pseudonymised information about you, including confirmation of how you found our website;", 
+  " - in some jurisdictions, we may check the information you have provided to us with governmental or private identity record databases or with credit reference agencies to confirm your identity and to combat fraud."
 ]
 
