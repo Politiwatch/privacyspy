@@ -1,0 +1,83 @@
+name = "1.1.1.1"
+description = "1.1.1.1 is a public DNS resolver operated by Cloudflare that offers a fast and private way to browse the Internet."
+slug = "1-1-1-1"
+hostnames = [ "cloudflare.com" ]
+sources = [
+  "https://www.cloudflare.com/application/privacypolicy/", "https://developers.cloudflare.com/1.1.1.1/privacy/public-dns-resolver/"
+]
+contributors = [ "adamlui" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+citations = [
+  "\"Specifically, we do not permit our Service Providers to sell any personal information we share with them, or to use any personal information we share with them for their own marketing purposes or for any other purpose than to perform the services they provide to us.\n\n[...]\n\nCloudflare will not sell or share Public Resolver users’ personal data with third parties or use personal data from the Public Resolver to target any user with advertisements.\""
+]
+
+[rubric.data-breaches]
+value = "na"
+citations = [
+  "\"We only collect and store the minimum amount of data we believe is required to operate and improve the Application. There are three categories of data that we collect: Account Data, Operational Data, and DNS Resolver Information[.]\n\n[...]\n\nWe do not collect your name, phone number, or credit card information (or records of any payments collected by the applicable App Store). The only information we receive from the applicable App Store is a limited amount of information that we need to confirm your subscription for a Service. We do not receive from the App Store any of your personal data or other information about your App Store account. We only receive your email address (and name, if you voluntarily provide it) if you have decided to give us feedback and/or report bugs.\""
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "\"We use account information, such as your account ID, to administer your account and authorize Internet requests from your device to the Cloudflare network.\n\n[...]\n\nIf you subscribe to Paid Application Services, we use subscription information, such as your order ID, to administer those subscriptions.\n\n[...]\n\nIf you participate in our referral programs, we use referral information, such as your registration ID, to credit referrals to you.\n\n[...]\n\nWhen you connect to our network, we see your IP address and use it to assign you a Cloudflare IP address corresponding to the country in which you are connecting from.\n\n[...]\n\nWe track the services you have enabled and the amount of data you have transferred via the Application. We also use performance data to understand how the Application impacts your Internet connection and to improve our Application.\n\n[...]\n\nWe use information regarding your device, such as device model and operating system, for troubleshooting and to improve our Application.\n\n[...]\n\nWe retain anonymized network information to look for connection problems between your device and Cloudflare’s network.\n\n[...]\n\nWe require your email address when you provide feedback and bug reports. [...] Console logs can include your device name and IP address. We use this information for troubleshooting and to improve our Application.\n\n[...]\n\n[R]andomly sampled network packets captured from at most 0.05% of all traffic sent to Cloudflare’s network infrastructure [...] are solely used for network troubleshooting and DoS mitigation purposes.\n\n[...]\n\nCloudflare will retain only the limited transaction and debug log data [...] for the legitimate operation of our Public Resolver and research purposes[.]\n\n[...]\n\nAPNIC will be permitted to access query names, query types, resolver location and other metadata via a Cloudflare API that will allow APNIC to study topics like the volume of DDoS attacks launched on the Internet and adoption of IPv6.\n\n[...]\n\nCloudflare may store [...] aggregated data [generated using the Public Resolver Logs] indefinitely in order to power Cloudflare Radar and assist Cloudflare in improving Cloudflare services, such as, enhancing the overall performance of the Cloudflare Resolver and identifying security threats.\""
+]
+
+[rubric.data-deletion]
+value = "no"
+notes = [
+  "There is no mention of any process to permanently delete your personal data."
+]
+
+[rubric.history]
+value = "last-modified"
+
+[rubric.law-enforcement]
+value = "always"
+citations = [
+  "\"[W]e may also share your information with others [...] [w]hen we are required to disclose personal information to respond to subpoenas, court orders, or legal process[.]\n\n[. ..]\n\nOur commitments under the Privacy Shields are subject to the investigatory and enforcement powers of the U.S. Federal Trade Commission. We may be required to disclose personal data in response to lawful requests by public authorities, including to meet national security or law enforcement requirements.\""
+]
+notes = [
+  "Notice to you of disclosure of such personal data to law enforcement \"may be prohibited\"."
+]
+
+[rubric.list-collected]
+value = "generally"
+citations = [
+  "\"We use account information, such as your account ID[.]n\n[. ..]\n\nIf you subscribe to Paid Application Services, we use subscription information, such as your order ID[.]n\n[. ..]\n\nIf you participate in our referral programs, we use referral information, such as your registration ID[.]n\n[. ..]\n\nRequest data [includes] [s]ource IP, [s]ource [p]ort [and] [d]estination IP[.]n\n[. ..]\n\nPerformance data [includes] the services you have enabled and the amount of data you have transferred via the Application.n\n[. ..]\n\nWe use information regarding your device, such as device model and operating system[.]n\n[. ..]\n\nWe use crash log information regarding your device’s use of the Application.n\n[. ..]\n\nWe require your email address when you provide feedback and bug reports. [...] Console logs can include your device name and IP address.n\n[. ..]\n\n[W]e may also share your information with others [...] [w]hen we are required to disclose personal information to respond to subpoenas, court orders, or legal process[.]\n\n[. ..]\n\nWe may be required to disclose personal data in response to lawful requests by public authorities, including to meet national security or law enforcement requirements.\n\n[...]\n\nAPNIC will be permitted to access query names, query types, resolver location and other metadata[.]\n\n[...]\n\nThe Public Resolver Logs we store consist entirely of the following fields:\n\n- answerData type\n- answerData\n- coloID (unique Cloudflare data center ID)\n- date\n- dateTime\n- dstIPVersion\n- dstIPv6\n- dstIPv4\n- dstPort\n- ede\n- ednsVersion\n- ednsPayload\n- ednsNsid\n- metalId (unique Cloudflare data center ID)\n- ns ip\n- ns name\n- protocol\n- queryName\n- queryType\n- queryClass\n- queryRd\n- queryDo\n- querySize\n- queryEdns\n- responseType\n- responseCode\n- responseSize\n- responseCount\n- responseTimeMs\n- responseCached\n- responseMinTTL\n- reused\n- srcAsNum\n- srcIPVersion\n- validationState\n\n[...]\n\nThe following subrequest data is included in the Public Resolver Logs:\n\n- subrequest.ipv6 (authoritative nameserver)\n- subrequest.ipv4 (authoritative nameserver)\n- subrequest.protocol\n- subrequest.durationMs\n- subrequest.queryName\n- subrequest.queryType\n- subrequest.responseCode\n- subrequest.responseCount\n- subrequest.recordType\n- subrequest.recordData\n- subrequest.error\""
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-some"
+citations = [
+  "\"When you provide feedback, you can choose whether to share your console logs [which] can include your device name and IP address.\""
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "\"If we make changes to this Application Privacy Policy that we believe materially impact the privacy of your personal data, we will promptly provide notice of any such changes (and, where necessary, obtain consent), as well as post the updated Application Privacy Policy on this website noting the effective date of any changes.\""
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "\"We take all reasonable steps to protect information we receive from you from loss, misuse or unauthorized access, disclosure, alteration, and/or destruction. We have put in place appropriate physical, technical, and administrative measures to safeguard and secure your information, and we make use of privacy-enhancing technologies such as encryption.\""
+]
+
+[rubric.third-party-access]
+value = "no"
+citations = [
+  "\"We do not sell, rent, or share personal information with third parties as defined under the California Consumer Privacy Act of 2018 (California Civil Code Sec. 1798.100 et seq.), nor do we sell, rent, or share personal information with third parties for their direct marketing purposes, including as defined under California Civil Code Sec. 1798.83.\n\n[...]\n\nCloudflare will not sell or share Public Resolver users’ personal data with third parties[.]\n\n[...]\n\nCloudflare will not share the Public Resolver Logs with any third parties except for APNIC pursuant to a Research Cooperative Agreement. APNIC will only have limited access to query the anonymized data in the Public Resolver Logs and conduct research related to the operation of the DNS system.\""
+]
+
+[rubric.third-party-collection]
+value = "no"
+citations = [
+  "\"We will not combine the information collected from DNS queries with any other Cloudflare or third party data in any way that can be used to identify individual end users.\""
+]
+notes = [
+  "Although third party data other than that from the App Store is not listed, this claim promises to never make it personably identifiable."
+]
