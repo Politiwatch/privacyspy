@@ -8,7 +8,12 @@ contributors = [ "ItsIgnacioPortal" ]
 [rubric.behavioral-marketing]
 value = "yes"
 citations = [
-  "We will use your personal data ... to measure or understand the effectiveness of advertising we serve and to deliver relevant advertising to you"
+  "4.2 Purposes for which we will use your personal data: the ways we plan to use your personal data are described below, including which of the legal bases we rely on to do so in the UK, the EU, Türkiye and Brazil (*only included as a lawful basis under the LGPD). We have also identified what our legitimate interests are where appropriate.",
+  "- to measure or understand the effectiveness of advertising we serve and to deliver relevant advertising to you",
+  "Lawful basis for processing, including basis of legitimate interest:",
+  "Legitimate interest (to market our products and services in the most efficient manner) ",
+  "Where you’ve consented for us to process your personal data in a certain way."
+
 ]
 
 [rubric.data-breaches]
@@ -46,7 +51,8 @@ notes = [
 [rubric.law-enforcement]
 value = "reasonable"
 citations = [
-  "We may share your personal data ... in response to a subpoena, warrant, court order, properly constituted police request or as otherwise required by law;"
+  "5.1 We may share your personal data with the following third parties:",
+  "- in response to a subpoena, warrant, court order, properly constituted police request or as otherwise required by law;"
 ]
 
 [rubric.list-collected]
@@ -106,6 +112,7 @@ notes = [
 [rubric.third-party-collection]
 value = "yes"
 citations = [
-  "2.3 Information we receive from other sources. We may receive information about you if you use any of the other websites we operate or the other services we provide. We also work closely with third parties and may receive information about you from them. This may include: ... advertising networks, analytics providers and search information providers may provide us with pseudonymised information about you, including confirmation of how you found our website;"
+  "2.3 Information we receive from other sources. We may receive information about you if you use any of the other websites we operate or the other services we provide. We also work closely with third parties and may receive information about you from them. This may include:",
+  "- advertising networks, analytics providers and search information providers may provide us with pseudonymised information about you, including confirmation of how you found our website;"
 ]
 
