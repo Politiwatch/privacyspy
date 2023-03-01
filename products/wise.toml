@@ -1,5 +1,5 @@
 name = "Wise"
-description = "Wise (formerly TransferWise) is a UK-based foreign exchange financial technology company founded by Estonian businessmen Kristo Käärmann and Taavet Hinrikus in January 2011."
+description = "Wise (formerly TransferWise) is a UK-based foreign-exchange financial-technology company founded by Kristo Käärmann and Taavet Hinrikus in January 2011."
 slug = "wise"
 hostnames = [ "transferwise.com", "wise.com", "transferwise.tech", "tw.com", "tw.ee" ]
 sources = [ "https://wise.com/gb/legal/global-privacy-policy-en" ]
