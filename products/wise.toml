@@ -83,8 +83,24 @@ notes = [
 [rubric.third-party-access]
 value = "yes-unspecified"
 citations = [
-  "5.1 We may share your personal data with the following third parties:  advertisers and advertising networks to select and serve relevant adverts to you and others; analytics and search engine providers that assist us in the improvement and optimisation of our site; our group entities and subsidiaries, which can be found by clicking here;",
+  "5.1 We may share your personal data with the following third parties:", 
+  "affiliates, business partners, suppliers and subcontractors for the performance and execution of any contract we enter into with them or you and to help them improve the services they provide to us;", 
+  "advertisers and advertising networks to select and serve relevant adverts to you and others;", 
+  "analytics and search engine providers that assist us in the improvement and optimisation of our site;", 
+  "our group entities and subsidiaries, which can be found by clicking here;", 
+  "in the event that we sell any of our business or assets or combine with another organisation, in which case we may disclose your personal data to the prospective buyer of such business or assets or prospective organisation with which our business or assets may be combined;", 
+  "limited information is sent to payment beneficiaries when you initiate a payment transaction;", 
+  "if we are under a duty to disclose or share your personal data in order to comply with any legal obligation, or in order to enforce or apply our Customer Agreement and other applicable agreements, or to protect the rights, property, or safety of Wise, our customers, our employees or others;", 
+  "to prevent and detect fraud or crime and to assist us in conducting or co-operating with investigations of fraud or other illegal activity where we believe it is reasonable and appropriate to do so. Please note that if we, or a fraud prevention agency, determine that a fraud or money laundering risk is posed, we may refuse to provide the services requested or we may stop providing existing products and services to a customer. A record of any fraud or money laundering risk will be retained by the fraud prevention agencies, and may result in others refusing to provide services.", 
+  "in response to a subpoena, warrant, court order, properly constituted police request or as otherwise required by law;", 
+  "to assess financial and insurance risks;", 
+  "to recover debt or in relation to your insolvency or to allow a party or a financial institution that sent money to recover money received by you in error or due to fraud;", 
+  "to develop customer relationships, services and systems; and", 
+  "if you consent, to share your details when using our Services",
   "https://wise.com/help/articles/2974131?origin=search-entities"
+]
+notes = [
+  "The policy has a link that lists which \"group entities and subsidiaries\" your data will be shared with. But it does not explain who the \"advertisers and advertising networks\" and \"analytics and search engine providers\" that your data will be shared with, are."
 ]
 
 [rubric.third-party-collection]
