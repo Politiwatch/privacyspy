@@ -1,0 +1,59 @@
+name = "Nebula"
+description = "Nebula is a creator-owned video streaming platform."
+slug = "nebula"
+hostnames = [ "nebula.tv" ]
+sources = [ "https://nebula.tv/privacy" ]
+contributors = [ "ausernameisnotavailable" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+citations = ["Whatever information we collect, we won’t share with third parties beyond the technical requirements of third-party services."]
+
+[rubric.data-breaches]
+value = "no"
+notes = ["There is nothing in their privacy policy that would require them to notify users of a data breach."]
+
+[rubric.data-collection-reasoning]
+value = "no"
+citations = ["We will not collect any more information than needed to provide you with a great experience."]
+notes = ["It is unclear what they mean by providing users with a great experience."]
+
+[rubric.data-deletion]
+value = "yes-automated"
+citations = ["If you want to cancel your subscription, that’s okay. No hard feelings. We’ll remove your data as soon as possible. It may take a while because backups, but we won’t put any artificial delays in place."]
+notes = ["You may need to cancel your subscription, then press a separate delete account button to close your account."]
+
+[rubric.history]
+value = "no"
+notes = ["No mention of any previous versions could be found."]
+
+[rubric.law-enforcement]
+value = "strict" 
+citations = ["We won’t share any data with government or law enforcement unless required to by law."]
+
+[rubric.list-collected]
+value = "no"
+citations = ["We will not collect any more information than needed to provide you with a great experience."]
+notes = ["This is the only mentioning of what data is collected."]
+
+[rubric.noncritical-purposes]
+value = "no" 
+citations = ["We will not collect any more information than needed to provide you with a great experience."]
+notes = ["Data is only collected to provide what is described as a great experience. It is unclear what this means."]
+
+[rubric.revision-notify]
+value = "yes"
+citations = ["We may occasionally need to change this policy. We’ll be sure to let you know. This might require us sending you an annoying email."]
+
+[rubric.security]
+value = "no"
+notes = ["Nothing about security is mentioned."]
+
+[rubric.third-party-access]
+value = "yes-unspecified-critical"
+citations = ["Whatever information we collect, we won’t share with third parties beyond the technical requirements of third-party services.","We don't have your credit card information. Our processing partner, Stripe, does."]
+notes = ["Other than Stripe, no other third-parties are specified, but only critical providers are used."]
+
+[rubric.third-party-collection]
+value = "no" 
+notes = ["Nothing regarding how data is collected was specified."]
