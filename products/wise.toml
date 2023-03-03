@@ -36,7 +36,12 @@ citations = [
 [rubric.data-deletion]
 value = "yes-automated"
 citations = [
-  "11.2 We will always delete data that is no longer required by a relevant law or jurisdiction in which we operate. We do this automatically, so you don’t need to contact us to ask us to delete your data. Deletion methods include shredding, destruction and secure disposal of hardware and hard-copy records, and deletion or over-writing of digital data."
+  "6. Belgium - disclosure of your personal data",
+  "If you are a Belgian resident holding a balance with us (Multi-Currency Account), we are legally obliged to disclose the following personal data to the Central Point of Contact of the National Bank of Belgium (“CPC”)",
+  "You have the right to consult the data linked to your name by the CPC at the National Bank of Belgium (Boulevard de Berlaimont 14, 1000 Brussels). You also have the right to ask, preferably via us, for any inaccurate data recorded by the CPC and linked to your name to be corrected or deleted. You may do so by visiting the NBB’s website and following the stipulated process.",
+  "11.2 We will always delete data that is no longer required by a relevant law or jurisdiction in which we operate. We do this automatically, so you don’t need to contact us to ask us to delete your data. Deletion methods include shredding, destruction and secure disposal of hardware and hard-copy records, and deletion or over-writing of digital data.",
+  "13.8 Subject to some country-specific variations, you have the right to:",
+  "Ask us to delete personal data where there is no good reason for us to continue to process it. You may also have the right to ask us to delete your personal data where (i) you have successfully exercised your right to object to processing (see below), (ii) where we may have processed your personal data unlawfully or (iii) where we are required to delete your personal data to comply with local law. We may not always be able to comply with your deletion request for specific legal reasons which will be notified to you, if applicable, in our response to your request, including financial regulations that may require us to hold your personal data for a period after the closure of your account."
 ]
 notes = [
   "https://transferwise.com/help/23/data-and-security/2932638/how-long-do-you-store-my-data"
