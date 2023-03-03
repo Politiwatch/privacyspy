@@ -77,8 +77,10 @@ citations = [
 value = "yes-audits"
 citations = [
   "3.2 We are regularly audited to confirm we remain compliant with our security certifications, including SOC 2 and PCI-DSS. As part of these audits, our security is validated by external auditors.",
-  "https://wise.com/gb/about/security",
   "We are regulated by the FCA, registered with regulators in different countries around the world and have state licenses in the US. We are constantly audited by independent finance and IT auditors. We are SOC 1 type 2, SOC 2 type 2, PCI DSS and ISO 27001 certified, as well as GDPR compliant. As a service provider we are responsible for the security of the cardholder data that we possess or otherwise store, process and transmit on behalf of the customer. You can view our certificates here.",
+]
+notes = [
+  "https://wise.com/gb/about/security",
   "https://wise.com/gateway/v1/iso-report",
   "http://wise.com/security/reports"
 ]
@@ -103,9 +105,9 @@ citations = [
   "to recover debt or in relation to your insolvency or to allow a party or a financial institution that sent money to recover money received by you in error or due to fraud;", 
   "to develop customer relationships, services and systems; and", 
   "if you consent, to share your details when using our Services",
-  "https://wise.com/help/articles/2974131?origin=search-entities"
 ]
 notes = [
+  "https://wise.com/help/articles/2974131?origin=search-entities",
   "The policy has a link that lists which \"group entities and subsidiaries\" your data will be shared with. But it does not explain who the \"advertisers and advertising networks\" and \"analytics and search engine providers\" that your data will be shared with, are."
 ]
 
