@@ -23,11 +23,12 @@ notes = [
 [rubric.data-deletion]
 value = "no"
 citations = [
-  "Even after we stop providing Services directly to you or a Business User with which you are doing business, and even if you close your Stripe account or complete a transaction with a Business User, we may retain your Personal Data:",
-  "to comply with our legal and regulatory obligations.",
-  "to enable fraud monitoring, detection and loss prevention activities.",
-  "to comply with our tax, accounting, and financial reporting obligations",
-  "where required by our contractual commitments to our financial partners (and where data retention is mandated by the payment methods you used)."
+"""Even after we stop providing Services directly to you or a Business User with which you are doing business, and even if you close your Stripe account or complete a transaction with a Business User, we may retain your Personal Data:
+- to comply with our legal and regulatory obligations.
+- to enable fraud monitoring, detection and loss prevention activities.
+- to comply with our tax, accounting, and financial reporting obligations
+- where required by our contractual commitments to our financial partners (and where data retention is mandated by the payment methods you used).
+"""
 ]
 
 [rubric.history]
