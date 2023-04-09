@@ -1,0 +1,71 @@
+name = "Stripe"
+description = "Payment processor for e-commerce and mobile applications."
+slug = "stripe"
+hostnames = [ "stripe.com" ]
+sources = [ "https://stripe.com/privacy" ]
+contributors = [ "Deivedux" ]
+
+[rubric.behavioral-marketing]
+value = "yes"
+citations = [ "We may use your Personal Data to assess your eligibility for, and offer you, other End User Services or promote existing End User Services. Where allowed by law (including with your opt-in consent where required), we use and share End User Personal Data with others so that we may market our End User Services to you, including through interest-based advertising." ]
+
+[rubric.data-breaches]
+value = "no"
+notes = [ "The policy doesn't seem to mention a data breach policy." ]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+notes = [
+  "Section 1.1b in the policy contains a brief overview of their use and share of personal data.",
+  "The entirety of section 2 is a continuation, more exhaustive list of reasons how they use and share personal data."
+]
+
+[rubric.data-deletion]
+value = "no"
+citations = [
+  "Even after we stop providing Services directly to you or a Business User with which you are doing business, and even if you close your Stripe account or complete a transaction with a Business User, we may retain your Personal Data:",
+  "to comply with our legal and regulatory obligations.",
+  "to enable fraud monitoring, detection and loss prevention activities.",
+  "to comply with our tax, accounting, and financial reporting obligations",
+  "where required by our contractual commitments to our financial partners (and where data retention is mandated by the payment methods you used)."
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [ "Last updated: January 24, 2023" ]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "We share Personal Data as we believe necessary: [...] (v) to respond to valid legal process requests from courts, law enforcement agencies, regulatory agencies, and other public and government authorities, which may include authorities outside your country of residence.",
+  "In certain situations, we may be required to disclose Personal Data in response to lawful requests from officials (such as law enforcement or security authorities)."
+]
+
+[rubric.list-collected]
+value = "generally"
+notes = [ "While their list seems exhaustive in size, it is filled with vague wording like \"such as\" and \"for example\", making it difficult to verify so." ]
+
+[rubric.noncritical-purposes]
+value = "na"
+notes = [ "The policy does not mention the collection of non-critical personal data." ]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [ "We may provide you with disclosures and alerts regarding the Policy or Personal Data collected by posting them on our website and, if you are an End User or Representative, by contacting you through your Stripe Dashboard, email address and/or the physical address listed in your Stripe account." ]
+
+[rubric.security]
+value = "no"
+citations = [ "We make reasonable efforts to provide a level of security appropriate to the risk associated with the processing of your Personal Data. We maintain organizational, technical and administrative measures designed to protect Personal Data covered by this Policy against unauthorized access, destruction, loss, alteration or misuse. Unfortunately, no data transmission or storage system can be guaranteed to be 100% secure." ]
+notes = [ "The policy doesn't get any more specific than that. They then follow up with general security recommendations for the end users to protect their own accounts." ]
+
+[rubric.third-party-access]
+value = "yes-unspecified-critical"
+notes = [ "The policy lists sharing of all critical data with third-parties, but does not explicitly list any of them." ]
+
+[rubric.third-party-collection]
+value = "critical-only"
+citations = [
+  "To provide our Business Services to our Business Users, we use Personal Data, and share Personal Data of a Business User’s End Customers with the Business User.",
+  "We do not sell or share End User Personal Data with third parties for marketing or advertising their products without your separate consent.",
+  "We do not use, sell or share End Customer Personal Data for our marketing or advertising, or for marketing and advertising by third parties who are not the Business User with which you have transacted or attempted to transact."
+]
