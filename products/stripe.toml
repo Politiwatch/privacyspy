@@ -61,7 +61,7 @@ notes = [ "The policy doesn't get any more specific than that. They then follow 
 
 [rubric.third-party-access]
 value = "yes-unspecified-critical"
-notes = [ "The policy lists sharing of all critical data with third-parties, but does not explicitly list any of them." ]
+notes = [ "The policy lists sharing of only critical data with third-parties, but does not explicitly list any of them." ]
 
 [rubric.third-party-collection]
 value = "critical-only"
