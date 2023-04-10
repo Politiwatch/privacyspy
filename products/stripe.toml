@@ -65,8 +65,4 @@ notes = [ "The policy lists sharing of all critical data with third-parties, but
 
 [rubric.third-party-collection]
 value = "critical-only"
-citations = [
-  "To provide our Business Services to our Business Users, we use Personal Data, and share Personal Data of a Business User’s End Customers with the Business User.",
-  "We do not sell or share End User Personal Data with third parties for marketing or advertising their products without your separate consent.",
-  "We do not use, sell or share End Customer Personal Data for our marketing or advertising, or for marketing and advertising by third parties who are not the Business User with which you have transacted or attempted to transact."
-]
+citations = [ "We may collect information from you, and about you, from Business Users, financial parties and in some cases third parties. For example, to protect our Services, we may receive information from third parties about IP addresses that malicious actors have compromised." ]
