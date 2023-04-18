@@ -1,0 +1,128 @@
+name = "SANS Institute"
+description = "The SANS Institute (officially the Escal Institute of Advanced Technologies) is a private U.S. for-profit company founded in 1989 that specializes in information security, cybersecurity training, and selling certificates."
+slug = "sansorg"
+hostnames = [ "sans.org" ]
+sources = [ "https://www.sans.org/privacy/" ]
+contributors = [ "ItsIgnacioPortal" ]
+
+[rubric.behavioral-marketing]
+value = "yes"
+citations = [
+  "We may use information that we collect about you to:",
+  "- perform research and analysis about your use of or interest in our services, our content, or products, as well as services or content offered by otherwise"
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "Despite the SANS Institute being a beacon in the cybersecurity industry, whose sole focus is on cybersecurity, their privacy policy does not specify a data breach protocol. It also notes the following:",
+  "The security of your Personal Information is important to us. Be aware that the internet is a global communications vehicle open to threats, viruses, and intrusions from others, so we cannot promise - and you should not expect - that we will be able to protect your personal information at all times and in all circumstances."
+]
+
+[rubric.data-collection-reasoning]
+value = "no"
+notes = [
+  "The policy does not specify why so much data is collected."
+]
+
+[rubric.data-deletion]
+value = "yes-contact"
+citations = [
+  "You can ask us to delete, rectify, or port your data by submitting a request through your account or by contacting privacy@sans.org.",
+  "For Residents of the European Union and the United Kingdom",
+  "If you are a resident of the European Union or United Kingdom, the E.U. or U.K. General Data Protection Regulation (collectively, the “GDPR”) is applicable to our use of your data. The lawful basis for processing your personal information will depend on the personal information concerned and the specific context in which we collect it as detailed above. Under the GDPR you have a number of rights. For example, you can request to see a copy of the data we process about you, to delete or rectify your data, or to transfer your data elsewhere. You also have the right to make a complaint to your local supervisory authority and in the first instance to our Data Privacy Department.",
+  "If you wish to exert any of your rights, please contact us at via email at privacy@sans.org.",
+  "For Residents of California",
+  "- Right to Delete: You have the right to request that a business delete any personal information about you which the business has collected from you.",
+  "We will use the following process to verify Requests to Know, Requests to Delete, and Requests to Correct: We will acknowledge receipt of your Consumer Request, verify it using processes required by law, then process and respond to your request as required by law. To verify such requests, we may ask you to provide the following information:",
+  "- For a Request to Know categories of personal information which we collect, we will verify your identity to a reasonable degree of certainty by matching at least two data points provided by you against information in our systems which are considered reasonably reliable for the purposes of verifying a consumer’s identity.",
+  "- For a Request to Know specific pieces of personal information, Requests to Delete, Requests to Correct, we will verify your identity to a high degree of certainty by matching at least three pieces of personal information provided by you to personal information maintained in our systems and also by obtaining a signed declaration under penalty of perjury that the requestor is the consumer whose personal information is the subject of the request. ",
+  "An authorized agent can make a request on a California resident’s behalf by providing a power of attorney valid under California law, or providing: (1) proof that the consumer authorized the agent to do so; (2) verification of their own identity with respect to a right to know categories, right to know specific pieces of personal information, or requests to delete which are outlined above; and (3) direct confirmation that the consumer provided the authorized agent permission to submit the request.",
+  "For Residents of Virginia",
+  "If you are a Virginia resident, the Virginia Consumer Data Protection Act (VCDPA) may grant you the following rights:",
+  "- Right to Delete: You have the right to request that a business delete your personal information that was collected about you. ",
+  "We will use the following process to verify Right to Access Requests, Right to Correction Requests, Right to Delete Requests, Right to Opt Out of Processing, and Right to Data Portability Requests:We will acknowledge receipt of your request, authenticate it using processes required by law, then process and respond to your request as required by law.To authenticate such requests, we may ask you to provide additional information as reasonably necessary.",
+  "Children’s Personal Information",
+  "When SANS collects personal information from or about children under the age of 17, we seek appropriate parental consent to process their information.",
+  "SANS products and services are not directed to children under the age of 13.SANS does not knowingly collect any personal information from children under the age of 13, nor does SANS knowingly distribute such information to third parties.If SANS becomes aware that it has received personal information from someone under the age of 13, SANS will take steps to delete such information from its records.If you believe SANS has personal information from individuals under the age of 13, please contact SANS at privacy@sans.org."
+]
+
+[rubric.history]
+value = "last-modified"
+notes = [
+  "Latest update date is listed in bold letters as \"Updated: MONTH-YEAR\""
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "Disclosure of Personal Information",
+  "We share or disclose your Personal Information where it is necessary to provide the Services, including sharing information with third party service providers, when required by law, to protect rights and safety, and with your consent. These third parties are detailed below.",
+  "- Other situations: We also may disclose your information where required by law, in response to a court order, or to prevent or detect crime."
+]
+
+[rubric.list-collected]
+value = "generally"
+citations = [
+  "Personal Information We Collect",
+  "You will be asked to provide personal data when you create a SANS account, make a purchase, or contact us for support. We also collect data recording how you interact with our services. We may also obtain information about you from our business partners or other third parties.",
+  "We may receive and collect certain data automatically for example from website analytics, information from your internet browser when you visit our Websites, and information collected by cookies. We may collect Personal Information that can identify you, such as your name and email address, and other information that does not identify you.",
+  "Information Provided by You",
+  "When You Set Up a SANS Account",
+  "We collect your name, email address, phone number(s), address, company, department, job function, industry, organizational memberships, and geographic region to create a SANS account. We also process and store data associated with training assignments, including scores on assessments you undertake, data associated with your registration for content such as webcasts and Summits, and data associated with your use of content provided by our Websites.",
+  "When You Use Our Websites",
+  "We use various technologies to collect information from your computer or device and about your activities on our Websites. These are detailed below:",
+  "- Information automatically collected such as your IP address, your browser type and language, access times, the content of any undeleted cookies that your browser previously accepted from us, referring or exit website address, internet service provider, date/time stamp, operating system, locale and language preferences, and system configuration information.",
+  "- Cookies. When you visit our Websites we may assign your computer or device one or more cookies to facilitate access to our site and to personalize your online experience. These cookies may relate to tools such as Google Analytics and similar technologies. Through cookies we also may automatically collect information about your online activity on our site, such as the web pages you visit, the links you click, and the searches you conduct on our site. Please see our Cookie Policy for more detail.",
+  "- Other technologies. We may use standard internet technology, such as web beacons, session replay scripts, and other similar technologies, to track your use of our Websites. We also may include web beacons in promotional email messages or newsletters. Web beacons are tiny graphics with a unique identifier, similar in function to cookies. In contrast to cookies, which are stored on your computer’s hard drive, pixel tags are embedded invisibly on web pages. We may use these, in connection with our Websites to, among other things, track the activities users of our services, improve ads, personalize and manage content, and gather usage information about our Websites. We may also use these in HTML emails to, to help us track email response rates, identify when our emails are viewed, and track whether our emails are forwarded. Session replay software scripts capture information concerning a user’s interaction with the Websites, including keystrokes, mouse movements and clicks, movements within a webpage and through the Websites, interactions with menus, banners, and forms, and form field entries. We may use third-party software embedded in the script of the Websites to monitor your interaction with the Websites and/or for our compliance verification purposes, which may mean that the third-party software provider also collects this information. By using our Websites, you consent to this collection and disclosure of information."
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-all"
+citations = [
+  "Opt-Out",
+  "We will not share personal data without your permission unless it is necessary for us to provide services to you.",
+  "You can opt out of non-essential use of your data at any time by selecting the “Opt-Out” link found in the footer of the communication or on our Websites and following the instructions or contacting us.",
+  "Contact Us",
+  "To make a request or exercise your data privacy rights, if you have a complaint, or if you have any questions or suggestions regarding this Policy or our processing of your personal information, please contact us at privacy@sans.orgor at +1 301-654-7267 and request to speak to the Data Privacy Department."
+]
+
+[rubric.revision-notify]
+value = "no"
+notes = [
+  "The privacy policy does not explain how updates to the policy should be handled."
+]
+
+[rubric.security]
+value = "no"
+notes = [
+  "Despite the SANS Institute being a beacon in the cybersecurity industry, whose sole focus is on cybersecurity, their privacy policy doesn't detail if any audits are ever done in the SANS Institute systems. They also do not appear to have a bug bounty, nor a responsible disclosure program."
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = [
+  "Categories of Personal Information Sold or Shared.",
+  "The California Consumer Privacy Act (“CCPA”) defines a “sale” as disclosing or making available to a third party personal information in exchange for monetary or other valuable consideration, and it defines “share” in pertinent part as disclosing personal information to a third party for cross-context behavioral advertising.",
+  "As defined by the CCPA, the categories of personal information that we may “sell” include:",
+  "- Name, contact information and other identifiers",
+  "As defined by the CCPA, the categories of personal information that we may “share” include:",
+  "- Name, contact information, and other identifiers",
+  "The categories of third parties to whom we sell or share the data, as defined by the CCPA, may include:",
+  "- Data analytics providers",
+  "- Service providers who are assisting us in fulfilling our contracts and carrying out our business",
+  "- Sponsors of SANS events, programs and papers",
+  "The business purpose for which we sell or share the data, as defined by the CCPA, may include:",
+  "- Lead generation, business prospecting, and similar activities",
+  "- To gain insights into online activities through analytics",
+  "- To provide leads to sponsors of SANS events, programs and papers ",
+  "We have “sold” and “shared” the categories of personal information listed above to data analytics providers in the preceding twelve months."
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "Information Collected from Other Sources",
+  "We may also obtain information about you from advertising companies, ad networks business partners, contractors, and other third parties and add it to our account information or other information we have collected. We only do this where there is a lawful basis of processing your information such as your consent."
+]
+
