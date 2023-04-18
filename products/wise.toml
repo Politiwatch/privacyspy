@@ -85,12 +85,10 @@ citations = [
   "We are regulated by the FCA, registered with regulators in different countries around the world and have state licenses in the US. We are constantly audited by independent finance and IT auditors. We are SOC 1 type 2, SOC 2 type 2, PCI DSS and ISO 27001 certified, as well as GDPR compliant. As a service provider we are responsible for the security of the cardholder data that we possess or otherwise store, process and transmit on behalf of the customer. You can view our certificates here.",
 ]
 notes = [
+  "You can download the \"SOC 1 Type 2\" and the \"SOC 2 Type 2\" reports, but you need an account, and you have to agree to an NDA before downloading.",
   "https://wise.com/gb/about/security",
   "https://wise.com/gateway/v1/iso-report",
   "http://wise.com/security/reports"
-]
-notes = [
-  "You can download the \"SOC 1 Type 2\" and the \"SOC 2 Type 2\" reports, but you need an account, and you have to agree to an NDA before downloading."
 ]
 
 [rubric.third-party-access]
