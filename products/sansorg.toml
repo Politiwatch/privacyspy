@@ -15,7 +15,7 @@ citations = [
 [rubric.data-breaches]
 value = "no"
 notes = [
-  "Despite the SANS Institute being a beacon in the cybersecurity industry, whose sole focus is on cybersecurity, their privacy policy does not specify a data breach protocol. It also notes the following:",
+  "Despite the SANS Institute playing a major role in the cybersecurity industry, their privacy policy does not specify a data breach protocol. It also notes the following:",
   "The security of your Personal Information is important to us. Be aware that the internet is a global communications vehicle open to threats, viruses, and intrusions from others, so we cannot promise - and you should not expect - that we will be able to protect your personal information at all times and in all circumstances."
 ]
 
@@ -97,7 +97,7 @@ notes = [
 [rubric.security]
 value = "no"
 notes = [
-  "Despite the SANS Institute being a beacon in the cybersecurity industry, whose sole focus is on cybersecurity, their privacy policy doesn't detail if any audits are ever done in the SANS Institute systems. They also do not appear to have a bug bounty, nor a responsible disclosure program."
+  "Despite the SANS Institute playing a major role in the cybersecurity industry, their privacy policy doesn't mention wheter any audits are ever done in the SANS Institute systems. They also do not appear to have a bug bounty, nor a responsible disclosure program."
 ]
 
 [rubric.third-party-access]
