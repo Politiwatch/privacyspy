@@ -28,6 +28,9 @@ notes = [
 
 [rubric.history]
 value = "last-modified"
+citations = [
+  "Last Updated: March 14, 2023."
+]
 
 [rubric.data-deletion]
 value = "yes-automated"
