@@ -43,6 +43,9 @@ notes = [
 
 [rubric.data-breaches]
 value = "no"
+notes = [
+  "No mention."
+]
 
 [rubric.third-party-access]
 value = "yes-specified-noncritical"
