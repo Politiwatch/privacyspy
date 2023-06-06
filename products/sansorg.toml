@@ -20,9 +20,22 @@ notes = [
 ]
 
 [rubric.data-collection-reasoning]
-value = "no"
+value = "somewhat"
+citations = [
+  "General Uses",
+  "We may use information that we collect about you to:",
+  "deliver the services that you have requested",
+  "manage your account and provide you with customer support",
+  "perform research and analysis about your use of or interest in our services, our content, or products, as well as services or content offered by others",
+  "communicate with you by email, postal mail, telephone, our websites, our applications, and/or mobile devices about products, services, or resources that may be of interest to you either from us or other third parties",
+  "enforce our terms and conditions",
+  "manage our business and perform functions as otherwise described to you at the time of collection",
+  "for legal compliance purposes",
+  "occasionally notify you about special sales or services to personalize your experience with SANS (you can opt out if you wish)",
+  "process payment for any purchases or sales made on our Websites, to protect against or identify possible fraudulent transactions, and otherwise as needed to manage our business"
+]
 notes = [
-  "The policy does not specify why so much data is collected."
+  "In some cases the required information for signing up may be excesive. For example, an account is required to download resources related to \"CIS Controls v8\", yet in such cases it does not make sense for SANS to request a physical living address, job function, phone numbers, etc."
 ]
 
 [rubric.data-deletion]
