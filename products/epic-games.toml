@@ -10,6 +10,9 @@ value = "yes-opt-out"
 citations = [
   "6B. Epic does not sell the personal information we collect. We do, however, disclose personal information as described in this policy (see “How Do We Share Information?” above).",
 ]
+notes = [
+  "Our targeted marketing is ONLY within our ecosystem. We don't sell or share personal data with third parties."
+]
 
 [rubric.security]
 value = "somewhat"
