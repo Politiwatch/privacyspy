@@ -35,7 +35,7 @@ citations = [
   "process payment for any purchases or sales made on our Websites, to protect against or identify possible fraudulent transactions, and otherwise as needed to manage our business"
 ]
 notes = [
-  "In some cases the required information for signing up may be excesive. For example, an account is required to download resources related to \"CIS Controls v8\", yet in such cases it does not make sense for SANS to request a physical living address, job function, phone numbers, etc."
+  "In some cases the required information for signing up may be excessive. For example, an account is required to download resources related to \"CIS Controls v8\", yet in such cases it does not make sense for SANS to request a physical living address, job function, phone numbers, etc."
 ]
 
 [rubric.data-deletion]
@@ -110,7 +110,7 @@ notes = [
 [rubric.security]
 value = "no"
 notes = [
-  "Despite the SANS Institute playing a major role in the cybersecurity industry, their privacy policy doesn't mention wheter any audits are ever done in the SANS Institute systems. They also do not appear to have a bug bounty, nor a responsible disclosure program."
+  "Despite the SANS Institute playing a major role in the cybersecurity industry, their privacy policy doesn't mention whether any audits are ever done in the SANS Institute systems. They also do not appear to have a bug bounty, nor a responsible disclosure program."
 ]
 
 [rubric.third-party-access]
