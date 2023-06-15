@@ -28,7 +28,7 @@
         {{/if}}
         {{#if website}}
         <p class="mt-1">
-          <i class="mr-1 text-gray-600 fas fa-sm fa-globe"></i>
+          <i class="mr-1 text-gray-600 fas fa-sm fa-globe" title="Website"></i>
           {{#with (urlParse website)}}
           <a href="{{../website}}" class="no-underline" {{#if (eq ../role "contributor")}}rel="nofollow noopener"
             {{/if}}>{{ellipsis host 16}}&nearr;</a>
@@ -37,14 +37,14 @@
         {{/if}}
         {{#if github}}
         <p class="mt-1">
-          <i class="mr-1 text-gray-600 fab fa-sm fa-github"></i>
+          <i class="mr-1 text-gray-600 fab fa-sm fa-github" title="GitHub"></i>
           <a href="https://github.com/{{github}}" rel="nofollow noopener"
             class="no-underline">{{ellipsis github 16}}&nearr;</a>
         </p>
         {{/if}}
         {{#if email}}
         <p class="mt-1">
-          <i class="mr-1 text-gray-600 fas fa-sm fa-envelope"></i>
+          <i class="mr-1 text-gray-600 fas fa-sm fa-envelope" title="Email"></i>
           <a href="mailto:{{email}}" class="no-underline">{{ellipsis email 16}}&nearr;</a>
         </p>
         {{/if}}
