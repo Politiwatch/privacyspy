@@ -11,7 +11,7 @@ citations = [
   "6B. Epic does not sell the personal information we collect. We do, however, disclose personal information as described in this policy (see “How Do We Share Information?” above).",
 ]
 notes = [
-  "Our targeted marketing is ONLY within our ecosystem. We don't sell or share personal data with third parties."
+  "Epic Games' targeted marketing is ONLY within their ecosystem. They do not sell or share personal data with third parties."
 ]
 
 [rubric.security]
@@ -26,7 +26,7 @@ citations = [
   "2C. Information We Collect from Other Sources\nIn some cases, we may also receive information about you from service providers and third parties in connection with your use of the Epic Services or your interactions with us on other platforms.\n\nFor example, some other developers allow you to use your Epic account to log in to their service. And if you choose to link your Epic account with your account on a third-party social media (like Facebook), gaming (like Steam), or other similar website or service, or if you interact with an ad for one of the Epic Services on an external website or service, the company that operates that website or service may share some information with Epic in accordance with their own privacy practices. Your privacy settings on the other company's website or service typically control the specific types of information they can share with Epic, so please be sure to review and update them regularly. Common examples for linked accounts might include your third-party account display name and user ID, as well as associated device information, name, and email address. For participants in our Support-a-Creator program, we may also collect the number of social media account followers you have for program eligibility purposes.\n\nYou can also buy, download, or access some Epic Services on or through services operated by third parties. If you do, they may provide us with information to facilitate your access to and use of the Epic Services. This typically includes information like your display name, user ID, and device and region information. For example, you can choose to download and play games like Fortnite on gaming consoles (like PlayStation®, Microsoft Xbox, and Nintendo Switch) through your gaming console account. When you do, the company operating that platform or service may share some information with us, which helps us do things like facilitate your gameplay and track your progression and entitlements.",
 ]
 notes = [
-  "We only collect data from service providers that is essential for core experiences. Where we do collect from third parties, it is connected to engagement with our products/services.",
+  "Epic Games only collects data from service providers that is essential for core experiences. Where Epic Games does collect from third parties, it is connected to engagement with Epic Games' products/services.",
 ]
 
 [rubric.history]
@@ -41,7 +41,7 @@ citations = [
   "6. YOUR CHOICES AND CONTROLS\nYou can request that we provide access to, or that we correct or delete, personal information we've collected from you. Please submit requests to access, update, or delete personal information associated with your Epic account by reaching out to us as described in “Contact Us” below. Note that we may ask you for additional information to help us verify who you are before completing your request.",
 ]
 notes = [
-  "We do allow users to delete their own data via automated mechanism when logged in to their account.  We also provide player support to assist with deletion if the user is unable to complete the self-service process.",
+  "Epic Games does allow users to delete their own data via automated mechanism when logged into their account. Epic Games also provides player support to assist with deletion if the user is unable to complete the self-service process. ",
 ]
 
 [rubric.data-breaches]
@@ -56,7 +56,7 @@ citations = [
   "4. HOW DO WE SHARE INFORMATION?\nWe may share some of the information we collect to help operate and improve the Epic Services. Depending on how you interact with us, common examples might include sharing:\n\nWith console and platform partners (for example, to facilitate gameplay when you access the Epic Services through a third-party console provider);\nWith other game developers (such as to enable features for games you acquire through the Epic Games Store);\nWith other users (like if you use social features such as chat);\nPublicly (for example, your display name, content you create or share, basic game statistics, and other similar information may be generally accessible to others);\nWith service providers that operate on our behalf to help support the Epic Services in accordance with our instructions (for example, cloud storage providers, payment processors, or marketing and advertising partners);\nWhen we believe we must in order to comply with the law or to protect you, Epic, or others (for example, in response to court order or subpoena, as part of an investigation of fraud or other illegal activity, or violation of our terms or policies, or if necessary to protect others from death or serious harm to body or property);\nWith other Epic entities (including to help provide support for the Epic Services internationally);\nIn connection with certain types of corporate transactions (like in the event of a restructuring or the sale of all or a significant part of our business); and\nWith your permission (for example, if you link external accounts with your Epic account, or use your Epic account to sign in to third-party games and services or participate in cross-promotional events).\n\nWe may also share information that does not identify you with third parties, including aggregate or de-identified information.\nThird parties you interact with through Epic Services may have different privacy practices than Epic, so we encourage you to review their privacy policies before sharing your information with them.",
 ]
 notes = [
-  "Where we provide third party data that is outside service providers, we only do so with the users' consent.",
+  "Where Epic Games provides third party data that is outside service providers, it only does so with the users' consent",
 ]
 
 [rubric.data-collection-reasoning]
@@ -91,4 +91,4 @@ value = "yes"
 citations = [
   "9. UPDATES\nWe'll update this policy from time to time to reflect changes in our practices or relevant laws. When we do, we'll change the date noted at the top of the policy. In some cases we may also notify you of the relevant changes by email or within the Epic Services. Please review this policy regularly to make sure that you understand your relationship with Epic and the ways we may collect, use, and share information in connection with the Epic Services.",
 ]
-notes = ["Current states that we will notify users of material changes."]
+notes = ["Currently states that Epic Games will notify users of material changes."]
