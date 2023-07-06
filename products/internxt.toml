@@ -75,7 +75,7 @@ value= "yes-independent-audits"
 citations= ["Internxt takes reasonable measures to help protect information about you from loss, theft, misuse and unauthorized access, disclosure, alteration, and destruction."]
 notes= ["You can view copies of Internxt's audits done by securitum at https://internxt.com/privacy"]
 
-[rubruc.third-party-access]
+[rubric.third-party-access]
 value= "yes-unspecified"
 citations= ["The collection and processing of personal data that you may provide to us is carried out by our company or, where appropriate, its data processors. In relation to the latter case, these processors are third parties who are contractually required to ensure that their activity respects the law and implement appropriate security measures to protect such data."]
 notes= []
