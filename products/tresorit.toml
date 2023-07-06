@@ -17,7 +17,10 @@ notes= []
 [rubric.data-breaches]
 value= "na"
 citations= []
-notes= ["According to Tresorit (needs confirmation), 'With Tresorit's end-to-end encryption, it is infeasible to decrypt the files and in turn, the personal data in them. Thus, server-side hacks are not considered data breaches, and the GDPR's data breach notifications requirements do not apply.' (https://tresorit.com/gdpr/cloud-storage)"]
+notes= [
+  "Tresorit is able to not obligated to disclosure data breaches of 'the files and in turn, the personal data in them' (https://tresorit.com/gdpr/cloud-storage)",
+  "For more information about such, see 'Guidelines 9/2022 on personal data breach notification under GDPR' 1(A)(15) (https://edpb.europa.eu/our-work-tools/our-documents/guidelines/guidelines-92022-personal-data-breach-notification-under_en)"
+]
 
 [rubric.data-collection-reasoning]
 vaulue= "mostly"
