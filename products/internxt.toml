@@ -1,0 +1,86 @@
+name= "Internxt"
+description= "Internxt is an encrypted cloud storage service."
+slug= "internxt"
+hostnames= ["internxt.com"]
+sources= ["https://internxt.com/legal"]
+contributors= ["doamatto"]
+
+[rubric.behavioral-marketing]
+value= "yes"
+citations= ["(iv) we may develop a commercial profile based on the information you provide us in order to offer products and services according to your interests."]
+notes= []
+
+[rubric.data-breaches]
+value= "no"
+citations= []
+notes= ["There is no mention of what happens in case of a data breach in the policy."]
+
+[rubric.data-collection-reasoning]
+value= "yes"
+citations= [
+  "The personal data that we request from you, or that you provide to us as a result of your browsing, is used by us to manage, provide and improve the services you have requested from us.",
+  "For example, we will process your personal data in order to manage the queries you send us, to manage your participation in personnel selection processes, to send you electronic communications if you so request, and/or for the preparation of statistics.",
+  "In this sense, we ask you for an e-mail address when you use our contact forms on the web. We only collect the sender's personal data necessary to respond to you.",
+  "When you subscribe to our newsletters we also ask you for an email to provide the service, in any case you can manage your unsubscribe from the service whenever you want and we put means at your disposal to do so.",
+  "We process your personal data in order to (i) manage your purchase or service provided; (ii) maintain the contractual and pre-contractual relationship for billing, preparation of budgets and follow up on the same as well as send you information by electronic means that deal with your request; (iii) sending communications on commercial information by electronic means that may be of interest to you, provided there is express authorization; (iv) we may develop a commercial profile based on the information you provide us in order to offer products and services according to your interests. No automated decisions will be made on the basis of such a profile.",
+  "We process your personal data for the purpose of (i) invoicing and (ii) maintaining business contact, (iii) as well as sending you information by electronic means about our products or services.",,
+  "We process your personal data for the purpose of (i) answering your queries and requests; (ii) managing the requested service or processing your order; (iii) sending you commercial information by electronic means that may be of interest to you, we may create a commercial profile based on the information you provide us in order to offer you products and services according to your interests. No automated decisions will be made on the basis of such a profile.",
+  "We process your personal data in order to (i) answer your queries and requests, (ii) manage the requested service, answer your request or process your order and (iii) interact with you and create a community of followers.",
+  "We process your personal data in order to (i) count on you in recruitment selection processes, (ii) summon you for job interviews and evaluate your candidacy, (iii) communicate your resume to group companies, collaborators or related companies with the sole purpose of involving you in their selection processes, provided that you have given us your consent.",
+  "By browsing our website we collect information about your browser, your device and data from your use of our website as well as any information you provide to us when using our website. In an anonymized or aggregated form, we may record the IP address (Internet access identification number of the device, which allows devices, systems and servers to recognize and communicate with each other). The purpose of the processing is (i) to obtain practical knowledge about how users use our website to enable us to improve it; (ii) to perform statistical analysis to help us improve our business strategy; (iii) to perform web performance analysis and (iv) for technical security and system diagnostics."
+]
+notes= []
+
+[rubric.data-deletion]
+value= "yes-contact"
+citations= [
+  "You can request that we delete your data when it is no longer necessary for processing, you withdraw your consent, it is unlawful processing or there is a legal obligation to do so. We will analyze the case and apply the law."
+]
+notes= [
+  "Contact information can be found at the top of the privacy policy.",
+  "Although not in writing, you can also delete your Internxt account via the Web client. More information about this can be found at https://help.internxt.com/en/articles/5359713-how-can-i-delete-my-account"
+]
+
+[rubric.history]
+value= "yes"
+citations= []
+notes= ["You can view the past history on GitHub at https://github.com/internxt/website/commits/main/assets/lang/en/terms-and-conditions.json"]
+
+[rubric.law-enforcement]
+value= "unspecified"
+citations= []
+notes= ["There is no mention of when law enforcement has access to the information stored."]
+
+[rubric.list-collected]
+value= "summarily"
+citations= ["We collect information you provide directly to us. For example, we collect information you provide when you create an account, subscribe to our updates, respond to a survey, fill out a form, request customer support or communicate with us. The types of information we may collect include your email address, username and password, survey responses and any other information you choose to provide. If you use our Storage Services, our third-party service provider may collect your payment method information for use in connection with your payments for storage."]
+notes= []
+
+[rubric.noncritical-purposes]
+value= "opt-out-some"
+citations= [
+  "(iv) we may develop a commercial profile based on the information you provide us in order to offer products and services according to your interests",
+  "ending you commercial information by electronic means that may be of interest to you, we may create a commercial profile based on the information you provide us in order to offer you products and services according to your interests",
+  "(i) to obtain practical knowledge about how users use our website to enable us to improve it; (ii) to perform statistical analysis to help us improve our business strategy; (iii) to perform web performance analysis and (iv) for technical security and system diagnostics."
+]
+notes= []
+
+[rubric.revision-notify]
+value= "yes"
+citations= ["In the event that you have registered on the website and access your account or profile, upon accessing it, you will be informed in the event that there have been substantial changes in relation to the processing of your personal"]
+notes= ["The quotation is not incomplete, the sentence is not complete in the policy either."]
+
+[rubric.security]
+value= "yes-independent-audits"
+citations= ["Internxt takes reasonable measures to help protect information about you from loss, theft, misuse and unauthorized access, disclosure, alteration, and destruction."]
+notes= ["You can view copies of Internxt's audits done by securitum at https://internxt.com/privacy"]
+
+[rubruc.third-party-access]
+value= "yes-unspecified"
+citations= ["The collection and processing of personal data that you may provide to us is carried out by our company or, where appropriate, its data processors. In relation to the latter case, these processors are third parties who are contractually required to ensure that their activity respects the law and implement appropriate security measures to protect such data."]
+notes= []
+
+[rubric.third-party-collection]
+value= "yes"
+citatiosn= ["We may also receive information about you from other sources, such as when logging into your Storage Services account by using your account credentials for a separate third-party service. We will receive information from that service as indicated in the relevant third party’s authorization screen."]
+notes= ["It is vague what is used for third-party collection"]
