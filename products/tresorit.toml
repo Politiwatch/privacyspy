@@ -1,0 +1,92 @@
+name= "Tresorit"
+description= "Tresorit is a cloud storage service with end-to-end encryption."
+slug= "tresorit"
+hostnames= ["tresorit.com"]
+sources= ["https://tresorit.com/legal/privacy-policy"]
+contributors= ["doamatto"]
+
+[rubric.behavioral-marketing]
+value= "yes"
+citations= [
+  "We reach out to audiences who might be interested in our product with targeted marketing campaigns.",
+  "We may also use information about you, including web statistics and logs, to personalize the content and experience you receive on our websites or in our marketing communications, as well as by displaying Tresorit ads on other companies' websites and applications, such as on platforms like Facebook and Google. Where legally required, also seek your consent for sending marketing communications.",
+  "If you are an existing customer of Tresorit, we may use your email address and phone number provided to us to send you marketing communications, such as providing you with information about similar Tresorit products and services, unless you have opted-out."
+]
+notes= []
+
+[rubric.data-breaches]
+value= "na"
+citations= []
+notes= ["According to Tresorit (needs confirmation), 'With Tresorit's end-to-end encryption, it is infeasible to decrypt the files and in turn, the personal data in them. Thus, server-side hacks are not considered data breaches, and the GDPR's data breach notifications requirements do not apply.' (https://tresorit.com/gdpr/cloud-storage)"]
+
+[rubric.data-collection-reasoning]
+vaulue= "mostly"
+citations= [
+  "We may process your personal data for several purposes. How we use your personal data depends on your subscription plan, on how you use the Tresorit services, and your preferences you have communicated to us.",
+  "We may also process your data for any other purposes for which we obtain your consent where necessary or otherwise in accordance applicable law and this policy."
+]
+notes= ["Full information on data usage can be found in the 'How do we use your data?' section of the policy. For brevity sake, it is omitted for the time being."]
+
+[rubric.data-deletion]
+value= "yes-contact"
+citations= ["You may ask us to: [...] delete your personal data.", "You can request this by send an email to support@tresorit.com."]
+notes= ["Although not in writing, you can also delete your account via the Web client. More information on this can be found at https://support.tresorit.com/hc/en-us/articles/360008033453-How-to-delete-your-account"]
+
+[rubric.history]
+value= "yes"
+citations= ["We want to be as transparent as possible about the changes we make to our Privacy Policy. In this archive you can see the previous versions of the policy."]
+notes= []
+
+[rubric.law-enforcement]
+value= "reasonable"
+citations= ["Tresorit may transmit personal data if the applicable legal provisions so require, or when such action is necessary to comply with any laws, including to meet national security or law enforcement requirements. We may also need to share personal data for the protection of our rights and interests, to protect your safety or the safety of others or to investigate fraud, in accordance with the applicable laws."]
+notes= []
+
+[rubric.list-collected]
+value= "generally"
+citations= []
+notes= ["Full information on data collected can be found in the 'What kind of personal data do we process?' section of the policy."]
+
+[rubric.noncritical-purposes]
+value= "opt-out-some"
+citations= [
+  "We are always looking for ways to make Tresorit services better, faster, smarter, and more secure. We use aggregated web statistics and logs about how people use our services and feedback provided directly to us to troubleshoot and to identify trends, usage, activity patterns and improvement of our services.",
+  "We also test and analyze certain new features with some users before rolling the feature out to all users. ",
+  "If you are an existing customer of Tresorit, we may use your email address and phone number provided to us to send you marketing communications, such as providing you with information about similar Tresorit products and services, unless you have opted-out.",
+  "We may also use information about you, including web statistics and logs, to personalize the content and experience you receive on our websites or in our marketing communications, as well as by displaying Tresorit ads on other companies' websites and applications, such as on platforms like Facebook and Google. Where legally required, also seek your consent for sending marketing communications.",
+  "Occasionally, we connect personal information to information gathered in our log files as necessary to provide better customer experience and to improve our services. In such a case, we would treat the combined information in accordance with this policy.",
+  "You may opt-out of these statistics or logs at any time by editing settings, but please note that in this case, it might be more difficult to our support team to find the problem when something goes wrong.",
+  "We use mobile analytics software to allow us to better understand the functionality of our mobile application on your device. This software may record information such as how often you use the mobile application, the events that occur within the mobile application, aggregated usage, and performance data. While we use your information to produce aggregate insights, such insights do not identify you.",
+  "We may also process your data for any other purposes for which we obtain your consent where necessary or otherwise in accordance applicable law and this policy."
+]
+notes= []
+
+[rubric.revision-notify]
+value= "yes"
+citations= ["If there are any material changes to this policy, you will be notified 30 days prior to the change becoming effective. We encourage you to periodically review this page for the latest information on our privacy practices. Your continued use of our website or our services constitutes your agreement to be bound by such changes to this policy."]
+notes= []
+
+[rubric.security]
+value= "yes-independent-audits"
+citations= [
+  "We take appropriate technical and organizational measures to protect your personal data against loss or other forms of unlawful processing. Tresorit is ISO 27001:2013 certified.",
+  "We NEVER collect or store your files, encryption keys and passwords in an unencrypted or invertible form. The Encrypted Content and corresponding encryption keys can only be decrypted by you and persons with whom you explicitly share them. If you have an account that is part of a Business Subscription with recovery master key, Your Encrypted Content also may be accessed by your Recovery Administrator as set out in our Terms."
+]
+notes= [
+  "Information on ISO compliance can be found at https://support.tresorit.com/hc/en-us/articles/360012204353-Tresorit-ISO-compliance",
+  "Copies of whitepapers can be found at https://tresorit.com/resources",
+  "Information on compliance with HIPAA, CCPA, GDPR, ISO 27001, and the Digital Trust Label can be found at https://tresorit.com/security"
+]
+
+[rubric.third-party-access]
+value= "yes-specified-noncritical"
+citations= ["In certain cases we need to share information, including personal data with our third-party service providers. We use third-party service providers for a number of services, including application development, backup, storage, payment processing, analytics and other services. We require our third-party service providers to use the personal data that we share with them solely in connection with the services they provide to us. The current list of our service providers is available here."]
+notes= ["You can view the sub-processors list at https://support.tresorit.com/hc/en-us/articles/216114397-Third-party-services"]
+
+[rubric.third-party-collection]
+value= "yes"
+citations= [
+  "Other users of Tresorit services may provide information about you while using our service. For example, we receive personal data about you when somebody sends you an invitation or add you to their contacts. Similarly, your Administrator may provide your contact information when they designate you as a user under your company’s policy.",
+  "From time to time, we engage trusted business partners who help us generate leads, and market, promote and resell our product. We receive information from these partners, such as billing information, contact information, company name and registered address.",
+  "We receive information about you and your activities on our website from third-party partners, such as advertising partners. Upon your consent, such partners provide us with information about your engagement with our website and online advertisements."
+]
