@@ -82,5 +82,5 @@ notes= []
 
 [rubric.third-party-collection]
 value= "yes"
-citatiosn= ["We may also receive information about you from other sources, such as when logging into your Storage Services account by using your account credentials for a separate third-party service. We will receive information from that service as indicated in the relevant third party’s authorization screen."]
+citations= ["We may also receive information about you from other sources, such as when logging into your Storage Services account by using your account credentials for a separate third-party service. We will receive information from that service as indicated in the relevant third party’s authorization screen."]
 notes= ["It is vague what is used for third-party collection"]
