@@ -1,0 +1,6 @@
+name = "Gmail"
+description = "Gmail is an email service for individuals and organizations, developed by Google."
+hostnames = [ "gmail.com" ]
+slug = "gmail"
+parent = "google"
+contributors = [ "loviuz" ]
