@@ -7,7 +7,12 @@ contributors = [ "Deivedux" ]
 
 [rubric.behavioral-marketing]
 value = "yes"
-citations = [ "We may use your Personal Data to assess your eligibility for, and offer you, other End User Services or promote existing End User Services. Where allowed by law (including with your opt-in consent where required), we use and share End User Personal Data with others so that we may market our End User Services to you, including through interest-based advertising." ]
+citations = [
+  "We may use your Personal Data to assess your eligibility for, and offer you, other End User Services or promote existing End User Services. Where allowed by law (including with your opt-in consent where required), we use and share End User Personal Data with others so that we may market our End User Services to you, including through interest-based advertising.",
+  "If you have begun a purchase, we share Personal Data with that Business User in connection with our provision of Services and that Business User may use your Personal Data to market and advertise their products or services, subject to the terms of their privacy policy. Please review your merchant’s privacy policy to learn more, including your rights to stop their use of your Personal Data for marketing purposes.",
+  "Where allowed by applicable law, we use and share Representative Personal Data with others so that we may advertise and market our Services to you. Subject to applicable law (including any consent requirements), we may advertise to you through interest-based advertising and emails and seek to measure the effectiveness of our ads.",
+  "As allowed by law, we use and share Visitor Personal Data with others so that we may advertise and market our Services to you.  Subject to applicable law (including any consent requirements), we may advertise our Services to you through interest-based advertising and emails, and seek to measure the effectiveness of our ads."
+]
 
 [rubric.data-breaches]
 value = "no"
@@ -16,8 +21,8 @@ notes = [ "The policy doesn't seem to mention a data breach policy." ]
 [rubric.data-collection-reasoning]
 value = "yes"
 notes = [
-  "Section 1.1b in the policy contains a brief overview of their use and share of personal data.",
-  "The entirety of section 2 is a continuation, more exhaustive list of reasons how they use and share personal data."
+  "Sections [1.1b](https://stripe.com/privacy#1-1-end-users) (regarding \"End Users\"), [1.2b](https://stripe.com/privacy#1-2-end-customers) (regarding \"End Customers\"), [1.3b](https://stripe.com/privacy#1-3-representatives) (regarding \"Representatives\") and [1.4b](https://stripe.com/privacy#1-4-visitors) (regarding \"Visitors\") in the policy contain brief overviews of their use and share of personal data.",
+  "The entirety of [Section 2](https://stripe.com/privacy#2-more-ways-we-collect-use-and-share-personal-data) is a continuation of their use and share of personal data."
 ]
 
 [rubric.data-deletion]
@@ -47,21 +52,24 @@ value = "generally"
 notes = [ "While their list seems exhaustive in size, it is filled with vague wording like \"such as\" and \"for example\", making it difficult to verify so." ]
 
 [rubric.noncritical-purposes]
-value = "na"
-notes = [ "The policy does not mention the collection of non-critical personal data." ]
+value = "no"
+notes = [ "The policy does not mention of an opt-out option from collection or use of any data for personalized marketing." ]
 
 [rubric.revision-notify]
 value = "yes"
 citations = [ "We may provide you with disclosures and alerts regarding the Policy or Personal Data collected by posting them on our website and, if you are an End User or Representative, by contacting you through your Stripe Dashboard, email address and/or the physical address listed in your Stripe account." ]
 
 [rubric.security]
-value = "no"
+value = "somewhat"
 citations = [ "We make reasonable efforts to provide a level of security appropriate to the risk associated with the processing of your Personal Data. We maintain organizational, technical and administrative measures designed to protect Personal Data covered by this Policy against unauthorized access, destruction, loss, alteration or misuse. Unfortunately, no data transmission or storage system can be guaranteed to be 100% secure." ]
-notes = [ "The policy doesn't get any more specific than that. They then follow up with general security recommendations for the end users to protect their own accounts." ]
+notes = [ "Stripe is a [certified PCI Service Provider](https://stripe.com/docs/security), though that shouldn't justify their lack of a proper overview of their security practices." ]
 
 [rubric.third-party-access]
-value = "yes-unspecified-critical"
-notes = [ "The policy lists sharing of only critical data with third-parties, but does not explicitly list any of them." ]
+value = "yes-specified-noncritical"
+notes = [
+  "A list of their sub-processors and service providers can be found [here](https://stripe.com/legal/service-providers).",
+  "Some providers listed, such as Marketo and Google, are used for marketing and analytical tracking purposes, respectively."
+]
 
 [rubric.third-party-collection]
 value = "critical-only"
