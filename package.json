@@ -12,6 +12,7 @@
     "@babel/preset-env": "^7.12.10",
     "@babel/preset-typescript": "^7.12.7",
     "@fortawesome/fontawesome-free": "^5.15.1",
+    "@fullhuman/postcss-purgecss": "^5.0.0",
     "@iarna/toml": "^2.2.5",
     "@types/gulp": "^4.0.7",
     "@types/jest": "^26",
