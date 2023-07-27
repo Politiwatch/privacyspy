@@ -41,7 +41,7 @@ citations = [
   "6. YOUR CHOICES AND CONTROLS\nYou can request that we provide access to, or that we correct or delete, personal information we've collected from you. Please submit requests to access, update, or delete personal information associated with your Epic account by reaching out to us as described in “Contact Us” below. Note that we may ask you for additional information to help us verify who you are before completing your request.",
 ]
 notes = [
-  "Epic Games does allow users to delete their own data via automated mechanism when logged into their account. Epic Games also provides player support to assist with deletion if the user is unable to complete the self-service process. ",
+  "Epic Games does allow users to delete their own data via automated mechanism when logged into their account: https://www.epicgames.com/help/en-US/epic-accounts-c5719348850459/general-support-c5719341353627/how-do-i-delete-my-epic-games-account-a5720271610651. Epic Games also provides player support to assist with deletion if the user is unable to complete the self-service process.",
 ]
 
 [rubric.data-breaches]
