@@ -8,7 +8,7 @@ contributors = [ "milesmcc", "yaagesoft", "bcbee" ]
 [rubric.behavioral-marketing]
 value = "yes-opt-out"
 citations = [
-  "6B. Epic does not sell the personal information we collect. We do, however, disclose personal information as described in this policy (see “How Do We Share Information?” above).",
+  "7B. Epic does not sell the personal information we collect. We do, however, disclose personal information as described in this policy (see “How Do We Share Information?” above).",
 ]
 notes = [
   "Epic Games' targeted marketing is ONLY within their ecosystem. They do not sell or share personal data with third parties."
