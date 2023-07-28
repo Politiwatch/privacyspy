@@ -26,14 +26,11 @@ notes = [
 ]
 
 [rubric.data-deletion]
-value = "no"
+value = "yes-contact"
 citations = [
-"""Even after we stop providing Services directly to you or a Business User with which you are doing business, and even if you close your Stripe account or complete a transaction with a Business User, we may retain your Personal Data:
-- to comply with our legal and regulatory obligations.
-- to enable fraud monitoring, detection and loss prevention activities.
-- to comply with our tax, accounting, and financial reporting obligations
-- where required by our contractual commitments to our financial partners (and where data retention is mandated by the payment methods you used).
-"""
+  "If you have a Stripe user account, you can close your account in the settings of your Stripe dashboard. [...] Once you complete the account closure steps, we will delete your data in accordance with applicable law.",
+  "If you signed up for Link on the Link website or when you’ve made a purchase from a business that uses Link, you can delete your account by going to the settings page on the Link website, or by following this guide.",
+  "If you are a customer who’s had your identity verified by a Stripe Identity user(s), we need to verify and authenticate your request in order to delete your information. In order to authenticate your request, please send an email to privacy@stripe.com to begin the process. Please include the name and date of birth that you submitted (either by way of ID document or keyed-in data), along with the names and websites of your merchant(s) who verified you via Stripe Identity."
 ]
 
 [rubric.history]
@@ -52,8 +49,8 @@ value = "generally"
 notes = [ "While their list seems exhaustive in size, it is filled with vague wording like \"such as\" and \"for example\", making it difficult to verify so." ]
 
 [rubric.noncritical-purposes]
-value = "no"
-notes = [ "The policy does not mention of an opt-out option from collection or use of any data for personalized marketing." ]
+value = "opt-out-all"
+notes = [ "Stripe's control over the use of non-critical personal data relies on the user's [cookie settings](https://stripe.com/cookie-settings), which are enabled by default in jurisdictions that don't require user consent." ]
 
 [rubric.revision-notify]
 value = "yes"
@@ -74,3 +71,4 @@ notes = [
 [rubric.third-party-collection]
 value = "critical-only"
 citations = [ "We may collect information from you, and about you, from Business Users, financial parties and in some cases third parties. For example, to protect our Services, we may receive information from third parties about IP addresses that malicious actors have compromised." ]
+
