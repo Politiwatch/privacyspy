@@ -6,7 +6,7 @@ sources = [ "https://www.epicgames.com/site/privacypolicy/" ]
 contributors = [ "milesmcc", "yaagesoft", "bcbee" ]
 
 [rubric.behavioral-marketing]
-value = "yes-opt-out"
+value = "yes"
 citations = [
   "7B. Epic does not sell the personal information we collect. We do, however, disclose personal information as described in this policy (see “How Do We Share Information?” above).",
 ]
