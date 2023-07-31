@@ -36,7 +36,7 @@ citations = [
 ]
 
 [rubric.data-deletion]
-value = "yes-automated"
+value = "yes-contact"
 citations = [
   "6. YOUR CHOICES AND CONTROLS\nYou can request that we provide access to, or that we correct or delete, personal information we've collected from you. Please submit requests to access, update, or delete personal information associated with your Epic account by reaching out to us as described in “Contact Us” below. Note that we may ask you for additional information to help us verify who you are before completing your request.",
 ]
