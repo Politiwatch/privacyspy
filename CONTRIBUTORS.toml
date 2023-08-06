@@ -181,6 +181,9 @@ github = "davidbernau"
 
 [kelplover]
 
+[bcbee]
+github = "bcbee"
+
 [ItsIgnacioPortal]
 name = "Ignacio Portal"
 website = "https://itsignacioportal.github.io/"
