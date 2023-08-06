@@ -64,4 +64,7 @@ module.exports = {
     purgeLayersByDefault: true,
     removeDeprecatedGapUtilities: true,
   },
+  plugins: [
+    require("a17t")
+  ]
 };
