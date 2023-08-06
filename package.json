@@ -34,7 +34,7 @@
     "eslint-plugin-prettier": "^3.3.0",
     "gulp": "^4.0.2",
     "gulp-cli": "^2.3.0",
-    "gulp-compile-handlebars": "^0.6.1",
+    "@doamatto/gulp-compile-handlebars": "^0.6.1",
     "gulp-hb": "^8.0.0",
     "gulp-jest": "^4.0.3",
     "gulp-postcss": "^9.0.0",
