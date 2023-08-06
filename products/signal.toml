@@ -46,20 +46,26 @@ citations = [
 ]
 
 [rubric.noncritical-purposes]
-value = "na"
-citations = ["Additional technical information is stored on our servers, including randomly generated authentication tokens, keys, push tokens, and other material that is necessary to establish calls and transmit messages. Signal limits this additional technical information to the minimum required to operate the Services."]
+value = "opt-in"
+citations = [
+  "Additional technical information is stored on our servers, including randomly generated authentication tokens, keys, push tokens, and other material that is necessary to establish calls and transmit messages. Signal limits this additional technical information to the minimum required to operate the Services.".
+  "Signal can optionally discover which contacts in your address book are Signal users, using a service designed to protect the privacy of your contacts. Information from the contacts on your device may be cryptographically hashed and transmitted to the server in order to determine which of your contacts are registered."
+]
 
 [rubric.revision-notify]
 value = "no"
 citations = ["We will update this privacy policy as needed so that it is current, accurate, and as clear as possible. Your continued use of our Services confirms your acceptance of our updated Privacy Policy."]
 
 [rubric.security]
-value = "yes"
+value = "yes-independent-audits"
 citations = [
   "You register a phone number when you create a Signal account. Phone numbers are used to provide our Services to you and other Signal users. You may optionally add other information to your account, such as a profile name and profile picture. This information is end-to-end encrypted.",
   "You can manage your personal information in Signal’s application Settings. For example, you can update your profile information or choose to enable additional privacy features like a Registration Lock PIN."
 ]
-notes = ["Their encryption specifications and the Signal protocol are openly accessible at https://signal.org/docs/"]
+notes = [
+  "Their encryption specifications and the Signal protocol are openly accessible at https://signal.org/docs/",
+  "You can view past audits on the Signal forum https://community.signalusers.org/t/overview-of-third-party-security-audits/13243"
+]
 
 [rubric.third-party-access]
 value = "yes-unspecified-critical"
