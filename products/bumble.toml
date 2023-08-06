@@ -1,0 +1,82 @@
+name = "Bumble"
+description = "Bumble is a location and interest based dating app to help users easily communicate."
+slug = "bumble"
+hostnames = [ "bumble.com" ]
+sources = [ "https://bumble.com/en/privacy" ]
+contributors = [ "kulchynska" ]
+
+[rubric.behavioral-marketing]
+value = "yes"
+citations = [
+  "We may use your Registration and other information to:\noffer you our services and features;\npersonalise the App and the content we deliver to you;\nconduct research and analytics about how you use and interact with the App;"
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "Bumble has implemented appropriate security measures to protect and prevent the loss, misuse, and alteration of the information under our control, including your personal data. Our technical experts at Bumble work hard to ensure your secure use of our site."
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "We use a third party provider for account verification who will keep your phone number for up to 90 days for fraud identification purposes across a range of online platforms and services like Bumble’s.\n\nWe may keep track of how you interact with links available on Bumble including third party services and clients by redirecting clicks or through other means. We may share aggregate click statistics such as how many times a particular link was clicked on."
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [ "This Privacy Policy was last updated on 20 May 2019." ]
+
+[rubric.data-deletion]
+value = "yes-automated"
+citations = [
+  "You may access or modify the Registration Information you provided at any time or permanently delete your Account"
+]
+
+[rubric.data-breaches]
+value = "no"
+citations = [
+  "WE EXPRESSLY DISCLAIM ANY REPRESENTATION OR WARRANTY, WHETHER EXPRESS OR IMPLIED, WITH RESPECT TO ANY BREACHES OF SECURITY, DAMAGE TO YOUR DEVICE, OR ANY LOSS OR UNAUTHORISED USE OF YOUR REGISTRATION INFORMATION OR OTHER DATA."
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = [
+  "If you have registered with Bumble using a third party social media platform, such as Facebook, your Bumble profile will be available to all Users of Bumble whether via our App or our partners' websites.\n\nRemember that when you register with a third party, you are also giving them personal information, so we recommend that you read their privacy policies as Bumble does not control how they use their information./\nService Providers - We engage certain trusted third parties to perform functions and provide services to us. We may share your Registration Information with these third parties, but only for the purposes of performing these functions and providing such services e.g. information technology companies (hardware and software) which provide services to support our products."
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "We may ask you to provide your full name, address and email address. Such details may be shared with third parties for purposes relating to, for example, any of our loyalty programs, sending gifts or delivery of merchandise.\nIf you decide to purchase any of our premium services, we will process your payment information and retain this securely for the prevention of fraud and for audit/tax purposes."
+]
+notes = [
+  "General explanations of data usage are disclosed in Additional Information section of the privacy policy \n Even more, there is a table where the purpose of each collection is described clearly, for example:\nTo provide you with the Bumble social networking service - Name, email address, date of birth, location - Contractual necessity by the model Purpose for which data is used - Data - Legal basis"
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-some"
+citations = [
+  "We explain in the relevant sections in this Policy how you can withdraw consent or opt-out of certain data uses (where applicable)."
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  " This may include preserving or disclosing any of your information, including your Registration Information, if we believe in good faith that it is necessary to comply with a law or regulation, or when we believe that disclosure is necessary to comply with a judicial proceeding, court order, or legal request; to protect the safety of any person; to address fraud, security or technical issues"
+]
+
+[rubric.list-collected]
+value = "exhaustively"
+citations = [
+  "2. USE OF INFORMATION.\nOur main goal is to ensure your experience on Bumble is an enjoyable one and you don't end up getting stung! In order to deliver an enjoyable experience to you, we may use your Registration and other information to:\n\noffer you our services and features;\ncontact you with information about the App (e.g., updates and new offerings);\npersonalise the App and the content we deliver to you;\nconduct research and analytics about how you use and interact with the App;\nresolve disputes between you and other Users; and\ninvestigate fraud, protect our legal rights, and to enforce our Terms & Condition"
+]
+notes = [
+  "In addition, the list of collected data is presented by the same table with explanations in paragraph 11"
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "f we make a change to this policy that, in our sole discretion, is material, we will notify you, for example, via an email to the email associated with your Account or by posting a notice within Bumble. "
+]

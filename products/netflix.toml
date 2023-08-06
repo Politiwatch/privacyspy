@@ -8,25 +8,25 @@ contributors = [ "kulchynska" ]
 [rubric.behavioral-marketing]
 value = "yes-opt-out"
 citations = [
-  "If you are using a browser, then cookies and web beacons can be used to collect information to help determine your likely interests. If you are using a mobile device, tablet, or streaming media device that includes a resettable device identifier, then that identifier can be used to help determine your likely interests\r\nTo opt out of interest-based ads from Netflix in connection with an resettable device identifier on a mobile device, tablet, or streaming media devices, please configure the appropriate setting on your device"
+  "If you are using a browser, then cookies and web beacons can be used to collect information to help determine your likely interests. If you are using a mobile device, tablet, or streaming media device that includes a resettable device identifier, then that identifier can be used to help determine your likely interests\nTo opt out of interest-based ads from Netflix in connection with an resettable device identifier on a mobile device, tablet, or streaming media devices, please configure the appropriate setting on your device"
 ]
 
 [rubric.security]
 value = "somewhat"
 citations = [
-  "Security\r\nWe use reasonable administrative, logical, physical and managerial measures to safeguard your personal information against loss, theft and unauthorized access, use and modification. These measures are designed to provide a level of security appropriate to the risks of processing your personal information."
+  "Security\nWe use reasonable administrative, logical, physical and managerial measures to safeguard your personal information against loss, theft and unauthorized access, use and modification. These measures are designed to provide a level of security appropriate to the risks of processing your personal information."
 ]
 
 [rubric.third-party-collection]
 value = "yes"
 citations = [
-  "We also obtain information from other sources \r\nservice providers that help us determine a location based on your IP address in order to customize our service and for other uses consistent with this Privacy Statement;\r\nonline and offline data providers, from which we obtain demographic,  interest based and online advertising related data;\r\n"
+  "We also obtain information from other sources \nservice providers that help us determine a location based on your IP address in order to customize our service and for other uses consistent with this Privacy Statement;\nonline and offline data providers, from which we obtain demographic,  interest based and online advertising related data;\n"
 ]
 
 [rubric.history]
 value = "yes"
 citations = [
-  "Last Updated: April 24, 2019\r\n\r\nTo see the prior version of this document, please go to www.netflix.com/privacyupdates."
+  "Last Updated: April 24, 2019\n\nTo see the prior version of this document, please go to www.netflix.com/privacyupdates."
 ]
 
 [rubric.data-deletion]
@@ -42,7 +42,7 @@ notes = [ "The policy does not specify a data breach protocol." ]
 [rubric.third-party-access]
 value = "yes-unspecified"
 citations = [
-  "We disclose your information for certain purposes and to third parties, as described below:\r\n\r\nThe Netflix family of companies: We share your information among the Netflix family of companies (https://help.netflix.com/support/2101)\r\nService Providers: We use other companies, agents or contractors (\"Service Providers\") to perform services on our behalf or to assist us with the provision of services to you. For example, we engage Service Providers to provide marketing, advertising, communications, infrastructure and IT services\r\n"
+  "We disclose your information for certain purposes and to third parties, as described below:\n\nThe Netflix family of companies: We share your information among the Netflix family of companies (https://help.netflix.com/support/2101)\nService Providers: We use other companies, agents or contractors (\"Service Providers\") to perform services on our behalf or to assist us with the provision of services to you. For example, we engage Service Providers to provide marketing, advertising, communications, infrastructure and IT services\n"
 ]
 
 [rubric.data-collection-reasoning]
@@ -54,7 +54,7 @@ citations = [
 [rubric.noncritical-purposes]
 value = "opt-out-some"
 citations = [
-  "Netflix can then choose whether or not to send a given promotional communication to you on that third party site or app. You can opt out in the “Marketing Communications” section of the “Account” section of our website.\r\n"
+  "Netflix can then choose whether or not to send a given promotional communication to you on that third party site or app. You can opt out in the “Marketing Communications” section of the “Account” section of our website.\n"
 ]
 notes = [
   "While Netflix allows opting out of (presumably personalized) marketing, they do not specify an opt-out system for all non-critical data (like advertising identifiers)."

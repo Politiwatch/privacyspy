@@ -1,0 +1,70 @@
+name = "fruux"
+description = "fruux is a cross-platform synchronization service."
+slug = "fruux"
+hostnames = [ "fruux.com" ]
+sources = [ "https://fruux.com/privacy/" ]
+contributors = [ "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+notes = [ "Your data isn't used for targeted advertising" ]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "We are committed to ensuring that your personal information is secure. In order to prevent against inadvertent or deliberate manipulation, loss or destruction and unauthorised access or disclosure, we have put in place suitable technical and managerial procedures to safeguard and secure any personal information that we collect online. Our security measures are constantly updated and improved in line with technological progress."
+]
+
+[rubric.third-party-collection]
+value = "no"
+notes = [ "No data is collected from third-parties" ]
+
+[rubric.history]
+value = "last-modified"
+citations = [ "This policy is effective from January 1, 2008." ]
+
+[rubric.data-deletion]
+value = "yes-contact"
+citations = [
+  "You may at any time make a request to inspect any data stored concerning your person, to amend or delete this data as well withdraw your consent for its further use. If you are a registered user of certain services provided by fruux then we may offer you the possibility of viewing this data online and even amending and deleting the data by yourself. You may request details of any personal information which we hold by you or make a demand for amendment and/or deletion. If you would like a copy of the information held on you, or if you have any further questions concerning the use of your personal data held by us, then please contact:\n\nprivacy (at) fruux (dot) com\nShould you communicate with us by email, please be aware of the fact that the content of unencrypted emails can be intercepted and read openly by either unintended or unauthorised parties. We therefore recommend for this very reason that confidential information is transmitted in encrypted form or sent by post in order to guarantee complete security."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "This policy doesn't require the service to disclose data breaches"
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified-critical"
+citations = [
+  "Additionally we use Google Analytics in order to track the usage of our website.\n[...]\nAny usage of your personal data is confined to the purposes as stated above and will only be undertaken to the extent necessary for these purposes.\n\nAny personal data will not be transferred to government bodies or public authorities with the exception of compliance with mandatory national legislation or if the transfer of such data is necessary in order to take any legal action in case of fraudulent access to our network infrastructure. Personal data will not be transferred to third parties for any other purpose.\n\nBy using our software/services, you give fruux the permissions that are needed to provide you with the software/services and the permissions that are necessary to provide you with certain features when you use them (for example, when you choose to create a public calendar). This permission also extends to trusted third parties that fruux works with in order to provide you with the software/services, for example Amazon Web software/servicess (AWS), which provides our technical infrastructure. This permission also includes our design and programming standards that administer our software/services (for example how backup your data to avoid data loss)."
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "The purpose of recording this data is to:\n\nallow use of the website (connection setup)\nmaintain overall system security\nallow technical administration of our network infrastructure\noptimise our internet services."
+]
+
+[rubric.noncritical-purposes]
+value = "na"
+notes = [ "Data isn't used for non-critical purposes" ]
+
+[rubric.law-enforcement]
+value = "strict"
+citations = [
+  "Any personal data will not be transferred to government bodies or public authorities with the exception of compliance with mandatory national legislation or if the transfer of such data is necessary in order to take any legal action in case of fraudulent access to our network infrastructure. Personal data will not be transferred to third parties for any other purpose."
+]
+
+[rubric.list-collected]
+value = "exhaustively"
+citations = [
+  "When you visit this website and/or use our software/services, our servers make a temporary record of each access and stores it in a log file. The following data is recorded and stored until it is automatically deleted:\n\nIP address of the requesting device\nDate and time of access\nName and URL of the file downloaded\nAmount of data transmitted\nAn indication whether the download was successful\nData identifying the browser and operating system\nThe website from which our site was accessed\nName of your ISP (internet service provider)"
+]
+
+[rubric.revision-notify]
+value = "no"
+citations = [
+  "By using our website and/or other services, you implicitly agree that your personal data will be used in accordance with the privacy policy stated above. As our servies evolve and new technologies come into use, it may become necessary for us to amend this privacy policy statement from time to time. We therefore recommend that you read the updated version of this policy regularly to ensure that you are informed of the latest changes."
+]

@@ -1,0 +1,6 @@
+name = "Office"
+description = "Microsoft Office is a suite of office-related software."
+slug = "office"
+hostnames = [ "office.com" ]
+contributors = [ "UnKnOwN" ]
+parent = "microsoft"

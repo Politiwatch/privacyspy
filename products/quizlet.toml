@@ -1,0 +1,87 @@
+name = "Quizlet"
+description = "Quizlet is a website proving learning services such as flashcards, games and tests."
+slug = "quizlet"
+hostnames = [ "quizlet.com" ]
+sources = [ "https://quizlet.com/privacy" ]
+contributors = [ "UnKnOwN" ]
+
+[rubric.behavioral-marketing]
+value = "yes-opt-out"
+citations = [
+  "Quizlet and our third-party advertising partners may serve advertisements when you visit our website. In order to provide advertisements about goods and services of interest to you, Quizlet and our third-party advertising partners may use information collected from you, or from devices associated with you (not including your name, address, email address or telephone number), and your visits to this and other websites to show you more relevant ads. [...] Quizlet does not provide any personally-identifying information to advertisers."
+]
+notes = [
+  "The Quizlet also provide an opt-out of targeted-advertisement option."
+]
+
+[rubric.security]
+value = "yes"
+citations = [
+  "The security of your personal information is important to us and Quizlet takes all measures reasonably necessary to protect against the unauthorized access, use, alteration or destruction of personal information.\n\nWe follow generally accepted industry standards to protect the personal information submitted to us, both during transmission and once we receive it. For example, our website and apps are protected by HTTPS encryption and when you enter credit card information on our order forms, that information is encrypted and protected by our third-party payment providers. We also maintain a robust security program including third-party testing and a bug bounty program. If you have any questions about security on our website, you can contact us at security@quizlet.com."
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "We also collect some information from other sources and combine that with information we collect from you. [...] The information we collect about you from third parties includes: Facebook connect and Google login [...], [information received from] other users, [...] other partners and companies."
+]
+
+[rubric.history]
+value = "no"
+notes = [
+  "Nothing is mentioned about policy's history in the privacy policy."
+]
+
+[rubric.data-deletion]
+value = "yes-automated"
+citations = [
+  "You remain in control of the information you provide to Quizlet. You may review, edit or delete any information you submit to us at any time by signing into your Quizlet account. [...] When you delete or update your account or information, we first aim to immediately remove that data from view. We then begin the process of securely and safely deleting your personal information from our systems. We design our systems to protect information from accidental or malicious destruction, so to ensure a safe and thorough removal process, we may not immediately delete residual copies from our active servers and may not remove some information from our backup systems. "
+]
+notes = [
+  "Deletion of the data from your account means deletion from data servers in some period of time. "
+]
+
+[rubric.data-breaches]
+value = "eventually"
+citations = [
+  "If we know or have reason to know of a systems security breach by an unauthorized party of your user data where that data is being or is likely to be used for an unauthorized purpose, we will promptly notify you so that you can take appropriate steps."
+]
+notes = [
+  "The amount of time after which a user will be notified of the data breach is not specified. "
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = [
+  "We [Quizlet] can use third-party service providers to provide site metrics and other analytics services. These third parties can use technologies discussed below, such as cookies, web beacons, and other technologies, to collect information, such as your IP address, identifiers associated with your device, other applications on your device, the browsers you use to access the Service, the pages viewed, how much time you spend on a page or Quizlet overall, links you clicked, and activity information (for example, study sessions you have completed)."
+]
+
+[rubric.data-collection-reasoning]
+value = "mostly"
+notes = [
+  "The service explicitly explains the purposes for data collecting, however, not all data types are accompanied by a clear explanation. "
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-some"
+notes = [
+  "You can opt-out of email receiving and targeted marketing, but your information can still be used for other non-critical purposes (for example analytics)."
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "To respond to legal and other requests and to prevent harm\nQuizlet will share personal information with companies, organizations or individuals outside of Quizlet if we have a good-faith belief that access, use, preservation or disclosure of the information is reasonably necessary to:\n\nRespond to or meet any applicable law, regulation, legal process or other enforceable governmental request. "
+]
+
+[rubric.list-collected]
+value = "generally"
+notes = [
+  "The service explains the personal data it collects generally well, however some \"such as\" phrases are used (for example in explaining device-specific information) which make statements not absolute."
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "Quizlet reserves the right to modify this Privacy Notice at any time, so please review it frequently. If we materially change how we use your personal information, we will notify, by email, and/or by means of a notice on our website prior to the change becoming effective. "
+]

@@ -1,0 +1,6 @@
+name = "Google Analytics"
+description = "Google Analytics is a popular web analytics service by Google."
+hostnames = ["analytics.google.com", "google-analytics.com"]
+slug = "google-analytics"
+parent = "google"
+contributors = ["ibarakaiev"]

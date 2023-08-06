@@ -1,0 +1,79 @@
+name = "Qwant"
+description = "Qwant is a French web search engine."
+slug = "qwant"
+hostnames = [
+  "qwant.com",
+  "about.qwant.com",
+  "qwantjunior.com",
+  "boards.qwant.com"
+]
+sources = [ "https://about.qwant.com/legal/privacy/" ]
+contributors = [ "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+citations = [
+  "Therefore, every ad that Qwant displays fully adheres to the values we defend and our quality standards.\nWhen you use Qwant, no personal information whatsoever is neither captured or transmitted to advertisers.\nIn details:\n– No third party cookies\n– No trackers\n– No behavioral targeting\n– No campaigns mixing legit and promotional content (native advertising)"
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "We should always ask our search engine what are the personal data that it does not collect 🙂\n\nTo the maximum of its possibilities and the state of art, Qwant anonymizes the data it needs to collect to deliver its services.\n\nWhen you use Qwant as a search engine, we don’t put any cookie on your browser that may allow us or others to recognize you or to follow you everywhere on the Internet. We don’t use any tracking device (pixel, fingerprinting…). We don’t collect and we don’t store any history or your searches. When you enter a search query, it is immediately anonymized following the processes detailed below. Long story short, what you are doing with Qwant is part of your privacy and we don’t want to know.\n\nQwant has a Privacy office dedicated to the protection of your privacy. It also has a Data Protection Officer (DPO). Both work closely with each other to ensure that the relevant regulation regarding personal data is applied as strongly as it should.\n\nThe DPO keeps an updated register of all processing of personal data made by Qwant for its services. For instance, when you create an account on the site, you can choose to fill in your profile and this is a processing of personal data for which the register will say how data may be kept (and how long), and who can access it.\n\nWe commit to do anything we can to ensure the security and confidentiality of our users personal data, including by preventing data damage, loss, or access by unauthorized third parties. Qwant’s URL has the HTTPS header that shows users they communicate with Qwant through a secure channel using the TLS protocol. Technically, TLS ensures users that their data can’t be intercepted by fraud. Moreover, the green lock that you see on most browsers when using Qwant certifies that you are browsing a secure website."
+]
+
+[rubric.third-party-collection]
+value = "critical-only"
+citations = [
+  "When Qwant requires Microsoft to transmit ads that match the entered keywords, Qwant anonymizes the required data and therefore only transmits to Microsoft the entered keywords with the User Agent of your browser (that is the type of browser that you use and its version), as well as a salted hash generated from a fraction of your IP address (last octet truncated) and the User Agent. An approximative geographic area of the origin of the search query, to the scale of a region or a city, is sent in order to deliver ads that are more locally relevant (for instance if you search for a plumber)."
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [ "Last update : 21/02/2020" ]
+
+[rubric.data-deletion]
+value = "yes-automated"
+citations = [
+  "Even when you are connected with an ID, we don’t use any cookie nor any other tracking device when you browse the site. The only technology that may be installed on your browser, called “local storage”, is used to locally save your settings (language, activation or deactivation of options…). You can delete personal data stored in your “local storage” by deactivating cookies in your browser. However, this deactivation may prevent you from accessing some functionalities of the site, such as your browsing preferences.\n\nFor data of your Qwant account, your data will be deleted after 7 days from the day you delete your account. During this time, you have the possibility to reactivate your account by using your identifier and password.\n\nRegarding data collected for the processing of information requests, Qwant deletes them within 6 months after the receipt of the request."
+]
+
+[rubric.data-breaches]
+value = "na"
+notes = [
+  "Without an account, you can't get notified. If you do have an account, it is unclear."
+]
+
+[rubric.third-party-access]
+value = "no"
+citations = [
+  "Some data are transmitted after anonymization to third party advertising partners, for click fraud and abuses detection, the detection of automated systems (bots), and the selection of local ads at the scale of a region or a region (see below)."
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "Qwant does not require any registration to use its search engine. However, you may want to register an account to sign-in and enjoy advanced functionalities.\n\nIn such cases, we collect some personal data such as your name, firstname and email address:\n\n- when you register to our services. You are free to manage yourself all the information related to your account (information changes, corrections, updates and deletion);\n- or when you use forms available on our website, so that Qwant can process your request.\nQwant also collects connection data, not associated with your search queries, only to ensure the security of its information system and, if you create or modify Boards, to respect the obligation to identify content creators mandated by law.\n\nEven when you are connected with an ID, we don’t use any cookie nor any other tracking device when you browse the site. The only technology that may be installed on your browser, called “local storage”, is used to locally save your settings (language, activation or deactivation of options…). You can delete personal data stored in your “local storage” by deactivating cookies in your browser. However, this deactivation may prevent you from accessing some functionalities of the site, such as your browsing preferences.\n\nUsers personal data are collected and processed by Qwant solely for the following purposes:\n\n- the technical management of the user’s account(s) and available services, in accordance with our Terms of Use,  on the basis of article 6.1.b of the GDPR (processing that is necessary for the execution of the contract between you and us);;\n- the management of information requests, in the context of the use of the services, on the basis for article 6.1.b of the GDPR (processing that is necessary for the execution of the Terms of Use, which are a contract between you and us);;\n- the management of job applications, in the context of Qwant’s recruitement processes, on the basis of article 6.1.f of the GDPR (our legitimate interest, with respect to your fundamental rights and freedoms, to process your job applications);\n- the management of delisting requests, requests related to rights regarding personal data, and content removal requests, in the context of the compliance by Qwant of its legal obligations, on the basis of article 6.1.c of the GDPR (necessity to comply with legal requirements);\n- the security of Qwant’s information system, in the context of the management of the security and smooth operation of the services, including by detecting fraudulent clicks on ads and automated abusive search queries, on the basis of article 6.1.F of the GDPR (our legitimate interest to secure our services and detect anomalies in their use);\n- the indexing of the Web and the presentation of the results associated to the keywords entered by the user, on the basis of article 6.1.b of the GDPR (processing that is necessary for the execution of the Terms of Use, which are a contract between you and us).\n"
+]
+
+[rubric.noncritical-purposes]
+value = "na"
+notes = [ "No data is used for other than critical purposes." ]
+
+[rubric.law-enforcement]
+value = "na"
+notes = [
+  "Qwant does not collect enough information to warrant (without an account). Otherwise, with an account, it can be inferred as \"Not specified.\""
+]
+
+[rubric.list-collected]
+value = "exhaustively"
+citations = [
+  "Qwant does not require any registration to use its search engine. However, you may want to register an account to sign-in and enjoy advanced functionalities.\n\nIn such cases, we collect some personal data such as your name, firstname and email address:\n\n- when you register to our services. You are free to manage yourself all the information related to your account (information changes, corrections, updates and deletion);\n- or when you use forms available on our website, so that Qwant can process your request.\nQwant also collects connection data, not associated with your search queries, only to ensure the security of its information system and, if you create or modify Boards, to respect the obligation to identify content creators mandated by law."
+]
+
+[rubric.revision-notify]
+value = "na"
+notes = [
+  "No contact information is collected that can allow such (without an account). With an account, it is unclear and can be inferred as \"No.\""
+]

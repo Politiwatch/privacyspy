@@ -1,0 +1,6 @@
+name = "LastPass"
+description = "LastPass is a password manager that stores encrypted passwords online from LogMeIn, Inc."
+hostnames = ["lastpass.com"]
+slug = "lastpass"
+parent = "logmein"
+contributors = [ "AlexThurman", "doamatto" ]

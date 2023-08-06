@@ -1,0 +1,75 @@
+name = "Disroot"
+description = "Disroot provides a range of online, open-source, collaboration and productivity tools, including email and cloud storage."
+slug = "disroot"
+hostnames = [ "disroot.org" ]
+sources = [ "https://disroot.org/en/privacy_policy" ]
+contributors = [ "jacktheripper" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+citations = [
+  "We do not in any way process, analyze your behavior or personal characteristics (profiling). We have no advertisements or business relationships with advertisers."
+]
+
+[rubric.security]
+value = "yes"
+citations = [
+  "\n\nWe use disk encryption on all data to prevent data leak in cases where servers are stolen, confiscated, or in any way physically tampered with.\nWe provide and require SSL/TLS encryption on all provided services."
+]
+
+[rubric.third-party-collection]
+value = "no"
+notes = [
+  "No where in the policy are any third parties listed as data sources."
+]
+
+[rubric.history]
+value = "yes"
+citations = [ "You can follow the history of changes on this document on our version control system [here](https://git.disroot.org/Disroot/Disroot-Privacy-Policy/commits/branch/master)." ]
+
+[rubric.data-deletion]
+value = "yes-automated"
+citations = [
+  "You have the right to request from us access to and rectification or erasure of your personal data"
+]
+notes = [
+  "From the FAQ (https://disroot.org/en/faq):\nTo delete your Disroot account log in to https://user.disroot.org and select 'Delete My Account'.\n\nAccounts and their data are wiped on daily."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [ "Not specified." ]
+
+[rubric.third-party-access]
+value = "yes-unspecified-critical"
+citations = [
+  "We do not share nor sell your data to third party unless in case of network inter-operatable (federated) services require certain data to operate (eg. other email service provider needs to know your email address to be able to deliver emails)."
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "\"We require a username and password to identify the account holder and provide the services offered by Disroot.org\"\n\"Our processing of your information is limited to storing it for you to use.\"\n\" This data is used to help diagnose software issues, maintain security of the system against intrusion, and monitor the health of the platform.\""
+]
+
+[rubric.noncritical-purposes]
+value = "na"
+citations = [
+  "\"We do not collect any data other then what is needed to provide you the service.\"\n\"We do not require any additional information that is not crucial for operation of the service (we do not ask for additional email addresses, phone numbers)\""
+]
+
+[rubric.law-enforcement]
+value = "unspecified"
+notes = [ "Not specified anywhere on the policy." ]
+
+[rubric.list-collected]
+value = "exhaustively"
+citations = [
+  "\"We require a username and password to identify the account holder and provide the services offered by Disroot.org All additional information you supply on any of the services provided by Disroot.org are optional.\"\n\"We store logs of your activity for period no longer then 24h (unless specified otherwise per service).\""
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "We reserve the right to change any of the points. All changes will be publicly available and will be communicated to all users via the forum, Diaspora, Mastodon and Blog. Major changes to Privacy Policy will be sent additionally via email to all users."
+]

@@ -8,13 +8,13 @@ contributors = [ "owlswipe" ]
 [rubric.behavioral-marketing]
 value = "no"
 citations = [
-  "We Limit Use of Your Personal Data:\r\n\r\n- To providing, maintaining and improving our Services;\r\n\r\n- To communicating with you about new and existing Services;\r\n\r\n- To protect the legal rights, property and safety of our Services and users.\r\n\r\n....\r\n\r\nCalifornia law allows California residents to request information about personal data we disclose to third parties for direct marketing purposes. However, Privacy.com does not disclose personal data to third parties for direct marketing purposes."
+  "We Limit Use of Your Personal Data:\n\n- To providing, maintaining and improving our Services;\n\n- To communicating with you about new and existing Services;\n\n- To protect the legal rights, property and safety of our Services and users.\n\n....\n\nCalifornia law allows California residents to request information about personal data we disclose to third parties for direct marketing purposes. However, Privacy.com does not disclose personal data to third parties for direct marketing purposes."
 ]
 
 [rubric.security]
 value = "yes"
 citations = [
-  "We take reasonable measures, including administrative, technical and physical safeguards to help protect your personal data from loss, theft, misuse, unauthorized access, disclosure, alteration and destruction.\r\n\r\nWe maintain strict security standards and procedures with a view to preventing unauthorized access to your data by anyone, including our staff. We use leading technologies such as (but not limited to) data encryption, firewalls and server authentication to protect the security of your data. Our staff and third parties whenever we hire them to provide support services, are required to observe our privacy standards and to allow us to audit them for compliance."
+  "We take reasonable measures, including administrative, technical and physical safeguards to help protect your personal data from loss, theft, misuse, unauthorized access, disclosure, alteration and destruction.\n\nWe maintain strict security standards and procedures with a view to preventing unauthorized access to your data by anyone, including our staff. We use leading technologies such as (but not limited to) data encryption, firewalls and server authentication to protect the security of your data. Our staff and third parties whenever we hire them to provide support services, are required to observe our privacy standards and to allow us to audit them for compliance."
 ]
 
 [rubric.third-party-collection]
@@ -42,13 +42,13 @@ notes = [
 [rubric.third-party-access]
 value = "yes-unspecified-critical"
 citations = [
-  "We Share Personal Data Under Controlled Circumstances:\r\n\r\n- With third parties, within the United States and in other countries, who may access data about you to perform functions on our behalf;\r\n\r\n- With financial institutions, processors, payment card associations and other entities that are involved in the payment process;\r\n\r\n- With government and law enforcement where reasonably necessary to comply with applicable law, regulation, legal process, governmental request;\r\n\r\n- With others where reasonably necessary to protect the security or integrity of our Services or user safety;\r\n\r\n- In Connection with, or during the negotiation of, any merger, sale of company stock or assets, financing, acquisition, divestiture or dissolution of all or a portion of our business;\r\n\r\n- With your consent.\r\n\r\nWe may share data that is not personally identifiable with third parties."
+  "We Share Personal Data Under Controlled Circumstances:\n\n- With third parties, within the United States and in other countries, who may access data about you to perform functions on our behalf;\n\n- With financial institutions, processors, payment card associations and other entities that are involved in the payment process;\n\n- With government and law enforcement where reasonably necessary to comply with applicable law, regulation, legal process, governmental request;\n\n- With others where reasonably necessary to protect the security or integrity of our Services or user safety;\n\n- In Connection with, or during the negotiation of, any merger, sale of company stock or assets, financing, acquisition, divestiture or dissolution of all or a portion of our business;\n\n- With your consent.\n\nWe may share data that is not personally identifiable with third parties."
 ]
 
 [rubric.data-collection-reasoning]
 value = "mostly"
 citations = [
-  "We Limit Use of Your Personal Data:\r\n\r\n- To providing, maintaining and improving our Services;\r\n\r\n- To communicating with you about new and existing Services;\r\n\r\n- To protect the legal rights, property and safety of our Services and users."
+  "We Limit Use of Your Personal Data:\n\n- To providing, maintaining and improving our Services;\n\n- To communicating with you about new and existing Services;\n\n- To protect the legal rights, property and safety of our Services and users."
 ]
 notes = [
   "The Privacy Policy makes clear that the data collected is necessary to connect with users' bank account and facilitate payments, as well as prevent fraud and misuse. However, it does not outline why all data collected is important, such as Device Data (hardware model, device identifiers, etc.)."
@@ -63,13 +63,13 @@ notes = [
 [rubric.law-enforcement]
 value = "reasonable"
 citations = [
-  "We Share Personal Data Under Controlled Circumstances:\r\n\r\n...\r\n\r\n- With government and law enforcement where reasonably necessary to comply with applicable law, regulation, legal process, governmental request;"
+  "We Share Personal Data Under Controlled Circumstances:\n\n...\n\n- With government and law enforcement where reasonably necessary to comply with applicable law, regulation, legal process, governmental request;"
 ]
 
 [rubric.list-collected]
 value = "generally"
 citations = [
-  "We Collect and Use Data:\r\nData You Provide:\r\nYour name, email address, phone number, birth date, last four digits of social security number, payment card and bank information as well as other information you may be asked to provide when signing-up for an account, providing identity verification or engaging in a transaction.\r\n\r\n\r\nOther Data:\r\n\r\n- Transaction Data: when, where and how a transaction takes place including, but not limited to, the devices and payment methods used;\r\n\r\n- Device Data: hardware model, operating system, unique device identifiers, mobile network data as well as other data generated by a device's interaction with our Services;\r\n\r\n- Location Data: to prevent fraudulent use of our Services;\r\n\r\n- User Data: browser data, Internet Protocol (\"IP\") addresses and other data describing user engagement;\r\n\r\n- Cookies: small data files we may store on your computer or mobile device memory to help us manage your engagement with our Services, including gathering aggregated data about engagement;\r\n\r\n- Beacons: small electronic images we may use in our Services and emails to deliver cookies and measure user engagement."
+  "We Collect and Use Data:\nData You Provide:\nYour name, email address, phone number, birth date, last four digits of social security number, payment card and bank information as well as other information you may be asked to provide when signing-up for an account, providing identity verification or engaging in a transaction.\n\n\nOther Data:\n\n- Transaction Data: when, where and how a transaction takes place including, but not limited to, the devices and payment methods used;\n\n- Device Data: hardware model, operating system, unique device identifiers, mobile network data as well as other data generated by a device's interaction with our Services;\n\n- Location Data: to prevent fraudulent use of our Services;\n\n- User Data: browser data, Internet Protocol (\"IP\") addresses and other data describing user engagement;\n\n- Cookies: small data files we may store on your computer or mobile device memory to help us manage your engagement with our Services, including gathering aggregated data about engagement;\n\n- Beacons: small electronic images we may use in our Services and emails to deliver cookies and measure user engagement."
 ]
 
 [rubric.revision-notify]

@@ -1,0 +1,81 @@
+name = "Grammarly"
+description = "Grammarly is a service providing writing services that help to improve grammar."
+slug = "grammarly"
+hostnames = [ "grammarly.com" ]
+sources = [ "https://grammarly.com/privacy-policy" ]
+contributors = [ "elijahpepe" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+citations = [
+  "Grammarly does not share your Personal Data with third parties for the purpose of enabling them to deliver their advertisements to you."
+]
+
+[rubric.security]
+value = "yes"
+citations = [
+  "Grammarly is committed to protecting the security of your Information and takes reasonable precautions to protect it. However, internet data transmissions, whether wired or wireless, cannot be guaranteed to be 100% secure, and as a result, we cannot ensure the security of Information you transmit to us, including Personal Data and User Content; accordingly, you acknowledge that you do so at your own risk. We use industry-standard encryption to protect your data in transit and at rest."
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "We may collect information about you from third parties, such as marketing partners and researchers, where they are legally allowed to share your Information with us. We may combine the Information we receive from other sources with Information we collect from you (or your device) and use it as described in this Privacy Policy."
+]
+
+[rubric.history]
+value = "yes"
+citations = [
+  "We will notify you of any material changes that impact your rights under this Policy by email (to your most recently provided email address) or post any other revisions to this Policy, along with their effective date, in an easy-to-find area of the Site, so we recommend that you periodically check back here to stay informed of any changes."
+]
+
+[rubric.data-deletion]
+value = "yes-automated"
+citations = [
+  "You can remove your Personal Data from Grammarly at any time by logging into your account, accessing the Settings page, and then deleting your account."
+]
+
+[rubric.data-breaches]
+value = "eventually"
+citations = [
+  "If Grammarly learns of a security system breach, we may attempt to notify you and provide information on protective steps, if available, through the email address that you have provided to us or by posting a notice on the Site. Depending on where you live, you may have a legal right to receive such notices in writing."
+]
+notes = [
+  "Grammarly does not state when it notifies, or if in some cases, users of data breaches."
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = [
+  "We only disclose Personal Data to third parties when we use service providers who assist us in meeting business operations needs, including hosting, delivering, and improving our Services. [...] We may disclose Non-Personal Data publicly and to third parties—for example, in public reports about word usage, to partners under agreement with us, or as part of progress reports we may provide to users."
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "We also use service providers for specific services and functions, including email communication, customer support services, and analytics. These service providers may only access, process, or store Personal Data pursuant to our instructions and to perform their duties to us, we have your explicit consent to share your Personal Data, we believe it is necessary to investigate potential violations of the Terms of Service, to enforce those Terms of Service, or to investigate, prevent, or take action regarding illegal activities, suspected fraud, or potential threats against persons, property, or the systems on which we operate our Site, Software, and/or Services, we determine that the access, preservation, or disclosure of your Personal Data is required by law to protect the rights, property, or personal safety of Grammarly and users of our Site, Software, and/or Services, or to respond to lawful requests by public authorities, including national security or law enforcement requests, or we need to do so in connection with a merger, acquisition, bankruptcy, reorganization, sale of some or all of our assets or stock, public offering of securities, or steps in consideration of such activities (e.g., due diligence). In these cases some or all of your Personal Data may be shared with or transferred to another entity, subject to this Privacy Policy."
+]
+
+[rubric.noncritical-purposes]
+value = "no"
+notes = [
+  "Only emails can be opted-out of."
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "[...] we determine that the access, preservation, or disclosure of your Personal Data is required by law to protect the rights, property, or personal safety of Grammarly and users of our Site, Software, and/or Services, or to respond to lawful requests by public authorities, including national security or law enforcement requests."
+]
+
+[rubric.list-collected]
+value = "generally"
+notes = [
+  "Grammarly explains automatically collected information, as well as provided information well, but uses may when describing log data. Data collected includes location information, names of user contacts while using Grammarly Keyboard, user content, usage information, device information, log data containing browser information, and cookies."
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "We will notify you of any material changes that impact your rights under this Policy by email (to your most recently provided email address) or post any other revisions to this Policy, along with their effective date, in an easy-to-find area of the Site, so we recommend that you periodically check back here to stay informed of any changes."
+]

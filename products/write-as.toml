@@ -1,0 +1,76 @@
+name = "Write.as"
+description = "Write.as is an open-source online blog publishing platform."
+slug = "write-as"
+hostnames = ["write.as", "snap.as", "submit.as"]
+sources = ["https://write.as/privacy"]
+contributors = ["doamatto"]
+
+[rubric.behavioral-marketing]
+value = "no"
+citations = [
+  "We will never share your data for advertising, marketing, or world domination purposes. We will never change our stance on this."
+]
+
+[rubric.security]
+value = "na"
+notes = ["A user can opt to signup without an email address."]
+
+[rubric.third-party-collection]
+value = "no"
+notes = ["This service doesn't request any data from third parties."]
+
+[rubric.history]
+value = "last-modified"
+citations = ["Last updated December 15, 2017"]
+
+[rubric.data-deletion]
+value = "yes-contact"
+notes = [
+  "On \"guides.write.as,\" it informs the user to email them at \"hello@write.as\" or the other methods at https://write.as/contact"
+]
+
+[rubric.data-breaches]
+value = "na"
+notes = [
+  "The service does not collect contact information. If a user does opt to provide an email address, it is unclear if they will get breach notifications."
+]
+
+[rubric.third-party-access]
+value = "no"
+citations = [
+  "We will never share your data for advertising, marketing, or world domination purposes. We will never change our stance on this."
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "Account Data\nWe ask you to provide a password and/or email address when you create an account with us, so that you can log into your account again in the future. We store this information for as long as your account is active. We only use your email address to send you a link to log in with whenever you request it.\n\nAs a paying user, we also store small pieces of your payment information so you can see how you're paying for Write.as. This includes the last 4 digits of your credit card number and its expiration date. We never see, nor store, your name, credit card number, or related information (it's only handled by Stripe, our payment processor).\n\nWe protect your personally identifying information with encryption. We salt and hash your passwords (that is, encrypt them without a way to decrypt them) and encrypt any identifying information in our database, like your email address.\n\nLog Files\nWe store log files, or data about what happens on our servers. This helps us prevent abuse and ensure no one is accessing our servers that shouldn't be.\n\nOur web servers temporarily store information about what IP address connected when. This data is accessed exclusively by our system administrators and developers as needed, and is permanently deleted after seven (7) days.\n\nIf you email or otherwise contact us, our customer support team may retain information you'd find in an email, like first and last name, email address, and any online handles. This data is accessed exclusively by customer support and developers as needed, and helps us provide support, fix things, and generally talk directly to you. In the rare case we need to know your Write.as username, we delete its association with your identifying information as soon as we're done talking.\n\nVisitor Statistics\nWe use an open-source application, called Matomo (formerly Piwik), to analyze visitor statistics. Using Matomo ensures that this data never leaves our servers, and big analytics companies like Google never see your data. It enables us to improve our product while still protecting your identity and data.\n\nOur business team and developers use Matomo to see where visitors come from, how they navigate around the site, and where they potentially get stuck. We often make small improvements to the site simply from seeing this high-level, anonymous data.\n\nMatomo uses cookies, or small text files saved on your computer, but it also respects your browser's Do Not Track (DNT) setting. "
+]
+
+[rubric.noncritical-purposes]
+value = "na"
+citations = [
+  "Matomo uses cookies, or small text files saved on your computer, but it also respects your browser's Do Not Track (DNT) setting."
+]
+notes = [
+  "Matomo does not collect PII, meaning no data is used for non-critical purposes. This data is also used purely for improving Write.as"
+]
+
+[rubric.law-enforcement]
+value = "strict"
+citations = [
+  "Access to our servers requires a valid search warrant signed by a judge. We will comply with lawful orders for the small amount of personal data we have on our users, but we (and our lawyers) will critically review every request we get, and promise to reject requests with insufficient legal backing.\n\nWe publish a quarterly warrant canary to notify users of any secret warrants we receive."
+]
+notes = ["You can view their warrant canary at https://write.as/canary.txt"]
+
+[rubric.list-collected]
+value = "generally"
+notes = [
+  "The policy provides an overview of the data it collects, but uses language like 'such as' to avoid making concrete claims."
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "We'll announce any major changes to this policy on our Twitter account. You should also see a prominent notification on the site the next time we update this."
+]

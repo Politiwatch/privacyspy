@@ -1,0 +1,79 @@
+name = "NordVPN"
+description = "NordVPN is a Panama-based VPN provider."
+slug = "nordvpn"
+hostnames = [ "nordvpn.com" ]
+sources = [ "https://nordvpn.com/privacy-policy/" ]
+contributors = [ "jacktheripper" ]
+
+[rubric.behavioral-marketing]
+value = "yes-opt-in"
+citations = [
+  "NordVPN may process your personal data (email address) for direct marketing purposes in the following cases: when we obtain your consent to such processing (the legal basis for processing, in this case, is your consent)"
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "In order to ensure security of the personal data, NordVPN employs various administrative, technical and physical security measures"
+]
+notes = [
+  "The policy is very vague about this, but an independent audit was conducted: https://nordvpn.com/blog/nordvpn-audit/"
+]
+
+[rubric.third-party-collection]
+value = "no"
+notes = [
+  "Nowhere in the policy are any third parties listed as data sources."
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [
+  "The date of the most current wording of the Privacy Policy is indicated at the top of the text"
+]
+
+[rubric.data-deletion]
+value = "yes-contact"
+citations = [
+  "You may request us to discontinue processing of your personal data, in which case your data will be processed only as much as it is necessary to effect the discontinuation of your use of the NordVPN Services (e.g., final settlement, or deleting all personal data based on your email address), or finalizing other NordVPN’s legal relationship with you (e.g. accounting, invoicing, processing refunds).\n\nDue to technical reasons (such as backup copies of the databases) your personal data may be finally deleted only within 60 days or longer, if it is mandated by the statutory requirements."
+]
+
+[rubric.data-breaches]
+value = "no"
+citations = [ "This is not specified in the policy" ]
+
+[rubric.third-party-access]
+value = "yes-unspecified-critical"
+citations = [
+  "NordVPN uses third party data processors only for processing of payment data, emailing service and basic website and app analytics."
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "If you choose to create a user account, you must provide the following basic information:\n\n    Email address. We ask for your email address as part of your registration. That ensures that we can communicate with you when we have any exciting announcements to make, service updates to advise or errors to report. Valid email address is also needed to retrieve a lost password and to make a VPN connection.\n    Payment data. In addition to the conventional payment methods, such as credit card, users can buy NordVPN service with cryptocurrency. Our payment processing partners process basic billing information for payment processing and refund requests."
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-some"
+citations = [
+  "You can set up warnings for every time the Site places a cookie in your browser, or you can choose to disable all cookies. You can do both through your browser settings. Since each browser has a different procedure for managing cookies, look at your browser’s Help Menu to learn the correct way to do it.\n\nAlternatively, you can disable all cookies by visiting the Network Advertising Initiative Opt Out page or by using the Google Analytics Opt Out Browser add-on. Please note that choosing to disable cookies may negatively affect some of the features that make your Site experience more efficient."
+]
+
+[rubric.law-enforcement]
+value = "na"
+citations = [
+  "Further, NordVPN have a strict no logs policy when it comes to seeing user activity online: NordVPN is based in Panama, which does not require data storage."
+]
+
+[rubric.list-collected]
+value = "exhaustively"
+citations = [
+  "If you choose to create a user account, you must provide the following basic information:\n\n    Email address. We ask for your email address as part of your registration. That ensures that we can communicate with you when we have any exciting announcements to make, service updates to advise or errors to report. Valid email address is also needed to retrieve a lost password and to make a VPN connection.\n    Payment data. In addition to the conventional payment methods, such as credit card, users can buy NordVPN service with cryptocurrency. Our payment processing partners process basic billing information for payment processing and refund requests."
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "The amendment of the Privacy Policy may be communicated to you by sending an email and/or by publishing the updated Privacy Policy on the NordVPN website"
+]

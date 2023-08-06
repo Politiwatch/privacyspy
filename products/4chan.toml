@@ -1,0 +1,67 @@
+name = "4chan"
+description = "4chan is an anonymous imageboard where anyone can post comments and share images and forum content."
+slug = "4chan"
+hostnames = [ "4chan.org" ]
+sources = [ "https://www.4chan.org/faq#personalinfo" ]
+contributors = [ "jacktheripper" ]
+
+[rubric.behavioral-marketing]
+value = "yes"
+notes = [
+  "The policy doesn't specify this, but there are Google ads and trackers on the website."
+]
+
+[rubric.security]
+value = "no"
+notes = [
+  "The policy provides information about the hardware and the software used to run the website, but nothing specific about security."
+]
+
+[rubric.third-party-collection]
+value = "no"
+notes = [
+  "Nowhere in the policy are any third parties listed as data sources."
+]
+
+[rubric.history]
+value = "no"
+notes = [ "There isn't any way to access the history of the policy." ]
+
+[rubric.data-deletion]
+value = "yes-automated"
+citations = [
+  "Once a post is pruned or deleted, it is removed from our web server."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [ "This isn't specified in the policy." ]
+
+[rubric.third-party-access]
+value = "no"
+citations = [
+  "We value the privacy of our users, and will not make private information such as IP addresses available to others"
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [ "4chan collects and stores user information for postings. " ]
+
+[rubric.noncritical-purposes]
+value = "na"
+notes = [
+  "The policy states that only the data necessary for posting is collected."
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "We value the privacy of our users, and will not make private information such as IP addresses available to others, except to comply with court orders or to cooperate with law enforcement agencies when appropriate."
+]
+[rubric.list-collected]
+value = "summarily"
+citations = [ "4chan collects and stores user information for postings." ]
+
+[rubric.revision-notify]
+value = "na"
+notes = [ "4chan doesn't have any way to contact its users" ]

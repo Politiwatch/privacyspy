@@ -1,0 +1,75 @@
+name = "Stilt"
+description = "Stilt is a bank focusing on providing credit to immigrants and the underserved."
+slug = "stilt"
+hostnames = [ "stilt.com" ]
+sources = [ "https://www.stilt.com/privacy-policy" ]
+contributors = [ "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "yes"
+citations = [
+  "Advertisers may use cookies on our site to collect information similar to the information we collect, and target ads to you based on information you included in your profile. We may also use remarketing to advertise to visitors who haven’t completed a task, such as completing their loan application."
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "Stilt takes your privacy and security seriously. We have enabled HTTPS access to our site, in addition to SSL technology, and your login information of your financial accounts is not accessible to anyone at Stilt. This data is stored offsite. Additionally, there are a number of precautions you can take to protect the security of your computer, including selecting a strong Stilt password and not sharing it with anyone. Stilt takes steps to safeguard your personal information through vigorous physical, electronic, and operational policies and practices:\n- Session Time-outs;\n- Protection of Account Numbers;\n- Secure, Off-Site Hosting;\n- Defined Service Access points;\n- [SSL] certificate technology;\n- Data encryption\n- Network firewalls"
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "We and/or our service providers may also collect information that is about you. We and/or our service providers may use this aggregated information in the administration of our Site to improve its usability, evaluate the success of particular marketing/advertising campaigns, and help optimize our Site based on your needs. This may include your internet protocol (IP) address, geographical location, browser type, referral source, length of visit, number of page views, or cookies and anonymous identifiers."
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [ "LAST UPDATED: JANUARY 6, 2016" ]
+
+[rubric.data-deletion]
+value = "no"
+notes = [
+  "According to their support site (https://help.stilt.com/hc/en-us/articles/360004386554), they will keep your data for as long as needed, up to 2 years, or to up to 5 years, depending on your situation.\n\nIt does not, however, explain if you can or cannot delete your account."
+]
+
+[rubric.data-breaches]
+value = "eventually"
+citations = [
+  "In the event of a data breach, we will comply with the notification guidelines required by federal law as well as the laws of each state in which we do business."
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = [
+  "Advertisers may use cookies on our site to collect information similar to the information we collect, and target ads to you based on information you included in your profile. We may also use remarketing to advertise to visitors who haven’t completed a task, such as completing their loan application. Stilt may share information with third parties as described below.\n\nAdvertisers:\n\nPartners & Service Providers:\n\nThird Party Accounts:\n\nAggregated Information:\n\nBusiness Transfers:\n\nLinks:\n\nLaw Enforcement:"
+]
+notes = [ "These are vague categories with no information." ]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "To establish that you are over the age of 18;\nTo verify your identity and guard against potential fraud;\nTo pull a credit report from a credit bureau, such as Experian, to help determine your creditworthiness;\nTo determine your eligibility for a Stilt loan;\nTo enable our financial services partners to implement automatic payments and fund transfers;\nTo contact you if there is a problem completing a transaction you requested or to discuss a problem with your account;\nTo implement collection activities as needed; and/or\nTo maintain regular communications with you concerning transactions you initiate, including but not limited to requesting information or assistance, submitting a loan request, and making payments.\nMore generally, we may use information that we collect from you or that you provide to us:\n\nTo provide, maintain, protect and improve our services, to develop new ones, and to protect Stilt and our users;\nTo notify you about changes to the Stilt site or any products or services we offer or provide though it;\nTo keep a record of your communication to help solve any issues you might be facing;\nFor our marketing purposes to offer our products and services to you, such as advertisements, by us through third parties;\nTo offer you tailored content giving you more relevant search results and ads;\nTo enforce or apply our Terms of Use, loan agreement, and any other agreements between you and Stilt, including for billing and collection;\nTo fulfill any other purpose for which you provide it or otherwise give your consent; and/or\nTo comply with any court order, law, or legal process, including retaining personal data or responding to any government or regulatory request."
+]
+
+[rubric.noncritical-purposes]
+value = "no"
+notes = [ "No information proving such." ]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "To comply with any court order, law, or legal process, including retaining personal data or responding to any government or regulatory request."
+]
+
+[rubric.list-collected]
+value = "generally"
+citations = [
+  "Information we collect while you use our site helps us improve our services. During the loan application process we also request and collect personal and financial information from you, such as your name and address. We collect information when you use Stilt website. We also collect personal and financial information during the registration and loan approval process. Additional information may be gathered during your future use of the site. Information that we collect may include personally identifying information, such as your name, address, email address, telephone number, or social security number. We may also collect financial information such as your income, account balance, payment history, credit history, or credit scores. We and/or our service providers may also collect information that is about you. We and/or our service providers may use this aggregated information in the administration of our Site to improve its usability, evaluate the success of particular marketing/advertising campaigns, and help optimize our Site based on your needs. This may include your internet protocol (IP) address, geographical location, browser type, referral source, length of visit, number of page views, or cookies and anonymous identifiers."
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "We will post any changes to the Privacy Policy on this page and, if the changes are significant, we will provide a more prominent notice (including, for example, email notification). Your use of the Stilt site following any update to the Privacy Policy means that you accept the updated policy.\n\nThis Privacy Policy may change from time to time. We will post any changes to the Privacy Policy on this page and, if the changes are significant, we will provide a more prominent notice (including, for example, email notification). Any updates to this policy become effective when we post the updates on the Site. We will also keep prior versions of this Privacy Policy in an archive for your review. Your use of the Stilt site following the update to the Privacy Policy means that you accept the updated policy."
+]

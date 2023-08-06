@@ -1,0 +1,77 @@
+name = "Criptext"
+description = "Criptext is a free encrypted email service based off the Signal protocol."
+slug = "criptext"
+hostnames = [ "criptext.com" ]
+sources = [ "https://www.criptext.com/en/privacy/" ]
+contributors = [ "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "yes-opt-out"
+citations = [
+  "These cookies track your browsing habits to enable us to show advertising which is more likely to be of interest to you. These cookies use information about your browsing history to group you with other users who have similar interests. Based on that information, third-party advertisers can place cookies to enable them to show advertisements which we think will be relevant to your interests while you are on third-party websites.\nYou can disable certain cookies which remember your browsing habits and target advertising at you by visiting this site. If you choose to remove targeted or advertising cookies, you will still see advertisements but they may not be relevant to you. Even if you do choose to remove cookies by the companies listed at the above link, not all companies that serve online behavioural advertising are included in this list, and so you may still receive some cookies and tailored adverts from companies that are not listed."
+]
+
+[rubric.security]
+value = "yes"
+citations = [
+  "The security of your personal information is important to us. We take a number of organizational, technical and physical measures designed to protect the personal information we collect, both during transmission and once we receive it. However, no security safeguards are 100% secure and we cannot guarantee the security of your information.\n\nYou should take steps to protect against unauthorized access to your password and computer by, among other things, signing off after using a shared computer, choosing a robust password that nobody else knows or can easily guess, and keeping your log-in and password private. We are not responsible for any lost, stolen or compromised passwords or for any activity on your account via unauthorized password activity."
+]
+notes = [
+  "A more in-depth documentation on the email security and a whitepaper can be found https://www.criptext.com/en/security/"
+]
+
+[rubric.third-party-collection]
+value = "no"
+notes = [ "No data is collected from third parties, per this policy." ]
+
+[rubric.history]
+value = "last-modified"
+citations = [ "Effective as of August 29, 2019." ]
+
+[rubric.data-deletion]
+value = "yes-contact"
+citations = [
+  "European data protection laws give you certain rights regarding your personal information. You may ask us to take the following actions in relation to your personal information that we hold:\n[...]\n- Delete. Delete your personal information.\n[...]\nYou can submit these requests by email to support@criptext.com or our postal address provided above"
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "This service's policy doesn't require it to disclose data breaches."
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = [
+  "We may disclose your personal information to our subsidiaries and corporate affiliates for purposes consistent with this Privacy Policy.\nWe may employ third-party companies and individuals to administer and provide the Services on our behalf (such as training, customer support, hosting, email delivery and database management services). These third parties may use your information only as directed by Company and in a manner consistent with this Privacy Policy, and are prohibited from using or disclosing your information for any other purpose.\nWe disclose the content of your email message(s) to the email recipient(s) that you have designated in the email.\nWe may disclose your personal information to professional advisors, such as lawyers, bankers, auditors and insurers, where necessary in the course of the professional services that they render to us.\nCompany may disclose information about you to government or law enforcement officials or private parties as required by law, and disclose and use such information as we believe necessary or appropriate to (a) comply with applicable laws and lawful requests and legal processes, such as to respond to subpoenas or requests from government authorities; (b) enforce the terms and conditions that govern the Service; (d) protect our rights, privacy, safety or property, and/or that of you or others; and (e) protect, investigate and deter against fraudulent, harmful, unauthorized, unethical or illegal activity.\nCompany may sell, transfer or otherwise share some or all of its business or assets, including your personal information, in connection with a business deal (or potential business deal) such as a merger, consolidation, acquisition, reorganization or sale of assets or in the event of bankruptcy, in which case we will make reasonable efforts to require the recipient to honor this Privacy Policy."
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "If you have a Criptext account or use our Services, we use your personal information to: Operate, maintain, administer and improve the Services; Manage and communicate with you regarding your Criptext account, including by sending you service announcements, technical notices, updates, security alerts and support and administrative messages; Provide support and maintenance for the Services; and Respond to your service-related requests, questions and feedback.\n\nIf you request information from us, register for the Services, or participate in our surveys, promotions or events, we may send you Criptext-related marketing communications as permitted by law. You will have the ability to opt out of such communications.\n\nWe use your personal information as we believe necessary or appropriate to comply with applicable laws, lawful requests and legal process, such as to respond to subpoenas or requests from government authorities.\n\nWe will request your consent to use your personal data where required by law, such as where we use certain cookies or similar technologies or would like to send you certain marketing messages. If we request your consent to use your personal data, you have the right to withdraw your consent any time in the manner indicated when we requested the consent or by contacting us.\n\nWe may create anonymous data from the information you provide to us through the Services. We exclude any information that may make the data personally identifiable to you. We reserve the right to use that anonymous data for our lawful business purposes.\n\nWe use your personal information as we believe necessary or appropriate to (a) enforce the terms and conditions that govern the Service; (b) protect our rights, privacy, safety or property, and/or that of you or others; and (c) protect, investigate and deter against fraudulent, harmful, unauthorized, unethical or illegal activity."
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-some"
+citations = [
+  "You may at any time opt out from further allowing us to have access to your location data by disabling the location sharing on your mobile device."
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "Company may disclose information about you to government or law enforcement officials or private parties as required by law, and disclose and use such information as we believe necessary or appropriate to (a) comply with applicable laws and lawful requests and legal processes, such as to respond to subpoenas or requests from government authorities; (b) enforce the terms and conditions that govern the Service; (d) protect our rights, privacy, safety or property, and/or that of you or others; and (e) protect, investigate and deter against fraudulent, harmful, unauthorized, unethical or illegal activity."
+]
+
+[rubric.list-collected]
+value = "generally"
+citations = [
+  "Personal information that you may provide through the Services or otherwise communicate with us includes:\n\nWhen you register or subscribe to any of the Services, you provide us with information such as your first name, last name, recovery email, username and password. You may optionally provide us, all in accordance with applicable laws, the email addresses in your mobile address book on a regular basis. You may also add other information to your account, such as a profile picture. \n\nWhen you use our Services to send an email, we process your email address, recipient’s email address, subject and the encrypted content of your messages (including body and attachments). Once messages are delivered to your device, they are deleted from our servers. The same holds true for messages which you send. Your messages are permanently stored on your own device and not on our servers. If a message cannot be delivered immediately (for example, if you are offline or the device is powered off), we may keep it on our servers for up to 30 days. After the 30-day period the message is deleted from our server. We also keep email metadata (subject, date and sender email address) in order to enable certain features of the Services, such as the “unsend”, “read receipts” and “expiration” features.\n\nYou provide us information in your responses to surveys, and when you participate in market research activities, report a problem with the Services, receive customer support or otherwise correspond with us.\n\nWhen you make purchases through the Services, you provide us with billing and payment information. We use a third-party payment provider to process payment card transactions. We collect the transaction details only (e.g., the invoice ID, and the date and amount of purchase)."
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "We reserve the right to modify this Privacy Policy at any time. We encourage you to periodically review this page for the latest information on our privacy practices. If we make material changes to this Privacy Policy you will be notified via email (if you have an account where we have your contact information) or another manner through the Services that we believe reasonably likely to reach you (which may include posting a new privacy policy related to our Services).\n\nAny modifications to this Privacy Policy will be effective upon our posting of the new terms and/or upon implementation of the new changes on the Service (or as otherwise indicated at the time of posting). In all cases, your continued use of the Services after the posting of any modified Privacy Policy indicates your acceptance of the terms of the modified Privacy Policy."
+]

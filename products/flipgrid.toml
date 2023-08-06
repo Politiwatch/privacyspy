@@ -8,7 +8,7 @@ contributors = [ "milesmcc" ]
 [rubric.behavioral-marketing]
 value = "no"
 citations = [
-  "We do not use personal information to market or advertise to you or students, nor do we permit third parties to do so. Our Flipgrid website and apps do not show advertising.\r\n\r\n[...]\r\n\r\nFlipgrid does not use your personal information to market or advertise to you (regardless of whether you are a Student or other User). Flipgrid also does not use your personal information to track and target advertisements on third party websites or services."
+  "We do not use personal information to market or advertise to you or students, nor do we permit third parties to do so. Our Flipgrid website and apps do not show advertising.\n\n[...]\n\nFlipgrid does not use your personal information to market or advertise to you (regardless of whether you are a Student or other User). Flipgrid also does not use your personal information to track and target advertisements on third party websites or services."
 ]
 
 [rubric.security]
@@ -50,7 +50,7 @@ notes = [
 [rubric.data-collection-reasoning]
 value = "yes"
 citations = [
-  "We store and process User personal information in the United States, and we use this information as follows:\r\n\r\n* To provide the Service, including updating, securing, troubleshooting, and providing support.\r\n* To improve and develop the Service.\r\n* To respond to User comments and questions and provide customer service* .\r\n* To communicate with Grid Owners about upcoming Microsoft education or Flipgrid events, new Flipgrid features and other news.\r\n* To send the User information including confirmations, technical notices, updates, security alerts, and support and administrative messages.\r\n* To identify specific Users in our system.\r\n* To facilitate the creation and management of accounts on our Service.\r\n* To process and deliver orders.\r\n* To comply with applicable laws, including website accessibility laws that may require transcription of audio or other methods to make User content available on the Service.\r\n* For other purposes with your permission."
+  "We store and process User personal information in the United States, and we use this information as follows:\n\n* To provide the Service, including updating, securing, troubleshooting, and providing support.\n* To improve and develop the Service.\n* To respond to User comments and questions and provide customer service* .\n* To communicate with Grid Owners about upcoming Microsoft education or Flipgrid events, new Flipgrid features and other news.\n* To send the User information including confirmations, technical notices, updates, security alerts, and support and administrative messages.\n* To identify specific Users in our system.\n* To facilitate the creation and management of accounts on our Service.\n* To process and deliver orders.\n* To comply with applicable laws, including website accessibility laws that may require transcription of audio or other methods to make User content available on the Service.\n* For other purposes with your permission."
 ]
 
 [rubric.noncritical-purposes]
@@ -62,7 +62,7 @@ notes = [
 [rubric.law-enforcement]
 value = "reasonable"
 citations = [
-  "We may also share User personal information for legal, protection, and safety purposes. For example,\r\n\r\n* We may share information to comply with applicable laws.\r\n* We may share information to respond to lawful requests and legal processes.\r\n* We may share information in an emergency, such as protecting the safety of our employees and agents, our Users, or any person.\r\n* We may share information to protect the rights and property of Flipgrid, our agents, employees, customers, and others, including by enforcing our agreements, policies, and terms of use.\r\n* We may disclose or transfer your personal information in connection with the sale, merger, bankruptcy, sale of assets or reorganization, in whole or in part, of our company."
+  "We may also share User personal information for legal, protection, and safety purposes. For example,\n\n* We may share information to comply with applicable laws.\n* We may share information to respond to lawful requests and legal processes.\n* We may share information in an emergency, such as protecting the safety of our employees and agents, our Users, or any person.\n* We may share information to protect the rights and property of Flipgrid, our agents, employees, customers, and others, including by enforcing our agreements, policies, and terms of use.\n* We may disclose or transfer your personal information in connection with the sale, merger, bankruptcy, sale of assets or reorganization, in whole or in part, of our company."
 ]
 
 [rubric.list-collected]

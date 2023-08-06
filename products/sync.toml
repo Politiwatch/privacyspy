@@ -1,0 +1,85 @@
+name= "Sync"
+description= "Sync is a cloud storage provider based in Canada."
+slug= "sync"
+hostnames= ["sync.com"]
+sources= ["https://www.sync.com/privacy", "https://www.sync.com/privacy-policy-gdpr/", "https://www.sync.com/data-processing-agreement-gdpr/"]
+contributors= ["doamatto"]
+
+[rubric.behavioral-marketing]
+value= "yes-opt-out"
+citations= ["You control any future secondary use of your personal information, such as sharing it with marketers. You can prevent future secondary use of your information by “opting out” when Sync collects your information or at any time by simply contacting us. Opting out only applies to the secondary purposes because we may need to contact you regarding the usability of our services or notify you of important product revisions or updates. To change your privacy preferences, please go to www.sync.com and log into your account."]
+
+[rubric.data-breaches]
+value= "eventually"
+citations= ["We will maintain a record of every breach of security safeguards involving personal information under our control. We will notify you of any breach of our security safeguards involving your personal information if it is reasonable in the circumstances to believe that the breach creates a real risk of significant harm to you."]
+
+[rubric.data-collection-reasoning]
+value= "yes"
+citations= [
+  "You have a right to know how your information will be used. Sync will explain why we need your information before or when we collect it, if the purpose is not already clear. We will assume that the purpose is clearly identified when we use your personal information to: Provide you with the products or services you have requested; Process your payment, including recurring payments as you request; Communicate with you about the products or services you have requested; Ensure that you are properly registered to use our products and services and to receive any associated technical support; and Inform you of any important product revisions or updates.",
+  "Sync will also collect log information that includes your IP address and the time that you access our service. This information is stored in log files and is used for security, to improve performance and for aggregated and statistical reporting.",
+  "Sync may also use your personal information for secondary purposes such as: Letting you know about new or upgraded Sync products and services; and Inviting you to participate in customer surveys or other opinion-gathering devices."
+]
+
+[rubric.data-deletion]
+value= "yes-contact"
+citations= [
+  "You have the following rights:",
+  "Right to erasure (Art. 17 GDPR): You have the right to request erasure of personal information without undue delay under certain circumstances, e.g. if your personal information is no longer necessary for the purposes for which it was collected or if you withdraw consent on which processing is based according to Art. 6 (1) (a) GDPR and where there is no other legal ground for processing.",
+  "You can assert your abovementioned rights by contacting our Privacy Office at privacyofficer@sync.com."
+]
+notes= ["Although not in writing, you can also delete your account by going to https://cp.sync.com/account/info and selecting 'Delete account'."]
+
+[rubric.history]
+value= "last-modified"
+citations= [ "This file was last modified on October 30, 2018." ]
+
+[rubric.law-enforcement]
+value= "reasonable"
+citations= [
+  "Sync will not disclose your personal information to any third parties without your consent, except under the following limited circumstances:",
+  "To comply with a legal process such as a law, regulation, search warrant, subpoena, court order or law enforcement request"
+]
+
+[rubric.list-collected]
+value= "summarily"
+citations= [
+  "Personal information is information that can be used to identify or contact you individually, and other information that Sync needs to provide you with the products and services you have requested. Personal information we collect typically includes your name, e-mail address, mailing address, telephone number and credit card or payment information. Under certain circumstances, an IP address may be considered personal information."
+]
+
+[rubric.noncritical-purposes]
+value= "opt-out-all"
+citations= [
+  "You control any future secondary use of your personal information, such as sharing it with marketers. You can prevent future secondary use of your information by “opting out” when Sync collects your information or at any time by simply contacting us. Opting out only applies to the secondary purposes because we may need to contact you regarding the usability of our services or notify you of important product revisions or updates. To change your privacy preferences, please go to www.sync.com and log into your account."
+]
+
+[rubric.revision-notify]
+value= "yes"
+citations= [
+  "Should we change any of our privacy practices, we will post such change in this Privacy Policy for 30 days before it goes into effect. We will not retroactively change the practices associated with your personal information without your consent."
+]
+
+[rubric.security]
+value= "somewhat"
+citations= [
+  "Sync protects the personal information in our possession and control by using security safeguards appropriate to the sensitivity of the information. We work to protect personal information from loss, misuse and unauthorized alteration using industry-recognized security safeguards. We restrict internal access to personal information to select members of our team. When you use our service, Sync will ask you to create a password. You will need your password to access any files that you store on our service. Sync will also give you the option to create a backup of your login information and encryption keys."
+]
+notes= [
+  "Although not in writing, more information about security practices can be found in their whitepaper at https://ln5.sync.com/dl/383089f20/qqk55nxv-spevg5g7-u8isaxhb-jjgvgqw7/view/doc/13084313670003"
+]
+
+[rubric.third-party-access]
+value= "yes-specified-noncritical"
+citations= [
+  "Sync may on occasion use outside companies, called third parties, to help us provide our products or services to you. Regardless of where these third parties are located, we require that they also comply with PIPEDA and with Sync's Privacy Principles.",
+  "Sync will not disclose your personal information to any third parties without your consent, except under the following limited circumstances: As is reasonably required to fulfill your service or product requirements, provided such third parties shall be bound to appropriate privacy requirements; To comply with a legal process such as a law, regulation, search warrant, subpoena, court order or law enforcement request To resolve a contractual dispute regarding your use of any Sync product or service; To resolve issues related to the use of your account for illegal activities; or To protect the personal safety of other users or members of the public in an emergency.",
+  "6.2 - The following sub-processors shall be considered approved by the Data Controller at the time of entering into this Data Processing Agreement for billing purposes and payment processing (Paypal, U.S., Bitpay, U.S., U.S., Zuora Inc., U.S.), for sales and technical support (Helpscout, U.S., Slack Technologies Inc., U.S., ZenDesk Inc., U.S.), for transactional email communications (SendGrid, U.S., MailJet, U.S.), and for marketing communications (MailChimp, U.S.). "
+]
+
+[rubric.third-party-collection]
+value= "no"
+citations= [
+  "The Sync Website may include links to third-party Web sites. These third-party Web sites may assign different cookies to you. Those cookies may be used to track your involvement with the advertising site. You may choose not to accept these cookies. Sync does not control these parties, and you should review their privacy policies to learn more about what, why and how they collect and use personal information."
+]
+notes= [ "The advertising site (sync.com) uses Google Analytics, but the service website (cp.sync.com) and the desktop application does not use Google Analytics." ]
+

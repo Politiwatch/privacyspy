@@ -1,0 +1,74 @@
+name = "AnonAddy"
+description = "AnonAddy is a free anonymous email forwarding provider."
+slug = "anonaddy"
+hostnames = [ "anonaddy.com" ]
+sources = [ "https://anonaddy.com/privacy/" ]
+contributors = [ "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+citations = [
+  "We will never misuse, sell, rent, share or give away any personal information to any third parties."
+]
+
+[rubric.security]
+value = "yes"
+citations = [
+  "\nOur website is open-source and available for anyone (who understands PHP) to view and audit. We do not use Google Analytics or any other analytics/tracking (unless you count server logs mentioned above) on our site.\n\n[...]\n\nAll information you provide to us is stored on our secure servers in the Netherlands (Greenhost.net). Sensitive data in our database such as your recipient email addresses are encrypted using OpenSSL and the AES-256-CBC cipher. Furthermore, all encrypted values are signed with a message authentication code (MAC) to detect any modifications to the encrypted string. Two Factor Authentication (2FA) is also available on our site and we encourage users to enable it.\n\nOpportunistic DANE TLS encryption with strong cipher preference is used for all emails sent through our service. Our mail server also utilises STARTTLS, PFS, DNSSEC, MTA-STS, TLS-RPT, DMARC, SPF and DKIM. These measures help to protect emails sent to/from our server against MiTM (Man in The Middle) downgrade attacks and also against the risk of email forgery.\n\nOur site also uses security features such as; HSTS (HTTP Strict Transport Security), a strict CSP (Content Security Policy), Subresource Integrity, Expect CT and XSS Protection.\n\nNo service can be 100% secure at all times so please do not use this service to forward emails containing highly sensitive information such as bank or cryptocurrency information.\n\nWe take all measures reasonably necessary to protect against unauthorised access, use, alteration or desctruction of data."
+]
+
+[rubric.third-party-collection]
+value = "no"
+notes = [ "Anonaddy doesn't collect data from third-parties" ]
+
+[rubric.history]
+value = "last-modified"
+citations = [ "Last Updated: 10th December 2019" ]
+
+[rubric.data-deletion]
+value = "yes-automated"
+citations = [
+  "You can access, correct, update or request deletion of your personal information at any time, either through your online account or by contacting us."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "There is no indication that they would notify users in a data breach."
+]
+
+[rubric.third-party-access]
+value = "yes-specified-critical"
+citations = [
+  "We will never misuse, sell, rent, share or give away any personal information to any third parties.\n\nThe only third party service that we use is Stripe to process payments for subscriptions. Any payment transactions will be carried out by Stripe over encrypted connections hosted within an iframe served from Stripe’s domain. Your card information never touches our server."
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "We use information held about you for the following purposes:\n\n- To notify you about any changes to the service.\n- To forward emails to the recipient addresses you have added to the site."
+]
+
+[rubric.noncritical-purposes]
+value = "na"
+notes = [
+  "Data is never collected for anything but essential purposes."
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "Server logs are only used to improve our service and prevent abuse or prohibited use. This information will not be provided under any circumstances to any parties other than when compelled by law."
+]
+
+[rubric.list-collected]
+value = "exhaustively"
+citations = [
+  "We may collect the following data from you:\n\n- Information that you provide by filling in forms on our site. This includes information provided at the time of registering to use our site or subscribing to our service.\n- If you contact us, we may keep a record of that correspondence.\n- For keeping track of authenticated sessions we use a small number of cookies. This site does not provide any third party cookies and makes no effort to track you. You can delete stored cookies from your browser whenever you wish.\n- If you start a subscription we may ask you to provide us with information such as your name and payment information. Your name and card details will not be stored in our database."
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "Any changes we may make to our privacy policy in the future will be posted on this page and, where appropriate, notified to you by e-mail. However, we advise that you check this page regularly to keep up to date with any necessary changes."
+]

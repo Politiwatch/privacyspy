@@ -1,0 +1,74 @@
+name = "Monstercat"
+description = "Monstercat is a Canadian independent electronic music record label."
+slug = "monstercat"
+hostnames = [ "monstercat.com" ]
+sources = [ "https://www.monstercat.com/privacy-policy" ]
+contributors = [ "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "yes-opt-out"
+citations = [
+  "We may combine your information with information we collect from other companies and use it to improve and personalize our services, content and advertising. If you do not wish to receive marketing communications from us or participate in our ad-customization programs, simply indicate your preference by contacting us at support@monstercat.com."
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "The Personal Information we collect is stored on a secure, password-protected server and only authorized personnel have access to your information. We use industry-standard encryption technologies with respect to the receipt and transfer of Personal Information you submit. Nevertheless, despite our best efforts, no transmission over the Internet and no data storage method can be guaranteed to be safe 100% of the time. Monstercat cannot ensure or warrant the security of any information you transmit to Monstercat or guarantee that your end user data stored on the Services may not be accessed, disclosed, altered, or destroyed by breach of any of our industry standard physical, technical, or managerial safeguards. If you enter sensitive information we will encrypt such information using secure socket layer technology (SSL). The Site is hosted on servers in the United States. Accordingly, if you are located outside of the United States, the Personal Information you provide to us will be transferred to the United States. By submitting your Personal Information, you consent to its transfer and storage in the United States and its use in accordance with the purposes for which it was originally collected."
+]
+
+[rubric.third-party-collection]
+value = "critical-only"
+citations = [
+  "When you provide us with personal information to complete a transaction, verify your credit card, place an order, arrange for a delivery or return a purchase, we imply that you consent to our collecting it and using it for that specific reason only. If we ask for your personal information for a secondary reason, like marketing, we will either ask you directly for your expressed consent, or provide you with an opportunity to say no. If after you opt-in, you change your mind, you may withdraw your consent for us to contact you, for the continued collection, use or disclosure of your information, at anytime, by contacting us at support@monstercat.com."
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [ "Last Revised: July 7, 2018" ]
+
+[rubric.data-deletion]
+value = "yes-contact"
+citations = [
+  "When you place an order through the site, fill out a form, or sign-up for a service, we will maintain your order Information for our records to provide you with a safe, smooth, efficient, and customized experience, unless and until you ask us to delete this information. To request us to delete information, contact us at support@monstercat.com."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [ "There is no disclosure of breaches that is defined." ]
+
+[rubric.third-party-access]
+value = "yes-unspecified-critical"
+citations = [
+  "Monstercat is committed to maintaining your trust and we want you to understand when and with whom we may share information collected about you. We may disclose Personal Information to respond to legal requirements, enforce our policies, respond to claims that a listing or other content violates the rights of others, or protect anyone’s rights, property, or safety. Such information will be disclosed in accordance with applicable laws and regulations.\n\nWe may also share your Personal Information with:\n\nService providers under contract who help with our business operations (we employ other companies and people to perform tasks on our behalf and need to share your information with them to provide products and services to you). For example, we use Shopify to power our online store-- you can read more about how Shopify uses your Personal Information here. Certain Monstercat program participants under confidentiality agreement, as we in our sole discretion believe necessary or appropriate in connection with an investigation of fraud, intellectual property infringement, piracy, or other unlawful activity. Other business entities, should we plan to merge with or be acquired by that business entity."
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "Personal Information\nWhen you fill out a form, purchase something from our store, email us directly or sign up for a service, Monstercat may ask you for some or all of the following types of information which may be identifiable to you when you register for our services, access various content or features, or directly contact the site: (i) contact information, such as your email address and name; (ii) your age; and (iii) information for the purpose of authenticating yourself or your account if we have reason to believe, in our sole discretion, that you may be violating site policies or for any other reason we deem necessary (collectively “Personal Information”). You are responsible for ensuring the accuracy of all Personal Information you submit to Monstercat.\n\nWe collect and store all Personal Information you submit to us voluntarily through registering with us or uploading or posting User Content through the Site or Services. We urge you to exercise caution when deciding to disclose any Personal Information on the Site or through the Services.\n\nNon-Personal Information\nWe may utilize cookies and other technologies, such as, web beacons (also known as “clear gifs” and “pixel tags”) to recognize you, customize your experience, and serve advertisements. Cookies are very small files placed on your computer, and they allow us to count the number of visitors to Monstercat and distinguish repeat visitors from new visitors. They also allow us to save User preferences and track User trends. We do not link cookies or web beacons to any Personal Information. We may also enable advertisers and ad servers to promote third party products and/or services by placing advertisements on Monstercat. These advertisers and ad servers may use cookies and/or web beacons to monitor information related to served advertisements. These cookies allow the ad server to recognize your computer each time they send you an online advertisement to compile information about you or others who use your computer. This information allows ad networks to, among other things, deliver targeted advertisements that they believe will be of most interest to you. This Policy covers the use of cookies by Monstercat and does not cover the use of cookies by any advertisers.\n\nInformation Collected Automatically\nWhen you browse our website, we automatically receive and collect information such as your IP address, the URLs of websites you arrive at Monstercat from or leave Monstercat to go to, your type of browser and language, access times, your email client, the content of any undeleted cookies that your browser previously accepted from us, your operating system, your mobile provider, your mobile device, and your ISP. We may use such information to better understand how Monstercat visitors use the Site, to analyze trends, administer the website, prevent fraud, and gather broad demographic information. Please note that we do not alter our Site’s data collection and use practices when we see a Do Not Track signal from your browser.\n\nConsent\nWhen you provide us with personal information to complete a transaction, verify your credit card, place an order, arrange for a delivery or return a purchase, we imply that you consent to our collecting it and using it for that specific reason only. If we ask for your personal information for a secondary reason, like marketing, we will either ask you directly for your expressed consent, or provide you with an opportunity to say no. If after you opt-in, you change your mind, you may withdraw your consent for us to contact you, for the continued collection, use or disclosure of your information, at anytime, by contacting us at support@monstercat.com."
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-all"
+citations = [
+  "If we ask for your personal information for a secondary reason, like marketing, we will either ask you directly for your expressed consent, or provide you with an opportunity to say no. If after you opt-in, you change your mind, you may withdraw your consent for us to contact you, for the continued collection, use or disclosure of your information, at anytime, by contacting us at support@monstercat.com."
+]
+
+[rubric.law-enforcement]
+value = "strict"
+citations = [
+  "We may disclose Personal Information to respond to legal requirements, enforce our policies, respond to claims that a listing or other content violates the rights of others, or protect anyone’s rights, property, or safety. Such information will be disclosed in accordance with applicable laws and regulations."
+]
+
+[rubric.list-collected]
+value = "generally"
+citations = [
+  "Personal Information\nWhen you fill out a form, purchase something from our store, email us directly or sign up for a service, Monstercat may ask you for some or all of the following types of information which may be identifiable to you when you register for our services, access various content or features, or directly contact the site: (i) contact information, such as your email address and name; (ii) your age; and (iii) information for the purpose of authenticating yourself or your account if we have reason to believe, in our sole discretion, that you may be violating site policies or for any other reason we deem necessary (collectively “Personal Information”). You are responsible for ensuring the accuracy of all Personal Information you submit to Monstercat.\n\nWe collect and store all Personal Information you submit to us voluntarily through registering with us or uploading or posting User Content through the Site or Services. We urge you to exercise caution when deciding to disclose any Personal Information on the Site or through the Services.\n\nNon-Personal Information\nWe may utilize cookies and other technologies, such as, web beacons (also known as “clear gifs” and “pixel tags”) to recognize you, customize your experience, and serve advertisements. Cookies are very small files placed on your computer, and they allow us to count the number of visitors to Monstercat and distinguish repeat visitors from new visitors. They also allow us to save User preferences and track User trends. We do not link cookies or web beacons to any Personal Information. We may also enable advertisers and ad servers to promote third party products and/or services by placing advertisements on Monstercat. These advertisers and ad servers may use cookies and/or web beacons to monitor information related to served advertisements. These cookies allow the ad server to recognize your computer each time they send you an online advertisement to compile information about you or others who use your computer. This information allows ad networks to, among other things, deliver targeted advertisements that they believe will be of most interest to you. This Policy covers the use of cookies by Monstercat and does not cover the use of cookies by any advertisers.\n\nInformation Collected Automatically\nWhen you browse our website, we automatically receive and collect information such as your IP address, the URLs of websites you arrive at Monstercat from or leave Monstercat to go to, your type of browser and language, access times, your email client, the content of any undeleted cookies that your browser previously accepted from us, your operating system, your mobile provider, your mobile device, and your ISP. We may use such information to better understand how Monstercat visitors use the Site, to analyze trends, administer the website, prevent fraud, and gather broad demographic information. Please note that we do not alter our Site’s data collection and use practices when we see a Do Not Track signal from your browser.\n\nConsent\nWhen you provide us with personal information to complete a transaction, verify your credit card, place an order, arrange for a delivery or return a purchase, we imply that you consent to our collecting it and using it for that specific reason only. If we ask for your personal information for a secondary reason, like marketing, we will either ask you directly for your expressed consent, or provide you with an opportunity to say no. If after you opt-in, you change your mind, you may withdraw your consent for us to contact you, for the continued collection, use or disclosure of your information, at anytime, by contacting us at support@monstercat.com."
+]
+
+[rubric.revision-notify]
+value = "no"
+citations = [
+  "We reserve the right, at any time, to add to, change, update, or modify this Policy. Any such changes to this Policy will be posted here on our Site so we urge to please visit this page frequently. In all cases, use of information we collect is subject to the Policy in effect at the time such information is collected."
+]

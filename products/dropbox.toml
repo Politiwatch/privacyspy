@@ -1,0 +1,73 @@
+name = "Dropbox"
+description = "Dropbox is a cloud storage and collaborative workspace provider based in the United States."
+slug = "dropbox"
+hostnames = [ "dropbox.com" ]
+sources = [ "https://www.dropbox.com/privacy", "https://help.dropbox.com/accounts-billing/security/privacy-policy-faq" ]
+contributors = [ "kulchynska", "ibarakaiev" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+citations = [
+  "We may also use third-party service providers that set cookies and similar technologies to promote Dropbox services. You can learn more about how cookies and similar technologies work, as well as how to opt out of the use of them for advertising purposes, here. "
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "Security. We have a team dedicated to keeping your information secure and testing for vulnerabilities. We continue to work on features to keep your information safe in addition to things like two-factor authentication, encryption of files at rest, and alerts when new devices and apps are linked to your account. We deploy automated technologies to detect abusive behaviour and content that may harm our Services, you or other users."
+]
+
+[rubric.third-party-collection]
+value = "no"
+notes = [ "The policy does not mention collecting private personal data from third parties." ]
+
+[rubric.history]
+value = "yes"
+citations = [
+  "Dropbox Privacy Policy\nPosted: December 17, 2019\n\nEffective: January 1, 2020\n\nYou can see our previous Privacy Policy [here](https://www.dropbox.com/privacy2019)."
+]
+
+[rubric.data-deletion]
+value = "yes-automated"
+citations = [
+  "You have control over your personal data and how it’s collected, used and shared. For example, you can:\n\nDelete Your Stuff in your Dropbox account. You can learn more about how to delete files saved on Dropbox [here](https://help.dropbox.com/files-folders/restore-delete/delete-files)."
+]
+
+[rubric.data-breaches]
+value = "yes-72"
+citations = [
+  " Dropbox complies with the EU-US and Swiss-US Privacy Shield Frameworks as set forth by the US Department of Commerce regarding the collection, use and retention of personal data transferred from the European Union, the European Economic Area, the United Kingdom and Switzerland to the United States. Dropbox has certified to the Department of Commerce that it adheres to the Privacy Shield Principles with respect to such data."
+]
+
+[rubric.third-party-access]
+value = "yes-specified-noncritical"
+citations = [
+  "Others working for and with Dropbox. Dropbox uses certain trusted third parties (such as providers of customer support and IT services) to help us provide, improve, protect and promote our Services. These third parties will access your information to perform tasks on our behalf, and we’ll remain responsible for their handling of your information per our instructions. For a list of trusted third parties that we use to process your personal data, please see our FAQ\n\n",
+  "Trusted third parties include:\n\n- Dropbox, Inc.\n- Amazon Web Services, Inc.\n- Teleperformance A.E.\n- Salesforce.com, LLC\n- Serenova, LLC (formerly LiveOps Cloud Platform, LLC)\n- Google LLC\n- Zendesk, Inc.\n- Oracle America, Inc."
+]
+
+[rubric.data-collection-reasoning]
+value = "mostly"
+notes = [ "See the **What & Why** section in the privacy policy." ]
+
+[rubric.noncritical-purposes]
+value = "opt-out-some"
+citations = [
+  "Object to the processing of your personal data. Depending on the processing activity, you can request that we stop or limit processing of your personal data. If you would like to submit an objection, please email us at privacy@dropbox.com."
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "Law & order and the public interest. We may disclose your information to third parties if we determine that such disclosure is reasonably necessary to: (a) comply with any applicable law, regulation, legal process or appropriate government request;\nWe publish a Transparency Report as part of our commitment to informing you about when and how governments ask us for information. This report details the types and numbers of requests we receive from law enforcement. We encourage you to review our Government Request Principles and Transparency Report for more detailed information about our approach and response to government requests. "
+]
+
+[rubric.list-collected]
+value = "generally"
+notes = [ "See the **What & Why** section in the privacy policy." ]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "We may revise this Privacy Policy from time to time, and will post the most current version on our website. If a revision meaningfully reduces your rights, we will notify you."
+]

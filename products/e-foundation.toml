@@ -1,0 +1,77 @@
+name = "e-foundation"
+description = "/e/ is a free and open source Android based mobile operating system and associated online services."
+slug = "e-foundation"
+hostnames = [ "e.foundation"]
+sources = [ "https://e.foundation/legal-notice-privacy/" ]
+contributors = [ "erotavlas" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+notes = [
+  "/e/ does not share, sell or trade any personal data or content."
+]
+
+[rubric.security]
+value = "yes"
+citations = [
+  "\"Your personal information is contained behind secured networks at our partners and is only accessible by a limited number of persons who have special access rights to such systems, and are required to keep the information confidential. In addition, all sensitive information you supply is encrypted via Secure Socket Layer (SSL) technology.\" \r\n\r\n \"We implement a variety of security measures when you place an order and enter, submit, or access your information to maintain the safety of your personal information.\" \r\n\r\n \"All data on your \"own\" /e/ server is encrypted and never shared, sold or traded to any third party.\""
+]
+
+[rubric.third-party-collection]
+value = "no"
+notes = [
+  "/e/ does not collect any data from third parties."]
+
+[rubric.history]
+value = "no"
+notes = [
+    "/e/ does not specify the date it was last modified and does not provide old versions of the privacy policy."
+]
+
+[rubric.data-deletion]
+value = "yes-automated"
+citations = [
+  "\"In case you would like to delete your account, you can choose to have your contributions anonymised or deleted.\" \r\n\r\n \"In addition, Mozilla may receive certain temporary data such as your IP address. This data is deleted after being used as follows: for security purposes to protect against certain types of attack. to assist in providing you with an approximate location.\""
+]
+  
+[rubric.data-breaches]
+value = "no"
+notes = [
+   "The policy does not specify a data breach protocol."]
+
+[rubric.third-party-access]
+value = "no"
+citations = [
+  "\"We do not share, disclose or otherwise distribute any data to third parties.\" \r\n\r\n \"As a non-profit, we rely on donations and e.foundation allows you to make a donation. Those transactions are processed by third parties, and not e.foundation. e.foundation does not receive any financial information, which is transmitted from you to our third party vendors for processing. The name of the third party will be displayed at the time of the transaction.\" \r\n\r\n "
+]
+
+notes = ["\"Mozilla receives publicly observable data about WiFi access points, Bluetooth beacons and cell towers around you, your estimated latitude and longitude, the date and information about your heading, speed and altitude. This information is stored locally on your device until an Internet connection is established. The data is then deleted from your device and sent to Mozilla.\""]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "\"Our software does not send any of your user personal data to us.\" \r\n\r\n \"Power users or users concerned about their personal data being in remote servers can choose to self-host.\""
+]
+
+[rubric.noncritical-purposes]
+value = "na"
+notes = ["/e/ does not share, sell or trade any personal data or content."]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "\"IP addresses are logged for the minimum legal duration.\" \r\n\r\n \"When you connect to our servers to update /e/OS, we collect some visitors statistics such as your IP address, only for our internal use. This information is not disclosed unless legally obliged to do so.\" \r\n\r\n \"All data on your \"own\" /e/ server is encrypted and never shared, sold or traded to any third party. We will only disclose the limited user data we possess unless legally obliged to do so.\"" 
+]
+    
+[rubric.list-collected]
+value = "exhaustively"
+citations = [
+  "\"Applications: there is no systematic mining of the data sent to you other than to provide you with search results. There is no manual processing or transfer to any third party. IP addresses are logged for the minimum legal duration.\" \r\n\r\n \"Location: we don't collect or keep any information about your GPS location. To be able to locate you when you use the onboard maps application or other services requiring your location, we do so by leveraging the Mozilla Location Services API. This means that Mozilla receives your approximate location when you ask us to locate you. If you do not want to report crowd-sourced data to Mozilla, you can set your location services to 'off' or 'device only'. In addition, Mozilla may receive certain temporary data such as your IP address. This data is deleted after being used as follows: for security purposes to protect against certain types of attack. to assist in providing you with an approximate location.\" \r\n\r\n \"OTA updates: when you connect to our servers to update /e/OS, we collect some visitors statistics such as your IP address, only for our internal use. We use these statistics internally, for example, to know which country users come from or which smartphones variants are being updated. These statistics are not providing us any personal identifiable information.\" \r\n\r\n \"We collect information from you when you create an account on our gitlab space, when you post or edit code source, comment, or post an issue. This information is used to identify your profile and contributions on this developer portal.\""
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+    "\"We may change this privacy policy from time to time and we will update you when it is the case. We also encourage visitors to frequently check this page for any changes.\""
+]
+

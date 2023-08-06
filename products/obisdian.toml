@@ -1,0 +1,99 @@
+name= "Obsidian"
+description= "A personal knowledge base and note-taking software application, with an optional syncing service."
+slug= "obsidian"
+hostnames= ["obsidian.md"]
+sources= ["https://obsidian.md/privacy"]
+contributors= ["doamatto"]
+
+[rubric.behavioral-marketing]
+value= "yes-opt-out"
+citations= [
+  "You will be deemed to consent to our use of your personal information for the purpose of:",
+  "performing statistical analyses of user behaviour and characteristics, in order to measure interest in and use of the various sections of this site so as to improve design and navigation and to gather marketing information. Only aggregated data from these analyses, not individual data, will be used for this purpose",
+  "We employ other companies and individuals to perform functions on our behalf. Examples include fulfilling orders, delivering packages, sending postal mail and e-mail, removing repetitive information from customer lists, analyzing data, providing marketing assistance, processing credit card payments, and providing customer service. They have access to personal information needed to perform their functions, but may not use it for other purposes."
+]
+notes= []
+
+[rubric.data-breaches]
+value= "no"
+citations= []
+notes= ["There is no mention of a data breach policy."]
+
+[rubric.data-collection-reasoning]
+value= "yes"
+citations= [
+  "You will be deemed to consent to our use of your personal information for the purpose of:",
+  "communicating with you generally",
+  "processing your purchases",
+  "processing and keeping track of transactions and reporting back to you",
+  "protecting against fraud or error",
+  "providing product and services requested by you",
+  "recommending products and services that Dynalist believes will be of interest and provide value to you",
+  "performing statistical analyses of user behaviour and characteristics, in order to measure interest in and use of the various sections of this site so as to improve design and navigation and to gather marketing information. Only aggregated data from these analyses, not individual data, will be used for this purpose",
+  "complying with legal and governmental requirements",
+  "fulfilling any other purpose that would be reasonably apparent to the average person at the time we collect it from you"
+]
+notes= []
+
+[rubric.data-deletion]
+value= "yes-automated"
+citations= []
+notes= ["You can delete your account at https://obsidian.md/account after logging in."]
+
+[rubric.history]
+value= "yes"
+citations= []
+notes= ["This can be seen at the bottom of the page."]
+
+[rubric.law-enforcement]
+value= "reasonable"
+citations= ["complying with legal and governmental requirements"]
+notes= []
+
+[rubric.list-collected]
+value= "generally"
+citations= [
+  "Dynalist does not receive or store personal content saved to your local device while using Obsidian.",
+  "For example, like many websites, we use “cookies,” and we obtain certain types of information when your web browser accesses Obsidian.md.",
+  "Examples of the information we collect and analyze include the Internet protocol (IP) address used to connect your computer to the Internet; login; e-mail address; password; computer and connection information, such as browser type, version and timezone setting, browser plug-in types and versions, operating system, and platform; the full Uniform Resource Locators (URL) clickstream to, through, and from our website, including date and time; cookie numbers; products you viewed or searched for; and the telephone number used to call our customer service number. We may also use browser data such as cookies, Flash cookies (also known as Flash Local Shared Objects), or similar data on certain parts of our website for fraud prevention and other purposes. During some visits we may use software tools such as JavaScript to measure and collect session information, including page response times, download errors, length of visits to certain pages, page interaction information (such as scrolling, clicks, and mouse-overs), and methods used to browse away from the page."
+]
+notes= []
+
+[rubric.noncritical-purposes]
+value= "opt-out-all"
+citations= [
+  "Please contact them directly for more information about their privacy practices. In addition, the Network Advertising Initiative offers useful information about Internet advertising companies (also called “ad networks” or “network advertisers”), including information about how to opt-out of their information collection. You can access the Network Advertising Initiative at http://www.networkadvertising.org."
+]
+notes= ["Only applies to account users.", "See the data collection list for what cookies collect and store." ]
+
+[rubric.revision-notify]
+value= "yes"
+citations= [
+  "Our business changes constantly, and this privacy notice will change also. We may e-mail periodic reminders of our notices and conditions, unless you have instructed us not to, but you should check our website frequently to see recent changes."
+]
+notes= []
+
+[rubric.security]
+value= "somewhat"
+citations= [
+  "We take steps to safeguard your personal information, regardless of the format in which it is held, including:",
+  "physical security measures such as restricted access facilities and locked filing cabinets",
+  "electronic security measures for computerized personal information such as password protection, database encryption and personal identification numbers. We work to protect the security of your information during transmission by using “Transport Layer Security” (TLS) protocol.",
+  "organizational processes such as limiting access to your personal information to a selected group of individuals",
+  "contractual obligations with third parties who need access to your personal information requiring them to protect and secure your personal information"
+]
+notes= [
+  "Additional information involving end-to-end encryption for Obsidian Sync can be found at https://help.obsidian.md/Obsidian+Sync/Security+and+privacy"
+]
+
+[rubric.third-party-access]
+value= "yes-unspecified"
+citations= [
+  "We employ other companies and individuals to perform functions on our behalf. Examples include fulfilling orders, delivering packages, sending postal mail and e-mail, removing repetitive information from customer lists, analyzing data, providing marketing assistance, processing credit card payments, and providing customer service. They have access to personal information needed to perform their functions, but may not use it for other purposes. We may use service providers located outside of Canada, and, if applicable, your personal information may be processed and stored in other countries and therefore may be subject to disclosure under the laws of those countries. "
+]
+notes= []
+
+[rubric.third-party-collection]
+value= "no"
+citations= []
+notes= ["There is no mention of data collection by Obsidian from a third-party."]

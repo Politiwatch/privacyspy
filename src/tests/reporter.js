@@ -20,16 +20,24 @@ class Reporter {
               if (lineSearcher !== null) {
                 let search = lineSearcher[1];
                 let file = fs.readFileSync(fileName, {
-                  encoding: "utf8"
+                  encoding: "utf8",
                 });
                 let innerFileSearch = file.match(search);
                 if (innerFileSearch !== null) {
-                  lineNumber = file.slice(0, innerFileSearch.index).split("\n").length;
+                  lineNumber = file
+                    .slice(0, innerFileSearch.index)
+                    .split("\n").length;
                 }
               }
             }
-            let error = test.fullName.replace(/\[(.+)\]/, "").replace(/{(.+)}/, "").replace(/^\s+/, "").replace(/\s\s+/, " ");
-            console.error(`Error file=${fileName || ""} line=${lineNumber} message=${error}`);
+            let error = test.fullName
+              .replace(/\[(.+)\]/, "")
+              .replace(/{(.+)}/, "")
+              .replace(/^\s+/, "")
+              .replace(/\s\s+/, " ");
+            console.error(
+              `Error file=${fileName || ""} line=${lineNumber} message=${error}`
+            );
           }
         }
       }

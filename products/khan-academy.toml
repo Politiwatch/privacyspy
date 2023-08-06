@@ -1,0 +1,78 @@
+name = "Khan Academy"
+description = "Learn for free about math, art, computer programming, economics, physics, chemistry, biology, medicine, finance, history, and more. Khan Academy is a nonprofit with the mission of providing a free, world-class education for anyone, anywhere."
+slug = "khan-academy"
+hostnames = [ "khanacademy.org" ]
+sources = [ "https://www.khanacademy.org/about/privacy-policy" ]
+contributors = [ "elijahpepe" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+citations = [
+  "Khan Academy does not share your information with third-party organizations for their marketing or promotional use without your consent."
+]
+
+[rubric.security]
+value = "yes"
+citations = [
+  "Some of the ways in which we protect your personal information include: We encrypt your personal information when it is stored at rest, we protect your personal information with encryption during transmission over the public Internet, and we use reasonable organizational and technical safeguards designed to help protect the privacy and security of your personal information."
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "We collect information in the following ways, depending on your use of the Service and your account settings: We collect information from you directly, such as when you create an account, communicate with us, participate in activities, events or surveys, or otherwise provide information during your use of the Service, we may collect information from others, such as your parent, teacher, or School, or third parties (meaning organizations outside of Khan Academy), such as third party applications that you use to connect to the Service, and we collect some information automatically, such as information about your use of the Service and the devices you use to access the Service. We may use cookies, web beacons, and similar technologies to collect information as explained in our Cookie Notice."
+]
+
+[rubric.history]
+value = "last-modified"
+notes = [
+  "Khan Academy does not have a button to view previous versions of its privacy policy, but does have a label showing the last modified date (June 17th, 2021)."
+]
+
+[rubric.data-deletion]
+value = "yes-automated"
+citations = [
+  "Users with personal accounts (or their Parents) can delete their accounts and personal information associated with the account at any time through account Settings."
+]
+
+[rubric.data-breaches]
+value = "eventually"
+citations = [
+  "In the event that any information under our control is compromised as a result of a breach of security, we will take reasonable steps to investigate the situation and will notify you of the security incident in accordance with applicable laws and regulations."
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified-critical"
+citations = [
+  "In order to provide our Service, Khan Academy may share information with our employees and trusted vendors, third party service providers or other individuals, such as entities providing billing, customer support, analytics, hosting, marketing and similar services. When we share information with third party service providers or vendors, these third parties are contractually obligated to maintain the security and confidentiality of that information."
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+notes = [
+  "Khan Academy's privacy policy [explains](https://www.khanacademy.org/about/privacy-policy#use-of-info) how it uses the data it collects."
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-some"
+citations = [
+  "You also can directly opt out of certain third party cookies. Please note that choosing to remove or reject certain cookies might limit your use of the Service."
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "We will use your information to comply with the law or in the good faith belief that such action is necessary to conform to the requirements of law or comply with legal process served on us."
+]
+
+[rubric.list-collected]
+value = "exhaustively"
+notes = [
+  "Khan Academy's privacy policy mentions specific details under its \"Learn More\" tab."
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "Khan Academy may modify or revise this Privacy Policy from time to time. Khan Academy will notify users of any changes to our Privacy Policy by posting the revised Privacy Policy with an updated date of revision on our Service. If we change this Policy in a material manner, we will do our best to notify you of the changes by posting a notice on our website. We recommend that you review the Privacy Policy each time you visit the Service to stay informed of our privacy practices."
+]

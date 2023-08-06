@@ -1,0 +1,89 @@
+name = "WeChat"
+description = "WeChat is a popular multipurpose messaging application owned by Chinese conglomerate Tencent."
+slug = "wechat"
+hostnames = [ "wechat.com" ]
+sources = [ "https://www.wechat.com/en/privacy_policy.html" ]
+contributors = [ "Anonymous" ]
+
+[rubric.behavioral-marketing]
+value = "yes"
+citations = [
+  "We collect personal information for the following purposes:\n[...]\nTo personalise WeChat, including by providing personalised advertisements;"
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "SECURITY OF YOUR PERSONAL INFORMATION\n\nWe are committed to maintaining the privacy and integrity of your personal information no matter where it is stored. We have information security and access policies that limit access to our systems and technology, and we protect data through the use of technological protection measures such as encryption.\n\nUnfortunately, the transmission of information via the internet is not completely secure. Although we will implement and maintain reasonable measures to protect your personal information, we cannot guarantee the security of the information transmitted to our services; therefore we do not assume any responsibility for any transmission of your information which you do at your own risk."
+]
+
+[rubric.third-party-collection]
+value = "critical-only"
+citations = [
+  "Email address, Facebook Connect OpenID, Facebook Connect Token, Facebook Username, QQ ID, \n"
+]
+notes = [
+  "Did not mention any data collected from third party, except using other services for authentication.\n\n"
+]
+
+[rubric.history]
+value = "last-modified"
+notes = [
+  "But there are two Addendum present, none of them with an added date."
+]
+
+[rubric.data-deletion]
+value = "yes-automated"
+citations = [
+  "You can delete your account, or remove certain personal information, by logging into your WeChat account and following the account deletion instructions here. If there is any other personal information you believe we process that you would like us to erase, please complete the request form here.\n\n[...]\n\nWe destroy personal information upon the extinguishment of need for such personal information, such as the expiration of its retention period and achievement of its purpose for processing, except where there is a law or regulation that requires us to retain that personal information. Inactive accounts are automatically deleted after 180 days (except if you have a positive balance in your WeChat Pay account or are an authorized account holder for the purposes of a WeChat feature such as a Mini Program)."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [ "Did not mention anything related to data breach" ]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = [
+  "We do not share your information with any third parties, except where we need to in order to provide the service [...] or if we are instructed to by a court, authority or compelled by law. We use these third party services solely to process or store your information for the purposes described in this policy.\n\ngovernment, public, regulatory, judicial and law enforcement bodies or authorities [...]\nrelated group companies: we share your Personal Information within our group of companies (and all related group companies may only use your personal information in accordance with this policy), including [...] for the purpose of: [...] assisting us in carrying out the purposes set out under the \"How do we use Your Information\" section above.\nservice providers: service providers supplying services to support, improve, or promote other products or features through our services, including the service providers listed here. [...]\nin the event of an internal restructuring of our or our affiliates businesses, or the sale of WeChat or any of its assets to a third party, the entity that consequently operates WeChat may be a different entity to us and we will transfer your information accordingly so that your service can continue;\nWeChat Official Accounts and Mini Program operators, [...]\na third party that acquires all or substantially all of us or our business. [...]\n\nWe collect personal information for the following purposes: [...]\nTo personalise WeChat, including by providing personalised advertisements;"
+]
+notes = [
+  "The use of shared information is unclear:\nFor the purpose of sharing information with \"related group companies\", it only mentions the purpose is \"carrying out the purposes set out under the \"How do we use Your Information\"\", which is too general. \n\n# did not list all the third parties\nIn the \"related group companies\" section, they only listed some company \"included\" in this category, did not mention whether it was all the companies.\n\n# The sharing include non-essential sharing:\nEven they mentioned \"We do not share your information with any third parties, except where we need to in order to provide the service\", there is no where mentioned whether advertisement is part of \"the service\":\nIn the \"How do we use Your Information\" section, there is no clear mention of advertisement, but in \"Addendum for California Residents\", it clearly mentions it collect personal information for advertisement purpose. "
+]
+
+[rubric.data-collection-reasoning]
+value = "somewhat"
+notes = [
+  "In \"HOW DO WE USE YOUR INFORMATION?\" section. \n\nThere are many mentions that are very unclear, including:\n\n- \"to provide personalized help and instructions;\" \n- \"to facilitate communication;\"\n- \"to administer WeChat;\"\n- \"for internal operations, including troubleshooting, data analysis, testing, research, security, fraud-detection, account management, and survey purposes. \"\n- \"to maintain your WeChat account;\""
+]
+
+[rubric.noncritical-purposes]
+value = "no"
+citations = [
+  "We collect personal information for the following purposes: [...]\nTo personalise WeChat, including by providing personalised advertisements;"
+]
+notes = [
+  "There is mention of use personal data for advertising in \"Addendum for California Residents\" and no mention of opt-out for such service in any place."
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "Only where necessary will we share your information with selected recipients who have a legal basis and valid jurisdiction to request such data. These categories of recipients include:\n\ngovernment, public, regulatory, judicial and law enforcement bodies or authorities: there are circumstances in which we are legally required to disclose information, including to comply with a legal obligation or processes, such as a court order, subpoena or other legal process, to enforce our terms, address issues relating to security or fraud, or protect our users and provided the requesting entity has valid jurisdiction to obtain your personal information;"
+]
+notes = [
+  "They will share data with law enforcement \"only when necessary\""
+]
+
+[rubric.list-collected]
+value = "generally"
+notes = [
+  "In \"WHAT INFORMATION DO YOU NEED TO PROVIDE WECHAT?\" section, only mentions several categories, including:\n\n- \"Location Data\", \n- \"Log Data\", \n- \"Non-Personal Information\", \n- \"Personal Information\", \n- \"Shared Information\",\n\nand examples of such data.\n\nIn the \"HOW DO WE USE YOUR INFORMATION?\" section, you will see a chart of most of the information collected, and the purpose of collection."
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "How will we notify you of changes?\n\nIf there are any significant changes to this Privacy Policy, we will update the policy here and notify you before the change becomes effective."
+]
+notes = [ "But notice \"significant changes\" is very subjective" ]

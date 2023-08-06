@@ -1,0 +1,80 @@
+name = "Anchor"
+description = "Anchor is a free podcast creation platform owned by Spotify."
+slug = "anchor"
+hostnames = [ "anchor.fm" ]
+sources = [ "https://anchor.fm/privacy" ]
+contributors = [ "Deivedux" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+citations = [
+  "Anchor does not provide any Personal Data to the advertiser when a User interacts with or views a targeted advertisement. However, please be aware that by interacting with or viewing an advertisement the third party may make the assumption that you meet the targeting criteria used to display the advertisement."
+]
+
+[rubric.security]
+value = "no"
+citations = [
+  "You use Services at your own risk. Anchor takes steps to protect the Personal Data provided via the Services from loss, misuse, and unauthorized access, disclosure, alteration, or destruction. However, no Internet or e-mail transmission is ever fully secure or error free. In particular, e-mail sent to or from the Services may not be secure. Therefore, you should take special care in deciding what information you send to us via e-mail. Please keep this in mind when disclosing any Personal Data to Anchor via the internet."
+]
+notes = [
+  "There are no statements in the policy that explain the actual steps the service takes to protect the user data."
+]
+
+[rubric.third-party-collection]
+value = "critical-only"
+citations = [
+  "You may connect to the Services using credentials from social media services such as Facebook or Twitter (“Social Media Services”). When you provide Anchor access to your Social Media Services account, we will collect relevant information necessary to enable the Services to access that Social Media Service, however you will provide your login information, like your password, directly to such Social Media Service (and not to Anchor)."
+]
+
+[rubric.history]
+value = "last-modified"
+notes = [
+  "The policy doesn't state that information, but a \"last modified\" date can be located at the top of the policy's page."
+]
+
+[rubric.data-deletion]
+value = "yes-contact"
+citations = [
+  "If you need to change or correct your Personal Data, or wish to have it deleted from our systems, you may contact us."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [ "They do not seem to have a statement in that regard." ]
+
+[rubric.third-party-access]
+value = "yes-specified-noncritical"
+citations = [
+  "There are certain circumstances in which we may share your Personal Data with certain third parties without further notice to you, unless required by the law, as set forth below:\n\n\n- Vendors and Service Providers:To assist us in meeting business operations needs and to perform certain services and functions: providers of hosting, email communication and customer support services, analytics, marketing, advertising (for more details on the third parties that place cookies through the Site, please see the “Cookies” section below). Pursuant to our instructions, these parties will access, process or store Personal Data in the course of performing their duties to us.\n\n\n- Business Transfers: If we are involved in a merger, acquisition, financing due diligence, reorganization, bankruptcy, receivership, sale of all or a portion of our assets, or transition of service to another provider, your Personal Data and other information may be transferred to a successor or affiliate as part of that transaction along with other assets.\n\n\n- Legal Requirements: If required to do so by law or in the good faith belief that such action is necessary to (i) comply with a legal obligation, (ii) protect and defend our rights or property, (iii) act in urgent circumstances to protect the personal safety of Users of the Site or the App, or the public, or (iv) protect against legal liability."
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "We use your personal data for the following purposes:\n\nTo authenticate Users and provide the Service. This processing is necessary to perform the contract with you.\n\nAs necessary for certain legitimate business interests, which include the following:\n\n- To respond to your inquiries and fulfill your requests for products and services;\n\n- To customize our Services for you, including providing recommendations, personalized advertising and content (please read below to learn how we use Personal Data for targeted advertisement). For example, we use information on your use of Services features, including information that we obtain through cookies, to better understand your needs and interests in order to personalize your experience with our Services by presenting products and offers tailored to your interests. We use your public information and your location information (described above) to infer what topics you may be interested in, and to customize the content we show you, including ads, with more relevant content like local trends, stories, ads, and suggestions for people to follow;\n\n- To send administrative information to you, for example, information regarding the Site or the App, and changes to our terms, conditions, and policies;\n\n- To provide, maintain and improving the content and functionality of the Services. For example, we regularly fix bugs or user experience issues that may be tied to particular user accounts. We use cookies to analyze how Users interact with our Services. And that analysis can help us build better Services.\n\n- To conduct research, and provide reporting to third parties;\n\n- If you ask us to delete your data and we are required to fulfil your request, to keep basic data to identify you and prevent further unwanted processing;\n\n- To prevent fraud or criminal activity, misuses of our products or services, and ensure the security of our IT systems, architecture and networks;\n\n- To (a) comply with legal obligations and legal process, (b) respond to requests from public and government authorities including public and government authorities outside your country of residence; (c) enforce our Terms of Use; (d) protect our operations or those of any of our affiliates; (e) protect our rights, privacy, safety or property, and/or that of our affiliates, you or others; and (f) allow us to pursue available remedies or limit the damages that we may sustain, as required or permitted by the law."
+]
+
+[rubric.noncritical-purposes]
+value = "no"
+notes = [
+  "There are also no privacy options found in account settings."
+]
+
+[rubric.law-enforcement]
+value = "strict"
+citations = [
+  "There are certain circumstances in which we may share your Personal Data with certain third parties without further notice to you, unless required by the law, as set forth below:\n\n[...]\n\n- Legal Requirements: If required to do so by law or in the good faith belief that such action is necessary to (i) comply with a legal obligation, (ii) protect and defend our rights or property, (iii) act in urgent circumstances to protect the personal safety of Users of the Site or the App, or the public, or (iv) protect against legal liability."
+]
+
+[rubric.list-collected]
+value = "exhaustively"
+citations = [
+  "A. Account Information\n\nSome information is required to create an account on our Services, such as your name, email address, password, location. You may also choose to provide other types of information to make public on the Services, such as a profile photo, biography, country information, your website, and community username.\n\n\nB. Social Media\n\n\nYou may connect to the Services using credentials from social media services such as Facebook or Twitter (“Social Media Services”). When you provide Anchor access to your Social Media Services account, we will collect relevant information necessary to enable the Services to access that Social Media Service, however you will provide your login information, like your password, directly to such Social Media Service (and not to Anchor).\n\nTo access your Social Media Services account, we provide a link that directs you to a Social Media Service, where you may access the Services directly. As part of the integration with the Services, the Social Media Service will provide Anchor with access to certain information that you have provided to such Social Media Service, including for example to post-related meta data from your Twitter feed or Facebook wall (such as post type, date of creation, date of update, post creator, permanent link, and the number of “Likes” and “Comments”), and “friends” or other Users you are “following”.\n\nAnchor does not download, save, or store your photos, videos, or status messages posted on your Social Media Services accounts unless you grant us permission to do so. We will use, store and disclose such information in accordance with this Privacy Policy and, if and to the extent applicable, the policies of such Social Media Services.\n\nWhen you elect to access and use the Social Media Services, you will be sharing your information (which will include personal information if you elect to share such information) with those Social Media Services and others on the Social Media Services platform. We are not responsible for the privacy practices of Social Media Services and any the information you share with them is subject to their privacy policies and terms of service. As a result, Anchor shall not have any liability or responsibility for the privacy practices or other actions of Social Media Services that may be enabled within or otherwise accessible through the Services.\n\n\nYou may be able to adjust your privacy settings with these Social Media Services to control what information the services disclose to other entities, including Anchor. We suggest checking the privacy policies of the Social Media Services concerning their privacy settings and controls.\n\n\nC. Posts, Following, Lists and other Public Information\n\n\nThe Services are primarily designed to help you share information with the world. Most of the information you provide us through the Services is information you are asking us to make public.\n\n\nYour public information includes the (i) messages you post; the metadata provided with such posts, such as when you posted and the application you used to post; (ii) language, country, and time zone associated with your account; and (iii) lists you create, people you follow, posts you mark as likes, and many other bits of information that result from your use of the Services. Our default is almost always to make the information you provide through the Services public for as long as you do not delete it.\n\n\nThe Services broadly and instantly disseminate your public information to a wide range of users, customers, and services. For instance, your public user profile information and public posts are immediately delivered via RSS feeds and our APIs to our partners and other third parties, including search engines, developers, and publishers that integrate the Services content into their services, and institutions such as universities and public health agencies that analyze the information for trends and insights. When you share information or content via the Services, you should think carefully about what you are making public.\n\n\nD. Location Information\n\n\nWe may receive information about your location. For example, you may choose to publish your location in your posts and in your Anchor profile and when you set your trend location on the Services. We may also determine location by using other data from your device, such as precise location information from GPS, information about wireless networks or cell towers near your mobile device, or your IP address.\n\n\nE. Additional Information\n\n\nYou may choose to upload your address book so that we can help you find Users you know or help other Users find you. We may later make suggestions to you and other Users based on imported address book contacts. You can delete your imported address book contacts at any time.\n\n\nIf you email us, we may keep your message, email address and contact information to respond to your request. If you connect your account on our Services to your account on another service in order to cross-post between our Services and that service, the other service may send us your registration or profile information on that service and other information that you authorize. This information enables cross-posting, helps us improve the Services, and is deleted from our Services within a few weeks of your disconnecting your account on the other service from the Services account.\n\n\nWe also collect information you choose to provide to us when you complete any “free text” boxes in our forms (for example, support request or survey submission)."
+]
+notes = [ "Each category is explained very thoroughly in the policy." ]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "By continuing to use the Site and the App or providing us with information after we have posted an updated Privacy Policy, or notified you if applicable, you consent to the revised Privacy Policy and practices described in it."
+]

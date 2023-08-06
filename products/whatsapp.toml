@@ -1,0 +1,87 @@
+name = "WhatsApp"
+description = "WhatsApp is a popular global messaging and calling service owned by Facebook, Inc."
+slug = "whatsapp"
+hostnames = [ "whatsapp.com" ]
+sources = [ "https://www.whatsapp.com/legal/#privacy-policy" ]
+contributors = [ "LeylaJ" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+citations = [
+  "\"We still do not allow third-party banner ads on WhatsApp. We have no intention to introduce them, but if we ever do, we will update this policy.\"\n\nFrom the FAQs: \"Today, Facebook does not use your WhatsApp account information to improve your Facebook product experiences or provide you more relevant Facebook ad experiences on Facebook. We're always working on new ways to improve how you experience WhatsApp and the other Facebook Company Products you use. We'll keep you updated on new experiences we offer and our data practices.\""
+]
+notes = [
+  "Though WhatsApp shares information with the Facebook Companies, it does not allow Facebook or other companies to do so with your data either."
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "\"We do not retain your messages in the ordinary course of providing our Services to you. Once your messages (including your chats, photos, videos, voice messages, files, and share location information) are delivered, they are deleted from our servers. Your messages are stored on your own device. If a message cannot be delivered immediately (for example, if you are offline), we may keep it on our servers for up to 30 days as we try to deliver it. If a message is still undelivered after 30 days, we delete it. To improve performance and deliver media messages more efficiently, such as when many people are sharing a popular photo or video, we may retain that content on our servers for a longer period of time. We also offer end-to-end encryption for our Services, which is on by default, when you and the people with whom you message use a version of our app released after April 2, 2016. End-to-end encryption means that your messages are encrypted to protect against us and third parties from reading them. Learn more about End-to-End Encryption and Businesses on WhatsApp.\""
+]
+notes = [
+  "While the privacy policy explains how messages are kept secure, it does not do the same for other stored data (such as that of accounts or devices)."
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "\"We receive information about you from other users and businesses. For example, when other users or businesses you know use our Services, they may provide your phone number, name, and other information (like information from their mobile address book or in the case of businesses, additional information about you such as unique identifiers), just as you may provide theirs, or they may send you a message, send messages to groups to which you belong, or call you. We require each of these users and businesses to have lawful rights to collect, use, and share your information before providing any information to us.\""
+]
+
+[rubric.history]
+value = "yes"
+notes = [
+  "The date the policy was last modified is listed as well as a few full archived versions."
+]
+
+[rubric.data-deletion]
+value = "yes-automated"
+citations = [
+  "\"We store information until it is no longer necessary to provide our services, or until your account is deleted, whichever comes first. This is a case-by-case determination that depends on things like the nature of the information, why it is collected and processed, and relevant legal or operational retention needs…You may delete your WhatsApp account at any time (including if you want to revoke your consent to our use of your information) using our in-app delete my account feature. When you delete your WhatsApp account, your undelivered messages are deleted from our servers as well as any of your other information we no longer need to operate and provide our Services. Be mindful that if you only delete our Services from your device without using our in-app delete my account feature, your information may be stored with us for a longer period. Please remember that when you delete your account, it does not affect the information other users have relating to you, such as their copy of the messages you sent them.\""
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "The policy does not specify a data breach protocol."
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = [
+  "\"We work with third-party service providers and the Facebook Companies to help us operate, provide, improve, understand, customize, support, and market our Services. When we share information with third-party service providers and the Facebook Companies in this capacity, we require them to use your information on our behalf in accordance with our instructions and terms.\""
+]
+
+[rubric.data-collection-reasoning]
+value = "somewhat"
+citations = [
+  "For example: \"We collect device location information if you use our location features, like when you choose to share your location with your contacts, view locations nearby or those others have shared with you, and the like, and for diagnostics and troubleshooting purposes such as if you are having trouble with our app's location features. We use various technologies to determine location, including IP, GPS, Bluetooth signals, and information about nearby Wi-Fi access points, beacons, and cell towers.\""
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-some"
+citations = [
+  "\"We are part of the Facebook Companies. As part of the Facebook Companies, WhatsApp receives information from, and shares information with, the Facebook Companies. We may use the information we receive from them, and they may use the information we share with them, to help operate, provide, improve, understand, customize, support, and market our Services and their offerings. This includes helping improve infrastructure and delivery systems, understanding how our Services or theirs are used, helping us provide a way for you to connect with businesses, and securing systems. We also share information to fight spam, threats, abuse, or infringement activities and promote safety and security across the Facebook Company Products. However, your WhatsApp messages will not be shared onto Facebook for others to see. In fact, Facebook will not use your WhatsApp messages for any purpose other than to assist us in operating and providing our Services.\""
+]
+notes = [
+  "The collection of specific personal data can be changed in settings. However, if information is collected, it is shared with the Facebook Companies and can even be used to help them market their 'Services.'"
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "\"We collect, use, preserve, and share your information if we have a good-faith belief that it is reasonably necessary to: (a) respond pursuant to applicable law or regulations, to legal process, or to government requests…\""
+]
+
+[rubric.list-collected]
+value = "generally"
+notes = [
+  "A generally exhaustive list of the specific information collected, but has a few examples and language such as \"like,\" \"including,\" or \"such as.\""
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "\"We will notify you before we make changes to this Privacy Policy and give you the opportunity to review the revised Privacy Policy before you choose to continue using our Services.\""
+]

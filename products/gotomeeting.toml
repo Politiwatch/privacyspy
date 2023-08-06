@@ -1,0 +1,6 @@
+name = "GoToMeeting"
+description = "GoToMeeting is a meeting service by LogMeIn, Inc."
+hostnames = ["gotomeeting.com", "goto.com", "gotowebinar.com", "gototraining.com", "my.jive.com", "gotoroom.me", "gotoroom.com"]
+slug = "gotomeeting"
+parent = "logmein"
+contributors = [ "AlexThurman", "doamatto" ]

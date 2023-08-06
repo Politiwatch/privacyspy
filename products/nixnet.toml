@@ -1,0 +1,68 @@
+name = "NixNet"
+description = "NixNet is an encrypted DNS provider by Amolith."
+slug = "nixnet"
+hostnames = [ "nixnet.services" ]
+sources = [ "https://nixnet.services/privacy/" ]
+contributors = [ "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+citations = [
+  "Whatever data is collected is stored on servers I have sole control over and it won’t be shared with any third parties whatsoever."
+]
+
+[rubric.security]
+value = "no"
+notes = [ "This is never mentioned." ]
+
+[rubric.third-party-collection]
+value = "no"
+notes = [ "No data is collected from third parties" ]
+
+[rubric.history]
+value = "no"
+notes = [ "No date or changelog provided." ]
+
+[rubric.data-deletion]
+value = "na"
+notes = [ "There is no personal information collected." ]
+
+[rubric.data-breaches]
+value = "na"
+notes = [ "No data could be used to contact a user." ]
+
+[rubric.third-party-access]
+value = "no"
+citations = [
+  "Whatever data is collected is stored on servers I have sole control over and it won’t be shared with any third parties whatsoever."
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "In short:\n\nHaproxy TCP/HTTP logs are disabled. No IP addresses are collected.\nUnbound debug logs are enabled (verbosity: 1).\nQuery amounts coming specifically from the DNS-over-TLS server aren’t counted.\nWebsite/DNS-over-HTTPS gateway’s NGINX logs are disabled.\n\nTo elaborate on Unbound’s verbosity, if you have it installed, you can run man unbound.conf, search verbosity and read it yourself. More human-readably . . .\n\nLevel 0 only outputs errors\nLevel 1 gives high-level operational information (debug logs)\nLevel 2 gives detailed debug logs\nLevel 3 shows the admin what queries are going through Unbound\nLevel 4 gives lower-level algorithm information\nLevel 5 logs client information"
+]
+
+[rubric.noncritical-purposes]
+value = "na"
+notes = [
+  "No data is collected that isn't used strictly for providing the service."
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "I do live in the US; I have three servers here, three in Germany, and another in Luxembourg. If, for whatever reason, I’m compelled by law enforcement to give up your email, IP address, or any other information, I will even though I don’t want to. As such, I do whatever I can to make sure I don’t have that information. If I don’t have it, I can’t share it."
+]
+
+[rubric.list-collected]
+value = "exhaustively"
+citations = [
+  "In short:\n\nHaproxy TCP/HTTP logs are disabled. No IP addresses are collected.\nUnbound debug logs are enabled (verbosity: 1).\nQuery amounts coming specifically from the DNS-over-TLS server aren’t counted.\nWebsite/DNS-over-HTTPS gateway’s NGINX logs are disabled.\n\nTo elaborate on Unbound’s verbosity, if you have it installed, you can run man unbound.conf, search verbosity and read it yourself. More human-readably . . .\n\nLevel 0 only outputs errors\nLevel 1 gives high-level operational information (debug logs)\nLevel 2 gives detailed debug logs\nLevel 3 shows the admin what queries are going through Unbound\nLevel 4 gives lower-level algorithm information\nLevel 5 logs client information"
+]
+
+[rubric.revision-notify]
+value = "na"
+notes = [
+  "No contact information is collected that could make this possible."
+]

@@ -31,6 +31,11 @@ for (const product of products) {
       expect(product.slug.toLowerCase()).toEqual(product.slug);
     });
 
+    // The following isn't a particularly useful test, but it ensures that Jest waits for all handles to close.
+    test(`last updated must load`, async () => {
+      expect(await product.lastUpdated).toBeDefined();
+    });
+
     describe(`must have hostname(s) {hostnames}`, () => {
       test("that exist", () => {
         expect(product.hostnames.length).toBeGreaterThan(0);
@@ -56,10 +61,10 @@ for (const product of products) {
       });
 
       test(`that is mostly square`, () => {
-        let dimensions = sizeOf("icons/" + product.icon);
-        let aspectRatio = dimensions.width / dimensions.height;
+        const dimensions = sizeOf("icons/" + product.icon);
+        const aspectRatio = dimensions.width / dimensions.height;
         expect(Math.abs(1 - aspectRatio)).toBeLessThanOrEqual(0.2);
-      })
+      });
     });
 
     if (product.parent != null) {

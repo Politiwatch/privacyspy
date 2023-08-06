@@ -2,11 +2,11 @@
 
 {{#*inline "content"}}
 <main class="max-w-2xl mx-auto content">
-  <h1 class="text-5xl font-extrabold mb-8">API Access</h1>
+  <h1 class="mb-8 text-5xl font-extrabold">API Access</h1>
   {{#markdown}}
   We're happy to maintain an open API that you can use to incorporate PrivacySpy into your own application. So long as you follow our [Terms](/terms-and-privacy/) and attribute the information back to PrivacySpy, you can use the data however you wish.
 
-  The index of the PrivacySpy database is published at `/api/v2/index.json`. The full PrivacySpy database is split across three larger endpoints: `/api/v2/contributors.json` (contributors), `/api/v2/rubric.json` (rubric), and `/api/v2/products.json` (products).
+  The index of the PrivacySpy database is published at `/api/v2/index.json`. The full PrivacySpy database is split across three larger endpoints: `/api/v2/contributors.json` (contributors), `/api/v2/rubric.json` (rubric), and `/api/v2/products.json` (products). Individual product information can be accessed at `/api/v2/products/{slug}.json`.
   
   <p class="text-sm text-gray-600">
     Want another endpoint? PrivacySpy is open source, so you can <a href="/contribute/">build it yourself</a>!

@@ -1,0 +1,81 @@
+name = "tsoHost"
+description = "tsoHost is a domain, web, WordPress, and VPS hosting provider."
+slug = "tsohost"
+hostnames = [ "tsohost.com" ]
+sources = [ "https://www.tsohost.com/legal/privacy-policy" ]
+contributors = [ "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "yes-opt-out"
+citations = [
+  "Targeted ads or interest-based offers may be presented to you based on your activities on our webpages, and other websites, and based on the products you currently own.  These offers will display as varying product banners presented to you while browsing. We also partner with third parties to manage our advertising on our webpages and other websites such as Facebook, Twitter, Google and Microsoft.  Our third party partners may use technologies such as cookies to gather information about such activities in order to provide you with advertising based upon your browsing activities and interests, and to measure advertising effectiveness.  If you wish to opt out of interest-based advertising in the European Union click here. Please note you will continue to receive generic ads."
+]
+notes = [ "There aren't actually any opt-out links." ]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "We follow generally accepted standards to store and protect the personal data we collect, both during transmission and once received and stored, including utilisation of encryption where appropriate. We retain personal data only for as long as necessary to provide the Services you have requested and thereafter for a variety of legitimate legal or business purposes. These might include retention periods: mandated by law, contract or similar obligations applicable to our business operations; for preserving, resolving, defending or enforcing our legal/contractual rights; or needed to maintain adequate and accurate business and financial records.\nIf you have any questions about the security or retention of your personal data, you can contact us at privacy@tsohost.com."
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "Supplemented Data may be received about you from other sources, including publicly available databases or third parties from whom we have purchased data, in which case we may combine this data with information we already have about you so that we can update, expand and analyse the accuracy of our records, identify new customers, and provide products and services that may be of interest to you.  If you provide us personal information about others, or if others give us your information, we will only use that information for the specific reason for which it was provided to us."
+]
+
+[rubric.history]
+value = "no"
+notes = [ "No date or changelog provided." ]
+
+[rubric.data-deletion]
+value = "yes-automated"
+citations = [
+  "To easily access, view, update, delete or port your personal data (where available), or to update your subscription preferences, please sign into your Account and visit “Account Settings.” Please visit our Privacy Centre for additional information and guidance for accessing, updating or deleting data. \n\nIf you make a request to delete your personal data and that data is necessary for the products or services you have purchased, the request will be honoured only to the extent it is no longer necessary for any Services purchased or required for our legitimate business purposes or legal or contractual record keeping requirements.\n\nIf you are unable for any reason to access your Account Settings or our Privacy Centre, you may also contact us by one of the methods described in the “Contact Us” section below.  "
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "This policy doesn't require the service to alert you in the event of a data breach."
+]
+
+[rubric.third-party-access]
+value = "yes-specified-noncritical"
+citations = [
+  "We may share your personal data with affiliated companies within our corporate family, with third parties with which we have partnered to allow you to integrate their services into our own Services, and with trusted third party service providers as necessary for them to perform services on our behalf, such as:\n- Processing credit card payments\n- Serving advertisements\n- Conducting contests or surveys\n- Performing analysis of our Services and customers demographics\n- Communicating with you, such as by way email or survey delivery\n- Customer relationship management.\n\nWe only share your personal data as necessary for any third party to provide the services as requested or as needed on our behalf. These third parties (and any subcontractors) are subject to strict data processing terms and conditions and are prohibited from utilising, sharing or retaining your personal data for any purpose other than as they have been specifically contracted for (or without your consent)."
+]
+notes = [
+  "A sublink for all their data processors is at https://www.tsohost.com/assets/uploads/features/tsoHost-ThirdPartyDataProcessors.pdf"
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "We strongly believe in both minimising the data we collect and limiting its use and purpose to only that (1) for which we have been given permission, (2) as necessary to deliver the Services you purchase or interact with, or (3) as we might be required or permitted for legal compliance or other lawful purposes. These uses include:\n- We collect various information relating to your purchase, use and/or interactions with our Services. We utilise this information to: Improve and optimise the operation and performance of our Services (again, including our websites and mobile applications); Diagnose problems with and identify any security risks, errors, or needed enhancements to the Services; Detect and prevent fraud and abuse of our Services and systems; Collecting aggregate statistics about use of the Services; Understand and analyse how you use our Services and what products and services are most relevant to you. Often, much of the data collected is aggregated or statistical data about how individuals use our Services, and is not linked to any personal data, but to the extent it is itself personal data, or is linked or linkable to personal data, we treat it accordingly. \n\n- We may share your personal data with affiliated companies within our corporate family, with third parties with which we have partnered to allow you to integrate their services into our own Services, and with trusted third party service providers as necessary for them to perform services on our behalf, such as: Processing credit card payments; Serving advertisements; Conducting contests or surveys; Performing analysis of our Services and customers demographics; Communicating with you, such as by way email or survey delivery; Customer relationship management.\nWe only share your personal data as necessary for any third party to provide the services as requested or as needed on our behalf. These third parties (and any subcontractors) are subject to strict data processing terms and conditions and are prohibited from utilising, sharing or retaining your personal data for any purpose other than as they have been specifically contracted for (or without your consent). "
+]
+
+[rubric.noncritical-purposes]
+value = "no"
+citations = [
+  "If you wish to opt out of interest-based advertising in the European Union click here. Please note you will continue to receive generic ads."
+]
+notes = [ "There isn't actually a link for opting-out." ]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "We cooperate with government and law enforcement officials and private parties to enforce and comply with the law. We will disclose any information about you to government or law enforcement officials or private parties as we, in our sole discretion, believe necessary or appropriate to respond to claims and legal process (such as subpoena requests), to protect our property and rights or the property and rights of a third party, to protect the safety of the public or any person, or to prevent or stop activity we consider to be illegal or unethical."
+]
+
+[rubric.list-collected]
+value = "generally"
+citations = [
+  "We collect information so that we can provide the best possible experience when you utilise our Services.  Much of what you likely consider personal data is collected directly from you when you: create an account or purchase any of our Services (eg: billing information, including name, address, credit card number); request assistance from our award-winning customer support team (eg: phone number); complete contact forms or request newsletters or other information from us (eg: email); or participate in contests and surveys, apply for a job, or otherwise participate in activities we promote that might require information about you.\nHowever, we also collect additional information when delivering our Services to you to ensure necessary and optimal performance.  These methods of collection may not be as obvious to you, so we wanted to highlight and explain below a bit more about what these might be (as they vary from time to time) and how they work:\n\nAccount related information is collected in association with your use of our Services, such as account number, purchases, when products renew or expire, information requests, support requests and notes or details explaining what you asked for and how we responded.\n\nCookies and similar technologies on our websites allow us to track your browsing behaviour, links clicked, items purchased, your device type, and to collect various data, including analytics, about how you use and interact with our Services. This allows us to provide you with more relevant product offerings, a better experience on our sites and mobile applications, and to collect, analyse and improve the performance of our Services. We may also collect your location (IP address) so that we can personalise our Services. For additional information, and to learn how to manage the technologies we utilise, please visit our Cookie Policy.\n\nData about Usage of Services is automatically collected when you use and interact with our Services, including metadata, log files, cookie/device IDs and location information. This information includes specific data about your interactions with the features, content and links (including those of third-parties, such as social media plugins) contained within the Services, Internet Protocol (IP) address, browser type and settings, the date and time the Services were used, information about browser configuration and plugins, language preferences and cookie data, information about devices accessing the Services, including type of device, what operating system is used, device settings, application IDs, unique device identifiers and error data, and some of this data collected might be capable of and be used to approximate your location. \n\nSupplemented Data may be received about you from other sources, including publicly available databases or third parties from whom we have purchased data, in which case we may combine this data with information we already have about you so that we can update, expand and analyse the accuracy of our records, identify new customers, and provide products and services that may be of interest to you.  If you provide us personal information about others, or if others give us your information, we will only use that information for the specific reason for which it was provided to us."
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "We reserve the right to modify this Privacy Policy at any time. If we decide to change our Privacy Policy, we will post those changes to this Privacy Policy and any other places we deem appropriate, so that you are aware of what information we collect, how we use it, and under what circumstances, if any, we disclose it. If we make material changes to this Privacy Policy, we will notify you here, by email, or by means of a notice on our home page, at least thirty (30) days prior to the implementation of the changes."
+]

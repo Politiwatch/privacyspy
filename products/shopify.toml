@@ -1,0 +1,85 @@
+name = "Shopify"
+description = "Shopify is a web application that allows you to create your own online store."
+slug = "shopify"
+hostnames = [ "Myshopify.com" ]
+sources = [ "https://www.shopify.com/legal/privacy" ]
+contributors = [ "UnKnOwN" ]
+
+[rubric.behavioral-marketing]
+value = "yes-opt-out"
+citations = [
+  "We use cookies to serve targeted ads from Google, Facebook, Bing, SourceKnowledge, and other third-party vendors. We also use cookies, and other information from your browser and/or device to provide you with personalized advertising, ad delivery, and reporting across multiple sessions and devices."
+]
+notes = [ "The service does offer opting-out option." ]
+
+[rubric.security]
+value = "yes-audits"
+citations = [
+  "We follow industry standards on information security management to safeguard sensitive information, such as financial information, intellectual property, employee details and any other personal information entrusted to us. Our information security systems apply to people, processes and information technology systems on a risk management basis.\n\nWe perform annual audits to ensure our handling of your credit card information aligns with industry guidelines. We are certified as a PCI DSS Level 1 compliant service provider, which is the highest level of compliance available, and our platform is audited annually by a third-party qualified security assessor.\""
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "We collect your name, company name, website, twitter or other social media handles, phone number(s), address, business type, email address, PayPal Account, and GST/HST number.\n\nWe collect data about the Shopify websites that you visit. We also collect data about how and when you access your account and the Shopify platform, including information about the device and browser you use, your network connection, your IP address, and information about how you browse through the Shopify interface.\n\n"
+]
+
+[rubric.history]
+value = "last-modified"
+notes = [
+  "The last modified date is available in the bottom of the policy."
+]
+
+[rubric.data-deletion]
+value = "yes-contact"
+citations = [
+  "Shopify understands that you have rights over your personal information, and takes reasonable steps to allow you to access, correct, amend, delete, port, or limit the use of your personal information."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "Nothing is mentioned about data breaches in the privacy policy."
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = [
+  "Shopify works with a variety of third parties and service providers to help provide you with our Services and we may share personal information with them to support these efforts."
+]
+
+[rubric.data-collection-reasoning]
+value = "mostly"
+citations = [
+  "We collect your name, company name, address, email address, phone number(s) and payment details (for example, your credit card information).\n\nWe use this information to provide you with our Services; for example, to confirm your identity, contact you, provide you with advertising and marketing, and invoice you. We also use this information to make sure that we comply with legal requirements."
+]
+notes = [
+  "It's generally clear why the service collects the data that it does."
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-some"
+citations = [
+  "Opting out: You can opt out of targeted ads served via specific third party vendors by visiting the Digital Advertising Alliance’s Opt-Out page or the Network Advertising Initiative’s Opt-Out page."
+]
+notes = [
+  "Despite you can opt-out of targeted ads, there is still quite a big amount of data that is going to be used for non-critical purposes."
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "..to conform to legal requirements, or to respond to lawful court orders, subpoenas, warrants, or other requests by public authorities (including to meet national security or law enforcement requirements)."
+]
+
+[rubric.list-collected]
+value = "generally"
+notes = [
+  "The policy lists the data types only generally though uses a lot of \"including\" and \"for example\" statements."
+]
+
+[rubric.revision-notify]
+value = "no"
+citations = [
+  "If we make material changes to this Privacy Policy, we will give you notice of such changes by posting the revised policy on this Website, and where appropriate, by other means."
+]

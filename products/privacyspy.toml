@@ -2,8 +2,8 @@ name = "PrivacySpy"
 description = "PrivacySpy is an initiative that strives to establish transparency in privacy policies."
 slug = "privacyspy"
 hostnames = [ "privacyspy.org" ]
-sources = [ "http://privacyspy.org/terms-and-privacy/" ]
-contributors = [ "milesmcc", "ibarakaiev" ]
+sources = [ "https://privacyspy.org/terms-and-privacy/" ]
+contributors = [ "ibarakaiev", "milesmcc", "doamatto" ]
 
 [rubric.behavioral-marketing]
 value = "no"
@@ -26,19 +26,19 @@ citations = [
 [rubric.history]
 value = "yes"
 notes = [
-  "Revision history is linked to on GitHub."
+  "You can see past revisions [here](https://github.com/Politiwatch/privacyspy/blob/master/TERMS_AND_PRIVACY.md)"
 ]
 
 [rubric.data-deletion]
-value = "yes-automated"
-citations = [
-  "\"You may delete all of your personal information from our systems by using the 'Delete Account' tool in your profile. If you do not have an account, we do not have any of your personal information.\""
+value = "na"
+notes = [
+  "There is no way to identify users to delete the data collected by usage statistics"
 ]
 
 [rubric.data-breaches]
-value = "yes-72"
-citations = [
-  "\"If we learn of a data breach, we will notify all affected users within 72 hours of discovery.\""
+value = "na"
+notes = [
+  "There is no way to reach out to users about data breaches because no contact information is collected."
 ]
 
 [rubric.third-party-access]
@@ -50,10 +50,7 @@ citations = [
 [rubric.data-collection-reasoning]
 value = "yes"
 citations = [
-  "\"We only ask for personal information when we truly need it to provide a service to you.\""
-]
-notes = [
-  "The data collected, such as email addresses and name, are all understandable. Logs are rotated."
+  "\"We only retain collected information for as long as necessary to provide you with your requested service.\""
 ]
 
 [rubric.noncritical-purposes]
@@ -71,11 +68,11 @@ citations = [
 [rubric.list-collected]
 value = "exhaustively"
 citations = [
-  "We collect the following data:\r\n\r\n- Your email address and name (when you sign up for an account)\r\n- Your IP address and browser \"user agent\" (in logs, which are periodically rotated)\r\n- Your actions performed on the website (edits, suggestions, and profile changes)\r\n- Aggregate website usage statistics (page views, general geographic breakdowns, device types)\r\n"
+  "We collect the following data:\n\n- Your IP address and browser \"user agent\" (in logs, which are periodically rotated)\n- Aggregate website usage statistics (page views, general geographic breakdowns, device types)\n"
 ]
 
 [rubric.revision-notify]
-value = "yes"
+value = "na"
 citations = [
-  "\"If we modify this privacy policy in any significant way, we will notify all users via email.\""
+  "There is no way to reach out to users about policy changes because no contact information is collected."
 ]

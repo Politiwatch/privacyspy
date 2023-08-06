@@ -1,0 +1,6 @@
+name = "MSN"
+description = "MSN is a web portal for shopping, news, instant messaging, and web searches."
+slug = "msn"
+hostnames = [ "msn.com" ]
+contributors = [ "UnKnOwN" ]
+parent = "microsoft"

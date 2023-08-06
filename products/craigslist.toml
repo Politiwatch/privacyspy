@@ -1,0 +1,86 @@
+name = "Craigslist"
+description = "Craigslist (stylized as craigslist) is an American classified advertisements website."
+slug = "craigslist"
+hostnames = [ "Craigslist.org" ]
+sources = [ "https://www.craigslist.org/about/privacy.policy" ]
+contributors = [ "UnKnOwN" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+citations = [
+  "We do not run ads, other than the classifieds posted by our users.\nWe do not share your data with third parties for marketing purposes."
+]
+
+[rubric.security]
+value = "no"
+citations = [
+  "We retain data as needed for our business purposes and/or as required by law. We make good faith efforts to store data securely, but can make no guarantees."
+]
+notes = [
+  "The only information the service provides as is that it retains the data \"as needed\"."
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "Data we use to provide/improve our services and/or combat fraud/abuse:\n[...]data from 3rd parties (e.g. phone type, geo-location via IP address)."
+]
+
+[rubric.history]
+value = "no"
+notes = [
+  "Nothing is mentioned about policy's history in the privacy policy."
+]
+
+[rubric.data-deletion]
+value = "no"
+notes = [
+  "Nothing is mentioned about data deletion in the privacy policy."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "Nothing is mentioned about data breaches in the privacy policy."
+]
+
+[rubric.third-party-access]
+value = "no"
+citations = [
+  "We do not run ads, other than the classifieds posted by our users.\nWe do not share your data with third parties for marketing purposes.\nWe do not engage in cross-marketing or link-referral programs.\nWe do not employ tracking devices for marketing purposes.\nWe do not send you unsolicited communications for marketing purposes.\nWe do not engage in affiliate marketing (and prohibit it on CL)."
+]
+
+[rubric.data-collection-reasoning]
+value = "somewhat"
+citations = [ "To provide/improve our services and/or combat fraud/abuse." ]
+notes = [ "The formulation is very vague." ]
+
+[rubric.noncritical-purposes]
+value = "na"
+notes = [
+  "Does not collect data for advertisement or other non-critical purposes."
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "Circumstances in which we may disclose user data: [...] to respond to subpoenas, search warrants, court orders, or other legal process."
+]
+notes = [
+  "The formulation \"or other legal process\" makes the statement non-absolute."
+]
+
+[rubric.list-collected]
+value = "generally"
+citations = [
+  "Data we use to provide/improve our services and/or combat fraud/abuse:\n\ndata you post on or send via CL, and/or send us directly or via other sites.\n\ncredit card data, which is transmitted to payment processors via a security protocol (e.g. SSL).\n\ndata you submit or provide (e.g. name, address, email, phone, fax, photos, tax ID).\n\nweb log data (e.g. web pages viewed, access times, IP address, HTTP headers).\n\ndata collected via cookies (e.g. search data and \"favorites\" lists).\n\ndata about your device(s) (e.g. screen size, DOM local storage, plugins).\n\ndata from 3rd parties (e.g. phone type, geo-location via IP address).\""
+]
+notes = [
+  "The company lists the data it uses to provide/improve its services and/or combat fraud/abuse, however, the formulation is vague and the company does not state that this data is the only data it collects."
+]
+
+[rubric.revision-notify]
+value = "no"
+citations = [
+  "If we update it, we will revise the date, place notices on CL if changes are material, and/or obtain your consent as required by law."
+]

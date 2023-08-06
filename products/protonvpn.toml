@@ -1,0 +1,74 @@
+name = "ProtonVPN"
+description = "ProtonVPN is a virtual private network service provider operated by the Swiss company Proton Technologies AG."
+slug = "protonvpn"
+hostnames = [ "protonvpn.com" ]
+sources = [ "https://protonvpn.com/privacy-policy" ]
+contributors = [ "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+citations = [ "We do not do any targeted advertising or any profiling." ]
+
+[rubric.security]
+value = "yes-independent-audits"
+citations = [
+  "We take data security very seriously. Access to our infrastructure and Secure Core servers is tightly controlled. All of the ProtonVPN servers are encrypted and we do not log VPN session data. Offline backups may be stored periodically, but these are also secured. For users with heightened security needs, it is possible to optionally i) enable 2FA on account access ii) enable login history so that suspicious login attempts can be tracked iii) remove the linked recovery email iv) pay anonymously with cash or bitcoin."
+]
+notes = ["[All ProtonVPN apps are now open source and audited](https://protonvpn.com/blog/open-source/)."]
+
+[rubric.third-party-collection]
+value = "no"
+notes = [ "No mention of such in policy" ]
+
+[rubric.history]
+value = "last-modified"
+citations = [ "Last modified: March 11, 2020" ]
+
+[rubric.data-deletion]
+value = "yes-automated"
+citations = [
+  "Through the Service, you can directly access, edit, delete or export personal data processed by the Company in your use of the Service.\n[...]\nData retention: We retain essential data (such as username, email, billing information) on active accounts in order to provide services. This data is deleted when your account is deleted."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [ "No mention of such in this policy" ]
+
+[rubric.third-party-access]
+value = "yes-unspecified-critical"
+citations = [
+  "Support: When you submit support requests or bug reports, we will collect the data that you choose to share with us about the issue being reported. Bug reports sometimes rely on third parties, such as Zendesk.\n\nPayment: The Company relies on third parties to process credit card and PayPal transactions, and we do not save your full credit card details. For example, if you make a payment with a credit card, your name and the last 4 digits of the credit card number will become part of the invoice and saved by us. Anonymous cash or Bitcoin payments and donations are also accepted.\n\n"
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "How we use this personal data: Your email address is not shared with any third parties. We mainly use it for account-related questions, communication, and recovery. By signing up to our Service, you agree to receive communications from us, which may include promotional emails too. You can stop receiving emails from us by following the unsubscribe instructions included in every email we send. Alternatively, you can login to the ProtonVPN dashboard and adjust your email preferences under the ‘Account’ tab."
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-all"
+citations = [
+  "We use analytics software to help us deliver a higher quality of service. For instance, looking in aggregate at the geographic distribution of the Service's users allows us to understand which countries have the most need for the Service and allocate development resources towards providing the best service in those countries. Viewing longer term trends in the number of visitors from different countries also allows us to identify quickly which countries have started to block the Service and take measures to counteract those blocks. Finally, analytics also helps with our outreach and growth initiatives, which are efforts to help our Company reach and protect the largest number of people possible.\n\nHow do we collect non-personal website data: We may use various cookies to collect and store information when you visit our website. Users can control the use of cookies at the individual browser level."
+]
+
+[rubric.law-enforcement]
+value = "strict"
+citations = [
+  "We will only disclose the limited user data we possess when compelled by law for the purposes of the prevention, investigation, detection or prosecution of criminal offences or the execution of criminal penalties, including the safeguarding against and the prevention of threats to public security. Foreign authorities' data requests must be approved by competent Swiss authorities.\n\nUnder Swiss law, it is obligatory to notify the target of a surveillance request, although such notification may come from the authorities and not from the Company."
+]
+notes = [
+  "As mentioned on their Warrant Canary: \"To be counted here as a legal request for information, the request must come through official channels foreign or domestic (either a court order, directly from a government entity, or from legal/security departments of corporations). The only legally binding requests are ones from the Swiss courts that we are legally obligated to comply with. Under Swiss data protection regulations, we cannot legally comply with foreign requests that are not supported by a Swiss court order.\" (https://protonvpn.com/blog/transparency-report/)"
+]
+
+[rubric.list-collected]
+value = "exhaustively"
+citations = [
+  "Account creation: To create an account, in order to use our Service, we do not ask your name or surname. All you need to do is select your username, then provide the email address and choose your password. You can also register with your existing ProtonID.\n\nWe do store the email address (or ProtonID) you have entered when creating an account for communication and anti-abuse purposes. If you are referred to the Service by a friend or some other third-party who is participating in our referral program, we may associate your account with the referrer to appropriately credit the referrer.\n\nSupport: When you submit support requests or bug reports, we will collect the data that you choose to share with us about the issue being reported. Bug reports sometimes rely on third parties, such as Zendesk.\n\nPayment: The Company relies on third parties to process credit card and PayPal transactions, and we do not save your full credit card details. For example, if you make a payment with a credit card, your name and the last 4 digits of the credit card number will become part of the invoice and saved by us. Anonymous cash or Bitcoin payments and donations are also accepted."
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "The Company reserves the right to periodically review and change this Policy, and will notify users who have enabled the notification preference about any change. Continued use of the Service will be deemed as acceptance of such changes."
+]

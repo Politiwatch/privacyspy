@@ -1,0 +1,113 @@
+name = "Bank of America"
+description = "Bank of America is an American multinational investment bank and financial services company."
+slug = "bank-of-america"
+hostnames = [ "bankofamerica.com" ]
+sources = [
+  "https://www.bankofamerica.com/security-center/online-privacy-notice/"
+]
+contributors = [ "PSalant", "ibarakaiev" ]
+
+[rubric.behavioral-marketing]
+value = "yes-opt-out"
+citations = [
+"""You have choices about how Bank of America advertises to you based on your online behavior.
+
+There is no standard for how "do not track" consumer browser settings should work for online advertising purposes. As such, we do not respond to browser "do not track" signals from browser settings. However, there are several opt out options available to you:
+- Advertising on our Sites and Mobile Apps and off-line channels such as financial centers, call centers, and through direct marketing (for example email, mail, phone): If you prefer we not provide you with tailored content and advertising based on your online behavior with our Sites and Mobile Apps, you may opt out of online behavioral advertising. Please review the important Reminder section that follows.
+- Advertising on Non-Affiliated Third Party sites: Bank of America participates in the Digital Advertising Alliance ("DAA") self-regulatory Principles for Online Behavioral Advertising and uses the Advertising Options Icon on our behavioral ads on non-affiliated third party sites (excluding ads appearing on platforms that do not accept the icon). Ads served on our behalf by these companies do not contain unencrypted personal information and we limit the use of personal information by companies that serve our ads. To learn more about ad choices, or to opt out of interest-based advertising with non-affiliated third party sites, visit [YourAdChoices](http://www.aboutads.info/choices/) layer powered by the Digital Advertising Alliance or through the [Network Advertising Initiative's Opt-Out Tool](https://www.networkadvertising.org/choices). You may also visit the individual sites for additional information on their data and privacy practices and opt out-options.
+"""
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "To protect personal information from unauthorized access and use, we use security measures that comply with applicable federal and state laws. These measures may include device safeguards and secured files and buildings as well as oversight of our third party service providers to ensure personal information remains confidential and secure. In the event of a data breach, we provide timely notification, in accordance with applicable laws."
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "This notice explains\n- How we collect personal information when you visit, use or interact with us online, and through our ads displayed through online services operated by us or non-affiliated third parties"
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [
+  "This Notice is subject to change. Please review it periodically. If we make changes to this Notice, we will revise the Last updated date on this page."
+]
+
+[rubric.data-deletion]
+value = "no"
+notes = [
+  "There is no mention of a mechanism to permanently delete personal data; there is only mention of an opt-out mechanism for future data collection."
+]
+
+[rubric.data-breaches]
+value = "eventually"
+citations = [ "In the event of a data breach, we provide timely notification, in accordance with applicable laws." ]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = [
+"""We may share the personal information we collect from and about you online described in this Notice (and subject to other legal restrictions and notices you may have received depending on your relationship with us) with:
+
+- Affiliates and Subsidiaries of Bank of America, such as Merrill
+- Service Providers, Vendors and Third Party Providers who have contracts with Bank of America
+- Government Agencies as required by laws and regulations.
+""",
+"We may allow certain non-affiliated third party widgets (for example social share buttons) on our sites that enable users to easily share information on another platform, such as a social media platform. The non-affiliated third parties that own these widgets may have access to information about your browsing on pages of our Sites and Mobile Apps where these widgets are placed."
+]
+
+[rubric.data-collection-reasoning]
+value = "mostly"
+citations = [
+  """Personal information collected from and about you online described in this Notice may be used for many purposes such as:
+
+- Delivering products and services to you by verifying your identity (for example when you access your account information); processing applications for products or services such as to prequalify for a mortgage, apply for a credit card, or to open a retirement account, investment account or other financial product; processing transactions; finding nearby ATMs, financial centers, and other specialized location based services near your location; and consolidating your financial account information at one online location with services such as My Portfolio® and My Financial Picture®.
+- Personalizing your digital and mobile experience by enhancing overall Sites and Mobile Apps organization and design and analyze data to create relevant alerts, products or services.
+- Providing advertising on our Sites and Mobile Apps as well as non-affiliated third party sites and through off-line channels like financial centers, call centers and direct marketing (for example email, mail and phone).
+- Detecting and preventing fraud, identify theft and other risks to you or Bank of America.
+- Performing analytics concerning your use of our online services, including your responses to our emails and the pages and advertisements you view.
+- Complying with and enforcing applicable legal requirements, relevant industry standards, contractual obligations and our policies.
+- Allowing you to use features within our Sites and Mobile Apps when you grant us access to personal information from your device such as contact lists, or geo-location when you request certain services that requires such access, for example locating an ATM."""
+]
+
+[rubric.noncritical-purposes]
+value = "no"
+notes = [
+  "There is no mention of a possibility to opt-out from non-critical data collection other than behavioral marketing. Since that is covered by the advertising rubric question, the answer to this rubric entry is no."
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+notes = [
+  "There are multiple mentions of \"complying with law\", yet no section dedicated to that specifically."
+]
+
+[rubric.list-collected]
+value = "generally"
+citations = [
+  """
+The type of personal information we collect from and about you online will depend on how you interact with us and may include:
+
+- Contact Information such as name, mailing address, email address, telephone and mobile number(s),
+- Account Application information such as credit and income information,
+- Identifiers such as social security number, account number(s), driver’s license number (or comparable) or other information that identifies you for ordinary business purposes
+- Access Authorization such as user name, alias, PIN and passcode and security questions and answers
+- Information from your computer, smartphone, tablet or other mobile device, such as
+  - Unique device identifiers (for example Media Access Control (MAC) and Internet Protocol (IP) addresses)
+  - Browser type, version, language, and display/screen settings
+  - Information about how you use and interact with our Sites and Mobile Apps (for example page visited, links clicked)
+  - Responses to advertisements on the Sites and Mobile Apps where we advertise
+  - Log information such as your search and voice to text queries in the mobile app
+  - Search engine referrals
+  - Geolocation information with consent, for example ATM or financial center location, fraud prevention)
+  - Social media preference
+  """
+]
+
+[rubric.revision-notify]
+value = "no"
+citations = [
+  "This Notice is subject to change. Please review it periodically. If we make changes to this Notice, we will revise the Last updated date on this page."
+]

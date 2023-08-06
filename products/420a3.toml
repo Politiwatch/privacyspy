@@ -1,5 +1,5 @@
 name = "420A3"
-description = "420a3 is an online directory of businesses and information related to cannabis (420)."
+description = "420a3 is an online directory of businesses and information related to cannabis."
 slug = "420a3"
 hostnames = [ "420a3.com" ]
 sources = [ "https://www.420a3.com/privacy-policy" ]
@@ -8,16 +8,16 @@ contributors = [ "RambosRide" ]
 [rubric.behavioral-marketing]
 value = "no"
 citations = [
-  "Third Party Advertisers\r\n\r\nWe DO NOT permit advertisements to be delivered to you by third party Internet advertising companies (also called ad networks or network advertisers). "
+  "Third Party Advertisers\n\nWe DO NOT permit advertisements to be delivered to you by third party Internet advertising companies (also called ad networks or network advertisers). "
 ]
 
 [rubric.security]
 value = "yes"
 citations = [
-  "Security\r\n\r\n420A3 takes EXTRA steps and encrypts anything potentially sensitive in our database and any other commercially reasonable steps to help protect your Information against loss, misuse and unauthorized access, or disclosure. For more details [link href=\"https://www.420a3.com/data-security-integrity]Data Security[link] No company can fully prevent security risks, however. While we strive to protect your personal information, we cannot guarantee its absolute security. To help protect yourself and your information, choose a unique password for our Services and do not use a password on our Services that you would use on any other website or online service."
+  "Security\n\n420A3 takes EXTRA steps and encrypts anything potentially sensitive in our database and any other commercially reasonable steps to help protect your Information against loss, misuse and unauthorized access, or disclosure. For more details [link href=\"https://www.420a3.com/data-security-integrity]Data Security[link] No company can fully prevent security risks, however. While we strive to protect your personal information, we cannot guarantee its absolute security. To help protect yourself and your information, choose a unique password for our Services and do not use a password on our Services that you would use on any other website or online service."
 ]
 notes = [
-  "Please note:  a link was added to a detailed security page in the citation above as the PP was updated 11/16/2019 to include link to\r\n\r\nwwwdot420a3dotcom/data-security-integrity - which spells out the security steps in detail - would have made the PP much more verbose and harder to read.\r\n\r\n"
+  "Please note:  a link was added to a detailed security page in the citation above as the PP was updated 11/16/2019 to include link to\n\nwwwdot420a3dotcom/data-security-integrity - which spells out the security steps in detail - would have made the PP much more verbose and harder to read.\n\n"
 ]
 
 [rubric.third-party-collection]
@@ -29,7 +29,7 @@ notes = [
 [rubric.history]
 value = "last-modified"
 citations = [
-  "Changes and Updates to this Privacy Policy\r\n\r\nFrom time to time, we may revise the Policy. To help you stay current of any changes, we note the date the Privacy Policy was last updated above."
+  "Changes and Updates to this Privacy Policy\n\nFrom time to time, we may revise the Policy. To help you stay current of any changes, we note the date the Privacy Policy was last updated above."
 ]
 
 [rubric.data-deletion]
@@ -47,13 +47,13 @@ notes = [
 [rubric.third-party-access]
 value = "no"
 citations = [
-  "How 420A3 Discloses Your Information\r\n\r\nWe may share your information as follows:\r\n\r\n- We DON'T share your data.\r\n- We WILL NOT disclose your information even if we believe we are required to do so by law, or to comply with a court order, judicial or other government subpoena, or warrant. We will fight it because nothing we have is relevant to anything but your login. We don't track what you search or when you search.\r\n- The ONLY event that would cause us to pass user data to another entity is if 420A3 is acquired by or merged with another company or involved in any other business deal (or negotiation of a business deal) involving sale or transfer of all or part of our business or assets, we may transfer or assign your information as part of or in connection with the transaction. Finally, in the event of insolvency, bankruptcy, or receivership, information may be transferred as a business asset."
+  "How 420A3 Discloses Your Information\n\nWe may share your information as follows:\n\n- We DON'T share your data.\n- We WILL NOT disclose your information even if we believe we are required to do so by law, or to comply with a court order, judicial or other government subpoena, or warrant. We will fight it because nothing we have is relevant to anything but your login. We don't track what you search or when you search.\n- The ONLY event that would cause us to pass user data to another entity is if 420A3 is acquired by or merged with another company or involved in any other business deal (or negotiation of a business deal) involving sale or transfer of all or part of our business or assets, we may transfer or assign your information as part of or in connection with the transaction. Finally, in the event of insolvency, bankruptcy, or receivership, information may be transferred as a business asset."
 ]
 
 [rubric.data-collection-reasoning]
 value = "mostly"
 citations = [
-  "420A3 generally uses your information to:\r\n\r\n- Facilitate the creation of and secure your account on the Services;\r\n- Identify you as a user in our system;\r\n- Provide and improve the Services;\r\n- Communicate with you about your use of the Services;\r\n- Develop new products and services,\r\n- Protect, investigate, and prevent potentially fraudulent, unauthorized, or illegal activities;\r\n- Protect our rights and the rights of other users; and\r\n- As otherwise described in this Privacy Policy or in notices we provided to you."
+  "420A3 generally uses your information to:\n\n- Facilitate the creation of and secure your account on the Services;\n- Identify you as a user in our system;\n- Provide and improve the Services;\n- Communicate with you about your use of the Services;\n- Develop new products and services,\n- Protect, investigate, and prevent potentially fraudulent, unauthorized, or illegal activities;\n- Protect our rights and the rights of other users; and\n- As otherwise described in this Privacy Policy or in notices we provided to you."
 ]
 notes = [
   "The privacy policy uses phrases like \"generally\" and employs vague statements like \"420A3 generally uses your information to develop new products and services.\""
@@ -72,11 +72,11 @@ citations = [
 [rubric.list-collected]
 value = "exhaustively"
 citations = [
-  "When you create an account and use our Services, we collect the following types of information from you.\r\n\r\nANY potentially sensitive data is either not stored on our servers, database, or is encrypted\r\n\r\n- User Name: This should be a fun name you can recall - We Recommend you DO NOT use your email address as your User Name.\r\n- Email Address, Stored Encrypted. Never shown onscreen, or shared, unless you otherwise allow it.\r\n- Passwords are NEVER sent in emails or displayed onscreen. Passwords ARE stored in our database, encrypted via a 1-way salted hash.\r\n- We will NEVER store Credit Card data on our servers or database.\r\n- Any other information, such as ratings, reviews, content, and bio, you provide us."
+  "When you create an account and use our Services, we collect the following types of information from you.\n\nANY potentially sensitive data is either not stored on our servers, database, or is encrypted\n\n- User Name: This should be a fun name you can recall - We Recommend you DO NOT use your email address as your User Name.\n- Email Address, Stored Encrypted. Never shown onscreen, or shared, unless you otherwise allow it.\n- Passwords are NEVER sent in emails or displayed onscreen. Passwords ARE stored in our database, encrypted via a 1-way salted hash.\n- We will NEVER store Credit Card data on our servers or database.\n- Any other information, such as ratings, reviews, content, and bio, you provide us."
 ]
 
 [rubric.revision-notify]
 value = "yes"
 citations = [
-  "Changes and Updates to this Privacy Policy\r\n\r\nFrom time to time, we may revise the Policy. To help you stay current of any changes, we note the date the Privacy Policy was last updated above."
+  "Changes and Updates to this Privacy Policy\n\nFrom time to time, we may revise the Policy. To help you stay current of any changes, we note the date the Privacy Policy was last updated above."
 ]

@@ -1,0 +1,78 @@
+name = "System76"
+description = "System76 builds premium custom computers that come installed with Linux by default."
+slug = "system76"
+hostnames = [ "system76.com" ]
+sources = [ "https://system76.com/privacy" ]
+contributors = [ "connervieira", "tpdcl" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+notes = [
+  "\"There is no mention of behavioral marketing.\""
+]
+
+[rubric.security]
+value = "no"
+citations = [
+  "\"Stripe may use cookies and similar technologies, i.e. for fraud detection and prevention.\""
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "\"Our website uses Plausible Analytics to help us understand visitor trends and the effectiveness of our marketing outreach.\nOur website uses Stripe to process payments. Stripe may use cookies and similar technologies, i.e. for fraud detection and prevention.\""
+]
+
+[rubric.history]
+value = "no"
+notes = [ "No history is made available anywhere on the site" ]
+
+[rubric.data-deletion]
+value = "yes-automated"
+citations = [
+  "\"Our website uses cookies to store session information, such as whether or not you are logged in. You can choose to disable or selectively turn off cookies or third-party cookies in your browser settings, but this may affect how you are able to interact with our site and others.\""
+]
+notes = [
+  "The only information collected directly by System76 is in the form of cookies. Everything else is dependent on Plausible Analytics and Stripe which have their own systems for removing personal information."
+]
+
+[rubric.data-breaches]
+value = "na"
+citations = [
+  "\"Our website uses cookies to store session information, such as whether or not you are logged in.\""
+]
+notes = [ "System76 only uses cookies" ]
+
+[rubric.third-party-access]
+value = "yes-specified-noncritical"
+citations = [
+  "\"Our website uses Plausible Analytics to help us understand visitor trends and the effectiveness of our marketing outreach.\""
+]
+
+[rubric.data-collection-reasoning]
+value = "somewhat"
+citations = [
+  "\"Our website uses cookies to store session information, such as whether or not you are logged in.\""
+]
+
+[rubric.noncritical-purposes]
+value = "na"
+notes = [
+  "The only tracking done by System76 is through cookies, all of which appear to be critical"
+]
+
+[rubric.law-enforcement]
+value = "unspecified"
+notes = [ "Nothing about law enforcement is ever mentioned" ]
+
+[rubric.list-collected]
+value = "no"
+notes = [
+  "The service only claims to use cookies, but doesn't explain in what ways."
+]
+
+[rubric.revision-notify]
+value = "no"
+notes = [
+  "There is no notice indicating that users will be notified of a change"
+]

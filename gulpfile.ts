@@ -12,12 +12,14 @@ import {
   hbsFactory,
   getProductPageBuildTasks,
   getDirectoryPagesTasks,
+  getExtensionAPI,
 } from "./src/build/utils";
 
 const gulp = require("gulp");
 const postcss = require("gulp-postcss");
 const rename = require("gulp-rename");
 const del = require("del");
+const fs = require("fs");
 
 const rubric: RubricQuestion[] = loadRubric();
 const contributors: Contributor[] = loadContributors();
@@ -27,10 +29,36 @@ gulp.task("clean", () => {
   return del("./dist/**/*");
 });
 
-gulp.task("build api", () => {
+gulp.task("build api", async () => {
+  const apiVersion = "v2";
+
+  if (!fs.existsSync(`./dist/api/${apiVersion}/products`)) {
+    fs.mkdirSync(`./dist/api/${apiVersion}/products`, { recursive: true });
+  }
+
+  const resolvedDates = await Promise.all(
+    products.map((product) => product.lastUpdated)
+  );
+
+  const resolvedProducts = products.map((product, i) => {
+    return {
+      ...product,
+      lastUpdated: resolvedDates[i],
+    };
+  });
+
+  resolvedProducts.forEach((product) => {
+    fs.writeFileSync(
+      `./dist/api/${apiVersion}/products/${product.slug}.json`,
+      JSON.stringify(product)
+    );
+  });
+
+  const api = getExtensionAPI(resolvedProducts);
+
   return gulp
     .src(["./src/templates/pages/api/**/*.json"])
-    .pipe(hbsFactory({ rubric, contributors, products }))
+    .pipe(hbsFactory({ rubric, contributors, resolvedProducts, api }))
     .pipe(gulp.dest("./dist/api/"));
 });
 
@@ -75,7 +103,7 @@ gulp.task("collect static", () => {
 
 gulp.task("collect root favicon", () => {
   return gulp.src(["./src/static/img/*.ico"]).pipe(gulp.dest("./dist/"));
-})
+});
 
 gulp.task("collect product icons", () => {
   return gulp.src(["./icons/**/*"]).pipe(gulp.dest("./dist/static/icons/"));

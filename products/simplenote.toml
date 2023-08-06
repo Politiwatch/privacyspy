@@ -1,0 +1,86 @@
+name = "Simplenote"
+description = "Simplenote is a simple, minimalist note taking app owned by Automattic."
+slug = "simplenote"
+hostnames = [ "simplenote.com" ]
+sources = [ "https://automattic.com/privacy/" ]
+contributors = [ "SCT339" ]
+
+[rubric.behavioral-marketing]
+value = "yes-opt-out"
+citations = [
+  "We may share information about you with third-party vendors who need the information in order to provide their services to us, or to provide their services to you or your site."
+]
+notes = [
+  "In the privacy policy under \"Third party vendors\" it looks like they only allow what is required for the service to work. However, in the app, there is a toggle switch for \"Analytics sharing\" that is set to \"on\" by default."
+]
+
+[rubric.security]
+value = "yes"
+citations = [
+  "Detecting security incidents; detecting and protecting against malicious, deceptive, fraudulent, or illegal activity; fighting spam; complying with our legal obligations; and protecting the rights and property of Automattic and others, which may result in us, for example, declining a transaction or terminating Services."
+]
+
+[rubric.third-party-collection]
+value = "critical-only"
+citations = [
+  "If you’d like to use third-party plugins or embeds, WooCommerce Payments (powered by Stripe), WooCommerce extensions that enable services provided by third parties, or other third-party software or services, please keep in mind that interacting with them may mean providing information about yourself (or your site visitors) to those third parties."
+]
+
+[rubric.history]
+value = "yes"
+citations = [ "Change Log" ]
+notes = [
+  "There is a change log with changes and dates at the bottom of the privacy policy."
+]
+
+[rubric.data-deletion]
+value = "yes-contact"
+citations = [
+  "You can usually access, correct, or delete your personal data using your account settings and tools that we offer, but if you aren’t able to or you’d like to contact us about one of the other rights, scroll down to “How to Reach Us” to, well, find out how to reach us."
+]
+notes = [
+  "Checking the application, there is no option to \"permanently delete account\". You must contact them to delete your account. The privacy policy does uphold GDPR and CCPA."
+]
+
+[rubric.data-breaches]
+value = "eventually"
+citations = [
+  "While no online service is 100% secure, we work very hard to protect information about you against unauthorized access, use, alteration, or destruction, and take reasonable measures to do so. We monitor our Services for potential vulnerabilities and attacks.\n\nTo enhance the security of your account, we encourage you to enable our advanced security settings, like Two Step Authentication."
+]
+
+[rubric.third-party-access]
+value = "yes-specified-critical"
+citations = [
+  "With your consent: We may share and disclose information with your consent or at your direction. For example, we may share your information with third parties when you authorize us to do so, like when you connected your site to a social media service through our Publicize feature."
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "We generally discard information about you when it’s no longer needed for the purposes for which we collect and use it — described in the section above on How and Why We Use Information — and we’re not legally required to keep it."
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-all"
+citations = [
+  "Opt out of our internal analytics program: You can do this through your user settings. By opting out, you will stop sharing information with our analytics tool about events or actions that happen after the opt-out, while you’re logged in to your WordPress.com account. For more information, please see our Cookie Policy."
+]
+
+[rubric.law-enforcement]
+value = "strict"
+citations = [
+  "We may disclose information about you in response to a subpoena, court order, or other governmental request."
+]
+
+[rubric.list-collected]
+value = "exhaustively"
+citations = [ "Your Rights" ]
+notes = [
+  "There is a very large section of the Privacy Policy devoted to this."
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "Although most changes are likely to be minor, Automattic may change its Privacy Policy from time to time. Automattic encourages visitors to frequently check this page for any changes to its Privacy Policy. If we make changes, we will notify you by revising the change log below, and, in some cases, we may provide additional notice (like adding a statement to our homepage or the WordPress.com Blog, or sending you a notification through email or your dashboard)."
+]
