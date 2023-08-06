@@ -1,9 +1,9 @@
 name = "Signal"
-description = "A secure messenger with End-to-End Encryption backed by a non-profit."
+description = "An end-to-end encypted messenging and calling app."
 slug = "signal"
-hostnames = ["signal.org"]
-sources = ["https://signal.org/legal/"]
-contributors = ["Deivedux"]
+hostnames = ["signal.org", "signal.group"]
+sources = ["https://signal.org/legal/#privacy-policy"]
+contributors = ["Deivedux", "doamatto"]
 
 [rubric.behavioral-marketing]
 value = "no"
@@ -15,23 +15,35 @@ notes = ["The policy does not specify a data breach protocol."]
 
 [rubric.data-collection-reasoning]
 value = "yes"
-notes = ["Signal includes an extensive list of data that it collects, and the reasons why."]
+citations = [
+  "Phone numbers are used to provide our Services to you and other Signal users.",
+  "Signal limits this additional technical information to the minimum required to operate the Services.",
+  "Information from the contacts on your device may be cryptographically hashed and transmitted to the server in order to determine which of your contacts are registered.",
+  "If you contact Signal User Support, any personal data you may share with us is kept only for the purposes of researching the issue and contacting you about your case."
+]
 
 [rubric.data-deletion]
 value = "no"
 notes = ["The policy does not specify a data deletion protocol."]
 
 [rubric.history]
-value = "no"
-notes = ["No history or policy's modification date is made available."]
+value = "last-modified"
+citations = ["Effective as of May 25, 2018", "Updated May 25, 2018"]
 
 [rubric.law-enforcement]
-value = "strict"
+value = "reasonable"
 citations = ["Other instances where Signal may need to share your data\r\n- To meet any applicable law, regulation, legal process or enforceable governmental request."]
 
 [rubric.list-collected]
 value = "exhaustively"
-notes = ["Signal includes an extensive list of data that it collects, and the reasons why."]
+citations = [
+  "You register a phone number when you create a Signal account.",
+  "You may optionally add other information to your account, such as a profile name and profile picture.",
+  "Signal cannot decrypt or otherwise access the content of your messages or calls.",
+  "Additional technical information is stored on our servers, including randomly generated authentication tokens, keys, push tokens, and other material that is necessary to establish calls and transmit messages.",
+  "Signal can optionally discover which contacts in your address book are Signal users, using a service designed to protect the privacy of your contacts. Information from the contacts on your device may be cryptographically hashed and transmitted to the server in order to determine which of your contacts are registered.",
+  "If you contact Signal User Support, any personal data you may share with us is kept only for the purposes of researching the issue and contacting you about your case."
+]
 
 [rubric.noncritical-purposes]
 value = "na"
@@ -47,7 +59,7 @@ citations = [
   "You register a phone number when you create a Signal account. Phone numbers are used to provide our Services to you and other Signal users. You may optionally add other information to your account, such as a profile name and profile picture. This information is end-to-end encrypted.",
   "You can manage your personal information in Signal’s application Settings. For example, you can update your profile information or choose to enable additional privacy features like a Registration Lock PIN."
 ]
-notes = ["Most, if not all of the personal data security relies on users making use of Signal's automated end-to-end encryption."]
+notes = ["Their encryption specifications and the Signal protocol are openly accessible at https://signal.org/docs/"]
 
 [rubric.third-party-access]
 value = "yes-unspecified-critical"
