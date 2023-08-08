@@ -35,7 +35,7 @@ citations = [
 
 [rubric.history]
 value = "last-modified"
-citations = [ "Last updated: January 24, 2023" ]
+citations = [ "Last updated: May 17, 2023" ]
 
 [rubric.law-enforcement]
 value = "reasonable"
