@@ -1,0 +1,74 @@
+name = "Stripe"
+description = "Payment processor for e-commerce and mobile applications."
+slug = "stripe"
+hostnames = [ "stripe.com" ]
+sources = [ "https://stripe.com/privacy" ]
+contributors = [ "Deivedux" ]
+
+[rubric.behavioral-marketing]
+value = "yes"
+citations = [
+  "We may use your Personal Data to assess your eligibility for, and offer you, other End User Services or promote existing End User Services. Where allowed by law (including with your opt-in consent where required), we use and share End User Personal Data with others so that we may market our End User Services to you, including through interest-based advertising.",
+  "If you have begun a purchase, we share Personal Data with that Business User in connection with our provision of Services and that Business User may use your Personal Data to market and advertise their products or services, subject to the terms of their privacy policy. Please review your merchant’s privacy policy to learn more, including your rights to stop their use of your Personal Data for marketing purposes.",
+  "Where allowed by applicable law, we use and share Representative Personal Data with others so that we may advertise and market our Services to you. Subject to applicable law (including any consent requirements), we may advertise to you through interest-based advertising and emails and seek to measure the effectiveness of our ads.",
+  "As allowed by law, we use and share Visitor Personal Data with others so that we may advertise and market our Services to you.  Subject to applicable law (including any consent requirements), we may advertise our Services to you through interest-based advertising and emails, and seek to measure the effectiveness of our ads."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [ "The policy doesn't seem to mention a data breach policy." ]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+notes = [
+  "Sections [1.1b](https://stripe.com/privacy#1-1-end-users) (regarding \"End Users\"), [1.2b](https://stripe.com/privacy#1-2-end-customers) (regarding \"End Customers\"), [1.3b](https://stripe.com/privacy#1-3-representatives) (regarding \"Representatives\") and [1.4b](https://stripe.com/privacy#1-4-visitors) (regarding \"Visitors\") in the policy contain brief overviews of their use and share of personal data.",
+  "The entirety of [Section 2](https://stripe.com/privacy#2-more-ways-we-collect-use-and-share-personal-data) is a continuation of their use and share of personal data."
+]
+
+[rubric.data-deletion]
+value = "yes-contact"
+citations = [
+  "If you have a Stripe user account, you can close your account in the settings of your Stripe dashboard. [...] Once you complete the account closure steps, we will delete your data in accordance with applicable law.",
+  "If you signed up for Link on the Link website or when you’ve made a purchase from a business that uses Link, you can delete your account by going to the settings page on the Link website, or by following this guide.",
+  "If you are a customer who’s had your identity verified by a Stripe Identity user(s), we need to verify and authenticate your request in order to delete your information. In order to authenticate your request, please send an email to privacy@stripe.com to begin the process. Please include the name and date of birth that you submitted (either by way of ID document or keyed-in data), along with the names and websites of your merchant(s) who verified you via Stripe Identity."
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [ "Last updated: May 17, 2023" ]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "We share Personal Data as we believe necessary: [...] (v) to respond to valid legal process requests from courts, law enforcement agencies, regulatory agencies, and other public and government authorities, which may include authorities outside your country of residence.",
+  "In certain situations, we may be required to disclose Personal Data in response to lawful requests from officials (such as law enforcement or security authorities)."
+]
+
+[rubric.list-collected]
+value = "generally"
+notes = [ "While their list seems exhaustive in size, it is filled with vague wording like \"such as\" and \"for example\", making it difficult to verify so." ]
+
+[rubric.noncritical-purposes]
+value = "opt-out-all"
+notes = [ "Stripe's control over the use of non-critical personal data relies on the user's [cookie settings](https://stripe.com/cookie-settings), which are enabled by default in jurisdictions that don't require user consent." ]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [ "We may provide you with disclosures and alerts regarding the Policy or Personal Data collected by posting them on our website and, if you are an End User or Representative, by contacting you through your Stripe Dashboard, email address and/or the physical address listed in your Stripe account." ]
+
+[rubric.security]
+value = "somewhat"
+citations = [ "We make reasonable efforts to provide a level of security appropriate to the risk associated with the processing of your Personal Data. We maintain organizational, technical and administrative measures designed to protect Personal Data covered by this Policy against unauthorized access, destruction, loss, alteration or misuse. Unfortunately, no data transmission or storage system can be guaranteed to be 100% secure." ]
+notes = [ "Stripe is a [certified PCI Service Provider](https://stripe.com/docs/security), though that shouldn't justify their lack of a proper overview of their security practices." ]
+
+[rubric.third-party-access]
+value = "yes-specified-noncritical"
+notes = [
+  "A list of their sub-processors and service providers can be found [here](https://stripe.com/legal/service-providers).",
+  "Some providers listed, such as Marketo and Google, are used for marketing and analytical tracking purposes, respectively."
+]
+
+[rubric.third-party-collection]
+value = "critical-only"
+citations = [ "We may collect information from you, and about you, from Business Users, financial parties and in some cases third parties. For example, to protect our Services, we may receive information from third parties about IP addresses that malicious actors have compromised." ]
+
