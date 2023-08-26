@@ -1,5 +1,5 @@
 name = "Kagi"
-description = "Privacy-Focused Search Engine"
+description = "Privacy-Focused Search Engine."
 slug = "kagi"
 hostnames = [ "kagi.com" ]
 sources = [ "https://kagi.com/privacy" ]
@@ -125,5 +125,5 @@ citations = [
 
 [rubric.third-party-collection]
 value = "no"
-
+notes = ["The policy does not mention any collection of data from third parties."]
 
