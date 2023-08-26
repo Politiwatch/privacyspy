@@ -1,0 +1,129 @@
+name = "Kagi"
+description = "Privacy-Focused Search Engine"
+slug = "kagi"
+hostnames = [ "kagi.com" ]
+sources = [ "https://kagi.com/privacy" ]
+contributors = [ "vkeerthivikram" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+citations = [
+  "Kagi only stores the limited information that a user explicitly provides through their account, such as email, account settings, and nothing else.",
+  "When a user searches on Kagi, their web browser sends the request to Kagi servers but Kagi transmits no information about the user to other third party services it queries to fulfill the search.",
+  "Kagi does not store a user's IP address or associate it with other user data. It performs an offline lookup only to determine location to enrich the search experience.",
+  "Kagi does not store a user's browser user-agent string or associate it with other user data. It only reads the user-agent to determine if the user is on a mobile device."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [ "The policy doesn't seem to mention a data breach policy." ]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+"Kagi only collects limited personal data such as the user's email address, account settings, and IP address.",
+" This information is collected and used for specific purposes:",
+
+"  Email is collected to facilitate account access and support contact like password resets.",
+  "Account settings are used to customize the user's experience, like themes, search region, and language preferences.",
+
+  "IP address is collected to determine the user's location for features like Maps."," However, the IP address is not stored or associated with the user's account.",
+"All collected data is limited in scope and anonymized."," Logs only contain aggregated anonymous data to monitor product performance."," User searches are not associated with personal information.",
+
+"Data is only collected when necessary to provide the service."," For example, images uploaded for reverse image search are only temporarily cached and forwarded to third parties solely to perform that search feature. "
+]
+
+[rubric.data-deletion]
+value = "yes-automated"
+citations = [
+"There is an option to delete your account."," When you do this, all information and settings related to your account is removed from our database."
+]
+
+
+
+[rubric.history]
+value = "yes"
+citations = [
+
+"Changelog",
+
+"2023-05-24",
+
+"Updated Privacy Policy (Added Warrant Canary and covered \"Labs\" experiments such as FastGPT)",
+
+"2023-05-04",
+
+"Updated Privacy Policy (Clarified when data is shared with third parties, and to what extent. Added upload section.)",
+
+"2023-02-29",
+
+"Updated Privacy Policy (AI Tools & Universal Summarizer)",
+
+"2023-02-28",
+
+"Updated Terms of Service (Fair Use Policy for AI Tools)",
+
+"2022-03-31",
+
+"Updated Terms of Service",
+
+"2021-11-30",
+
+"Added kagi_previous_page cookie to Cookies & Client data table.",
+
+"2021-09-02",
+
+"Initial draft."
+]
+
+[rubric.law-enforcement]
+value = "strict"
+citations = [ 
+
+"We, Kagi, are committed to being transparent and taking full control of our service."," Private information of our users has never been disclosed or seized, nor have we been compromised or suffered a data breach.",
+
+"Kagi has received:",
+
+"- 0 National Security letters;",
+"- 0 Gag orders;",
+" 0 Warrants from any government organization;",
+
+"To ensure your privacy and security, we don’t monitor, log or store your queries or associate them with your account." 
+]
+
+[rubric.list-collected]
+value = "generally"
+citations = [ " Kagi only stores the information about the client that you explicitly provide by using your account, as laid out in our interface."," This includes",
+
+    "Your email to facilitate account access and support contact (ex: password reset)",
+    "Your account settings (ex: theme, search region, selected language)",
+
+" Searches are anonymous and private to you."," Kagi does not see what you are searching at all.",
+"We do not log or store your IP address."," Your IP address is used only temporarily when enriching location/maps searches, and is not shared with any other party. "
+
+ ]
+
+[rubric.noncritical-purposes]
+value = "na"
+notes = [ "No data is used for non critical purposes." ]
+
+[rubric.revision-notify]
+value = "no"
+notes = [ "The policy makes no mention of notifying users on policy change." ]
+
+[rubric.security]
+value = "somewhat"
+citations = [ " To ensure your privacy and security, we don’t monitor, log or store your queries or associate them with your account. " ]
+
+[rubric.third-party-access]
+value = "yes-unspecified-critical"
+citations = [
+"We do not share customer data with third parties, except as needed to perform explicitly accessed services."," In those cases, we will share the minimum amount of data needed to provide the service, and will do so in an anonymous way. ",
+" Data uploaded to allow Kagi to perform a service will be stored and used only to the extent needed to perform said service. ","This data may be shared with third parties, but only when sharing is required for fulfillment of the service."," In these cases, Kagi's servers will be the sole actor communicating (securely) with third parties, and only to the extent required to fulfill your intent. ",
+" Anonymous logs are shared with Sentry when bugs, crashes, or warnings that occur for debugging purposes. "
+]
+
+[rubric.third-party-collection]
+value = "no"
+
+
