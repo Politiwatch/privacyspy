@@ -8,11 +8,15 @@ contributors = [ "vkeerthivikram" ]
 [rubric.behavioral-marketing]
 value = "no"
 citations = [
-  "Kagi only stores the limited information that a user explicitly provides through their account, such as email, account settings, and nothing else.",
-  "When a user searches on Kagi, their web browser sends the request to Kagi servers but Kagi transmits no information about the user to other third party services it queries to fulfill the search.",
-  "Kagi does not store a user's IP address or associate it with other user data. It performs an offline lookup only to determine location to enrich the search experience.",
-  "Kagi does not store a user's browser user-agent string or associate it with other user data. It only reads the user-agent to determine if the user is on a mobile device."
-]
+  "We do not share customer data with third parties, except as needed to perform explicitly accessed services. In those cases, we will share the minimum amount of data needed to provide the service, and will do so in an anonymous way.",
+
+  "We do not display any ads, or have any first-party or third-party tracking in service of ads.", 
+
+  "Kagi does not store your IP address or any association with other user data. We perform an *offline* lookup using a database to resolve the IP address that your client sends to us in to a location with enough accuracy to enrich your search experience.",
+
+  "Absent from our logs are any identifying information about your client.",
+
+  "To ensure your privacy and security, we don’t monitor, log or store your queries or associate them with your account."
 
 [rubric.data-breaches]
 value = "no"
@@ -21,16 +25,15 @@ notes = [ "The policy doesn't seem to mention a data breach policy." ]
 [rubric.data-collection-reasoning]
 value = "yes"
 citations = [
-"Kagi only collects limited personal data such as the user's email address, account settings, and IP address.",
-" This information is collected and used for specific purposes:",
 
-"  Email is collected to facilitate account access and support contact like password resets.",
-  "Account settings are used to customize the user's experience, like themes, search region, and language preferences.",
+"Kagi only stores the information about the client that you explicitly provide by using your account, as laid out in our interface.", 
+" This includes",
+  "Your email to facilitate account access and support contact (ex: password reset)", 
+  "Your account settings (ex: theme, search region, selected language)", 
 
-  "IP address is collected to determine the user's location for features like Maps."," However, the IP address is not stored or associated with the user's account.",
-"All collected data is limited in scope and anonymized."," Logs only contain aggregated anonymous data to monitor product performance."," User searches are not associated with personal information.",
+  "IP addresses and uploaded content are only used as needed to fulfill specific user requests, such as location-based searches or reverse image lookups.",
+  "This data is not permanently stored or associated with user accounts."
 
-"Data is only collected when necessary to provide the service."," For example, images uploaded for reverse image search are only temporarily cached and forwarded to third parties solely to perform that search feature. "
 ]
 
 [rubric.data-deletion]
@@ -46,6 +49,19 @@ value = "yes"
 citations = [
 
 "Changelog",
+
+
+"2023-09-21",
+
+"Increased Fair Use limits for AI tools (300 to 500)",
+
+"2023-08-15",
+
+"Updated Terms of Use (Clarified commercial use licensing)",
+
+"2023-08-04",
+
+"Updated Privacy Policy (Clarified summary)",
 
 "2023-05-24",
 
@@ -77,43 +93,38 @@ citations = [
 ]
 
 [rubric.law-enforcement]
-value = "strict"
-citations = [ 
-
-"We, Kagi, are committed to being transparent and taking full control of our service."," Private information of our users has never been disclosed or seized, nor have we been compromised or suffered a data breach.",
-
-"Kagi has received:",
-
-"- 0 National Security letters;",
-"- 0 Gag orders;",
-" 0 Warrants from any government organization;",
-
-"To ensure your privacy and security, we don’t monitor, log or store your queries or associate them with your account." 
+value = "unspecified"
+notes = [ 
+"There is no explicit mention of law enforcement access to personal user data.", "The document focuses on describing Kagi's data practices and privacy protections for users, but does not address law enforcement access or exceptions to their privacy policy.",
 ]
 
 [rubric.list-collected]
 value = "generally"
-citations = [ " Kagi only stores the information about the client that you explicitly provide by using your account, as laid out in our interface."," This includes",
+citations = [ 
+"Kagi only stores the information about the client that you explicitly provide by using your account, as laid out in our interface."," This includes",
 
     "Your email to facilitate account access and support contact (ex: password reset)",
     "Your account settings (ex: theme, search region, selected language)",
-
-" Searches are anonymous and private to you."," Kagi does not see what you are searching at all.",
-"We do not log or store your IP address."," Your IP address is used only temporarily when enriching location/maps searches, and is not shared with any other party. "
-
+  "And nothing else.",
  ]
 
 [rubric.noncritical-purposes]
 value = "na"
-notes = [ "No data is used for non critical purposes." ]
+notes = [ "No data is used for non critical purposes.","There are some limited options for users to control caching, local storage, and account deletion, but do not explicitly mention opting out of non-critical data collection." ]
 
 [rubric.revision-notify]
-value = "no"
-notes = [ "The policy makes no mention of notifying users on policy change." ]
+value = "yes"
+citations = [ "Kagi may update these Terms from time to time to address a new feature of the Services or to clarify a provision.","The updated Terms will be posted online."," If the changes are substantive, we will announce the update through Kagi's usual channels for such announcements such as blog posts and forums.", 
+
+"To make your review more convenient, we will post an effective date at the top of this page."]
 
 [rubric.security]
 value = "somewhat"
-citations = [ " To ensure your privacy and security, we don’t monitor, log or store your queries or associate them with your account. " ]
+citations = ["All Kagi communications - inbound and outbound - are made over encrypted HTTPS.","HTTPS does not protect these other parties from knowing where the request is going, but it does protect the request content.",
+
+"Passwords are hashed and salted and all passwords are hashed and salted.",
+ 
+" To ensure your privacy and security, we don’t monitor, log or store your queries or associate them with your account. " ]
 
 [rubric.third-party-access]
 value = "yes-unspecified-critical"
