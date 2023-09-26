@@ -17,6 +17,7 @@ citations = [
   "Absent from our logs are any identifying information about your client.",
 
   "To ensure your privacy and security, we don’t monitor, log or store your queries or associate them with your account."
+  ]
 
 [rubric.data-breaches]
 value = "no"
