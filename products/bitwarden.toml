@@ -1,0 +1,93 @@
+name = "Bitwarden"
+description = "Bitwarden is a free and open-source password management service."
+slug = "bitwarden"
+hostnames = ["bitwarden.com"]
+sources = ["https://bitwarden.com/privacy/"]
+contributors = ["Deivedux"]
+
+[rubric.behavioral-marketing]
+value = "yes-opt-out"
+citations = ["Bitwarden respects your email communications and marketing preferences. If you prefer not to receive product release notes communications or promotional email messages (such as product updates, security alerts, marketing, events, training and certifications) from Bitwarden, you can unsubscribe from Bitwarden email marketing by following the unsubscribe link located at the bottom of each promotional email, or Contact Us. Note: Please allow five (5) business days to be removed from all email communications."]
+notes = ["While their website prompts the optional cookie settings to all new visitors, email marketing is still enabled by default."]
+
+[rubric.data-breaches]
+value = "no"
+notes = ["No data breach protocol is found in the policy."]
+
+[rubric.data-collection-reasoning]
+value = "mostly"
+citations = [
+"""
+Bitwarden may use the Personal Information collected by the Site to provide you with services, to accomplish our business purposes and to fulfill other legal obligations, including:
+
+- To provide you services that you request, such as when we:
+  - Respond to your requests for information about our products, services, training and events;
+  - To enable your access and use of the Site, and to enable you to communicate, collaborate, and share information with those you designate;
+  - To send you technical notices, updates, security alerts, and support and administrative messages;
+- For our business purposes we have a legitimate interest, when we:
+  - Operate the Site;
+  - Administer your account if you have registered on the Site, including billing and payment;
+  - Send marketing, advertising, training, certification or event materials to which you've agreed, requested or subscribed or to otherwise inform you about our products and services;
+- Apply information security policies and controls on the Site, including overall Site integrity, identity management and account authentication;
+- For research and development to improve the Bitwarden Service, Site and other Bitwarden services;
+- Perform other general business management and operations purposes, such as to provide, operate, maintain, make modifications to protect and improve the Site.
+- To fulfill legal obligations, including:
+- Legal compliance, such as to enforce our legal rights, to comply in good faith with applicable laws, and to protect users of the Site or Service.
+- For other purposes about which we notify you and, where relevant or required, give you choice about the new purpose."""
+]
+
+[rubric.data-deletion]
+value = "yes-automated"
+citations = ["If you terminate your relationship with Bitwarden, we will delete your Personal Information in accordance with our data retention policies."]
+
+[rubric.history]
+value = "last-modified"
+citations = ["Last revised 10-JUN-2021"]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = ["We believe that disclosure is reasonably necessary to comply with any applicable law, regulation, legal process, or lawful government request, including in connection with national security or law enforcement requirements. This may include disclosures: to respond to subpoenas or court orders; to establish or exercise our legal rights or defend against legal claims; or to investigate, prevent, or take action regarding illegal activities, suspected fraud, situations involving potential threats to the physical safety of any person, violations of our Service Agreement, or as otherwise required by law. In each case, we will make reasonable efforts to verify the validity of the request before disclosing your Personal Information."]
+
+[rubric.list-collected]
+value = "generally"
+citations = [
+"""
+When you use the Site or communicate with us (e.g. via email) you will provide, and Bitwarden will collect certain Personal Information such as
+
+- Name
+- Business name and address
+- Business telephone number
+- Email address
+- IP-address and other online identifiers
+- Any customer testimonial you have given us consent to share.
+- Information you provide to the Site's Interactive Areas, such as fillable forms or text boxes, training, webinars or event registration.
+- Information about the device you are using, comprising the hardware model, operating system and version, unique device identifiers, network information, IP address, and/or Bitwarden Service information when interacting with the Site.
+- If you interact with the Bitwarden Community or training, or registered for an exam or event, we may collect biographical information and the content that you share.
+- Information gathered via cookies, pixel tags, logs, or other similar technologies."""
+]
+notes = ["The list is difficult to argue to be exhaustive due to the use of \"such as\" when listing the collected data."]
+
+[rubric.noncritical-purposes]
+value = "opt-out-all"
+notes = ["Bitwarden relies on users' cookie settings for the use of their non-critical personal data."]
+
+[rubric.revision-notify]
+value = "yes"
+citations = ["If we make any material changes, we will notify you by email (sent to the email address specified in your account registered with the Site or Bitwarden Service) or by means of a notice on the Site or Service."]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+"""
+The security of your Personal Information is important to us. Your data, including Personal Information, is never sent to the Bitwarden cloud servers without first being encrypted on your local device using AES 256 bit encryption. In addition, Bitwarden encrypts the transmission of that information using secure socket layer technology (SSL).
+
+We follow generally accepted standards to protect the Personal Information submitted to us, both during transmission and once it is received. You acknowledge and agree that no Internet or email transmission is ever fully secure or error free. You agree to take special care in deciding what information you send to us via email. If you have any questions about the security of your Personal Information, you can Contact Us."""
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+notes = ["There is no clear list of third-party providers, only Google Analytics is mentioned as an example for their collection of Analytics Data."]
+
+[rubric.third-party-collection]
+value = "no"
+notes = ["No data found to be collected from third-parties."]
