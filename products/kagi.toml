@@ -1,0 +1,113 @@
+name = "Kagi"
+description = "Privacy-Focused Search Engine."
+slug = "kagi"
+hostnames = [ "kagi.com" ]
+sources = [ "https://kagi.com/privacy" ]
+contributors = [ "vkeerthivikram" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+citations = [
+  "We do not share customer data with third parties, except as needed to perform explicitly accessed services. In those cases, we will share the minimum amount of data needed to provide the service, and will do so in an anonymous way.",
+  "We do not display any ads, or have any first-party or third-party tracking in service of ads.", 
+  "Kagi does not store your IP address or any association with other user data. We perform an *offline* lookup using a database to resolve the IP address that your client sends to us in to a location with enough accuracy to enrich your search experience.",
+  "Absent from our logs are any identifying information about your client.",
+  "To ensure your privacy and security, we don’t monitor, log or store your queries or associate them with your account."
+  ]
+
+[rubric.data-breaches]
+value = "no"
+notes = [ 
+"The policy doesn't seem to mention a data breach policy."
+ ]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+"Kagi only stores the information about the client that you explicitly provide by using your account, as laid out in our interface. This includes: Your email to facilitate account access and support contact (ex: password reset) and Your account settings (ex: theme, search region, selected language)"
+]
+
+[rubric.data-deletion]
+value = "yes-contact"
+citations = [
+"There is an option to delete your account."," When you do this, all information and settings related to your account is removed from our database."
+]
+
+
+
+[rubric.history]
+value = "yes"
+citations = [
+"Changelog",
+"2023-09-21",
+"Increased Fair Use limits for AI tools (300 to 500)",
+"2023-08-15",
+"Updated Terms of Use (Clarified commercial use licensing)",
+"2023-08-04",
+"Updated Privacy Policy (Clarified summary)",
+"2023-05-24",
+"Updated Privacy Policy (Added Warrant Canary and covered \"Labs\" experiments such as FastGPT)",
+"2023-05-04",
+"Updated Privacy Policy (Clarified when data is shared with third parties, and to what extent. Added upload section.)",
+"2023-02-29",
+"Updated Privacy Policy (AI Tools & Universal Summarizer)",
+"2023-02-28",
+"Updated Terms of Service (Fair Use Policy for AI Tools)",
+"2022-03-31",
+"Updated Terms of Service",
+"2021-11-30",
+"Added kagi_previous_page cookie to Cookies & Client data table.",
+"2021-09-02",
+"Initial draft."
+]
+
+[rubric.law-enforcement]
+value = "unspecified"
+notes = [ 
+"There is no explicit mention of law enforcement access to personal user data. The document focuses on describing Kagi's data practices and privacy protections for users, but does not address law enforcement access or exceptions to their privacy policy."
+]
+
+[rubric.list-collected]
+value = "generally"
+citations = [ 
+"Kagi only stores the information about the client that you explicitly provide by using your account, as laid out in our interface. This includes: Your email to facilitate account access and support contact (ex: password reset), Your account settings (ex: theme, search region, selected language) And nothing else."
+]
+
+[rubric.noncritical-purposes]
+value = "na"
+notes = [ 
+"No data is used for non critical purposes.","There are some limited options for users to control caching, local storage, and account deletion, but do not explicitly mention opting out of non-critical data collection.",
+"Anonymous logs are aggregated with GCP's logging tools, retained for 30 days.",
+"Anonymous logs are shared with Sentry when bugs, crashes, or warnings that occur for debugging purposes." 
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [ 
+"Kagi may update these Terms from time to time to address a new feature of the Services or to clarify a provision. The updated Terms will be posted online. If the changes are substantive, we will announce the update through Kagi's usual channels for such announcements such as blog posts and forums. To make your review more convenient, we will post an effective date at the top of this page."
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+"All Kagi communications - inbound and outbound - are made over encrypted HTTPS.","HTTPS does not protect these other parties from knowing where the request is going, but it does protect the request content.",
+"Passwords are hashed and salted and all passwords are hashed and salted.",
+"To ensure your privacy and security, we don’t monitor, log or store your queries or associate them with your account." 
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified-critical"
+citations = [
+"We do not share customer data with third parties, except as needed to perform explicitly accessed services."," In those cases, we will share the minimum amount of data needed to provide the service, and will do so in an anonymous way. ",
+"Data uploaded to allow Kagi to perform a service will be stored and used only to the extent needed to perform said service. This data may be shared with third parties, but only when sharing is required for fulfillment of the service. In these cases, Kagi's servers will be the sole actor communicating (securely) with third parties, and only to the extent required to fulfill your intent.",
+"Anonymous logs are shared with Sentry when bugs, crashes, or warnings that occur for debugging purposes.",
+"Anonymous logs are aggregated with GCP's logging tools, retained for 30 days."
+]
+
+[rubric.third-party-collection]
+value = "no"
+notes = [
+"The policy does not mention any collection of data from third parties."
+]
+
+
