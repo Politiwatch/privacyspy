@@ -1,5 +1,6 @@
 name = "X / (Formerly Known As Twitter)"
 description = "Twitter is a microblogging social network popular among the masses."
+date = 2023-11-20
 slug = "twitter"
 hostnames = [ "x.com", "twitter.com", "ads-twitter.com" ]
 sources = [ "https://twitter.com/en/privacy" ]
