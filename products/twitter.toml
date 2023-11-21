@@ -1,4 +1,4 @@
-name = "X / (Formally Known As Twitter)"
+name = "X / (Formerly Known As Twitter)"
 description = "Twitter is a microblogging social network popular among the masses."
 slug = "twitter"
 hostnames = [ "x.com", "twitter.com", "ads-twitter.com" ]
