@@ -54,7 +54,7 @@ notes = [
 [rubric.noncritical-purposes]
 value = "opt-out-some"
 notes = [
-  "Twitter has relatively comprehensive privacy settings, but Google Analytics monitors users on Twitter regardless of their privacy settings."
+  "X has relatively comprehensive privacy settings, but Google Analytics monitors users on X regardless of their privacy settings."
 ]
 
 [rubric.law-enforcement]
