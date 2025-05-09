@@ -16,11 +16,14 @@ notes = [
 ]
 
 [rubric.third-party-collection]
-value = "yes"
+value = "no"
 citations = [
   "In order to be able to evaluate campaigns with partners and advertising campaigns (e.g. advertising via Google or other search engines), we store an ID of the campaign with your Tutanota account when you reach Tutanota via a campaign link and register a Tutanota account. To be able to assign returning users to a campaign, we store a cryptographic hash of the IP address and the user agent (including information about the user’s browser and operating system) together with the campaign ID when you visit our website via a campaign link. If you visit our website via a search query and an advertising campaign, we also store the keywords and the search query together with the hash and the campaign ID. By using the hash, it is no longer possible to infer the IP address or the user agent. The keywords and the search query are not stored with the Tutanota account.",
   "The hash and the campaign ID, keywords and search query stored together with the hash are deleted after 72 hours. Beyond this period of 72 hours, for the purpose of evaluating the campaign and until the completion of the evaluation, only completely anonymized campaign data (keywords and search query) are stored and processed without any link to the hash.",
   "Insofar as we process personal data during the campaign analysis, this is done on the basis of Art 6 para. 1 p. lit. f) GDPR. Our interest in being able to evaluate advertising campaigns and to improve our marketing activities constitute a legitimate interest within the meaning of Art. 6 para. 1 p. lit. f) GDPR."
+]
+notes = [
+  "Note: The privacy policy has been misunderstood. Tuta does not collect personal data from third parties, but explains here how it handles user data in their own campaigns."
 ]
 
 [rubric.history]
@@ -34,9 +37,9 @@ citations = [
 ]
 
 [rubric.data-breaches]
-value = "no"
+value = "yes-72"
 notes = [
-  "Tutanota is based in Germany so it is legally obliged to notify users of data breaches, but does not make any mention about if they will do so."
+  "Tuta is a German company, and adheres to German law which requires the company to notify users in case of a data breach. Tuta even informed users about a security weakness, which to the company's knowledge, did not cause any data being leaked: https://tuta.com/blog/vulnerability-fixed"
 ]
 
 [rubric.third-party-access]
@@ -128,5 +131,7 @@ citations = [
 ]
 
 [rubric.revision-notify]
-value = "no"
-notes = [ "German laws require users to be notified four weeks prior to a policy change. Tutanota has historically sent out these notices, but does not make any mention about if they will do so." ]
+value = "yes"
+notes = [
+  "Tuta is a German company, and adheres to German law which requires the company to notify users in case of a change of the data policy. Tuta's policy was last changed in 2022, and all user were informed via an email directly in the Tuta client."
+]
