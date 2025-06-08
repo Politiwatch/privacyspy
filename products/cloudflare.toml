@@ -23,7 +23,8 @@ citations = [
   "We have put in place procedures to deal with any suspected data security breach and will notify you and any applicable regulator of a suspected breach where we are legally required to do so."
 ]
 notes = [
-  "Refer to https://www.cloudflare.com/candidate-privacy-notice/ for more details"
+  "Refer to https://www.cloudflare.com/candidate-privacy-notice/ Section 8 for more details",
+  "Note that this condition applies only to candidates applying to work with any Cloudflare Group company."
 ]
 
 [rubric.data-collection-reasoning]
@@ -38,7 +39,9 @@ citations = [
 [rubric.data-deletion]
 value = "yes-contact"
 citations = [
-  "You have the right to access, correct, update, port, or delete your personal information, and to restrict or object to the processing of your personal information (each of these a ‘Rights Request’). You may email us at sar@cloudflare.com with any Rights Request, and we will respond within thirty (30) days. Section 8: DATA SUBJECT RIGHTS AND CHOICES"
+  "You have the right to access, correct, update, port, or delete your personal information, and to restrict or object to the processing of your personal information (each of these a ‘Rights Request’). You may email us at sar@cloudflare.com with any Rights Request, and we will respond within thirty (30) days. (Section 8: Data Subject Rights and Choices)",
+  "When the data retention period expires for a given type of data, we will delete or destroy it. If, for technical reasons, we are unable to do so, we will implement appropriate security measures to prevent any further use of such data. (Section 11: Data Retention)",
+  "Please note that we do not retain any personal information about 1.1.1.1 resolver users that would be subject to the Rights Requests described above (Section 8)."
 ]
 
 [rubric.history]
@@ -77,8 +80,10 @@ notes = [
 [rubric.noncritical-purposes]
 value = "opt-out-some"
 citations = [
-  "You can request to opt out of such ‘sale’ or ‘sharing’ of your Personal Information using the ‘Your Privacy Choices’ link in the footer below.",
-  "In addition, some internet browsers offer the option to enable opt-out signals such as Global Privacy Control that lets you tell websites that you do not want to have your online activities tracked. Cloudflare responds to these signals by processing them as a request to opt out of the ‘sale’ or ‘sharing’ of your Personal Information as discussed above."
+  ""
+]
+notes = [
+  "You can disable certain non-critical uses of your data—such as performance tracking, feature enhancements, and ad targeting—but other non-critical processing—like service improvements, analytics under legitimate interests, and security or fraud prevention—is not included in the cookie-based opt-out mechanism, so you can’t opt out of it."
 ]
 
 [rubric.revision-notify]
@@ -93,8 +98,7 @@ notes = [
 [rubric.security]
 value = "yes-independent-audits"
 citations = [
-  "Cloudflare’s technical and organizational measures are regularly tested and evaluated by external third-party auditors as part of Cloudflare’s Security & Privacy Compliance Program. These may include annual ISO/IEC 27001 audits; AICPA SOC 2 Type II; PCI DSS Level 1; and other external audits. Source: Cloudflare Data Processing Addendum – Annex 2",
-  "We use administrative, physical, and technical safeguards to protect the personal data we collect. These safeguards include encryption of data in transit and at rest, access controls, and regular security reviews and monitoring. Cloudflare Privacy Policy"
+  "Cloudflare’s technical and organizational measures are regularly tested and evaluated by external third-party auditors as part of Cloudflare’s Security & Privacy Compliance Program. These may include annual ISO/IEC 27001 audits; AICPA SOC 2 Type II; PCI DSS Level 1; and other external audits.– Annex 2",
 ]
 notes = [
   "DPA: https://www.cloudflare.com/cloudflare-customer-dpa/"
@@ -107,14 +111,14 @@ citations = [
   "In addition, we may also provide these marketing and advertising partners with your email address or other limited account information."
 ]
 notes = [
-  "Refer to Information Sharing Section on https://www.cloudflare.com/privacypolicy/ for more details"
+  "Section 5: Information Sharing"
 ]
 
 [rubric.third-party-collection]
 value = "critical-only"
 citations = [
-  "We work with other companies who provide services... These Service Providers process personal information only under our instructions and compliance with this Privacy Policy..."
+  "We may combine information we collect as described in Section 2 above with personal information we obtain from third parties.",
 ]
 notes = [
-  "Section 5: Information Sharing"
+  "Section 3: How we use Information we collect"
 ]
