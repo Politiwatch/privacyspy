@@ -26,7 +26,7 @@ citations = [
 [rubric.data-deletion]
 value = "yes-automated"
 citations = [
-  "\"You can export a copy of content in your Google Account if you want to back it up or use it with a service outside of Google.\"\n\n\"To delete your information, you can:\n- Delete your content from specific Google services\n- Search for and then delete specific items from your account using My Activity\n- Delete specific Google products, including your information associated with those products\n- Delete your entire Google Account\""
+  "\"You can export a copy of content in your Google Account if you want to back it up or use it with a service outside of Google.\n\nTo delete your information, you can:\n- Delete your content from specific Google services\n- Search for and then delete specific items from your account using My Activity\n- Delete specific Google products, including your information associated with those products\n- Delete your entire Google Account\""
 ]
 
 [rubric.data-breaches]

@@ -8,73 +8,73 @@ contributors = [ "bumbleben", "filex", "makai" ]
 [rubric.behavioral-marketing]
 value = "yes-opt-out"
 citations = [
-  "We may also use your information to, among other things, show you suggestions, promote the Platform, and customize your ad experience."
+  "\"We may also use your information to, among other things, show you suggestions, promote the Platform, and customize your ad experience.\""
 ]
 
 [rubric.data-breaches]
 value = "no"
 notes = [
-  "Not in policy."
+  "\"Not in policy.\""
 ]
 
 [rubric.data-collection-reasoning]
 value = "yes"
 citations = [
-  "As explained below, we use your information to improve, support and administer the Platform, to allow you to use its functionalities, and to fulfill and enforce our Terms of Service. We may also use your information to, among other things, show you suggestions, promote the Platform, and customize your ad experience."
+  "\"As explained below, we use your information to improve, support and administer the Platform, to allow you to use its functionalities, and to fulfill and enforce our Terms of Service. We may also use your information to, among other things, show you suggestions, promote the Platform, and customize your ad experience.\""
 ]
 
 [rubric.data-deletion]
 value = "yes-automated"
 citations = [
-  "[...] delete your account by following the instructions [here](https://support.tiktok.com/en/account-and-privacy/deleting-an-account/deleting-an-account)."
+  "\"[...] delete your account by following the instructions [here](https://support.tiktok.com/en/account-and-privacy/deleting-an-account/deleting-an-account).\""
 ]
 
 [rubric.history]
 value = "last-modified"
 citations = [
-  "When we update the Privacy Policy, we will notify you by updating the “Last Updated” date at the top of the new Privacy Policy [...]"
+  "\"When we update the Privacy Policy, we will notify you by updating the “Last Updated” date at the top of the new Privacy Policy [...]\""
 ]
 
 [rubric.law-enforcement]
 value = "strict"
 citations = [
-  "We may disclose any of the Information We Collect to respond to subpoenas, court orders, legal process, law enforcement requests, legal claims, or government inquiries, and to protect and defend the rights, interests, safety, and security of the Platform, our affiliates, users, or the public."
+  "\"We may disclose any of the Information We Collect to respond to subpoenas, court orders, legal process, law enforcement requests, legal claims, or government inquiries, and to protect and defend the rights, interests, safety, and security of the Platform, our affiliates, users, or the public.\""
 ]
 
 [rubric.list-collected]
 value = "exhaustively"
 citations = [
-  "Information You Provide [...] \nInformation From Other Sources [...] \nAutomatically Collected Information [...]"
+  "\"Information You Provide [...] \nInformation From Other Sources [...] \nAutomatically Collected Information [...]\""
 ]
 
 [rubric.noncritical-purposes]
 value = "opt-out-some"
 citations = [
-  "- You may be able to control some of the Information We Collect through your device browser settings to refuse or disable Cookies. Because each browser is different, please consult the instructions provided by your browser. Please note that you may need to take additional steps to refuse or disable certain types of Cookies. In addition, your choice to disable Cookies is specific to the particular browser or device that you are using when you disable Cookies, so you may need to separately disable Cookies for each type of browser or device. If you choose to refuse, disable, or delete Cookies, some of the functionality of the Platform may no longer be available to you. Without this information, we are not able to provide you with all of the requested services. \n- You can navigate to "Ads" in your in-app settings to opt-out of targeted advertising based on personal information about your activity on nonaffiliated apps and websites. \n- You may be able to manage third-party advertising preferences for some of the third parties we work with to serve advertising across the Internet by using the choices available at https://www.networkadvertising.org/managing/opt_out.asp and https://www.aboutads.info/choices. \n- Your device may have controls that determine what Information We Collect. For example, you can control whether we can collect your mobile advertising identifier for advertising through settings on your Apple and Android devices. \n- You can opt out of marketing or advertising emails by using the “unsubscribe” link or mechanism noted in marketing or advertising emails. \n- Current versions of the app do not collect precise or approximate GPS information from U.S. users. If you are still using an older version that allowed for collection of precise or approximate GPS information (last release in August 2020) and you granted us permission to do so, you can prevent your device from sharing such information with the Platform at any time through your device’s operating system settings. \n- If you have registered for an account, you may access, review, and update certain personal information that you have provided to us by logging into your account and using available features and functionalities. \n- Some browsers transmit “do-not-track” signals to websites. Because of differences in how browsers incorporate and activate this feature, we currently do not take action in response to these signals."
+  "\"- You may be able to control some of the Information We Collect through your device browser settings to refuse or disable Cookies. Because each browser is different, please consult the instructions provided by your browser. Please note that you may need to take additional steps to refuse or disable certain types of Cookies. In addition, your choice to disable Cookies is specific to the particular browser or device that you are using when you disable Cookies, so you may need to separately disable Cookies for each type of browser or device. If you choose to refuse, disable, or delete Cookies, some of the functionality of the Platform may no longer be available to you. Without this information, we are not able to provide you with all of the requested services. \n- You can navigate to \"Ads\" in your in-app settings to opt-out of targeted advertising based on personal information about your activity on nonaffiliated apps and websites. \n- You may be able to manage third-party advertising preferences for some of the third parties we work with to serve advertising across the Internet by using the choices available at https://www.networkadvertising.org/managing/opt_out.asp and https://www.aboutads.info/choices. \n- Your device may have controls that determine what Information We Collect. For example, you can control whether we can collect your mobile advertising identifier for advertising through settings on your Apple and Android devices. \n- You can opt out of marketing or advertising emails by using the “unsubscribe” link or mechanism noted in marketing or advertising emails. \n- Current versions of the app do not collect precise or approximate GPS information from U.S. users. If you are still using an older version that allowed for collection of precise or approximate GPS information (last release in August 2020) and you granted us permission to do so, you can prevent your device from sharing such information with the Platform at any time through your device’s operating system settings. \n- If you have registered for an account, you may access, review, and update certain personal information that you have provided to us by logging into your account and using available features and functionalities. \n- Some browsers transmit “do-not-track” signals to websites. Because of differences in how browsers incorporate and activate this feature, we currently do not take action in response to these signals.\""
 ]
 
 [rubric.revision-notify]
 value = "yes"
 citations = [
-  "When we update the Privacy Policy, we will notify you by updating the “Last Updated” date at the top of the new Privacy Policy, posting the new Privacy Policy, or providing any other notice required by applicable law."
+  "\"When we update the Privacy Policy, we will notify you by updating the “Last Updated” date at the top of the new Privacy Policy, posting the new Privacy Policy, or providing any other notice required by applicable law.\""
 ]
 
 [rubric.security]
 value = "somewhat"
 citations = [
-  "We use reasonable measures to help protect information from loss, theft, misuse, unauthorized access, disclosure, alteration, or destruction."
+  "\"We use reasonable measures to help protect information from loss, theft, misuse, unauthorized access, disclosure, alteration, or destruction.\""
 ]
 
 [rubric.third-party-access]
 value = "yes-specified-critical"
 citations = [
-  "Service Providers and Business Partners [...]\nWithin Our Corporate Group [...] \nIn Connection with a Sale, Merger, or Other Business Transfer [...] \nFor Legal Reasons [...] \nWith Your Consent [...]"
+  "\"Service Providers and Business Partners [...]\nWithin Our Corporate Group [...] \nIn Connection with a Sale, Merger, or Other Business Transfer [...] \nFor Legal Reasons [...] \nWith Your Consent [...]\""
 ]
 
 [rubric.third-party-collection]
 value = "yes"
 citations = [
-  "We may receive the information described in this Privacy Policy from other sources, such as: \n\n- If you choose to sign-up or log-in to the Platform using a third-party service such as Facebook, Twitter, Instagram, or Google, or link your TikTok account to a third-party service, we may collect information from the service–for example, your public profile information (such as nickname), email, and contact list. [...]"
+  "\"We may receive the information described in this Privacy Policy from other sources, such as: \n\n- If you choose to sign-up or log-in to the Platform using a third-party service such as Facebook, Twitter, Instagram, or Google, or link your TikTok account to a third-party service, we may collect information from the service–for example, your public profile information (such as nickname), email, and contact list. [...]\""
 ]
 
 
