@@ -1,0 +1,78 @@
+name = "Line"
+description = "Line is a Messenger mainly used in Japan."
+slug = "line-yahoo"
+hostnames = ["line.me"]
+sources = ["https://terms2.line.me/ec_global_pp?lang=en"]
+contributors = ["filex", "makai"]
+
+[rubric.behavioral-marketing]
+value = "yes"
+citations = [
+  "\"We will utilize Personal Data for providing recommended contents, including ads, to each user.\""
+]
+
+[rubric.data-breaches]
+value = "no"
+citations = [
+  "\"Also, please notify us in the event you suspect any unauthorized use of your account or any other breach of security via our Contact Form.\""
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "\"We will use the collected Personal Data (including Personal Data collected from when you use our Services and all Personal Data collected from third parties) for the following purposes: \n\n- Provision and maintenance of our Services; \n- Development and improvement of our Services; \n- Security and prevention of unauthorized use; and/or \n- Provision of Services optimized for you. \n\nWe use Personal Data to provide our Services to users, for utilization in research and development to provide safer and better services, and to provide services that are strongly linked to users, including ads.\""
+]
+
+[rubric.data-deletion]
+value = "yes-contact"
+citations = [
+  "\"If you wish to exercise your right against us to disclose your Personal Data that cannot be confirmed in our Services, correct or delete your Personal Data that is contrary to facts, notify you of the purpose of use of your Personal Data, or other rights permitted by Applicable Laws, you may contact us using the Personal Data Disclosure Procedure.\""
+]
+
+[rubric.history]
+value = "yes"
+citations = [
+  "\"10.b.iii.Archived versions of Privacy Policy\""
+]
+
+[rubric.law-enforcement]
+value = "strict"
+citations = [
+  "\"If we receive a request pursuant to legal proceedings such as a warrant, or if there is imminent danger to someone’s life or property such as a suicide threat or a bomb threat, we may disclose Personal Data to third parties including law enforcement agencies such as the police, or the court, pursuant to Applicable Laws. For details regarding the disclosure of Personal Data to public agencies, please refer to our Transparency Report.\""
+]
+
+[rubric.list-collected]
+value = "exhaustively"
+citations = [
+  "\"3.a.Examples of Personal Data to be provided by you [...] \n3.b.Examples of Personal Data related to your use of our Services \n    3.b.i.Status of use of our Services\n    3.b.ii.Location information\n    3.b.iii.Apps, browsers, devices and network information\n3.c.Examples of Personal Data collected from third parties\n    3.c.i.Personal Data collected from group companies\n    3.c.ii.Personal Data collected from Partners\n    3.c.iii.Personal Data uploaded by other users\n3.d.Other Examples\n    3.d.i.Personal Data that is directly collected in third-party services\n    3.d.ii.Collection of Personal Data from public information\""
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-some"
+citations = [
+  "\"If you do not provide certain types of information which need to be registered for using our Services, you may not be able to use all or a part of our Services.\""
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "\"When we make any material changes to this Policy, we will notify you on our Services, or by other reasonable means.\""
+]
+
+[rubric.security]
+value = "yes"
+citations = [
+  "\"For example, we are taking the following measures. \n\n- Provision of encryption feature of messages \n- Strict access control based on a need-to-know basis \n- 24/7 security monitoring \n- External authentication for objectively evaluating our security measures \n- R&D of new security technologies \nFurthermore, we will never provide any means for fraudulently accessing Personal Data to a third party.\n For details regarding our security measures, please also read “Safety Management Measures for Personal Data.” \nHowever, because no method of electronic transmission or method of data storage is perfect or impenetrable, we cannot guarantee that your Personal Data will be absolutely safe from intrusion during transmission or while stored in our systems.\""
+]
+
+[rubric.third-party-access]
+value = "yes-specified-critical"
+citations = [
+  "\"We may subcontract certain services required for providing our Services (e.g.: building, operation and development of infrastructure, settlement, shipping, customer support, etc.) to a third party. In connection with this, we entrust all or a part of the Personal Data to the subcontractor, including companies located in the following countries or regions. [...] \n\n5.c.Sharing of Personal Data among group companies\nYou can confirm our group companies to share Personal Data in [“List of Group Companies”](https://privacy.lycorp.co.jp/en/connection/group.html).\""
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "\"3.c.i.Personal Data collected from group companies \n\nWe may collect your Personal Data from our group companies according to their terms or policies. For the privacy policy that is applicable to the individual services provided by our group companies, please confirm the same in the individual services.\n\n3.c.ii.Personal Data collected from Partners\n\nWe may collect your Personal Data from our Partners.\nThere are cases where we collect Personal Data from a Partner operating its own service, and from a Partner operating a service that is linked to our Services such as the LINE official account or LINE login.\""
+]
