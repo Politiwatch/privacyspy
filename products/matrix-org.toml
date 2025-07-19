@@ -1,7 +1,7 @@
 name = "Matrix.org"
 description = "An open network for secure, decentralised communication."
 slug = "matrix-org"
-hostnames = ["https://matrix.org"]
+hostnames = ["matrix.org"]
 sources = ["https://matrix.org/legal/privacy-notice/"]
 contributors = ["filex"]
 
