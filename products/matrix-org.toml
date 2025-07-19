@@ -1,0 +1,80 @@
+name = "Matrix.org"
+description = "An open network for secure, decentralised communication."
+slug = "matrix-org"
+hostnames = ["https://matrix.org"]
+sources = ["https://matrix.org/legal/privacy-notice/"]
+contributors = ["filex"]
+
+[rubric.behavioral-marketing]
+value = "no"
+notes = [
+  "\"Nothing written about it.\""
+]
+
+[rubric.data-breaches]
+value = "no"
+citations = [
+  "\"If you become aware of any unauthorised use of your account or any other breach of security, you must notify Element immediately by sending an email to security@matrix.org. Suspicious devices can be deleted using the User Settings management tools in a Matrix client such as https://element.io/app, and users should manage good password hygiene (e.g. using a password manager) and change their password if they believe their account is compromised.\""
+]
+
+[rubric.data-collection-reasoning]
+value = "mostly"
+citations = [
+  "\"Matrix.org processes your data under a performance of contract basis of processing, to provide our Service to you in an efficient and secure manner and to ensure the legal compliance and proper administration of our business. [...] \nWe process your information for the purposes of providing our decentralised, openly-federated and end-to-end encrypted communication Service, getting in touch with you, responding to your requests, working with our suppliers to deliver the Service and enabling its features, ensuring the security of our Service, developing, fixing and improving our Service, administering our business and complying with the law.\""
+]
+
+[rubric.data-deletion]
+value = "yes-automated"
+citations = [
+  "\"You can request that we forget your copy of messages and files by instructing us to deactivate your account (using a Matrix client such as the Element chat app) and selecting the option instructing us to forget your messages.\""
+]
+
+[rubric.history]
+value = "yes"
+citations = [
+  "\"Document History [...]\""
+]
+
+[rubric.law-enforcement]
+value = "strict"
+citations = [
+  "\"In exceptional circumstances, we may share information about you with a third party if we believe that sharing is reasonably necessary to\n\n- (a) comply with any applicable law, regulation, legal process or governmental request,\n- (b) protect the security or integrity of our products and services (e.g. for a security audit),\n- (c) protect Element and our users from harm or illegal activities, or\n- (d) respond to an emergency which we believe in good faith requires us to disclose information to assist in preventing the serious bodily harm of any person.\n\nDetails on how we share data with Law Enforcement agencies can be found in our Law Enforcement Guidelines.\""
+]
+
+[rubric.list-collected]
+value = "exhaustively"
+citations = [
+  "\"The information we collect is purely for the purpose of providing your communication service via Matrix. We do not profile users or their data on the Service. [...]\nWe collect information about you when you input it into the Service or otherwise provide it directly to us. [...]\nWe collect information about you when you register for an account. This information is kept to a minimum on purpose, and is restricted to:\n\n- Username\n- Password hash\n- Display Name (if you choose to provide one)\n- Your email address (if you choose to provide it)\n- Your verified telephone number (if you choose to provide it)\n- Your username and password is used to authenticate your access to the Service and to uniquely identify you within the Service.\n- Your password hash is stored until your account is deactivated (see 2.6 for details on how passwords are handled securely). Your username is stored indefinitely to avoid account recycling.\n- When you've registered your account and what SSO links you might have (i.e. 'Facebook ID', 'Google ID', etc.)\n- Type of account (i.e. free or paid)\n\nAdditionally, we collect data associated with each of your sessions, specifically:\n\n- When it was created\n- When it finished (so we retain 'finished' sessions)\n- When it was last active\n- The last seen IP for it\n- the user agent we saw when it got created\n- which client you used\n\nYour email address and/or telephone number, if you choose to provide them, are used so that other users can look up your Matrix ID from these identifiers via the Matrix.org Identity Server. We will also use your email address to let you reset your password if you forget it, and to send you notifications about missed messages from users trying to contact you on Matrix if you enable the option. We may also send you infrequent urgent messages about platform updates. [...]\nWe store and distribute the messages and files you share using the Service (and across the wider Matrix ecosystem via federation) as described by the Matrix protocol and according to the access rules configured within the system. Storing and sharing this content is the reason the Service exists.\n\nThis content includes any information about yourself that you choose to share.\n2.2.1.3 Information you provide through purchases in the Matrix.org Foundation shop\""
+]
+
+[rubric.noncritical-purposes]
+value = "na"
+notes = [
+  ""
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "\"We will likely improve this document over time and we will take steps to inform our users about any updates.\""
+]
+
+[rubric.security]
+value = "yes"
+citations = [
+  "\"We never store password data in plain text; instead they are stored hashed (with at least 4096 rounds of bcrypt, including both a salt and a server-side pepper secret). Passwords sent to the server are encrypted using SSL.\n\nIt is your sole responsibility to keep your user name, password and other sensitive information confidential. Actions taken using your credentials shall be deemed to be actions taken by you, with all consequences including service termination, civil and criminal penalties.\""
+]
+
+[rubric.third-party-access]
+value = "yes-specified-noncritical"
+citations = [
+  "\"Big Cartel\nDonorbox\nPretix\nPretalx\nWe need to collect additional information on your account to manage paid plans. This is essentially a flag to identify your account as being on a free or paid plan. Payment details are processed by Stripe. Additionally, we use Xero to automate our tax obligations. [...]\n\nWe may share your information when working with our suppliers in order to provide the Service.\n\nIn addition, the Matrix.org homeserver is a decentralised and open service. This means that, to support communication between users on different homeservers or different messaging platforms, your username, display name and messages and files are sometimes shared with other services that are connected with the Matrix.org homeserver.\""
+]
+
+[rubric.third-party-collection]
+value = "no"
+notes = [
+  "Nothing written about it."
+]
+
+
