@@ -223,3 +223,9 @@ github = "maximbelyakov"
 
 [Anon-sec]
 github = "Anon-sec"
+
+[filex]
+name = "FileX"
+website = "https://codeberg.org/FileX"
+
+[makai]
