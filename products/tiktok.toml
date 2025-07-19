@@ -8,7 +8,8 @@ contributors = [ "bumbleben", "filex", "makai" ]
 [rubric.behavioral-marketing]
 value = "yes-opt-out"
 citations = [
-  "\"We may also use your information to, among other things, show you suggestions, promote the Platform, and customize your ad experience.\""
+  "\"We may also use your information to, among other things, show you suggestions, promote the Platform, and customize your ad experience.\"",
+  "\"We ask for your consent to access or use your information for specific purposes. If we do, you’ll always be able to revoke your consent through your device permissions or in-app settings.\""
 ]
 
 [rubric.data-breaches]
@@ -36,13 +37,13 @@ citations = [
 ]
 
 [rubric.law-enforcement]
-value = "strict"
+value = "reasonable"
 citations = [
   "\"We may disclose any of the Information We Collect to respond to subpoenas, court orders, legal process, law enforcement requests, legal claims, or government inquiries, and to protect and defend the rights, interests, safety, and security of the Platform, our affiliates, users, or the public.\""
 ]
 
 [rubric.list-collected]
-value = "exhaustively"
+value = "generally"
 citations = [
   "\"Information You Provide [...] \nInformation From Other Sources [...] \nAutomatically Collected Information [...]\""
 ]
@@ -66,7 +67,7 @@ citations = [
 ]
 
 [rubric.third-party-access]
-value = "yes-specified-critical"
+value = "yes-unspecified"
 citations = [
   "\"Service Providers and Business Partners [...]\nWithin Our Corporate Group [...] \nIn Connection with a Sale, Merger, or Other Business Transfer [...] \nFor Legal Reasons [...] \nWith Your Consent [...]\""
 ]
@@ -74,7 +75,7 @@ citations = [
 [rubric.third-party-collection]
 value = "yes"
 citations = [
-  "\"We may receive the information described in this Privacy Policy from other sources, such as: \n\n- If you choose to sign-up or log-in to the Platform using a third-party service such as Facebook, Twitter, Instagram, or Google, or link your TikTok account to a third-party service, we may collect information from the service–for example, your public profile information (such as nickname), email, and contact list. [...]\""
+  "\"Information From Other Sources\n\nAdvertising, Measurement and Other Partners. Advertisers, measurement and other partners share information with us about you and the actions you have taken outside of the Platform, such as your activities on other websites and apps or in stores, including the products or services you purchased, online or in person. These partners also share information with us, such as mobile identifiers for advertising, hashed email addresses and phone numbers, and cookie identifiers, which we use to help match you and your actions outside of the Platform with your TikTok account. Some of our advertisers and other partners enable us to collect similar information directly from their website or app by integrating our TikTok Advertiser Tools (such as TikTok Pixel). These partners are required to have the necessary rights and permissions to share your information with us before doing so. We process certain information that we receive from these partners as a joint controller with them. Learn more about our arrangements with these partners.\nSellers, Payment and Transaction Fulfillment Providers. We receive information about you from sellers as well as payment and transaction fulfillment providers, such as payment confirmation details, and information about the delivery of products you have purchased through our shopping features.\nThird Party Platforms and Partners. Third party platforms provide us with information (such as your email address, authentication ID, and public profile) when you choose to sign up for or log in to the Platform using sign-in features provided by those third parties. We may also receive contact information that you hold or is held about you when contact information is synced with our Platform by you or another user. When you interact with any third party service (such as third party apps, websites or products) that integrate TikTok Developer Tools, we will receive the information necessary to provide you with features like cross-service authentication or cross-posting. For example, this will happen if you log in to another platform with your TikTok account or if you use TikTok’s “share” button on a third party platform to share content from there to the Platform. We may also receive information from third party providers which we use for safety purposes, including to protect users on the Platform and for content moderation.\nAdditional Sources. We may collect or receive information about you from organisations, businesses, people, and others, including, for example, publicly available sources, government authorities, professional organisations, and charity groups. We also collect information about you where you are included or mentioned in User Content, Messages, in a complaint, appeal, request or feedback submitted by a user or third party, or if your contact information is provided to us by a user.\""
 ]
 
 
