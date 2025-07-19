@@ -2,7 +2,7 @@ name = "Line"
 description = "Line is a Messenger mainly used in Japan."
 slug = "line-yahoo"
 hostnames = ["line.me"]
-sources = ["https://terms2.line.me/ec_global_pp?lang=en"]
+sources = ["https://www.lycorp.co.jp/en/company/privacypolicy/"]
 contributors = ["filex", "makai"]
 
 [rubric.behavioral-marketing]
@@ -26,7 +26,7 @@ citations = [
 [rubric.data-deletion]
 value = "yes-contact"
 citations = [
-  "\"If you wish to exercise your right against us to disclose your Personal Data that cannot be confirmed in our Services, correct or delete your Personal Data that is contrary to facts, notify you of the purpose of use of your Personal Data, or other rights permitted by Applicable Laws, you may contact us using the Personal Data Disclosure Procedure.\""
+  "\"If you no longer wish to use our Services or if you withdraw your consent to our processing of your Personal Data which is necessary for us to provide our Services, you may choose to delete your entire account. However, the withdrawal of your consent will not in any way affect the lawfulness of our processing of your Personal Data based on your consent that was given before the foregoing withdrawal.\""
 ]
 
 [rubric.history]
@@ -60,7 +60,7 @@ citations = [
 ]
 
 [rubric.security]
-value = "yes"
+value = "yes-audits"
 citations = [
   "\"For example, we are taking the following measures. \n\n- Provision of encryption feature of messages \n- Strict access control based on a need-to-know basis \n- 24/7 security monitoring \n- External authentication for objectively evaluating our security measures \n- R&D of new security technologies \nFurthermore, we will never provide any means for fraudulently accessing Personal Data to a third party.\n For details regarding our security measures, please also read “Safety Management Measures for Personal Data.” \nHowever, because no method of electronic transmission or method of data storage is perfect or impenetrable, we cannot guarantee that your Personal Data will be absolutely safe from intrusion during transmission or while stored in our systems.\""
 ]
@@ -74,5 +74,5 @@ citations = [
 [rubric.third-party-collection]
 value = "yes"
 citations = [
-  "\"3.c.i.Personal Data collected from group companies \n\nWe may collect your Personal Data from our group companies according to their terms or policies. For the privacy policy that is applicable to the individual services provided by our group companies, please confirm the same in the individual services.\n\n3.c.ii.Personal Data collected from Partners\n\nWe may collect your Personal Data from our Partners.\nThere are cases where we collect Personal Data from a Partner operating its own service, and from a Partner operating a service that is linked to our Services such as the LINE official account or LINE login.\""
+  "\"3.c.ii.Personal Data collected from Partners\n\nWe may collect your Personal Data from our Partners.\nThere are cases where we collect Personal Data from a Partner operating its own service, and from a Partner operating a service that is linked to our Services such as the LINE official account or LINE login.\""
 ]
