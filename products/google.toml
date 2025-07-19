@@ -60,7 +60,7 @@ citations = [
 ]
 
 [rubric.list-collected]
-value = "exhaustively"
+value = "generally"
 citations = [
   "\"Things you create or provide to us [...] \nYour apps, browsers & devices [...] \nYour activity [...] \nYour location information [...]\""
 ]
