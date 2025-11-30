@@ -1,0 +1,124 @@
+name = "Spotify"
+description = "Spotify is a Sweden-based music and podcast streaming platform offering free and premium streaming, recommendations, and social features."
+slug = "spotify"
+hostnames = ["spotify.com"]
+sources = [
+  "https://www.spotify.com/de-en/legal/privacy-policy/",
+  "https://www.spotify.com/de-en/account/privacy/"
+]
+contributors = ["Anon-sec"]
+
+[rubric.behavioral-marketing]
+value = "yes-opt-out"
+citations = [
+  "Control the tailored ads you see and hear on Spotify.",
+  "The toggle below controls the tailored ads you experience on Spotify's services, as well as Spotify's ads targeted to you on other platforms.",
+  "If tailored ads are turned off: We will not share your information with third party advertising partners for the purposes of tailored advertising",
+  "If tailored ads are turned off: We will not share your information with other platforms to market Spotify promotions, features, or new releases on those other platforms"
+]
+notes = [
+  "The Account Privacy page provides a toggle to disable tailored advertising. Turning it off also stops sharing with third-party advertising partners and other platforms. Non-tailored ads may still be shown."
+]
+
+[rubric.data-breaches]
+value = "no"
+citations = []
+notes = [
+  "The privacy policy does not state that Spotify notifies users of data breaches or commits to a breach-notification process."
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "The table below sets out: our purpose for processing your personal data; our legal justifications (each called a “legal basis”) under data protection law."
+]
+notes = [
+  "Spotify includes a table explaining purposes and legal bases such as Performance of a Contract, Consent, Legal Obligation, and Legitimate Interest."
+]
+
+[rubric.data-deletion]
+value = "yes-contact"
+citations = [
+  "Request that we erase certain of your personal data.",
+  "To request erasure of your other personal data from Spotify, follow the steps on our support page."
+]
+notes = [
+  "Full data erasure requires submitting a request; it is not fully automated."
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [
+  "Effective as of 27 August 2025"
+]
+notes = [
+  "Only an effective date is given; no change history is provided."
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "To comply with a request from law enforcement, courts, or other competent and authorized third parties.",
+  "to respond to a valid legal process (such as a search warrant, court order, or subpoena)"
+]
+notes = [
+  "Policy allows disclosure when legally required or in response to valid legal processes. It also allows disclosure under good faith justifications."
+]
+
+[rubric.list-collected]
+value = "generally"
+citations = [
+  "These tables set out the categories of personal data we collect from you.",
+  "Personal data that we need to create your Spotify account and that enables you to use the Spotify Service."
+]
+notes = [
+  "Lists are structured but use language such as 'may include', meaning they are examples rather than exhaustive lists."
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-some"
+citations = [
+  "Control the tailored ads you see and hear on Spotify.",
+  "If tailored ads are turned off, the content of ads we show you will not be based on: Your use of Spotify over time; Your interests obtained from 3rd party advertising partners."
+]
+notes = [
+  "Users can disable tailored advertising, but some non-essential purposes such as analytics and service improvements cannot be disabled."
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "When we make material changes to this Policy, we'll provide you with prominent notice as appropriate under the circumstances."
+]
+notes = [
+  "Spotify commits to notifying users when material changes occur."
+]
+
+[rubric.security]
+value = "yes"
+citations = [
+  "We put in place appropriate technical and organisational measures to help protect the security of your personal data."
+]
+notes = [
+  "Security measures are described, but audits or certifications are not mentioned."
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = [
+  "If tailored ads are turned off: We will not share your information with third party advertising partners for the purposes of tailored advertising",
+  "Our partners may also combine the personal data we share with them with other data they collect about you, e.g. your use of their services."
+]
+notes = [
+  "Spotify names categories of recipients but does not provide a full list of specific companies who receive user data."
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "If you connect your Spotify account to a third party application, service or device, we may collect and use information from them.",
+  "If you choose to pay through third parties (e.g. telco carriers) or by invoice, we may get data from our payment partners."
+]
+notes = [
+  "Spotify receives personal data from connected third-party services, payment providers, and integrated platforms."
+]
