@@ -1,0 +1,81 @@
+name = "Archive of Our Own"
+description = "The Archive of Our Own (AO3) is a noncommercial and nonprofit central hosting site for transformative fanworks such as fanfiction and, in the future, other transformative works such as fanart, fan videos, and podfic."
+slug = "archiveofourown"
+hostnames = [ "archiveofourown.org", "archiveofourown.gay", "ao3.gay", "archive.transformativeworks.org" ]
+sources = [ "https://archiveofourown.org/tos" ]
+contributors = [ "Shinigami-alt" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+citations = [
+  "We will not sell, trade, or rent your Personal Information. We will not use your Personal Information to market third-party products and services to you. This means that we do not collect or use your Personal Information for targeted advertising, nor do we process Personal Information for automated decision-making purposes. If we begin to do so, that change will be reflected in this Privacy Policy, and you will have the right to restrict the use of that Personal Information accordingly."
+]
+
+[rubric.data-breaches]
+value = "eventually"
+citations = [
+  "If we learn of a breach which compromises the security or confidentiality of the Personal Information of AO3 users, we will notify affected users and relevant supervisory authorities as required by law as soon as practicable."
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  """We and our Subprocessors collect, process, and retain Personal Information about what pages you access or visit, including your interactions with integral AO3 features such as comments, kudos, and bookmarks; referral information (i.e. data about what site you are coming to AO3 from); and whether there are errors in displaying Content to you. We need this Personal Information to maintain the integrity of AO3 and the Content that we host; to provide you with the Content that you are seeking; to prevent spam and abuse; and for other legal and accounting/audit reasons.
+
+We and our Subprocessors collect, process, and retain Personal Information about Content that you submit to us. You consent to the collection of your Personal Information (such as your IP address) when you access AO3, including when you are not logged in. We use this Personal Information to make the Content you submit available to people who use AO3. By submitting Content to us, you are requesting that we make it available to those people and consenting to the use of your Content. For explanations of site features that use your Content and/or Personal Information and how they are used, please refer to the TOS FAQ. """
+]
+
+[rubric.data-deletion]
+value = "yes-automated"
+citations = [
+  "If for any reason you terminate your account with us, as soon as reasonably possible we will destroy active records containing your Personal Information that are visible to the public or to AO3 users, with the exception of Personal Information entered as Content that you have not deleted. \"Reasonably\" here means no more than thirty business days from the termination of the account."
+]
+notes = [
+  "Content is any form of work that you intentionally make public to other users of Archive of Our Own. So, any personal information entered as content will have to be found and removed by the users themselves"
+]
+
+[rubric.history]
+value = "last-modified"
+notes = [ "The last modified date is at the bottom of the pages" ]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  """We may share Personal Information if we:
+
+    1. are legally compelled to do so;
+    2. have a good-faith belief that such action is necessary to comply with a current judicial proceeding, court order, or legal process served on the OTW; or
+    3. are cooperating with law enforcement authorities."""
+]
+
+[rubric.list-collected]
+value = "exhaustively"
+notes = [ "The policy [clearly lists and provides explanations](https://archiveofourown.org/privacy#III.C)" ]
+
+[rubric.noncritical-purposes]
+value = "na"
+notes = [ "While it doesn't explicitly state that data is not used for noncritical-purposes it does state what it is used for which is all critical purposes" ]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "You can learn about changes to the TOS by visiting AO3. The TOS, including the Content Policy and Privacy Policy, may be modified at any time through the following process: Proposed changes will first be prominently disclosed on AO3 for a public comment period lasting at least two weeks."
+]
+
+[rubric.security]
+value = "no"
+citations = [
+  "The OTW provides services, including AO3, on an \"as is\" and \"as available\" basis. The OTW does not warrant (that is, does not make a legally binding promise) that our services will meet your requirements; that our services will be uninterrupted, timely, secure, or error-free; or that the results you get from using our services will be accurate, reliable, or satisfactory to you."
+]
+
+[rubric.third-party-access]
+value = "yes-specified-critical"
+citations = [
+  "We may use third-party services to store, process, or transmit data, or to perform other technical functions related to operating AO3. For example, we may use third-party email services. A list of third-party services is provided in our Subprocessor List. We cannot guarantee other services' technical performance. We or the services we use may store or process your Personal Information in data centers which may be located in the United States or elsewhere."
+]
+
+[rubric.third-party-collection]
+value = "no"
+notes = [
+  "The policy states that it collects personal data [that is required for critical functions](https://archiveofourown.org/privacy#III.B) and data that a user may have [added to their contents](https://archiveofourown.org/privacy#III.B)"
+]
