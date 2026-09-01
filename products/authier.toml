@@ -1,0 +1,108 @@
+name = "Authier"
+description = "Authier is an open-source password manager developed in Czechia."
+slug = "authier"
+hostnames = ["authier.pm"]
+sources = [
+  "https://www.authier.pm/privacy-policy",
+  "https://www.authier.pm/security"
+]
+contributors = ["capaj"]
+
+[rubric.behavioral-marketing]
+value = "no"
+citations = [
+  "The public marketing website does not use advertising trackers or behavioral analytics.",
+  "We do not sell personal information and do not use vault content for advertising. We do not share personal data with business partners for their independent promotions."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = ["The policy does not commit to notifying affected users after a data breach."]
+
+[rubric.data-collection-reasoning]
+value = "mostly"
+citations = [
+  """
+We use information to:
+
+- create and operate accounts;
+- synchronize encrypted vault data;
+- authenticate users and approve, manage, or remove devices;
+- process subscriptions and provide billing support;
+- learn reusable, non-secret form selectors and improve autofill;
+- detect abuse, investigate security events, and protect the service;
+- diagnose failures and improve reliability; and
+- comply with legal obligations and respond to valid legal requests.
+"""
+]
+notes = ["The policy gives broad data categories and processing purposes, but it does not map every collected field to an individual purpose."]
+
+[rubric.data-deletion]
+value = "yes-contact"
+citations = [
+  "Product controls can be used to remove vault items, devices, and supported autofill records. Contact us if you need help deleting an account or making a privacy request. Some billing, security, backup, and legal records may be retained as described above."
+]
+
+[rubric.history]
+value = "last-modified"
+citations = ["Last updated 31 August 2026."]
+notes = ["The policy displays its current modification date but does not provide a revision history or changelog."]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "Information may also be disclosed: to comply with a valid legal obligation, court order, or request from a competent public authority."
+]
+
+[rubric.list-collected]
+value = "generally"
+citations = [
+  """
+Depending on the feature you use, Authier may process:
+
+- Account information, such as your email address and account identifiers.
+- Encrypted vault payloads, containing credentials or TOTP data encrypted by your client before synchronization.
+- Device and security information, such as device identifiers, platform, approval state, recent IP address, approximate location derived from network data, and security-event timestamps.
+- Autofill-field metadata, such as a page URL with its query string removed, hostname, field type, DOM selector, and the account that submitted the record.
+- Subscription information, such as the product selected, subscription state, and Stripe customer or checkout identifiers. Authier does not receive full payment-card numbers.
+- Support and diagnostic information that you submit or that applications generate when something fails.
+- Usage data, which can include request time, IP address, browser or operating-system information, pages or API operations used, and diagnostic or abuse-prevention signals.
+"""
+]
+notes = ["The policy lists general categories and examples, but qualifiers such as 'such as' and 'can include' make the list non-exhaustive."]
+
+[rubric.noncritical-purposes]
+value = "no"
+citations = [
+  "The extension provides controls for removing matching autofill records. Abuse-prevention limits may delay or rate-limit deletion, including a one-week waiting period for newer free accounts."
+]
+notes = ["The policy describes using shared autofill metadata to improve autofill and provides deletion controls for matching records, but it does not describe a general opt-in or opt-out choice for non-critical collection or use."]
+
+[rubric.revision-notify]
+value = "no"
+citations = [
+  "Material changes may also be announced in the service or by email when appropriate."
+]
+notes = ["The policy says material changes may be announced, rather than committing that affected users will be notified."]
+
+[rubric.security]
+value = "yes"
+citations = [
+  "Authier uses technical and organizational measures intended to protect information, including client-side encryption for vault contents, authenticated transport, device controls, access restrictions, and monitoring.",
+  "Authier has not yet published an independent third-party security audit."
+]
+notes = ["No audit credit is claimed."]
+
+[rubric.third-party-access]
+value = "yes-unspecified-critical"
+citations = [
+  "Authier relies on infrastructure and specialist providers where necessary to operate the service. These may include Cloudflare for hosting and network security, Stripe for subscription payments, Firebase for device notifications, and error-monitoring or email-delivery providers."
+]
+notes = ["The policy limits the described providers to operational functions, but uses 'may include' and does not name every error-monitoring or email-delivery provider."]
+
+[rubric.third-party-collection]
+value = "critical-only"
+citations = [
+  "Subscription information, such as the product selected, subscription state, and Stripe customer or checkout identifiers. Authier does not receive full payment-card numbers."
+]
+notes = ["The policy describes receiving essential subscription identifiers associated with the Stripe billing flow; it does not describe acquiring personal data from third parties for non-critical purposes."]
